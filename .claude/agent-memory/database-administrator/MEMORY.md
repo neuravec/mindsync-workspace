@@ -19,6 +19,8 @@
 - [KE team backfill sizing (2026-10-19)](project_ke_team_backfill_sizing_2026_10_19.md) - team accts not premium -> forward-only, cursors at activation; full history 124/266
 - [Prep card backfill (2026-10-13)](project_prep_card_backfill_2026_10_13.md) — 4 first-conversation cards via RQ enqueue; one card per user due to _existing_card; recap verdict gone after 24h
 
+- [iOS+Google legacy client (2026-10-21)](project_ios_google_legacy_client_2026_10_21.md) - "stuck" iOS Google signups = old build signature (device_type set, no therapy_context, JOURNAL only); not bug, not bots
+
 ## Process & Feedback
 - [heroku config redaction gotcha](feedback_heroku_config_redaction.md) — `heroku config` uses `KEY:  value` (colon), not `KEY=value`; an `=`-based sed redact silently fails and leaks secrets — match on `:` or just don't print values
 - [heroku run local stdout buffering](feedback_heroku_run_local_stdout_buffering.md) — redirected outfile can sit at 0 bytes for minutes after the dyno already finished; don't double-background (no trailing `&` with run_in_background:true), reconcile with `heroku ps` before assuming a hang/failure

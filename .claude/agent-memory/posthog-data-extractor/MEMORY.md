@@ -18,6 +18,7 @@
 
 - [Paywall conversion taxonomy 2026-10-15](reference_conversion_paywall_2026_10_15.md): purchase_completed emitted client+backend; Windows-backend test pollution; trial_ended only on conversion; 60d baselines
 - [Onboarding + activation 2026-10-15](reference_onboarding_activation_2026_10_15.md): step_index -1..7, completion 47%->74%, first_week_plan no exposure event, aha=debrief; shared scratchpad
+- [Release 2.0.117 behaviour 2026-10-21](reference_release_2_0_117_behavior_2026_10_21.md): store build 2.0.117, tester exclusion, Main events, voice_chat_started 0 on 2.0.113+, rageclick iOS-only
 
 ## Access (verified 2026-08-10)
 - Transport is ALWAYS `python scripts/posthog_query.py` (stdlib REST runner, read-only). MCP/OAuth is known-broken here – never try it.
@@ -74,3 +75,4 @@
 - Reflect entry redesign (shipped 09-18, see [[reference_reflect_entry_picker_2026_09_25]]): new `end_reason=voice_interrupted` on `reflect_ui_session_ended` not observed as of 09-25 (1 week post-ship) – open question for `flutter-mobile`/`backend-api`.
 - See topic file `errors_quality_gaps_2026_08_10.md` for the full 40-event never-fired/went-silent/thin-signal list checked against code (several corrected above as of 09-12/09-25 – treat that file as historical).
 - [Feature usage + voice 2026-10-15](reference_feature_usage_voice_2026_10_15.md): 30d reach baselines (257 active); GPT-Live-1 events 1 TF tester; to-do no events; moment_id join needs toString
+- [Release 2.0.117 2026-10-21](reference_release_2_0_117_2026_10_21.md): store build ids per OS, first real users, $app_build key, 0 real-user exceptions, polling 10x
