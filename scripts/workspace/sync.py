@@ -70,7 +70,8 @@ def git(repo: Path, *args: str, timeout: int = 90) -> tuple[int, str]:
             ["git", "-C", str(repo), *args],
             capture_output=True, text=True, encoding="utf-8", errors="replace", timeout=timeout,
         )
-        return p.returncode, (p.stdout + p.stderr).strip()
+        # rstrip, nie strip: `git status --porcelain` zaczyna linie od spacji (" M plik")
+        return p.returncode, (p.stdout + p.stderr).rstrip()
     except subprocess.TimeoutExpired:
         return 124, "timeout"
     except FileNotFoundError:
@@ -156,6 +157,31 @@ def cmd_pull() -> tuple[str, str]:
     return header + "\n" + "\n".join(lines), summary
 
 
+PII_PATTERNS = [
+    (r"[A-Za-z0-9._%+-]+@(?!mindsync\.app\b|users\.noreply|example\.|anthropic\.com)[A-Za-z0-9.-]+\.[a-z]{2,}", "e-mail"),
+    (r"(?<![A-Za-z0-9_/-])[A-Za-z0-9]{28}(?![A-Za-z0-9_/-])", "ciąg w kształcie Firebase UID"),
+]
+
+
+def pii_hints(repo: Path, files: list[str]) -> list[str]:
+    """Miękkie ostrzeżenie: możliwe dane osobowe w zmienionych plikach tekstowych."""
+    hints: list[str] = []
+    for f in files:
+        p = repo / f.strip().strip('"')
+        if not p.is_file() or p.suffix.lower() not in {".md", ".txt", ".json", ".py", ".csv", ".sql", ".html", ".yaml", ".yml"}:
+            continue
+        try:
+            text = p.read_text(encoding="utf-8", errors="replace")
+        except Exception:
+            continue
+        for pat, label in PII_PATTERNS:
+            found = {m.group(0) for m in re.finditer(pat, text) if not re.fullmatch(r"[a-z]+|[A-Z]+|[0-9]+", m.group(0))}
+            if found:
+                sample = sorted(found)[0]
+                hints.append(f"{f}: {label} x{len(found)} (np. {sample[:4]}...)")
+    return hints
+
+
 def cmd_status() -> str:
     out_lines = []
     for rel, name, shared in REPOS:
@@ -173,6 +199,10 @@ def cmd_status() -> str:
                 out_lines.append(f"   {f}")
             if len(files) > 40:
                 out_lines.append(f"   ... i {len(files) - 40} więcej")
+            hints = pii_hints(repo, files)
+            if hints:
+                out_lines.append("   UWAGA, możliwe dane osobowe (pokaż użytkownikowi przed push, zredaguj albo dodaj do .gitignore):")
+                out_lines.extend(f"     - {h}" for h in hints[:20])
     return "\n".join(out_lines)
 
 
