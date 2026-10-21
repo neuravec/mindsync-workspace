@@ -224,6 +224,8 @@ def scan_staged(repo: Path) -> list[str]:
             continue
         if re.search(r"\\n\.\.\.\\n|<[A-Z_ ]+>|YOUR[_-]|xxxx|\.\.\.\"", line):
             continue  # przykład z dokumentacji z placeholderem zamiast prawdziwej wartości
+        if "pragma: allowlist secret" in line:
+            continue  # jawnie oznaczony fałszywy sekret (np. w teście), konwencja detect-secrets
         for pat in SECRET_LINE_PATTERNS:
             if re.search(pat, line):
                 hits.append(f"podejrzana linia w {current}: {line[:80]}...")
