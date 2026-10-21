@@ -1,0 +1,2224 @@
+2026-10-19 09:16:37,383 WARNING app.services.posthog_service: PostHog enabled but POSTHOG_API_KEY is empty — skipping init.
+2026-10-19 09:16:50,550 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:16:50,568 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:16:56,199 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S01', 'PERSONAL_BIO', 'ke_extract', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 1503, 117, 1620, 1280, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:16:57,777 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:16:57,779 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:16:59,046 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:16:59,047 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:00,206 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:00,207 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:01,151 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:01,152 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:02,377 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:02,378 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:05,517 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:05,518 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+2026-10-19 09:17:08,709 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:08,711 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:14,278 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S01', 'PERSONAL_BIO', 'ke_extract', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 1568, 122, 1690, 1280, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:17:16,783 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:16,784 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:22,350 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S01', 'PERSONAL_BIO', 'ke_compose', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 3813, 356, 4169, 2688, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:17:23,416 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:23,417 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:29,018 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S02', 'PERSONAL_BIO', 'ke_extract', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 1499, 75, 1574, 1280, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:17:30,196 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:30,198 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:31,320 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:31,321 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:32,472 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:32,473 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:33,503 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:33,504 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:34,508 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:34,509 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:37,603 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:37,604 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:38,645 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:38,646 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:44,200 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S02', 'PERSONAL_BIO', 'ke_extract', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 1561, 75, 1636, 1280, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:17:47,154 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:47,155 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:52,656 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S02', 'PERSONAL_BIO', 'ke_compose', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 3837, 493, 4330, 2688, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:17:53,927 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:17:53,927 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:17:59,383 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S03', 'PERSONAL_BIO', 'ke_extract', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 1501, 115, 1616, 1280, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:18:00,606 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:00,607 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:01,957 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:01,958 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:03,235 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:03,236 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:04,544 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:04,546 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:05,729 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:05,730 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:09,571 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:09,576 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:12,155 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:12,156 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:17,801 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S03', 'PERSONAL_BIO', 'ke_compose', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 3862, 375, 4237, 2688, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:18:19,051 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:19,052 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:24,619 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S04', 'PERSONAL_BIO', 'ke_extract', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 1494, 106, 1600, 1280, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:18:25,759 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:25,760 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:27,082 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:27,083 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:28,144 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:28,145 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:28,995 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:28,996 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:31,820 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:31,821 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:33,122 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:33,123 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:38,662 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S04', 'PERSONAL_BIO', 'ke_extract', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 1537, 122, 1659, 1280, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:18:41,265 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:41,266 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:46,865 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S04', 'PERSONAL_BIO', 'ke_compose', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 3629, 372, 4001, 2688, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:18:47,909 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:47,910 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:53,495 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S05', 'PERSONAL_BIO', 'ke_extract', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 1491, 69, 1560, 1280, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:18:54,530 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:54,531 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:55,545 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:55,546 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:57,589 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:57,591 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:18:59,686 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:18:59,688 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:19:05,178 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S05', 'PERSONAL_BIO', 'ke_compose', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 3420, 279, 3699, 2688, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:19:06,253 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:19:06,254 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:19:11,744 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S06', 'PERSONAL_BIO', 'ke_extract', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 1490, 63, 1553, 1280, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+2026-10-19 09:19:12,870 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:19:12,871 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:19:14,203 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:19:14,203 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:19:15,417 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:19:15,418 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:19:16,467 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:19:16,468 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:19:17,473 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:19:17,474 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:19:20,995 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:19:20,996 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:19:23,333 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:19:23,334 WARNING app.services.usage_tracking: No pricing found for model=gpt-5.4-mini api_type=CHAT_STRUCTURED — cost recorded as $0
+2026-10-19 09:19:28,948 ERROR app.services.usage_tracking: Failed to log token usage (non-fatal)
+Traceback (most recent call last):
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlite3.OperationalError: database is locked
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-integration-v3-final\app\services\usage_tracking.py", line 236, in log_token_usage
+    db.commit()
+    ~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 2030, in commit
+    trans.commit(_to_root=True)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^
+  File "<string>", line 2, in commit
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1311, in commit
+    self._prepare_impl()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "<string>", line 2, in _prepare_impl
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\state_changes.py", line 137, in _go
+    ret_value = fn(self, *arg, **kw)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 1286, in _prepare_impl
+    self.session.flush()
+    ~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4331, in flush
+    self._flush(objects)
+    ~~~~~~~~~~~^^^^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4466, in _flush
+    with util.safe_reraise():
+         ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\util\langhelpers.py", line 121, in __exit__
+    raise exc_value.with_traceback(exc_tb)
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\session.py", line 4427, in _flush
+    flush_context.execute()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 466, in execute
+    rec.execute(self)
+    ~~~~~~~~~~~^^^^^^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\unitofwork.py", line 642, in execute
+    util.preloaded.orm_persistence.save_obj(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self.mapper,
+        ^^^^^^^^^^^^
+        uow.states_for_mapper_hierarchy(self.mapper, False, False),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        uow,
+        ^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 93, in save_obj
+    _emit_insert_statements(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        base_mapper,
+        ^^^^^^^^^^^^
+    ...<3 lines>...
+        insert,
+        ^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\orm\persistence.py", line 1233, in _emit_insert_statements
+    result = connection.execute(
+        statement,
+        params,
+        execution_options=execution_options,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1419, in execute
+    return meth(
+        self,
+        distilled_parameters,
+        execution_options or NO_OPTIONS,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\sql\elements.py", line 527, in _execute_on_connection
+    return connection._execute_clauseelement(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        self, distilled_params, execution_options
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1641, in _execute_clauseelement
+    ret = self._execute_context(
+        dialect,
+    ...<8 lines>...
+        cache_hit=cache_hit,
+    )
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1846, in _execute_context
+    return self._exec_single_context(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        dialect, context, statement, parameters
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1986, in _exec_single_context
+    self._handle_dbapi_exception(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        e, str_statement, effective_parameters, cursor, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 2363, in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\base.py", line 1967, in _exec_single_context
+    self.dialect.do_execute(
+    ~~~~~~~~~~~~~~~~~~~~~~~^
+        cursor, str_statement, effective_parameters, context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\sqlalchemy\engine\default.py", line 952, in do_execute
+    cursor.execute(statement, parameters)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) database is locked
+[SQL: INSERT INTO token_usage_log (user_id, feature, operation, api_type, model, prompt_tokens, completion_tokens, total_tokens, cached_tokens, cost_usd, is_estimate) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?) RETURNING id, created_at]
+[parameters: ('eval_S06', 'PERSONAL_BIO', 'ke_compose', 'CHAT_STRUCTURED', 'gpt-5.4-mini', 3754, 201, 3955, 2688, 0.0, 0)]
+(Background on this error at: https://sqlalche.me/e/20/e3q8)
+Model: gpt-5.4-mini (real calls)
+  moments:
+     {'days_ago': 70, 'source_kind': 'note', 'family': 'anger', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage', 'confidence': 97, 'hard_situation': False, 'text': 'You said yes to cover the weekend shift again, even though you had plans.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 70, 'source_kind': 'note', 'family': 'anger', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight,honesty', 'confidence': 96, 'hard_situation': False, 'text': 'You noticed you felt resentful all evening.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 63, 'source_kind': 'after_therapy', 'family': 'fear', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight,honesty', 'confidence': 98, 'hard_situation': False, 'text': 'You noticed fear of disappointing people starts in your chest before you answer.', 'attached': {'path': 1, 'skill': 1, 'tool': None, 'hard': None}}
+     {'days_ago': 63, 'source_kind': 'after_therapy', 'family': 'fear', 'kind': 'from_therapy', 'anchor': 'using_therapy', 'strengths': '', 'confidence': 99, 'hard_situation': False, 'text': 'Your therapist suggested pausing for a breath before you reply.', 'attached': {'path': 1, 'skill': 1, 'tool': None, 'hard': None}}
+     {'days_ago': 50, 'source_kind': 'note', 'family': 'pride', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage,resilience', 'confidence': 98, 'hard_situation': True, 'text': 'You paused, said you could not host the family dinner this time, and did not explain for ten minutes like usual.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 50, 'source_kind': 'note', 'family': 'worry', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 89, 'hard_situation': False, 'text': 'You felt shaky after your sister asked you to host the family dinner.', 'attached': {'path': 2, 'skill': 2, 'tool': None, 'hard': None}}
+     {'days_ago': 45, 'source_kind': 'todo_done', 'family': 'calm', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage,commitment', 'confidence': 98, 'hard_situation': False, 'text': 'You said no to one request this week.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 30, 'source_kind': 'reflect_talk', 'family': 'worry', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage,commitment', 'confidence': 96, 'hard_situation': True, 'text': 'You declined the extra shift, and offered to swap a different day instead.', 'attached': {'path': 2, 'skill': 2, 'tool': None, 'hard': None}}
+     {'days_ago': 16, 'source_kind': 'note', 'family': 'overwhelm', 'kind': 'done', 'anchor': 'steadying', 'strengths': '', 'confidence': 96, 'hard_situation': True, 'text': 'You froze and agreed to take on a new project in the meeting.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 16, 'source_kind': 'note', 'family': 'worry', 'kind': 'still_hard', 'anchor': 'connecting', 'strengths': 'honesty', 'confidence': 98, 'hard_situation': False, 'text': 'Saying no to your manager in front of others is still really hard.', 'attached': {'path': 2, 'skill': None, 'tool': None, 'hard': 1}}
+     {'days_ago': 5, 'source_kind': 'note', 'family': 'worry', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage,commitment', 'confidence': 98, 'hard_situation': True, 'text': 'You told your colleague you could not stay late, with a short answer and no long apology.', 'attached': {'path': 2, 'skill': 3, 'tool': None, 'hard': None}}
+     {'days_ago': 5, 'source_kind': 'note', 'family': 'worry', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 97, 'hard_situation': False, 'text': 'You noticed the worry passed faster than before.', 'attached': {'path': 2, 'skill': 2, 'tool': None, 'hard': None}}
+  skills_full:
+     {'id': 1, 'path_id': 1, 'anchor': 'steadying', 'icon': 'wind', 'name': 'Pausing for a breath', 'in_your_words': 'You notice fear in your chest before you answer, and you give yourself a brief pause first. It can help you slow the moment down before you speak.'}
+     {'id': 2, 'path_id': 2, 'anchor': 'connecting', 'icon': 'hand', 'name': 'Saying no clearly', 'in_your_words': 'You say no to requests, even when you feel shaky or worry about disappointing people. You can also offer another day instead of just saying yes.'}
+     {'id': 3, 'path_id': 2, 'anchor': 'connecting', 'icon': 'brief', 'name': 'Short answer without apology', 'in_your_words': 'You keep your reply short when someone asks for more than you can give. You can say no without a long apology, like with your colleague, and leave it there.'}
+  ideas_full:
+     {'id': 1, 'path_id': 2, 'skill_id': 2, 'text': 'Maybe bring up the meeting moment with your therapist, so you can plan a small reply that fits your words.', 'why': 'You froze and agreed to a new project in the meeting, and saying no in front of others is still hard.', 'reason': 'recurring', 'cta': 'agenda', 'state': 'active', 'created_at': '2026-10-19 07:17:05'}
+     {'id': 2, 'path_id': 2, 'skill_id': 3, 'text': 'If it fits, bring this short-answer style to the harder manager situation.', 'why': 'You used a short answer with your colleague, and the same kind of reply may help in front of others.', 'reason': 'transfer', 'cta': 'agenda', 'state': 'active', 'created_at': '2026-10-19 07:17:22'}
+  state: {'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 4, "sessions": 1, "talks": 1}'}
+  usage_split: {'ke_compose|gpt-5.4-mini': {'calls': 1, 'prompt': 3588, 'completion': 465, 'cached': 2688}, 'ke_extract|gpt-5.4-mini': {'calls': 5, 'prompt': 7527, 'completion': 505, 'cached': 6400}}
+====================================================================================================
+S01  saying no at work and at home  (English)
+  expect: families ['fear', 'guilt'], crisis entries 0
+  -- 2026-10-12: level 1 (1 steps, the_newcomer), sources {'notes': 3, 'talks': 1, 'sessions': 1}, support_row False
+     strengths {'courage': 4, 'insight': 3, 'honesty': 3, 'resilience': 1, 'kindness': 0, 'commitment': 2}
+     PATH [fear] Pausing with my fear  (about fear before you answer)
+        skill: Pausing for a breath [steadying/wind] discovered x2
+     PATH [worry] Saying no with worry  (about family asks and work requests)
+        skill: Saying no clearly [connecting/hand] practicing x2
+        still hard: Saying no to your manager in front of others (1)
+     idea: [recurring/agenda] Maybe bring up the meeting moment with your therapist, so you can plan a small reply that fits your words. | why: You froze and agreed to a new project in the meeting, and saying no in front of others is still hard.
+  -- 2026-10-19: level 1 (2 steps, the_newcomer), sources {'notes': 4, 'talks': 1, 'sessions': 1}, support_row False
+     strengths {'courage': 5, 'insight': 4, 'honesty': 3, 'resilience': 1, 'kindness': 0, 'commitment': 3}
+     PATH [fear] Pausing with my fear  (about fear before you answer)
+        skill: Pausing for a breath [steadying/wind] discovered x2
+     PATH [worry] Saying no with worry  (about family asks and work requests)
+        skill: Saying no clearly [connecting/hand] practicing x3
+        skill: Short answer without apology [connecting/brief] practicing x1
+        still hard: Saying no to your manager in front of others (1)
+     idea: [transfer/agenda] If it fits, bring this short-answer style to the harder manager situation. | why: You used a short answer with your colleague, and the same kind of reply may help in front of others.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  usage: {'ke_compose': {'calls': 1, 'tokens': 4053}, 'ke_extract': {'calls': 5, 'tokens': 8032}}
+  moments:
+     {'days_ago': 60, 'source_kind': 'note', 'family': 'worry', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 98, 'hard_situation': False, 'text': 'You noticed the dread about Monday starts around 6 pm, with a tight stomach and racing thoughts about emails.', 'attached': {'path': 3, 'skill': 6, 'tool': None, 'hard': None}}
+     {'days_ago': 53, 'source_kind': 'voice_note', 'family': 'worry', 'kind': 'used_method', 'anchor': 'steadying', 'strengths': 'commitment,resilience', 'confidence': 98, 'hard_situation': False, 'text': 'You wrote your worries on paper, and it helped you fall asleep a bit sooner.', 'attached': {'path': 3, 'skill': 4, 'tool': 1, 'hard': None}}
+     {'days_ago': 53, 'source_kind': 'voice_note', 'family': 'worry', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 97, 'hard_situation': False, 'text': 'You noticed you were lying awake thinking through every task of the week.', 'attached': {'path': 3, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 49, 'source_kind': 'after_therapy', 'family': 'worry', 'kind': 'from_therapy', 'anchor': 'rethinking', 'strengths': 'insight', 'confidence': 98, 'hard_situation': False, 'text': 'You took away that a thought about Monday was not a fact about Monday.', 'attached': {'path': 3, 'skill': 5, 'tool': None, 'hard': None}}
+     {'days_ago': 49, 'source_kind': 'after_therapy', 'family': 'worry', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 96, 'hard_situation': False, 'text': 'You talked about worry as a way of trying to control the week.', 'attached': {'path': 3, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 39, 'source_kind': 'note', 'family': 'calm', 'kind': 'used_method', 'anchor': 'using_therapy', 'strengths': 'commitment', 'confidence': 98, 'hard_situation': False, 'text': "You wrote down Monday's three hardest tasks on Sunday and closed the notebook.", 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 39, 'source_kind': 'note', 'family': 'calm', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 94, 'hard_situation': False, 'text': 'You noticed the evening felt calmer than usual.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 25, 'source_kind': 'note', 'family': 'worry', 'kind': 'used_method', 'anchor': 'steadying', 'strengths': '', 'confidence': 97, 'hard_situation': False, 'text': 'You wrote the worry list again before bed.', 'attached': {'path': 3, 'skill': 4, 'tool': 1, 'hard': None}}
+     {'days_ago': 25, 'source_kind': 'note', 'family': 'worry', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 98, 'hard_situation': False, 'text': 'You noticed most of the worries were about what your boss might think.', 'attached': {'path': 3, 'skill': 6, 'tool': None, 'hard': None}}
+     {'days_ago': 18, 'source_kind': 'realization', 'family': 'worry', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 98, 'hard_situation': False, 'text': 'You noticed you worry most when you imagine being judged, not when the work itself is hard.', 'attached': {'path': 3, 'skill': 5, 'tool': None, 'hard': None}}
+     {'days_ago': 4, 'source_kind': 'note', 'family': 'overwhelm', 'kind': 'used_method', 'anchor': 'steadying', 'strengths': 'commitment', 'confidence': 95, 'hard_situation': True, 'text': 'You went for a walk, wrote the list, and did not check email on a hard Sunday.', 'attached': {'path': None, 'skill': None, 'tool': 2, 'hard': None}}
+  skills_full:
+     {'id': 4, 'path_id': 3, 'anchor': 'rethinking', 'icon': 'pen', 'name': 'Writing worries down', 'in_your_words': 'You write the worry list on paper, especially before bed or on Sunday night. It helps you settle enough to sleep a bit sooner.'}
+     {'id': 5, 'path_id': 3, 'anchor': 'rethinking', 'icon': 'thought', 'name': 'Separating thoughts from facts', 'in_your_words': 'You notice that a thought about Monday is not a fact about Monday. That helps when your mind starts running through every task or imagining being judged.'}
+     {'id': 6, 'path_id': 3, 'anchor': 'noticing', 'icon': 'eye', 'name': 'Noticing the worry trigger', 'in_your_words': 'You notice when the dread starts, like around 6 pm, and you can feel it in your stomach and in racing thoughts about emails.'}
+  ideas_full:
+     {'id': 3, 'path_id': 3, 'skill_id': 6, 'text': 'If it fits, notice when the worry starts in the evening and name what set it off.', 'why': 'You noticed the dread about Monday starts around 6 pm, with a tight stomach and racing thoughts.', 'reason': 'recurring', 'cta': 'orca', 'state': 'active', 'created_at': '2026-10-19 07:17:37'}
+  state: {'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 5, "sessions": 1}'}
+  usage_split: {'ke_compose|gpt-5.4-mini': {'calls': 1, 'prompt': 3591, 'completion': 523, 'cached': 2688}, 'ke_extract|gpt-5.4-mini': {'calls': 5, 'prompt': 7481, 'completion': 553, 'cached': 6400}}
+====================================================================================================
+S02  Sunday dread and worry about the week  (English)
+  expect: families ['worry'], crisis entries 0
+  -- 2026-10-12: level 1 (1 steps, the_newcomer), sources {'notes': 4, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 0, 'insight': 7, 'honesty': 0, 'resilience': 1, 'kindness': 0, 'commitment': 2}
+     PATH [worry] Working with my worry  (about Monday nights, being judged, and the week ahead)
+        skill: Writing worries down [rethinking/pen] practicing x2
+        skill: Separating thoughts from facts [rethinking/thought] discovered x2
+        skill: Noticing the worry trigger [noticing/eye] discovered x2
+     tool: Writing worries down [self] used 2
+     idea: [recurring/orca] If it fits, notice when the worry starts in the evening and name what set it off. | why: You noticed the dread about Monday starts around 6 pm, with a tight stomach and racing thoughts.
+  -- 2026-10-19: level 1 (1 steps, the_newcomer), sources {'notes': 5, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 0, 'insight': 7, 'honesty': 0, 'resilience': 1, 'kindness': 0, 'commitment': 3}
+     PATH [worry] Working with my worry  (about Monday nights, being judged, and the week ahead)
+        skill: Writing worries down [rethinking/pen] practicing x2
+        skill: Separating thoughts from facts [rethinking/thought] discovered x2
+        skill: Noticing the worry trigger [noticing/eye] discovered x2
+     tool: Going for a walk [self] used 1
+     tool: Writing worries down [self] used 2
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  usage: {'ke_compose': {'calls': 1, 'tokens': 4114}, 'ke_extract': {'calls': 5, 'tokens': 8034}}
+  moments:
+     {'days_ago': 55, 'source_kind': 'reflect_talk', 'family': 'anger', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 95, 'hard_situation': False, 'text': 'You noticed you shouted, then felt regret and went silent for a day.', 'attached': {'path': 5, 'skill': 8, 'tool': None, 'hard': None}}
+     {'days_ago': 48, 'source_kind': 'after_therapy', 'family': 'anger', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 98, 'hard_situation': False, 'text': 'You noticed your anger came up when you felt unimportant.', 'attached': {'path': 5, 'skill': 7, 'tool': None, 'hard': None}}
+     {'days_ago': 48, 'source_kind': 'after_therapy', 'family': 'anger', 'kind': 'from_therapy', 'anchor': 'using_therapy', 'strengths': 'insight', 'confidence': 97, 'hard_situation': False, 'text': 'Your therapist asked you to name the feeling out loud before reacting.', 'attached': {'path': 5, 'skill': 7, 'tool': None, 'hard': None}}
+     {'days_ago': 40, 'source_kind': 'note', 'family': 'anger', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage,honesty', 'confidence': 96, 'hard_situation': True, 'text': 'You said calmly that you felt unimportant when plans changed last minute.', 'attached': {'path': 5, 'skill': 8, 'tool': None, 'hard': None}}
+     {'days_ago': 40, 'source_kind': 'note', 'family': 'calm', 'kind': 'noticed', 'anchor': 'rethinking', 'strengths': 'insight', 'confidence': 90, 'hard_situation': False, 'text': 'You noticed the talk went better than shouting ever did.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 26, 'source_kind': 'note', 'family': 'anger', 'kind': 'used_method', 'anchor': 'steadying', 'strengths': 'courage,honesty', 'confidence': 98, 'hard_situation': True, 'text': 'You took ten minutes in another room, then came back and said what made you angry without blaming.', 'attached': {'path': 5, 'skill': 8, 'tool': None, 'hard': None}}
+     {'days_ago': 26, 'source_kind': 'note', 'family': 'closeness', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage,honesty', 'confidence': 90, 'hard_situation': True, 'text': 'You came back and said what made you angry without blaming, and your partner listened.', 'attached': {'path': 4, 'skill': 11, 'tool': None, 'hard': None}}
+     {'days_ago': 20, 'source_kind': 'session', 'family': 'closeness', 'kind': 'used_method', 'anchor': 'connecting', 'strengths': 'courage,commitment', 'confidence': 96, 'hard_situation': False, 'text': 'You practised saying what you need from the relationship.', 'attached': {'path': 4, 'skill': 9, 'tool': None, 'hard': None}}
+     {'days_ago': 20, 'source_kind': 'session', 'family': 'closeness', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 97, 'hard_situation': False, 'text': 'You noticed you often expected your partner to guess what you need.', 'attached': {'path': 4, 'skill': 10, 'tool': None, 'hard': None}}
+     {'days_ago': 8, 'source_kind': 'note', 'family': 'closeness', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'honesty,courage', 'confidence': 98, 'hard_situation': True, 'text': 'You apologised for snapping on Friday and explained what was going on for you. You felt closer afterwards.', 'attached': {'path': 4, 'skill': 9, 'tool': None, 'hard': None}}
+  skills_full:
+     {'id': 7, 'path_id': 5, 'anchor': 'noticing', 'icon': 'tag', 'name': 'Naming the feeling out loud', 'in_your_words': 'You name the feeling before you react, like your therapist asked. You notice when anger shows up because you feel unimportant.'}
+     {'id': 8, 'path_id': 5, 'anchor': 'connecting', 'icon': 'chat', 'name': 'Saying it calmly', 'in_your_words': 'You say what is wrong without shouting or blaming. You can say you felt unimportant when plans changed last minute, or come back after a break and explain it clearly.'}
+     {'id': 9, 'path_id': 4, 'anchor': 'connecting', 'icon': 'chat', 'name': 'Saying what I need', 'in_your_words': 'You practise saying what you need in the relationship instead of waiting for your partner to guess. You also explain what was going on for you after snapping, and that helped you feel closer.'}
+     {'id': 10, 'path_id': 4, 'anchor': 'noticing', 'icon': 'eye', 'name': 'Noticing when you expect guessing', 'in_your_words': 'You notice when you expect your partner to read your mind. That helps you catch the pattern before it turns into hurt or silence.'}
+     {'id': 11, 'path_id': 4, 'anchor': 'connecting', 'icon': 'chat', 'name': 'Listening after a hard talk', 'in_your_words': 'You can come back to the talk after feeling heated, say what made you angry without blaming, and let your partner listen. You also notice that saying what you need can help you feel closer afterwards.'}
+  ideas_full:
+     {'id': 4, 'path_id': 4, 'skill_id': 9, 'text': 'If it fits, you could write down one need before a talk with your partner.', 'why': 'You noticed you often expected your partner to guess what you need.', 'reason': 'transfer', 'cta': 'todo', 'state': 'active', 'created_at': '2026-10-19 07:18:09'}
+  state: {'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 3, "sessions": 2, "talks": 1}'}
+  usage_split: {'ke_compose|gpt-5.4-mini': {'calls': 1, 'prompt': 3599, 'completion': 625, 'cached': 2688}, 'ke_extract|gpt-5.4-mini': {'calls': 5, 'prompt': 7492, 'completion': 569, 'cached': 6400}}
+====================================================================================================
+S03  anger at partner and repair  (English)
+  expect: families ['anger', 'closeness'], crisis entries 0
+  -- 2026-10-12: level 1 (2 steps, the_newcomer), sources {'notes': 3, 'talks': 1, 'sessions': 2}, support_row False
+     strengths {'courage': 5, 'insight': 5, 'honesty': 4, 'resilience': 0, 'kindness': 0, 'commitment': 1}
+     PATH [closeness] Making room for closeness  (about saying what you need with your partner)
+        skill: Saying what I need [connecting/chat] practicing x2
+        skill: Noticing when you expect guessing [noticing/eye] discovered x1
+     PATH [anger] Making room for my anger  (about feeling unimportant and speaking up without blaming)
+        skill: Saying it calmly [connecting/chat] practicing x2
+        skill: Naming the feeling out loud [noticing/tag] discovered x2
+     idea: [transfer/todo] If it fits, you could write down one need before a talk with your partner. | why: You noticed you often expected your partner to guess what you need.
+  -- 2026-10-19: level 1 (3 steps, the_newcomer), sources {'notes': 3, 'talks': 1, 'sessions': 2}, support_row False
+     strengths {'courage': 5, 'insight': 5, 'honesty': 4, 'resilience': 0, 'kindness': 0, 'commitment': 1}
+     PATH [closeness] Making room for closeness  (about saying what you need with your partner)
+        skill: Saying what I need [connecting/chat] practicing x2
+        skill: Listening after a hard talk [connecting/chat] practicing x1
+        skill: Noticing when you expect guessing [noticing/eye] discovered x1
+     PATH [anger] Making room for my anger  (about feeling unimportant and speaking up without blaming)
+        skill: Saying it calmly [connecting/chat] practicing x3
+        skill: Naming the feeling out loud [noticing/tag] discovered x2
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  usage: {'ke_compose': {'calls': 1, 'tokens': 4224}, 'ke_extract': {'calls': 5, 'tokens': 8061}}
+  moments:
+     {'days_ago': 75, 'source_kind': 'note', 'family': 'loneliness', 'kind': 'still_hard', 'anchor': None, 'strengths': '', 'confidence': 97, 'hard_situation': False, 'text': 'You still ate dinner alone most nights in the new city.', 'attached': {'path': 6, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 75, 'source_kind': 'note', 'family': 'loneliness', 'kind': 'still_hard', 'anchor': None, 'strengths': '', 'confidence': 98, 'hard_situation': False, 'text': 'You felt invisible at work.', 'attached': {'path': 6, 'skill': None, 'tool': None, 'hard': 3}}
+     {'days_ago': 60, 'source_kind': 'reflect_talk', 'family': 'loneliness', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight,honesty', 'confidence': 97, 'hard_situation': False, 'text': 'You noticed you wait for others to invite you and do not ask first.', 'attached': {'path': 6, 'skill': 12, 'tool': None, 'hard': None}}
+     {'days_ago': 45, 'source_kind': 'note', 'family': 'closeness', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage', 'confidence': 94, 'hard_situation': False, 'text': 'You asked a coworker to grab lunch, and it felt less awkward after you laughed a lot.', 'attached': {'path': 7, 'skill': 13, 'tool': None, 'hard': None}}
+     {'days_ago': 45, 'source_kind': 'note', 'family': 'loneliness', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 88, 'hard_situation': False, 'text': 'You felt less alone the rest of the day after lunch.', 'attached': {'path': 6, 'skill': 12, 'tool': None, 'hard': None}}
+     {'days_ago': 31, 'source_kind': 'note', 'family': 'joy', 'kind': 'done', 'anchor': 'values_action', 'strengths': 'courage', 'confidence': 97, 'hard_situation': False, 'text': 'You joined a climbing group and went alone.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 31, 'source_kind': 'note', 'family': 'closeness', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage', 'confidence': 96, 'hard_situation': False, 'text': 'You talked to two people there.', 'attached': {'path': 7, 'skill': 14, 'tool': None, 'hard': None}}
+     {'days_ago': 17, 'source_kind': 'note', 'family': 'loneliness', 'kind': 'still_hard', 'anchor': None, 'strengths': '', 'confidence': 95, 'hard_situation': False, 'text': 'The weekend felt empty again, and you did not reach out to anyone.', 'attached': {'path': 6, 'skill': None, 'tool': None, 'hard': 2}}
+     {'days_ago': 6, 'source_kind': 'note', 'family': 'closeness', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage,commitment', 'confidence': 96, 'hard_situation': False, 'text': 'You texted a climbing friend to go for coffee, and they said yes.', 'attached': {'path': 7, 'skill': 13, 'tool': None, 'hard': None}}
+     {'days_ago': 6, 'source_kind': 'note', 'family': 'pride', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 86, 'hard_situation': False, 'text': 'You noticed that it was small, but it mattered.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+  skills_full:
+     {'id': 12, 'path_id': 6, 'anchor': 'connecting', 'icon': 'lifebuoy', 'name': 'Reaching out first', 'in_your_words': 'You notice you often wait for others to invite you, instead of asking first. You can reach out to someone, like asking a coworker to grab lunch, and it can feel less awkward after you connect.'}
+     {'id': 13, 'path_id': 7, 'anchor': 'connecting', 'icon': 'lifebuoy', 'name': 'Asking to hang out', 'in_your_words': 'You reach out first, like asking a coworker for lunch or texting a climbing friend for coffee. You notice it can feel awkward at first, and then easier once you are talking.'}
+     {'id': 14, 'path_id': 7, 'anchor': 'values_action', 'icon': 'stairs', 'name': 'Showing up on your own', 'in_your_words': 'You go to a group on your own and still start talking to people there. You can take part even when you arrive alone.'}
+  ideas_full:
+     {'id': 5, 'path_id': 6, 'skill_id': 12, 'text': 'If it fits, try asking one person to lunch or coffee.', 'why': 'You asked a coworker to grab lunch, and it felt less awkward after you laughed a lot.', 'reason': 'transfer', 'cta': 'todo', 'state': 'active', 'created_at': '2026-10-19 07:18:31'}
+  state: {'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 5, "talks": 1}'}
+  usage_split: {'ke_compose|gpt-5.4-mini': {'calls': 1, 'prompt': 3505, 'completion': 444, 'cached': 2688}, 'ke_extract|gpt-5.4-mini': {'calls': 4, 'prompt': 5980, 'completion': 368, 'cached': 5120}}
+====================================================================================================
+S04  loneliness after moving cities  (English)
+  expect: families ['loneliness'], crisis entries 0
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 4, 'talks': 1, 'sessions': 0}, support_row False
+     strengths {'courage': 3, 'insight': 2, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+     PATH [loneliness] Making room for loneliness  (about feeling alone in the new city and at work)
+        skill: Reaching out first [connecting/lifebuoy] discovered x2
+        still hard: Weekends that feel empty (1)
+        still hard: Feeling invisible at work (1)
+     forming: [{'emotion_family': 'closeness', 'entries': 2}]
+     idea: [transfer/todo] If it fits, try asking one person to lunch or coffee. | why: You asked a coworker to grab lunch, and it felt less awkward after you laughed a lot.
+  -- 2026-10-19: level 1 (2 steps, the_newcomer), sources {'notes': 5, 'talks': 1, 'sessions': 0}, support_row False
+     strengths {'courage': 4, 'insight': 3, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 1}
+     PATH [loneliness] Making room for loneliness  (about feeling alone in the new city and at work)
+        skill: Reaching out first [connecting/lifebuoy] discovered x2
+        still hard: Weekends that feel empty (1)
+        still hard: Feeling invisible at work (1)
+     PATH [closeness] Making room for closeness  (about reaching out and feeling more connected)
+        skill: Asking to hang out [connecting/lifebuoy] practicing x2
+        skill: Showing up on your own [values_action/stairs] practicing x1
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': ['closeness']}
+  usage: {'ke_compose': {'calls': 1, 'tokens': 3949}, 'ke_extract': {'calls': 4, 'tokens': 6348}}
+  moments:
+     {'days_ago': 30, 'source_kind': 'note', 'family': 'overwhelm', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage,honesty', 'confidence': 98, 'hard_situation': True, 'text': 'You asked a friend for help with the assignment instead of hiding.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 20, 'source_kind': 'note', 'family': 'overwhelm', 'kind': 'done', 'anchor': 'values_action', 'strengths': 'resilience,commitment', 'confidence': 98, 'hard_situation': False, 'text': 'You split the work into small parts and finished one.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 7, 'source_kind': 'after_therapy', 'family': 'worry', 'kind': 'from_therapy', 'anchor': 'using_therapy', 'strengths': 'commitment', 'confidence': 98, 'hard_situation': False, 'text': 'You made a safety plan with your therapist and agreed to call a friend when it gets dark again.', 'attached': {'path': 8, 'skill': 15, 'tool': None, 'hard': None}}
+  skills_full:
+     {'id': 15, 'path_id': 8, 'anchor': 'using_therapy', 'icon': 'notebook', 'name': 'Using the safety plan', 'in_your_words': 'You made a safety plan with your therapist and agreed to call a friend when it gets dark again. You can carry that plan into the week when worry gets louder at night.'}
+  ideas_full:
+     {'id': 6, 'path_id': 8, 'skill_id': 15, 'text': 'Maybe bring this back to the session, so you can keep it handy for dark evenings.', 'why': 'You already made a safety plan with your therapist and agreed to call a friend when it gets dark again.', 'reason': 'consolidate', 'cta': 'agenda', 'state': 'active', 'created_at': '2026-10-19 07:19:05'}
+  state: {'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 2, "sessions": 1}'}
+  usage_split: {'ke_compose|gpt-5.4-mini': {'calls': 1, 'prompt': 3339, 'completion': 300, 'cached': 2688}, 'ke_extract|gpt-5.4-mini': {'calls': 2, 'prompt': 2991, 'completion': 144, 'cached': 2560}}
+====================================================================================================
+S05  crisis entry among ordinary ones  (English)
+  expect: families ['overwhelm'], crisis entries 1, note: The 10-day entry must produce no moments; no ideas after it.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 1, 'insight': 0, 'honesty': 1, 'resilience': 1, 'kindness': 0, 'commitment': 2}
+     PATH [worry] Working with worry at night  (about night-time worry and staying safe)
+        skill: Using the safety plan [using_therapy/notebook] discovered x1
+     forming: [{'emotion_family': 'overwhelm', 'entries': 2}]
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 1, 'insight': 0, 'honesty': 1, 'resilience': 1, 'kindness': 0, 'commitment': 2}
+     PATH [worry] Working with worry at night  (about night-time worry and staying safe)
+        skill: Using the safety plan [using_therapy/notebook] discovered x1
+     forming: [{'emotion_family': 'overwhelm', 'entries': 2}]
+     idea: [consolidate/agenda] Maybe bring this back to the session, so you can keep it handy for dark evenings. | why: You already made a safety plan with your therapist and agreed to call a friend when it gets dark again.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  usage: {'ke_compose': {'calls': 1, 'tokens': 3639}, 'ke_extract': {'calls': 2, 'tokens': 3135}}
+  moments:
+     {'days_ago': 80, 'source_kind': 'note', 'family': 'guilt', 'kind': 'still_hard', 'anchor': None, 'strengths': '', 'confidence': 96, 'hard_situation': False, 'text': 'Skipping visiting your mother on Sunday was still hard for you.', 'attached': {'path': 10, 'skill': None, 'tool': None, 'hard': 4}}
+     {'days_ago': 70, 'source_kind': 'after_therapy', 'family': 'guilt', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 99, 'hard_situation': False, 'text': 'You noticed guilt tells you rest has to be earned.', 'attached': {'path': 10, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 70, 'source_kind': 'after_therapy', 'family': 'guilt', 'kind': 'from_therapy', 'anchor': 'using_therapy', 'strengths': '', 'confidence': 98, 'hard_situation': False, 'text': 'Your therapist suggested speaking to yourself as you would to a friend.', 'attached': {'path': 10, 'skill': 16, 'tool': None, 'hard': None}}
+     {'days_ago': 56, 'source_kind': 'note', 'family': 'guilt', 'kind': 'done', 'anchor': 'self_kindness', 'strengths': 'kindness,commitment', 'confidence': 97, 'hard_situation': False, 'text': 'You rested on Saturday without doing anything for anyone.', 'attached': {'path': 10, 'skill': 17, 'tool': None, 'hard': None}}
+     {'days_ago': 56, 'source_kind': 'note', 'family': 'guilt', 'kind': 'used_method', 'anchor': 'self_kindness', 'strengths': 'kindness', 'confidence': 96, 'hard_situation': False, 'text': 'You told yourself, you are allowed to be tired.', 'attached': {'path': 10, 'skill': 16, 'tool': 3, 'hard': None}}
+     {'days_ago': 42, 'source_kind': 'note', 'family': 'overwhelm', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'honesty,courage', 'confidence': 98, 'hard_situation': True, 'text': 'You called your mother instead of visiting and told her honestly you needed a quiet weekend.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 42, 'source_kind': 'note', 'family': 'closeness', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': '', 'confidence': 86, 'hard_situation': False, 'text': 'You saw that your mother understood.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 28, 'source_kind': 'note', 'family': 'guilt', 'kind': 'done', 'anchor': 'self_kindness', 'strengths': 'resilience', 'confidence': 95, 'hard_situation': False, 'text': 'You took an evening off again.', 'attached': {'path': 10, 'skill': 16, 'tool': None, 'hard': None}}
+     {'days_ago': 28, 'source_kind': 'note', 'family': 'calm', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 96, 'hard_situation': False, 'text': 'You noticed the guilt faded after an hour.', 'attached': {'path': 9, 'skill': 18, 'tool': None, 'hard': None}}
+     {'days_ago': 12, 'source_kind': 'todo_done', 'family': 'calm', 'kind': 'from_therapy', 'anchor': 'using_therapy', 'strengths': 'commitment', 'confidence': 98, 'hard_situation': False, 'text': "You finished your therapist's homework, one evening with nothing to earn.", 'attached': {'path': 9, 'skill': 19, 'tool': None, 'hard': None}}
+  skills_full:
+     {'id': 16, 'path_id': 10, 'anchor': 'self_kindness', 'icon': 'heart', 'name': 'Speaking to yourself kindly', 'in_your_words': 'You talk to yourself as you would to a friend when guilt says rest has to be earned. You remind yourself, "you are allowed to be tired," and let yourself take an evening off.'}
+     {'id': 17, 'path_id': 10, 'anchor': 'values_action', 'icon': 'stairs', 'name': 'Resting without earning it', 'in_your_words': 'You make space for rest without doing anything for anyone. You took a Saturday off, and you finished the homework of having one evening with nothing to earn.'}
+     {'id': 18, 'path_id': 9, 'anchor': 'noticing', 'icon': 'eye', 'name': 'Noticing when guilt fades', 'in_your_words': 'You notice that the guilt can fade after a while. That helps you see the feeling change instead of assuming it will stay the same.'}
+     {'id': 19, 'path_id': 9, 'anchor': 'steadying', 'icon': 'hourglass', 'name': 'Waiting for guilt to loosen', 'in_your_words': 'You can notice guilt easing instead of pushing it away. You saw it fade after an hour, and you finished the homework with one evening of nothing to earn.'}
+  ideas_full:
+     {'id': 7, 'path_id': 10, 'skill_id': 17, 'text': 'Maybe try a small version of rest before you feel you have earned it.', 'why': 'You rested on Saturday without doing anything for anyone, and you finished one evening with nothing to earn.', 'reason': 'consolidate', 'cta': 'todo', 'state': 'active', 'created_at': '2026-10-19 07:19:21'}
+     {'id': 8, 'path_id': 9, 'skill_id': 18, 'text': 'If it helps, notice what you were doing when the guilt started to ease.', 'why': 'You noticed the guilt faded after an hour.', 'reason': 'transfer', 'cta': 'orca', 'state': 'active', 'created_at': '2026-10-19 07:19:21'}
+     {'id': 9, 'path_id': 9, 'skill_id': 19, 'text': 'Maybe notice what helps the guilt loosen, then bring that to the session.', 'why': 'You saw the guilt fade after an hour, and you finished the homework about one evening with nothing to earn.', 'reason': 'consolidate', 'cta': 'agenda', 'state': 'active', 'created_at': '2026-10-19 07:19:29'}
+  state: {'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 4, "sessions": 1}'}
+  usage_split: {'ke_compose|gpt-5.4-mini': {'calls': 1, 'prompt': 3563, 'completion': 624, 'cached': 2688}, 'ke_extract|gpt-5.4-mini': {'calls': 5, 'prompt': 7479, 'completion': 531, 'cached': 6400}}
+====================================================================================================
+S06  guilt about elderly parents  (English)
+  expect: families ['guilt'], crisis entries 0
+  -- 2026-10-12: level 1 (2 steps, the_newcomer), sources {'notes': 4, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 1, 'insight': 2, 'honesty': 1, 'resilience': 1, 'kindness': 2, 'commitment': 2}
+     PATH [calm] Finding calm after guilt eases  (about noticing when guilt fades and what helps)
+        skill: Noticing when guilt fades [noticing/eye] discovered x1
+     PATH [guilt] Making room for guilt and rest  (about rest, saying no, and talking back to guilt)
+        skill: Speaking to yourself kindly [self_kindness/heart] practicing x3
+        skill: Resting without earning it [values_action/stairs] practicing x1
+        still hard: Skipping visiting your mother on Sunday (1)
+     tool: You are allowed to be tired [therapy] used 1
+     idea: [consolidate/todo] Maybe try a small version of rest before you feel you have earned it. | why: You rested on Saturday without doing anything for anyone, and you finished one evening with nothing to earn.
+     idea: [transfer/orca] If it helps, notice what you were doing when the guilt started to ease. | why: You noticed the guilt faded after an hour.
+  -- 2026-10-19: level 1 (2 steps, the_newcomer), sources {'notes': 4, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 1, 'insight': 2, 'honesty': 1, 'resilience': 1, 'kindness': 2, 'commitment': 2}
+     PATH [calm] Finding calm after guilt eases  (about noticing when guilt fades and what helps)
+        skill: Waiting for guilt to loosen [steadying/hourglass] discovered x1
+        skill: Noticing when guilt fades [noticing/eye] discovered x1
+     PATH [guilt] Making room for guilt and rest  (about rest, saying no, and talking back to guilt)
+        skill: Speaking to yourself kindly [self_kindness/heart] practicing x3
+        skill: Resting without earning it [values_action/stairs] practicing x1
+        still hard: Skipping visiting your mother on Sunday (1)
+     tool: You are allowed to be tired [therapy] used 1
+     idea: [consolidate/agenda] Maybe notice what helps the guilt loosen, then bring that to the session. | why: You saw the guilt fade after an hour, and you finished the homework about one evening with nothing to earn.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  usage: {'ke_compose': {'calls': 1, 'tokens': 4187}, 'ke_extract': {'calls': 5, 'tokens': 8010}}
+====================================================================================================
+6 stories, 0 problems (dashes or banned words in shown text). DB: C:\Users\mikol\AppData\Local\Temp\ke_quality_eval_1792394196.db

@@ -1,0 +1,77 @@
+{
+  "_opis": "KROK 0 partia 3 bloga MindSync (2026-09-21). Lista 6 KANDYDATOW przed briefami, numeracja = priorytet biznesowy (01 najmocniejszy). Partia jest MALA: do realizacji wchodza 3 tematy, drip 2026-09-21 (publikacja reczna, kolejka stoi od 2026-09-18), 2026-09-22, 2026-09-23. Nadmiarowe 3 kandydatury sa po to, zeby bylo czym podmienic temat, ktory polegnie na bramce pokrycia albo na kontroli kanibalizacji. Klastry wg blog/kalendarz-tresci.md: 2 (Between sessions) x2, 6 (Data & measurement) x1, 3 (Understanding your patterns) x2, 5 (Modern life) x1. Klastry 1 i 4 pominiete swiadomie: wyczerpane przez partie 1 i 2 w glownych intencjach. Klaster 7 (For therapists) ZAMROZONY. GSC dziala, ale blog ma zerowy ruch (baseline 2026-09-15: 5 z 15 wpisow zaindeksowanych, 0 klikniec), wiec nie ma wlasnych danych o popycie: tematy z researchu SERP, frazy i pytania FAQ do przepisania z realnych zapytan ludzi. Keywordy EN dobrane pod dopasowanie do blog/app-features.json (substring w id+name+short+keywords). Uruchomienie bramki: python scripts/blog-coverage-preflight.py --temat blog/queue/_preflight-partia3.json",
+
+  "_zasady_partii": "Nie obiecujemy funkcji o statusie planned: streaks (brak UI) i therapist-sharing (portal ukryty, MSV3.4 CS-11). Dotyczy to zwlaszcza tematu 05: zero slownictwa 'streak', 'don't break the chain', 'badge', zero obietnicy nagrody za wytrwalosc. Landing /pre-order/wearable-ai-journal NIE jest partnerem zadnego wpisu (funkcji wearables nie ma w kodzie). UWAGA, KATALOG JEST NIEAKTUALNY: w apce od 2026-09-02 dziala Habit Tracker (osobna funkcja, nie to samo co homework), a 2026-09-18 doszedl ekran wyboru trybu w Reflect. Katalog ich nie zna, wiec bramka zwroci dla nich BRAK. Zaden temat tej partii nie ma Habit Trackera jako jedynego celu CTA, karty opieraja sie wylacznie na funkcjach obecnych w katalogu ze statusem live. YMYL: zero porad medycznych, zero diagnozowania (nie rozstrzygamy 'burnout czy depresja', nie interpretujemy objawow), zero tematow kryzysowych, zero straszenia, zadnych obietnic zdrowotnych. Temat 04 dotyka fizjologii (cortisol awakening response): dane referujemy z zastrzezeniem jakosci dowodu, tak jak zrobiono to z context-dependent memory w /journal/how-to-prepare-for-a-therapy-session.",
+
+  "_granice_kanibalizacji": "01 trzyma rodzine 'feel worse after therapy / therapy hangover / drained after session' i NIE przejmuje frazy 'is therapy working' od opublikowanego /journal/how-to-know-if-therapy-is-working (tam: sygnaly postepu; tu: jeden zly dzien po sesji i co z nim zrobic), ani 'what to do after the session' od /journal/how-to-remember-what-you-talk-about-in-therapy (tam: pamiec i zapis tresci; tu: stan po sesji). 02 trzyma 'how long does therapy take / how many sessions' i NIE dubluje metodyki pomiaru z /journal/how-to-know-if-therapy-is-working (linkuje do niej zamiast ja powtarzac) ani kosztow z /journal/is-therapy-worth-the-money. 03 trzyma 'name your emotions / emotional granularity / I do not know what I am feeling' i NIE wchodzi w mechanike triggerow z /journal/how-to-identify-emotional-triggers (tam: co uruchamia reakcje; tu: jak ja nazwac) ani w wybor formy zapisu z /journal/journaling-vs-voice-notes. 04 trzyma 'morning anxiety / waking up anxious' jako lustro opublikowanego /journal/racing-thoughts-at-night (tam: wieczor i zasypianie; tu: pierwsza godzina po przebudzeniu) i NIE powtarza tresci /journal/sunday-scaries (tam: kalendarz tygodnia). 05 to najwiekszy sposrod kandydatow konflikt intencji: /journal/why-mood-tracking-stops-working juz trzyma diagnoze 'dlaczego tracking sie wypala', wiec 05 wolno wejsc WYLACZNIE w ujeciu 'wrocic po przerwie i ustawic prog, ktory przezyje zly tydzien', z linkiem do tamtego wpisu; jesli brief nie utrzyma tej granicy, temat wypada. 06 trzyma 'why do we keep having the same argument / recurring pattern' i NIE przejmuje fraz o triggerach ani o wzorcach nastroju.",
+
+  "_plan_dripu": "Rekomendowana trojka: 01 (2026-09-21), 02 (2026-09-22), 03 (2026-09-23). Kolejnosc podyktowana linkowaniem wewnetrznym: wszystkie linki wewnatrz partii biegna WSTECZ, do wpisow juz opublikowanych, wiec partia 3 nie tworzy ani jednego dlugu LINK-LATER (patrz blog/queue/_link-fixup.md). 01 linkuje wylacznie do zywych wpisow (how-to-know-if-therapy-is-working, what-to-do-between-therapy-sessions, regulate-nervous-system-between-therapy-sessions). 02 linkuje do zywych (how-to-know-if-therapy-is-working, is-therapy-worth-the-money) plus wstecz do 01. 03 linkuje do zywych (how-to-identify-emotional-triggers, journaling-vs-voice-notes) plus wstecz do 01. Linki w druga strone, czyli ze starych wpisow do nowych, to osobne zadanie PATCH dla webflow-publisher po 2026-09-23, nie dlug tej partii.",
+
+  "_odrzucone": "Rozwazone i odrzucone przed bramka: (a) 'what to say when you have nothing to talk about in therapy', bo /journal/how-to-prepare-for-a-therapy-session ma to juz jako pytanie FAQ w schemacie i przejmuje ta intencje, (b) 'burnout vs depression', bo to rozroznienie diagnostyczne i lamie YMYL, (c) temat zbudowany wprost wokol Habit Trackera, bo funkcji nie ma w katalogu i CTA nie przeszloby bramki.",
+
+  "01 KLASTER2 [TRIO 2026-09-21]: why you feel worse after a therapy session (the therapy hangover)": [
+    "after therapy",
+    "session reflection",
+    "process therapy session",
+    "voice note",
+    "rate your day",
+    "track anxiety",
+    "mood trend",
+    "look back"
+  ],
+
+  "02 KLASTER6 [TRIO 2026-09-22]: how long therapy takes to work (what the session-count research actually says)": [
+    "is therapy working",
+    "therapy progress",
+    "progress over time",
+    "therapy timeline",
+    "therapy goals",
+    "monthly summary",
+    "therapy not working",
+    "track progress"
+  ],
+
+  "03 KLASTER3 [TRIO 2026-09-23]: how to name what you are feeling when all you have is bad": [
+    "processing emotions",
+    "journal prompt",
+    "guided journaling",
+    "rate your day",
+    "focus areas",
+    "self-awareness",
+    "know yourself",
+    "see patterns"
+  ],
+
+  "04 KLASTER5 [rezerwa]: morning anxiety, and the first hour after you wake up": [
+    "morning routine",
+    "grounding",
+    "track anxiety",
+    "rate your day",
+    "reflection",
+    "voice note",
+    "mood patterns",
+    "sleep"
+  ],
+
+  "05 KLASTER2 [rezerwa, granica kanibalizacji do pilnowania]: how to restart a check-in habit after you dropped it": [
+    "wellbeing check-in",
+    "mood log",
+    "habit reminder",
+    "notification settings",
+    "nudge",
+    "review your week",
+    "progress over time",
+    "rate your day"
+  ],
+
+  "06 KLASTER3 [rezerwa]: why you keep having the same argument (and how to bring it to therapy)": [
+    "threads",
+    "what to bring up",
+    "realizations",
+    "look back",
+    "history",
+    "processing emotions",
+    "see patterns",
+    "self-awareness"
+  ]
+}

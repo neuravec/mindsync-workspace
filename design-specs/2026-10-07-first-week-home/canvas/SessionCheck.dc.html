@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Session check</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; position: relative; overflow: hidden">
+<div aria-hidden="true" style="padding: 52px 20px 0 20px; display: flex; flex-direction: column; gap: 16px">
+<span style="width: 48px; height: 48px; border-radius: 24px; background: #DBF0ED"></span>
+<span style="font-size: 28px; font-weight: 800">Hi, Sam</span>
+<span style="height: 160px; border-radius: 24px; background: #113237"></span>
+</div>
+<div style="position: absolute; inset: 0; background: rgba(17,50,55,0.55)"></div>
+
+<section role="dialog" aria-label="{{dialogLabel}}" style="position: absolute; left: 0; right: 0; bottom: 0; border-radius: 28px 28px 0 0; background: #FFFFFF; padding: 10px 20px 24px 20px; display: flex; flex-direction: column; gap: 12px">
+<span aria-hidden="true" style="align-self: center; width: 40px; height: 5px; border-radius: 3px; background: #DBF0ED"></span>
+
+<sc-if value="{{asking}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 24px; line-height: 1.2; font-weight: 800">Did your session happen today?</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #5A7A73">Sessions move. Your plan will follow.</p>
+<a href="#" style="min-height: 56px; border-radius: 16px; background: #113237; color: #FFFFFF; font-size: 17px; font-weight: 800; display: flex; align-items: center; justify-content: center; text-decoration: none">Yes, let me capture it</a>
+<button type="button" onClick="{{moved}}" style="min-height: 56px; border-radius: 16px; border: 1px solid #BBE4DE; background: #FFFFFF; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 700; color: #113237; cursor: pointer">It moved to another day</button>
+<button type="button" onClick="{{didnt}}" style="min-height: 56px; border-radius: 16px; border: 1px solid #BBE4DE; background: #FFFFFF; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 700; color: #113237; cursor: pointer">It didn't happen this time</button>
+</div>
+</sc-if>
+
+<sc-if value="{{isMoved}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 24px; line-height: 1.2; font-weight: 800">{{movedTitle}}</h2>
+<div role="radiogroup" aria-label="Change for" style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 6px; padding: 4px; border-radius: 16px; background: #F2FBFA">
+<sc-for list="{{scopes}}" as="s" hint-placeholder-count="2">
+<button type="button" role="radio" aria-checked="{{s.checked}}" onClick="{{s.pick}}" style="{{s.style}}">{{s.label}}</button>
+</sc-for>
+</div>
+<div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px">
+<sc-for list="{{days}}" as="d" hint-placeholder-count="8">
+<button type="button" onClick="{{d.pick}}" aria-pressed="{{d.pressed}}" aria-label="{{d.aria}}" style="{{d.style}}"><span style="display: block; font-size: 13px; font-weight: 600">{{d.wd}}</span><span style="display: block; font-size: 16px; font-weight: 800">{{d.num}}</span></button>
+</sc-for>
+</div>
+<div style="display: flex; gap: 8px">
+<button type="button" aria-label="Session time, 5:00 pm. Change time" style="flex: 1 1 0; min-height: 48px; border-radius: 14px; border: 1px solid #BBE4DE; background: #FFFFFF; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 700; color: #113237; cursor: pointer">5:00 pm</button>
+<button type="button" style="flex: 1 1 0; min-height: 48px; border-radius: 14px; border: 1px solid #BBE4DE; background: #FFFFFF; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 700; color: #113237; cursor: pointer">Not sure yet</button>
+</div>
+<a href="Main.dc.html" style="min-height: 56px; border-radius: 16px; background: #113237; color: #FFFFFF; font-size: 17px; font-weight: 800; display: flex; align-items: center; justify-content: center; text-decoration: none">Update my plan</a>
+</div>
+</sc-if>
+
+<sc-if value="{{isDidnt}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 12px">
+<h2 style="margin: 0; font-size: 24px; line-height: 1.2; font-weight: 800">Okay, nothing to capture today</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #5A7A73">Your plan skips this step, and your usual schedule stays as it is. If you'd like to talk about the week instead, Orca is here.</p>
+<a href="FollowUp.dc.html" style="min-height: 52px; border-radius: 16px; border: 1px solid #BBE4DE; background: #FFFFFF; font-size: 16px; font-weight: 700; color: #113237; display: flex; align-items: center; justify-content: center; text-decoration: none">Talk with Orca</a>
+<a href="Main.dc.html" style="min-height: 56px; border-radius: 16px; background: #113237; color: #FFFFFF; font-size: 17px; font-weight: 800; display: flex; align-items: center; justify-content: center; text-decoration: none">Back to home</a>
+</div>
+</sc-if>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"entry":{"editor":"enum","options":["after_session","before_session"],"default":"after_session"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  state = { view: null, pick: 1, scope: 0 };
+
+  renderVals() {
+    const entry = this.props.entry ?? 'after_session';
+    const view = this.state.view ?? (entry === 'before_session' ? 'moved' : 'ask');
+    const wds = ['Fri', 'Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri'];
+    const nums = [10, 11, 12, 13, 14, 15, 16, 17];
+    const days = wds.map((wd, i) => {
+      const on = this.state.pick === i;
+      return {
+        wd: wd, num: nums[i], aria: wd + ' ' + nums[i] + ' October',
+        pressed: on ? 'true' : 'false',
+        pick: () => this.setState({ pick: i }),
+        style: 'min-height: 56px; border-radius: 14px; font-family: Figtree, sans-serif; cursor: pointer; ' + (on ? 'background: #113237; color: #FFFFFF; border: 1px solid #113237' : 'background: #FFFFFF; color: #113237; border: 1px solid #BBE4DE')
+      };
+    });
+    const scopes = ['Just this once', 'From now on'].map((label, i) => {
+      const on = this.state.scope === i;
+      return {
+        label: label,
+        checked: on ? 'true' : 'false',
+        pick: () => this.setState({ scope: i }),
+        style: 'min-height: 44px; border-radius: 12px; border: none; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 700; cursor: pointer; ' + (on ? 'background: #FFFFFF; color: #113237; box-shadow: 0 1px 2px rgba(17,50,55,0.15)' : 'background: transparent; color: #5A7A73')
+      };
+    });
+    return {
+      dialogLabel: view === 'moved' ? 'When is your session?' : 'Did your session happen today?',
+      asking: view === 'ask',
+      isMoved: view === 'moved',
+      isDidnt: view === 'didnt',
+      movedTitle: entry === 'before_session' ? 'When is your next session?' : 'When is it now?',
+      moved: () => this.setState({ view: 'moved' }),
+      didnt: () => this.setState({ view: 'didnt' }),
+      days: days,
+      scopes: scopes
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+2026-10-19 09:38:15,456 WARNING app.services.posthog_service: PostHog enabled but POSTHOG_API_KEY is empty — skipping init.
+2026-10-19 09:38:18,233 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:38:19,111 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+2026-10-19 09:38:21,610 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:38:22,729 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:38:23,619 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Model: gpt-5.4-mini (real calls)
+  moments:
+     {'days_ago': 30, 'source_kind': 'note', 'family': 'overwhelm', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage,commitment', 'confidence': 98, 'hard_situation': True, 'text': 'You asked a friend for help with the assignment instead of hiding.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 20, 'source_kind': 'note', 'family': 'overwhelm', 'kind': 'done', 'anchor': 'values_action', 'strengths': 'commitment,resilience', 'confidence': 98, 'hard_situation': False, 'text': 'You split the work into small parts and finished one.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+  skills_full:
+  ideas_full:
+  state: {'latest_entry_crisis': True, 'initial_sync_done': True, 'source_counts': '{"notes": 2}'}
+  usage_split: {'ke_extract': {'calls': 2, 'prompt': 2980, 'cached': 2560, 'completion': 137, 'usd': 0.00112}, 'total': {'calls': 2, 'prompt': 2980, 'cached': 2560, 'completion': 137, 'usd': 0.00112}}
+====================================================================================================
+S05  crisis entry among ordinary ones  (English)
+  expect: families ['overwhelm'], crisis entries 1, note: The 10-day entry must produce no moments; no ideas after it.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 0}, support_row True
+     strengths {'courage': 1, 'insight': 0, 'honesty': 0, 'resilience': 1, 'kindness': 0, 'commitment': 2}
+     forming: [{'emotion_family': 'overwhelm', 'entries': 2}]
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 0}, support_row True
+     strengths {'courage': 1, 'insight': 0, 'honesty': 0, 'resilience': 1, 'kindness': 0, 'commitment': 2}
+     forming: [{'emotion_family': 'overwhelm', 'entries': 2}]
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  moments:
+     {'days_ago': 14, 'source_kind': 'note', 'family': 'shame', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 96, 'hard_situation': False, 'text': 'You noticed that saying you are so useless sounded silly on paper.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 14, 'source_kind': 'note', 'family': 'shame', 'kind': 'used_method', 'anchor': 'using_therapy', 'strengths': 'commitment', 'confidence': 92, 'hard_situation': False, 'text': 'You wrote it down after dropping a glass.', 'attached': {'path': None, 'skill': None, 'tool': 1, 'hard': None}}
+     {'days_ago': 6, 'source_kind': 'note', 'family': 'guilt', 'kind': 'still_hard', 'anchor': None, 'strengths': '', 'confidence': 92, 'hard_situation': False, 'text': 'The late email brought back your critic, and it stayed hard all evening.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+  skills_full:
+  ideas_full:
+  state: {'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 2}'}
+  usage_split: {'ke_compose': {'calls': 1, 'prompt': 3293, 'cached': 2688, 'completion': 113, 'usd': 0.00116}, 'ke_extract': {'calls': 2, 'prompt': 2992, 'cached': 2560, 'completion': 182, 'usd': 0.00134}, 'total': {'calls': 3, 'prompt': 6285, 'cached': 5248, 'completion': 295, 'usd': 0.0025}}
+====================================================================================================
+S16  homework that keeps coming back  (English)
+  expect: families ['shame'], crisis entries 0, note: Idea reason should be homework.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 1, 'talks': 0, 'sessions': 0}, support_row False
+     strengths {'courage': 0, 'insight': 1, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 1}
+     tool: Writing it down [self] used 1
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 0}, support_row False
+     strengths {'courage': 0, 'insight': 1, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 1}
+     tool: Writing it down [self] used 1
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+====================================================================================================
+2 stories, 0 problems (dashes or banned words in shown text). DB: C:\Users\mikol\AppData\Local\Temp\ke_quality_eval_1792395493.db
+TOKENS TOTAL: {'calls': 5, 'prompt': 9265, 'cached': 7808, 'completion': 432, 'usd': 0.00362}  by op: {'ke_compose': {'calls': 1, 'prompt': 3293, 'cached': 2688, 'completion': 113, 'usd': 0.00116}, 'ke_extract': {'calls': 4, 'prompt': 5972, 'cached': 5120, 'completion': 319, 'usd': 0.00246}}

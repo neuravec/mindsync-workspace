@@ -1,0 +1,110 @@
+{
+  "subject": "🐋 Wee Woo Wee Woo, MindSync has a new home screen",
+  "subject_alt": [
+    "🐋 Your therapy week, now on one screen",
+    "🐋 New Main, new cards, and the AI got a name"
+  ],
+  "preview_text": "Plus new before and after therapy cards, a rebuilt Character and an AI with a name.",
+  "h1": "The new MindSync is here!",
+  "h1_promise": "Your whole therapy week now fits on one screen.",
+  "intro": [
+    "Between sessions, therapy tends to scatter. A to-do lives in one corner of your phone, the habit you definitely did on Thursday never got checked off, your next session sits in your calendar, and the question you came up with in the shower lives nowhere at all. Then you open the app to check one thing, tap around for a bit, and forget what that thing was.",
+    "So we did something about it. Again. Most of this update is about seeing your week at a glance and getting to the part you need in one tap."
+  ],
+  "whats_new_heading": "Here's what's new:",
+  "sections": [
+    {
+      "key": "main",
+      "pill": "Meet Main, your new home screen",
+      "paragraphs": [
+        "MindSync now opens on Main, a screen of colorful tiles that shows what's waiting for you right now. There's your next session, your Therapy Agenda (the topics you want to bring up next time), your to-dos, the last seven days of your habits, your Focus Areas (where you rate things like sleep from 1 to 10), your therapy relationship, weekly observations and a daily affirmation.",
+        "Tap a tile to open it in full. That's the whole instruction manual."
+      ],
+      "list": []
+    },
+    {
+      "key": "cards",
+      "pill": "New before and after therapy cards",
+      "paragraphs": [
+        "The After therapy card now has a chart called Your progress in therapy. It plots your recent sessions and adds a short status, something like \"Getting steadier.\" The chart is built from what you add to the app: notes, recordings and your Focus Area ratings. It reflects your own entries. It doesn't grade your mental health, and it says nothing about your therapist.",
+        "The chart appears after three sessions. Until then you'll see a small padlock and a count like 2 of 3, which reads as either encouraging or mildly passive-aggressive, depending on your week. The Before therapy card got clearer too: a short summary and numbered questions to bring, so the first five minutes of your session don't go to \"so... where do I even start?\""
+      ],
+      "list": []
+    },
+    {
+      "key": "timeline_workspace",
+      "pill": "Timeline and Workspace, tidied up",
+      "paragraphs": [
+        "Timeline now puts all your cards, notes and summaries in one list, sorted by date. Tap a type at the top, say Reflect or weekly summaries, and you'll see only those. It comes in handy when your therapist asks when this started and \"a while ago\" doesn't feel like enough of an answer.",
+        "Workspace got reshuffled, and the colors got brighter. Same things inside, nicer to look at on a gray Tuesday."
+      ],
+      "list": []
+    },
+    {
+      "key": "character",
+      "pill": "Character now grows from your words",
+      "paragraphs": [
+        "Character has been rebuilt around six strengths: Courage, Insight, Honesty, Resilience, Kindness (toward yourself) and Commitment. They grow as you write and talk in the app. Write that you finally said no to your boss even though it scared you, and that can count as a moment of Courage. Opening the app 40 times a day, on the other hand, counts for nothing. (We love you, but no.)",
+        "The skills you're building sit on a map, under the feelings they help with, and your level rises as those skills grow. If a moment doesn't sound like you, tap Not quite and it stops counting. You know yourself better than any chart does."
+      ],
+      "list": []
+    },
+    {
+      "key": "orca",
+      "pill": "The AI in Reflect got a name",
+      "paragraphs": [
+        "The AI you talk to in Reflect now has a name: Orca, MindSync's AI therapy assistant for the days between sessions. Orca isn't a therapist and doesn't replace yours. Its job is to help you remember what came up and get ready for your next session. Fun fact: orcas are technically dolphins, the largest ones there are. We kept the whale emoji anyway.",
+        "In Settings, you'll find a new page called What Orca remembers. It lists every note Orca keeps about you, and you can delete any of them. It beats reading a privacy policy at 1 a.m. to find out what an AI remembers about you."
+      ],
+      "list": []
+    }
+  ],
+  "smaller_things_heading": "+ a few smaller things",
+  "smaller_things": [
+    "A blue dot on a tile means something's waiting inside, like an open to-do. It sits there politely until you get to it.",
+    "The habits tile shows your last seven days, so you can still check off the day you missed. We won't ask why you're checking off Thursday on a Saturday.",
+    "You can now open past Reflect conversations and read them again, in case the thing you said on Tuesday at 11 p.m. turns out to be the important one.",
+    "Brand-new accounts start with a three-question chat with Orca (by voice or in writing) and a first-week plan of eight small steps on Main. You've been here a while, so consider yourself graduated."
+  ],
+  "cta_line": "Update MindSync in the App Store or Google Play, and Main will be the first thing you see.",
+  "cta_button": "UPDATE MINDSYNC",
+  "feedback": "Hit reply and tell us what you think. Which tile did you tap first? What's confusing or missing, and what made you go \"oh, finally\"? We read the replies, grumpy ones included.",
+  "closing": "MindSync is growing for you, thanks to you.",
+  "promise_line": "We promise to only send you mental health-related tips & updates.",
+  "signature": "Monika from MindSync",
+  "_status": "post-humanizer",
+  "glos": "monika-v1",
+  "cta_buttons": [
+    "UPDATE ON IPHONE",
+    "UPDATE ON ANDROID"
+  ],
+  "bvm": {
+    "werdykt": "AKCEPT WARUNKOWY",
+    "zmiany": [
+      "intro[0] | przed: never got ticked | po: never got checked off | powód: tick to wariant brytyjski, a ticked w USA znaczy też wkurzony",
+      "sections.cards.paragraphs[0] | przed: notes, recordings and the topics you rate, like sleep | po: notes, recordings and your Focus Area ratings | powód: jedna nazwa dla jednej rzeczy (Focus Areas zdefiniowane w sekcji Main), topics kolidowało z Therapy Agenda",
+      "sections.timeline_workspace.paragraphs[0] | przed: on one list by date | po: in one list, sorted by date | powód: naturalniejsza angielszczyzna",
+      "sections.timeline_workspace.paragraphs[1] | przed: Workspace got a new order and brighter colors. | po: Workspace got reshuffled, and the colors got brighter. | powód: a new order brzmi jak zamówienie albo polecenie",
+      "sections.character.paragraphs[0] | przed: forty times a day | po: 40 times a day | powód: brand doc §5, liczby od 10 cyframi",
+      "sections.character.paragraphs[1] | przed: Your skills sit on a map | po: The skills you're building sit on a map | powód: skills pojawiały się bez wprowadzenia obok six strengths",
+      "sections.orca.paragraphs[1] | przed: to find out what an app knows about you | po: to find out what an AI remembers about you | powód: strona pokazuje notatki Orki, a nie wszystkie dane aplikacji, więc stara wersja obiecywała za dużo w sprawie prywatności",
+      "smaller_things[1] | przed: you can still tick the day you missed. We won't ask why you're ticking Thursday on a Saturday. | po: you can still check off the day you missed. We won't ask why you're checking off Thursday on a Saturday. | powód: jak w intro, check off to forma amerykańska"
+    ],
+    "uwagi": [
+      "Temat: wysyłamy subject (🐋 Wee Woo Wee Woo, MindSync has a new home screen). Nawiązuje do najlepszej dużej aktualizacji (🐋 Wee Woo Wee Woo Big Update Alert, 27.07, 12,9% otwarć), podaje konkret (new home screen) i jest jej głosem. preview_text pasuje bez zmian, bo zaczyna się od Plus i dopowiada resztę. subject_alt[0] powtarza h1_promise, subject_alt[1] dubluje preview (AI got a name), a New Main nic nie mówi komuś, kto jeszcze nie zaktualizował. Opcjonalnie: Title Case jak w dotychczasowych tematach Moniki, nie jest wymagane.",
+      "Zmiana sesji głównej (1), cta_line bez numeru wersji: słuszna. Jeden numer byłby błędny dla jednej z platform (iOS 2.0.56, Android 2.0.117), a dwa numery to szum, którego czytelnik nie potrzebuje.",
+      "Zmiana sesji głównej (2), dwa przyciski: słuszna. Jeden link nie obsłuży obu sklepów, a cta_line (App Store or Google Play) zgadza się z przyciskami. Wersaliki IPHONE w przycisku są w porządku. Jeśli szablon Loops sam zamienia tekst na wersaliki, w źródle wpisać Update on iPhone.",
+      "Fun fact o orkach: ZOSTAJE. To jedyna etykieta tego typu w mailu i jej znak firmowy (brand doc §2.1 pkt 4), fakt jest prawdziwy (orka to największy przedstawiciel delfinowatych, Delphinidae), a zdanie spina 🐋 z tematu. Stoi po zdaniach YMYL o Orce, nie zamiast nich.",
+      "We read the replies, grumpy ones included: ZOSTAJE pod warunkiem 1. Zdanie jest ludzkie i zaprasza do krytyki, a odpowiedzi trafiają do realnej osoby.",
+      "WARUNEK 1: w kampanii Loops reply-to ustawione na monika@mindsync.app (w lutym i marcu go brakowało). Bez tego Hit reply i We read the replies są nieprawdziwe. Gdy czyjaś odpowiedź sugeruje kryzys, odpisuje człowiek, podaje 988 i nie diagnozuje.",
+      "WARUNEK 2: wysyłka dopiero wtedy, gdy nowa wersja jest dostępna w obu sklepach (Google Play na 100% rolloutu), bo cta_line obiecuje Main zaraz po aktualizacji.",
+      "WARUNEK 3: pole cta_button (UPDATE MINDSYNC) jest nieaktualne. Do składania maila używać wyłącznie cta_buttons. Przycisk iPhone prowadzi do amerykańskiego App Store, przycisk Android do Google Play.",
+      "WARUNEK 4: brand-voice-manager nie ma powłoki i nie mógł uruchomić parsera JSON. Plik sprawdzony ręcznie, a parser trzeba odpalić w sesji głównej.",
+      "YMYL: OK. Wykres ma pełną ramę (reflects your own entries, doesn't grade your mental health, says nothing about your therapist). Orca ma ramę z social/brand-instagram.md §4.1 (MindSync's AI therapy assistant, between sessions, isn't a therapist and doesn't replace yours). Brak cen, Premium, trialu, obietnic leczenia i diagnoz, brak companion.",
+      "Humor: kilkanaście puent, to górna granica dla maila o aktualizacji. Każda opiera się na konkretnym obrazku i żadna nie dotyka cierpienia. Nie dokładać nowych.",
+      "Formatowanie w Loops: nazwy z interfejsu (Your progress in therapy, What Orca remembers, Not quite) pogrubić, żeby czytelnik nie potknął się o nie w zdaniu.",
+      "Humanizer: zmienione zdania przeszły humanizer (tryb embedded, próbka docs/blog/voice-sample-monika.md). Grep na U+2014 i U+2013 dał zero trafień.",
+      "Akcept brand-voice-manager nie jest zgodą na wysyłkę. O wysyłce decyduje operator."
+    ]
+  }
+}

@@ -1,0 +1,183 @@
+2026-10-19 09:41:22,125 WARNING app.services.posthog_service: PostHog enabled but POSTHOG_API_KEY is empty — skipping init.
+2026-10-19 09:41:24,767 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:25,629 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:26,659 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:28,609 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+2026-10-19 09:41:31,509 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:32,579 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:33,774 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:34,649 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:35,430 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:36,323 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:37,216 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:38,079 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:39,064 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:39,946 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:42,385 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:43,365 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:44,449 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:45,303 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:46,663 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:47,835 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:49,217 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:50,586 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:51,482 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:52,511 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:54,203 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:55,295 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:56,822 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:57,895 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:58,895 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:41:59,973 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 09:42:01,105 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Model: gpt-5.4-mini (real calls)
+  moments:
+     {'days_ago': 30, 'source_kind': 'note', 'family': 'overwhelm', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage,commitment', 'confidence': 97, 'hard_situation': True, 'text': 'You asked a friend for help with the assignment instead of hiding.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 20, 'source_kind': 'note', 'family': 'overwhelm', 'kind': 'used_method', 'anchor': 'values_action', 'strengths': 'commitment,resilience', 'confidence': 98, 'hard_situation': True, 'text': 'You split the work into small parts and finished one.', 'attached': {'path': None, 'skill': None, 'tool': 1, 'hard': None}}
+     {'days_ago': 7, 'source_kind': 'after_therapy', 'family': 'fear', 'kind': 'from_therapy', 'anchor': 'using_therapy', 'strengths': 'commitment', 'confidence': 98, 'hard_situation': False, 'text': 'You made a safety plan with your therapist and agreed to call a friend when it gets dark again.', 'attached': {'path': 1, 'skill': 1, 'tool': None, 'hard': None}}
+  skills_full:
+     {'id': 1, 'path_id': 1, 'anchor': 'connecting', 'icon': 'lifebuoy', 'name': 'Calling a friend', 'in_your_words': 'You made a safety plan with your therapist and agreed to call a friend when it gets dark again. This gives you a clear person to reach for when fear shows up.'}
+  ideas_full:
+  state: {'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 2, "sessions": 1}'}
+  usage_split: {'ke_compose': {'calls': 2, 'prompt': 6747, 'cached': 5376, 'completion': 504, 'usd': 0.0037}, 'ke_extract': {'calls': 3, 'prompt': 4482, 'cached': 3840, 'completion': 213, 'usd': 0.00173}, 'total': {'calls': 5, 'prompt': 11229, 'cached': 9216, 'completion': 717, 'usd': 0.00543}}
+====================================================================================================
+S05  crisis entry among ordinary ones  (English)
+  expect: families ['overwhelm'], crisis entries 1, note: The 10-day entry must produce no moments; no ideas after it.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 1, 'insight': 0, 'honesty': 0, 'resilience': 1, 'kindness': 0, 'commitment': 3}
+     PATH [fear] Making a safety plan for fear  (about when it gets dark again)
+        skill: Calling a friend [connecting/lifebuoy] discovered x1
+     forming: [{'emotion_family': 'overwhelm', 'entries': 2}]
+     tool: Breaking work into small parts [self] used 1
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 1, 'insight': 0, 'honesty': 0, 'resilience': 1, 'kindness': 0, 'commitment': 3}
+     PATH [fear] Making a safety plan for fear  (about when it gets dark again)
+        skill: Calling a friend [connecting/lifebuoy] discovered x1
+     forming: [{'emotion_family': 'overwhelm', 'entries': 2}]
+     tool: Breaking work into small parts [self] used 1
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  moments:
+     {'days_ago': 40, 'source_kind': 'note', 'family': 'joy', 'kind': 'done', 'anchor': 'values_action', 'strengths': 'commitment', 'confidence': 98, 'hard_situation': False, 'text': 'You spent Saturday painting for the first time in years and lost track of time.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 40, 'source_kind': 'note', 'family': 'joy', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': '', 'confidence': 96, 'hard_situation': False, 'text': 'You noticed it felt like pure fun.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 30, 'source_kind': 'note', 'family': 'pride', 'kind': 'done', 'anchor': 'values_action', 'strengths': 'courage', 'confidence': 96, 'hard_situation': False, 'text': 'You showed a painting to a friend.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 30, 'source_kind': 'note', 'family': 'pride', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight,honesty', 'confidence': 98, 'hard_situation': False, 'text': 'You noticed you felt proud and a bit shy.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 22, 'source_kind': 'reflect_talk', 'family': 'calm', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight,honesty', 'confidence': 95, 'hard_situation': False, 'text': 'You noticed that making things just for fun used to feel selfish, and now it feels like breathing.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 12, 'source_kind': 'note', 'family': 'pride', 'kind': 'done', 'anchor': 'values_action', 'strengths': 'commitment', 'confidence': 98, 'hard_situation': False, 'text': 'You signed up for an evening class and followed through.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 3, 'source_kind': 'note', 'family': 'calm', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': '', 'confidence': 98, 'hard_situation': False, 'text': 'You noticed you felt calm and happy sitting in the park after class.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+  skills_full:
+  ideas_full:
+  state: {'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 4, "talks": 1}'}
+  usage_split: {'ke_extract': {'calls': 5, 'prompt': 7446, 'cached': 6400, 'completion': 428, 'usd': 0.00319}, 'total': {'calls': 5, 'prompt': 7446, 'cached': 6400, 'completion': 428, 'usd': 0.00319}}
+====================================================================================================
+S12  mostly good feelings  (English)
+  expect: families ['joy', 'pride', 'calm'], crisis entries 0
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 3, 'talks': 1, 'sessions': 0}, support_row False
+     strengths {'courage': 1, 'insight': 2, 'honesty': 2, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     forming: [{'emotion_family': 'pride', 'entries': 2}]
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 4, 'talks': 1, 'sessions': 0}, support_row False
+     strengths {'courage': 1, 'insight': 2, 'honesty': 2, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     forming: [{'emotion_family': 'calm', 'entries': 2}, {'emotion_family': 'pride', 'entries': 2}]
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  moments:
+     {'days_ago': 44, 'source_kind': 'note', 'family': 'worry', 'kind': 'used_method', 'anchor': 'steadying', 'strengths': 'courage', 'confidence': 97, 'hard_situation': True, 'text': 'You left the basket and walked out of the supermarket queue.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 37, 'source_kind': 'after_therapy', 'family': 'fear', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight,honesty', 'confidence': 98, 'hard_situation': False, 'text': 'You learned to name your tight throat and hot face as fear rising, not danger.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 23, 'source_kind': 'note', 'family': 'anger', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 94, 'hard_situation': False, 'text': 'You noticed the heat rising in the shop.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 23, 'source_kind': 'note', 'family': 'anger', 'kind': 'done', 'anchor': 'values_action', 'strengths': 'courage,commitment', 'confidence': 96, 'hard_situation': True, 'text': 'You named it, stayed in the queue, and paid.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 9, 'source_kind': 'note', 'family': 'overwhelm', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight,commitment', 'confidence': 95, 'hard_situation': False, 'text': 'You noticed the signals, named them, and finished the list at the big shop on Saturday.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+  skills_full:
+  ideas_full:
+  state: {'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 3, "sessions": 1}'}
+  usage_split: {'ke_compose': {'calls': 1, 'prompt': 3403, 'cached': 2688, 'completion': 473, 'usd': 0.00287}, 'ke_extract': {'calls': 4, 'prompt': 5974, 'cached': 5120, 'completion': 328, 'usd': 0.0025}, 'total': {'calls': 5, 'prompt': 9377, 'cached': 7808, 'completion': 801, 'usd': 0.00537}}
+====================================================================================================
+S17  panic in shops, body signals  (English)
+  expect: families ['fear'], crisis entries 0, note: No 'panic attack' or 'anxiety' in names.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 2, 'insight': 3, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 2, 'insight': 3, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  moments:
+     {'days_ago': 30, 'source_kind': 'after_therapy', 'family': 'worry', 'kind': 'from_therapy', 'anchor': 'using_therapy', 'strengths': 'insight', 'confidence': 98, 'hard_situation': False, 'text': 'Your therapist showed you box breathing for evening worry and suggested trying it this week.', 'attached': {'path': 2, 'skill': 2, 'tool': None, 'hard': None}}
+     {'days_ago': 22, 'source_kind': 'note', 'family': 'worry', 'kind': 'still_hard', 'anchor': None, 'strengths': '', 'confidence': 95, 'hard_situation': False, 'text': 'Evening worry about money was still hard.', 'attached': {'path': 2, 'skill': None, 'tool': None, 'hard': 1}}
+     {'days_ago': 12, 'source_kind': 'note', 'family': 'worry', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage,honesty', 'confidence': 98, 'hard_situation': False, 'text': 'You talked to your partner about the rent, and it helped a bit.', 'attached': {'path': 2, 'skill': 2, 'tool': None, 'hard': None}}
+     {'days_ago': 4, 'source_kind': 'note', 'family': 'worry', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 99, 'hard_situation': False, 'text': 'You noticed your money worry always started after checking the bank app at night.', 'attached': {'path': 2, 'skill': 3, 'tool': None, 'hard': None}}
+  skills_full:
+     {'id': 2, 'path_id': 2, 'anchor': 'steadying', 'icon': 'wind', 'name': 'Box breathing', 'in_your_words': 'You use box breathing in the evening when worry shows up. It can help you slow things down and stay with the moment a little more.'}
+     {'id': 3, 'path_id': 2, 'anchor': 'noticing', 'icon': 'eye', 'name': 'Noticing the bank app trigger', 'in_your_words': 'You notice your money worry starts after checking the bank app at night. That gives you a clearer sign of what sets it off.'}
+  ideas_full:
+  state: {'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 3, "sessions": 1}'}
+  usage_split: {'ke_compose': {'calls': 2, 'prompt': 6769, 'cached': 5376, 'completion': 322, 'usd': 0.0029}, 'ke_extract': {'calls': 4, 'prompt': 6008, 'cached': 5248, 'completion': 270, 'usd': 0.00218}, 'total': {'calls': 6, 'prompt': 12777, 'cached': 10624, 'completion': 592, 'usd': 0.00508}}
+====================================================================================================
+S18  therapist-only method never used  (English)
+  expect: families ['worry'], crisis entries 0, note: Box breathing must not become a Tool (never used); it may appear as an idea.
+  -- 2026-10-12: level 1 (1 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 1, 'insight': 1, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+     PATH [worry] Making room for worry  (about evening worry and money)
+        skill: Box breathing [steadying/wind] practicing x2
+        still hard: Evening worry about money (1)
+  -- 2026-10-19: level 1 (1 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 1, 'insight': 2, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+     PATH [worry] Making room for worry  (about evening worry and money)
+        skill: Box breathing [steadying/wind] practicing x2
+        skill: Noticing the bank app trigger [noticing/eye] discovered x1
+        still hard: Evening worry about money (1)
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  moments:
+     {'days_ago': 40, 'source_kind': 'note', 'family': 'anger', 'kind': 'still_hard', 'anchor': None, 'strengths': '', 'confidence': 98, 'hard_situation': False, 'text': 'Tom from accounting criticising you in front of everyone was still hard.', 'attached': {'path': 3, 'skill': None, 'tool': None, 'hard': 2}}
+     {'days_ago': 40, 'source_kind': 'note', 'family': 'anger', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight,honesty', 'confidence': 96, 'hard_situation': False, 'text': 'You noticed you stewed all day after Tom from accounting criticised you in front of everyone.', 'attached': {'path': 3, 'skill': 4, 'tool': None, 'hard': None}}
+     {'days_ago': 33, 'source_kind': 'after_therapy', 'family': 'anger', 'kind': 'from_therapy', 'anchor': 'using_therapy', 'strengths': 'commitment', 'confidence': 96, 'hard_situation': False, 'text': 'You practiced a short calm sentence to use next time with your colleague who criticises in public.', 'attached': {'path': 3, 'skill': 5, 'tool': None, 'hard': None}}
+     {'days_ago': 19, 'source_kind': 'note', 'family': 'fear', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage', 'confidence': 95, 'hard_situation': True, 'text': 'You said you would rather talk about this one to one, and he stopped.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 6, 'source_kind': 'note', 'family': 'calm', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': '', 'confidence': 98, 'hard_situation': False, 'text': 'You felt calmer at work this week.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 6, 'source_kind': 'note', 'family': 'closeness', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'honesty,courage', 'confidence': 93, 'hard_situation': False, 'text': 'You told your sister about it.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+  skills_full:
+     {'id': 4, 'path_id': 3, 'anchor': 'noticing', 'icon': 'tag', 'name': 'Noticing when anger sticks', 'in_your_words': 'You notice when criticism in front of everyone leaves you stewing all day. You can see the moment and name what is getting under your skin.'}
+     {'id': 5, 'path_id': 3, 'anchor': 'connecting', 'icon': 'chat', 'name': 'Using a calm sentence', 'in_your_words': 'You practiced a short calm sentence for next time when your colleague criticises in public. You are trying a simple reply that keeps the talk in the right place.'}
+  ideas_full:
+  state: {'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 3, "sessions": 1}'}
+  usage_split: {'ke_compose': {'calls': 2, 'prompt': 6921, 'cached': 5376, 'completion': 441, 'usd': 0.00355}, 'ke_extract': {'calls': 4, 'prompt': 6030, 'cached': 5248, 'completion': 371, 'usd': 0.00265}, 'total': {'calls': 6, 'prompt': 12951, 'cached': 10624, 'completion': 812, 'usd': 0.0062}}
+====================================================================================================
+S26  names of real people should become roles  (English)
+  expect: families ['anger', 'fear'], crisis entries 0, note: Names use roles (a colleague, your therapist, your sister), not Tom, Anna or Kasia.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 1, 'insight': 1, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 1}
+     PATH [anger] Making room for my anger  (about being criticised in public and how you respond)
+        skill: Using a calm sentence [connecting/chat] discovered x1
+        skill: Noticing when anger sticks [noticing/tag] discovered x1
+        still hard: Being criticised in front of everyone (1)
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 1}, support_row False
+     strengths {'courage': 2, 'insight': 1, 'honesty': 2, 'resilience': 0, 'kindness': 0, 'commitment': 1}
+     PATH [anger] Making room for my anger  (about being criticised in public and how you respond)
+        skill: Using a calm sentence [connecting/chat] discovered x1
+        skill: Noticing when anger sticks [noticing/tag] discovered x1
+        still hard: Being criticised in front of everyone (1)
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  moments:
+     {'days_ago': 45, 'source_kind': 'note', 'family': 'loneliness', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight,honesty', 'confidence': 98, 'hard_situation': False, 'text': 'Notaste que te sientes sola desde que tu mejor amiga se mudó.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 45, 'source_kind': 'note', 'family': 'loneliness', 'kind': 'still_hard', 'anchor': None, 'strengths': '', 'confidence': 97, 'hard_situation': False, 'text': 'Los fines de semana siguen siendo lo más difícil para ti.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 31, 'source_kind': 'reflect_talk', 'family': 'shame', 'kind': 'done', 'anchor': 'values_action', 'strengths': 'courage,commitment', 'confidence': 98, 'hard_situation': False, 'text': 'Llamaste a tu amiga aunque te diera vergüenza.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 20, 'source_kind': 'note', 'family': 'closeness', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage,commitment', 'confidence': 98, 'hard_situation': False, 'text': 'Llamaste a tu amiga y hablaron una hora.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 20, 'source_kind': 'note', 'family': 'closeness', 'kind': 'noticed', 'anchor': 'noticing', 'strengths': 'insight', 'confidence': 96, 'hard_situation': False, 'text': 'Notaste que te sentiste acompañada.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 6, 'source_kind': 'note', 'family': 'closeness', 'kind': 'done', 'anchor': 'values_action', 'strengths': 'courage,commitment', 'confidence': 96, 'hard_situation': False, 'text': 'Te apuntaste a un grupo de lectura del barrio y fuiste sola.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+     {'days_ago': 6, 'source_kind': 'note', 'family': 'closeness', 'kind': 'done', 'anchor': 'connecting', 'strengths': 'courage', 'confidence': 95, 'hard_situation': False, 'text': 'Conociste a dos personas en el grupo de lectura del barrio.', 'attached': {'path': None, 'skill': None, 'tool': None, 'hard': None}}
+  skills_full:
+  ideas_full:
+  state: {'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 3, "talks": 1}'}
+  usage_split: {'ke_extract': {'calls': 4, 'prompt': 5981, 'cached': 5120, 'completion': 434, 'usd': 0.00298}, 'total': {'calls': 4, 'prompt': 5981, 'cached': 5120, 'completion': 434, 'usd': 0.00298}}
+====================================================================================================
+S27  soledad y amistad (Spanish)  (Spanish)
+  expect: families ['loneliness', 'closeness'], crisis entries 0, note: Spanish output.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 1, 'sessions': 0}, support_row False
+     strengths {'courage': 2, 'insight': 2, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 3, 'talks': 1, 'sessions': 0}, support_row False
+     strengths {'courage': 4, 'insight': 2, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 3}
+     forming: [{'emotion_family': 'closeness', 'entries': 2}]
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+====================================================================================================
+6 stories, 0 problems (dashes or banned words in shown text). DB: C:\Users\mikol\AppData\Local\Temp\ke_quality_eval_1792395680.db
+TOKENS TOTAL: {'calls': 31, 'prompt': 59761, 'cached': 49792, 'completion': 3784, 'usd': 0.02824}  by op: {'ke_compose': {'calls': 7, 'prompt': 23840, 'cached': 18816, 'completion': 1740, 'usd': 0.01301}, 'ke_extract': {'calls': 24, 'prompt': 35921, 'cached': 30976, 'completion': 2044, 'usd': 0.01523}}

@@ -1,0 +1,2445 @@
+[
+  {
+    "id": "S01",
+    "theme": "saying no at work and at home",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "fear",
+        "guilt"
+      ],
+      "crisis_entries": 0
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 6,
+            "moments": 10,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 3,
+            "talks": 1,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 3,
+            "insight": 2,
+            "honesty": 1,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 4
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "worry",
+              "name": "Saying no when worry shows up",
+              "focus": "about work, family asks, and saying no",
+              "skills": [
+                "Saying no kindly [connecting/hand] practicing x2",
+                "Pausing before you reply [steadying/pause] discovered x2"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [
+            {
+              "emotion_family": "fear",
+              "entries": 2
+            }
+          ],
+          "tools": [],
+          "ideas": [
+            "[transfer/agenda] If it fits, try a breath before you answer your manager. | why: Your therapist suggested pausing for a breath before replying, and you felt fear in your chest before you answered."
+          ],
+          "pending_stages": [],
+          "idea_count": 1
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 1,
+            "moments": 2,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 2,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 4,
+            "talks": 1,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 4,
+            "insight": 3,
+            "honesty": 1,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 5
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "worry",
+              "name": "Saying no when worry shows up",
+              "focus": "about work, family asks, and saying no",
+              "skills": [
+                "Short answer, no apology [connecting/brief] practicing x1",
+                "Saying no kindly [connecting/hand] practicing x2",
+                "Pausing before you reply [steadying/pause] discovered x3"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [
+            "[consolidate/agenda] If it fits, bring your short-answer line to the next session. | why: You told a colleague no with a short answer and no long apology."
+          ],
+          "pending_stages": [
+            "skill 3 -> practicing"
+          ],
+          "idea_count": 1
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "usage": {},
+    "moments": [
+      {
+        "days_ago": 70,
+        "source_kind": "note",
+        "family": "anger",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "commitment",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "You said yes to covering the weekend shift again, even though you had plans.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 70,
+        "source_kind": "note",
+        "family": "anger",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 88,
+        "hard_situation": false,
+        "text": "Covering the weekend shift again was still hard for you.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 63,
+        "source_kind": "after_therapy",
+        "family": "fear",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You noticed the fear of disappointing people started in your chest before you answered.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 63,
+        "source_kind": "after_therapy",
+        "family": "worry",
+        "kind": "from_therapy",
+        "anchor": "using_therapy",
+        "strengths": "",
+        "confidence": 99,
+        "hard_situation": false,
+        "text": "Your therapist suggested pausing for a breath before replying.",
+        "attached": {
+          "path": 1,
+          "skill": 1,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 50,
+        "source_kind": "note",
+        "family": "pride",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,commitment",
+        "confidence": 99,
+        "hard_situation": true,
+        "text": "You paused and told your sister you could not host the family dinner this time.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 50,
+        "source_kind": "note",
+        "family": "worry",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 92,
+        "hard_situation": false,
+        "text": "You felt shaky after your sister asked you to host the family dinner.",
+        "attached": {
+          "path": 1,
+          "skill": 1,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 45,
+        "source_kind": "todo_done",
+        "family": "worry",
+        "kind": "from_therapy",
+        "anchor": "using_therapy",
+        "strengths": "commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You had homework from your therapist to say no to one request this week.",
+        "attached": {
+          "path": 1,
+          "skill": 2,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 30,
+        "source_kind": "reflect_talk",
+        "family": "worry",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,commitment",
+        "confidence": 98,
+        "hard_situation": true,
+        "text": "You declined the extra shift and offered to swap a different day instead.",
+        "attached": {
+          "path": 1,
+          "skill": 2,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 16,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "courage",
+        "confidence": 97,
+        "hard_situation": true,
+        "text": "You agreed to a new project in the meeting, even though you froze and felt stuck.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 16,
+        "source_kind": "note",
+        "family": "fear",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 99,
+        "hard_situation": false,
+        "text": "Saying no to your manager in front of others is still really hard.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 5,
+        "source_kind": "note",
+        "family": "worry",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,commitment",
+        "confidence": 98,
+        "hard_situation": true,
+        "text": "You told a colleague you could not stay late, with a short answer and no long apology.",
+        "attached": {
+          "path": 1,
+          "skill": 3,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 5,
+        "source_kind": "note",
+        "family": "worry",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "You noticed the worry passed faster than before.",
+        "attached": {
+          "path": 1,
+          "skill": 1,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [
+      {
+        "id": 1,
+        "path_id": 1,
+        "anchor": "steadying",
+        "icon": "pause",
+        "name": "Pausing before you reply",
+        "in_your_words": "You pause for a breath before you answer, especially when you feel shaky or stuck. It gives you a moment before saying yes or no."
+      },
+      {
+        "id": 2,
+        "path_id": 1,
+        "anchor": "connecting",
+        "icon": "hand",
+        "name": "Saying no kindly",
+        "in_your_words": "You can say no to a request and keep it clear and calm. You also offered a different day instead of just leaving it there."
+      },
+      {
+        "id": 3,
+        "path_id": 1,
+        "anchor": "connecting",
+        "icon": "brief",
+        "name": "Short answer, no apology",
+        "in_your_words": "You keep it short when you say no, and you do not add a long apology. You did that with your colleague when you could not stay late."
+      }
+    ],
+    "paths_full": [
+      {
+        "id": 1,
+        "family": "worry",
+        "name": "Saying no when worry shows up",
+        "focus": "about work, family asks, and saying no",
+        "merged_into": null
+      }
+    ],
+    "tools_full": [],
+    "hard_full": [],
+    "ideas_full": [
+      {
+        "id": 1,
+        "path_id": 1,
+        "skill_id": 1,
+        "text": "If it fits, try a breath before you answer your manager.",
+        "why": "Your therapist suggested pausing for a breath before replying, and you felt fear in your chest before you answered.",
+        "reason": "transfer",
+        "cta": "agenda",
+        "state": "active",
+        "created_at": "2026-10-19 07:24:34"
+      },
+      {
+        "id": 2,
+        "path_id": 1,
+        "skill_id": 2,
+        "text": "If it fits, bring your short-answer line to the next session.",
+        "why": "You told a colleague no with a short answer and no long apology.",
+        "reason": "consolidate",
+        "cta": "agenda",
+        "state": "active",
+        "created_at": "2026-10-19 07:25:58"
+      }
+    ],
+    "state": {
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 4, \"sessions\": 1, \"talks\": 1}"
+    },
+    "usage_split": {
+      "ke_compose": {
+        "calls": 2,
+        "prompt": 7394,
+        "cached": 5376,
+        "completion": 1436,
+        "usd": 0.00838
+      },
+      "ke_extract": {
+        "calls": 7,
+        "prompt": 10583,
+        "cached": 9600,
+        "completion": 745,
+        "usd": 0.00481
+      },
+      "total": {
+        "calls": 9,
+        "prompt": 17977,
+        "cached": 14976,
+        "completion": 2181,
+        "usd": 0.01319
+      }
+    },
+    "models_used": [
+      "gpt-5.4-mini"
+    ],
+    "art9_granted": true
+  },
+  {
+    "id": "S02",
+    "theme": "Sunday dread and worry about the week",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "worry"
+      ],
+      "crisis_entries": 0
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 6,
+            "moments": 8,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 4,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 0,
+            "insight": 5,
+            "honesty": 1,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 3
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "worry",
+              "name": "Working with my worry about Monday",
+              "focus": "about Monday, emails, and being judged",
+              "skills": [
+                "Writing worries on paper [steadying/pause] practicing x2",
+                "Noticing worry about judgment [noticing/eye] discovered x2",
+                "Seeing thoughts as thoughts [rethinking/thought] discovered x1",
+                "Noticing the Monday dread [noticing/eye] discovered x1"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [],
+          "tools": [
+            "Writing worries on paper [self] used 2"
+          ],
+          "ideas": [
+            "[recurring/orca] Maybe notice which worries are about your boss's thoughts, then write them down. | why: Most of the worries were about what your boss might think."
+          ],
+          "pending_stages": [],
+          "idea_count": 1
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 1,
+            "moments": 2,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 5,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 0,
+            "insight": 6,
+            "honesty": 1,
+            "resilience": 1,
+            "kindness": 0,
+            "commitment": 4
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "worry",
+              "name": "Working with my worry about Monday",
+              "focus": "about Monday, emails, and being judged",
+              "skills": [
+                "Writing worries on paper [steadying/pause] practicing x2",
+                "Noticing worry about judgment [noticing/eye] discovered x3",
+                "Seeing thoughts as thoughts [rethinking/thought] discovered x1",
+                "Noticing the Monday dread [noticing/eye] discovered x1"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [],
+          "tools": [
+            "Writing worries on paper [self] used 2"
+          ],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "usage": {},
+    "moments": [
+      {
+        "days_ago": 60,
+        "source_kind": "note",
+        "family": "worry",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You noticed the dread about Monday starts around 6 pm, with a tight stomach and racing thoughts about emails.",
+        "attached": {
+          "path": 2,
+          "skill": 4,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 53,
+        "source_kind": "voice_note",
+        "family": "worry",
+        "kind": "used_method",
+        "anchor": "steadying",
+        "strengths": "commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You wrote your worries on paper, and it helped you fall asleep a bit sooner.",
+        "attached": {
+          "path": 2,
+          "skill": 5,
+          "tool": 1,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 49,
+        "source_kind": "after_therapy",
+        "family": "worry",
+        "kind": "from_therapy",
+        "anchor": "rethinking",
+        "strengths": "insight",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "You took away that a thought about Monday was not a fact about Monday.",
+        "attached": {
+          "path": 2,
+          "skill": 6,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 39,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "used_method",
+        "anchor": "steadying",
+        "strengths": "commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You wrote down Monday's three hardest tasks on Sunday and closed the notebook.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 39,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 95,
+        "hard_situation": false,
+        "text": "You noticed the evening felt calmer than usual.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 25,
+        "source_kind": "note",
+        "family": "worry",
+        "kind": "used_method",
+        "anchor": "steadying",
+        "strengths": "commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You wrote the worry list again before bed.",
+        "attached": {
+          "path": 2,
+          "skill": 5,
+          "tool": 1,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 25,
+        "source_kind": "note",
+        "family": "worry",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "You noticed most of the worries were about what your boss might think.",
+        "attached": {
+          "path": 2,
+          "skill": 7,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 18,
+        "source_kind": "realization",
+        "family": "worry",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 99,
+        "hard_situation": false,
+        "text": "You noticed you worry most when you imagine being judged, not when the work itself is hard.",
+        "attached": {
+          "path": 2,
+          "skill": 7,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 4,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "used_method",
+        "anchor": "steadying",
+        "strengths": "resilience,commitment",
+        "confidence": 95,
+        "hard_situation": true,
+        "text": "You went for a walk, wrote the list, and did not check email on Sunday.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 4,
+        "source_kind": "note",
+        "family": "worry",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 86,
+        "hard_situation": false,
+        "text": "You noticed Sunday was hard.",
+        "attached": {
+          "path": 2,
+          "skill": 7,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [
+      {
+        "id": 4,
+        "path_id": 2,
+        "anchor": "noticing",
+        "icon": "eye",
+        "name": "Noticing the Monday dread",
+        "in_your_words": "You notice the dread about Monday starts around 6 pm, and you can see it in your tight stomach and racing thoughts about emails."
+      },
+      {
+        "id": 5,
+        "path_id": 2,
+        "anchor": "steadying",
+        "icon": "pause",
+        "name": "Writing worries on paper",
+        "in_your_words": "You write the worries on paper when they start piling up, and that can help you fall asleep a bit sooner."
+      },
+      {
+        "id": 6,
+        "path_id": 2,
+        "anchor": "rethinking",
+        "icon": "thought",
+        "name": "Seeing thoughts as thoughts",
+        "in_your_words": "You remember that a thought about Monday is not a fact about Monday. That can help you step back from the worry a little."
+      },
+      {
+        "id": 7,
+        "path_id": 2,
+        "anchor": "noticing",
+        "icon": "eye",
+        "name": "Noticing worry about judgment",
+        "in_your_words": "You notice the worry gets bigger when you imagine being judged, especially what your boss might think."
+      }
+    ],
+    "paths_full": [
+      {
+        "id": 2,
+        "family": "worry",
+        "name": "Working with my worry about Monday",
+        "focus": "about Monday, emails, and being judged",
+        "merged_into": null
+      }
+    ],
+    "tools_full": [
+      {
+        "id": 1,
+        "name": "Writing worries on paper",
+        "what": "You write down your worries on paper to get them out of your head, especially before bed.",
+        "origin": "self",
+        "origin_note": "You started doing this on your own."
+      }
+    ],
+    "hard_full": [],
+    "ideas_full": [
+      {
+        "id": 3,
+        "path_id": 2,
+        "skill_id": 7,
+        "text": "Maybe notice which worries are about your boss's thoughts, then write them down.",
+        "why": "Most of the worries were about what your boss might think.",
+        "reason": "recurring",
+        "cta": "orca",
+        "state": "active",
+        "created_at": "2026-10-19 07:26:15"
+      }
+    ],
+    "state": {
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 5, \"sessions\": 1}"
+    },
+    "usage_split": {
+      "ke_compose": {
+        "calls": 2,
+        "prompt": 7344,
+        "cached": 5376,
+        "completion": 757,
+        "usd": 0.00529
+      },
+      "ke_extract": {
+        "calls": 7,
+        "prompt": 10554,
+        "cached": 9088,
+        "completion": 646,
+        "usd": 0.00469
+      },
+      "total": {
+        "calls": 9,
+        "prompt": 17898,
+        "cached": 14464,
+        "completion": 1403,
+        "usd": 0.00997
+      }
+    },
+    "models_used": [
+      "gpt-5.4-mini"
+    ],
+    "art9_granted": true
+  },
+  {
+    "id": "S03",
+    "theme": "anger at partner and repair",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "anger",
+        "closeness"
+      ],
+      "crisis_entries": 0
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 6,
+            "moments": 11,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 2,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 3,
+            "talks": 1,
+            "sessions": 2
+          },
+          "strengths": {
+            "courage": 4,
+            "insight": 3,
+            "honesty": 3,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 1
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "closeness",
+              "name": "Building closeness with my partner",
+              "focus": "about talking, repair, and feeling heard in the relationship",
+              "skills": [
+                "Saying what I need [connecting/chat] practicing x2",
+                "Repairing after a rough moment [connecting/people] discovered x1",
+                "Letting the talk go better [connecting/people] discovered x1"
+              ],
+              "hard": []
+            },
+            {
+              "family": "anger",
+              "name": "Making sense of my anger",
+              "focus": "about your partner, feeling unimportant, and speaking up",
+              "skills": [
+                "Taking a short break [steadying/pause] practicing x1",
+                "Naming the feeling out loud [noticing/tag] discovered x2"
+              ],
+              "hard": [
+                "Your partner forgetting the anniversary dinner (1)"
+              ]
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [
+            "[transfer/agenda] Maybe bring this to the next session, so you can keep practising saying what you need without waiting for guessing. | why: You noticed you often expect your partner to guess what you need."
+          ],
+          "pending_stages": [],
+          "idea_count": 1
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 0,
+            "moments": 0,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 2,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 3,
+            "talks": 1,
+            "sessions": 2
+          },
+          "strengths": {
+            "courage": 4,
+            "insight": 3,
+            "honesty": 3,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 1
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "closeness",
+              "name": "Building closeness with my partner",
+              "focus": "about talking, repair, and feeling heard in the relationship",
+              "skills": [
+                "Saying what I need [connecting/chat] practicing x2",
+                "Repairing after a rough moment [connecting/people] discovered x1",
+                "Letting the talk go better [connecting/people] discovered x1"
+              ],
+              "hard": []
+            },
+            {
+              "family": "anger",
+              "name": "Making sense of my anger",
+              "focus": "about your partner, feeling unimportant, and speaking up",
+              "skills": [
+                "Taking a short break [steadying/pause] practicing x1",
+                "Naming the feeling out loud [noticing/tag] discovered x2"
+              ],
+              "hard": [
+                "Your partner forgetting the anniversary dinner (1)"
+              ]
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "usage": {},
+    "moments": [
+      {
+        "days_ago": 55,
+        "source_kind": "reflect_talk",
+        "family": "anger",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "Your partner forgetting the anniversary dinner was still hard for you.",
+        "attached": {
+          "path": 4,
+          "skill": null,
+          "tool": null,
+          "hard": 1
+        }
+      },
+      {
+        "days_ago": 48,
+        "source_kind": "after_therapy",
+        "family": "anger",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You noticed your anger came up when you felt unimportant.",
+        "attached": {
+          "path": 4,
+          "skill": 8,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 48,
+        "source_kind": "after_therapy",
+        "family": "anger",
+        "kind": "from_therapy",
+        "anchor": "using_therapy",
+        "strengths": "",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "Your therapist asked you to try naming the feeling out loud before reacting.",
+        "attached": {
+          "path": 4,
+          "skill": 8,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 40,
+        "source_kind": "note",
+        "family": "sadness",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "honesty,courage",
+        "confidence": 96,
+        "hard_situation": true,
+        "text": "You told your partner you felt unimportant when plans changed last minute.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 40,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "noticed",
+        "anchor": "rethinking",
+        "strengths": "insight",
+        "confidence": 82,
+        "hard_situation": false,
+        "text": "You noticed the talk went better than shouting ever did.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 26,
+        "source_kind": "note",
+        "family": "anger",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,honesty",
+        "confidence": 98,
+        "hard_situation": true,
+        "text": "You took ten minutes in another room, then came back and said what made you angry without blaming.",
+        "attached": {
+          "path": 4,
+          "skill": 9,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 26,
+        "source_kind": "note",
+        "family": "closeness",
+        "kind": "noticed",
+        "anchor": "connecting",
+        "strengths": "",
+        "confidence": 78,
+        "hard_situation": false,
+        "text": "Your partner listened.",
+        "attached": {
+          "path": 3,
+          "skill": 12,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 20,
+        "source_kind": "session",
+        "family": "closeness",
+        "kind": "used_method",
+        "anchor": "connecting",
+        "strengths": "courage,commitment",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You practised saying what you need from the relationship.",
+        "attached": {
+          "path": 3,
+          "skill": 10,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 20,
+        "source_kind": "session",
+        "family": "worry",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You noticed you often expect your partner to guess what you need.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 8,
+        "source_kind": "note",
+        "family": "closeness",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "honesty,courage",
+        "confidence": 98,
+        "hard_situation": true,
+        "text": "You apologised for snapping on Friday and explained what was going on for you.",
+        "attached": {
+          "path": 3,
+          "skill": 10,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 8,
+        "source_kind": "note",
+        "family": "closeness",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "",
+        "confidence": 95,
+        "hard_situation": false,
+        "text": "You felt closer afterwards.",
+        "attached": {
+          "path": 3,
+          "skill": 11,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [
+      {
+        "id": 8,
+        "path_id": 4,
+        "anchor": "noticing",
+        "icon": "tag",
+        "name": "Naming the feeling out loud",
+        "in_your_words": "You pause and say what is there before you react. It helps you notice when anger shows up because you feel unimportant."
+      },
+      {
+        "id": 9,
+        "path_id": 4,
+        "anchor": "steadying",
+        "icon": "pause",
+        "name": "Taking a short break",
+        "in_your_words": "You step away for a few minutes so the feeling does not take over. Then you come back and say what made you angry without blaming."
+      },
+      {
+        "id": 10,
+        "path_id": 3,
+        "anchor": "connecting",
+        "icon": "chat",
+        "name": "Saying what I need",
+        "in_your_words": "You practise saying what you need from the relationship instead of waiting for your partner to guess. You also explain what was going on after you snapped."
+      },
+      {
+        "id": 11,
+        "path_id": 3,
+        "anchor": "connecting",
+        "icon": "people",
+        "name": "Repairing after a rough moment",
+        "in_your_words": "You apologise when things go off, explain yourself, and stay in the conversation. That can leave you feeling closer afterwards."
+      },
+      {
+        "id": 12,
+        "path_id": 3,
+        "anchor": "connecting",
+        "icon": "people",
+        "name": "Letting the talk go better",
+        "in_your_words": "You notice when the talk goes better than shouting ever did, and you stay with that kind of exchange. Your partner listening matters here."
+      }
+    ],
+    "paths_full": [
+      {
+        "id": 3,
+        "family": "closeness",
+        "name": "Building closeness with my partner",
+        "focus": "about talking, repair, and feeling heard in the relationship",
+        "merged_into": null
+      },
+      {
+        "id": 4,
+        "family": "anger",
+        "name": "Making sense of my anger",
+        "focus": "about your partner, feeling unimportant, and speaking up",
+        "merged_into": null
+      }
+    ],
+    "tools_full": [],
+    "hard_full": [
+      {
+        "id": 1,
+        "label": "Your partner forgetting the anniversary dinner",
+        "context": "When something important was forgotten in the relationship"
+      }
+    ],
+    "ideas_full": [
+      {
+        "id": 4,
+        "path_id": 3,
+        "skill_id": 10,
+        "text": "Maybe bring this to the next session, so you can keep practising saying what you need without waiting for guessing.",
+        "why": "You noticed you often expect your partner to guess what you need.",
+        "reason": "transfer",
+        "cta": "agenda",
+        "state": "active",
+        "created_at": "2026-10-19 07:26:42"
+      }
+    ],
+    "state": {
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 3, \"sessions\": 2, \"talks\": 1}"
+    },
+    "usage_split": {
+      "ke_compose": {
+        "calls": 2,
+        "prompt": 7492,
+        "cached": 5376,
+        "completion": 1304,
+        "usd": 0.00786
+      },
+      "ke_extract": {
+        "calls": 6,
+        "prompt": 8993,
+        "cached": 7680,
+        "completion": 645,
+        "usd": 0.00446
+      },
+      "total": {
+        "calls": 8,
+        "prompt": 16485,
+        "cached": 13056,
+        "completion": 1949,
+        "usd": 0.01232
+      }
+    },
+    "models_used": [
+      "gpt-5.4-mini"
+    ],
+    "art9_granted": true
+  },
+  {
+    "id": "S04",
+    "theme": "loneliness after moving cities",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "loneliness"
+      ],
+      "crisis_entries": 0
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 5,
+            "moments": 7,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 4,
+            "talks": 1,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 2,
+            "insight": 2,
+            "honesty": 1,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 1
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "loneliness",
+              "name": "Feeling less alone",
+              "focus": "about reaching out and making room for connection",
+              "skills": [
+                "Reaching out first [connecting/chat] practicing x2"
+              ],
+              "hard": [
+                "Weekend feels empty (1)",
+                "Feeling invisible at work (1)"
+              ]
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [
+            "[transfer/orca] If it fits, try asking one person first, like you did with your coworker. | why: You noticed you wait for others to invite you and then asked a coworker to grab lunch."
+          ],
+          "pending_stages": [],
+          "idea_count": 1
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 1,
+            "moments": 1,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 5,
+            "talks": 1,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 3,
+            "insight": 2,
+            "honesty": 1,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 2
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "loneliness",
+              "name": "Feeling less alone",
+              "focus": "about reaching out and making room for connection",
+              "skills": [
+                "Reaching out first [connecting/chat] practicing x2"
+              ],
+              "hard": [
+                "Weekend feels empty (1)",
+                "Feeling invisible at work (1)",
+                "Dinner alone most nights (1)"
+              ]
+            }
+          ],
+          "forming": [
+            {
+              "emotion_family": "closeness",
+              "entries": 2
+            }
+          ],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "usage": {},
+    "moments": [
+      {
+        "days_ago": 75,
+        "source_kind": "note",
+        "family": "loneliness",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You still ate dinner alone most nights in your new city.",
+        "attached": {
+          "path": 5,
+          "skill": null,
+          "tool": null,
+          "hard": 4
+        }
+      },
+      {
+        "days_ago": 75,
+        "source_kind": "note",
+        "family": "loneliness",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You felt invisible at work.",
+        "attached": {
+          "path": 5,
+          "skill": null,
+          "tool": null,
+          "hard": 2
+        }
+      },
+      {
+        "days_ago": 60,
+        "source_kind": "reflect_talk",
+        "family": "loneliness",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You noticed you wait for others to invite you and do not ask first.",
+        "attached": {
+          "path": 5,
+          "skill": 13,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 45,
+        "source_kind": "note",
+        "family": "loneliness",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,commitment",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "You asked a coworker to grab lunch, even though it felt awkward at first.",
+        "attached": {
+          "path": 5,
+          "skill": 13,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 45,
+        "source_kind": "note",
+        "family": "closeness",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 91,
+        "hard_situation": false,
+        "text": "You felt less alone the rest of the day after laughing a lot with your coworker.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 31,
+        "source_kind": "note",
+        "family": "fear",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "courage",
+        "confidence": 98,
+        "hard_situation": true,
+        "text": "You went to a climbing group alone and talked to two people.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 17,
+        "source_kind": "note",
+        "family": "loneliness",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 95,
+        "hard_situation": false,
+        "text": "The weekend felt empty again, and you did not reach out to anyone.",
+        "attached": {
+          "path": 5,
+          "skill": null,
+          "tool": null,
+          "hard": 3
+        }
+      },
+      {
+        "days_ago": 6,
+        "source_kind": "note",
+        "family": "closeness",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,commitment",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "You texted a climbing friend to go for coffee, and they said yes.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [
+      {
+        "id": 13,
+        "path_id": 5,
+        "anchor": "connecting",
+        "icon": "chat",
+        "name": "Reaching out first",
+        "in_your_words": "You notice when you are waiting for others to invite you, and you try asking first instead. You have already done this with a coworker, even when it felt awkward."
+      }
+    ],
+    "paths_full": [
+      {
+        "id": 5,
+        "family": "loneliness",
+        "name": "Feeling less alone",
+        "focus": "about reaching out and making room for connection",
+        "merged_into": null
+      }
+    ],
+    "tools_full": [],
+    "hard_full": [
+      {
+        "id": 2,
+        "label": "Feeling invisible at work",
+        "context": "This shows up at work."
+      },
+      {
+        "id": 3,
+        "label": "Weekend feels empty",
+        "context": "When the weekend comes and you do not reach out to anyone."
+      },
+      {
+        "id": 4,
+        "label": "Dinner alone most nights",
+        "context": "In your new city, especially at dinner time."
+      }
+    ],
+    "ideas_full": [
+      {
+        "id": 5,
+        "path_id": 5,
+        "skill_id": 13,
+        "text": "If it fits, try asking one person first, like you did with your coworker.",
+        "why": "You noticed you wait for others to invite you and then asked a coworker to grab lunch.",
+        "reason": "transfer",
+        "cta": "orca",
+        "state": "active",
+        "created_at": "2026-10-19 07:26:59"
+      }
+    ],
+    "state": {
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 5, \"talks\": 1}"
+    },
+    "usage_split": {
+      "ke_compose": {
+        "calls": 2,
+        "prompt": 7047,
+        "cached": 5376,
+        "completion": 856,
+        "usd": 0.00551
+      },
+      "ke_extract": {
+        "calls": 6,
+        "prompt": 9010,
+        "cached": 7808,
+        "completion": 510,
+        "usd": 0.00378
+      },
+      "total": {
+        "calls": 8,
+        "prompt": 16057,
+        "cached": 13184,
+        "completion": 1366,
+        "usd": 0.00929
+      }
+    },
+    "models_used": [
+      "gpt-5.4-mini"
+    ],
+    "art9_granted": true
+  },
+  {
+    "id": "S05",
+    "theme": "crisis entry among ordinary ones",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "overwhelm"
+      ],
+      "crisis_entries": 1,
+      "note": "The 10-day entry must produce no moments; no ideas after it."
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 3,
+            "moments": 3,
+            "crisis": 1,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 2,
+            "insight": 0,
+            "honesty": 1,
+            "resilience": 1,
+            "kindness": 0,
+            "commitment": 2
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "worry",
+              "name": "Making a safety plan for worry",
+              "focus": "about what you do when it gets dark again",
+              "skills": [
+                "Calling a friend [connecting/lifebuoy] discovered x1"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [
+            {
+              "emotion_family": "overwhelm",
+              "entries": 2
+            }
+          ],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 0,
+            "moments": 0,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 2,
+            "insight": 0,
+            "honesty": 1,
+            "resilience": 1,
+            "kindness": 0,
+            "commitment": 2
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "worry",
+              "name": "Making a safety plan for worry",
+              "focus": "about what you do when it gets dark again",
+              "skills": [
+                "Calling a friend [connecting/lifebuoy] discovered x1"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [
+            {
+              "emotion_family": "overwhelm",
+              "entries": 2
+            }
+          ],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "usage": {},
+    "moments": [
+      {
+        "days_ago": 30,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,honesty",
+        "confidence": 96,
+        "hard_situation": true,
+        "text": "You asked a friend for help with the assignment instead of hiding.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 20,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "resilience,commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You split the work into small parts and finished one.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 7,
+        "source_kind": "after_therapy",
+        "family": "worry",
+        "kind": "from_therapy",
+        "anchor": "using_therapy",
+        "strengths": "commitment,courage",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You made a safety plan with your therapist and agreed to call a friend when it gets dark again.",
+        "attached": {
+          "path": 6,
+          "skill": 14,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [
+      {
+        "id": 14,
+        "path_id": 6,
+        "anchor": "connecting",
+        "icon": "lifebuoy",
+        "name": "Calling a friend",
+        "in_your_words": "You made a safety plan with your therapist and agreed to call a friend when it gets dark again. You can use that plan when worry starts to build."
+      }
+    ],
+    "paths_full": [
+      {
+        "id": 6,
+        "family": "worry",
+        "name": "Making a safety plan for worry",
+        "focus": "about what you do when it gets dark again",
+        "merged_into": null
+      }
+    ],
+    "tools_full": [],
+    "hard_full": [],
+    "ideas_full": [],
+    "state": {
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 2, \"sessions\": 1}"
+    },
+    "usage_split": {
+      "ke_compose": {
+        "calls": 2,
+        "prompt": 6761,
+        "cached": 5376,
+        "completion": 445,
+        "usd": 0.00344
+      },
+      "ke_extract": {
+        "calls": 3,
+        "prompt": 4482,
+        "cached": 3840,
+        "completion": 216,
+        "usd": 0.00174
+      },
+      "total": {
+        "calls": 5,
+        "prompt": 11243,
+        "cached": 9216,
+        "completion": 661,
+        "usd": 0.00519
+      }
+    },
+    "models_used": [
+      "gpt-5.4-mini"
+    ],
+    "art9_granted": true
+  },
+  {
+    "id": "S06",
+    "theme": "guilt about elderly parents",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "guilt"
+      ],
+      "crisis_entries": 0
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 6,
+            "moments": 11,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 4,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 4,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 2,
+            "insight": 3,
+            "honesty": 3,
+            "resilience": 0,
+            "kindness": 3,
+            "commitment": 3
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "calm",
+              "name": "Making space for calm weekends",
+              "focus": "about rest and quieter time for yourself",
+              "skills": [
+                "Keeping a quiet weekend [steadying/anchor] practicing x2",
+                "Resting without doing more [values_action/sparkle] practicing x1"
+              ],
+              "hard": []
+            },
+            {
+              "family": "guilt",
+              "name": "Making room for guilt",
+              "focus": "about rest, visiting your mother, and speaking to yourself kindly",
+              "skills": [
+                "Taking rest without earning it [values_action/stairs] practicing x1",
+                "Talking to yourself like a friend [self_kindness/heart] practicing x2",
+                "Noticing guilt thoughts [noticing/tag] discovered x2"
+              ],
+              "hard": [
+                "Skipping visiting your mother (1)"
+              ]
+            }
+          ],
+          "forming": [],
+          "tools": [
+            "Talking to yourself like a friend [therapy] used 1"
+          ],
+          "ideas": [
+            "[consolidate/todo] Maybe write down the guilt thought when it shows up, just to notice it more clearly. | why: You noticed guilt tells you rest has to be earned.",
+            "[transfer/orca] If it helps, try a small version of a quiet weekend, just enough to protect one calm block of time. | why: You called your mother instead of visiting when you needed a quiet weekend."
+          ],
+          "pending_stages": [],
+          "idea_count": 2
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 0,
+            "moments": 0,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 4,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 4,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 2,
+            "insight": 3,
+            "honesty": 3,
+            "resilience": 0,
+            "kindness": 3,
+            "commitment": 3
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "calm",
+              "name": "Making space for calm weekends",
+              "focus": "about rest and quieter time for yourself",
+              "skills": [
+                "Keeping a quiet weekend [steadying/anchor] practicing x2",
+                "Resting without doing more [values_action/sparkle] practicing x1"
+              ],
+              "hard": []
+            },
+            {
+              "family": "guilt",
+              "name": "Making room for guilt",
+              "focus": "about rest, visiting your mother, and speaking to yourself kindly",
+              "skills": [
+                "Taking rest without earning it [values_action/stairs] practicing x1",
+                "Talking to yourself like a friend [self_kindness/heart] practicing x2",
+                "Noticing guilt thoughts [noticing/tag] discovered x2"
+              ],
+              "hard": [
+                "Skipping visiting your mother (1)"
+              ]
+            }
+          ],
+          "forming": [],
+          "tools": [
+            "Talking to yourself like a friend [therapy] used 1"
+          ],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "usage": {},
+    "moments": [
+      {
+        "days_ago": 80,
+        "source_kind": "note",
+        "family": "guilt",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "Skipping visiting your mother on Sunday was still hard for you.",
+        "attached": {
+          "path": 8,
+          "skill": null,
+          "tool": null,
+          "hard": 5
+        }
+      },
+      {
+        "days_ago": 80,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You noticed you were exhausted and felt guilty all week.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 70,
+        "source_kind": "after_therapy",
+        "family": "guilt",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You noticed guilt tells you rest has to be earned.",
+        "attached": {
+          "path": 8,
+          "skill": 16,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 70,
+        "source_kind": "after_therapy",
+        "family": "guilt",
+        "kind": "from_therapy",
+        "anchor": "using_therapy",
+        "strengths": "",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "Your therapist suggested speaking to yourself as you would to a friend.",
+        "attached": {
+          "path": 8,
+          "skill": 15,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 56,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "done",
+        "anchor": "self_kindness",
+        "strengths": "kindness,commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You rested on Saturday without doing anything for anyone.",
+        "attached": {
+          "path": 7,
+          "skill": 19,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 56,
+        "source_kind": "note",
+        "family": "guilt",
+        "kind": "used_method",
+        "anchor": "self_kindness",
+        "strengths": "kindness",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "When guilt came, you told yourself, you are allowed to be tired.",
+        "attached": {
+          "path": 8,
+          "skill": 15,
+          "tool": 2,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 42,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "honesty,courage",
+        "confidence": 98,
+        "hard_situation": true,
+        "text": "You called your mother instead of visiting and told her you needed a quiet weekend.",
+        "attached": {
+          "path": 7,
+          "skill": 18,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 42,
+        "source_kind": "note",
+        "family": "closeness",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage",
+        "confidence": 92,
+        "hard_situation": false,
+        "text": "You called your mother instead of visiting, and she understood.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 28,
+        "source_kind": "note",
+        "family": "guilt",
+        "kind": "done",
+        "anchor": "self_kindness",
+        "strengths": "commitment",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "You took an evening off again.",
+        "attached": {
+          "path": 8,
+          "skill": 17,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 28,
+        "source_kind": "note",
+        "family": "guilt",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You noticed guilt showed up and faded after an hour.",
+        "attached": {
+          "path": 8,
+          "skill": 16,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 12,
+        "source_kind": "todo_done",
+        "family": "calm",
+        "kind": "done",
+        "anchor": "self_kindness",
+        "strengths": "commitment,kindness",
+        "confidence": 86,
+        "hard_situation": false,
+        "text": "You finished one evening with nothing to earn.",
+        "attached": {
+          "path": 7,
+          "skill": 18,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [
+      {
+        "id": 15,
+        "path_id": 8,
+        "anchor": "self_kindness",
+        "icon": "heart",
+        "name": "Talking to yourself like a friend",
+        "in_your_words": "When guilt shows up, you remind yourself that you are allowed to be tired. You practice speaking to yourself the way your therapist suggested, instead of treating rest like something you have to earn."
+      },
+      {
+        "id": 16,
+        "path_id": 8,
+        "anchor": "noticing",
+        "icon": "tag",
+        "name": "Noticing guilt thoughts",
+        "in_your_words": "You notice the thought that rest has to be earned, and you notice when guilt fades after a while. That helps you see the feeling more clearly, without letting it run everything."
+      },
+      {
+        "id": 17,
+        "path_id": 8,
+        "anchor": "values_action",
+        "icon": "stairs",
+        "name": "Taking rest without earning it",
+        "in_your_words": "You take an evening off or rest on Saturday without doing anything for anyone. You are making space for rest even when guilt is in the background."
+      },
+      {
+        "id": 18,
+        "path_id": 7,
+        "anchor": "steadying",
+        "icon": "anchor",
+        "name": "Keeping a quiet weekend",
+        "in_your_words": "You choose a quieter plan, like calling instead of visiting, so you can have rest without pushing yourself. That helps you end the day with less strain."
+      },
+      {
+        "id": 19,
+        "path_id": 7,
+        "anchor": "values_action",
+        "icon": "sparkle",
+        "name": "Resting without doing more",
+        "in_your_words": "You rested on Saturday without doing anything for anyone, and you finished one evening with nothing to earn. You let the time be enough as it is."
+      }
+    ],
+    "paths_full": [
+      {
+        "id": 7,
+        "family": "calm",
+        "name": "Making space for calm weekends",
+        "focus": "about rest and quieter time for yourself",
+        "merged_into": null
+      },
+      {
+        "id": 8,
+        "family": "guilt",
+        "name": "Making room for guilt",
+        "focus": "about rest, visiting your mother, and speaking to yourself kindly",
+        "merged_into": null
+      }
+    ],
+    "tools_full": [
+      {
+        "id": 2,
+        "name": "Talking to yourself like a friend",
+        "what": "You tell yourself, you are allowed to be tired, especially when guilt starts to push back against rest.",
+        "origin": "therapy",
+        "origin_note": "Your therapist suggested speaking to yourself as you would to a friend."
+      }
+    ],
+    "hard_full": [
+      {
+        "id": 5,
+        "label": "Skipping visiting your mother",
+        "context": "When you decide not to go on Sunday, it still feels hard."
+      }
+    ],
+    "ideas_full": [
+      {
+        "id": 6,
+        "path_id": 8,
+        "skill_id": 16,
+        "text": "Maybe write down the guilt thought when it shows up, just to notice it more clearly.",
+        "why": "You noticed guilt tells you rest has to be earned.",
+        "reason": "consolidate",
+        "cta": "todo",
+        "state": "active",
+        "created_at": "2026-10-19 07:27:43"
+      },
+      {
+        "id": 7,
+        "path_id": 7,
+        "skill_id": 18,
+        "text": "If it helps, try a small version of a quiet weekend, just enough to protect one calm block of time.",
+        "why": "You called your mother instead of visiting when you needed a quiet weekend.",
+        "reason": "transfer",
+        "cta": "orca",
+        "state": "active",
+        "created_at": "2026-10-19 07:27:43"
+      }
+    ],
+    "state": {
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 4, \"sessions\": 1}"
+    },
+    "usage_split": {
+      "ke_compose": {
+        "calls": 2,
+        "prompt": 7505,
+        "cached": 5376,
+        "completion": 971,
+        "usd": 0.00637
+      },
+      "ke_extract": {
+        "calls": 6,
+        "prompt": 8969,
+        "cached": 7808,
+        "completion": 658,
+        "usd": 0.00442
+      },
+      "total": {
+        "calls": 8,
+        "prompt": 16474,
+        "cached": 13184,
+        "completion": 1629,
+        "usd": 0.01079
+      }
+    },
+    "models_used": [
+      "gpt-5.4-mini"
+    ],
+    "art9_granted": true
+  }
+]

@@ -1,0 +1,41 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/scripts/workspace/sync.py\" pull --hook",
+            "timeout": 180,
+            "statusMessage": "Pobieram zmiany partnera (git pull wszystkich repo)..."
+          }
+        ]
+      }
+    ],
+    "PostToolUse": [
+      {
+        "matcher": "Bash",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python \"$CLAUDE_PROJECT_DIR/scripts/social/ui-change-detector.py\"",
+            "if": "Bash(*git*commit*)",
+            "timeout": 30,
+            "statusMessage": "Sprawdzam zmiany wizualne we froncie..."
+          }
+        ]
+      }
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "heroku",
+    "clickup",
+    "loops"
+  ],
+  "enabledPlugins": {
+    "firebase@claude-plugins-official": true,
+    "posthog@claude-plugins-official": true,
+    "chrome-devtools-mcp@claude-plugins-official": true
+  }
+}

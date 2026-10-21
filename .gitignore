@@ -1,0 +1,73 @@
+# Wspólny workspace MindSync (repo neuravec/mindsync-workspace)
+# Repozytoria kodu i social to OSOBNE repo, klonowane obok przez scripts/workspace/setup.ps1.
+/MindSync/
+/mindsync-frontend/
+/social/
+/therapist-deck/
+/Mindsync-fleet/
+
+# Kopie robocze, worktree, backupy
+/*-wt-*/
+/MindSync-live/
+/mindsync-frontend-live/
+/_work_backup_*/
+/_audit_verify/
+
+# Klucze podpisu aplikacji i konta serwisowe: nigdy do repo, tylko menedżer haseł
+/itmesh/
+
+# Sekrety
+.env
+.env.*
+!.env.example
+**/.env
+**/.env.*
+!**/.env.example
+*.pem
+*.p8
+*.p12
+*.jks
+*.keystore
+**/token.json
+**/client_secret*.json
+.mcp.local-backup.json
+
+# Logi i notatki robocze w katalogu głównym (mogą zawierać dane użytkowników)
+/*.txt
+/jak
+/run
+/_audit_verdicts_*
+
+# Claude: ustawienia osobiste i pliki tymczasowe
+.claude/settings.local.json
+.claude/scheduled_tasks.lock
+.claude/worktrees/
+
+# Python i narzędzia
+__pycache__/
+*.pyc
+.venv/
+node_modules/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Audyt 2026-10-21: handoffy projektowe ze zrzutami i danymi prawdziwych kont (refleksje, objawy, Personal Bio)
+/Business_requirements/MS_Reflect_handoff/
+/Business_requirements/MS Reflect v1.1/handoff_extracted/
+/Business_requirements/MS Reflect-handoff.zip
+/Business_requirements/MS Reflect v1.1/MS Reflect-handoff (1).zip
+/Business_requirements/MindSync_Dashboard_handoff/
+/Business_requirements/MindSync Dashboard-handoff.zip
+/Business_requirements/MindSync_Statystyki_handoff/
+/Business_requirements/MindSync Statystyki-handoff.zip
+/Business_requirements/MindSync_Bio_handoff/
+/Business_requirements/MindSync Bio-handoff.zip
+/Business_requirements/MS_3/v3.2/MSV3.2 Workspace Screen-handoff.zip
+/Business_requirements/MS_3/Lottie animations for Flutter pufferfish.zip
+/db-reports/2026-08-18-*-purchase-dates-audit.md
+# Zapobiegawczo: nowe handoffy wrzucają zrzuty z telefonu do uploads/, a eksporty kopie pamięci agentów
+/Business_requirements/**/uploads/
+/design-specs/**/uploads/
+/design-specs/**/.claude/
+/Business_requirements/**/.claude/

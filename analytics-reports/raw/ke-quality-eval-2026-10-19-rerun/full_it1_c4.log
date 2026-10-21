@@ -1,0 +1,272 @@
+2026-10-19 10:51:22,048 WARNING app.services.posthog_service: PostHog enabled but POSTHOG_API_KEY is empty � skipping init.
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+2026-10-19 10:51:25,768 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:26,847 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:27,818 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:28,687 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:29,526 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:30,384 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:32,583 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:34,341 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:35,302 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:36,188 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:37,070 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:38,211 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:39,227 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:40,077 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:40,960 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:42,192 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:43,046 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:44,177 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:45,278 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:46,284 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:47,307 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:48,490 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:49,581 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:50,500 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:51,276 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:52,103 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:53,835 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:54,696 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:55,849 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:56,696 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:57,717 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:58,578 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:51:59,437 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:52:00,484 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:52:01,770 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:52:02,824 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:52:03,758 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:52:04,576 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:52:05,554 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:52:09,392 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:52:17,030 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:52:21,733 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 10:52:23,750 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Model: gpt-5.4-mini (real calls). Prompts ke-extract-v2|ke-compose-v2
+====================================================================================================
+S24  recorded sessions as the main source  (English, art9 True)
+  expect: families ['anger', 'fear', 'closeness'], crisis entries 0, note: Session numbers 1 to 4.
+  ENTRY d-56 session: Session 1 of the recording series. They talked about conflict with their teenage son and feeling powerless.
+      -> [anger/still_hard/None] c96 hs=False s= :: Conflict with your teenage son is still hard for you.
+      -> [anger/noticed/noticing] c95 hs=False s=insight :: You noticed feeling powerless in the conflict with your teenage son.
+  ENTRY d-42 session: They practised listening to their son without fixing. Noticed anger comes from fear for him.
+      -> [anger/done/connecting] c96 hs=False s=commitment,courage :: You practised listening to your son without fixing.
+      -> [fear/noticed/noticing] c99 hs=False s=insight :: You noticed your anger came from fear for your son.
+  ENTRY d-35 note: They listened to their son for ten minutes without giving advice. He talked more than in months.
+      -> [closeness/done/connecting] c97 hs=False s=courage,honesty :: You listened to your son for ten minutes without giving advice.
+      -> [closeness/noticed/noticing] c93 hs=False s=insight :: You noticed your son talked more than in months.
+  ENTRY d-28 session: They reported the conversation went well. Next step: say their own worry calmly.
+      -> [worry/from_therapy/using_therapy] c95 hs=False s=commitment :: You planned to say your worry calmly.
+  ENTRY d-18 note: Told their son calmly they worry when he comes home late. He rolled his eyes but texted the next time.
+      -> [worry/done/connecting] c98 hs=False s=courage,honesty :: You told your son you worry when he comes home late.
+  ENTRY d-14 session: Reviewed progress. Still hard when the son shouts back; they still shout in return sometimes.
+      -> [anger/still_hard/None] c97 hs=False s= :: Being shouted at by your son is still hard for you, and you sometimes shout back.
+  -- 2026-10-12: level 1 (2 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 4}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 3, 'insight': 3, 'honesty': 2, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     PATH [anger] Working with my anger at home  (about your teenage son and family conflict)
+        skill: Listening without fixing [connecting/people] practicing x1
+        skill: Noticing fear under anger [noticing/eye] discovered x1
+        still hard: Being shouted at by your son (1)
+        still hard: Conflict with your teenage son (1)
+     PATH [worry] Saying my worry calmly  (about your son coming home late)
+        skill: Saying worry calmly [connecting/chat] practicing x2
+  -- 2026-10-19: level 1 (2 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 4}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 3, 'insight': 3, 'honesty': 2, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     PATH [anger] Working with my anger at home  (about your teenage son and family conflict)
+        skill: Listening without fixing [connecting/people] practicing x1
+        skill: Noticing fear under anger [noticing/eye] discovered x1
+        still hard: Being shouted at by your son (1)
+        still hard: Conflict with your teenage son (1)
+     PATH [worry] Saying my worry calmly  (about your son coming home late)
+        skill: Saying worry calmly [connecting/chat] practicing x2
+     idea: [transfer/agenda] If it fits, notice what fear is under the anger, then bring that to the next session. | why: You noticed your anger came from fear for your son.
+  WORDS s1 Listening without fixing: You listen to your son without jumping in to fix it. You noticed that when you stayed with him, he talked more than in months.
+  WORDS s2 Noticing fear under anger: You notice when your anger is really fear for your son. That helps you see what is underneath the powerlessness you feel in the conflict.
+  WORDS s3 Saying worry calmly: You tell your son when you worry about him coming home late. You planned to say it calmly, and then you said it in your own words.
+  HARD h1 Conflict with your teenage son | None
+  HARD h2 Being shouted at by your son | When he shouts and you sometimes shout back.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 2, "sessions": 4}'}
+  usage: {'calls': 8, 'prompt': 19463, 'cached': 7168, 'completion': 1212, 'usd': 0.01521, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S25  realizations tagged by the person  (English, art9 False)
+  expect: families ['sadness', 'closeness', 'anger'], crisis entries 0
+  ENTRY d-40 realization: I go quiet when I am hurt, then everyone thinks I am fine.
+      -> [sadness/noticed/noticing] c98 hs=False s=insight,honesty :: You noticed you go quiet when you are hurt, and people then think you are fine.
+  ENTRY d-33 note: They told their friend that a joke hurt them instead of going quiet.
+      -> [anger/done/connecting] c98 hs=False s=courage,honesty :: You told your friend that the joke hurt you instead of going quiet.
+  ENTRY d-20 realization: Saying it early is easier than explaining it after a week of silence.
+      -> [worry/noticed/noticing] c98 hs=False s=insight,honesty :: You noticed that saying it early is easier than explaining it after a week of silence.
+  ENTRY d-7 note: Told their partner straight away that the comment stung. Sorted in five minutes.
+      -> [anger/done/connecting] c97 hs=False s=courage,honesty :: You told your partner straight away that the comment stung.
+      -> [anger/noticed/noticing] c96 hs=False s=insight :: You noticed that the comment stung.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 0}, support_row False, jobs [('ok', 'nothing')]
+     strengths {'courage': 2, 'insight': 3, 'honesty': 4, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+     forming: [{'emotion_family': 'anger', 'entries': 2}]
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 0}, support_row False, jobs [('ok', 'nothing')]
+     strengths {'courage': 2, 'insight': 3, 'honesty': 4, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+     forming: [{'emotion_family': 'anger', 'entries': 2}]
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 2}'}
+  usage: {'calls': 4, 'prompt': 7651, 'cached': 1792, 'completion': 327, 'usd': 0.006, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S26  names of real people should become roles  (English, art9 True)
+  expect: families ['anger', 'fear'], crisis entries 0, note: Names use roles (a colleague, your therapist, your sister), not Tom, Anna or Kasia.
+  ENTRY d-40 note: Tom from accounting criticised them in front of everyone. They said nothing and stewed all day.
+      -> [anger/still_hard/None] c96 hs=False s= :: Being criticised in front of everyone is still hard for you.
+  ENTRY d-33 after_therapy: Session with Anna about the colleague who criticises in public. They practised a short calm sentence to say next time.
+      -> [anger/from_therapy/using_therapy] c96 hs=False s=commitment :: You practised a short calm sentence to use next time with a colleague who criticises in public.
+  ENTRY d-19 note: Tom did it again. They said: I would rather talk about this one to one. He stopped.
+      -> [anger/done/connecting] c96 hs=False s=courage,honesty :: You said you would rather talk about this one to one.
+  ENTRY d-6 note: Felt calmer at work this week. Told their sister Kasia about it.
+      -> [calm/done/connecting] c97 hs=False s=honesty :: You told your sister about feeling calmer at work this week.
+  -- 2026-10-12: level 1 (1 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 0, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 1}
+     PATH [anger] Handling anger at public criticism  (about being criticised in public and speaking up one to one)
+        skill: Saying one to one [connecting/hand] practicing x2
+        still hard: Being criticised in front of everyone (1)
+  -- 2026-10-19: level 1 (1 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 0, 'honesty': 2, 'resilience': 0, 'kindness': 0, 'commitment': 1}
+     PATH [anger] Handling anger at public criticism  (about being criticised in public and speaking up one to one)
+        skill: Saying one to one [connecting/hand] practicing x2
+        still hard: Being criticised in front of everyone (1)
+  WORDS s4 Saying one to one: You say you would rather talk about it one to one when someone criticises you in public. You also practised a short calm sentence for the next time this happens with a colleague.
+  HARD h3 Being criticised in front of everyone | None
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 3, "sessions": 1}'}
+  usage: {'calls': 6, 'prompt': 15240, 'cached': 8960, 'completion': 590, 'usd': 0.00804, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S27  soledad y amistad (Spanish)  (Spanish, art9 False)
+  expect: families ['loneliness', 'closeness'], crisis entries 0, note: Spanish output.
+  ENTRY d-45 note: Escribió que se siente sola desde que su mejor amiga se mudó. Los fines de semana son lo más difícil.
+      -> [loneliness/noticed/noticing] c98 hs=False s=insight,honesty :: Te diste cuenta de que te sientes sola desde que tu mejor amiga se mudó.
+      -> [loneliness/still_hard/None] c97 hs=False s= :: Los fines de semana siguen siendo lo más difícil para ti.
+  ENTRY d-31 reflect_talk: Habló con Orca sobre llamar a su amiga aunque le dé vergüenza. Decidió hacerlo.
+      -> [shame/still_hard/None] c95 hs=False s= :: Llamar a tu amiga aunque te dé vergüenza sigue siendo difícil para ti.
+      -> [shame/done/values_action] c96 hs=False s=courage,commitment :: Decidiste llamar a tu amiga aunque te diera vergüenza.
+  ENTRY d-20 note: Llamó a su amiga y hablaron una hora. Se sintió acompañada.
+      -> [closeness/done/connecting] c98 hs=False s=courage,commitment :: Llamaste a tu amiga y hablaron una hora.
+      -> [closeness/noticed/noticing] c96 hs=False s=insight :: Te sentiste acompañada.
+  ENTRY d-6 note: Se apuntó a un grupo de lectura del barrio. Fue sola y conoció a dos personas.
+      -> [closeness/done/values_action] c98 hs=False s=courage,commitment :: Fuiste sola a un grupo de lectura del barrio y conociste a dos personas.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 1, 'sessions': 0}, support_row False, jobs [('ok', 'nothing')]
+     strengths {'courage': 2, 'insight': 2, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 3, 'talks': 1, 'sessions': 0}, support_row False, jobs [('ok', 'nothing')]
+     strengths {'courage': 3, 'insight': 2, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 3}
+     forming: [{'emotion_family': 'closeness', 'entries': 2}]
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 3, "talks": 1}'}
+  usage: {'calls': 4, 'prompt': 7689, 'cached': 0, 'completion': 438, 'usd': 0.00774, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S28  used own coping methods  (English, art9 False)
+  expect: families ['anger', 'worry'], crisis entries 0, note: Tools: running it off, a control list. Origin self.
+  ENTRY d-60 note: Anger at the landlord. They went for a hard run and came back able to write a calm email.
+      -> [anger/used_method/steadying] c98 hs=False s=resilience,courage :: You went for a hard run and came back able to write a calm email.
+      -> [anger/done/values_action] c96 hs=False s=courage,commitment :: You wrote a calm email to your landlord.
+  ENTRY d-45 note: Annoyed at a neighbour's noise. Ran again before knocking on their door. Polite talk.
+      -> [anger/used_method/values_action] c91 hs=False s=courage,commitment :: You ran again before knocking on your neighbour's door.
+      -> [anger/done/connecting] c89 hs=False s=courage,honesty :: You knocked on your neighbour's door and talked politely.
+  ENTRY d-30 note: Worried about a medical test result. They wrote three things they could control and stopped there.
+      -> [worry/used_method/values_action] c98 hs=False s=commitment :: You wrote three things you could control and stopped there.
+  ENTRY d-15 note: Angry after a call with the bank. Ran, then called back calmly.
+      -> [anger/used_method/steadying] c98 hs=True s=courage,resilience :: You ran, then called the bank back calmly.
+  ENTRY d-3 note: Worried again before the test. Wrote the control list. Slept okay.
+      -> [worry/used_method/values_action] c97 hs=False s=commitment :: You wrote the control list before the test.
+  -- 2026-10-12: level 1 (2 steps, the_newcomer), sources {'notes': 4, 'talks': 0, 'sessions': 0}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 5, 'insight': 0, 'honesty': 1, 'resilience': 2, 'kindness': 0, 'commitment': 3}
+     PATH [anger] Working with my anger  (about how you calm down and act on it)
+        skill: Calming down after moving [steadying/wind] practicing x2
+        skill: Staying calm with other people [connecting/chat] practicing x2
+     tool: Hard run [self] used 3
+  -- 2026-10-19: level 1 (2 steps, the_newcomer), sources {'notes': 5, 'talks': 0, 'sessions': 0}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 5, 'insight': 0, 'honesty': 1, 'resilience': 2, 'kindness': 0, 'commitment': 4}
+     PATH [anger] Working with my anger  (about how you calm down and act on it)
+        skill: Calming down after moving [steadying/wind] practicing x2
+        skill: Staying calm with other people [connecting/chat] practicing x2
+     forming: [{'emotion_family': 'worry', 'entries': 2}]
+     tool: Hard run [self] used 3
+  WORDS s5 Calming down after moving: You use a hard run to let the anger pass, then you can write or speak more calmly. It helps you come back ready to respond, not lash out.
+  WORDS s6 Staying calm with other people: You can slow yourself down before contact, then talk politely or write in a calm way. It shows up when you deal with a landlord, a neighbour, or the bank.
+  TOOL t1 Hard run [self]: You go for a hard run to settle the anger before you write or talk. | note: None
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 5}'}
+  usage: {'calls': 7, 'prompt': 17386, 'cached': 12544, 'completion': 876, 'usd': 0.00851, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S29  to-dos from Orca ideas completed  (English, art9 False)
+  expect: families ['overwhelm', 'fear'], crisis entries 0
+  ENTRY d-35 note: They avoid asking for help at work until they drown.
+      -> [overwhelm/still_hard/None] c93 hs=False s= :: Asking for help at work is still hard for you until you feel drowned.
+  ENTRY d-28 todo_done: Ask one colleague for help with a small task
+      -> [calm/done/connecting] c99 hs=False s=courage,commitment :: You asked a colleague for help with a small task.
+  ENTRY d-21 note: Asked for help with the spreadsheet. The colleague was glad to help.
+      -> [overwhelm/done/connecting] c99 hs=False s=courage :: You asked for help with the spreadsheet.
+  ENTRY d-10 todo_done: Ask for help before the deadline, not after
+      -> [worry/done/connecting] c99 hs=False s=courage,commitment :: You asked for help before the deadline, not after.
+  ENTRY d-2 note: Asked their lead which task to drop when the week got too full. Felt in control.
+      -> [overwhelm/done/connecting] c97 hs=True s=courage,commitment :: You asked your lead which task to drop when the week got too full.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 0}, support_row False, jobs [('ok', 'nothing')]
+     strengths {'courage': 3, 'insight': 0, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     forming: [{'emotion_family': 'overwhelm', 'entries': 2}]
+  -- 2026-10-19: level 1 (1 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 0}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 4, 'insight': 0, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 3}
+     PATH [overwhelm] Handling overwhelm at work  (about work getting too full and asking for help)
+        skill: Asking for help early [connecting/lifebuoy] practicing x2
+        still hard: Feeling drowned at work (1)
+  WORDS s7 Asking for help early: You ask for help before things get too full, instead of waiting until you feel drowned. You also ask which task to drop when the week is too full.
+  HARD h4 Feeling drowned at work | When work feels too full and you still need help.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': ['overwhelm']}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 3}'}
+  usage: {'calls': 6, 'prompt': 13359, 'cached': 8064, 'completion': 534, 'usd': 0.00698, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S30  pride in small wins after depression talk  (English, art9 True)
+  expect: families ['pride', 'joy'], crisis entries 0, note: No 'depression' in any generated text.
+  ENTRY d-80 after_therapy: Talked about the depression diagnosis from last year and how small wins get lost. Their therapist suggested writing one small win a day.
+      -> [sadness/from_therapy/using_therapy] c97 hs=False s= :: Your therapist suggested writing one small win a day.
+  ENTRY d-66 note: Small win: made breakfast and went outside. Wrote it down.
+      -> [calm/done/values_action] c94 hs=False s=commitment :: You made breakfast and went outside.
+      -> [calm/used_method/using_therapy] c92 hs=False s=commitment :: You wrote it down.
+  ENTRY d-52 note: Small win: called the dentist I had been avoiding.
+      -> [worry/done/values_action] c98 hs=False s=courage,commitment :: You called the dentist you had been avoiding.
+  ENTRY d-38 note: Small win list has twenty items. They read it on a bad day and felt a little proud.
+      -> [pride/noticed/noticing] c98 hs=False s=insight :: You read your small win list on a bad day and felt a little proud.
+  ENTRY d-24 note: They noticed they now see wins without writing them.
+      -> [pride/noticed/noticing] c97 hs=False s=insight :: You noticed you now see wins without writing them down.
+  ENTRY d-9 note: Small win: finished a book. Proud.
+      -> [pride/done/values_action] c98 hs=False s=commitment :: You finished a book.
+      -> [pride/noticed/noticing] c96 hs=False s= :: You felt proud.
+  -- 2026-10-12: level 1 (1 steps, the_newcomer), sources {'notes': 5, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 2, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 4}
+     PATH [pride] Noticing my wins  (about seeing and feeling proud of small wins)
+        skill: Finishing something [values_action/sparkle] practicing x1
+        skill: Noticing my wins [noticing/eye] discovered x3
+     tool: Writing it down [therapy] used 1
+     idea: [recurring/todo] If it fits, write down one finished thing that felt good. | why: You finished a book and felt proud.
+  -- 2026-10-19: level 1 (1 steps, the_newcomer), sources {'notes': 5, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 2, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 4}
+     PATH [pride] Noticing my wins  (about seeing and feeling proud of small wins)
+        skill: Finishing something [values_action/sparkle] practicing x1
+        skill: Noticing my wins [noticing/eye] discovered x3
+     PATH [sadness] Making room for sadness  (about small ways to notice and write down sadness)
+        skill: Writing one small win [using_therapy/notebook] discovered x1
+     tool: Writing it down [therapy] used 1
+     idea: [transfer/agenda] If it fits, bring this to the session and ask how to keep it simple. | why: Your therapist suggested writing one small win a day.
+  WORDS s8 Noticing my wins: You notice wins more easily now, even when you do not write them down. You also felt a little proud when you read your small win list on a bad day.
+  WORDS s9 Finishing something: You finished a book and felt proud of that. It shows up as a real win, not just a thought.
+  WORDS s10 Writing one small win: You can write down one small win when it feels useful. Your therapist suggested this as a simple way to keep track of wins.
+  TOOL t2 Writing it down [therapy]: You write things down to hold onto them and make them easier to notice later. | note: Your therapist suggested it as a small win practice.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': ['sadness']}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 5, "sessions": 1}'}
+  usage: {'calls': 8, 'prompt': 19249, 'cached': 10752, 'completion': 1501, 'usd': 0.01393, 'models': ['gpt-5.4-mini']}
+  !! therapy-only skill 10: Writing one small win | You can write down one small win when it feels useful. Your therapist suggested this as a simple way to keep track of wins.
+DB: C:\Users\mikol\AppData\Local\Temp\ke_quality_eval_1792399879381.db
+====================================================================================================
+7 stories, 45 moments, 7 stories with moments (need 5), 5/7 expected maps with a path, coverage 5/7, 1 story problems.
+Tokens: {'calls': 43, 'prompt': 100037, 'cached': 49280, 'completion': 5478, 'usd': 0.0664}, USD per story 0.00949, models ['gpt-5.4-mini']
+  S30: therapy-only skill 10: Writing one small win | You can write down one small win when it feels useful. Your therapist suggested this as a simple way to keep track of wins.
+RESULT: FAIL

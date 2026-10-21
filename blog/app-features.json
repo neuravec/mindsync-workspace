@@ -1,0 +1,459 @@
+﻿{
+  "_opis": "Katalog funkcji MindSync = odpowiednik katalogu produktow PLASMET. Zrodlo prawdy dla bramki pokrycia (scripts/blog-coverage-preflight.py) i kart CTA [FEATURE:] w tresci wpisow (scripts/webflow/blog-publish.ps1). ZWERYFIKOWANY z kodem obu repo 2026-08-25 (inwentaryzacja Explore: routery FastAPI + ekrany/nawigacja Flutter), nie ze strona www (nieaktualna). Utrzymuje operator + backend-api przy zmianach w apce. Statusy: live (osiagalne w apce, mozna linkowac), beta (jest, ale kruche/ukryte - karta RYZYKO), planned (nie linkowac, temat = BRAK/RYZYKO).",
+  "_zasada": "Wpis nigdy nie prowadzi w slepy zaulek: gdy brak funkcji, CTA idzie do celu pochodnego (inna funkcja) albo do strony zbiorczej z site_targets. Braki dopisujemy do docs/luki-funkcji.md. NIE obiecujemy w tresci funkcji o statusie planned, nawet jesli strona www je reklamuje.",
+  "cta": {
+    "app_store": "https://apps.apple.com/us/app/mindsync-ai-health-journal/id6739644256",
+    "google_play": "https://play.google.com/store/apps/details?id=com.mindsync.app",
+    "site": "https://mindsync.app",
+    "features_page": "https://mindsync.app/features",
+    "membership": "https://mindsync.app/membership",
+    "cta_label_default": "Try it free in MindSync"
+  },
+  "features": [
+    {
+      "id": "session-recording",
+      "name": "Session recording & summaries",
+      "short": "Record a session with your therapist's permission and get a summary card with the questions your therapist asked, to-dos, threads and realizations.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "https://cdn.prod.website-files.com/676ed8d44b863915ae191f41/6ad891cbc99bb4c6ee49cb87_app-ios-v2-recording.webp",
+      "keywords": [
+        "session recording",
+        "record therapy",
+        "therapy session",
+        "transcript",
+        "session summary",
+        "remember therapy",
+        "session notes",
+        "forget what therapist said"
+      ]
+    },
+    {
+      "id": "session-prep",
+      "name": "Before therapy card",
+      "short": "Before each session, a one-page card with a short summary of what came up since last time, up to three numbered questions to bring, to-do ideas, threads, patterns and your Focus Areas.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "https://cdn.prod.website-files.com/676ed8d44b863915ae191f41/6ad891c80e38943448773dff_app-ios-v2-prep.webp",
+      "keywords": [
+        "prepare for therapy",
+        "therapy prep",
+        "what to talk about in therapy",
+        "before session",
+        "therapy agenda",
+        "session preparation",
+        "questions for therapist"
+      ]
+    },
+    {
+      "id": "session-debrief",
+      "name": "After therapy card",
+      "short": "Note what you took away right after a session. The card keeps the summary, questions, to-dos and realizations, and after three sessions it adds Your progress in therapy, a chart of your own entries, not a score.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "https://cdn.prod.website-files.com/676ed8d44b863915ae191f41/6ad891c082cbf68abf2d4cd8_app-ios-v2-after-therapy.webp",
+      "keywords": [
+        "after therapy",
+        "debrief",
+        "session reflection",
+        "process therapy session",
+        "what did we talk about"
+      ]
+    },
+    {
+      "id": "voice-notes",
+      "name": "Between-session voice notes",
+      "short": "Say it out loud when something comes up between sessions: voice notes are transcribed automatically, you review and accept the text.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "voice note",
+        "voice journal",
+        "audio journaling",
+        "talk instead of write",
+        "speech to text journal",
+        "between sessions"
+      ]
+    },
+    {
+      "id": "reflect",
+      "name": "Reflect (AI journaling)",
+      "short": "Talk things through with Orca, MindSync's AI therapy assistant, in writing, or by voice on Premium. It asks the follow-up questions a blank journal never will, and past talks stay readable.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "https://cdn.prod.website-files.com/676ed8d44b863915ae191f41/6ad891cdc122fd361525eaae_app-ios-v2-reflect.webp",
+      "keywords": [
+        "ai journaling",
+        "reflection",
+        "journal prompt",
+        "guided journaling",
+        "talk it through",
+        "processing emotions",
+        "journaling app",
+        "voice chat"
+      ]
+    },
+    {
+      "id": "check-ins",
+      "name": "Focus Areas check-ins",
+      "short": "Rate what you're keeping an eye on (sleep, worry, anything you pick) from 1 to 10. It takes under a minute.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "mood tracking",
+        "wellbeing check-in",
+        "symptom tracker",
+        "mood log",
+        "track anxiety",
+        "track mood",
+        "rate your day",
+        "focus areas"
+      ]
+    },
+    {
+      "id": "mood-trends",
+      "name": "Mood & focus-area trends",
+      "short": "Focus Areas on Main chart your last 14 ratings for each area and describe the trend in plain words.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "mood patterns",
+        "mood trend",
+        "symptom trend",
+        "see patterns",
+        "is therapy working",
+        "progress over time",
+        "mental health data",
+        "track progress"
+      ]
+    },
+    {
+      "id": "summaries",
+      "name": "Weekly & monthly summaries",
+      "short": "Automatic weekly and monthly summaries (with a Generate Now button when you cannot wait) that turn scattered entries into a readable story of your progress.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "weekly summary",
+        "monthly summary",
+        "progress report",
+        "therapy progress",
+        "review your week",
+        "monthly audit"
+      ]
+    },
+    {
+      "id": "timeline",
+      "name": "Therapy timeline",
+      "short": "Every card, note, recording, realization and summary on one timeline with filters at the top, and a recycle bin for 24 hours.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "https://cdn.prod.website-files.com/676ed8d44b863915ae191f41/6ad891d05ff1eb7892e0d776_app-ios-v2-timeline.webp",
+      "keywords": [
+        "therapy timeline",
+        "therapy journey",
+        "track therapy",
+        "history",
+        "look back",
+        "therapy record"
+      ]
+    },
+    {
+      "id": "workspace",
+      "name": "Workspace",
+      "short": "One place for the space between sessions: your agenda for next time, topics, to-dos, threads you keep pulling on, and the realizations worth keeping.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "https://cdn.prod.website-files.com/676ed8d44b863915ae191f41/6ad891d2ce10422190539b14_app-ios-v2-workspace.webp",
+      "keywords": [
+        "therapy agenda",
+        "topics to discuss",
+        "threads",
+        "realizations",
+        "insights from therapy",
+        "what to bring up",
+        "pin to agenda"
+      ]
+    },
+    {
+      "id": "homework",
+      "name": "Homework & to-dos",
+      "short": "Therapy homework lands on your home screen as a simple to-do for today, so it actually gets done instead of surfacing guiltily next session.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "therapy homework",
+        "todo",
+        "follow through",
+        "homework between sessions",
+        "assignments",
+        "action items"
+      ]
+    },
+    {
+      "id": "health-check",
+      "name": "Therapy relationship check",
+      "short": "A short check-in on how therapy itself is going, your working alliance with your therapist, with a result you can share.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "therapeutic alliance",
+        "is my therapist right for me",
+        "therapy not working",
+        "relationship with therapist",
+        "switch therapist",
+        "therapy fit"
+      ]
+    },
+    {
+      "id": "goals",
+      "name": "Goals",
+      "short": "Set therapy goals, get suggestions from your own entries, and watch each goal accumulate evidence from sessions and check-ins.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "therapy goals",
+        "goal tracking",
+        "intentions",
+        "progress on goals",
+        "goal setting"
+      ]
+    },
+    {
+      "id": "smart-reminders",
+      "name": "Reminders you control",
+      "short": "Thirteen notification types (prep, homework, reflections, summaries and more), each with its own switch, tuned to your therapy schedule.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "reminders",
+        "notifications",
+        "nudge",
+        "habit reminder",
+        "notification settings"
+      ]
+    },
+    {
+      "id": "personal-bio",
+      "name": "Personal Bio",
+      "short": "A living bio the app writes about you from your entries, shareable as a card.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "self insights",
+        "personal bio",
+        "know yourself",
+        "character",
+        "self-awareness",
+        "share bio",
+        "companion"
+      ]
+    },
+    {
+      "id": "daily-affirmation",
+      "name": "Daily affirmation",
+      "short": "A daily affirmation on your home screen that stays grounded and specific instead of fortune-cookie generic.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "affirmation",
+        "daily affirmation",
+        "morning routine",
+        "grounding"
+      ]
+    },
+    {
+      "id": "streaks",
+      "name": "Streaks & milestones",
+      "status": "planned",
+      "short": "Streak tracking exists in the backend but has NO user-facing UI today (celebrations removed in CS-04; Character tab has no streak widget). Do not promise in content. Per-habit day streaks live in Habits.",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "streak",
+        "habit streak",
+        "consistency",
+        "milestones",
+        "journaling habit",
+        "gamification"
+      ]
+    },
+    {
+      "id": "therapist-sharing",
+      "name": "Share with your therapist (clinician portal)",
+      "status": "planned",
+      "short": "Portal and consent flow are BUILT but the patient-side entry point was hidden in MSV3.4 (CS-11) as unfinished; feature is unreachable in the app. Do not promise in content until re-exposed, even though the marketing site advertises it.",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "share with therapist",
+        "therapist portal",
+        "clinician",
+        "between sessions data",
+        "show therapist",
+        "consent",
+        "therapist dashboard"
+      ]
+    },
+    {
+      "id": "main-home",
+      "name": "Main home screen",
+      "short": "MindSync opens on Main: eight tiles for your next session, Therapy Agenda, to-dos, the last seven days of your habits, Focus Areas, therapy relationship, weekly observations and a daily affirmation. A blue dot means something is waiting.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "https://cdn.prod.website-files.com/676ed8d44b863915ae191f41/6ad891c553f7bc103fc940d4_app-ios-v2-main.webp",
+      "keywords": [
+        "home screen",
+        "main screen",
+        "new home screen",
+        "therapy week at a glance",
+        "next therapy session",
+        "what is waiting today",
+        "mindsync update",
+        "new features"
+      ]
+    },
+    {
+      "id": "first-week-plan",
+      "name": "Your first week plan",
+      "short": "New accounts get a plan of eight small steps on Main, a few minutes each and with no set days, from answering Orca's question to adding your next session, a voice note, a quick check-in and a short look back at the week. A reminder is optional and comes at most once a day.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "first week",
+        "getting started",
+        "how to use mindsync",
+        "first steps",
+        "eight steps",
+        "week plan",
+        "new to the app",
+        "onboarding plan"
+      ]
+    },
+    {
+      "id": "first-conversation",
+      "name": "First conversation with Orca",
+      "short": "Right after sign-up, Orca, MindSync's AI therapy assistant for the days between sessions, asks three short questions by voice or in writing, then the conversation is yours. Orca isn't a therapist. Your first Before therapy card starts from what it heard.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "orca",
+        "ai therapy assistant",
+        "first conversation",
+        "mindsync ai",
+        "three questions",
+        "voice conversation",
+        "talk between sessions"
+      ]
+    },
+    {
+      "id": "orca-memory",
+      "name": "What Orca remembers",
+      "short": "A page in Settings that lists every note Orca keeps from your conversations and entries, grouped by what's on your mind, what helps, goals, routines and people. Delete any note, or tap Forget everything.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "what orca remembers",
+        "ai memory",
+        "delete ai memory",
+        "what does the app remember",
+        "forget everything",
+        "control what the ai knows",
+        "ai privacy"
+      ]
+    },
+    {
+      "id": "character",
+      "name": "Character: strengths and skills",
+      "short": "Six strengths (Courage, Insight, Honesty, Resilience, Kindness and Commitment) grow from moments in what you write and say, never from just opening the app. Your map shows the skills you're building under the feelings they help with. Tap Not quite on any moment that doesn't fit.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "https://cdn.prod.website-files.com/676ed8d44b863915ae191f41/6ad891c3f2912e757faa984a_app-ios-v2-character.webp",
+      "keywords": [
+        "strengths",
+        "character strengths",
+        "skills map",
+        "coping skills",
+        "emotional skills",
+        "see your growth",
+        "what you are learning about yourself",
+        "not quite"
+      ]
+    },
+    {
+      "id": "habits",
+      "name": "Habits",
+      "short": "Track small daily things you want to do, or want to stay free of. The Habits tile on Main shows the last seven days, so you can still check off a day you missed.",
+      "status": "live",
+      "cta_url": "https://mindsync.app/features",
+      "screenshot": "",
+      "keywords": [
+        "habit tracker",
+        "daily habits",
+        "small habits",
+        "good habit",
+        "bad habit",
+        "habits between sessions"
+      ]
+    }
+  ],
+  "site_targets": [
+    {
+      "url": "https://mindsync.app/features",
+      "temat": "przeglad wszystkich funkcji (domyslny cel pochodny)"
+    },
+    {
+      "url": "https://mindsync.app/membership",
+      "temat": "cennik / trial (CTA komercyjne)"
+    },
+    {
+      "url": "https://mindsync.app/audience",
+      "temat": "dla kogo jest MindSync"
+    },
+    {
+      "url": "https://mindsync.app/faq",
+      "temat": "prywatnosc, bezpieczenstwo, jak dziala"
+    },
+    {
+      "url": "https://mindsync.app/about",
+      "temat": "historia zalozycielska, zespol (E-E-A-T)"
+    },
+    {
+      "url": "https://mindsync.app/pre-order/tracking-therapy-effectiveness",
+      "temat": "czy terapia dziala / mierzenie skutecznosci"
+    },
+    {
+      "url": "https://mindsync.app/pre-order/understand-behavioural-patterns",
+      "temat": "wzorce zachowan / triggery"
+    },
+    {
+      "url": "https://mindsync.app/pre-order/mood-on-antidepressants",
+      "temat": "nastroj a leki przeciwdepresyjne (kat tresciowy; w apce sledzenie nastroju, nie modul lekowy)"
+    },
+    {
+      "url": "https://mindsync.app/pre-order/track-interventions",
+      "temat": "sledzenie efektow interwencji"
+    },
+    {
+      "url": "https://mindsync.app/pre-order/deep-emotional-analysis",
+      "temat": "glebsza analiza emocji / AI journaling"
+    },
+    {
+      "url": "https://mindsync.app/pre-order/wearable-ai-journal",
+      "temat": "wearables + dziennik (UWAGA: funkcji wearables NIE MA w apce, zero kodu; landing pre-order - nie obiecywac w tresci)"
+    }
+  ]
+}

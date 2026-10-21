@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>After the first conversation</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#113237}a:hover{color:#0E1D1F}
+.ms-scroll::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; overflow: hidden">
+
+  <div class="ms-scroll" style="flex-grow: 1; overflow-y: auto; scrollbar-width: none">
+    <div style="background: #113237; color: #FFFFFF; padding: 12px 16px 24px 16px; display: flex; flex-direction: column; gap: 14px">
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <button type="button" aria-label="Close and continue with the free trial" style="width: 44px; height: 44px; border: none; border-radius: 22px; background: rgba(255,255,255,0.10); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <button type="button" style="height: 44px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 600; color: #DBF0ED; padding: 0 8px; cursor: pointer">Restore</button>
+      </div>
+      <div style="display: flex; align-items: center; gap: 12px; padding: 0 4px">
+        <div style="flex-shrink: 0; width: 48px; height: 48px; border-radius: 24px; background: #1F4C50; border: 2px solid #4CB2B5; display: flex; align-items: center; justify-content: center"><img src="/_blob/f69af35610efe64c4d77bb0bd7c51176" alt="" style="width: 28px; height: 29px"></div>
+        <h1 style="margin: 0; font-size: 26px; line-height: 1.15; font-weight: 800; letter-spacing: -0.4px">{{headline}}</h1>
+      </div>
+
+      <div style="background: #FFFFFF; color: #113237; border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+        <span style="font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #26767B">What [Orca] heard</span>
+
+        <sc-if value="{{isFull}}" hint-placeholder-val="{{ true }}">
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <sc-for list="{{heard}}" as="h" hint-placeholder-count="3">
+              <div style="display: flex; gap: 10px; align-items: flex-start">
+                <span style="flex-shrink: 0; margin-top: 6px; width: 8px; height: 8px; border-radius: 4px; background: #4CB2B5"></span>
+                <span style="font-size: 15px; line-height: 1.4; font-weight: 500">{{h}}</span>
+              </div>
+            </sc-for>
+            <span style="font-size: 13px; line-height: 1.4; color: #3D5C60; border-top: 1px solid #E3F2EF; padding-top: 10px">{{savedLine}}</span>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{isWriting}}" hint-placeholder-val="{{ false }}">
+          <div style="display: flex; flex-direction: column; gap: 10px" aria-busy="true">
+            <span style="height: 12px; width: 92%; border-radius: 6px; background: #E3F2EF"></span>
+            <span style="height: 12px; width: 78%; border-radius: 6px; background: #E3F2EF"></span>
+            <span style="height: 12px; width: 85%; border-radius: 6px; background: #E3F2EF"></span>
+            <span style="font-size: 13px; color: #3D5C60">[Orca] is writing up what it heard…</span>
+          </div>
+        </sc-if>
+
+        <sc-if value="{{isShort}}" hint-placeholder-val="{{ false }}">
+          <span style="font-size: 15px; line-height: 1.45">You kept it short, and that's fine. [Orca] will pick up from here next time.</span>
+        </sc-if>
+      </div>
+    </div>
+
+    <div style="padding: 20px 20px 4px 20px; display: flex; flex-direction: column; gap: 12px">
+      <h2 style="margin: 0; font-size: 19px; font-weight: 800">Keep [Orca] with you after day 4</h2>
+      <div style="display: flex; flex-direction: column; gap: 10px">
+        <sc-for list="{{benefits}}" as="b" hint-placeholder-count="3">
+          <div style="display: flex; gap: 12px; align-items: flex-start">
+            <span style="flex-shrink: 0; width: 22px; height: 22px; border-radius: 11px; background: #BBE4DE; display: flex; align-items: center; justify-content: center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+            <span style="display: flex; flex-direction: column; gap: 1px">
+              <span style="font-size: 15px; font-weight: 700; line-height: 1.35">{{b.title}}</span>
+              <span style="font-size: 13px; line-height: 1.4; color: #3D5C60">{{b.sub}}</span>
+            </span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <sc-if value="{{showStarterOnly}}" hint-placeholder-val="{{ false }}">
+      <div style="padding: 16px 20px 20px 20px; display: flex; flex-direction: column; gap: 10px">
+        <div style="background: #FFEFDD; border: 2px solid #113237; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+          <span style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+            <span style="font-size: 18px; font-weight: 800">Extend your trial to 2 weeks</span>
+            <span style="font-size: 18px; font-weight: 800; white-space: nowrap">{{starterPrice}}</span>
+          </span>
+          <span style="font-size: 14px; line-height: 1.4; color: #4A3A26">Extend your four-day tryout to two weeks, just for five dollars. Most of our users feel like they got a second therapy session in that time.</span>
+          <span style="font-size: 12px; font-weight: 700; color: #8A4B12">One-time payment · no renewal</span>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 20px">
+          <a href="https://www.mindsync.app/terms-conditions" style="font-size: 13px; min-height: 44px; display: flex; align-items: center">Terms of Service</a>
+          <a href="https://www.mindsync.app/privacy-policy" style="font-size: 13px; min-height: 44px; display: flex; align-items: center">Privacy Policy</a>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{showAllPlans}}" hint-placeholder-val="{{ true }}">
+      <div style="padding: 16px 20px 20px 20px; display: flex; flex-direction: column; gap: 10px">
+        <div role="radiogroup" aria-label="Choose an option" style="display: flex; flex-direction: column; gap: 10px">
+          <sc-if value="{{starterOn}}" hint-placeholder-val="{{ true }}">
+            <label style="{{starterStyle}}">
+              <input type="radio" name="offer" checked="{{isStarter}}" onChange="{{pickStarter}}" style="position: absolute; opacity: 0; width: 1px; height: 1px">
+              <span style="{{starterRadio}}"><span style="{{starterDot}}"></span></span>
+              <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 6px">
+                <span style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+                  <span style="font-size: 17px; font-weight: 800">Extend to 2 weeks</span>
+                  <span style="font-size: 17px; font-weight: 800; white-space: nowrap">{{starterPrice}}</span>
+                </span>
+                <span style="font-size: 14px; line-height: 1.4; color: #4A3A26">Extend your four-day tryout to two weeks, just for five dollars. Most of our users feel like they got a second therapy session in that time.</span>
+                <span style="font-size: 12px; font-weight: 700; color: #8A4B12">One-time payment · no renewal</span>
+              </span>
+            </label>
+          </sc-if>
+
+          <label style="{{annualStyle}}">
+            <input type="radio" name="offer" checked="{{isAnnual}}" onChange="{{pickAnnual}}" style="position: absolute; opacity: 0; width: 1px; height: 1px">
+            <span style="{{annualRadio}}"><span style="{{annualDot}}"></span></span>
+            <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px">
+              <span style="display: flex; align-items: center; gap: 8px"><span style="font-size: 16px; font-weight: 700">Annual</span><span style="font-size: 11px; font-weight: 800; letter-spacing: 0.8px; text-transform: uppercase; background: #DBF0ED; border-radius: 999px; padding: 3px 8px">Best value</span></span>
+              <span style="font-size: 13px; color: #3D5C60">Premium for good, billed yearly</span>
+            </span>
+            <span style="font-size: 15px; font-weight: 700; white-space: nowrap">{{annualPrice}}</span>
+          </label>
+
+          <label style="{{monthlyStyle}}">
+            <input type="radio" name="offer" checked="{{isMonthly}}" onChange="{{pickMonthly}}" style="position: absolute; opacity: 0; width: 1px; height: 1px">
+            <span style="{{monthlyRadio}}"><span style="{{monthlyDot}}"></span></span>
+            <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px">
+              <span style="font-size: 16px; font-weight: 700">Monthly</span>
+              <span style="font-size: 13px; color: #3D5C60">Premium for good, billed monthly</span>
+            </span>
+            <span style="font-size: 15px; font-weight: 700; white-space: nowrap">{{monthlyPrice}}</span>
+          </label>
+        </div>
+        <div style="display: flex; justify-content: center; gap: 20px">
+          <a href="https://www.mindsync.app/terms-conditions" style="font-size: 13px; min-height: 44px; display: flex; align-items: center">Terms of Service</a>
+          <a href="https://www.mindsync.app/privacy-policy" style="font-size: 13px; min-height: 44px; display: flex; align-items: center">Privacy Policy</a>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{pricesFailed}}" hint-placeholder-val="{{ false }}">
+      <div style="padding: 16px 20px 20px 20px">
+        <div style="background: #FFFFFF; border: 1px solid #FFC88A; border-radius: 16px; padding: 18px; display: flex; flex-direction: column; gap: 8px">
+          <span style="display: flex; gap: 10px; align-items: center">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#8A4B12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v6M12 16.5v.5"/></svg>
+            <span style="font-size: 16px; font-weight: 700">Prices didn't load</span>
+          </span>
+          <span style="font-size: 14px; line-height: 1.45; color: #3D5C60">We couldn't reach your app store. Check your connection and try again. Your free 4 days have already started either way.</span>
+        </div>
+      </div>
+    </sc-if>
+  </div>
+
+  <div style="flex-shrink: 0; background: #FFFFFF; border-top: 1px solid #DBF0ED; padding: 12px 20px 24px 20px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 -8px 24px rgba(17,50,55,0.06)">
+    <button type="button" style="height: 56px; border: none; border-radius: 16px; background: #113237; color: #FFFFFF; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 700; cursor: pointer">{{ctaLabel}}</button>
+    <sc-if value="{{pricesOk}}" hint-placeholder-val="{{ true }}">
+      <p style="margin: 0; text-align: center; font-size: 12px; line-height: 1.4; color: #3D5C60">{{billingLine}}</p>
+    </sc-if>
+    <sc-if value="{{continueToPlans}}" hint-placeholder-val="{{ false }}">
+      <a href="AllPlans.dc.html" style="height: 52px; border-radius: 16px; border: 1.5px solid #113237; color: #113237; font-size: 16px; font-weight: 700; text-decoration: none; display: flex; align-items: center; justify-content: center">Continue</a>
+    </sc-if>
+    <sc-if value="{{skipFree}}" hint-placeholder-val="{{ true }}">
+      <button type="button" style="height: 44px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 700; color: #113237; text-decoration: underline; text-underline-offset: 3px; cursor: pointer">Continue with my free 4 days</button>
+    </sc-if>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"layout":{"editor":"enum","options":["allInOne","starterFirst"],"default":"allInOne"},"recap":{"editor":"enum","options":["full","writing","short"],"default":"full"},"inTherapy":{"editor":"boolean","default":true},"pricesState":{"editor":"enum","options":["loaded","failed"],"default":"loaded"},"starterAvailable":{"editor":"boolean","default":true},"starterPrice":{"editor":"text","default":"$5","section":"Prices (from store)"},"monthlyPrice":{"editor":"text","default":"$12.99","section":"Prices (from store)"},"annualPrice":{"editor":"text","default":"[annual price]","section":"Prices (from store)"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { pick: null };
+  }
+  renderVals() {
+    const recap = this.props.recap ?? 'full';
+    const inTherapy = this.props.inTherapy ?? true;
+    const pricesOk = (this.props.pricesState ?? 'loaded') !== 'failed';
+    const starterOn = this.props.starterAvailable ?? true;
+    const starter = this.props.starterPrice ?? '$5';
+    const annual = this.props.annualPrice ?? '[annual price]';
+    const monthly = this.props.monthlyPrice ?? '$12.99';
+    const starterFirst = starterOn && (this.props.layout ?? 'allInOne') === 'starterFirst';
+    let pick = starterFirst ? 'starter' : (this.state.pick || (starterOn ? 'starter' : 'annual'));
+    if (!starterOn && pick === 'starter') pick = 'annual';
+
+    const base = 'position: relative; display: flex; align-items: center; gap: 14px; box-sizing: border-box; padding: 14px 16px; border-radius: 16px; cursor: pointer; ';
+    const card = (on, warm) => base + (warm ? 'background: #FFEFDD; ' : 'background: #FFFFFF; ') +
+      (on ? 'border: 2px solid #113237' : (warm ? 'border: 1px solid #FFC88A; margin: 1px' : 'border: 1px solid #BBE4DE; margin: 1px'));
+    const radio = (on) => 'align-self: flex-start; margin-top: 2px; flex-shrink: 0; width: 22px; height: 22px; box-sizing: border-box; border-radius: 11px; display: flex; align-items: center; justify-content: center; border: 2px solid ' + (on ? '#113237' : '#78D0D0');
+    const dot = (on) => 'width: 10px; height: 10px; border-radius: 5px; background: ' + (on ? '#113237' : 'transparent');
+
+    const cta = pricesOk
+      ? { starter: 'Extend to 2 weeks for ' + starter, annual: 'Get Premium, yearly', monthly: 'Get Premium, monthly' }[pick]
+      : 'Try again';
+    const bill = {
+      starter: 'One payment of ' + starter + '. Premium for 2 weeks, then you move to Free. Nothing renews.',
+      annual: 'Billed ' + annual + ' today, then once a year. Cancel anytime in your store settings.',
+      monthly: 'Billed ' + monthly + ' today, then every month. Cancel anytime in your store settings.'
+    }[pick];
+
+    const heard = inTherapy
+      ? ['[Anxiety peaks on Sunday evenings, before the work week starts.]', '[Walks after work and Sunday calls with your sister help more than you expected.]', '[You want Thursday’s session to focus on sleep.]']
+      : ['[Anxiety peaks on Sunday evenings, before the work week starts.]', '[Walks after work and Sunday calls with your sister help more than you expected.]', '[A good week would mean three nights of proper sleep.]'];
+
+    return {
+      headline: recap === 'short' ? 'Good to meet you, [Name].' : 'That was a good start, [Name].',
+      isFull: recap === 'full',
+      isWriting: recap === 'writing',
+      isShort: recap === 'short',
+      heard: heard,
+      savedLine: inTherapy
+        ? 'Saved to your Timeline. Your Before therapy card for [Thursday] starts from this.'
+        : 'Saved to your Timeline. [Orca] will check in on this later in the week.',
+      benefits: [
+        { title: 'Talk like this whenever you need it', sub: 'Free includes 15 Reflect messages a month.' },
+        { title: inTherapy ? 'A Before therapy card the day before each session' : 'Between Sessions check-ins, as often as you like', sub: inTherapy ? 'Built from what you told [Orca] since last time.' : 'Free includes 3 a month.' },
+        { title: 'Weekly and monthly summaries', sub: 'See what is shifting, in your own words.' }
+      ],
+      pricesOk: pricesOk,
+      pricesFailed: !pricesOk,
+      showAllPlans: pricesOk && !starterFirst,
+      showStarterOnly: pricesOk && starterFirst,
+      continueToPlans: pricesOk && starterFirst,
+      skipFree: !(pricesOk && starterFirst),
+      starterOn: starterOn,
+      starterPrice: starter,
+      annualPrice: annual,
+      monthlyPrice: monthly,
+      isStarter: pick === 'starter',
+      isAnnual: pick === 'annual',
+      isMonthly: pick === 'monthly',
+      starterStyle: card(pick === 'starter', true),
+      annualStyle: card(pick === 'annual', false),
+      monthlyStyle: card(pick === 'monthly', false),
+      starterRadio: radio(pick === 'starter'),
+      annualRadio: radio(pick === 'annual'),
+      monthlyRadio: radio(pick === 'monthly'),
+      starterDot: dot(pick === 'starter'),
+      annualDot: dot(pick === 'annual'),
+      monthlyDot: dot(pick === 'monthly'),
+      pickStarter: () => this.setState({ pick: 'starter' }),
+      pickAnnual: () => this.setState({ pick: 'annual' }),
+      pickMonthly: () => this.setState({ pick: 'monthly' }),
+      ctaLabel: cta,
+      billingLine: bill
+    };
+  }
+}
+</script>
+</body>
+</html>

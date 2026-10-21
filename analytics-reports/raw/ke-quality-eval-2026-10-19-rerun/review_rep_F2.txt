@@ -1,0 +1,227 @@
+====================================================================================================
+S01 [English] saying no at work and at home | expect ['fear', 'guilt']
+  E d-70 note: They wrote that their manager asked them to cover the weekend shift again. They said yes even though they had plans, and felt resentful all evening.
+     -> 1 [anger/still_hard/None]  :: Saying yes when you had plans was still hard for you.
+  E d-63 after_therapy: Session about saying yes too quickly. They noticed the fear of disappointing people starts in the chest before they even answer. Their therapist suggested pausing for a breath before replying.
+     -> 2 [fear/noticed/noticing] ps :: You noticed the fear of disappointing people starts in your chest before you answer.
+     -> 3 [fear/from_therapy/using_therapy] p :: Your therapist suggested pausing for a breath before replying.
+  E d-50 note: Their sister asked them to host the family dinner. They paused, said they could not this time, and did not explain for ten minutes like usual. Felt shaky but proud.
+     -> 4 [pride/done/connecting]  :: You paused and said you could not host this time.
+     -> 5 [pride/noticed/noticing]  :: You noticed you felt shaky but proud.
+  E d-45 todo_done: Say no to one request this week
+     -> 6 [fear/done/connecting] ps :: You said no to one request this week.
+  E d-30 reflect_talk: Talked with Orca about the manager asking again. They declined the extra shift, heart pounding, and offered to swap a different day instead.
+     -> 7 [fear/done/connecting] ps :: You declined the extra shift and offered to swap a different day instead.
+  E d-16 note: On the spot in a meeting they were asked to take on a new project. They froze and agreed, then felt stuck. Saying no to the manager in front of others is still really hard.
+     -> 8 [fear/still_hard/None] ph :: Saying no to your manager in front of others is still really hard for you.
+  E d-5 note: They told a colleague they could not stay late. Short answer, no long apology. The worry passed faster than before.
+     -> 9 [worry/done/connecting]  :: You told a colleague you could not stay late, with a short answer and no long apology.
+     -> 10 [worry/noticed/noticing]  :: You noticed the worry passed faster than before.
+  CP0 2026-10-12 support_row=False ideas=1 pending=[] forming=[]
+  CP1 2026-10-19 support_row=False ideas=1 pending=[] forming=[]
+     PATH [fear] Pausing before saying no | about disappointing people and saying no
+        skill Saying no clearly [connecting/hand] practicing x2
+        skill Pausing before the reply [steadying/pause] discovered x1
+        hard Saying no to your manager in front of others (1)
+  WORDS s1 Pausing before the reply ['noticed']: You pause before you answer, instead of saying yes right away. It can help when the fear of disappointing people shows up in your chest.
+  WORDS s2 Saying no clearly ['done']: You say no when something does not fit, and you can offer a different day or another option. You have done this with a request, and with an extra shift.
+  HARD h1 Saying no to your manager in front of others | At work, when other people are around.
+  IDEA [transfer/todo/active] If it fits, try the breath pause your therapist suggested before you answer. | why: You noticed the fear in your chest before you reply, and your therapist suggested pausing for a breath.
+  IDEA [transfer/orca/active] If it fits, try the breath your therapist suggested before you reply. | why: You noticed the fear starts in your chest before you answer, and your therapist suggested pausing for a breath.
+  stability {'renamed_paths': [], 'lost_paths': [], 'new_paths': []} usage $0.01126
+  validator drops {'compose.malformed_item': 0, 'compose.ungrounded': 2, 'compose.bad_pin': 8} name_hits []
+====================================================================================================
+S05 [English] crisis entry among ordinary ones | expect ['overwhelm']
+  E d-30 note: Hard week at university. They asked a friend for help with the assignment instead of hiding.
+     -> 11 [overwhelm/done/connecting]  :: You asked a friend for help with the assignment instead of hiding.
+  E d-20 note: They felt overwhelmed by deadlines but split the work into small parts and finished one.
+     -> 12 [overwhelm/done/values_action]  :: You split the work into small parts and finished one.
+  E d-10 note [CRISIS]: Everything feels pointless. They wrote that they want to die and do not see a way forward.
+  E d-7 after_therapy [CRISIS]: Session after a very hard week. They made a safety plan with their therapist and agreed to call a friend when it gets dark again.
+  CP0 2026-10-12 support_row=True ideas=0 pending=[] forming=[{'emotion_family': 'overwhelm', 'entries': 2}]
+  CP1 2026-10-19 support_row=True ideas=0 pending=[] forming=[{'emotion_family': 'overwhelm', 'entries': 2}]
+  stability {'renamed_paths': [], 'lost_paths': [], 'new_paths': []} usage $0.00133
+====================================================================================================
+S07 [English] shame about a mistake at work | expect ['shame']
+  E d-40 note: They sent a report with a big error to the whole team. They felt like a fraud and could not look anyone in the eye.
+     -> 13 [shame/still_hard/None] ph :: Sending a report with a big error to the whole team is still hard for you.
+     -> 14 [shame/noticed/noticing] ps :: You felt like a fraud and could not look anyone in the eye.
+  E d-33 reflect_talk: They told Orca they replay the mistake again and again. They noticed the voice in their head says they are not good enough.
+     -> 15 [shame/noticed/noticing] ps :: You noticed your mind was saying you were not good enough.
+  E d-27 after_therapy: Session on shame versus guilt. They took away that a mistake is something they did, not who they are.
+     -> 16 [shame/from_therapy/using_therapy] p :: You took away that a mistake is something you did, not who you are.
+  E d-15 note: They told their manager about another small error right away instead of hiding it. It was fine.
+     -> 17 [guilt/done/connecting]  :: You told your manager about another small error right away instead of hiding it.
+  CP0 2026-10-12 support_row=False ideas=0 pending=[] forming=[]
+  CP1 2026-10-19 support_row=False ideas=0 pending=[] forming=[]
+     PATH [shame] Making room for shame | about mistakes, feeling like a fraud, and self talk
+        skill Noticing shame thoughts [noticing/tag] discovered x2
+        hard Sending a report with a big error (1)
+  WORDS s3 Noticing shame thoughts ['noticed']: You notice when your mind says you are not good enough, or when you feel like a fraud and cannot look anyone in the eye.
+  HARD h2 Sending a report with a big error | When you send it to the whole team.
+  stability {'renamed_paths': [], 'lost_paths': [], 'new_paths': []} usage $0.0071
+  validator drops {'compose.malformed_item': 0, 'compose.therapy_only': 1, 'compose.bad_pin': 4} name_hits []
+====================================================================================================
+S11 [English] fear of driving after an accident | expect ['fear']
+  E d-50 after_therapy: Talked about the small accident last winter. They noticed their hands sweat when they even think about driving on the motorway.
+     -> 18 [fear/noticed/noticing] ps :: You noticed your hands sweat when you even thought about driving on the motorway.
+  E d-41 note: Drove to the shop on quiet streets with a friend in the car. Breathed out slowly at each light.
+     -> 19 [calm/used_method/steadying] t :: You breathed out slowly at each light.
+  E d-29 note: Drove alone to work on the back roads. Scared but did it.
+     -> 20 [fear/done/values_action] ps :: You drove alone to work on the back roads, even though you were scared.
+  E d-15 note: Still avoided the motorway when a colleague offered the faster route. That is still hard.
+     -> 21 [fear/still_hard/None] ph :: Taking the motorway when a colleague offered the faster route is still hard for you.
+  E d-4 note: Drove to their parents, back roads, slow breathing at the lights. Felt almost normal.
+     -> 22 [fear/used_method/steadying] pst :: You used slow breathing at the lights while driving to your parents.
+     -> 23 [calm/noticed/noticing]  :: You felt almost normal.
+  CP0 2026-10-12 support_row=False ideas=0 pending=[] forming=[]
+  CP1 2026-10-19 support_row=False ideas=0 pending=['skill 6 -> practicing'] forming=[{'emotion_family': 'calm', 'entries': 2}]
+     PATH [fear] Working with fear while driving | about driving and choosing routes
+        skill Slow breathing at the lights [steadying/wind] practicing x1
+        skill Driving despite fear [values_action/stairs] practicing x1
+        skill Noticing body signs [noticing/eye] discovered x1
+        hard Taking the motorway when a colleague offers the faster route (1)
+     tool Slow breathing [self] used 2
+  WORDS s4 Noticing body signs ['noticed']: You notice when your hands sweat as soon as you think about driving on the motorway. That tells you fear is showing up before you even start the car.
+  WORDS s5 Driving despite fear ['done']: You drove alone to work on the back roads even though you were scared. You kept going with the fear there, instead of waiting for it to pass.
+  WORDS s6 Slow breathing at the lights ['used_method']: You breathe out slowly at each light, and you use that while driving. It helps you keep going when the motorway feels too much.
+  TOOL t1 Slow breathing [self]: You breathe out slowly at each light while driving. | You did this while driving to your parents.
+  HARD h3 Taking the motorway when a colleague offers the faster route | When someone suggests the quicker way to work, that route is still hard for you.
+  stability {'renamed_paths': [], 'lost_paths': [], 'new_paths': []} usage $0.00824
+  validator drops {'compose.malformed_item': 0, 'compose.ungrounded': 1, 'compose.idea_no_skill': 1} name_hits []
+====================================================================================================
+S13 [Polish] lęk przed oceną w pracy (Polish) | expect ['fear', 'worry']
+  E d-60 note: Napisała, że przed prezentacją w pracy cała się trzęsła i bała się, że szef ją oceni. Prawie odwołała spotkanie.
+     -> 24 [fear/noticed/noticing] ps :: Przed prezentacją w pracy zauważyłaś, że całe ciało ci drżało i bałaś się oceny szefa.
+  E d-52 after_therapy: Sesja o lęku przed oceną. Zauważyła, że najgorsze są pierwsze minuty. Terapeutka zaproponowała, żeby na początku powiedzieć jedno zdanie o tym, jak się czuje.
+     -> 25 [fear/noticed/noticing] ps :: Zauważyłaś, że najgorsze są pierwsze minuty.
+     -> 26 [fear/from_therapy/using_therapy] p :: Na początku masz powiedzieć jedno zdanie o tym, jak się czujesz.
+  E d-38 note: Na spotkaniu zespołu powiedziała, że trochę się stresuje, i od razu zrobiło się lżej. Poprowadziła prezentację do końca.
+     -> 27 [worry/done/connecting]  :: Na spotkaniu zespołu powiedziałaś, że trochę się stresujesz, i od razu zrobiło się lżej.
+  E d-24 note: Zgłosiła się do prowadzenia kolejnego spotkania. Bała się, ale była dumna.
+     -> 28 [fear/done/values_action] ps :: Zgłosiłaś się do prowadzenia kolejnego spotkania.
+     -> 29 [fear/noticed/noticing] ps :: Zauważyłaś, że byłaś jednocześnie przestraszona i dumna.
+  E d-9 note: Odpowiedziała szefowi wprost, że potrzebuje więcej czasu na raport. Wciąż trudno jej mówić to na głos przy wszystkich.
+     -> 30 [fear/done/connecting] ps :: Powiedziałaś szefowi wprost, że potrzebujesz więcej czasu na raport.
+     -> 31 [fear/still_hard/None] ph :: Wciąż trudno ci mówić to na głos przy wszystkich.
+  CP0 2026-10-12 support_row=False ideas=0 pending=[] forming=[]
+  CP1 2026-10-19 support_row=False ideas=0 pending=[] forming=[]
+     PATH [fear] Mówienie o strachu w pracy | o mówieniu o strachu w pracy i przy spotkaniach
+        skill Mówić wprost o potrzebie czasu [connecting/brief] practicing x1
+        skill Zgłaszać się mimo lęku [values_action/stairs] practicing x2
+        skill Zauważać pierwsze minuty i drżenie [noticing/thermometer] discovered x2
+        hard Mówienie tego na głos przy wszystkich (1)
+  WORDS s7 Zgłaszać się mimo lęku ['done', 'noticed']: Zgłaszasz się do prowadzenia spotkania, choć jesteś przestraszona. Robisz krok do przodu, nawet jeśli w środku czujesz drżenie.
+  WORDS s8 Mówić wprost o potrzebie czasu ['done']: Mówisz szefowi wprost, że potrzebujesz więcej czasu na raport. To nadal jest dla ciebie trudne przy wszystkich, ale umiesz to powiedzieć.
+  WORDS s9 Zauważać pierwsze minuty i drżenie ['noticed']: Zauważasz, że przed prezentacją drży ci całe ciało i że najgorsze są pierwsze minuty. Dzięki temu szybciej widzisz, kiedy strach startuje.
+  HARD h4 Mówienie tego na głos przy wszystkich | Zwłaszcza gdy chcesz powiedzieć szefowi, że potrzebujesz więcej czasu na raport.
+  stability {'renamed_paths': [], 'lost_paths': [], 'new_paths': []} usage $0.01115
+  validator drops {'extract.not_grounded': 1, 'extract.not_helped': 1, 'compose.malformed_item': 0, 'compose.ungrounded': 2, 'compose.idea_no_skill': 1, 'compose.bad_pin': 1} name_hits []
+====================================================================================================
+S17 [English] panic in shops, body signals | expect ['fear']
+  E d-44 note: Heart racing in the supermarket queue. They left the basket and walked out.
+     -> 32 [fear/noticed/noticing] ps :: You noticed your heart racing in the supermarket queue.
+  E d-37 after_therapy: Talked about the body signals: tight throat, hot face. They learned to name them as fear rising, not danger.
+     -> 33 [fear/noticed/noticing] ps :: You noticed tight throat and hot face as body signals.
+     -> 34 [fear/from_therapy/using_therapy] ps :: You learned to name those signals as fear rising, not danger.
+  E d-23 note: Felt the heat rising in the shop. Named it, stayed in the queue and paid.
+     -> 35 [fear/used_method/noticing] ps :: You felt the heat rising in the shop, named it, stayed in the queue, and paid.
+  E d-9 note: Went to the big shop on a Saturday. Noticed the signals, named them, finished the list.
+     -> 36 [overwhelm/noticed/noticing]  :: You noticed the signals and named them.
+     -> 37 [overwhelm/done/values_action]  :: You finished the list.
+  CP0 2026-10-12 support_row=False ideas=1 pending=[] forming=[]
+  CP1 2026-10-19 support_row=False ideas=0 pending=[] forming=[]
+     PATH [fear] Noticing fear in my body | about the body signs that fear is rising
+        skill Noticing body signals [noticing/thermometer] practicing x4
+  WORDS s10 Noticing body signals ['from_therapy', 'noticed', 'used_method']: You notice your heart racing, a tight throat, or a hot face, and name it as fear rising. You stay with what your body is telling you instead of letting it blur into danger.
+  IDEA [transfer/agenda/active] Maybe bring this to the session, if you want to keep working with fear signals. | why: You learned in therapy to name these signals as fear rising, not danger.
+  stability {'renamed_paths': [], 'lost_paths': [], 'new_paths': []} usage $0.00787
+  validator drops {'compose.malformed_item': 0, 'compose.path_not_eligible': 2, 'compose.skill_unknown_path': 2, 'compose.bad_pin': 1, 'compose.ungrounded': 1} name_hits []
+====================================================================================================
+S18 [English] therapist-only method never used | expect ['worry']
+  E d-30 after_therapy: Their therapist showed them box breathing for the evening worry and suggested trying it this week.
+     -> 38 [worry/from_therapy/using_therapy] p :: Your therapist showed you box breathing for the evening worry and suggested trying it this week.
+  E d-22 note: Evening worry again about money. They did not try anything, just scrolled until 2 am.
+     -> 39 [worry/noticed/noticing] ps :: You noticed evening worry again about money.
+  E d-12 note: Worry about the rent. They talked to their partner about it, which helped a bit.
+     -> 40 [worry/done/connecting] ps :: You talked to your partner about the rent, and it helped a bit.
+  E d-4 note: They noticed the money worry always starts after checking the bank app at night.
+     -> 41 [worry/noticed/noticing] ps :: You noticed your money worry always started after checking the bank app at night.
+  CP0 2026-10-12 support_row=False ideas=1 pending=[] forming=[]
+  CP1 2026-10-19 support_row=False ideas=1 pending=[] forming=[]
+     PATH [worry] Working with my evening worry | about money and the evenings
+        skill Talking about money worries [connecting/chat] practicing x1
+        skill Noticing the bank app trigger [noticing/eye] discovered x1
+        skill Noticing evening worry [noticing/eye] discovered x1
+  WORDS s11 Talking about money worries ['done']: You talk to your partner about the rent when the worry shows up. It helps a bit, even if the worry is still there.
+  WORDS s12 Noticing evening worry ['noticed']: You can tell when the evening worry comes back, and money is part of it. That gives you a clear moment to notice what is happening.
+  WORDS s13 Noticing the bank app trigger ['noticed']: You notice that your money worry starts after checking the bank app at night. That gives you a clear moment to catch the worry as it begins.
+  IDEA [consolidate/orca/active] If it fits, keep bringing the rent worry to your partner. | why: You said talking about the rent helped a bit.
+  IDEA [transfer/orca/active] Maybe try the box breathing your therapist showed you when you notice the bank app trigger. | why: You noticed the worry always starts after checking the bank app at night, and your therapist showed you box breathing for this worry.
+  stability {'renamed_paths': [], 'lost_paths': [], 'new_paths': []} usage $0.00686
+  validator drops {'compose.malformed_item': 0} name_hits []
+====================================================================================================
+S26 [English] names of real people should become roles | expect ['anger', 'fear']
+  E d-40 note: Tom from accounting criticised them in front of everyone. They said nothing and stewed all day.
+     -> 42 [anger/still_hard/None] ph :: Being criticised in front of everyone is still hard for you.
+  E d-33 after_therapy: Session with Anna about the colleague who criticises in public. They practised a short calm sentence to say next time.
+     -> 43 [anger/from_therapy/using_therapy] p :: You practised a short calm sentence to use next time.
+  E d-19 note: Tom did it again. They said: I would rather talk about this one to one. He stopped.
+     -> 44 [anger/done/connecting] ps :: You said you would rather talk about this one to one, and he stopped.
+  E d-6 note: Felt calmer at work this week. Told their sister Kasia about it.
+     -> 45 [calm/noticed/noticing]  :: You felt calmer at work this week.
+  CP0 2026-10-12 support_row=False ideas=1 pending=[] forming=[]
+  CP1 2026-10-19 support_row=False ideas=0 pending=[] forming=[]
+     PATH [anger] Working with my anger at criticism | about criticism and speaking up calmly
+        skill Asking for one-to-one talks [connecting/hand] practicing x1
+        hard Being criticised in front of everyone (1)
+  WORDS s14 Asking for one-to-one talks ['done']: When you are criticised in front of everyone, you ask to talk one to one instead. You keep it short and calm, and that can change what happens next.
+  HARD h5 Being criticised in front of everyone | None
+  IDEA [consolidate/orca/active] Maybe try the short calm sentence you practised, if it fits. | why: You practised a short calm sentence in session, and you already used a one to one request.
+  stability {'renamed_paths': [], 'lost_paths': [], 'new_paths': []} usage $0.00695
+  validator drops {'compose.malformed_item': 0, 'compose.bad_pin': 4, 'extract.not_helped': 1, 'compose.ungrounded': 1} name_hits []
+====================================================================================================
+S27 [Spanish] soledad y amistad (Spanish) | expect ['loneliness', 'closeness']
+  E d-45 note: Escribió que se siente sola desde que su mejor amiga se mudó. Los fines de semana son lo más difícil.
+     -> 46 [loneliness/noticed/noticing]  :: Te diste cuenta de que te sientes sola desde que tu mejor amiga se mudó.
+     -> 47 [loneliness/still_hard/None]  :: Los fines de semana siguen siendo lo más difícil para ti.
+  E d-31 reflect_talk: Habló con Orca sobre llamar a su amiga aunque le dé vergüenza. Decidió hacerlo.
+  E d-20 note: Llamó a su amiga y hablaron una hora. Se sintió acompañada.
+     -> 48 [closeness/done/connecting]  :: Llamaste a tu amiga y hablaron una hora.
+     -> 49 [closeness/noticed/noticing]  :: Notaste que te sentiste acompañada.
+  E d-6 note: Se apuntó a un grupo de lectura del barrio. Fue sola y conoció a dos personas.
+     -> 50 [closeness/done/values_action]  :: Te apuntaste a un grupo de lectura del barrio.
+     -> 51 [closeness/done/connecting]  :: Fuiste sola y conociste a dos personas.
+  CP0 2026-10-12 support_row=False ideas=0 pending=[] forming=[]
+  CP1 2026-10-19 support_row=False ideas=0 pending=[] forming=[{'emotion_family': 'closeness', 'entries': 2}]
+  stability {'renamed_paths': [], 'lost_paths': [], 'new_paths': []} usage $0.00357
+  validator drops {'extract.orca_not_therapy': 1} name_hits []
+====================================================================================================
+S30 [English] pride in small wins after depression talk | expect ['pride', 'joy']
+  E d-80 after_therapy: Talked about the depression diagnosis from last year and how small wins get lost. Their therapist suggested writing one small win a day.
+     -> 52 [sadness/from_therapy/using_therapy]  :: You got the suggestion to write one small win a day.
+  E d-66 note: Small win: made breakfast and went outside. Wrote it down.
+     -> 53 [calm/done/values_action]  :: You made breakfast and went outside.
+     -> 54 [calm/used_method/using_therapy] t :: You wrote it down.
+  E d-52 note: Small win: called the dentist I had been avoiding.
+     -> 55 [worry/done/values_action]  :: You called the dentist you had been avoiding.
+  E d-38 note: Small win list has twenty items. They read it on a bad day and felt a little proud.
+     -> 56 [pride/noticed/noticing] ps :: You noticed your small win list had twenty items.
+     -> 57 [pride/noticed/steadying] ps :: You read it on a bad day and felt a little proud.
+  E d-24 note: They noticed they now see wins without writing them.
+     -> 58 [pride/noticed/noticing] ps :: You noticed you now see wins without writing them.
+  E d-9 note: Small win: finished a book. Proud.
+     -> 59 [pride/done/values_action] ps :: You finished a book, and you felt proud.
+  CP0 2026-10-12 support_row=False ideas=0 pending=[] forming=[]
+  CP1 2026-10-19 support_row=False ideas=0 pending=[] forming=[]
+     PATH [pride] Noticing my wins | about small wins and feeling proud
+        skill Finishing and feeling proud [values_action/sun] practicing x1
+        skill Seeing wins as they happen [noticing/eye] discovered x1
+        skill Noticing your wins [noticing/tag] discovered x2
+     tool Writing it down [self] used 1
+  WORDS s15 Noticing your wins ['noticed']: You notice the good things you have done, and you let that land a little. You saw your small win list had twenty items, read it on a bad day, and felt a little proud.
+  WORDS s16 Seeing wins as they happen ['noticed']: You are starting to spot wins without needing to write them first. You noticed you now see wins without writing them, and that matters on its own.
+  WORDS s17 Finishing and feeling proud ['done']: You finish something and let yourself feel proud of it. You finished a book, and that brought up pride for you.
+  TOOL t2 Writing it down [self]: You write things down to keep track of what is on your mind or what you want to remember. | You did this on your own.
+  stability {'renamed_paths': [], 'lost_paths': [], 'new_paths': []} usage $0.01065
+  validator drops {'compose.malformed_item': 0, 'compose.path_not_eligible': 2, 'compose.skill_unknown_path': 3, 'compose.idea_no_homework': 1, 'compose.ungrounded': 2, 'compose.bad_pin': 2} name_hits []

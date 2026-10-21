@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Follow-up with Orca</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; padding: 48px 20px 24px 20px; display: flex; flex-direction: column; gap: 18px">
+
+<div style="display: flex; align-items: center; gap: 12px">
+<a href="Main.dc.html" aria-label="Back" style="width: 48px; height: 48px; border-radius: 24px; background: #FFFFFF; border: 1px solid #DBF0ED; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></a>
+<span style="font-size: 17px; font-weight: 800">Reflect</span>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 14px; margin-top: 16px">
+<span aria-hidden="true" style="width: 72px; height: 72px; border-radius: 36px; background: #DBF0ED; display: flex; align-items: center; justify-content: center"><svg width="38" height="38" viewBox="0 0 24 24" fill="#113237"><path d="M5 19c2.5-1 4.4-4.2 5.3-9.4C10.8 6.6 12.3 4.4 15 4c-.9 1.9-1.1 4.2-.6 6.9.6 3.3 2.2 6.3 4.6 8.1H5z"/></svg></span>
+<span style="font-size: 14px; font-weight: 700; color: #26767B">{{label}}</span>
+<p style="margin: 0; font-size: 25px; line-height: 1.3; font-weight: 700">{{question}}</p>
+<span style="font-size: 16px; line-height: 1.45; color: #5A7A73">{{hint}}</span>
+</div>
+
+<sc-if value="{{calm}}" hint-placeholder-val="{{ false }}">
+<a href="#" style="align-self: flex-start; min-height: 48px; display: flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 700; color: #1F4C50"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1F4C50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Need someone now? Find a helpline</a>
+</sc-if>
+
+<div style="flex-grow: 1"></div>
+
+<sc-if value="{{voiceOpen}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 10px">
+<button type="button" aria-label="Talk with Orca, about 3 minutes" style="width: 96px; height: 96px; border-radius: 48px; border: none; background: #FFC88A; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/></svg></button>
+<span style="font-size: 16px; font-weight: 700">Tap to talk · about 3 minutes</span>
+<button type="button" style="height: 48px; padding: 0 22px; border-radius: 14px; border: 1px solid #BBE4DE; background: #FFFFFF; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 700; color: #113237; cursor: pointer">Write instead</button>
+</div>
+</sc-if>
+
+<sc-if value="{{voiceLocked}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<button type="button" style="height: 56px; border-radius: 18px; border: none; background: #113237; color: #FFFFFF; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 800; cursor: pointer">Write to Orca</button>
+<button type="button" style="height: 52px; border-radius: 16px; border: 1px solid #BBE4DE; background: #FFFFFF; color: #113237; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 10px; cursor: pointer">Talk by voice <span style="font-size: 13px; font-weight: 800; color: #844B0F; background: #FFEFDD; padding: 4px 8px; border-radius: 8px">Premium</span></button>
+<span style="text-align: center; font-size: 14px; color: #5A7A73">Included in your first week.</span>
+</div>
+</sc-if>
+
+<sc-if value="{{showMemory}}" hint-placeholder-val="{{ true }}">
+<p style="margin: 0; font-size: 14px; line-height: 1.45; color: #5A7A73; text-align: center">Orca keeps what matters from your talks. You can see or delete it in Settings, under What Orca remembers.</p>
+</sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"recap":{"editor":"enum","options":["ready","fallback","calm"],"default":"ready"},"trialEnded":{"editor":"boolean","default":false},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const recap = this.props.recap ?? 'ready';
+    const ended = !!(this.props.trialEnded ?? false);
+    const copy = {
+      ready: { label: 'From your first talk', question: 'You mentioned sleep has been rough lately. How have the last few nights been?', hint: 'Orca picks up from what you said. Say as much or as little as you like.' },
+      fallback: { label: 'From your setup', question: 'Stress was the strongest of the things you picked. What has it been like since?', hint: 'Say as much or as little as you like.' },
+      calm: { label: "Whenever you're ready", question: 'How are you doing right now?', hint: 'No plan, no right answer. Orca will listen.' }
+    }[recap] || {};
+    return {
+      label: copy.label,
+      question: copy.question,
+      hint: copy.hint,
+      calm: recap === 'calm',
+      voiceOpen: !ended,
+      voiceLocked: ended,
+      showMemory: recap === 'ready'
+    };
+  }
+}
+</script>
+</body>
+</html>

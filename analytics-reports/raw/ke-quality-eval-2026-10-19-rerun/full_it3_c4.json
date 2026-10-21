@@ -1,0 +1,2335 @@
+[
+  {
+    "id": "S24",
+    "theme": "recorded sessions as the main source",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "anger",
+        "fear",
+        "closeness"
+      ],
+      "crisis_entries": 0,
+      "note": "Session numbers 1 to 4."
+    },
+    "art9": true,
+    "premium": true,
+    "entries": [
+      {
+        "days_ago": 56,
+        "kind": "session",
+        "text": "Session 1 of the recording series. They talked about conflict with their teenage son and feeling powerless.",
+        "source_kind": "session",
+        "source_id": 1,
+        "crisis": false
+      },
+      {
+        "days_ago": 42,
+        "kind": "session",
+        "text": "They practised listening to their son without fixing. Noticed anger comes from fear for him.",
+        "source_kind": "session",
+        "source_id": 2,
+        "crisis": false
+      },
+      {
+        "days_ago": 35,
+        "kind": "note",
+        "text": "They listened to their son for ten minutes without giving advice. He talked more than in months.",
+        "source_kind": "note",
+        "source_id": 1,
+        "crisis": false
+      },
+      {
+        "days_ago": 28,
+        "kind": "session",
+        "text": "They reported the conversation went well. Next step: say their own worry calmly.",
+        "source_kind": "session",
+        "source_id": 3,
+        "crisis": false
+      },
+      {
+        "days_ago": 18,
+        "kind": "note",
+        "text": "Told their son calmly they worry when he comes home late. He rolled his eyes but texted the next time.",
+        "source_kind": "note",
+        "source_id": 2,
+        "crisis": false
+      },
+      {
+        "days_ago": 14,
+        "kind": "session",
+        "text": "Reviewed progress. Still hard when the son shouts back; they still shout in return sometimes.",
+        "source_kind": "session",
+        "source_id": 4,
+        "crisis": false
+      }
+    ],
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "days_ago": 7,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "nothing",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 6,
+            "moments": 6,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 0,
+            "sessions": 4
+          },
+          "strengths": {
+            "courage": 3,
+            "insight": 2,
+            "honesty": 2,
+            "resilience": 0,
+            "kindness": 1,
+            "commitment": 1
+          },
+          "support_row": false,
+          "paths": [],
+          "forming": [],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": []
+        }
+      },
+      {
+        "now": "2026-10-19",
+        "days_ago": 0,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "nothing",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 0,
+            "moments": 0,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 0,
+            "sessions": 4
+          },
+          "strengths": {
+            "courage": 3,
+            "insight": 2,
+            "honesty": 2,
+            "resilience": 0,
+            "kindness": 1,
+            "commitment": 1
+          },
+          "support_row": false,
+          "paths": [],
+          "forming": [],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": []
+        }
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "moments": [
+      {
+        "id": 1,
+        "source_kind": "session",
+        "source_id": 1,
+        "days_ago": 56,
+        "family": "overwhelm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 95,
+        "hard_situation": false,
+        "text": "You noticed feeling powerless in conflict with your teenage son.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 2,
+        "source_kind": "session",
+        "source_id": 2,
+        "days_ago": 42,
+        "family": "fear",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,commitment",
+        "confidence": 95,
+        "hard_situation": false,
+        "text": "You practiced listening to your son without fixing.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 3,
+        "source_kind": "session",
+        "source_id": 2,
+        "days_ago": 42,
+        "family": "fear",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You noticed your anger came from fear for your son.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 4,
+        "source_kind": "note",
+        "source_id": 1,
+        "days_ago": 35,
+        "family": "closeness",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,kindness",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You listened to your son for ten minutes without giving advice.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 5,
+        "source_kind": "note",
+        "source_id": 2,
+        "days_ago": 18,
+        "family": "worry",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,honesty",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You told your son you worry when he comes home late.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 6,
+        "source_kind": "session",
+        "source_id": 4,
+        "days_ago": 14,
+        "family": "anger",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "Your son shouting back is still hard for you.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      }
+    ],
+    "paths": [],
+    "skills": [],
+    "tools": [],
+    "hard": [],
+    "ideas": [],
+    "state": {
+      "activated": true,
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 2, \"sessions\": 4}"
+    },
+    "usage": {
+      "calls": 6,
+      "prompt": 12633,
+      "cached": 11520,
+      "completion": 388,
+      "usd": 0.00344,
+      "models": [
+        "gpt-5.4-mini"
+      ]
+    },
+    "problems": []
+  },
+  {
+    "id": "S25",
+    "theme": "realizations tagged by the person",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "sadness",
+        "closeness",
+        "anger"
+      ],
+      "crisis_entries": 0
+    },
+    "art9": false,
+    "premium": true,
+    "entries": [
+      {
+        "days_ago": 40,
+        "kind": "realization",
+        "text": "I go quiet when I am hurt, then everyone thinks I am fine.",
+        "source_kind": "realization",
+        "source_id": 1,
+        "crisis": false
+      },
+      {
+        "days_ago": 33,
+        "kind": "note",
+        "text": "They told their friend that a joke hurt them instead of going quiet.",
+        "source_kind": "note",
+        "source_id": 3,
+        "crisis": false
+      },
+      {
+        "days_ago": 20,
+        "kind": "realization",
+        "text": "Saying it early is easier than explaining it after a week of silence.",
+        "source_kind": "realization",
+        "source_id": 2,
+        "crisis": false
+      },
+      {
+        "days_ago": 7,
+        "kind": "note",
+        "text": "Told their partner straight away that the comment stung. Sorted in five minutes.",
+        "source_kind": "note",
+        "source_id": 4,
+        "crisis": false
+      }
+    ],
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "days_ago": 7,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "nothing",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "art9_moments": 0,
+            "art9_tools": 0,
+            "art9_ideas": 0,
+            "art9_items": 0,
+            "processed": 4,
+            "moments": 4,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 0,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 2,
+            "insight": 2,
+            "honesty": 3,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 0
+          },
+          "support_row": false,
+          "paths": [],
+          "forming": [
+            {
+              "emotion_family": "sadness",
+              "entries": 2
+            }
+          ],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": []
+        }
+      },
+      {
+        "now": "2026-10-19",
+        "days_ago": 0,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "nothing",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "art9_moments": 0,
+            "art9_tools": 0,
+            "art9_ideas": 0,
+            "art9_items": 0,
+            "processed": 0,
+            "moments": 0,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 0,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 2,
+            "insight": 2,
+            "honesty": 3,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 0
+          },
+          "support_row": false,
+          "paths": [],
+          "forming": [
+            {
+              "emotion_family": "sadness",
+              "entries": 2
+            }
+          ],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": []
+        }
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "moments": [
+      {
+        "id": 7,
+        "source_kind": "realization",
+        "source_id": 1,
+        "days_ago": 40,
+        "family": "sadness",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You noticed you go quiet when you are hurt, and others think you are fine.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 8,
+        "source_kind": "note",
+        "source_id": 3,
+        "days_ago": 33,
+        "family": "sadness",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,honesty",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You told your friend that a joke hurt you instead of going quiet.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 9,
+        "source_kind": "realization",
+        "source_id": 2,
+        "days_ago": 20,
+        "family": "worry",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 95,
+        "hard_situation": false,
+        "text": "You noticed that saying it early is easier than explaining it after a week of silence.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 10,
+        "source_kind": "note",
+        "source_id": 4,
+        "days_ago": 7,
+        "family": "anger",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,honesty",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You told your partner straight away that the comment stung.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      }
+    ],
+    "paths": [],
+    "skills": [],
+    "tools": [],
+    "hard": [],
+    "ideas": [],
+    "state": {
+      "activated": true,
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 2}"
+    },
+    "usage": {
+      "calls": 4,
+      "prompt": 8403,
+      "cached": 7680,
+      "completion": 278,
+      "usd": 0.00237,
+      "models": [
+        "gpt-5.4-mini"
+      ]
+    },
+    "problems": []
+  },
+  {
+    "id": "S26",
+    "theme": "names of real people should become roles",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "anger",
+        "fear"
+      ],
+      "crisis_entries": 0,
+      "note": "Names use roles (a colleague, your therapist, your sister), not Tom, Anna or Kasia."
+    },
+    "art9": true,
+    "premium": true,
+    "entries": [
+      {
+        "days_ago": 40,
+        "kind": "note",
+        "text": "Tom from accounting criticised them in front of everyone. They said nothing and stewed all day.",
+        "source_kind": "note",
+        "source_id": 5,
+        "crisis": false
+      },
+      {
+        "days_ago": 33,
+        "kind": "after_therapy",
+        "text": "Session with Anna about the colleague who criticises in public. They practised a short calm sentence to say next time.",
+        "source_kind": "after_therapy",
+        "source_id": 1,
+        "crisis": false
+      },
+      {
+        "days_ago": 19,
+        "kind": "note",
+        "text": "Tom did it again. They said: I would rather talk about this one to one. He stopped.",
+        "source_kind": "note",
+        "source_id": 6,
+        "crisis": false
+      },
+      {
+        "days_ago": 6,
+        "kind": "note",
+        "text": "Felt calmer at work this week. Told their sister Kasia about it.",
+        "source_kind": "note",
+        "source_id": 7,
+        "crisis": false
+      }
+    ],
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "days_ago": 7,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 3,
+            "moments": 3,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 1,
+            "insight": 0,
+            "honesty": 1,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 1
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "anger",
+              "name": "Handling criticism in public",
+              "focus": "about criticism from a colleague in public",
+              "skills": [
+                "Using a calm reply [using_therapy/notebook] discovered x1"
+              ],
+              "hard": [
+                "Being criticised in front of everyone (1)"
+              ]
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": []
+        }
+      },
+      {
+        "now": "2026-10-19",
+        "days_ago": 0,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 1,
+            "moments": 2,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 3,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 1,
+            "insight": 0,
+            "honesty": 2,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 1
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "anger",
+              "name": "Handling criticism in public",
+              "focus": "about criticism from a colleague in public",
+              "skills": [
+                "Using a calm reply [using_therapy/notebook] discovered x1"
+              ],
+              "hard": [
+                "Being criticised in front of everyone (1)"
+              ]
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": []
+        }
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "moments": [
+      {
+        "id": 11,
+        "source_kind": "note",
+        "source_id": 5,
+        "days_ago": 40,
+        "family": "anger",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "Being criticised in front of everyone was still hard for you.",
+        "path_id": 1,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": 1,
+        "rejected": false
+      },
+      {
+        "id": 12,
+        "source_kind": "after_therapy",
+        "source_id": 1,
+        "days_ago": 33,
+        "family": "anger",
+        "kind": "from_therapy",
+        "anchor": "using_therapy",
+        "strengths": "commitment",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You practised a short calm sentence to say next time to a colleague who criticises in public.",
+        "path_id": 1,
+        "skill_id": 1,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 13,
+        "source_kind": "note",
+        "source_id": 6,
+        "days_ago": 19,
+        "family": "fear",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,honesty",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You said you would rather talk about this one one to one.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 14,
+        "source_kind": "note",
+        "source_id": 7,
+        "days_ago": 6,
+        "family": "calm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You felt calmer at work this week.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 15,
+        "source_kind": "note",
+        "source_id": 7,
+        "days_ago": 6,
+        "family": "closeness",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "honesty",
+        "confidence": 94,
+        "hard_situation": false,
+        "text": "You told your sister about it.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      }
+    ],
+    "paths": [
+      {
+        "id": 1,
+        "family": "anger",
+        "name": "Handling criticism in public",
+        "focus": "about criticism from a colleague in public",
+        "merged_into": null
+      }
+    ],
+    "skills": [
+      {
+        "id": 1,
+        "path_id": 1,
+        "anchor": "using_therapy",
+        "icon": "notebook",
+        "name": "Using a calm reply",
+        "in_your_words": "You practised a short calm sentence for next time a colleague criticises you in public. It is a simple line you can carry into that moment."
+      }
+    ],
+    "tools": [],
+    "hard": [
+      {
+        "id": 1,
+        "path_id": 1,
+        "label": "Being criticised in front of everyone",
+        "context": "When a colleague criticises you where others can hear."
+      }
+    ],
+    "ideas": [],
+    "state": {
+      "activated": true,
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 3, \"sessions\": 1}"
+    },
+    "usage": {
+      "calls": 6,
+      "prompt": 16221,
+      "cached": 13056,
+      "completion": 754,
+      "usd": 0.00675,
+      "models": [
+        "gpt-5.4-mini"
+      ]
+    },
+    "problems": [
+      "therapy-only skill 1: Using a calm reply | You practised a short calm sentence for next time a colleague criticises you in public. It is a simple line you can carry into that moment."
+    ]
+  },
+  {
+    "id": "S27",
+    "theme": "soledad y amistad (Spanish)",
+    "language": "Spanish",
+    "expect": {
+      "families_any": [
+        "loneliness",
+        "closeness"
+      ],
+      "crisis_entries": 0,
+      "note": "Spanish output."
+    },
+    "art9": false,
+    "premium": true,
+    "entries": [
+      {
+        "days_ago": 45,
+        "kind": "note",
+        "text": "Escribió que se siente sola desde que su mejor amiga se mudó. Los fines de semana son lo más difícil.",
+        "source_kind": "note",
+        "source_id": 8,
+        "crisis": false
+      },
+      {
+        "days_ago": 31,
+        "kind": "reflect_talk",
+        "text": "Habló con Orca sobre llamar a su amiga aunque le dé vergüenza. Decidió hacerlo.",
+        "source_kind": "reflect_talk",
+        "source_id": 1,
+        "crisis": false
+      },
+      {
+        "days_ago": 20,
+        "kind": "note",
+        "text": "Llamó a su amiga y hablaron una hora. Se sintió acompañada.",
+        "source_kind": "note",
+        "source_id": 9,
+        "crisis": false
+      },
+      {
+        "days_ago": 6,
+        "kind": "note",
+        "text": "Se apuntó a un grupo de lectura del barrio. Fue sola y conoció a dos personas.",
+        "source_kind": "note",
+        "source_id": 10,
+        "crisis": false
+      }
+    ],
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "days_ago": 7,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "art9_moments": 0,
+            "art9_tools": 0,
+            "art9_ideas": 0,
+            "art9_items": 0,
+            "processed": 3,
+            "moments": 6,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 1,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 2,
+            "insight": 2,
+            "honesty": 2,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 2
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "shame",
+              "name": "Llamar aunque me dé vergüenza",
+              "focus": "sobre llamar a tu amiga aunque te diera vergüenza",
+              "skills": [
+                "Llamar aunque dé vergüenza [connecting/chat] practicing x2"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": []
+        }
+      },
+      {
+        "now": "2026-10-19",
+        "days_ago": 0,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "art9_moments": 0,
+            "art9_tools": 0,
+            "art9_ideas": 0,
+            "art9_items": 0,
+            "processed": 1,
+            "moments": 1,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 3,
+            "talks": 1,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 3,
+            "insight": 2,
+            "honesty": 2,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 3
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "shame",
+              "name": "Llamar aunque me dé vergüenza",
+              "focus": "sobre llamar a tu amiga aunque te diera vergüenza",
+              "skills": [
+                "Llamar aunque dé vergüenza [connecting/chat] practicing x2"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": []
+        }
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "moments": [
+      {
+        "id": 16,
+        "source_kind": "note",
+        "source_id": 8,
+        "days_ago": 45,
+        "family": "loneliness",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "Escribiste que te sientes sola desde que tu mejor amiga se mudó.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 17,
+        "source_kind": "note",
+        "source_id": 8,
+        "days_ago": 45,
+        "family": "loneliness",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "Los fines de semana siguen siendo lo más difícil para ti.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 18,
+        "source_kind": "reflect_talk",
+        "source_id": 1,
+        "days_ago": 31,
+        "family": "shame",
+        "kind": "from_therapy",
+        "anchor": "using_therapy",
+        "strengths": "courage,honesty",
+        "confidence": 94,
+        "hard_situation": false,
+        "text": "Hablaste con tu terapeuta sobre llamar a tu amiga aunque te diera vergüenza.",
+        "path_id": 2,
+        "skill_id": 2,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 19,
+        "source_kind": "reflect_talk",
+        "source_id": 1,
+        "days_ago": 31,
+        "family": "shame",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "courage,commitment",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "Llamaste a tu amiga aunque te dio vergüenza.",
+        "path_id": 2,
+        "skill_id": 2,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 20,
+        "source_kind": "note",
+        "source_id": 9,
+        "days_ago": 20,
+        "family": "closeness",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "Llamaste a tu amiga y hablaron una hora.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 21,
+        "source_kind": "note",
+        "source_id": 9,
+        "days_ago": 20,
+        "family": "closeness",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 95,
+        "hard_situation": false,
+        "text": "Notaste que te sentiste acompañada.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 22,
+        "source_kind": "note",
+        "source_id": 10,
+        "days_ago": 6,
+        "family": "joy",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "courage,commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "Fuiste sola a un grupo de lectura del barrio y conociste a dos personas.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      }
+    ],
+    "paths": [
+      {
+        "id": 2,
+        "family": "shame",
+        "name": "Llamar aunque me dé vergüenza",
+        "focus": "sobre llamar a tu amiga aunque te diera vergüenza",
+        "merged_into": null
+      }
+    ],
+    "skills": [
+      {
+        "id": 2,
+        "path_id": 2,
+        "anchor": "connecting",
+        "icon": "chat",
+        "name": "Llamar aunque dé vergüenza",
+        "in_your_words": "La llamas aunque te dé vergüenza. Lo hablaste con tu terapeuta y luego lo hiciste, así que ese paso queda más cerca de ti."
+      }
+    ],
+    "tools": [],
+    "hard": [],
+    "ideas": [],
+    "state": {
+      "activated": true,
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 3, \"talks\": 1}"
+    },
+    "usage": {
+      "calls": 6,
+      "prompt": 16474,
+      "cached": 8448,
+      "completion": 1299,
+      "usd": 0.0125,
+      "models": [
+        "gpt-5.4-mini"
+      ]
+    },
+    "problems": []
+  },
+  {
+    "id": "S28",
+    "theme": "used own coping methods",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "anger",
+        "worry"
+      ],
+      "crisis_entries": 0,
+      "note": "Tools: running it off, a control list. Origin self."
+    },
+    "art9": false,
+    "premium": true,
+    "entries": [
+      {
+        "days_ago": 60,
+        "kind": "note",
+        "text": "Anger at the landlord. They went for a hard run and came back able to write a calm email.",
+        "source_kind": "note",
+        "source_id": 11,
+        "crisis": false
+      },
+      {
+        "days_ago": 45,
+        "kind": "note",
+        "text": "Annoyed at a neighbour's noise. Ran again before knocking on their door. Polite talk.",
+        "source_kind": "note",
+        "source_id": 12,
+        "crisis": false
+      },
+      {
+        "days_ago": 30,
+        "kind": "note",
+        "text": "Worried about a medical test result. They wrote three things they could control and stopped there.",
+        "source_kind": "note",
+        "source_id": 13,
+        "crisis": false
+      },
+      {
+        "days_ago": 15,
+        "kind": "note",
+        "text": "Angry after a call with the bank. Ran, then called back calmly.",
+        "source_kind": "note",
+        "source_id": 14,
+        "crisis": false
+      },
+      {
+        "days_ago": 3,
+        "kind": "note",
+        "text": "Worried again before the test. Wrote the control list. Slept okay.",
+        "source_kind": "note",
+        "source_id": 15,
+        "crisis": false
+      }
+    ],
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "days_ago": 7,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "art9_moments": 0,
+            "art9_tools": 0,
+            "art9_ideas": 0,
+            "art9_items": 0,
+            "processed": 4,
+            "moments": 5,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 2,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 4,
+            "talks": 0,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 3,
+            "insight": 0,
+            "honesty": 0,
+            "resilience": 3,
+            "kindness": 0,
+            "commitment": 2
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "anger",
+              "name": "Working with my anger",
+              "focus": "about calm replies after anger and hard talks",
+              "skills": [
+                "Pausing before I reply [steadying/pause] growing x4"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [],
+          "tools": [
+            "Writing down what I can control [self] used 1"
+          ],
+          "ideas": [
+            "[transfer/todo] If it fits, notice the moment after the run and before you reply. | why: You came back able to write a calm email and later called back calmly after running."
+          ],
+          "pending_stages": []
+        }
+      },
+      {
+        "now": "2026-10-19",
+        "days_ago": 0,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "art9_moments": 0,
+            "art9_tools": 0,
+            "art9_ideas": 0,
+            "art9_items": 0,
+            "processed": 1,
+            "moments": 1,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 2,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 5,
+            "talks": 0,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 3,
+            "insight": 0,
+            "honesty": 0,
+            "resilience": 3,
+            "kindness": 0,
+            "commitment": 3
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "anger",
+              "name": "Working with my anger",
+              "focus": "about calm replies after anger and hard talks",
+              "skills": [
+                "Pausing before I reply [steadying/pause] growing x4"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [
+            {
+              "emotion_family": "worry",
+              "entries": 2
+            }
+          ],
+          "tools": [
+            "Writing down what I can control [self] used 1"
+          ],
+          "ideas": [],
+          "pending_stages": []
+        }
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "moments": [
+      {
+        "id": 23,
+        "source_kind": "note",
+        "source_id": 11,
+        "days_ago": 60,
+        "family": "anger",
+        "kind": "used_method",
+        "anchor": "steadying",
+        "strengths": "commitment,resilience",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You went for a hard run and came back able to write a calm email.",
+        "path_id": 3,
+        "skill_id": 3,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 24,
+        "source_kind": "note",
+        "source_id": 12,
+        "days_ago": 45,
+        "family": "anger",
+        "kind": "used_method",
+        "anchor": "steadying",
+        "strengths": "courage",
+        "confidence": 92,
+        "hard_situation": false,
+        "text": "You ran again before knocking on your neighbour's door.",
+        "path_id": 3,
+        "skill_id": 3,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 25,
+        "source_kind": "note",
+        "source_id": 12,
+        "days_ago": 45,
+        "family": "anger",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage",
+        "confidence": 86,
+        "hard_situation": false,
+        "text": "You had a polite talk with your neighbour.",
+        "path_id": 3,
+        "skill_id": 3,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 26,
+        "source_kind": "note",
+        "source_id": 13,
+        "days_ago": 30,
+        "family": "worry",
+        "kind": "used_method",
+        "anchor": "values_action",
+        "strengths": "commitment,resilience",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You wrote down three things you could control and stopped there.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": 1,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 27,
+        "source_kind": "note",
+        "source_id": 14,
+        "days_ago": 15,
+        "family": "anger",
+        "kind": "used_method",
+        "anchor": "steadying",
+        "strengths": "courage,resilience",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "You ran, then called back calmly after a call with the bank.",
+        "path_id": 3,
+        "skill_id": 3,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 28,
+        "source_kind": "note",
+        "source_id": 15,
+        "days_ago": 3,
+        "family": "worry",
+        "kind": "used_method",
+        "anchor": "values_action",
+        "strengths": "commitment",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You wrote the control list before the test.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      }
+    ],
+    "paths": [
+      {
+        "id": 3,
+        "family": "anger",
+        "name": "Working with my anger",
+        "focus": "about calm replies after anger and hard talks",
+        "merged_into": null
+      }
+    ],
+    "skills": [
+      {
+        "id": 3,
+        "path_id": 3,
+        "anchor": "steadying",
+        "icon": "pause",
+        "name": "Pausing before I reply",
+        "in_your_words": "You use a hard run or a quick pause to cool down before you answer. It helps you come back and send a calm email, call back calmly, or have a polite talk."
+      }
+    ],
+    "tools": [
+      {
+        "id": 1,
+        "name": "Writing down what I can control",
+        "what": "You write down the things you can control and stop there.",
+        "origin": "self",
+        "origin_note": null
+      }
+    ],
+    "hard": [],
+    "ideas": [
+      {
+        "id": 1,
+        "path_id": 3,
+        "skill_id": 3,
+        "text": "If it fits, notice the moment after the run and before you reply.",
+        "why": "You came back able to write a calm email and later called back calmly after running.",
+        "reason": "transfer",
+        "cta": "todo",
+        "state": "active"
+      }
+    ],
+    "state": {
+      "activated": true,
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 5}"
+    },
+    "usage": {
+      "calls": 7,
+      "prompt": 18305,
+      "cached": 14976,
+      "completion": 775,
+      "usd": 0.00711,
+      "models": [
+        "gpt-5.4-mini"
+      ]
+    },
+    "problems": []
+  },
+  {
+    "id": "S29",
+    "theme": "to-dos from Orca ideas completed",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "overwhelm",
+        "fear"
+      ],
+      "crisis_entries": 0
+    },
+    "art9": false,
+    "premium": true,
+    "entries": [
+      {
+        "days_ago": 35,
+        "kind": "note",
+        "text": "They avoid asking for help at work until they drown.",
+        "source_kind": "note",
+        "source_id": 16,
+        "crisis": false
+      },
+      {
+        "days_ago": 28,
+        "kind": "todo_done",
+        "text": "Ask one colleague for help with a small task",
+        "source_kind": "todo_done",
+        "source_id": 1,
+        "crisis": false
+      },
+      {
+        "days_ago": 21,
+        "kind": "note",
+        "text": "Asked for help with the spreadsheet. The colleague was glad to help.",
+        "source_kind": "note",
+        "source_id": 17,
+        "crisis": false
+      },
+      {
+        "days_ago": 10,
+        "kind": "todo_done",
+        "text": "Ask for help before the deadline, not after",
+        "source_kind": "todo_done",
+        "source_id": 2,
+        "crisis": false
+      },
+      {
+        "days_ago": 2,
+        "kind": "note",
+        "text": "Asked their lead which task to drop when the week got too full. Felt in control.",
+        "source_kind": "note",
+        "source_id": 18,
+        "crisis": false
+      }
+    ],
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "days_ago": 7,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "nothing",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "art9_moments": 0,
+            "art9_tools": 0,
+            "art9_ideas": 0,
+            "art9_items": 0,
+            "processed": 4,
+            "moments": 4,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 0,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 3,
+            "insight": 1,
+            "honesty": 1,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 3
+          },
+          "support_row": false,
+          "paths": [],
+          "forming": [
+            {
+              "emotion_family": "overwhelm",
+              "entries": 2
+            }
+          ],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": []
+        }
+      },
+      {
+        "now": "2026-10-19",
+        "days_ago": 0,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "art9_moments": 0,
+            "art9_tools": 0,
+            "art9_ideas": 0,
+            "art9_items": 0,
+            "processed": 1,
+            "moments": 2,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 3,
+            "talks": 0,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 4,
+            "insight": 2,
+            "honesty": 1,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 4
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "overwhelm",
+              "name": "Asking for help before I drown",
+              "focus": "about work getting too full and asking for help",
+              "skills": [
+                "Asking for help early [connecting/lifebuoy] practicing x3"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [
+            {
+              "emotion_family": "calm",
+              "entries": 2
+            }
+          ],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [
+            "skill 4 -> practicing"
+          ]
+        }
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": [
+        "overwhelm"
+      ]
+    },
+    "moments": [
+      {
+        "id": 29,
+        "source_kind": "note",
+        "source_id": 16,
+        "days_ago": 35,
+        "family": "overwhelm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You noticed you avoid asking for help at work until you drown.",
+        "path_id": 4,
+        "skill_id": 4,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 30,
+        "source_kind": "todo_done",
+        "source_id": 1,
+        "days_ago": 28,
+        "family": "calm",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,commitment",
+        "confidence": 99,
+        "hard_situation": false,
+        "text": "You asked a colleague for help with a small task.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 31,
+        "source_kind": "note",
+        "source_id": 17,
+        "days_ago": 21,
+        "family": "overwhelm",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,commitment",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You asked for help with the spreadsheet.",
+        "path_id": 4,
+        "skill_id": 4,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 32,
+        "source_kind": "todo_done",
+        "source_id": 2,
+        "days_ago": 10,
+        "family": "worry",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You asked for help before the deadline.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 33,
+        "source_kind": "note",
+        "source_id": 18,
+        "days_ago": 2,
+        "family": "overwhelm",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You asked your lead which task to drop when the week got too full.",
+        "path_id": 4,
+        "skill_id": 4,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 34,
+        "source_kind": "note",
+        "source_id": 18,
+        "days_ago": 2,
+        "family": "calm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 93,
+        "hard_situation": false,
+        "text": "You felt more in control when the week got too full.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      }
+    ],
+    "paths": [
+      {
+        "id": 4,
+        "family": "overwhelm",
+        "name": "Asking for help before I drown",
+        "focus": "about work getting too full and asking for help",
+        "merged_into": null
+      }
+    ],
+    "skills": [
+      {
+        "id": 4,
+        "path_id": 4,
+        "anchor": "connecting",
+        "icon": "lifebuoy",
+        "name": "Asking for help early",
+        "in_your_words": "You notice you can wait until you drown, and you also asked for help with a small task, the spreadsheet, and before the deadline. You even asked your lead which task to drop when the week got too full."
+      }
+    ],
+    "tools": [],
+    "hard": [],
+    "ideas": [],
+    "state": {
+      "activated": true,
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 3}"
+    },
+    "usage": {
+      "calls": 6,
+      "prompt": 14403,
+      "cached": 12288,
+      "completion": 638,
+      "usd": 0.00538,
+      "models": [
+        "gpt-5.4-mini"
+      ]
+    },
+    "problems": []
+  },
+  {
+    "id": "S30",
+    "theme": "pride in small wins after depression talk",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "pride",
+        "joy"
+      ],
+      "crisis_entries": 0,
+      "note": "No 'depression' in any generated text."
+    },
+    "art9": true,
+    "premium": true,
+    "entries": [
+      {
+        "days_ago": 80,
+        "kind": "after_therapy",
+        "text": "Talked about the depression diagnosis from last year and how small wins get lost. Their therapist suggested writing one small win a day.",
+        "source_kind": "after_therapy",
+        "source_id": 2,
+        "crisis": false
+      },
+      {
+        "days_ago": 66,
+        "kind": "note",
+        "text": "Small win: made breakfast and went outside. Wrote it down.",
+        "source_kind": "note",
+        "source_id": 19,
+        "crisis": false
+      },
+      {
+        "days_ago": 52,
+        "kind": "note",
+        "text": "Small win: called the dentist I had been avoiding.",
+        "source_kind": "note",
+        "source_id": 20,
+        "crisis": false
+      },
+      {
+        "days_ago": 38,
+        "kind": "note",
+        "text": "Small win list has twenty items. They read it on a bad day and felt a little proud.",
+        "source_kind": "note",
+        "source_id": 21,
+        "crisis": false
+      },
+      {
+        "days_ago": 24,
+        "kind": "note",
+        "text": "They noticed they now see wins without writing them.",
+        "source_kind": "note",
+        "source_id": 22,
+        "crisis": false
+      },
+      {
+        "days_ago": 9,
+        "kind": "note",
+        "text": "Small win: finished a book. Proud.",
+        "source_kind": "note",
+        "source_id": 23,
+        "crisis": false
+      }
+    ],
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "days_ago": 7,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 6,
+            "moments": 8,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 5,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 1,
+            "insight": 2,
+            "honesty": 0,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 5
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "pride",
+              "name": "Noticing my pride",
+              "focus": "about seeing your wins and feeling proud",
+              "skills": [
+                "Finishing a book [values_action/sparkle] practicing x2",
+                "Noticing your wins [noticing/tag] discovered x2"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [
+            "[consolidate/agenda] If it fits, keep a small win list for now, or bring it to a session. | why: Your therapist suggested writing one small win a day, and you already noticed pride from your list."
+          ],
+          "pending_stages": []
+        }
+      },
+      {
+        "now": "2026-10-19",
+        "days_ago": 0,
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 0,
+            "moments": 0,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "after_crisis": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 5,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 1,
+            "insight": 2,
+            "honesty": 0,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 5
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "pride",
+              "name": "Noticing my pride",
+              "focus": "about seeing your wins and feeling proud",
+              "skills": [
+                "Finishing a book [values_action/sparkle] practicing x2",
+                "Noticing your wins [noticing/tag] discovered x2"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": []
+        }
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "moments": [
+      {
+        "id": 35,
+        "source_kind": "after_therapy",
+        "source_id": 2,
+        "days_ago": 80,
+        "family": "sadness",
+        "kind": "from_therapy",
+        "anchor": "using_therapy",
+        "strengths": "commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "Your therapist suggested writing one small win a day.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 36,
+        "source_kind": "note",
+        "source_id": 19,
+        "days_ago": 66,
+        "family": "calm",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You made breakfast and went outside.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 37,
+        "source_kind": "note",
+        "source_id": 19,
+        "days_ago": 66,
+        "family": "calm",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "commitment",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You wrote it down.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 38,
+        "source_kind": "note",
+        "source_id": 20,
+        "days_ago": 52,
+        "family": "worry",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "courage,commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You called the dentist you had been avoiding.",
+        "path_id": null,
+        "skill_id": null,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 39,
+        "source_kind": "note",
+        "source_id": 21,
+        "days_ago": 38,
+        "family": "pride",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You read your small win list on a bad day and felt a little proud.",
+        "path_id": 5,
+        "skill_id": 5,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 40,
+        "source_kind": "note",
+        "source_id": 22,
+        "days_ago": 24,
+        "family": "pride",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You noticed you now see your wins without writing them down.",
+        "path_id": 5,
+        "skill_id": 5,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 41,
+        "source_kind": "note",
+        "source_id": 23,
+        "days_ago": 9,
+        "family": "pride",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You finished a book.",
+        "path_id": 5,
+        "skill_id": 6,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      },
+      {
+        "id": 42,
+        "source_kind": "note",
+        "source_id": 23,
+        "days_ago": 9,
+        "family": "pride",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "",
+        "confidence": 99,
+        "hard_situation": false,
+        "text": "You felt proud.",
+        "path_id": 5,
+        "skill_id": 6,
+        "tool_id": null,
+        "hard_id": null,
+        "rejected": false
+      }
+    ],
+    "paths": [
+      {
+        "id": 5,
+        "family": "pride",
+        "name": "Noticing my pride",
+        "focus": "about seeing your wins and feeling proud",
+        "merged_into": null
+      }
+    ],
+    "skills": [
+      {
+        "id": 5,
+        "path_id": 5,
+        "anchor": "noticing",
+        "icon": "tag",
+        "name": "Noticing your wins",
+        "in_your_words": "You read your small win list on a bad day and felt a little proud. You also noticed you can see your wins without writing them down."
+      },
+      {
+        "id": 6,
+        "path_id": 5,
+        "anchor": "values_action",
+        "icon": "sparkle",
+        "name": "Finishing a book",
+        "in_your_words": "You finished a book, and you felt proud. This is one of the things that can feed that feeling."
+      }
+    ],
+    "tools": [],
+    "hard": [],
+    "ideas": [
+      {
+        "id": 2,
+        "path_id": 5,
+        "skill_id": 5,
+        "text": "If it fits, keep a small win list for now, or bring it to a session.",
+        "why": "Your therapist suggested writing one small win a day, and you already noticed pride from your list.",
+        "reason": "consolidate",
+        "cta": "agenda",
+        "state": "active"
+      }
+    ],
+    "state": {
+      "activated": true,
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 5, \"sessions\": 1}"
+    },
+    "usage": {
+      "calls": 8,
+      "prompt": 20689,
+      "cached": 16896,
+      "completion": 1218,
+      "usd": 0.00959,
+      "models": [
+        "gpt-5.4-mini"
+      ]
+    },
+    "problems": []
+  }
+]

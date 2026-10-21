@@ -1,0 +1,266 @@
+MindSync
+Dokument poprawek języka (PL + EN) — handoff dla developmentu
+Onboarding ekran po ekranie oraz de-klinicyzacja interfejsu na podstawie audytu MDR
+Wersja robocza · 17 czerwca 2026
+O tym dokumencie
+Dokument zbiera w jednym miejscu wszystkie poprawki tekstowe (polskie i angielskie) oraz powiązane obserwacje UX i funkcjonalne dla aplikacji MindSync — systemu wsparcia procesu terapeutycznego, aplikacji well-beingowej i narzędzia do śledzenia postępu w terapii prowadzonej przez zewnętrznego specjalistę.
+Powstał na podstawie trzech źródeł:
+poprawki.txt — poprawki copy onboardingu, ekran po ekranie (nowe nagłówki i podtytuły po polsku).
+notatki dot. onboarding poprawki.txt — dodatkowe obserwacje: wizualia, logika aktywacji, ustawienia, zgody, zadania dla zespołu.
+MEDICAL_WORDING_AUDIT.pdf — audyt języka „medycznego” (MDR 2017/745): które słowa i funkcje sprawiają, że aplikacja czyta się jak wyrób medyczny, oraz proponowane, nie-kliniczne przeformułowania.
+Zasada przewodnia
+Teksty mają przesunąć aplikację z języka pomiaru i oceny klinicznej w stronę subiektywnej refleksji i dobrostanu. W praktyce to kilka stałych zamian: symptom na check-in lub obszar uwagi, nasilenie (severity) na intensywność, monitorować i oceniać na obserwować i podsumowywać, baseline na punkt wyjścia, signal i health check na podsumowanie lub check-in. Pełną ściągę zebrałem w części XI.
+Disclaimer zostaje, bo to nasza tarcza prawna. Chodzi tylko o to, żeby słów-wyzwalaczy (diagnozować, leczyć, monitorować, oceniać) nie powtarzać twierdząco nigdzie indziej.
+Jak czytać tabele
+Tabele pokazują obecny tekst i nową wersję w obu językach obok siebie. Każdy wiersz ma jedną wersję polską i jedną angielską, żeby przy wdrożeniu nie było wątpliwości, którą wybrać. W pierwszej kolumnie podaję klucze tekstów (np. info_statsTabBody). To tylko lokalizatory, które pomogą odnaleźć dany napis, a nie kod do wklejenia.
+Uwaga: audyt MDR jest analizą inżynieryjno-językową, nie poradą prawną ani regulacyjną. Ostateczną kwalifikację i klasyfikację trzeba potwierdzić ze specjalistą ds. regulacji.
+Legenda priorytetów (z audytu)
+WYSOKI — sugeruje diagnozę, monitorowanie lub ocenę stanu. Główne cele.
+ŚREDNI — słownictwo kliniczne, role kliniczne lub język pomiaru i wyniku. Wzmacnia medyczny odbiór.
+NISKI — ramka okołoterapeutyczna, prawdopodobnie w porządku sama w sobie, ale dokłada się do całości obrazu.
+Część I — Onboarding (ekran po ekranie)
+Numeracja ekranów zgodna z poprawki.txt; obserwacje z notatek przypisane do odpowiednich ekranów. Rozbieżności w numeracji między źródłami zebrałem w części XIV.
+Ekran #1 — Powitanie
+Status: bez zmian (zatwierdzone).
+--- TABLE ---
+Element | Tekst — PL | Tekst — EN
+Nagłówek | Poznajmy to, nad czym pracujesz | Let's get to know what you're working on
+Podtytuł | Kilka pytań, aby MindSync mógł Cię wspierać między sesjami. | A few questions so MindSync can support you between sessions.
+--- /TABLE ---
+Ekran #2 — Konfiguracja: zgody
+Status: bez zmian. Patrz jednak obserwacja o powtórnej zgodzie przy ekranie nurtu (#6).
+Ekran #3 — „Nad czym chcesz pracować?” (postęp 1/7)
+--- TABLE ---
+Element | Tekst — PL | Tekst — EN
+Nagłówek | Nad czym chcesz pracować? | What would you like to work on?
+Podtytuł | Wybierz przynajmniej 1 rzecz, którą chcesz obserwować. | Choose at least one thing you'd like to keep an eye on.
+--- /TABLE ---
+Presety do obserwowania — mniej pozycji i bez klinicznego języka
+Usunąć (kliniczne diagnozy i „crisis words”): depresja, myśli samobójcze, ataki paniki, trauma, żałoba, nadmierne myślenie i ruminacje.
+Zastąpić miękkimi tematami:
+--- TABLE ---
+Temat — PL | Temat — EN
+niski nastrój | Low mood
+niepokój | Unease
+przytłoczenie | Overwhelm
+zmartwienia | Worries
+stres | Stress
+sen | Sleep
+strata | Loss
+koncentracja | Focus
+--- /TABLE ---
+Zostawiamy możliwość dodawania własnych tematów (wolny tekst).
+Podpowiedź pola własnego: zamiast klinicznego „np. Bezsenność” neutralny przykład, np. „np. napięcie, motywacja” / EN „e.g. tension, motivation”.
+Obserwacje (notatki, 1/7)
+Nie proponujemy gotowych „crisis words” (usunięte powyżej); użytkownik nadal może wpisać, co chce.
+Tytuł i wizualia do poprawy; dodać buźki lub ikony przy tematach dla czytelności.
+Tytuł „czego chcesz więcej” jest do poprawy — zmienić na czytelny, nie-kliniczny nagłówek sekcji.
+Uwzględnić komentarz Moni (general); treść do wklejenia (patrz część XIV).
+Powiązanie z audytem: wbudowane nazwy diagnoz (Depresja, Ataki paniki, Trauma) to silny sygnał, że aplikacja adresuje konkretne schorzenia. Stąd zamiana na tematy lub wolny tekst. [WYSOKI]
+Ekran #4 — „Jak się dziś czujesz?” (postęp 2/7)
+--- TABLE ---
+Element | Tekst — PL | Tekst — EN
+Nagłówek | Jak się dziś czujesz? | How are you feeling today?
+Podtytuł (obecnie) | Oceń obserwowane rzeczy | Rate the things you're tracking
+Podtytuł (nowy) | Zaznacz, jak mocno teraz to czujesz. | Mark how strong each one feels right now.
+--- /TABLE ---
+Zmienić wygląd paska wyboru intensywności; obecnie jest mało czytelny (UX).
+Powiązanie z audytem: „severity / nasilenie” na „intensywność”; skala „Łagodnie … Intensywnie” zamiast „Mild … Severe”. [WYSOKI]
+Ekran #5 — „Twoja terapia ma znaczenie” (postęp 3/7)
+Status: ekran opcjonalny, całość do poprawy. Cel: jeśli użytkownik jest w terapii, może uzupełnić dane, żeby spersonalizować działanie aplikacji.
+--- TABLE ---
+Element | Tekst — PL | Tekst — EN
+Nagłówek | Twoja terapia ma znaczenie | Your therapy matters
+Podtytuł | Uzupełnij, jeśli jesteś w terapii. MindSync dopasuje się do Ciebie i Twojej terapii. | Fill this in if you're in therapy. MindSync will adapt to you and your therapy.
+--- /TABLE ---
+--- TABLE ---
+Pole — obecnie | Nowy tekst — PL | Nowy tekst — EN
+Co Cię najbardziej frustruje | Co Cię frustruje w Twojej terapii? (pigułki do wyboru plus „dodaj własny”) | What frustrates you about your therapy? (chips plus „add your own”)
+Coś jeszcze, co Cię frustruje? | Usunąć (niepotrzebne) | Remove (redundant)
+Czego oczekujesz od terapii | Jaki jest cel Twojej terapii? | What's the goal of your therapy?
+--- /TABLE ---
+Ekran #6 — „Wybierz nurt terapii” (postęp 4/7)
+Sprecyzować komunikat i uwzględnić osoby, które nie są w terapii.
+--- TABLE ---
+Element | Tekst — PL | Tekst — EN
+Nagłówek | Wybierz nurt terapii | Choose your therapy approach
+Podtytuł | Jeśli chcesz, aplikacja dostosuje się do wybranego przez Ciebie nurtu terapeutycznego. | If you like, the app will adapt to the therapy approach you choose.
+Opcja „Nie jestem pewien / inne” | Niech się potoczy. Nie wybieraj nurtu, aplikacja dostosuje się do Ciebie. | Let it flow. Skip choosing an approach and the app will adapt to you.
+--- /TABLE ---
+Obserwacje (notatki, ekran nurtu i zgody)
+Użytkownik pyta: „Dlaczego drugi raz wyrażam zgodę, skoro już to zrobiłem?”. Cel ekranu jest niejasny.
+Rekomendacja: nie prosić o zgodę po raz drugi. Zamiast pytać, informować.
+--- TABLE ---
+Zamiast pytać o zgodę — PL | Zamiast pytać o zgodę — EN
+To, co tu wybierzesz, będzie uwzględnione w działaniu aplikacji. | What you choose here will shape how the app works for you.
+--- /TABLE ---
+Przemianować tytuły ekranów tak, żeby ich cel był jasny.
+Powiązanie z audytem (3.5): kliniczne opisy nurtów (EMDR „Eye Movement Desensitization and Reprocessing”, somatyczny „Body-based trauma and stress processing”) skrócić, złagodzić albo uczynić opcjonalnymi; akronimy można zostawić. [ŚREDNI]
+Uwaga o numeracji: notatki oznaczają tę uwagę jako „3/7”, a poprawki jako ekran 4/7. Potwierdzić mapowanie ekranu zgody i nurtu (część XIV).
+Ekran #7 — „Wpisz, kiedy masz terapię” (postęp 5/7)
+Uwzględnić osoby, które nie są w terapii (np. opcja „Nie jestem teraz w terapii / pomiń”).
+--- TABLE ---
+Element | Tekst — PL | Tekst — EN
+Nagłówek | Wpisz, kiedy masz terapię. | Add when your therapy takes place.
+Podtytuł | Jeśli jesteś w terapii, zapisz, kiedy masz najbliższą sesję. Aplikacja pomoże Ci pamiętać i się przygotować. | If you're in therapy, save your next session and the app will help you remember and prepare.
+--- /TABLE ---
+Ekran #8 — (postęp 6/7)
+Status: bez zmian (jest w porządku).
+Ekran #9 — „Skąd znasz MindSync?” (postęp 7/7)
+--- TABLE ---
+Element | Tekst — PL | Tekst — EN
+Nagłówek | Skąd znasz MindSync? | How did you hear about MindSync?
+--- /TABLE ---
+Powód zmiany: obecne końcówki -łaś/-łeś (np. „Skąd dowiedziałaś/dowiedziałeś się…”) obniżają czytelność. Użyć formy neutralnej płciowo („Skąd znasz…”).
+Ekran #10 — Ekran końcowy konfiguracji
+Blok tekstu w ramce: zastąpić obrazkiem, cytatem motywacyjnym albo afirmacją. Obecny blok jest nieczytelny i nudny.
+--- TABLE ---
+Cytat — PL | Cytat — EN
+Stumilowa podróż zaczyna się od pierwszego kroku. | A journey of a thousand miles begins with a single step.
+--- /TABLE ---
+Wybór: „Od czego chcesz zacząć?” na „Chcę zacząć od:” / „I'd like to start with:”
+--- TABLE ---
+Opcja — obecnie | Nowy tekst — PL | Nowy tekst — EN
+Zastanów się z Pi (Reflect) | refleksyjnej rozmowy z [imię orki] | a reflective chat with [orca's name]
+Zapisz krótką notatkę (Between sessions) | zapisania tego, co mi dziś siedzi w głowie | writing down what's on my mind today
+Zapisz, jak się czujesz (check-in) | krótkiego check-inu na [temat] | a quick check-in on [topic]
+--- /TABLE ---
+Obserwacje (notatki, aktywacja)
+Błąd logiki: teraz check-in prowadzi do check-inu, co zakłada, że użytkownik jest już w terapii, a może nie być. Potrzebne inne przekierowanie, np. „Przygotuj się do terapii”.
+Zaprojektować empty state: jak wygląda „Przygotuj się do terapii” przy zerowym inpucie?
+Skonsultować z terapeutą, co z punktu widzenia terapeutycznego jest wartościowe jako „przygotowanie się do terapii”.
+Część II — Zakładka Stats / Symptomy na Check-iny  [WYSOKI]
+Najwyższy priorytet. „Śledzenie symptomów” z oceną nasilenia 1–10 i wykresami trendu wygląda dokładnie jak monitorowanie stanu zdrowia. Chcemy to pokazać jako subiektywne check-iny samopoczucia: mówimy o uczuciu zamiast o symptomie i o intensywności zamiast o nasileniu. Wykresu nie opisujemy jako klinicznego „postępu”.
+Jeden wiersz to jeden tekst do podmiany: jeden klucz, jedna wersja polska, jedna angielska. Tam, gdzie kilka kluczy ma ten sam nowy tekst, wypisuję je razem w pierwszej kolumnie.
+--- TABLE ---
+Klucz tekstu | Obecnie (EN) | Nowy tekst — PL | Nowy tekst — EN
+info_statsTabBody | …monitor symptom trends… | …zobacz, jak Twoje check-iny zmieniają się w czasie… | …see how your check-ins change over time…
+stats_symptomTracking, mainTab_therapyTracking | Symptom Tracking | Check-iny samopoczucia | Wellbeing check-ins
+settings_notifSymptomTracking (tytuł) | Symptom tracking reminders | Przypomnienia o check-inie | Check-in reminders
+settings_notifSymptomTrackingDesc (opis) | Weekly reminder to log your symptom scores | Cotygodniowe przypomnienie, żeby zapisać, jak się czujesz | Weekly reminder to note how you're feeling
+stats_howTrackerWorksBody | Track your symptoms daily by logging a score 1–10… helps you and your therapist identify patterns. | Codziennie zaznaczaj, jak się czujesz, w skali 1–10. To prosty sposób, żeby dostrzec własne wzorce. | Note how you're feeling each day on a 1–10 scale. A simple way to notice your own patterns.
+symptomTracking_initialSeverity | Initial severity | Początkowa intensywność | Starting intensity
+symptomTracking_mild | Mild | Łagodnie | Light
+symptomTracking_severe | Severe | Intensywnie | Intense
+symptomTracking_emptyTitle | Track your symptoms to see progress over time | Sprawdzaj, jak się czujesz, w czasie | Check in on how you're feeling over time
+settings_symptomsHelpText | …symptoms you track… adjust severity scores… | …rzeczy, które obserwujesz… dostosuj intensywność… | …the things you check in on… adjust intensity…
+mainTab_symptomTrend, therapy_auditSymptomTrends, therapy_weeklySummarySymptomShifts | Symptom Trend / Trends / Shifts (warianty obecne) | Trend nastroju | Mood trend
+character_symptomCheckins | Symptom Check-ins | Check-iny samopoczucia | Wellbeing check-ins
+settings_symptomsSection, settings_profileGroup, stats_symptoms | Symptoms | Obszary uwagi | Focus areas
+stats_logScore | Log Score | Zapisz | Note
+stats_scoreLabel | Score | Ocena | Rating
+stats_setFirstScore | Set your first score… | Dodaj swój pierwszy check-in… | Add your first check-in…
+symptomSuggestion_improving | Improving | Lepiej Ci | Feeling better
+symptomSuggestion_worsening | Worsening | Trudniej Ci | Feeling tougher
+symptomSuggestion_updateTo | Update to {score} | Ustaw na {score} | Set to {score}
+symptomSuggestion_newInsight | New insight | Nowe spostrzeżenie | New insight
+symptomSuggestion_basedOn | Based on your {triggerType} | Na podstawie Twojego {triggerType} | Based on your {triggerType}
+--- /TABLE ---
+Dwie uwagi: teksty newInsight i basedOn zostają, ale wiążemy je z check-inem, nie z symptomem. Presety symptomów zmieniamy tak samo jak na ekranie #3 onboardingu, czyli tematy albo wolny tekst zamiast nazw diagnoz.
+Część III — Therapy Health Check na Check-in i podsumowanie  [WYSOKI]
+Punktowany kwestionariusz, który zwraca „baseline”, „assessment” i sygnał w kolorach świateł, czyta się jak walidowane narzędzie pomiaru wyniku. Chcemy zrobić z tego refleksyjny check-in, który daje podpowiedzi i obserwacje zamiast punktowanego statusu. Werdykt na czerwono-żółto-zielono zastępujemy zwykłym podsumowaniem opisowym.
+--- TABLE ---
+Klucz tekstu | Obecnie (EN) | Nowy tekst — PL | Nowy tekst — EN
+stats_therapyHealthCheck, healthCheck_title, fab_healthCheck, therapy_typeHealthCheck | Therapy Health Check | Check-in terapii | Therapy check-in
+stats_infoSheetDescription | This assessment is based on your self-reported symptom scores… | To podsumowanie odzwierciedla Twoje własne check-iny… | This summary reflects your own check-ins…
+healthCheck_firstCheckInBaseline, healthCheck_firstCheckInBody | …establishes a baseline for future comparison. | …punkt wyjścia, do którego możesz wrócić. | …a starting point you can look back on.
+stats_signalGreen, stats_signalAmber, stats_signalRed, stats_earlySignal, stats_refreshSignal | Movement visible / Mixed signals / Limited movement; therapy signal | Co się wyróżniło | What stood out
+therapy_auditMovementAssessment, therapy_auditMovementVisible, …Mixed, …Limited | Movement Assessment | Spojrzenie wstecz | Looking back
+healthCheck_observation | Observation | Refleksja | Reflection
+healthCheck_safetyLabel | Safety | Poczucie bezpieczeństwa | Safety
+healthCheck_heardLabel | Heard & understood | Poczucie wysłuchania | Heard and understood
+healthCheck_directionLabel | Direction | Kierunek | Direction
+healthCheck_processingResults | Generating your check-in results… | Składamy Twój check-in… | Putting your check-in together…
+--- /TABLE ---
+Sygnał R/A/G: rezygnujemy ze statusu w kolorach świateł na rzecz neutralnego podsumowania (Co się wyróżniło). Trzy tematy z health check zostają, ale jako autorefleksja, nie punktowana ocena.
+healthCheck_safetyEscalationTitle/Body: komunikat bezpieczeństwa zostaje, bo jest odpowiedzialny. Przeramowujemy go na informację o Twoich prawach, a nie na system, który „wykrywa” poważny stan.
+Część IV — Ustawienia i powiadomienia  [ŚREDNI]
+--- TABLE ---
+Klucz tekstu | Obecnie (EN) | Nowy tekst — PL | Nowy tekst — EN
+settings_notifMonthlyAudit, therapy_typeMonthly, therapy_badgeMonthlyAudit, therapy_generatingMonthlyAudit, therapy_auditPremium* | Monthly therapy audit / monthly progress report (warianty obecne) | Miesięczne podsumowanie | Monthly recap
+--- /TABLE ---
+Obserwacja z notatek
+Usunąć z ustawień regulację częstotliwości i intensywności powiadomień.
+Część V — Przygotowanie do sesji i trendy  [ŚREDNI]
+--- TABLE ---
+Klucz tekstu | Obecnie (EN) | Nowy tekst — PL | Nowy tekst — EN
+prep_emotionalTemperature | Your Emotional Temperature | Twój nastrój w tym tygodniu | Your mood this week
+therapy_recordingEmotionalArc | Emotional Arc | Jak płynęła rozmowa | How the conversation flowed
+prep_patternAlerts | Pattern Alerts | Na co zwrócić uwagę | Things to notice
+prep_wasPreviousScore | was {score}/10 | było {score}/10 | was {score}/10
+stats_improving | Improving | Lżej | Brighter
+stats_declining | Declining | Ciężej | Heavier
+stats_steady | Steady | Bez zmian | Steady
+therapy_auditBreakthroughs | Breakthroughs | Przełomy | Breakthroughs
+therapy_typeRealization, therapy_emptyRealizations | Realizations | Spostrzeżenia | Realizations
+--- /TABLE ---
+Uwagi: przy prep_wasPreviousScore zostawiamy liczbę, ale jeśli oceny będą przeramowane, porzucamy ramkę „/10”. Stany improving/declining/steady wiążemy z uczuciem, nie ze stanem. Przełomy i Spostrzeżenia mają niskie ryzyko (słownictwo dziennika), więc zostają.
+Część VI — Nagrania i role kliniczne  [ŚREDNI]
+--- TABLE ---
+Klucz tekstu | Obecnie (EN) | Nowy tekst — PL | Nowy tekst — EN
+account_psychiatrist | Psychiatrist | Specjalista zdrowia psychicznego | Mental health professional
+therapy_recordingPatientInsights | Patient Insights | Twoje spostrzeżenia | Your insights
+therapy_recordingTherapistObservations | Therapist Observations | Druga osoba | Other speaker
+account_therapist, account_addTherapist, account_role, settings_assignTherapist | Therapist | Terapeuta | Therapist
+--- /TABLE ---
+Uwagi: przy account_psychiatrist można też zostawić samo „terapeuta”, jeśli rezygnujemy z tej roli. Klucze terapeuty zostają (niskie ryzyko); odwołanie do zewnętrznego terapeuty użytkownika nie jest roszczeniem medycznym aplikacji.
+Część VII — Nurty terapeutyczne (onboarding)  [ŚREDNI]
+Szczegóły i propozycje są przy ekranie #6 w części I. W skrócie: onboarding_cbt, _emdr, _somatic, _act, _psychodynamic, _dbt opisują zewnętrzny typ terapii użytkownika. To niższe ryzyko, ale pełne opisy kliniczne dokładają gęstości medycznej. Zostawić akronimy, jeśli są przydatne; złagodzić lub usunąć opisy kliniczne, albo uczynić ten krok opcjonalnym i na wolny tekst.
+Część VIII — Disclaimer, ekrany prawne i zgody
+--- TABLE ---
+Klucz tekstu | Obecnie (EN) | Nowy tekst — PL | Nowy tekst — EN
+onboarding_medicalDisclaimer | Medical Disclaimer | Jak korzystać z MindSync | How to use MindSync
+onboarding_gdprConsent | …processing my mental health-related data… | …przetwarzanie moich danych dotyczących dobrostanu i refleksji… | …processing my wellbeing and reflection data…
+--- /TABLE ---
+Co zostaje bez zmian (tylko obserwacje)
+onboarding_disclaimerText: zachować treść, to nasza tarcza. Słów-wyzwalaczy nie powtarzamy twierdząco nigdzie indziej.
+about_notATherapist, about_approachBody, about_builtWithCareBody: dobra obrona, zostają. „mental health best practices” można delikatnie złagodzić, ale to opcjonalne.
+terms_of_service_screen (No Medical Advice): poprawny disclaimer, zostaje. Użycie tych słów w formie zaprzeczenia jest w porządku.
+onboarding_gdprConsent: podstawę przetwarzania z RODO potwierdzić z prawnikiem przed wdrożeniem nowego brzmienia.
+Higiena regulacyjna (privacy_policy_screen) — do potwierdzenia z prawnikiem
+Niespójność wieku: polityka mówi „nie dotyczy osób poniżej 18 lat”, a onboarding zbiera potwierdzenie „16 lat lub więcej”. Ujednolicić.
+Jeśli przetwarzamy dane o dobrostanie, prawdopodobnie potrzebna jest podstawa z art. 9 RODO opisana w polityce.
+Część IX — Kryzys i bezpieczeństwo  [NISKI, zostawić, ale świadomie]
+onboarding_crisisNotAlone, _crisisSupport, _crisisLink (988 Suicide & Crisis Lifeline), chat_crisisBanner, healthCheck_safetyEscalation* zostają. Sygnalizowanie kryzysu jest potrzebne, a jego usunięcie byłoby gorsze dla użytkowników i dla recenzji w sklepach. Ramkujemy to jako statyczne wskazanie pomocy zewnętrznej, a nie jako aplikację, która „wykrywa” albo „triażuje” stan kliniczny.
+Część X — Store listing i prompty backendu (off-repo)
+Store (App Store, Google Play)
+To najczęściej czytane deklaracje, które Apple i Google oceniają pod kątem reguł dla aplikacji zdrowotnych. Sprawdzić: kategorię aplikacji, słowa kluczowe (unikać „symptom tracker”, „therapy”, „mental health treatment”), podtytuł i czasowniki w opisie. Wyrównać do przeramowania w aplikacji.
+Prompty AI w backendzie (osobne repo)
+Prompty, które generują insighty, oceny i sygnały, też są deklaracjami przeznaczenia. Prawdopodobnie instruują model, żeby „assess”, „identify symptoms/patterns”, „evaluate progress” albo „summarize symptom severity”. Robimy te same zamiany czasowników (assess, diagnose, monitor na reflect, summarize, notice) i nie każemy modelowi wydawać ocen klinicznych. Repo można zaudytować osobno.
+Część XI — Ściąga słownikowa (medyczne na dobrostan)
+To paleta słownictwa do pisania nowych tekstów, a nie lista zamian konkretnych stringów. Gotowe podmiany pojedynczych napisów są w częściach I–X. Tutaj podaję po kilka dobrych odpowiedników, żeby przy nowym copy było z czego wybierać.
+--- TABLE ---
+Unikać (medyczne) | Zamiast — PL | Zamiast — EN
+symptom | check-in · obszar uwagi · jak się czujesz · temat | check-in · focus area · how you're feeling · theme
+severity / score (1–10) | intensywność · jak mocno to czujesz · ocena | intensity · how strong it feels · rating
+monitorować / śledzić symptomy | obserwować w czasie · refleksja · check-in | notice over time · reflect on · check in
+assessment / health check | refleksja · check-in · podsumowanie · recap | reflection · check-in · summary · recap
+baseline | punkt wyjścia | starting point
+signal / movement (R/A/G) | podsumowanie · co się wyróżniło | summary · what stood out
+audit | podsumowanie · przegląd | recap · review
+diagnose / treat / condition (twierdząco) | tylko w disclaimerze, w formie zaprzeczenia | only in the negating disclaimer
+patient | Ty · rozmówca | you · speaker
+improving / worsening / declining | lżej · trudniej · bez zmian | feeling better · feeling tougher · steady
+--- /TABLE ---
+Część XII — Kolejność wdrożenia (z audytu)
+Wyczyścić słowa-wyzwalacze: usunąć „monitor”, „assessment” i twierdzące „diagnose/treat/condition” ze stringów poza disclaimerem (i z promptów backendu).
+Zde-klinicyzować śledzenie symptomów: symptom na check-in, severity na intensywność; wykres jako subiektywny dobrostan.
+Przeramować Health Check: porzucić „health check”, „baseline”, „signal/assessment”; zrobić z tego refleksyjny check-in.
+Złagodzić presety: tematy albo wolny tekst zamiast nazw diagnoz.
+Przemianować role kliniczne: „patient” na „Ty”; ponownie rozważyć „psychiatra”.
+Zachować i wzmocnić disclaimer oraz sygnalizowanie kryzysu, ale traktować je jako zabezpieczenie, nie jako strategię.
+Wyrównać store listing i prompty backendu do tego samego języka.
+Część XIII — Obserwacje i zadania (z notatek)
+Settings: usunąć regulację częstotliwości i intensywności powiadomień.
+Wording: przegląd całości i założenie zadania dla Mikołaja (wording plus przekierowanie aktywacji z ekranu #10).
+Plany free i premium: przeanalizować CSV od Darka (Discord), czyli jak Rosebud komunikuje free i premium, przy projektowaniu komunikacji planów.
+Komentarz Moni (general): uwzględnić przy ekranie #3; treść do wklejenia.
+Konsultacja terapeutyczna: ustalić, co jest wartościowe jako „przygotowanie się do terapii”.
+Zadanie dla Mikołaja: założyć task (wording plus logika aktywacji).
+Część XIV — Otwarte pytania i do potwierdzenia
+Numeracja ekranów onboardingu: rozbieżność między poprawki.txt a notatkami (uwaga o zgodzie i nurcie oznaczona „3/7” kontra ekran 4/7). Potwierdzić właściwe mapowanie.
+„[imię orki]” / „Pi”: finalna nazwa postaci-przewodnika (do ujednolicenia w całej aplikacji).
+Ekran #10: „check-in na [temat]”: jaki konkretnie test albo check-in ma się tu pojawić.
+Komentarz Moni: pełna treść do wklejenia (ekran #3).
+Audyt: czy „CE1 / CE2” mapuje na konkretne klasy w dokumentach QMS i regulacyjnych (dla spójności terminologii).
+Czy chcesz, żebym przygotował pełny zestaw zamian linia po linii dla wszystkich 7 języków, albo zaudytował repo promptów backendu (naturalne kolejne kroki z audytu).

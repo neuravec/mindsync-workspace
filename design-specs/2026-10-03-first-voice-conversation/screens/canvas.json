@@ -1,0 +1,48 @@
+{
+  "v": 3,
+  "createdOnFiles": {"v": 1, "at": "2026-10-03T16:00:00Z"},
+  "title": "Onboarding to first voice conversation",
+  "launch": {"view": "canvas"},
+  "pages": [],
+  "boards": {
+    "Main.dc.html": {"x": 0, "y": 0, "w": 390, "h": 844, "radius": 28, "is_interactive": true, "title": "1 · Your MindSync is ready, one way forward"},
+    "VoiceIntro.dc.html": {"x": 470, "y": 0, "w": 390, "h": 844, "radius": 28, "is_interactive": true, "title": "2 · Before the first conversation"},
+    "VoiceLive.dc.html": {"x": 940, "y": 0, "w": 390, "h": 844, "radius": 28, "is_interactive": true, "title": "3a · Opening question 1 of 3, built on the answers"},
+    "VoiceListening.dc.html": {"x": 1410, "y": 0, "w": 390, "h": 844, "radius": 28, "title": "3b · Listening, opening question 2 of 3"},
+    "VoiceWrapUp.dc.html": {"x": 1880, "y": 0, "w": 390, "h": 844, "radius": 28, "title": "3c · Question 3 of 3 feeds the Before therapy card"},
+    "VoiceOpen.dc.html": {"x": 2350, "y": 0, "w": 390, "h": 844, "radius": 28, "title": "3d · Open conversation, the person ends it"},
+    "Paywall.dc.html": {"x": 2820, "y": 0, "w": 390, "h": 844, "radius": 28, "is_interactive": true, "title": "4 · Option A: recap, then all options on one screen"},
+    "TypeFallback.dc.html": {"x": 470, "y": 1340, "w": 390, "h": 844, "radius": 28, "is_interactive": true, "title": "2x · Can't talk or mic denied: same talk in text"},
+    "VoiceError.dc.html": {"x": 940, "y": 1340, "w": 390, "h": 844, "radius": 28, "is_interactive": true, "title": "3x · Connection lost: continue in text"},
+    "VoiceNoAnswers.dc.html": {"x": 1410, "y": 1340, "w": 390, "h": 844, "radius": 28, "title": "3y · Answers skipped: general opening questions"},
+    "PaywallPricesFailed.dc.html": {"x": 2820, "y": 1340, "w": 390, "h": 844, "radius": 28, "title": "4x · Prices did not load: retry, never skip silently"},
+    "OfferStarterFirst.dc.html": {"x": 2820, "y": 2680, "w": 390, "h": 844, "radius": 28, "is_interactive": true, "title": "4B · Option B step 1: recap + 2-week offer, Continue"},
+    "AllPlans.dc.html": {"x": 3290, "y": 2680, "w": 390, "h": 844, "radius": 28, "is_interactive": true, "title": "4B · Option B step 2: all plans (today's paywall)"}
+  },
+  "order": [
+    "Main.dc.html",
+    "VoiceIntro.dc.html",
+    "VoiceLive.dc.html",
+    "VoiceListening.dc.html",
+    "VoiceWrapUp.dc.html",
+    "VoiceOpen.dc.html",
+    "Paywall.dc.html",
+    "TypeFallback.dc.html",
+    "VoiceError.dc.html",
+    "VoiceNoAnswers.dc.html",
+    "PaywallPricesFailed.dc.html",
+    "OfferStarterFirst.dc.html",
+    "AllPlans.dc.html"
+  ],
+  "notes": {
+    "rowMain": {"x": 0, "y": -300, "text": "Onboarding ends in one conversation, then the offer", "kind": "title1", "maxW": 3210},
+    "rowFallback": {"x": 0, "y": 1040, "text": "Fallbacks: nobody gets stuck", "kind": "title1", "maxW": 3210},
+    "rowOptionB": {"x": 2820, "y": 2400, "text": "Option B: 2-week offer first, then all plans", "kind": "title1", "maxW": 860},
+    "conversationRules": {"x": 3290, "y": 0, "w": 400, "fill": "blue", "text": "How the conversation works\n\nPart 1, getting to know you: always 3 opening questions. Each is built from an onboarding answer when there is one, and falls back to a general question when the answer was skipped (screen 3y). Nobody gets 0 questions.\n\nPart 2, open conversation: no counter and no planned end. Orca follows what the person said and asks about areas not covered yet: sleep, work, relationships, what they want from therapy or from MindSync. It never ends the call itself and never mentions Premium. Only the person ends it, with End.\n\nProposal: around minute 15 Orca offers a pause once, without ending. Technical check before build: the voice session length limit on the OpenAI side."},
+    "afterOffer": {"x": 3290, "y": 640, "w": 400, "fill": "teal", "text": "After the offer: Reminders pre-prompt (unchanged), then Home. The First step screen goes away, because the conversation is the first step.\n\nWhat Orca knows when the call starts: first name, focus areas with intensity, therapy status, next session day and time (only if in therapy), talk style, companion name. Nothing else from onboarding goes into the prompt."},
+    "notInTherapy": {"x": 3290, "y": 1180, "w": 400, "fill": "orange", "text": "Not in therapy (or no Art. 9 consent): question 3 becomes \"What would you like to feel more of?\" and the recap ends with a check-in plan instead of a Before therapy card. Preview with the Tweaks answers and inTherapy on screens 2 and 3a."},
+    "memory": {"x": 1880, "y": 1340, "w": 400, "fill": "green", "text": "What the first conversation leaves behind\n\nAlready today: every turn is saved (encrypted) and what the person says is searchable for later talks.\n\nTo build:\n1. The conversation always closes properly: on End, and also when the app is closed or the call goes quiet. Today only a manual End creates the summary, topics and emotions.\n2. The recap (What Orca heard) is saved as Orca's memory and goes into every later Reflect, voice and text, and into the Before therapy card. Today summaries and the Personal Bio never reach later conversations.\n3. The Personal Bio refreshes right after this call, not on the weekly schedule.\n4. Therapy schedule and next session go into the prompt (missing today).\n5. The person can see and delete what Orca remembers."},
+    "optionB": {"x": 3760, "y": 2680, "w": 340, "fill": "gray", "text": "Option B: step 1 shows the recap and only the 2-week offer. Continue opens the same all-plans screen the app already uses, so monthly and annual are one tap away. Closing it keeps the free 4 days. Compare with Option A (screen 4), which shows all three options at once."}
+  },
+  "designSystems": []
+}

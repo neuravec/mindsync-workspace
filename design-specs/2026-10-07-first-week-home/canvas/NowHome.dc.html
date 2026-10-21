@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home today, new user</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 1320px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; position: relative; overflow: hidden">
+<div style="padding: 52px 20px 120px 20px; display: flex; flex-direction: column; gap: 16px">
+
+<div style="display: flex; justify-content: space-between; align-items: center">
+<button type="button" aria-label="Open menu" style="width: 44px; height: 44px; border-radius: 22px; border: none; background: #DBF0ED; color: #113237; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 700">S</button>
+<button type="button" aria-label="About Home" style="width: 44px; height: 44px; border-radius: 22px; border: 1px solid #DBF0ED; background: #FFFFFF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg></button>
+</div>
+
+<div style="position: relative; display: flex; flex-direction: column; gap: 4px">
+<span style="{{mk}}">7</span>
+<span style="font-size: 28px; line-height: 1.15; font-weight: 800">Good evening,</span>
+<span style="font-size: 28px; line-height: 1.15; font-weight: 800">Sam</span>
+<span style="font-size: 15px; color: #3D5C60">No session this week, catch your thoughts</span>
+</div>
+
+<div style="position: relative; display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 16px; background: #113237; color: #FFFFFF">
+<span style="{{mk}}">1</span>
+<span style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 20px; background: rgba(255,200,138,0.18); display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFC88A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></svg></span>
+<span style="flex-grow: 1; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 15px; font-weight: 700">Premium trial: 4 days left</span>
+<span style="height: 6px; border-radius: 3px; background: rgba(255,255,255,0.15); display: flex"><span style="width: 100%; border-radius: 3px; background: #FFC88A"></span></span>
+</span>
+<span style="font-size: 14px; font-weight: 700; color: #FFC88A">See plans</span>
+</div>
+
+<div style="position: relative; border-radius: 18px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 16px; display: flex; align-items: center; gap: 12px">
+<span style="{{mk}}">2</span>
+<span style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 12px; background: #E3F2EF; display: flex; align-items: center; justify-content: center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#26767B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg></span>
+<span style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 16px; font-weight: 700">Next Therapy Session</span>
+<span style="font-size: 14px; color: #3D5C60">No upcoming sessions scheduled.</span>
+</span>
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3D5C60" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+</div>
+
+<div style="position: relative; border-radius: 18px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+<span style="{{mk}}">3</span>
+<span style="font-size: 17px; font-weight: 800">Start your journey</span>
+<span style="font-size: 14px; line-height: 1.45; color: #3D5C60">Here are a few things you can do to get the most out of MindSync.</span>
+<div style="display: flex; flex-direction: column">
+<div style="display: flex; align-items: center; gap: 10px; min-height: 48px; border-top: 1px solid #EEF7F5">
+<span style="flex-grow: 1; font-size: 15px; font-weight: 700">Capture a session</span>
+<span style="font-size: 12px; font-weight: 700; color: #26767B; background: #E3F2EF; padding: 4px 8px; border-radius: 8px">Unlimited in trial</span>
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D5C60" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+</div>
+<div style="display: flex; align-items: center; gap: 10px; min-height: 48px; border-top: 1px solid #EEF7F5">
+<span style="flex-grow: 1; font-size: 15px; font-weight: 700">Add a check-in</span>
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D5C60" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+</div>
+<div style="display: flex; align-items: center; gap: 10px; min-height: 48px; border-top: 1px solid #EEF7F5">
+<span style="flex-grow: 1; font-size: 15px; font-weight: 700">Start reflecting</span>
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#3D5C60" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+</div>
+</div>
+</div>
+
+<div style="position: relative; border-radius: 18px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+<span style="{{mk}}">4</span>
+<span style="font-size: 17px; font-weight: 800">Habits</span>
+<span style="font-size: 15px; font-weight: 700">Small daily wins add up</span>
+<span style="font-size: 14px; line-height: 1.45; color: #3D5C60">Track one thing you do, or stay free of, each day.</span>
+<span style="align-self: flex-start; margin-top: 4px; height: 44px; padding: 0 16px; border-radius: 12px; background: #DBF0ED; display: flex; align-items: center; font-size: 14px; font-weight: 700">Add your first habit</span>
+</div>
+
+<div style="position: relative; border-radius: 18px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+<span style="{{mk}}">5</span>
+<span style="font-size: 17px; font-weight: 800">Mood trend · 7 days</span>
+<sc-for list="{{rows}}" as="r" hint-placeholder-count="3">
+<div style="display: flex; align-items: center; gap: 12px">
+<span style="width: 96px; font-size: 14px; font-weight: 600">{{r.name}}</span>
+<span style="flex-grow: 1; height: 8px; border-radius: 4px; background: #EEF7F5; display: flex"><span style="{{r.bar}}"></span></span>
+<span style="width: 20px; text-align: right; font-size: 14px; font-weight: 700">{{r.v}}</span>
+</div>
+</sc-for>
+</div>
+
+<div style="position: relative; border-radius: 18px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+<span style="{{mk}}">6</span>
+<span style="font-size: 12px; font-weight: 800; letter-spacing: 1px; color: #26767B">WEEKLY OBSERVATIONS</span>
+<span style="font-size: 14px; line-height: 1.45; color: #3D5C60">Your first weekly observations will appear here after your next session or on Monday</span>
+</div>
+
+</div>
+
+<button type="button" aria-label="Add" style="position: absolute; right: 20px; bottom: 100px; width: 56px; height: 56px; border-radius: 28px; border: none; background: #113237; display: flex; align-items: center; justify-content: center"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+
+<nav aria-label="Main navigation" style="position: absolute; left: 0; right: 0; bottom: 0; height: 80px; background: #FFFFFF; border-top: 1px solid #DBF0ED; display: flex; justify-content: space-around; align-items: center">
+<a href="#" style="font-size: 12px; font-weight: 800; color: #113237; text-decoration: none; padding: 8px 12px; border-radius: 14px; background: #DBF0ED">Main</a>
+<a href="#" style="font-size: 12px; font-weight: 600; color: #3D5C60; text-decoration: none; padding: 8px 6px">Timeline</a>
+<a href="#" style="font-size: 12px; font-weight: 600; color: #3D5C60; text-decoration: none; padding: 8px 6px">Reflect</a>
+<a href="#" style="font-size: 12px; font-weight: 600; color: #3D5C60; text-decoration: none; padding: 8px 6px">Workspace</a>
+<a href="#" style="font-size: 12px; font-weight: 600; color: #3D5C60; text-decoration: none; padding: 8px 6px">Character</a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"showMarkers":{"editor":"boolean","default":true},"$preview":{"width":390,"height":1320}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const show = this.props.showMarkers ?? true;
+    const rows = [
+      { name: 'Sleep', v: 7 },
+      { name: 'Anxiety', v: 6 },
+      { name: 'Work stress', v: 8 }
+    ].map((r) => ({ ...r, bar: 'width: ' + (r.v * 10) + '%; border-radius: 4px; background: #4CB2B5' }));
+    return {
+      mk: show
+        ? 'position: absolute; top: -10px; right: -8px; width: 26px; height: 26px; border-radius: 13px; background: #B3261E; color: #FFFFFF; font-size: 13px; font-weight: 800; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 3px #F6FFFD; z-index: 2'
+        : 'display: none',
+      rows: rows
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>How did you find us</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; display: flex; flex-direction: column">
+  <div style="display: flex; align-items: center; gap: 8px; padding: 48px 20px 0 8px">
+    <button type="button" aria-label="Back" style="width: 44px; height: 44px; border: none; background: transparent; padding: 0; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <div style="flex-grow: 1; height: 6px; border-radius: 3px; background: #26767B"></div>
+    <span style="font-size: 13px; font-weight: 600; color: #3D5C60">7 of 7</span>
+  </div>
+  <div style="flex-grow: 1; padding: 20px 24px 16px 24px; display: flex; flex-direction: column; gap: 12px">
+    <h1 style="margin: 0; font-size: 28px; line-height: 1.15; font-weight: 800">Last one. How did you hear about us?</h1>
+    <p style="margin: 0 0 4px 0; font-size: 15px; color: #3D5C60">It helps us reach more people like you.</p>
+    <sc-for list="{{opts}}" as="o" hint-placeholder-count="6">
+      <button type="button" onClick="{{o.pick}}" aria-pressed="{{o.pressed}}" style="{{o.style}}">{{o.l}}</button>
+    </sc-for>
+  </div>
+  <div style="padding: 12px 24px 28px 24px; display: flex; flex-direction: column; gap: 4px">
+    <button type="button" style="width: 100%; height: 56px; border: none; border-radius: 16px; background: #113237; color: #FFFFFF; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 700">Set up my app</button>
+    <button type="button" style="height: 44px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 600; color: #3D5C60">I'd rather not say</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { pick: 'My therapist or doctor' }; }
+  renderVals() {
+    const list = ['My therapist or doctor', 'A friend', 'Instagram, TikTok or Reddit', 'App Store or Google Play', 'A blog or website', 'Somewhere else'];
+    return {
+      opts: list.map((l) => {
+        const on = this.state.pick === l;
+        return { l: l, pressed: on ? 'true' : 'false', pick: () => this.setState({ pick: l }),
+          style: 'min-height: 52px; text-align: left; padding: 0 16px; border-radius: 14px; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 600; cursor: pointer; ' + (on ? 'background: #113237; color: #FFFFFF; border: 1.5px solid #113237' : 'background: #FFFFFF; color: #113237; border: 1.5px solid #BBE4DE') };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>

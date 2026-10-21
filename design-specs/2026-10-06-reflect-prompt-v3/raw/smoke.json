@@ -1,0 +1,267 @@
+[
+ {
+  "kind": "voice",
+  "name": "smoke-v3-mini",
+  "prompt": "v3",
+  "model": "gpt-realtime-mini",
+  "effort": "none",
+  "runs": 1,
+  "variant": "smoke-v3-mini",
+  "persona": "R1",
+  "entry": "fresh",
+  "run": 1,
+  "prompt_chars": 14091,
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107 Ania, ciesz\u0119 si\u0119, \u017ce jeste\u015b. Jak si\u0119 czujesz dzisiaj?",
+    "time_to_first_audio_s": 0.7,
+    "audio_seconds": 4.1,
+    "total_s": 1.28,
+    "usage": {
+     "total_tokens": 6609,
+     "input_tokens": 6492,
+     "output_tokens": 117,
+     "input_token_details": {
+      "text_tokens": 6492,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 35,
+      "audio_tokens": 82
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Brzmi, jakby ta my\u015bl o jutrze pojawia\u0142a si\u0119 zanim jeszcze zacznie si\u0119 dzie\u0144. My\u015blisz, \u017ce chodzi o konkretne zadania, kt\u00f3re ci\u0119 czekaj\u0105? Albo o to, jak si\u0119 w to wszystko wpasowuje?",
+    "time_to_first_audio_s": 0.51,
+    "audio_seconds": 9.95,
+    "total_s": 2.1,
+    "usage": {
+     "total_tokens": 6918,
+     "input_tokens": 6642,
+     "output_tokens": 276,
+     "input_token_details": {
+      "text_tokens": 6560,
+      "audio_tokens": 82,
+      "image_tokens": 0,
+      "cached_tokens": 6592,
+      "cached_tokens_details": {
+       "text_tokens": 6528,
+       "audio_tokens": 64,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 77,
+      "audio_tokens": 199
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Rozumiem, to brzmi, jakby ci\u0119 to zaskakiwa\u0142o i czu\u0142a\u015b, \u017ce jest to przyt\u0142aczaj\u0105ce od samego pocz\u0105tku. Czy mo\u017ce to jest zwi\u0105zane z tym, co si\u0119 dzieje jutro u ciebie w pracy?",
+    "time_to_first_audio_s": 0.61,
+    "audio_seconds": 9.4,
+    "total_s": 1.84,
+    "usage": {
+     "total_tokens": 7100,
+     "input_tokens": 6840,
+     "output_tokens": 260,
+     "input_token_details": {
+      "text_tokens": 6641,
+      "audio_tokens": 199,
+      "image_tokens": 0,
+      "cached_tokens": 6464,
+      "cached_tokens_details": {
+       "text_tokens": 6464,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 72,
+      "audio_tokens": 188
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To brzmi, jakby\u015b czu\u0142a si\u0119 przyt\u0142oczona tym, \u017ce nie uda\u0142o si\u0119 od razu postawi\u0107 granicy. Mo\u017ce to jest co\u015b, na czym chcia\u0142aby\u015b si\u0119 skupi\u0107, \u017ceby lepiej poradzi\u0107 sobie nast\u0119pnym razem?",
+    "time_to_first_audio_s": 0.53,
+    "audio_seconds": 9.8,
+    "total_s": 2.03,
+    "usage": {
+     "total_tokens": 7190,
+     "input_tokens": 6915,
+     "output_tokens": 275,
+     "input_token_details": {
+      "text_tokens": 6727,
+      "audio_tokens": 188,
+      "image_tokens": 0,
+      "cached_tokens": 6528,
+      "cached_tokens_details": {
+       "text_tokens": 6528,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 79,
+      "audio_tokens": 196
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To, co my\u015bl\u0119, to \u017ce warto zastanowi\u0107 si\u0119, co dok\u0142adnie chcesz przekaza\u0107. Mo\u017cesz powoli sprecyzowa\u0107, co ci\u0119 obci\u0105\u017ca, i da\u0107 sobie prawo do priorytetyzowania. Jak ci si\u0119 wydaje?",
+    "time_to_first_audio_s": 0.53,
+    "audio_seconds": 11.05,
+    "total_s": 2.03,
+    "usage": {
+     "total_tokens": 7310,
+     "input_tokens": 7010,
+     "output_tokens": 300,
+     "input_token_details": {
+      "text_tokens": 6814,
+      "audio_tokens": 196,
+      "image_tokens": 0,
+      "cached_tokens": 6592,
+      "cached_tokens_details": {
+       "text_tokens": 6592,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 79,
+      "audio_tokens": 221
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "greeting_no_question": false,
+   "greeting_short": true,
+   "greeting_nothing_known": true,
+   "max_one_q": false,
+   "question_share": 1.0,
+   "most_replies_no_question": false,
+   "initiative_after_little": true,
+   "uses_what_it_knows": false,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 1,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 1,
+   "no_dashes": true,
+   "advice_to_therapist": false,
+   "gender_forms_ok": true,
+   "feminine_forms": [
+    "chcia\u0142aby\u015b",
+    "czu\u0142a\u015b"
+   ],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.4,
+   "max_sentences": 3
+  }
+ },
+ {
+  "kind": "text",
+  "name": "smoke-v3-text",
+  "prompt": "v3",
+  "runs": 1,
+  "variant": "smoke-v3-text",
+  "persona": "R1",
+  "entry": "fresh",
+  "run": 1,
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "turns": [
+   {
+    "text": "Niedziela u ciebie znowu robi si\u0119 ci\u0119\u017cka, zanim tydzie\u0144 w og\u00f3le si\u0119 zacznie. Brzmi to tak, jakby sam poniedzia\u0142ek nie by\u0142 jeszcze problemem, a bardziej to, co twoja g\u0142owa ju\u017c do niego dokleja. Je\u015bli chcesz, mog\u0119 te\u017c powiedzie\u0107, co widz\u0119 w tym powtarzaj\u0105cym si\u0119 uk\u0142adzie.",
+    "total_s": 2.03,
+    "usage": {
+     "prompt_tokens": 3114,
+     "completion_tokens": 90,
+     "cached_tokens": 0
+    }
+   },
+   {
+    "text": "To brzmi bardziej jak ci\u0119\u017car ni\u017c jedna konkretna my\u015bl. Jakby\u015b ju\u017c by\u0142a zm\u0119czona samym czekaniem na to, co jutro przyniesie.",
+    "total_s": 0.76,
+    "usage": {
+     "prompt_tokens": 3219,
+     "completion_tokens": 42,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "Czyli nie chodzi tylko o jutro, ale te\u017c o to, \u017ce znowu wzi\u0119\u0142a\u015b na siebie co\u015b, czego nie chcia\u0142a\u015b. My\u015bl\u0119, \u017ce najbardziej boli tu chyba nie sam projekt, tylko to, \u017ce zgodzi\u0142a\u015b si\u0119 wbrew sobie i teraz musisz to nie\u015b\u0107 przez ca\u0142y weekend.",
+    "total_s": 1.09,
+    "usage": {
+     "prompt_tokens": 3292,
+     "completion_tokens": 71,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "To ju\u017c najlepiej om\u00f3wi\u0107 z twoj\u0105 terapeutk\u0105. Co chcia\u0142aby\u015b jej powiedzie\u0107 o tym szefie i o tym, jak trudno ci odm\u00f3wi\u0107?",
+    "total_s": 0.78,
+    "usage": {
+     "prompt_tokens": 3386,
+     "completion_tokens": 42,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "opening_question": null,
+  "checks": {
+   "max_one_q": true,
+   "question_share": 0.25,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "uses_what_it_knows": false,
+   "max_context_terms_in_a_turn": 2,
+   "no_recital": true,
+   "context_terms_total": 3,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": true,
+   "gender_forms_ok": true,
+   "feminine_forms": [
+    "chcia\u0142aby\u015b",
+    "chcia\u0142a\u015b",
+    "wzi\u0119\u0142a\u015b",
+    "zgodzi\u0142a\u015b"
+   ],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.2,
+   "max_sentences": 3
+  }
+ }
+]

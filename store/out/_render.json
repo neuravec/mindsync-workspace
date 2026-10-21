@@ -1,0 +1,41 @@
+{
+  "rendered": "2026-10-21T12:01:18",
+  "spec": "store/slides.json",
+  "partial": true,
+  "slides": [
+    {
+      "shot": "store/renders/ios/store_timeline.png",
+      "shot_size": "1179x2556",
+      "shot_source": "ios",
+      "status_mode": "fill",
+      "placeholder": false,
+      "format": "appstore",
+      "id": "timeline",
+      "nr": 7,
+      "file": "store/out/appstore/07-timeline.png",
+      "scales": {
+        "headline": 1,
+        "subtitle": 1
+      },
+      "text_share": 0.089,
+      "warnings": []
+    },
+    {
+      "shot": "store/renders/android/store_timeline.png",
+      "shot_size": "1080x2400",
+      "shot_source": "android",
+      "status_mode": "fill",
+      "placeholder": false,
+      "format": "play",
+      "id": "timeline",
+      "nr": 7,
+      "file": "store/out/play/07-timeline.png",
+      "scales": {
+        "headline": 1,
+        "subtitle": 1
+      },
+      "text_share": 0.075,
+      "warnings": []
+    }
+  ]
+}

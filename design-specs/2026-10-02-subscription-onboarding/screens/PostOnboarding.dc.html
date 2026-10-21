@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Offer after onboarding</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#113237}a:hover{color:#0E1D1F}
+.ms-scroll::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; overflow: hidden">
+
+  <div class="ms-scroll" style="flex-grow: 1; overflow-y: auto; scrollbar-width: none">
+    <div style="background: #113237; color: #FFFFFF; padding: 12px 16px 26px 16px; display: flex; flex-direction: column; gap: 16px">
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <button type="button" aria-label="Close and start the free trial" style="width: 44px; height: 44px; border: none; border-radius: 22px; background: rgba(255,255,255,0.10); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <button type="button" style="height: 44px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 600; color: #DBF0ED; padding: 0 8px; cursor: pointer">Restore</button>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 4px">
+        <div style="align-self: flex-start; display: flex; align-items: center; gap: 8px; background: rgba(187,228,222,0.16); border-radius: 999px; padding: 6px 12px 6px 8px">
+          <span style="width: 20px; height: 20px; border-radius: 10px; background: #BBE4DE; display: flex; align-items: center; justify-content: center"><svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+          <span style="font-size: 13px; font-weight: 600; color: #DBF0ED">Your profile is ready</span>
+        </div>
+        <h1 style="margin: 0; font-size: 30px; line-height: 1.12; font-weight: 800; letter-spacing: -0.5px">Your first 4 days of Premium are on us.</h1>
+        <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #DBF0ED">No card needed. Use everything while you settle in. After day 4 you move to Free, unless you choose otherwise.</p>
+      </div>
+    </div>
+
+    <div style="padding: 20px 20px 24px 20px; display: flex; flex-direction: column; gap: 12px">
+      <h2 style="margin: 0; font-size: 18px; font-weight: 800">Want more time with Premium?</h2>
+      <div role="radiogroup" aria-label="Choose an option" style="display: flex; flex-direction: column; gap: 10px">
+
+        <sc-if value="{{starterOn}}" hint-placeholder-val="{{ true }}">
+          <label style="{{starterStyle}}">
+            <input type="radio" name="offer" checked="{{isStarter}}" onChange="{{pickStarter}}" style="position: absolute; opacity: 0; width: 1px; height: 1px">
+            <span style="{{starterRadio}}"><span style="{{starterDot}}"></span></span>
+            <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 6px">
+              <span style="display: flex; justify-content: space-between; align-items: baseline; gap: 8px">
+                <span style="font-size: 17px; font-weight: 800">Extend to 2 weeks</span>
+                <span style="font-size: 17px; font-weight: 800; white-space: nowrap">{{starterPrice}}</span>
+              </span>
+              <span style="font-size: 14px; line-height: 1.4; color: #4A3A26">Extend your four-day tryout to two weeks, just for five dollars. Most of our users feel like they got a second therapy session in that time.</span>
+              <span style="font-size: 12px; font-weight: 700; color: #8A4B12">One-time payment · no renewal</span>
+            </span>
+          </label>
+        </sc-if>
+
+        <label style="{{annualStyle}}">
+          <input type="radio" name="offer" checked="{{isAnnual}}" onChange="{{pickAnnual}}" style="position: absolute; opacity: 0; width: 1px; height: 1px">
+          <span style="{{annualRadio}}"><span style="{{annualDot}}"></span></span>
+          <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px">
+            <span style="display: flex; align-items: center; gap: 8px"><span style="font-size: 16px; font-weight: 700">Annual</span><span style="font-size: 11px; font-weight: 800; letter-spacing: 0.8px; text-transform: uppercase; background: #DBF0ED; border-radius: 999px; padding: 3px 8px">Best value</span></span>
+            <span style="font-size: 13px; color: #3D5C60">Premium for good, billed yearly</span>
+          </span>
+          <span style="font-size: 15px; font-weight: 700; white-space: nowrap">{{annualPrice}}</span>
+        </label>
+
+        <label style="{{monthlyStyle}}">
+          <input type="radio" name="offer" checked="{{isMonthly}}" onChange="{{pickMonthly}}" style="position: absolute; opacity: 0; width: 1px; height: 1px">
+          <span style="{{monthlyRadio}}"><span style="{{monthlyDot}}"></span></span>
+          <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 16px; font-weight: 700">Monthly</span>
+            <span style="font-size: 13px; color: #3D5C60">Premium for good, billed monthly</span>
+          </span>
+          <span style="font-size: 15px; font-weight: 700; white-space: nowrap">{{monthlyPrice}}</span>
+        </label>
+      </div>
+      <div style="display: flex; justify-content: center; gap: 20px">
+        <a href="https://www.mindsync.app/terms-conditions" style="font-size: 13px; min-height: 44px; display: flex; align-items: center">Terms of Service</a>
+        <a href="https://www.mindsync.app/privacy-policy" style="font-size: 13px; min-height: 44px; display: flex; align-items: center">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="flex-shrink: 0; background: #FFFFFF; border-top: 1px solid #DBF0ED; padding: 12px 20px 26px 20px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 -8px 24px rgba(17,50,55,0.06)">
+    <button type="button" style="height: 56px; border: none; border-radius: 16px; background: #113237; color: #FFFFFF; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 700; cursor: pointer">{{ctaLabel}}</button>
+    <p style="margin: 0; text-align: center; font-size: 12px; line-height: 1.4; color: #3D5C60">{{billingLine}}</p>
+    <button type="button" style="height: 44px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 700; color: #113237; text-decoration: underline; text-underline-offset: 3px; cursor: pointer">Start with my free 4 days</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"starterAvailable":{"editor":"boolean","default":true},"starterPrice":{"editor":"text","default":"$5","section":"Prices (from store)"},"monthlyPrice":{"editor":"text","default":"$12.99","section":"Prices (from store)"},"annualPrice":{"editor":"text","default":"[annual price]","section":"Prices (from store)"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { pick: null };
+  }
+  renderVals() {
+    const starterOn = this.props.starterAvailable ?? true;
+    const starter = this.props.starterPrice ?? '$5';
+    const annual = this.props.annualPrice ?? '[annual price]';
+    const monthly = this.props.monthlyPrice ?? '$12.99';
+    let pick = this.state.pick || (starterOn ? 'starter' : 'annual');
+    if (!starterOn && pick === 'starter') pick = 'annual';
+
+    const base = 'position: relative; display: flex; align-items: center; gap: 14px; box-sizing: border-box; padding: 14px 16px; border-radius: 16px; cursor: pointer; ';
+    const card = (on, warm) => base + (warm ? 'background: #FFEFDD; ' : 'background: #FFFFFF; ') +
+      (on ? 'border: 2px solid #113237' : (warm ? 'border: 1px solid #FFC88A; margin: 1px' : 'border: 1px solid #BBE4DE; margin: 1px'));
+    const radio = (on) => 'align-self: flex-start; margin-top: 2px; flex-shrink: 0; width: 22px; height: 22px; box-sizing: border-box; border-radius: 11px; display: flex; align-items: center; justify-content: center; border: 2px solid ' + (on ? '#113237' : '#78D0D0');
+    const dot = (on) => 'width: 10px; height: 10px; border-radius: 5px; background: ' + (on ? '#113237' : 'transparent');
+
+    const cta = { starter: 'Extend to 2 weeks for ' + starter, annual: 'Get Premium, yearly', monthly: 'Get Premium, monthly' }[pick];
+    const bill = {
+      starter: 'One payment of ' + starter + '. Premium for 2 weeks, then you move to Free. Nothing renews.',
+      annual: 'Billed ' + annual + ' today, then once a year. Cancel anytime in your store settings.',
+      monthly: 'Billed ' + monthly + ' today, then every month. Cancel anytime in your store settings.'
+    }[pick];
+
+    return {
+      starterOn: starterOn,
+      starterPrice: starter,
+      annualPrice: annual,
+      monthlyPrice: monthly,
+      isStarter: pick === 'starter',
+      isAnnual: pick === 'annual',
+      isMonthly: pick === 'monthly',
+      starterStyle: card(pick === 'starter', true),
+      annualStyle: card(pick === 'annual', false),
+      monthlyStyle: card(pick === 'monthly', false),
+      starterRadio: radio(pick === 'starter'),
+      annualRadio: radio(pick === 'annual'),
+      monthlyRadio: radio(pick === 'monthly'),
+      starterDot: dot(pick === 'starter'),
+      annualDot: dot(pick === 'annual'),
+      monthlyDot: dot(pick === 'monthly'),
+      pickStarter: () => this.setState({ pick: 'starter' }),
+      pickAnnual: () => this.setState({ pick: 'annual' }),
+      pickMonthly: () => this.setState({ pick: 'monthly' }),
+      ctaLabel: cta,
+      billingLine: bill
+    };
+  }
+}
+</script>
+</body>
+</html>

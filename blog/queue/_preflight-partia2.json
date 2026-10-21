@@ -1,0 +1,115 @@
+{
+  "_opis": "KROK 0 partia 2 bloga MindSync (2026-09-03). Lista 10 tematow przed briefami, drip 2026-09-04..2026-09-13. Klastry wg blog/kalendarz-tresci.md: 4 (Therapy logistics & decisions) x3, 2 (Between sessions, uzupelnienia) x2, 5 (Modern life & mental health) x3, 6 (Data & measurement) x2. Klaster 7 (For therapists) ZAMROZONY - nie tykamy. GSC zablokowane na innym koncie, wiec tematy i frazy z researchu SERP (WebSearch), pytania FAQ przepisane z realnych zapytan ludzi. Keywordy EN dobrane pod dopasowanie do blog/app-features.json (substring w id+name+short+keywords). Uruchomienie bramki: python scripts/blog-coverage-preflight.py --temat blog/queue/_preflight-partia2.json",
+  "_zasady_partii": "Nie obiecujemy funkcji planned: streaks (brak UI) i therapist-sharing (portal ukryty, MSV3.4 CS-11) - zaden temat partii 2 nie moze sugerowac wysylki danych do terapeuty ani odznak za wytrwalosc. Landing /pre-order/wearable-ai-journal NIE jest partnerem zadnego wpisu (funkcji wearables nie ma w kodzie). Zero cen terapii podawanych jako nasza rekomendacja, zero porad medycznych i prawnych, zero tematow kryzysowych (YMYL).",
+  "_granice_kanibalizacji": "01 trzyma rodzine 'how to choose/find a therapist' (przed pierwsza sesja); 02 trzyma 'therapist fit / switch therapist / not clicking' (juz w terapii) i NIE powtarza metodyki pomiaru z opublikowanego /journal/how-to-know-if-therapy-is-working; 03 trzyma 'cost / worth it' i linkuje do pomiaru zamiast go dublowac. 04 trzyma 'therapy homework' - opublikowany pillar /journal/what-to-do-between-therapy-sessions ma tylko akapit o homework, wiec rozwiniecie jest tu. 05 trzyma 'journaling vs voice notes / writing vs talking'. 06 trzyma 'racing thoughts at night / sleep'; 07 trzyma 'sunday scaries / work dread'; 08 trzyma 'doomscrolling' i NIE powtarza mechanizmu z /journal/digital-burnout-brain-rewiring (tam: przeciazenie i uwaga; tu: petla przewijania zlych newsow). 09 trzyma 'antidepressant working / side effects tracking' i NIE przejmuje fraz 'mood tracking' od /journal/why-mood-tracking-stops-working. 10 trzyma 'mental health app privacy'.",
+
+  "01 KLASTER4 HUB: how to choose a therapist (what to ask before you commit)": [
+    "therapy fit",
+    "is my therapist right for me",
+    "therapeutic alliance",
+    "questions for therapist",
+    "therapy goals",
+    "therapy not working",
+    "track progress",
+    "prepare for therapy"
+  ],
+
+  "02 KLASTER4: what to do when your therapist is not the right fit": [
+    "relationship with therapist",
+    "switch therapist",
+    "therapeutic alliance",
+    "therapy not working",
+    "what to bring up",
+    "session reflection",
+    "progress over time",
+    "therapy fit"
+  ],
+
+  "03 KLASTER4: is therapy worth the money (how to get more per session)": [
+    "therapy progress",
+    "is therapy working",
+    "prepare for therapy",
+    "monthly summary",
+    "review your week",
+    "therapy goals",
+    "therapy fit",
+    "session summary"
+  ],
+
+  "04 KLASTER2: therapy homework, and why it does not get done": [
+    "therapy homework",
+    "homework between sessions",
+    "follow through",
+    "action items",
+    "habit reminder",
+    "therapy agenda",
+    "track progress",
+    "notification settings"
+  ],
+
+  "05 KLASTER2: journaling vs voice notes (writing or talking it out)": [
+    "voice note",
+    "audio journaling",
+    "talk instead of write",
+    "ai journaling",
+    "guided journaling",
+    "journaling app",
+    "processing emotions",
+    "session reflection"
+  ],
+
+  "06 KLASTER5: racing thoughts at night, when you cannot switch off": [
+    "sleep",
+    "track anxiety",
+    "reflection",
+    "grounding",
+    "voice note",
+    "mood trend",
+    "rate your day",
+    "journal prompt"
+  ],
+
+  "07 KLASTER5: the Sunday scaries (work dread that eats the weekend)": [
+    "track anxiety",
+    "rate your day",
+    "mood patterns",
+    "reflection",
+    "morning routine",
+    "voice journal",
+    "see patterns",
+    "what to bring up"
+  ],
+
+  "08 KLASTER5: how to stop doomscrolling (and what to do instead)": [
+    "mood tracking",
+    "see patterns",
+    "processing emotions",
+    "focus areas",
+    "rate your day",
+    "habit reminder",
+    "self-awareness",
+    "progress over time"
+  ],
+
+  "09 KLASTER6 DUET mood-on-antidepressants: tracking whether a new medication is helping": [
+    "mood log",
+    "symptom tracker",
+    "symptom trend",
+    "monthly summary",
+    "therapy timeline",
+    "track mood",
+    "mood-on-antidepressants",
+    "look back"
+  ],
+
+  "10 KLASTER6: is your mental health app data private (a checklist)": [
+    "mental health data",
+    "therapy record",
+    "recycle bin",
+    "prywatnosc",
+    "mood log",
+    "history",
+    "know yourself",
+    "focus areas"
+  ]
+}

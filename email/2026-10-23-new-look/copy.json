@@ -1,0 +1,118 @@
+{
+  "subject": "🐋 Wee Woo Wee Woo, MindSync has a new home screen",
+  "subject_alt": [
+    "🐋 Your therapy week, now on one screen",
+    "🐋 New Main, new cards, and the AI got a name"
+  ],
+  "preview_text": "Plus new before and after therapy cards, a rebuilt Character and an AI with a name.",
+  "h1": "The new MindSync is here!",
+  "h1_promise": "Your whole therapy week now fits on one screen.",
+  "intro": [
+    "Between sessions, therapy tends to scatter. A to-do sits in one app, a habit you definitely did stays unchecked, and the question you came up with in the shower lives nowhere at all. So we did something about it, and now the part you need is one tap away."
+  ],
+  "whats_new_heading": "Here's what's new:",
+  "sections": [
+    {
+      "key": "main",
+      "pill": "Meet Main, your new home screen",
+      "paragraphs": [
+        "MindSync now opens on Main, a screen of colorful tiles: your next session, your Therapy Agenda (topics for next time), to-dos, habits and Focus Areas (where you rate things like sleep from 1 to 10). Tap a tile to open it."
+      ],
+      "list": []
+    },
+    {
+      "key": "cards",
+      "pill": "New before and after therapy cards",
+      "paragraphs": [
+        "The After therapy card now has a chart, Your progress in therapy, which appears after three sessions. It reflects your entries (notes, recordings, Focus Area ratings) and doesn't grade your mental health or your therapist. The Before therapy card got clearer: a summary and numbered questions to bring."
+      ],
+      "list": []
+    },
+    {
+      "key": "timeline_workspace",
+      "pill": "Timeline and Workspace, tidied up",
+      "paragraphs": [
+        "Timeline now puts your cards, notes and summaries in one list, sorted by date, and you can filter by type, like Reflect or weekly summaries. It comes in handy when your therapist asks when something started. Workspace got reshuffled, and the colors got brighter."
+      ],
+      "list": []
+    },
+    {
+      "key": "character",
+      "pill": "Character now grows from your words",
+      "paragraphs": [
+        "We rebuilt Character around six strengths, like Courage and Insight, which grow from what you write and say, not from opening the app 40 times a day. (We love you, but no.) If Character gets a moment wrong, tap Not quite and it stops counting."
+      ],
+      "list": []
+    },
+    {
+      "key": "orca",
+      "pill": "The AI in Reflect got a name",
+      "paragraphs": [
+        "The AI in Reflect is now called Orca, MindSync's AI therapy assistant for the days between sessions. Orca isn't a therapist and doesn't replace yours. In Settings, the new What Orca remembers page lets you read every note Orca keeps about you and delete any of them."
+      ],
+      "list": []
+    }
+  ],
+  "smaller_things_heading": "+ a few smaller things",
+  "smaller_things": [
+    "A blue dot on a tile means something's waiting inside, like an open to-do.",
+    "The habits tile shows your last seven days, so you can still check off a day you missed.",
+    "You can now reread past Reflect conversations."
+  ],
+  "cta_line": "Update MindSync in the App Store or Google Play, and Main will be the first thing you see.",
+  "feedback": "Hit reply and tell us which tile you tapped first, and what's confusing or missing. We read the replies, grumpy ones included.",
+  "closing": "MindSync is growing for you, thanks to you.",
+  "promise_line": "We promise to only send you mental health-related tips & updates.",
+  "signature": "Darek from MindSync",
+  "_status": "post-humanizer",
+  "glos": "monika-v1",
+  "cta_buttons": [
+    "UPDATE ON IPHONE",
+    "UPDATE ON ANDROID"
+  ],
+  "bvm": {
+    "werdykt": "AKCEPT WARUNKOWY",
+    "zmiany": [
+      "kontekst: skrót całego maila zrobiła sesja główna na prośbę operatora 21.10 (opisy za długie); wersja długa z akceptem warunkowym zostaje w copy.long-v1.json",
+      "sections.cards.paragraphs[0] | przed: Before therapy got clearer: | po: The Before therapy card got clearer: | powód: bez słowa card zdanie czyta się jak okolicznik czasu (zanim terapia stała się jaśniejsza) i czytelnik się potyka; +2 słowa robią parę z The After therapy card dwa zdania wcześniej",
+      "sections.character.paragraphs[0] | przed: Character got rebuilt around | po: We rebuilt Character around | powód: po skrócie w treści były cztery got (got clearer, got reshuffled, got brighter, got rebuilt), a we to jej głos (So we did something about it); liczba słów bez zmian",
+      "sections.character.paragraphs[0] | przed: If Character gets you wrong, tap Not quite and that moment stops counting. | po: If Character gets a moment wrong, tap Not quite and it stops counting. | powód: po skrócie that moment nie miało się do czego odnieść (zdanie o momencie Courage wypadło), a Not quite działa na pojedynczy moment, więc ta jednostka musi paść w zdaniu; liczba słów bez zmian",
+      "sections.orca.paragraphs[0] | przed: In Settings, What Orca remembers lets you read | po: In Settings, the new What Orca remembers page lets you read | powód: nazwa strony zaczyna się od What i bez ramy the new ... page czyta się jak zdanie podrzędne; to zdanie mówi, gdzie jest kontrola prywatności, więc musi być jasne przy pierwszym czytaniu; new pochodzi z wersji długiej, +3 słowa"
+    ],
+    "uwagi": [
+      "Rozstrzygnięcie: The Before therapy card got clearer (uzasadnienie w zmiany). Po moich poprawkach treść ma około 334 słów (329 + 5), skrót operatora zachowany.",
+      "Fun fact o orkach: USUNIĘTY decyzją operatora 21.10 (skrót), która uchyla moją wcześniejszą decyzję ZOSTAJE z copy.long-v1.json. Bez niego 🐋 w temacie nadal działa: to znak dużych aktualizacji Moniki (Wee Woo Big Update Alert, 27.07) i pasuje do imienia Orca.",
+      "Głos Moniki po skrócie: OK. Otwarcie od rozpoznania (to-do, nawyk, pytanie spod prysznica), 4 momenty humoru na konkretnych obrazkach (the question you came up with in the shower, a habit you definitely did, (We love you, but no.), grumpy ones included), czyli w normie 2-4, i pytanie do czytelnika w feedback. Sekcje są teraz bardziej katalogowe niż w wersji długiej, co w mailu o aktualizacji jest do przyjęcia. Przy kolejnych cięciach nie ruszać intro ani feedback, bo to one niosą głos.",
+      "YMYL: OK. Wykres: reflects your entries i doesn't grade your mental health or your therapist (węższe ujęcie says nothing about your therapist z wersji długiej, nie nowe twierdzenie). Orca: MindSync's AI therapy assistant, for the days between sessions, isn't a therapist and doesn't replace yours, czyli pełna rama z social/brand-instagram.md §4.1 (kiedy działa i czym nie jest). Wypadło zdanie o zadaniu Orki (help you remember, get ready), rama działa bez niego. Brak cen, Premium, trialu, porad, obietnic leczenia, diagnoz i słowa companion.",
+      "Nowe twierdzenia względem copy.long-v1.json: brak, każde zdanie wersji krótkiej ma odpowiednik w długiej. Lista kafelków w sekcji main jest niepełna (bez therapy relationship, weekly observations i afirmacji), ale nie twierdzi, że to wszystkie, więc zostaje.",
+      "Temat i preview: bez zmian, decyzja z wersji długiej obowiązuje (wysyłamy subject, preview_text pasuje).",
+      "WARUNEK 1: w kampanii Loops reply-to ustawione na darek@mindsync.app. Bez tego Hit reply i We read the replies są nieprawdziwe. Gdy czyjaś odpowiedź sugeruje kryzys, odpisuje człowiek (nie automat), podaje 988 i nie diagnozuje.",
+      "WARUNEK 2: wysyłka dopiero wtedy, gdy nowa wersja jest dostępna w obu sklepach (Google Play na 100% rolloutu), bo cta_line obiecuje Main zaraz po aktualizacji.",
+      "WARUNEK 3: do składania maila używać wyłącznie cta_buttons (UPDATE ON IPHONE prowadzi do amerykańskiego App Store, UPDATE ON ANDROID do Google Play). Stare pole cta_button zniknęło w wersji krótkiej i nie wolno go przywracać z copy.long-v1.json.",
+      "WARUNEK 4: mockup-Mail.dc.html w tym folderze zawiera jeszcze WERSJĘ DŁUGĄ (fun fact o orkach, kłódka 2 of 3, Character has been rebuilt, akapit o polityce prywatności o 1 a.m.). Mail składać z copy.json, a mockup przed pokazaniem operatorowi przebudować z copy.json.",
+      "WARUNEK 5: brand-voice-manager nie ma powłoki i nie mógł uruchomić parsera JSON. Plik sprawdzony ręcznie (nawiasy, przecinki, cudzysłowy), parser trzeba odpalić w sesji głównej.",
+      "Formatowanie w Loops: nazwy z interfejsu pogrubić (Your progress in therapy, What Orca remembers, Not quite), żeby czytelnik nie potknął się o nie w zdaniu. Najbardziej potrzebne w zdaniu a chart, Your progress in therapy, which appears after three sessions.",
+      "Humanizer: zmienione zdania przeszły humanizer (tryb embedded, próbka docs/blog/voice-sample-monika.md). Kontrola znaków: zero U+2014 i U+2013, zero cudzysłowów drukarskich, twardych spacji i znaków zero-width.",
+      "Akcept brand-voice-manager nie jest zgodą na wysyłkę. O wysyłce decyduje operator.",
+      "2026-10-21 operator: nadawca darek@mindsync.app, reply-to darek@mindsync.app, podpis Darek from MindSync; sekcja rate us (tekst operatora) z dwoma przyciskami po feedbacku. Skrzynka darek@ musi odbierać odpowiedzi."
+    ]
+  },
+  "sender": {
+    "from_name": "MindSync",
+    "from_email_local": "darek",
+    "from_email": "darek@mindsync.app",
+    "reply_to": "darek@mindsync.app",
+    "zmiana": "operator 2026-10-21: nadawca i podpis Darek zamiast Moniki"
+  },
+  "rate_line": "Rate us on Google Play and the App Store. It really helps us do better.",
+  "rate_buttons": [
+    {
+      "label": "RATE US ON GOOGLE PLAY",
+      "url": "https://play.google.com/store/apps/details?id=com.mindsync.app&showAllReviews=true"
+    },
+    {
+      "label": "RATE US ON THE APP STORE",
+      "url": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?action=write-review"
+    }
+  ]
+}

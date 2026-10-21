@@ -1,0 +1,100 @@
+{
+  "_opis": "KROK 0 partia 1 bloga MindSync (2026-08-25). Lista tematow ETAP A przed briefami. Proporcje wg seo/blog/gsc-analiza-2026-08-25.md par.4: 1x how-to-use (jedyny temat z popytem w GSC), 1x rozbudowa istniejacego wpisu nervous-system (striking distance poz. 14,7), 2x duety pod landingi /pre-order/track-interventions i /pre-order/tracking-therapy-effectiveness, 5x klastry 1-3 kalendarza z researchu konkurencji. Keywordy EN dobrane pod dopasowanie do blog/app-features.json (substring w id+name+short+keywords). Uruchomienie bramki: python scripts/blog-coverage-preflight.py --temat blog/queue/_preflight-partia1.json",
+  "_zasady_partii": "Nie obiecujemy funkcji planned: streaks (brak UI) i therapist-sharing (portal ukryty w MSV3.4 CS-11). UWAGA: oba landingi /pre-order/* obiecuja PDF dla terapeuty - wpisy tego NIE powtarzaja, linkuja tylko frazowym anchorem. Zero tematow kryzysowych, zero obietnic zdrowotnych (YMYL).",
+  "_granice_kanibalizacji": "02 (rozbudowa) trzyma rodzine fraz nervous system / regulate / grounding; 07 (pillar between sessions) NIE dostaje sekcji how-to o regulacji ukladu nerwowego, tylko link do 02. 04 trzyma 'is therapy working' i pomiar terapii; 09 trzyma 'mood tracking' i codzienny log, bez fraz o skutecznosci terapii. 06 trzyma post-session recall; 05 trzyma pre-session prep.",
+
+  "01 How to use MindSync: getting started guide (MindSync Tips)": [
+    "session recording",
+    "prepare for therapy",
+    "voice note",
+    "wellbeing check-in",
+    "weekly summary",
+    "therapy timeline",
+    "therapy agenda",
+    "reminders"
+  ],
+
+  "02 ROZBUDOWA: regulate your nervous system between therapy sessions": [
+    "between sessions",
+    "grounding",
+    "track anxiety",
+    "wellbeing check-in",
+    "reflection",
+    "mood trend",
+    "daily affirmation"
+  ],
+
+  "03 DUET track-interventions: which coping skills actually work for you": [
+    "track anxiety",
+    "mood log",
+    "see patterns",
+    "progress over time",
+    "weekly summary",
+    "therapy homework",
+    "follow through",
+    "wellbeing check-in"
+  ],
+
+  "04 DUET tracking-therapy-effectiveness: how to know if therapy is working": [
+    "is therapy working",
+    "therapy progress",
+    "progress over time",
+    "therapy goals",
+    "therapeutic alliance",
+    "monthly summary",
+    "track progress"
+  ],
+
+  "05 How to prepare for a therapy session when you do not know what to talk about": [
+    "prepare for therapy",
+    "what to talk about in therapy",
+    "questions for therapist",
+    "therapy agenda",
+    "topics to discuss",
+    "what to bring up",
+    "session preparation"
+  ],
+
+  "06 How to remember what you talk about in therapy": [
+    "remember therapy",
+    "forget what therapist said",
+    "session notes",
+    "session summary",
+    "after therapy",
+    "process therapy session",
+    "therapy timeline",
+    "look back"
+  ],
+
+  "07 PILLAR: what to do between therapy sessions (a weekly system)": [
+    "between sessions",
+    "homework between sessions",
+    "voice journal",
+    "wellbeing check-in",
+    "therapy agenda",
+    "review your week",
+    "action items"
+  ],
+
+  "08 How to identify your emotional triggers": [
+    "see patterns",
+    "mood patterns",
+    "track mood",
+    "processing emotions",
+    "guided journaling",
+    "self-awareness",
+    "realizations",
+    "behavioural-patterns"
+  ],
+
+  "09 Why mood tracking stops working after two weeks": [
+    "mood tracking",
+    "mood log",
+    "rate your day",
+    "mood trend",
+    "mental health data",
+    "weekly summary",
+    "habit reminder",
+    "focus areas"
+  ]
+}

@@ -1,0 +1,662 @@
+{
+  "v": 3,
+  "attachments": {},
+  "boards": {
+    "BeforePaywall.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "BEFORE · paywall (current app)",
+      "w": 390,
+      "x": 0,
+      "y": 0
+    },
+    "BeforePremium.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "BEFORE · premium active (current app)",
+      "w": 390,
+      "x": 1880,
+      "y": 0
+    },
+    "CountersHome.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "COUNTERS · Home with usage chips",
+      "w": 390,
+      "x": -470,
+      "y": 6704
+    },
+    "CountersReflect.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "COUNTERS · Reflect, low and used up",
+      "w": 390,
+      "x": 0,
+      "y": 6704
+    },
+    "CountersStates.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "COUNTERS · chip states (handoff)",
+      "w": 390,
+      "x": 470,
+      "y": 6704
+    },
+    "CurHome.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "TODAY 4 · Home, no trial visible",
+      "w": 390,
+      "x": 940,
+      "y": 2528
+    },
+    "CurWowLoading.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "TODAY 2 · setting up companion",
+      "w": 390,
+      "x": 0,
+      "y": 2528
+    },
+    "CurWowReady.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "TODAY 3 · companion ready",
+      "w": 390,
+      "x": 470,
+      "y": 2528
+    },
+    "FlowFirstStep.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "PROPOSED 4 · choose first step",
+      "w": 390,
+      "x": 940,
+      "y": 3792
+    },
+    "FlowHomeTrial.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "PROPOSED 5 · Home with trial bar",
+      "w": 390,
+      "x": 1410,
+      "y": 3792
+    },
+    "FlowLeadSource.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "TODAY 1 · last onboarding step",
+      "w": 390,
+      "x": -470,
+      "y": 2528
+    },
+    "FlowOffer.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "PROPOSED 3 · trial offer, can skip",
+      "w": 390,
+      "x": 470,
+      "y": 3792
+    },
+    "FlowOfferB.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "PROPOSED 3, option B · 7-day store trial",
+      "w": 390,
+      "x": 470,
+      "y": 5440
+    },
+    "FlowPlanReady.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "PROPOSED 2 · your space is ready (row 7)",
+      "w": 390,
+      "x": 0,
+      "y": 3792
+    },
+    "FlowTrialReminder.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "PROPOSED 6 · day 3 reminder",
+      "w": 390,
+      "x": 1880,
+      "y": 3792
+    },
+    "Main.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "AFTER · paywall (interactive)",
+      "w": 390,
+      "x": 0,
+      "y": 1264
+    },
+    "PaywallLimit.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "AFTER · paywall, limit reached",
+      "w": 390,
+      "x": 470,
+      "y": 1264
+    },
+    "PaywallTrial.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "AFTER · paywall, trial ending",
+      "w": 390,
+      "x": 940,
+      "y": 1264
+    },
+    "PersonalBuild.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "ACTIVATION 1 · building your space (animated)",
+      "w": 390,
+      "x": -470,
+      "y": 7968
+    },
+    "PersonalReveal.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "ACTIVATION 2 · this is your MindSync",
+      "w": 390,
+      "x": 0,
+      "y": 7968
+    },
+    "PostOnboarding.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "AFTER · new: offer right after onboarding",
+      "w": 390,
+      "x": -470,
+      "y": 1264
+    },
+    "Premium.dc.html": {
+      "h": 844,
+      "is_interactive": true,
+      "radius": 28,
+      "title": "AFTER · premium active, manage",
+      "w": 390,
+      "x": 1880,
+      "y": 1264
+    },
+    "PropLeadSource.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "PROPOSED 1 · last onboarding step",
+      "w": 390,
+      "x": -470,
+      "y": 3792
+    },
+    "Welcome.dc.html": {
+      "h": 844,
+      "radius": 28,
+      "title": "AFTER · right after purchase",
+      "w": 390,
+      "x": 1410,
+      "y": 1264
+    },
+    "OB01Welcome.dc.html": {
+      "x": -470,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 1 · Welcome",
+      "radius": 28
+    },
+    "OB02Account.dc.html": {
+      "x": 0,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 2 · Create account",
+      "radius": 28
+    },
+    "OB03Personalise.dc.html": {
+      "x": 470,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 3 · Your name",
+      "radius": 28,
+      "is_interactive": true
+    },
+    "OB04Legal.dc.html": {
+      "x": 940,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 4 · Agreements",
+      "radius": 28,
+      "is_interactive": true
+    },
+    "OB05Challenges.dc.html": {
+      "x": 1410,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 5 · Focus areas (1/7)",
+      "radius": 28,
+      "is_interactive": true
+    },
+    "OB06Intensity.dc.html": {
+      "x": 1880,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 6 · How strong (2/7)",
+      "radius": 28,
+      "is_interactive": true
+    },
+    "OB07Journey.dc.html": {
+      "x": 2350,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 7 · In therapy? (3/7)",
+      "radius": 28,
+      "is_interactive": true
+    },
+    "OB08Modality.dc.html": {
+      "x": 2820,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 8 · Therapy type (4/7)",
+      "radius": 28,
+      "is_interactive": true
+    },
+    "OB09Schedule.dc.html": {
+      "x": 3290,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 9 · Next session (5/7)",
+      "radius": 28,
+      "is_interactive": true
+    },
+    "OB10Companion.dc.html": {
+      "x": 3760,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 10 · Your orca (6/7)",
+      "radius": 28,
+      "is_interactive": true
+    },
+    "OB11Source.dc.html": {
+      "x": 4230,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 11 · How you found us (7/7)",
+      "radius": 28,
+      "is_interactive": true
+    },
+    "OB12Build.dc.html": {
+      "x": 4700,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 12 · Setting up the app",
+      "radius": 28,
+      "is_interactive": true
+    },
+    "OB13Reveal.dc.html": {
+      "x": 5170,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 13 · Your MindSync is ready",
+      "radius": 28
+    },
+    "OB14Offer.dc.html": {
+      "x": 5640,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 14 · Offer, can skip",
+      "radius": 28,
+      "is_interactive": true
+    },
+    "OB15Push.dc.html": {
+      "x": 6110,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 15 · Reminders permission",
+      "radius": 28
+    },
+    "OB16FirstStep.dc.html": {
+      "x": 6580,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 16 · First step",
+      "radius": 28
+    },
+    "OB17Home.dc.html": {
+      "x": 7050,
+      "y": 9232,
+      "w": 390,
+      "h": 844,
+      "title": "ONBOARDING 17 · Home, trial visible",
+      "radius": 28
+    }
+  },
+  "createdOnFiles": {
+    "at": "2026-10-02T10:00:00Z",
+    "v": 1
+  },
+  "designSystems": [],
+  "launch": {
+    "view": "canvas"
+  },
+  "notes": {
+    "s3a": {
+      "fill": "red",
+      "maxH": 420,
+      "size": 24,
+      "text": "Day 4 today: nothing happens on screen.\n\nThe 4-day trial ends silently. TrialPopupManager (welcome, $5 offer, trial ended) exists in code but nothing calls it (growth report 25.09).\n\nThe user meets the paywall only when they hit a limit, so most people never see it: 16 paywall views in total, 71% stop coming back by day 4.",
+      "w": 390,
+      "x": 1410,
+      "y": 2528
+    },
+    "s3b": {
+      "fill": "orange",
+      "maxH": 420,
+      "size": 24,
+      "text": "Gaps today\n\n1. Nobody learns they are on a trial.\n2. No moment to decide while motivation is highest (end of onboarding).\n3. No reminder before the trial ends.\n4. Trial start and end are not measured in PostHog.",
+      "w": 390,
+      "x": 1880,
+      "y": 2528
+    },
+    "s4a": {
+      "fill": "teal",
+      "maxH": 420,
+      "size": 24,
+      "text": "1 → 2: Done on the last onboarding step plays 'building your space' (row 7, about 4 s, replaces the Wow spinner) and lands on 'This is your MindSync'.",
+      "w": 390,
+      "x": -470,
+      "y": 4696
+    },
+    "s4b": {
+      "fill": "teal",
+      "maxH": 420,
+      "size": 24,
+      "text": "2 → 3: Continue opens the trial offer.\n\nShow the offer ONLY when: new account just finished onboarding, not premium from the store, store products loaded. Products fail to load → skip straight to 4. Never block the user.",
+      "w": 390,
+      "x": 0,
+      "y": 4696
+    },
+    "s4c": {
+      "fill": "blue",
+      "maxH": 420,
+      "size": 24,
+      "text": "3, branches (option A, server trial):\n\nBuy → store sheet → success → Welcome to Premium (row 2) → 4.\nStore cancelled → stay on 3.\nX or Start with my free 4 days → 4.\n\nShown once per account. Track paywall_shown with trigger_feature = post_onboarding. Option B: see row 5.",
+      "w": 390,
+      "x": 470,
+      "y": 4696
+    },
+    "s4d": {
+      "fill": "teal",
+      "maxH": 420,
+      "size": 24,
+      "text": "4: same choices as Wow today (in therapy: Capture a past session first). The trial chip keeps the trial visible. Each choice opens its flow on top of Home, as today.",
+      "w": 390,
+      "x": 940,
+      "y": 4696
+    },
+    "s4e": {
+      "fill": "teal",
+      "maxH": 420,
+      "size": 24,
+      "text": "5: Home shows a trial bar with days left during the 4 days. Tap → paywall (trigger_feature = trial_banner). Hidden for premium and free users.",
+      "w": 390,
+      "x": 1410,
+      "y": 4696
+    },
+    "s4f": {
+      "fill": "blue",
+      "maxH": 420,
+      "size": 24,
+      "text": "6: Day 3, first app open: bottom sheet with what they used in the trial (wire up TrialPopupManager) + optional push.\n\nDay 4, first open after the trial ends → Paywall, trial ending (row 2), trigger_feature = trial_ended_popup. Once only, then normal limit paywalls.",
+      "w": 390,
+      "x": 1880,
+      "y": 4696
+    },
+    "s5a": {
+      "fill": "purple",
+      "maxH": 844,
+      "size": 24,
+      "text": "What the research says (RevenueCat SoSA 2026, Adapty 2026, both vendors so medium confidence)\n\n• 78-90% of trial starts happen on day 0, right after onboarding. Keep the offer there.\n• Trials of 4 days or less convert to paid at about 25-30%, 5+ days at about 42-45% (store trials with a card).\n• Health & Fitness: a trial beats direct purchase on LTV, so keep a trial.\n• Blinkist timeline paywall ('we remind you before you pay'): +23% trial starts, push opt-in 6% to 74% (company case study).\n• Opt-out trial (card) converts roughly 2x opt-in (no card), but that data is from SaaS, not apps.",
+      "w": 390,
+      "x": -470,
+      "y": 5440
+    },
+    "s5b": {
+      "fill": "blue",
+      "maxH": 844,
+      "size": 24,
+      "text": "Option B logic\n\nStep 3 becomes a store trial: 7 days free on the annual plan (App Store intro offer + Google Play free trial), Blinkist-style timeline, annual preselected.\n\nAsk for push permission right after 'Start my 7 free days' (the day-5 reminder is the reason).\n\nNot now → the server trial still runs (4 or 7 days) and steps 4-6 stay as in row 4. Day-3 sheet becomes a day-5 reminder for store-trial users.\n\nNeeds: store intro offer setup, backend reading trial state from the receipt.",
+      "w": 390,
+      "x": 940,
+      "y": 5440
+    },
+    "s5c": {
+      "fill": "orange",
+      "maxH": 844,
+      "size": 24,
+      "text": "Decisions for the operator\n\n1. A (server trial, buy now) or B (store trial with card)? B is the stronger pattern in app data, A has lower refund and regulatory risk.\n2. Trial length: 4 days is in the weakest bucket. Moving to 7 is a one-number change in the backend.\n3. No discount exit offer on day 0: the evidence is weak and it reads as pressure in a mental health app.\n4. With ~120 MAU an A/B test will not reach significance. Ship one version and compare cohorts month to month.",
+      "w": 390,
+      "x": 1410,
+      "y": 5440
+    },
+    "s6a": {
+      "fill": "blue",
+      "maxH": 844,
+      "size": 24,
+      "text": "New Free limits (per month, reset on the 1st)\n\n• Before therapy: 1 (assumed, operator to confirm)\n• After therapy: 1\n• Between Sessions: 3\n• Reflect messages: 15 (was 30)\n• Session recordings: 2 in total (unchanged)\n• Habits: 1 (unchanged)\n\nToday Before + After + Between Sessions share ONE pool of 5 (count_ai_notes_this_month). Splitting it needs per-type limits in config and per-type counting in the backend.",
+      "w": 390,
+      "x": 940,
+      "y": 6704
+    },
+    "s6b": {
+      "fill": "teal",
+      "maxH": 844,
+      "size": 24,
+      "text": "Counter logic\n\n• Chips show only on Free. Trial: 'Unlimited in trial'. Premium: hidden.\n• Source of truth = backend: one endpoint returning used / limit / resets_at per feature (Reflect already has reflect_usage).\n• At 0: chip '0 left · Premium', tap opens the paywall with premium_gate_<feature>.\n• Last use is allowed; the gate fires on the NEXT attempt, never mid-save.\n• Saved content always stays readable.",
+      "w": 390,
+      "x": 1410,
+      "y": 6704
+    },
+    "s6c": {
+      "fill": "orange",
+      "maxH": 844,
+      "size": 24,
+      "text": "Watch out\n\n• 1 After therapy a month means the first real session already hits the wall. That is the point, but the paywall copy must say what was saved.\n• Growth report 25.09: most users leave before hitting limits, so counters help mainly people who stay past the trial. Activation (row 7) matters more.",
+      "w": 390,
+      "x": 1880,
+      "y": 6704
+    },
+    "s7a": {
+      "fill": "purple",
+      "maxH": 844,
+      "size": 24,
+      "text": "Why this screen\n\nThe user just gave us a lot: focus areas, how heavy each feels, therapy rhythm, companion style. Today we answer with a spinner and one generic line. Here every block mirrors something they said, so the effort feels returned.\n\nThe 4-step build animation is a real 'labor illusion' effect (Buell & Norton, Harvard, 2011: showing the work raises perceived value). Keep it short, about 4 s, and only show steps that really happen.",
+      "w": 390,
+      "x": 470,
+      "y": 7968
+    },
+    "s7b": {
+      "fill": "teal",
+      "maxH": 844,
+      "size": 24,
+      "text": "Where each block comes from (all exists today)\n\n• Focus areas + intensity bars: onboarding challenges + intensity.\n• Week strip: therapy schedule. Day before = auto Before therapy card (prep_card_auto_generate runs 24 h before a session for trial and paid users).\n• First read: starter bio, 'Your patterns' section (generate_starter_bio already runs at onboarding, today only visible in Character).\n• Talk style: tone archetype + Orca name.",
+      "w": 390,
+      "x": 940,
+      "y": 7968
+    },
+    "s7c": {
+      "fill": "orange",
+      "maxH": 844,
+      "size": 24,
+      "text": "Build notes\n\n• Starter bio is generated async on RQ. If it is not ready when the animation ends, show the block with a soft 'writing...' state and fill it in; never block 'Let's start'.\n• No session schedule (not in therapy): replace the week strip with 'Your first week' (Reflect, Between Sessions, check-in).\n• Check-in days in the plan are a proposal; wire them to the real reminder cadence.\n• Track: personal_reveal_viewed, time on screen, tap on Let's start.",
+      "w": 390,
+      "x": 1410,
+      "y": 7968
+    },
+    "t1": {
+      "kind": "title1",
+      "maxW": 2270,
+      "text": "Before: the subscription screen today",
+      "w": 240,
+      "x": 0,
+      "y": -300
+    },
+    "t2": {
+      "kind": "title1",
+      "maxW": 2740,
+      "text": "After: redesigned subscription flow",
+      "w": 240,
+      "x": -470,
+      "y": 964
+    },
+    "t3": {
+      "kind": "title1",
+      "maxW": 2740,
+      "text": "After onboarding: how it works today",
+      "w": 240,
+      "x": -470,
+      "y": 2228
+    },
+    "t4": {
+      "kind": "title1",
+      "maxW": 2740,
+      "text": "After onboarding: proposed flow",
+      "w": 240,
+      "x": -470,
+      "y": 3492
+    },
+    "t5": {
+      "kind": "title1",
+      "maxW": 2740,
+      "text": "Option B for step 3: trial set up in the store",
+      "w": 240,
+      "x": -470,
+      "y": 5140
+    },
+    "t6": {
+      "kind": "title1",
+      "maxW": 2740,
+      "text": "New free limits + usage counters",
+      "w": 240,
+      "x": -470,
+      "y": 6404
+    },
+    "t7": {
+      "kind": "title1",
+      "maxW": 2740,
+      "text": "Activation: show that MindSync was built for this person",
+      "w": 240,
+      "x": -470,
+      "y": 7668
+    },
+    "t8": {
+      "x": -470,
+      "y": 8932,
+      "text": "Full onboarding, start to Home (new)",
+      "kind": "title1",
+      "maxW": 7910
+    },
+    "s8a": {
+      "x": -470,
+      "y": 10136,
+      "w": 860,
+      "maxH": 900,
+      "fill": "purple",
+      "size": "m",
+      "text": "Old vs new, screen count\n\nOLD: Welcome · Account · (Check email) · Personalise · Success · 'Dive in' splash · Agreements · 7 questions · Wow loading · Wow ready · Home + cold OS push prompt + 7-slide tour.\n= about 21 screens, and the first moment of value is a generic welcome text.\n\nNEW: Welcome · Account · (Check email) · Name · Agreements · 7 questions · Setting up · Your MindSync is ready · Offer · Reminders · First step · Home.\n= 17 screens, 5 fewer for people not in therapy, no tour.\nRemoved: Success screen (wrong copy, 4 s dead time), 'Dive in' splash (merged into Agreements), Wow spinner, 7-slide tour."
+    },
+    "s8b": {
+      "x": 470,
+      "y": 10136,
+      "w": 860,
+      "maxH": 900,
+      "fill": "teal",
+      "size": "m",
+      "text": "Branches (complete?)\n\n• Not in therapy (Not right now / Never been) or no consent on step 7: skip 8 Therapy type and 9 Next session, progress shows 'of 5'. Reveal shows 'Your first week' instead of the week strip. First step shows Reflect / Between Sessions / Therapy Relationship.\n• In therapy, no date yet: 'I don't have a date yet' skips the schedule; the Before therapy card waits until a date is added.\n• Email sign-up: Check email screen after step 2 (unchanged).\n• Offer: buy → Welcome to Premium → 15. Skip → 15.\n• Reminders: 'Not now' never re-asks in onboarding; ask again in context (first Before therapy card)."
+    },
+    "s8c": {
+      "x": 1410,
+      "y": 10136,
+      "w": 860,
+      "maxH": 900,
+      "fill": "orange",
+      "size": "m",
+      "text": "Gaps found in today's onboarding (fixed in this design)\n\n1. OS push prompt fires cold on Home with no reason. Now a reminders screen shows the actual notifications first.\n2. Success screen says 'you'll be directed to log in' but goes to onboarding.\n3. Name is 'required' in code but not enforced, yet the app greets by name. Now it is the only field on screen 3; fallback 'there' if empty.\n4. Age gate: account says 'legal age', agreements say 16+. Pick one rule (18+ is safer for the US).\n5. Art.9 declined still shows the therapy-duration question. Now hidden.\n6. Google sign-in of an existing user skips the onboarding-completed check (bug, flutter-mobile).\n7. Client sends 7-day / inactive trial, server ignores it and gives 4 days to everyone. Remove dead code."
+    },
+    "s8d": {
+      "x": 2350,
+      "y": 10136,
+      "w": 860,
+      "maxH": 900,
+      "fill": "blue",
+      "size": "m",
+      "text": "Still open / decide before build\n\n• Orca art: the in-app 'orca' (orcs_new.svg) is the logo mark. This design uses the logo everywhere as the companion. See answer in chat.\n• Notification 'How did it go?' after a session: check it exists in the notification moments, otherwise add it.\n• Intensity is 1-10 on step 6 but shown as 5 bars on the reveal: map 2 points per bar.\n• All copy on steps 1-11 is new: run it through brand voice + humanizer like the reveal screens.\n• Measure: onboarding_step_viewed already exists; add personal_reveal_viewed, push_prompt_result, offer_shown/offer_result."
+    }
+  },
+  "order": [
+    "BeforePaywall.dc.html",
+    "BeforePremium.dc.html",
+    "PostOnboarding.dc.html",
+    "Main.dc.html",
+    "PaywallLimit.dc.html",
+    "PaywallTrial.dc.html",
+    "Welcome.dc.html",
+    "Premium.dc.html",
+    "FlowLeadSource.dc.html",
+    "CurWowLoading.dc.html",
+    "CurWowReady.dc.html",
+    "CurHome.dc.html",
+    "PropLeadSource.dc.html",
+    "FlowPlanReady.dc.html",
+    "FlowOffer.dc.html",
+    "FlowFirstStep.dc.html",
+    "FlowHomeTrial.dc.html",
+    "FlowTrialReminder.dc.html",
+    "FlowOfferB.dc.html",
+    "CountersHome.dc.html",
+    "CountersReflect.dc.html",
+    "CountersStates.dc.html",
+    "PersonalBuild.dc.html",
+    "PersonalReveal.dc.html",
+    "OB01Welcome.dc.html",
+    "OB02Account.dc.html",
+    "OB03Personalise.dc.html",
+    "OB04Legal.dc.html",
+    "OB05Challenges.dc.html",
+    "OB06Intensity.dc.html",
+    "OB07Journey.dc.html",
+    "OB08Modality.dc.html",
+    "OB09Schedule.dc.html",
+    "OB10Companion.dc.html",
+    "OB11Source.dc.html",
+    "OB12Build.dc.html",
+    "OB13Reveal.dc.html",
+    "OB14Offer.dc.html",
+    "OB15Push.dc.html",
+    "OB16FirstStep.dc.html",
+    "OB17Home.dc.html"
+  ],
+  "pages": [],
+  "title": "MindSync Subscription Redesign"
+}

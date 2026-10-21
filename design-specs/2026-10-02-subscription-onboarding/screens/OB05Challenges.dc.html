@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Focus areas</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; display: flex; flex-direction: column">
+  <div style="display: flex; align-items: center; gap: 8px; padding: 48px 20px 0 8px">
+    <button type="button" aria-label="Back" style="width: 44px; height: 44px; border: none; background: transparent; padding: 0; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <div style="flex-grow: 1; height: 6px; border-radius: 3px; background: #DBF0ED; display: flex"><div style="width: 14%; border-radius: 3px; background: #26767B"></div></div>
+    <span style="font-size: 13px; font-weight: 600; color: #3D5C60">1 of 7</span>
+  </div>
+  <div style="flex-grow: 1; padding: 20px 24px 16px 24px; display: flex; flex-direction: column; gap: 14px">
+    <h1 style="margin: 0; font-size: 28px; line-height: 1.15; font-weight: 800">What do you want to keep an eye on?</h1>
+    <p style="margin: 0; font-size: 15px; color: #3D5C60">Pick at least one. You'll see how each changes over time.</p>
+    <div style="display: flex; flex-wrap: wrap; gap: 10px; padding-top: 6px">
+      <sc-for list="{{chips}}" as="c" hint-placeholder-count="8">
+        <button type="button" onClick="{{c.toggle}}" aria-pressed="{{c.pressed}}" style="{{c.style}}">{{c.label}}</button>
+      </sc-for>
+      <button type="button" style="min-height: 48px; padding: 0 18px; border-radius: 999px; border: 1.5px dashed #78D0D0; background: transparent; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 600; color: #26767B">+ Add your own</button>
+    </div>
+  </div>
+  <div style="padding: 12px 24px 28px 24px">
+    <button type="button" style="{{btn}}">{{btnLabel}}</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { sel: ['Unease', 'Sleep', 'Stress'] }; }
+  renderVals() {
+    const all = ['Low mood', 'Unease', 'Overwhelm', 'Worries', 'Stress', 'Sleep', 'Loss', 'Focus'];
+    const sel = this.state.sel;
+    const n = sel.length;
+    return {
+      chips: all.map((l) => {
+        const on = sel.indexOf(l) >= 0;
+        return {
+          label: l,
+          pressed: on ? 'true' : 'false',
+          toggle: () => this.setState({ sel: on ? sel.filter((x) => x !== l) : sel.concat([l]) }),
+          style: 'min-height: 48px; padding: 0 18px; border-radius: 999px; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 600; cursor: pointer; ' + (on ? 'background: #113237; color: #FFFFFF; border: 1.5px solid #113237' : 'background: #FFFFFF; color: #113237; border: 1.5px solid #BBE4DE')
+        };
+      }),
+      btnLabel: n ? 'Continue with ' + n : 'Pick at least one',
+      btn: 'width: 100%; height: 56px; border: none; border-radius: 16px; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 700; ' + (n ? 'background: #113237; color: #FFFFFF' : 'background: #DBF0ED; color: #5A7376')
+    };
+  }
+}
+</script>
+</body>
+</html>

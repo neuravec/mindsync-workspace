@@ -1,0 +1,21 @@
+---
+name: project-notification-moments-worker-registration-bug-2026-07-03
+description: "Notification Moments + In-App Insights framework has sent ZERO pushes/insights ever (both tables 0 rows) — root cause is a worker-process import gap, not eligibility logic"
+metadata:
+  type: project
+---
+
+Prod audit 2026-07-03 (task: "why do users get almost no push notifications") found the entire Notification Moments framework ([[project_notification_moments_shipped_2026_05_15]] in the shared project memory — "shipped" 2026-05-15) has produced **zero rows ever** in both `notification_moments` and `app_insights_shown`, confirmed via `SELECT count(*)` on prod (both = 0, no time filter needed).
+
+**Root cause (verified two independent ways — static code trace AND live process test on prod):** the moment generators / insight detectors self-register into an in-memory singleton via side-effect imports (`import app.services.moments`, `import app.services.insights`) that only execute in `app/main.py` (web dyno entrypoint, line 58-59). The **worker** dyno (`Procfile`: `worker: rq worker --url $REDISGREEN_URL`) never imports `app.main` — RQ just imports the specific job module by dotted path when dequeuing. Neither `app/tasks/notification_orchestrator_job.py` nor anything it imports pulls in the registration packages. Verified live on prod via a one-off dyno that imported *only* `app.tasks.notification_orchestrator_job` (exactly what RQ does): `get_orchestrator().generator_count == 0`, `get_detector().detector_count == 0`, `'app.services.moments' in sys.modules == False`. Also caught the live 17:00 UTC hourly tick in `heroku logs --tail`: `Notification orchestrator (hourly)` job completed in **0.735s** — far too fast to have actually iterated/scored ~1,720 users, consistent with "0 generators → skip entire loop" (an instant no-op that still logs "Job OK", no exception).
+
+**Why this matters / how to apply:** this explains ALL of: `deliver_due_moments` (15-min) and `run_daily_orchestrator` (hourly) always logging "Job OK" with never an error; `run_insight_detection` firing constantly (dozens/hour from active users' tab-open events) and "succeeding" while inserting nothing; and the user-facing complaint of near-total notification silence. The ONLY push channel actually reaching users is a separate, directly-invoked send (session-recording-summary-ready → `notification_logs` table, 32 rows total over a month, unrelated to the Moments framework). RQ scheduler hygiene itself is healthy (22 jobs, no duplicates — the 2026-05-19 531-job incident has NOT recurred) and all 3 dynos are up — this is purely an import-wiring gap in otherwise-healthy processes, not an infra or eligibility-logic problem.
+
+**Fix owner:** `backend-api` — import `app.services.moments` + `app.services.insights` somewhere the RQ worker process actually executes (e.g. top of `app/tasks/notification_orchestrator_job.py`, or `app/tasks/__init__.py`), and add a boot-time assertion/log on `generator_count > 0` so this class of bug pages instead of silently no-op'ing for 50+ days. This is DBA-observed only — I do not own the fix.
+
+**Two independent, additive findings that will still limit reach after the wiring fix:**
+- `next_session_date` in `user_preferences` is **0/1722 filled** — no anchor date exists for pre/post-session reminders to compute from, even though `therapy_frequency` (cadence) is 100% filled. Key-present-but-value-null pattern between "how often" and "when exactly."
+- FCM token coverage is only **232/1730 users (13.4%)** — caps addressable reach regardless of the notification-system fix.
+- `notification_interests` jsonb holds `{}` (wrong shape, not the documented `list[str]`) for 1,575/1,722 rows (91.5%) — currently benign (code falls through a bare except to "no filter, allow all") but is real drift from the claimed CRIT-05 backfill; only 147 rows have the correct array shape.
+
+Full report: `db-reports/notifications_prod_audit_2026-07-03.md`. Links to [[project_notification_moments_shipped_2026_05_15]] (the original "shipped" claim this audit corrects), [[project_scheduler_cleanup_2026_05_19]] (confirms scheduler hygiene held), [[project_onboarding_field_save_bug_2026_06_29]] (same "key-present-value-null" pattern family as `next_session_date`).

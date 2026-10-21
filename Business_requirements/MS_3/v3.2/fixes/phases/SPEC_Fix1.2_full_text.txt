@@ -1,0 +1,290 @@
+MindSync Change Spec — MSV3.2 Fix.1.2 · Workspace
+For Claude Code · 2026-07-13 · author: Darek
+Summary
+Total items: 25 (DELETE: 0 · FIX: 7 · CHANGE: 18)
+Areas touched: bottom nav · output-card triage (cross-module) · NEW module „Tematy i pytania&quot; · Agenda następnej sesji · Do zrobienia · Wątki · Realizations · Goals · Therapy Relationship · check-in reminder card
+Intent: turn Workspace into a mostly self-feeding hub. AI-detected items on output cards become tappable chips routed to dedicated modules (Tematy i pytania, Wątki, Do zrobienia); Agenda becomes a user-curated session list fed from those modules — nothing enters it without a user tap. On top: one unified add-entry sheet (with voice input), unified archives with restore, expand/collapse for long lists, and a set of dead-button and formatting fixes.
+
+Format note (per author): items carry a short User flow (context for the coding agent) and AI flow (context for the AI layer). Both fields are omitted where the item touches neither.
+Global guardrails (read before touching anything)
+Do NOT touch: the generated content of output cards (after-therapy / prep / between-sessions note / recording) — triage only APPENDS a chip section at the bottom (CS-03).
+Do NOT touch: check-in scoring and color-mapping logic — it already works; CS-24 only surfaces stored values.
+Do NOT touch: Agenda's existing checkbox close behavior — already built correctly, leave as is (author confirmed).
+Do NOT touch: Timeline history and card ordering.
+Red „Usuń&quot; in every 3-dot menu = confirmation dialog → permanent delete. Never lands in an archive (author decision).
+Every new user-facing string ships PL + ENG (both given per item).
+After each item: run the app, confirm no dead references / broken navigation; builds pass Android + iOS.
+
+Shared patterns (single source of truth — items reference these)
+P1 · Add-entry bottom sheet
+Used by CS-05, CS-09, CS-13, CS-18, CS-22. Trigger: one wide ghost button at the bottom of the module frame („+ Dodaj …&quot; — label per item).
+
+UI anatomy (top to bottom):
+
+Top: sheet title (= button label without „+&quot;) + X (top-right)
+Middle: text field
+Bottom row: left — button „Nagraj&quot;; right — primary button „Zapisz&quot;
+
+Logic:
+
+Ghost button → tap → card slides up from the bottom.
+X → tap → closes sheet sliding down, nothing saved → back to module view.
+„Nagraj&quot; → tap → recording UI appears; on stop → speech-to-text result lands in the text field of the previous view; user can read and correct it.
+„Zapisz&quot; → tap → saves entry → sheet closes → entry appears at the top of the module's list.
+
+AI flow: „Nagraj&quot; reuses the existing speech-to-text pipeline; on STT failure show the existing recording-error handling, text field left unchanged.
+P2 · Archive
+Used by CS-05, CS-07, CS-11, CS-15, CS-21.
+
+UI anatomy:
+
+Module header, top-right: small archive icon. Two states: default; notification — small green circle badge with a number = count of items closed since the archive was last opened. The number accumulates; after the user enters and exits the archive, the icon returns to default.
+Archive opens as hub-and-spoke (full view over the module).
+Top: title (per item) + X — closes and returns to the previous view.
+List of closed items, newest first, each showing its close date.
+Each row: action „Przywróć&quot; / &quot;Restore&quot;.
+
+Logic:
+
+Closing an item in the module (checkbox) → item leaves the module list → appears in its archive with today's date → badge +1.
+Archive icon → tap → archive opens; after exit the badge resets to default.
+„Przywróć&quot; → tap → item returns to the module's active list (top) → disappears from archive.
+An item can also be restored from its source output card (chip states, CS-03).
+P3 · Expand/collapse list
+Used by CS-05, CS-16, CS-25. Default visible: 5 items, chronological by date added — newest at top, oldest lowest.
+
+Controls at the bottom of the list:
+
+„Pokaż więcej ⌄&quot; / &quot;Show more ∨&quot; → loads the next batch of 10; repeat until the list is exhausted.
+„Pokaż mniej ∧&quot; / &quot;Show less ∧&quot; → collapses one batch (−10). Visible only when more than the default is shown.
+„Zwiń wszystko ∧&quot; / &quot;Collapse all ∧&quot; → collapses back to the default 5.
+When fully expanded, the last records at the bottom show „Wszystkie widoczne&quot; / &quot;All visible&quot;, with „Zwiń wszystko ∧&quot; below it.
+
+Global / Nawigacja
+CS-01 · FIX · Reminder card · dead „open&quot; button
+Type: FIX
+Location: App launch → auto-presented bottom-sheet card „przypomnienie o missing therapy relationship check-in&quot; → button open. Reached: open the app while a check-in is overdue.
+Now (wrong): tapping open does nothing.
+Expected: tap → navigates directly into a new check-in Therapy Relationship , reminder card dismissed.
+User flow: user opens app → reminder slides up from the bottom → taps open → lands directly into a new check-in Therapy Relationship quiz and start check in.
+Do NOT touch: the trigger logic deciding when the reminder appears; other dismissal paths of the card.
+Done when: open navigates to the check-in and dismisses the card; reminder scheduling unchanged.
+CS-02 · CHANGE · Bottom nav · rename „Terapia&quot; → „Pracownia&quot;
+Type: CHANGE
+Location: Bottom nav bar → tab labeled PL „Terapia&quot; / ENG &quot;Therapy&quot;.
+Action: From: „Terapia&quot; / &quot;Therapy&quot;. To: PL „Pracownia&quot; / ENG &quot;Workspace&quot; — tab label, the section's screen header, and every user-facing string naming this section (see Decisions log). Lead: grep l10n files for &quot;Terapia&quot; / &quot;Therapy&quot;; rename ONLY strings that name the tab/section.
+Do NOT touch: copy where „terapia/therapy&quot; means the therapy concept itself (body text, card content, module names like „Therapy Relationship&quot;).
+Done when: tab + section header show the new names in both languages; no other strings altered; grep confirms no leftover section-name references.
+
+Triage (cross-module)
+CS-03 · CHANGE · Output cards · triage chips feeding Workspace
+Type: CHANGE
+Location: Every generated output card: after-therapy card, prep card, between-sessions note, recording card → bottom section with AI-detected elements. Reached: Timeline → open any of these cards → scroll to bottom.
+What it is: cards already end with elements the AI has picked out, but today they propagate nowhere — Workspace features receive no automatic content. This is the core complaint of the batch.
+User flow: user finishes reading a card → sees chips at the bottom grouped by type → taps the ones worth keeping → each lands in the right Workspace module instantly. Workspace fills without manual typing.
+AI flow: uses the existing AI extraction — no new generation. Each candidate must carry a type label (Temat / Pytanie / Wątek / Action point) and a source ref (card id + card type). If extraction returns nothing, the chip section is hidden.
+UI anatomy (bottom of card):
+Chips grouped by type, in this order: Tematy · Pytania · Wątki · Action pointy (group header shown only when the group is non-empty)
+Each chip = candidate text, unselected by default — AI never pre-selects any chip
+Logic:
+Chip (unselected) → tap → selected + instantly sent to its target module: Temat/Pytanie → „Tematy i pytania&quot; (CS-05); Wątek → Wątki; Action point → Do zrobienia.
+Chip (selected) → tap → deselected + withdrawn from the target module.
+Chip whose item was closed in its module → shows a closed state on the card; tap → restores it to the module's active list (P2).
+Unselected chips never disappear: they stay on the Timeline card and can be sent to Workspace at any later time.
+Outcome: the choices the user makes on existing cards feed Workspace; nothing is lost, nothing is auto-selected.
+Value (author): „Workspace prawie nie wymaga ręcznego wpisywania.&quot;
+Do NOT touch: card body content and its generation above the chip section.
+Blocked by: CS-05 (target module must exist).
+Done when: on all four card types, tapping a chip of each type creates the item in the correct module instantly; second tap withdraws it; unselected chips persist on the card; items closed in a module are restorable from the card.
+CS-04 · CHANGE · Workspace-wide · item lifecycle (open / closed + archives)
+Type: CHANGE
+Location: All Workspace list modules: Tematy i pytania, Do zrobienia, Wątki, Agenda następnej sesji, Goals.
+Action: every list item has exactly two states: open and closed (odkliknięte). Closing moves the item to that module's own archive (P2) with a close date — a separate archive per data type. Restore per P2, and also from the source output card (CS-03).
+User flow: user ticks an item → it leaves the list → findable in that module's archive → restorable in one tap.
+Do NOT touch: red „Usuń&quot; is NOT closing — it is permanent and never archives (guardrail).
+Done when: closing any item in any module lands it in the correct archive with a date; restore returns it to the top of the active list; no cross-module leakage.
+
+Moduł: Tematy i pytania (NEW)
+CS-05 · CHANGE · Workspace · create module „Tematy i pytania&quot;
+Type: CHANGE
+Location: Workspace (Pracownia) → new module box „Tematy i pytania&quot;, placed directly below „Agenda następnej sesji&quot; (placement — see Decisions log).
+What it is: a NEW list module collecting all tematy and pytania — from output-card chips or manual adds. It replaces the original notes' idea of chips feeding Agenda directly; Agenda stays user-curated (CS-06). Author: full parity with the other lists.
+User flow: chips send tematy/pytania here → user reviews the pool, checks off what is resolved, and promotes what should be discussed via „Dodaj do agendy&quot;.
+AI flow: input = chips of type Temat or Pytanie from CS-03, with source ref. No generation inside the module.
+UI anatomy:
+Module header: title „Tematy i pytania&quot; / &quot;Topics &amp; questions&quot;; top-right: archive icon (P2)
+List: default top 5, chronological (P3); each row: checkbox · entry text · source tag · 3-dot menu
+Bottom of list: P3 controls
+Bottom of module frame: wide ghost button „+ Dodaj temat lub pytanie&quot; / &quot;+ Add topic or question&quot; (P1)
+Logic:
+Checkbox → tap → item closed → archive „Zamknięte tematy i pytania&quot; / &quot;Closed topics &amp; questions&quot; (P2).
+3-dot menu → „Edytuj nazwę&quot; (opens P1 sheet prefilled; Zapisz updates in place) · „Dodaj do agendy&quot; · red „Usuń&quot; (confirm → permanent).
+„Dodaj do agendy&quot; → tap → entry appears at the top of Agenda następnej sesji with its source tag carried over; the entry stays open here — the user closes it in this module when it is resolved (see Decisions log).
+P1 sheet: title „Dodaj temat lub pytanie&quot;; saved entry lands at top of list with source tag „Dodane ręcznie&quot;.
+Outcome: one place holding every open topic and question, feeding Agenda on demand.
+Value: covers both chip types in one coherent list (author decision); same functionality set as the other Workspace lists.
+Do NOT touch: Agenda module (separate items CS-06–CS-09).
+Done when: module renders with all four anatomy blocks; chips create rows with correct source tags; checkbox → archive → restore round-trips; „Dodaj do agendy&quot; places the entry in Agenda; P1/P2/P3 behave exactly as specced.
+
+Moduł: Agenda następnej sesji
+CS-06 · CHANGE · Agenda · user-curated sourcing model
+Type: CHANGE
+Location: Workspace → module „Agenda następnej sesji&quot; → list.
+What it is: the list of what the user wants to bring up at the next session. Today only manual notes can reach it — AI-derived items cannot (original complaint).
+Action: From: manual-only. To: user-curated from four feeds — „Dodaj do agendy&quot; from Wątki (CS-14), from Tematy i pytania (CS-05), Pin to Agenda from Realizations (CS-19), plus manual add (CS-09). Explicitly NOT from To-Do (author decision). Nothing enters Agenda without a user tap.
+Source tags: every position shows where it came from. Strings: PL „Po terapii&quot; / „Prep&quot; / „Nagranie&quot; / „Między sesjami&quot; / „Dodane ręcznie&quot; (ENG &quot;After therapy&quot; / &quot;Prep&quot; / &quot;Recording&quot; / &quot;Between sessions&quot; / &quot;Added manually&quot;) — the tag reflects the output card the content originally came from and is carried through the module. Items without a card origin: „Wątek&quot; / &quot;Thread&quot; and „Realizacja&quot; / &quot;Realization&quot; (see Decisions log).
+User flow: user reviews the modules → taps Dodaj do agendy on what matters → before the session, opens Agenda and sees everything with its origin.
+Do NOT touch: existing checkbox close (already built — leave as is).
+Blocked by: CS-05.
+Done when: items arrive from all three module feeds + manual; each shows the correct source tag; no item auto-enters Agenda.
+CS-07 · CHANGE · Agenda · archive „Twoje zakończone tematy&quot;
+Type: CHANGE
+Location: „Agenda następnej sesji&quot; → module header, top-right (new icon) + new hub-and-spoke view.
+Action: add an archive per P2. Title: PL „Twoje zakończone tematy&quot; / ENG &quot;Your closed topics&quot;. Trigger: the existing checkbox close — odhaczenie correctly removes the topic from the agenda AND moves it into this archive.
+User flow: user closes a topic → green badge +1 on the archive icon → opens archive → sees closed topics with dates → can restore any of them.
+Do NOT touch: checkbox behavior itself.
+Done when: odhaczenie removes from agenda and lands in archive with date; badge accumulates and resets after visit per P2; „Przywróć&quot; returns the topic; X returns to the previous view.
+CS-08 · CHANGE · Agenda · row menu (X → three dots)
+Type: CHANGE
+Location: „Agenda następnej sesji&quot; → each list row → current X icon.
+Action: From: X icon per row. To: 3-dot vertical menu with exactly: „Edytuj nazwę&quot; and red „Usuń&quot;. The „odklik&quot; menu entry is removed (closing is checkbox-only).
+Logic:
+„Edytuj nazwę&quot; → tap → P1 sheet opens prefilled with the current text → Zapisz updates the row in place (position unchanged).
+„Usuń&quot; (red) → tap → confirmation dialog → confirm → permanently deleted, does NOT go to the archive.
+Do NOT touch: the checkbox.
+Done when: no X on rows; menu shows exactly the two entries; both behave per Logic.
+CS-09 · CHANGE · Agenda · add UI
+Type: CHANGE
+Location: „Agenda następnej sesji&quot; → bottom of the module frame.
+Action: add wide ghost button „+ Dodaj temat&quot; / &quot;+ Add topic&quot; behaving per P1 (sheet title „Dodaj temat&quot;). Saved topic appears at the top of the agenda list, source tag „Dodane ręcznie&quot;.
+User flow: tap „+ Dodaj temat&quot; → sheet slides up → type or Nagraj (STT) → correct → Zapisz → topic on top of Agenda.
+Done when: full P1 round-trip incl. Nagraj/STT works; new topic lands on top with the manual tag.
+
+Moduł: Do zrobienia (To-Do)
+CS-10 · FIX · Do zrobienia · AI action-point propagation
+Type: FIX
+Location: Output cards → chip group „Action pointy&quot; (CS-03) → module „Do zrobienia&quot;.
+Now (wrong): the flow of adding AI-detected action points is broken — user cannot add detected action points from an output card.
+Expected: tapping an Action point chip creates the task in „Do zrobienia&quot; (instant, per CS-03); second tap withdraws it. Due dates are OUT of scope — the module stays a plain list (author decision).
+User flow: user reads a card → taps an action-point chip → the task is waiting in Do zrobienia.
+AI flow: input = Action point chips with source ref; no date parsing, no new generation.
+Blocked by: CS-03.
+Done when: chip tap creates the task; withdraw works; no due-date UI exists anywhere in the module.
+CS-11 · CHANGE · Do zrobienia · archive „Zrobione&quot; / &quot;Done&quot;
+Type: CHANGE
+Location: „Do zrobienia&quot; → module header, top-right → current task-count indicator.
+Action: archive per P2, with one deviation: the archive icon replaces the current task-count indicator. Title: PL „Zrobione&quot; / ENG &quot;Done&quot;. Checking a task off correctly removes it from the list and moves it into „Zrobione&quot;.
+User flow: user ticks a task → badge +1 → opens „Zrobione&quot; → sees done tasks with dates → can restore.
+Do NOT touch: task rows themselves (CS-12 handles them).
+Done when: counter is gone; icon + badge behave per P2; close → „Zrobione&quot; with date; „Przywróć&quot; works.
+CS-12 · CHANGE · Do zrobienia · checkbox + row menu
+Type: CHANGE
+Location: „Do zrobienia&quot; → each task row → current bullet point and row menu.
+Action: From: bullet point. To: checkbox. A task closes ONLY by tapping the checkbox, or disappears via „Usuń&quot;. Row menu: remove „odklik&quot;; add „Edytuj nazwę&quot; and red „Usuń&quot; — same behaviors as CS-08.
+Logic:
+Checkbox → tap → task closed → „Zrobione&quot; (CS-11).
+Row tap (anywhere else) → does NOT close the task.
+„Edytuj nazwę&quot; → P1 sheet prefilled → Zapisz updates in place.
+„Usuń&quot; (red) → confirm dialog → permanent delete, no archive.
+Done when: bullets replaced by checkboxes; only checkbox closes; menu shows exactly the two entries and behaves per Logic.
+CS-13 · CHANGE · Do zrobienia · add UI
+Type: CHANGE
+Location: „Do zrobienia&quot; → bottom of the module frame.
+Action: wide ghost button „+ Dodaj zadanie&quot; / &quot;+ Add task&quot; per P1 (sheet title „Dodaj zadanie&quot;; opens as it does now — sliding card from the bottom). Saved task appears at the top of the list.
+Done when: full P1 round-trip incl. Nagraj/STT; new task lands on top.
+
+Moduł: Wątki
+CS-14 · FIX · Wątki · „Dodaj do agendy&quot; button on thread card
+Type: FIX
+Location: Wątki → tap a thread → thread card (hub-and-spoke) → button „Dodaj do agendy&quot;.
+Now (wrong): the button does nothing.
+Expected: one tap → the thread appears as a topic in „Agenda następnej sesji&quot; (top of list, tag „Wątek&quot; per CS-06); the button switches to an added state; tapping again removes the thread from Agenda (toggle — see Decisions log).
+User flow: user opens a thread worth discussing → one tap → it is on the next session's agenda.
+Done when: tap adds, toggle removes, Agenda reflects both instantly.
+CS-15 · CHANGE · Wątki · thread card cleanup + statuses
+Type: CHANGE
+Location: Wątki → thread card (hub-and-spoke), and the Wątki module header (archive icon).
+What it is: the detail card of a therapy thread (e.g. „Przerwane EMDR&quot;, „Kontakt z mamą&quot;) — context plus its source cards. Threads are added via triage (CS-03) or manually (CS-18).
+User flow: user taps a thread → reads context and sources → adds to agenda or marks it closed → returns via swipe or chevron.
+UI anatomy (thread card):
+Short context description — where the thread came from, what happened in it recently
+Sources list — the Timeline cards it originates from (display-only in this batch; see Decisions log)
+Actions: „Dodaj do agendy&quot; (CS-14) · mark closed (existing &quot;closed&quot; action stays)
+REMOVED: the archive button on the expanded thread — delete it; only closed + add to agenda remain
+Logic:
+Close card → swipe left OR chevron-left (wróć) → previous view.
+Mark closed → thread leaves the active list → archive „Domknięte wątki&quot; / &quot;Closed threads&quot;, reached via a P2 archive icon in the Wątki header (see Decisions log).
+Status chain: otwarty → after a session where the thread was on the agenda and got odhaczone as discussed, status flips to „poruszony&quot; automatically (author: „click on Agenda just does that&quot;). From the thread card the user then decides: domknij (→ archive) or back to otwarty. No forced prompt.
+Full-list nudge: when ≥5 threads are active and triage sends a new one, show a gentle message — proposal: PL „Masz już sporo otwartych wątków — warto najpierw coś domknąć.&quot; / ENG &quot;You already have quite a few open threads — worth closing something first.&quot; The new thread is still added (5 is a display default, not a cap; no queue state — author decision).
+AI flow: the short context description is AI-generated from the thread's source cards (existing summarization); regenerated when a new source is attached; on failure show the sources list without the description.
+Outcome: the thread card carries exactly two actions, closing is archivable and reversible, statuses move without extra dialogs.
+Value: threads stay a small, honest list of what is actually alive in therapy.
+Do NOT touch: „Dodaj do agendy&quot; beyond CS-14; triage chip behavior (CS-03).
+Done when: archive button gone from the card; swipe/chevron navigation works; agenda odhaczenie flips status to „poruszony&quot;; domknięcie archives to „Domknięte wątki&quot; and is restorable; nudge shows at ≥5 while the thread is still added.
+CS-16 · CHANGE · Wątki · expand/collapse list
+Type: CHANGE
+Location: Wątki → bottom of the module box.
+Action: add P3 (default 5 visible, „Pokaż więcej ∨&quot; +10, „Pokaż mniej ∧&quot; −10, „Zwiń wszystko ∧&quot; → default, „Wszystkie widoczne&quot; at the end). Order: chronological by date added, oldest lowest.
+Done when: all P3 controls present and behave per pattern; labels match P3 exactly in PL and ENG.
+CS-17 · FIX · Wątki · „1 z 5 aktywnych&quot; counter
+Type: FIX
+Location: Wątki → module header, top-right → text „1 z 5 aktywnych&quot;.
+Now (wrong): the counter shows always, even with ≤5 active threads.
+Expected: hidden while active count ≤5. When &gt;5 active: show „5 z [total] aktywnych&quot;, e.g. „5 z 12 aktywnych&quot; (ENG &quot;5 of 12 active&quot;). Static — does not change as the user expands the list.
+Done when: counter absent at ≤5; correct „5 z N&quot; format at &gt;5.
+CS-18 · CHANGE · Wątki · add UI
+Type: CHANGE
+Location: Wątki → plus icon in the top part of the module (remove) + bottom of the module frame (add).
+Action: remove the top plus icon. Add wide ghost button „+ Dodaj wątek&quot; / &quot;+ Add thread&quot; per P1 (sheet title „Dodaj wątek&quot;). Saved thread appears at the top of the Wątki list. Must look and behave exactly like Agenda and Do zrobienia adds (author: coherence requirement).
+Done when: top plus gone; full P1 round-trip incl. Nagraj/STT; new thread on top.
+
+Moduł: Realizations
+CS-19 · FIX · Realizations · „Pin to Agenda&quot; broken + no unpin
+Type: FIX
+Location: Realizations module → realization card → button „Pin to Agenda&quot; (dodaj do agendy).
+Now (wrong): tap does nothing; and a pinned realization cannot be unpinned (odkliknięta).
+Expected: tap → realization lands at the top of „Agenda następnej sesji&quot; (tag „Realizacja&quot; per CS-06); button switches to a pinned state; tap again → unpins and removes it from Agenda. Deleting the item in Agenda also clears the pin state on the realization.
+User flow: user reads a realization worth discussing → one tap → it is on the agenda; changed their mind → tap again.
+Done when: pin/unpin toggles consistently on both sides; no orphaned agenda items or stuck pin states.
+
+Moduł: Goals
+CS-20 · CHANGE · Goals · ad-hoc narrative refresh
+Type: CHANGE
+Location: Goals module → header (new control) + narrative text area.
+Action: add the ability to refresh the narrative on demand. UI (see Decisions log): ↻ refresh icon in the Goals module header, left of the archive icon. Tap → narrative regenerates; the narrative area shows a loading state meanwhile.
+User flow: user feels the narrative is stale → taps ↻ → reads the updated narrative.
+AI flow: input = current goals + latest relevant entries (same pipeline that builds the narrative today) · output = replaces the displayed narrative · trigger = manual tap only · failure = keep the previous narrative + error toast with retry.
+Do NOT touch: whatever scheduled/automatic narrative generation exists today.
+Done when: tap regenerates; loading state shows; failure leaves the old text intact.
+CS-21 · CHANGE · Goals · archive of completed goals
+Type: CHANGE
+Location: Goals module → header, top-right (new icon) + new hub-and-spoke view.
+Action: small archive per P2. Title: PL „Zakończone cele&quot; / ENG &quot;Completed goals&quot;. Collects goals marked as done; browseable; each shows its completion date; restorable per P2.
+Done when: marking a goal done moves it here with date; badge + restore behave per P2.
+CS-22 · CHANGE · Goals · add UI (fixes the doubled „+&quot;)
+Type: CHANGE
+Location: Goals module („cel terapeutyczny&quot;) → bottom → current „+ + dodaj cel&quot; control (the small „dodaj cel&quot; icon with a doubled „+&quot; — notes 16 &amp; 17 refer to this same element, see Decisions log).
+Action: remove „+ + dodaj cel&quot; entirely. Inside the Goals frame at the bottom, add wide ghost button „+ Dodaj cel&quot; / &quot;+ Add goal&quot; per P1 (sheet title „Dodaj cel&quot;). Saved goal appears at the top of the Goals list.
+Done when: exactly one „+&quot; ever visible; no leftover small icon; full P1 round-trip incl. Nagraj/STT.
+
+Moduł: Therapy Relationship
+CS-23 · FIX · Therapy Relationship · content cut off at the bottom
+Type: FIX
+Location: Workspace → Therapy Relationship module → bottom of the screen/box.
+Now (wrong): part of the content at the bottom appears clipped/cut off.
+Expected: the whole module box displays in full — add safe-area padding (or adjust the layout) so nothing is cut. Verify against gesture-nav overlap on Android and the home indicator on iOS, small and large screens.
+Done when: screenshots on a small and a large device (both platforms) show the complete box including its bottom row.
+CS-24 · FIX · Therapy Relationship · rating icon colors
+Type: FIX
+Location: Therapy Relationship → check-in entries (icon per entry) AND the module's icon on the Workspace overview (outside the card).
+Now (wrong): every entry shows orange, regardless of the stored rating; the outside icon shows no rating color.
+Expected: the scoring and color systems already exist (author confirmed) — only bind and surface them: each check-in entry's icon shows its stored color (red / yellow / green); the module icon on the Workspace overview shows the color of the most recent check-in (see Decisions log). Remove the hardcoded orange.
+AI flow: none new — values are computed at check-in time; this item only displays them.
+Do NOT touch: the scoring/color-mapping logic itself.
+Done when: entries reflect their stored colors; the outside icon matches the latest check-in; no orange fallback remains.
+CS-25 · CHANGE · Therapy Relationship · check-in list expand + contrast
+Type: CHANGE
+Location: Therapy Relationship → below the check-in list → link „zobacz wszystkie 5 check-iny&quot;.
+Now: a one-off link with light text that disappears against the blue background.
+Action: replace the link with P3 (default 5 visible, batches of 10, „Wszystkie widoczne&quot;, „Zwiń wszystko ∧&quot;), visually coherent with Wątki. Control text must be darker — meet WCAG AA contrast (≥4.5:1) against the blue background.
+Done when: old link gone; P3 controls present, readable (contrast checked), and behaving per pattern.

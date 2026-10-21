@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Your companion</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.ms-scroll::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; display: flex; flex-direction: column">
+  <div style="display: flex; align-items: center; gap: 8px; padding: 48px 20px 0 8px">
+    <button type="button" aria-label="Back" style="width: 44px; height: 44px; border: none; background: transparent; padding: 0; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <div style="flex-grow: 1; height: 6px; border-radius: 3px; background: #DBF0ED; display: flex"><div style="width: 86%; border-radius: 3px; background: #26767B"></div></div>
+    <span style="font-size: 13px; font-weight: 600; color: #3D5C60">6 of 7</span>
+  </div>
+  <div class="ms-scroll" style="flex-grow: 1; overflow-y: auto; scrollbar-width: none; padding: 16px 24px 16px 24px; display: flex; flex-direction: column; gap: 14px">
+    <div style="display: flex; align-items: center; gap: 14px">
+      <div style="flex-shrink: 0; width: 72px; height: 72px; border-radius: 36px; background: #DBF0ED; display: flex; align-items: center; justify-content: center">
+        <img src="/_blob/b94ec25dbe8aed11e51c558f9089fecd" alt="" style="width: 46px; height: 48px">
+      </div>
+      <h1 style="margin: 0; font-size: 26px; line-height: 1.15; font-weight: 800">Meet your orca. It talks with you between sessions.</h1>
+    </div>
+    <div style="display: flex; flex-direction: column; gap: 6px">
+      <label for="ob-orca" style="font-size: 13px; font-weight: 600; color: #3D5C60">Give it a name</label>
+      <input id="ob-orca" type="text" maxlength="20" value="{{name}}" onInput="{{setName}}" placeholder="e.g. Luna, Wave" style="height: 52px; box-sizing: border-box; border: 1px solid #BBE4DE; border-radius: 12px; padding: 0 14px; font-family: Figtree, sans-serif; font-size: 17px; background: #FFFFFF">
+    </div>
+    <span style="font-size: 15px; font-weight: 700">How should {{who}} talk to you?</span>
+    <div role="radiogroup" aria-label="Talk style" style="display: flex; flex-direction: column; gap: 8px">
+      <sc-for list="{{styles}}" as="s" hint-placeholder-count="5">
+        <button type="button" role="radio" aria-checked="{{s.pressed}}" onClick="{{s.pick}}" style="{{s.style}}">
+          <span style="font-size: 16px; font-weight: 700">{{s.t}}</span>
+          <span style="font-size: 13px; color: {{s.sub}}">{{s.d}}</span>
+        </button>
+      </sc-for>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #DBF0ED; border-radius: 16px 16px 16px 6px; padding: 12px 14px; font-size: 15px; line-height: 1.45">
+      <span style="display: block; font-size: 12px; font-weight: 700; color: #26767B; margin-bottom: 4px">{{who}} would say</span>{{sample}}
+    </div>
+  </div>
+  <div style="padding: 12px 24px 28px 24px">
+    <button type="button" style="width: 100%; height: 56px; border: none; border-radius: 16px; background: #113237; color: #FFFFFF; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 700">Continue</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { name: 'Luna', pick: 'friend' }; }
+  renderVals() {
+    const list = [
+      ['realist', 'The Realist', 'Straight talk. No sugar coating.', "Last week was hard. Let's look at what actually happened."],
+      ['coach', 'The Coach', 'Motivating. Focused on next steps.', 'You showed up. What is one thing to try before Thursday?'],
+      ['friend', 'The Friend', 'Warm, casual, honest.', 'That sounds like a heavy week. Want to talk it through?'],
+      ['sage', 'The Sage', 'Reflective. Sees the bigger picture.', 'What does this week tell you about what matters to you?'],
+      ['explorer', 'The Explorer', 'Curious and a bit playful.', "Interesting. What do you think was going on underneath?"]
+    ];
+    const cur = list.find((x) => x[0] === this.state.pick);
+    const who = this.state.name || 'your orca';
+    return {
+      name: this.state.name,
+      setName: (e) => this.setState({ name: e.target.value }),
+      who: who,
+      sample: '“' + cur[3] + '”',
+      styles: list.map(([k, t, d]) => {
+        const on = this.state.pick === k;
+        return { t: t, d: d, sub: on ? '#BBE4DE' : '#3D5C60', pressed: on ? 'true' : 'false', pick: () => this.setState({ pick: k }),
+          style: 'display: flex; flex-direction: column; align-items: flex-start; gap: 2px; min-height: 56px; text-align: left; padding: 9px 16px; border-radius: 14px; font-family: Figtree, sans-serif; cursor: pointer; ' + (on ? 'background: #113237; color: #FFFFFF; border: 1.5px solid #113237' : 'background: #FFFFFF; color: #113237; border: 1.5px solid #BBE4DE') };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Counter chip states</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; padding: 40px 24px; display: flex; flex-direction: column; gap: 14px">
+  <h1 style="margin: 0 0 6px 0; font-size: 24px; font-weight: 800">Usage counter states</h1>
+  <sc-for list="{{states}}" as="s" hint-placeholder-count="6">
+    <div style="display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DBF0ED">
+      <div style="display: flex; justify-content: space-between; align-items: center; gap: 10px">
+        <span style="font-size: 15px; font-weight: 700">{{s.when}}</span>
+        <span style="{{s.style}}">{{s.label}}</span>
+      </div>
+      <span style="font-size: 13px; line-height: 1.4; color: #3D5C60">{{s.tap}}</span>
+    </div>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const base = 'display: inline-flex; align-items: center; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 3px 9px; white-space: nowrap; ';
+    return {
+      states: [
+        { when: 'Plenty left', label: '12 of 15 left', style: base + 'background: #DBF0ED; color: #1F4C50', tap: 'Tap opens the feature as usual.' },
+        { when: 'One left', label: 'Last one this month', style: base + 'background: #FFEFDD; color: #8A4B12', tap: 'Opens the feature. After saving, a short note says the limit is reached and when it resets.' },
+        { when: 'Limit of 1', label: '1 free this month', style: base + 'background: #FFEFDD; color: #8A4B12', tap: 'Before therapy and After therapy. Same behaviour as one left.' },
+        { when: 'Used up', label: '0 left · Premium', style: base + 'background: #E8EEEE; color: #4F6669', tap: 'Tap opens the paywall for that feature (trigger_feature = premium_gate_<feature>). Saved content stays readable.' },
+        { when: 'During the 4-day trial', label: 'Unlimited in trial', style: base + 'background: #FFEFDD; color: #8A4B12', tap: 'Shows the trial is what unlocks it, so day 4 is not a surprise.' },
+        { when: 'Premium', label: 'no chip', style: base + 'background: transparent; color: #5A7376; border: 1px dashed #BBE4DE', tap: 'Counters are hidden for paying users.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

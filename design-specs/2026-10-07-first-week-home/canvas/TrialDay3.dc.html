@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Trial ends tomorrow</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; position: relative; overflow: hidden">
+<div aria-hidden="true" style="padding: 52px 20px 0 20px; display: flex; flex-direction: column; gap: 16px">
+<span style="width: 48px; height: 48px; border-radius: 24px; background: #DBF0ED"></span>
+<span style="font-size: 28px; font-weight: 800">Hi, Sam</span>
+<span style="height: 190px; border-radius: 24px; background: #FFFFFF; border: 1px solid #DBF0ED"></span>
+</div>
+<div style="position: absolute; inset: 0; background: rgba(17,50,55,0.55)"></div>
+
+<section role="dialog" aria-label="Your Premium trial ends tomorrow" style="position: absolute; left: 0; right: 0; bottom: 0; border-radius: 28px 28px 0 0; background: #FFFFFF; padding: 10px 20px 24px 20px; display: flex; flex-direction: column; gap: 12px">
+<span aria-hidden="true" style="align-self: center; width: 40px; height: 5px; border-radius: 3px; background: #DBF0ED"></span>
+<span style="font-size: 14px; font-weight: 700; color: #26767B">Day 3 of 4</span>
+<h2 style="margin: 0; font-size: 24px; line-height: 1.2; font-weight: 800">Your Premium trial ends tomorrow</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #5A7A73">Everything you saved stays saved either way.</p>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 15px; font-weight: 700">Your first days</span>
+<sc-for list="{{did}}" as="d" hint-placeholder-count="3">
+<div style="display: flex; align-items: center; gap: 10px; min-height: 30px">
+<span aria-hidden="true" style="flex-shrink: 0; width: 24px; height: 24px; border-radius: 12px; background: #26767B; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+<span style="font-size: 16px; font-weight: 600">{{d}}</span>
+</div>
+</sc-for>
+</div>
+
+<div style="border-radius: 16px; background: #F2FBFA; padding: 12px 14px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 16px; font-weight: 800; color: #1F4C50">Your first week continues on Free.</span>
+<span style="font-size: 15px; line-height: 1.45; color: #1F4C50">After tomorrow, talking with Orca by voice is part of Premium. Writing stays on Free, up to 15 messages a month.</span>
+</div>
+
+<a href="#" style="min-height: 56px; border-radius: 18px; background: #113237; color: #FFFFFF; font-size: 17px; font-weight: 800; display: flex; align-items: center; justify-content: center; text-decoration: none">Keep Premium</a>
+<button type="button" style="min-height: 48px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 700; color: #5A7A73; cursor: pointer">Not now</button>
+</section>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"branch":{"editor":"enum","options":["schedule","none"],"default":"schedule"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const therapy = (this.props.branch ?? 'schedule') === 'schedule';
+    return {
+      did: therapy
+        ? ['First talk with Orca', 'A follow-up, by voice', 'Ready for your session']
+        : ['First talk with Orca', 'A follow-up, by voice', 'A voice note with a summary']
+    };
+  }
+}
+</script>
+</body>
+</html>

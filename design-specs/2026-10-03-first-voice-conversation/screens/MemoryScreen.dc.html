@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>What Orca remembers</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#113237}a:hover{color:#0E1D1F}
+.ms-scroll::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; position: relative; display: flex; flex-direction: column; background: #F3FAF8; font-family: Figtree, sans-serif; color: #113237; overflow: hidden">
+
+  <div class="ms-scroll" style="flex-grow: 1; overflow-y: auto; scrollbar-width: none">
+
+    <div style="background: #113237; color: #FFFFFF; padding: 12px 16px 22px 16px; border-radius: 0 0 28px 28px; display: flex; flex-direction: column; gap: 16px">
+      <button type="button" aria-label="Back" style="align-self: flex-start; width: 44px; height: 44px; border: none; border-radius: 22px; background: rgba(255,255,255,0.10); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <div style="display: flex; align-items: center; gap: 14px; padding: 0 4px">
+        <div style="flex-shrink: 0; position: relative; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center">
+          <span style="position: absolute; width: 60px; height: 60px; border-radius: 30px; border: 1.5px solid rgba(166,232,216,0.45)"></span>
+          <span style="width: 50px; height: 50px; border-radius: 25px; background: #1F4C50; display: flex; align-items: center; justify-content: center"><img src="/_blob/f69af35610efe64c4d77bb0bd7c51176" alt="" style="width: 28px; height: 29px"></span>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 4px">
+          <h1 style="margin: 0; font-size: 26px; line-height: 1.15; font-weight: 800; letter-spacing: -0.4px">{{title}}</h1>
+          <span style="font-size: 14px; color: #BBE4DE">{{subline}}</span>
+        </div>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 8px; padding: 0 4px">
+        <span style="font-size: 12px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #A6E8D8">{{usedInLabel}}</span>
+        <div style="display: flex; flex-wrap: wrap; gap: 6px">
+          <span style="display: flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.10); border-radius: 999px; padding: 6px 10px 6px 8px; font-size: 13px; font-weight: 600">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#A6E8D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>Conversations
+          </span>
+          <span style="display: flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.10); border-radius: 999px; padding: 6px 10px 6px 8px; font-size: 13px; font-weight: 600">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#A6E8D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M8 3v4M16 3v4M4 10h16"/></svg>Before therapy cards
+          </span>
+          <span style="display: flex; align-items: center; gap: 6px; background: rgba(255,255,255,0.10); border-radius: 999px; padding: 6px 10px 6px 8px; font-size: 13px; font-weight: 600">
+            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#A6E8D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg>Personal Bio
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <sc-if value="{{isList}}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; flex-direction: column; gap: 18px; padding: 16px 0 24px 0">
+        <div class="ms-scroll" role="tablist" aria-label="Filter notes" style="display: flex; gap: 8px; overflow-x: auto; scrollbar-width: none; padding: 0 16px">
+          <sc-for list="{{filters}}" as="f" hint-placeholder-count="5">
+            <button type="button" role="tab" aria-selected="{{f.selected}}" onClick="{{f.pick}}" style="{{f.style}}">{{f.label}} <span style="{{f.countStyle}}">{{f.count}}</span></button>
+          </sc-for>
+        </div>
+
+        <sc-for list="{{sections}}" as="s" hint-placeholder-count="3">
+          <section style="display: flex; flex-direction: column; gap: 10px; padding: 0 16px">
+            <div style="display: flex; align-items: center; gap: 10px; padding: 0 4px">
+              <span style="flex-shrink: 0; width: 32px; height: 32px; border-radius: 16px; background: #DBF0ED; display: flex; align-items: center; justify-content: center">
+                <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="#26767B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="{{s.icon}}"/></svg>
+              </span>
+              <h2 style="margin: 0; flex-grow: 1; font-size: 16px; font-weight: 800">{{s.label}}</h2>
+              <span style="font-size: 13px; font-weight: 600; color: #3D5C60">{{s.count}}</span>
+            </div>
+            <sc-for list="{{s.notes}}" as="n" hint-placeholder-count="2">
+              <div style="display: flex; gap: 8px; align-items: flex-start; background: #FFFFFF; border: 1px solid #DBF0ED; border-radius: 18px; padding: 14px 6px 12px 16px; box-shadow: 0 2px 10px rgba(17,50,55,0.04)">
+                <div style="flex-grow: 1; display: flex; flex-direction: column; gap: 8px; padding-top: 2px">
+                  <p style="margin: 0; font-size: 16px; line-height: 1.45; font-weight: 500">{{n.text}}</p>
+                  <span style="display: flex; align-items: center; gap: 6px; font-size: 12px; font-weight: 600; color: #3D5C60">
+                    <span style="width: 6px; height: 6px; border-radius: 3px; background: #4CB2B5"></span>{{n.meta}}
+                  </span>
+                </div>
+                <button type="button" aria-label="{{n.aria}}" onClick="{{n.forget}}" style="flex-shrink: 0; width: 44px; height: 44px; border: none; border-radius: 22px; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+                  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="#3D5C60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>
+                </button>
+              </div>
+            </sc-for>
+          </section>
+        </sc-for>
+
+        <div style="margin: 4px 16px 0 16px; background: #FFFFFF; border: 1px solid #DBF0ED; border-radius: 20px; padding: 18px; display: flex; flex-direction: column; gap: 12px">
+          <div style="display: flex; align-items: center; gap: 10px">
+            <span style="flex-shrink: 0; width: 32px; height: 32px; border-radius: 16px; background: #FFEFDD; display: flex; align-items: center; justify-content: center">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#8A4B12" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 0 1 8 0v3"/></svg>
+            </span>
+            <span style="font-size: 16px; font-weight: 800">You're in control</span>
+          </div>
+          <p style="margin: 0; font-size: 14px; line-height: 1.5; color: #3D5C60">{{controlBody}}</p>
+          <button type="button" onClick="{{openSheet}}" style="height: 48px; border: 1.5px solid #B3261E; border-radius: 14px; background: #FFFFFF; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 700; color: #B3261E; cursor: pointer">Forget everything</button>
+        </div>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{isReading}}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 14px; padding: 18px 16px 24px 16px" aria-live="polite">
+        <div style="background: #FFFFFF; border: 1px solid #DBF0ED; border-radius: 20px; padding: 20px; display: flex; flex-direction: column; align-items: center; gap: 12px; text-align: center">
+          <div style="position: relative; width: 84px; height: 84px; display: flex; align-items: center; justify-content: center">
+            <span style="position: absolute; width: 84px; height: 84px; border-radius: 42px; border: 1.5px dashed #78D0D0"></span>
+            <span style="position: absolute; width: 68px; height: 68px; border-radius: 34px; border: 1.5px solid #BBE4DE"></span>
+            <span style="width: 52px; height: 52px; border-radius: 26px; background: #113237; display: flex; align-items: center; justify-content: center"><img src="/_blob/f69af35610efe64c4d77bb0bd7c51176" alt="" style="width: 28px; height: 29px"></span>
+          </div>
+          <h2 style="margin: 0; font-size: 19px; font-weight: 800">{{readingTitle}}</h2>
+          <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3D5C60">{{readingBody}}</p>
+        </div>
+        <sc-for list="{{skeletons}}" as="k" hint-placeholder-count="3">
+          <div style="background: #FFFFFF; border: 1px solid #DBF0ED; border-radius: 18px; padding: 16px; display: flex; flex-direction: column; gap: 10px" aria-hidden="true">
+            <span style="width: 92px; height: 18px; border-radius: 9px; background: #DBF0ED"></span>
+            <span style="{{k.line1}}"></span>
+            <span style="{{k.line2}}"></span>
+          </div>
+        </sc-for>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{isEmpty}}" hint-placeholder-val="{{ false }}">
+      <div style="padding: 28px 16px 24px 16px; display: flex; flex-direction: column; gap: 16px">
+        <div style="background: #FFFFFF; border: 1px solid #DBF0ED; border-radius: 22px; padding: 26px 22px; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center">
+          <div style="position: relative; width: 96px; height: 96px; display: flex; align-items: center; justify-content: center">
+            <span style="position: absolute; width: 96px; height: 96px; border-radius: 48px; border: 1.5px dashed #BBE4DE"></span>
+            <span style="width: 64px; height: 64px; border-radius: 32px; background: #DBF0ED; display: flex; align-items: center; justify-content: center">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#26767B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-6-4-6 4z"/></svg>
+            </span>
+          </div>
+          <h2 style="margin: 0; font-size: 20px; font-weight: 800">Nothing here yet</h2>
+          <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3D5C60">{{emptyBody}}</p>
+          <button type="button" style="align-self: stretch; height: 52px; border: none; border-radius: 14px; background: #113237; color: #FFFFFF; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 700; display: flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+            {{talkLabel}}
+          </button>
+        </div>
+      </div>
+    </sc-if>
+  </div>
+
+  <sc-if value="{{showUndo}}" hint-placeholder-val="{{ false }}">
+    <div role="status" style="position: absolute; left: 16px; right: 16px; bottom: 24px; background: #113237; color: #FFFFFF; border-radius: 16px; padding: 6px 6px 6px 16px; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 30px rgba(17,50,55,0.25); overflow: hidden">
+      <span style="flex-grow: 1; font-size: 15px; font-weight: 600">Note forgotten</span>
+      <button type="button" onClick="{{undo}}" style="height: 44px; padding: 0 16px; border: none; border-radius: 12px; background: rgba(166,232,216,0.16); color: #A6E8D8; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 800; cursor: pointer">Undo</button>
+      <span style="position: absolute; left: 0; bottom: 0; height: 3px; width: 62%; background: #A6E8D8"></span>
+    </div>
+  </sc-if>
+
+  <sc-if value="{{showSheet}}" hint-placeholder-val="{{ false }}">
+    <div style="position: absolute; inset: 0; background: rgba(10,30,33,0.45); display: flex; flex-direction: column; justify-content: flex-end">
+      <div role="dialog" aria-label="Forget everything?" style="background: #FFFFFF; border-radius: 26px 26px 0 0; padding: 10px 20px 26px 20px; display: flex; flex-direction: column; gap: 14px">
+        <span style="align-self: center; width: 40px; height: 5px; border-radius: 3px; background: #DBF0ED"></span>
+        <span style="align-self: flex-start; width: 44px; height: 44px; border-radius: 22px; background: #FCE8E6; display: flex; align-items: center; justify-content: center">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#B3261E" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M10 11v6M14 11v6M6 7l1 13h10l1-13M9 7V4h6v3"/></svg>
+        </span>
+        <h2 style="margin: 0; font-size: 22px; font-weight: 800">Forget everything?</h2>
+        <p style="margin: 0; font-size: 15px; line-height: 1.5; color: #3D5C60">{{sheetBody}}</p>
+        <button type="button" onClick="{{forgetAll}}" style="height: 54px; border: none; border-radius: 14px; background: #B3261E; color: #FFFFFF; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 700; cursor: pointer">Forget everything</button>
+        <button type="button" onClick="{{closeSheet}}" style="height: 48px; border: none; border-radius: 14px; background: #F3FAF8; color: #113237; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 700; cursor: pointer">Keep my notes</button>
+      </div>
+    </div>
+  </sc-if>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"mode":{"editor":"enum","options":["list","reading","empty"],"default":"list"},"overlay":{"editor":"enum","options":["none","undo","sheet"],"default":"none"},"companionName":{"editor":"text","default":"Orca"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { filter: 'all', removed: [], undoId: null, sheet: null, cleared: false, undoDismissed: false };
+  }
+  componentWillUnmount() { if (this.t) clearTimeout(this.t); }
+  renderVals() {
+    const name = this.props.companionName ?? 'Orca';
+    const overlay = this.props.overlay ?? 'none';
+    const baseMode = this.props.mode ?? 'list';
+    const icons = {
+      mind: 'M7 18a5 5 0 0 1-.6-10A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z',
+      helps: 'M5 19c6 0 12-5 13-14C9 6 5 11 5 19zM5 19l7-7',
+      goal: 'M5 21V4M5 4h11l-2 4 2 4H5',
+      routine: 'M17 2l3 3-3 3M4 11V9a4 4 0 0 1 4-4h12M7 22l-3-3 3-3M20 13v2a4 4 0 0 1-4 4H4',
+      person: 'M12 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM4 21a8 8 0 0 1 16 0',
+      therapy: 'M4 5h16v15H4zM8 3v4M16 3v4M4 10h16'
+    };
+    const cats = [
+      { key: 'mind', label: 'On your mind' },
+      { key: 'helps', label: 'What helps' },
+      { key: 'goal', label: 'Goals' },
+      { key: 'routine', label: 'Routines' },
+      { key: 'person', label: 'People' },
+      { key: 'therapy', label: 'For therapy' }
+    ];
+    const all = [
+      { id: 1, cat: 'mind', text: 'Sunday evenings feel heavy, mostly worry about the week ahead.', meta: 'First conversation · Oct 4' },
+      { id: 2, cat: 'mind', text: 'Work deadlines tend to pile up at the end of each month.', meta: 'Reflect · Sep 30' },
+      { id: 3, cat: 'helps', text: 'An evening walk helps with winding down.', meta: 'Reflect · Oct 4' },
+      { id: 4, cat: 'helps', text: 'Calling your sister on Sundays takes the edge off.', meta: 'First conversation · Oct 4' },
+      { id: 5, cat: 'goal', text: 'Getting to bed before 11 on weeknights.', meta: 'After therapy · Oct 3' },
+      { id: 6, cat: 'routine', text: 'Five minutes of journaling on Sunday mornings.', meta: 'Past entries · Sep 21' },
+      { id: 7, cat: 'person', text: 'Ana, your sister, is who you call when it gets too much.', meta: 'First conversation · Oct 4' },
+      { id: 8, cat: 'therapy', text: 'You want to bring Sunday evenings to Thursday’s session.', meta: 'First conversation · Oct 4' }
+    ];
+    const live = this.state.cleared ? [] : all.filter((n) => this.state.removed.indexOf(n.id) < 0);
+    const mode = baseMode === 'list' && live.length === 0 ? 'empty' : baseMode;
+    const filter = this.state.filter;
+
+    const chip = (on) => 'flex-shrink: 0; height: 40px; padding: 0 14px; border-radius: 999px; font-family: Figtree, sans-serif; font-size: 14px; font-weight: 700; cursor: pointer; white-space: nowrap; ' +
+      (on ? 'background: #113237; color: #FFFFFF; border: 1px solid #113237' : 'background: #FFFFFF; color: #113237; border: 1px solid #DBF0ED');
+    const countStyle = (on) => 'margin-left: 4px; font-weight: 600; color: ' + (on ? '#A6E8D8' : '#3D5C60');
+    const filters = [{ key: 'all', label: 'All', count: String(live.length) }].concat(
+      cats.map((c) => ({ key: c.key, label: c.label, count: String(live.filter((n) => n.cat === c.key).length) })).filter((c) => c.count !== '0')
+    ).map((f) => ({
+      label: f.label, count: f.count, selected: f.key === filter ? 'true' : 'false',
+      style: chip(f.key === filter), countStyle: countStyle(f.key === filter),
+      pick: () => this.setState({ filter: f.key })
+    }));
+
+    const forget = (n) => () => {
+      if (this.t) clearTimeout(this.t);
+      this.setState({ removed: this.state.removed.concat([n.id]), undoId: n.id });
+      this.t = setTimeout(() => this.setState({ undoId: null }), 5000);
+    };
+    const sections = cats
+      .filter((c) => filter === 'all' || filter === c.key)
+      .map((c) => {
+        const notes = live.filter((n) => n.cat === c.key).map((n) => ({
+          text: n.text, meta: n.meta, aria: 'Forget this note: ' + n.text, forget: forget(n)
+        }));
+        return { label: c.label, icon: icons[c.key], count: notes.length === 1 ? '1 note' : notes.length + ' notes', notes: notes };
+      })
+      .filter((s) => s.notes.length > 0);
+
+    const sheetOpen = this.state.sheet === null ? overlay === 'sheet' : this.state.sheet;
+    const undoOpen = this.state.undoId !== null || (overlay === 'undo' && !this.state.undoDismissed && this.state.removed.length === 0);
+
+    const lineStyle = (w) => 'height: 12px; width: ' + w + '%; border-radius: 6px; background: #EAF5F2';
+    return {
+      title: 'What ' + name + ' remembers',
+      subline: mode === 'reading' ? 'Looking back at your history' : (mode === 'empty' ? 'No notes yet' : live.length + ' notes · last added today'),
+      usedInLabel: name + ' uses these notes in',
+      isList: mode === 'list',
+      isReading: mode === 'reading',
+      isEmpty: mode === 'empty',
+      filters: filters,
+      sections: sections,
+      controlBody: 'Forgotten notes are deleted for good, and ' + name + ' won’t learn them again from past conversations. If you bring something up again later, ' + name + ' may remember it again.',
+      readingTitle: name + ' is looking back',
+      readingBody: name + ' is reading your past conversations and entries to pick out what’s worth remembering. This takes about a minute.',
+      skeletons: [[88, 64], [76, 52], [92, 40]].map((p) => ({ line1: lineStyle(p[0]), line2: lineStyle(p[1]) })),
+      emptyBody: 'After you talk with ' + name + ', the things worth remembering will show up here.',
+      talkLabel: 'Talk with ' + name,
+      showUndo: mode === 'list' && undoOpen && !sheetOpen,
+      undo: () => { if (this.t) clearTimeout(this.t); this.setState({ removed: this.state.removed.filter((id) => id !== this.state.undoId), undoId: null, undoDismissed: true }); },
+      showSheet: mode === 'list' && sheetOpen,
+      sheetBody: name + ' will delete every note listed here. This can’t be undone, and later conversations will start without them.',
+      openSheet: () => this.setState({ sheet: true }),
+      closeSheet: () => this.setState({ sheet: false }),
+      forgetAll: () => this.setState({ sheet: false, cleared: true, undoId: null })
+    };
+  }
+}
+</script>
+</body>
+</html>

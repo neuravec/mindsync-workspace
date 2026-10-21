@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Companion ready, current</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #113237; font-family: Figtree, sans-serif; color: #FFFFFF; padding: 48px 24px 32px 24px; display: flex; flex-direction: column; align-items: center; gap: 16px">
+  <div style="width: 120px; height: 120px; border-radius: 60px; background: #1F4C50; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; color: #BBE4DE"><img src="/_blob/26348b0ce4ef06c6695e3abf8d29e765" alt="" style="width: 70px; height: 72px"></div>
+  <div style="font-size: 22px; font-weight: 600; text-align: center; color: #DBF0ED; line-height: 1.3">[Orca] is ready to start this journey with you</div>
+  <div style="margin-top: 16px; background: rgba(255,255,255,0.10); border: 1px solid rgba(219,240,237,0.2); border-radius: 16px; padding: 18px; font-size: 16px; line-height: 1.5; text-align: center; color: rgba(255,255,255,0.9)">[AI welcome message written from the onboarding answers]</div>
+  <div style="height: 16px"></div>
+  <sc-if value="{{inTherapy}}" hint-placeholder-val="{{ true }}">
+    <button type="button" style="width: 100%; height: 54px; border: none; border-radius: 14px; background: #DBF0ED; color: #113237; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 700">Capture a past session</button>
+  </sc-if>
+  <sc-if value="{{notInTherapy}}" hint-placeholder-val="{{ false }}">
+    <div style="width: 100%; display: flex; flex-direction: column; gap: 10px">
+      <div style="font-size: 15px; color: rgba(255,255,255,0.85)">I'd like to start with:</div>
+      <sc-for list="{{opts}}" as="o" hint-placeholder-count="3">
+        <div style="height: 52px; border-radius: 14px; background: #DBF0ED; color: #113237; display: flex; align-items: center; padding: 0 16px; font-size: 15px; font-weight: 600">{{o}}</div>
+      </sc-for>
+    </div>
+  </sc-if>
+  <button type="button" style="width: 100%; height: 48px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; color: rgba(219,240,237,0.8)">Take me to the app</button>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"inTherapy":{"editor":"boolean","default":true},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const t = this.props.inTherapy ?? true;
+    return { inTherapy: t, notInTherapy: !t, opts: ['a reflective chat with [Orca]', "writing down what's on my mind today", 'a quick check-in'] };
+  }
+}
+</script>
+</body>
+</html>

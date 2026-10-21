@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Your first week with Orca</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 1500px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; padding: 48px 20px 28px 20px; display: flex; flex-direction: column; gap: 18px">
+
+<a href="Main.dc.html" aria-label="Close" style="width: 48px; height: 48px; border-radius: 24px; background: #FFFFFF; border: 1px solid #DBF0ED; display: flex; align-items: center; justify-content: center"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></a>
+
+<div style="display: flex; flex-direction: column; gap: 10px">
+<span aria-hidden="true" style="width: 60px; height: 60px; border-radius: 30px; background: #DBF0ED; display: flex; align-items: center; justify-content: center"><svg width="32" height="32" viewBox="0 0 24 24" fill="#113237"><path d="M5 19c2.5-1 4.4-4.2 5.3-9.4C10.8 6.6 12.3 4.4 15 4c-.9 1.9-1.1 4.2-.6 6.9.6 3.3 2.2 6.3 4.6 8.1H5z"/></svg></span>
+<h1 style="margin: 0; font-size: 30px; line-height: 1.12; font-weight: 800">Your first week with Orca</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #5A7A73">{{sub}}</p>
+</div>
+
+<section aria-label="What you did" style="border-radius: 20px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+<h2 style="margin: 0 0 4px 0; font-size: 18px; font-weight: 800">What you did</h2>
+<sc-for list="{{did}}" as="d" hint-placeholder-count="4">
+<div style="display: flex; align-items: center; gap: 10px; min-height: 30px">
+<span aria-hidden="true" style="flex-shrink: 0; width: 24px; height: 24px; border-radius: 12px; background: #26767B; display: flex; align-items: center; justify-content: center"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+<span style="font-size: 16px; font-weight: 600">{{d}}</span>
+</div>
+</sc-for>
+</section>
+
+<sc-if value="{{full}}" hint-placeholder-val="{{ true }}">
+<section aria-label="Where things are" style="border-radius: 20px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 8px 16px; display: flex; flex-direction: column">
+<h2 style="margin: 8px 0 4px 0; font-size: 18px; font-weight: 800">Where things are</h2>
+<sc-for list="{{rows}}" as="r" hint-placeholder-count="3">
+<div role="group" aria-label="{{r.aria}}" style="display: flex; align-items: center; gap: 12px; min-height: 52px; border-top: 1px solid #F2FBFA">
+<span style="flex-grow: 1; font-size: 16px; font-weight: 700">{{r.name}}</span>
+<span aria-hidden="true" style="width: 72px; text-align: center; font-size: 15px; color: #5A7A73">Setup {{r.was}}</span>
+<span aria-hidden="true" style="width: 72px; text-align: center; font-size: 15px; font-weight: 800">Latest {{r.now}}</span>
+</div>
+</sc-for>
+</section>
+</sc-if>
+
+<sc-if value="{{full}}" hint-placeholder-val="{{ true }}">
+<section aria-label="Orca noticed" style="border-radius: 20px; background: #F2FBFA; padding: 16px; display: flex; flex-direction: column; gap: 6px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 800">Orca noticed</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #1F4C50">Sleep came up in both of your talks this week.</p>
+<span style="font-size: 14px; color: #5A7A73">This is also in your weekly summary in Timeline.</span>
+</section>
+</sc-if>
+
+<sc-if value="{{showMentions}}" hint-placeholder-val="{{ true }}">
+<section aria-label="You mentioned" style="border-radius: 20px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 8px 16px 4px 16px; display: flex; flex-direction: column">
+<h2 style="margin: 8px 0 4px 0; font-size: 18px; font-weight: 800">You mentioned</h2>
+<sc-for list="{{mentions}}" as="m" hint-placeholder-count="3">
+<div style="display: flex; align-items: center; gap: 10px; min-height: 52px; border-top: 1px solid #F2FBFA">
+<span style="flex-grow: 1; font-size: 16px; line-height: 1.4">{{m.text}}</span>
+<button type="button" onClick="{{m.toggle}}" style="flex-shrink: 0; min-height: 44px; padding: 0 10px; border-radius: 12px; border: 1px solid #BBE4DE; background: #FFFFFF; font-family: Figtree, sans-serif; font-size: 14px; font-weight: 700; color: #1F4C50; cursor: pointer">{{m.label}}</button>
+</div>
+</sc-for>
+<a href="#" style="align-self: flex-start; min-height: 48px; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #1F4C50">See all in What Orca remembers</a>
+</section>
+</sc-if>
+
+<section aria-label="Your rhythm from here" style="border-radius: 20px; background: #F2FBFA; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 800">Your rhythm from here</h2>
+<p style="margin: 0; font-size: 15px; line-height: 1.45; color: #1F4C50">{{rhythmHint}}</p>
+<sc-for list="{{rhythm}}" as="c" hint-placeholder-count="3">
+<button type="button" role="switch" aria-checked="{{c.checked}}" onClick="{{c.toggle}}" style="display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 60px; padding: 8px 14px; box-sizing: border-box; border-radius: 14px; border: 1px solid #DBF0ED; background: #FFFFFF; font-family: Figtree, sans-serif; color: #113237; text-align: left; cursor: pointer">
+<span style="display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 700">{{c.label}}</span><span style="font-size: 13px; font-weight: 500; color: #5A7A73">{{c.limit}}</span></span>
+<span style="{{c.track}}"><span style="width: 22px; height: 22px; border-radius: 11px; background: #FFFFFF"></span></span>
+</button>
+</sc-for>
+<button type="button" aria-label="Reminder time, 7:00 pm. Change time" style="align-self: flex-start; min-height: 44px; padding: 0 12px; border-radius: 12px; border: 1px solid #BBE4DE; background: #FFFFFF; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 700; color: #113237; cursor: pointer">Reminders at 7:00 pm</button>
+</section>
+
+<div style="flex-grow: 1"></div>
+<a href="HomeWeek2.dc.html" style="height: 56px; border-radius: 18px; background: #113237; color: #FFFFFF; font-size: 17px; font-weight: 800; display: flex; align-items: center; justify-content: center; text-decoration: none">Keep this rhythm</a>
+<a href="Main.dc.html" style="align-self: center; min-height: 48px; display: flex; align-items: center; padding: 0 12px; font-size: 16px; font-weight: 700; color: #5A7A73; text-decoration: none">I'll find my own way</a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"branch":{"editor":"enum","options":["schedule","none"],"default":"schedule"},"quiet":{"editor":"boolean","default":false},"memoryConsent":{"editor":"boolean","default":true},"$preview":{"width":390,"height":1500}}'>
+class Component extends DCLogic {
+  state = { flip: {}, removed: {} };
+
+  renderVals() {
+    const therapy = (this.props.branch ?? 'schedule') === 'schedule';
+    const quiet = !!(this.props.quiet ?? false);
+    const consent = !!(this.props.memoryConsent ?? true);
+    const did = quiet ? ['First talk with Orca'] : (therapy
+      ? ['First talk with Orca', 'A follow-up, by voice', "Ready for Thursday's session", 'Session captured', 'A quick check-in']
+      : ['First talk with Orca', 'A follow-up, by voice', 'A voice note with a summary', 'A quick check-in', 'A short talk with Orca']);
+    const mentionTexts = quiet
+      ? ['Sleep has been rough lately', 'Work has felt like a lot']
+      : ['Sleep has been rough lately', 'Work has felt like a lot', 'Walks help you clear your head'];
+    const mentions = mentionTexts.map((text, i) => {
+      const gone = !!this.state.removed[i];
+      return {
+        text: gone ? 'Removed. Orca will forget this.' : text,
+        label: gone ? 'Undo' : 'Not right',
+        toggle: () => this.setState({ removed: { ...this.state.removed, [i]: !gone } })
+      };
+    });
+    const opts = quiet
+      ? [{ label: 'A talk with Orca on Wednesdays', limit: 'Writing is free, up to 15 messages a month', on: false }]
+      : (therapy
+        ? [
+          { label: 'Before and after each session', limit: 'On Free: 1 of each a month; other weeks, add points to your agenda', on: true },
+          { label: 'Quick check-in on Mondays', limit: 'Always free', on: true },
+          { label: 'A talk with Orca on Wednesdays', limit: 'Writing is free, up to 15 messages a month', on: false }
+        ]
+        : [
+          { label: 'Quick check-in on Mondays', limit: 'Always free', on: true },
+          { label: 'A talk with Orca on Wednesdays', limit: 'Writing is free, up to 15 messages a month', on: true },
+          { label: 'A voice note on Fridays', limit: 'On Free: 3 a month', on: false }
+        ]);
+    const rhythm = opts.map((o, i) => {
+      const flipped = !!this.state.flip[i];
+      const on = flipped ? !o.on : o.on;
+      return {
+        label: o.label,
+        limit: o.limit,
+        checked: on ? 'true' : 'false',
+        toggle: () => this.setState({ flip: { ...this.state.flip, [i]: !flipped } }),
+        track: 'flex-shrink: 0; width: 46px; height: 28px; border-radius: 14px; padding: 3px; box-sizing: border-box; display: flex; align-items: center; background: ' + (on ? '#26767B' : '#5A7A73') + '; justify-content: ' + (on ? 'flex-end' : 'flex-start')
+      };
+    });
+    return {
+      sub: quiet ? "A quiet week is fine. Here's where you are, and Orca is here whenever you want to talk." : "Here's what this week looked like.",
+      did: did,
+      full: !quiet,
+      showMentions: consent,
+      rows: [
+        { name: 'Stress', was: '8', now: '6', aria: 'Stress: 8 in setup, 6 at the latest check-in' },
+        { name: 'Sleep', was: '7', now: '7', aria: 'Sleep: 7 in setup, 7 at the latest check-in' },
+        { name: 'Worries', was: '6', now: '6', aria: 'Worries: 6 in setup, 6 at the latest check-in' }
+      ],
+      mentions: mentions,
+      rhythmHint: quiet ? 'Only if it helps. You can change this any time.' : 'Based on your week. It starts tomorrow. Keep what fits.',
+      rhythm: rhythm
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Your MindSync is ready</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#FFFFFF}a:hover{color:#FFFFFF}
+.ms-scroll::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; overflow: hidden">
+  <div class="ms-scroll" style="flex-grow: 1; overflow-y: auto; scrollbar-width: none">
+
+    <div style="background: #113237; color: #FFFFFF; padding: 56px 24px 28px 24px; display: flex; flex-direction: column; gap: 14px">
+      <div style="display: flex; align-items: center; gap: 12px">
+        <div style="flex-shrink: 0; width: 56px; height: 56px; border-radius: 28px; background: #1F4C50; border: 2px solid #4CB2B5; display: flex; align-items: center; justify-content: center"><img src="/_blob/f69af35610efe64c4d77bb0bd7c51176" alt="" style="width: 32px; height: 33px"></div>
+        <span style="font-size: 13px; font-weight: 700; letter-spacing: 1px; text-transform: uppercase; color: #FFC88A">Your setup</span>
+      </div>
+      <h1 style="margin: 0; font-size: 30px; line-height: 1.12; font-weight: 800; letter-spacing: -0.5px">[Name], your MindSync is ready.</h1>
+      <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #DBF0ED">Built from your answers. One step left, and it's the best one.</p>
+    </div>
+
+    <div style="padding: 22px 20px 0 20px; display: flex; flex-direction: column; gap: 10px">
+      <h2 style="margin: 0; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #26767B">Your focus areas</h2>
+      <div style="background: #FFFFFF; border: 1px solid #DBF0ED; border-radius: 18px; padding: 6px 16px">
+        <sc-for list="{{areas}}" as="a" hint-placeholder-count="3">
+          <div style="{{a.row}}">
+            <span style="flex-grow: 1; font-size: 16px; font-weight: 700">{{a.label}}</span>
+            <span style="display: flex; gap: 3px" aria-label="{{a.aria}}">
+              <sc-for list="{{a.bars}}" as="b" hint-placeholder-count="5"><span style="{{b}}"></span></sc-for>
+            </span>
+          </div>
+        </sc-for>
+      </div>
+    </div>
+
+    <div style="padding: 22px 20px 0 20px; display: flex; flex-direction: column; gap: 10px">
+      <h2 style="margin: 0; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #26767B">[Orca]'s first read on you</h2>
+      <div style="background: #FFEFDD; border: 1px solid #FFC88A; border-radius: 18px; padding: 18px; display: flex; flex-direction: column; gap: 10px">
+        <p style="margin: 0; font-size: 17px; line-height: 1.5; font-weight: 500; color: #113237">“[Starter bio, Your Patterns section: 1-2 sentences written from the focus areas and how heavy they feel, in the chosen tone.]”</p>
+        <span style="font-size: 13px; color: #6B3A0E">A first guess. It gets sharper after you talk.</span>
+      </div>
+    </div>
+
+    <div style="padding: 22px 20px 28px 20px; display: flex; flex-direction: column; gap: 10px">
+      <h2 style="margin: 0; font-size: 13px; font-weight: 800; letter-spacing: 1px; text-transform: uppercase; color: #26767B">Next: meet [Orca]</h2>
+      <div style="display: flex; gap: 14px; align-items: center; background: #FFFFFF; border: 1px solid #DBF0ED; border-radius: 18px; padding: 16px">
+        <span style="flex-shrink: 0; width: 48px; height: 48px; border-radius: 24px; background: #DBF0ED; display: flex; align-items: center; justify-content: center">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+        </span>
+        <span style="display: flex; flex-direction: column; gap: 3px">
+          <span style="font-size: 16px; font-weight: 700">A 3-minute voice conversation</span>
+          <span style="font-size: 14px; line-height: 1.4; color: #3D5C60">[Orca] already knows what you shared, so you start where it matters.</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <div style="flex-shrink: 0; background: #FFFFFF; border-top: 1px solid #DBF0ED; padding: 12px 20px 28px 20px; display: flex; flex-direction: column; gap: 8px">
+    <a href="VoiceIntro.dc.html" style="height: 56px; border-radius: 16px; background: #113237; color: #FFFFFF; font-size: 17px; font-weight: 700; text-decoration: none; display: flex; align-items: center; justify-content: center; gap: 10px">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+      Talk with [Orca]
+    </a>
+    <p style="margin: 0; text-align: center; font-size: 13px; color: #3D5C60">About 3 minutes · You can stop anytime</p>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const mk = (label, lvl, i) => ({
+      label: label,
+      aria: 'Intensity ' + lvl + ' of 5',
+      row: 'display: flex; align-items: center; gap: 12px; padding: 13px 0; ' + (i ? 'border-top: 1px solid #E3F2EF' : ''),
+      bars: [1, 2, 3, 4, 5].map((n) => 'width: 8px; height: ' + (6 + n * 3) + 'px; align-self: flex-end; border-radius: 2px; background: ' + (n <= lvl ? '#26767B' : '#DBF0ED'))
+    });
+    return { areas: [mk('[Anxiety]', 4, 0), mk('[Sleep]', 3, 1), mk('[Relationships]', 2, 2)] };
+  }
+}
+</script>
+</body>
+</html>

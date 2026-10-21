@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Building your space</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+@keyframes ms-spin{to{transform:rotate(360deg)}}
+.ms-spin{animation:ms-spin .9s linear infinite}
+@keyframes ms-pulse{0%,100%{transform:scale(1);opacity:.55}50%{transform:scale(1.08);opacity:.9}}
+.ms-pulse{animation:ms-pulse 2.4s ease-in-out infinite}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #113237; font-family: Figtree, sans-serif; color: #FFFFFF; padding: 80px 28px 32px 28px; display: flex; flex-direction: column; gap: 28px">
+  <div style="align-self: center; position: relative; width: 132px; height: 132px; display: flex; align-items: center; justify-content: center">
+    <div class="ms-pulse" style="position: absolute; left: 0; top: 0; width: 132px; height: 132px; border-radius: 66px; background: rgba(76,178,181,0.25)"></div>
+    <div style="position: relative; width: 100px; height: 100px; border-radius: 50px; background: #1F4C50; border: 2px solid #4CB2B5; display: flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 700; color: #BBE4DE"><img src="/_blob/26348b0ce4ef06c6695e3abf8d29e765" alt="" style="width: 58px; height: 60px"></div>
+  </div>
+  <div style="text-align: center; display: flex; flex-direction: column; gap: 8px">
+    <h1 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 800">[Orca] is setting up your app, [Name]</h1>
+    <p style="margin: 0; font-size: 15px; color: #BBE4DE">Based on the answers you just gave.</p>
+  </div>
+
+  <ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 14px" aria-live="polite">
+    <sc-for list="{{steps}}" as="s" hint-placeholder-count="4">
+      <li style="{{s.row}}">
+        <sc-if value="{{s.done}}" hint-placeholder-val="{{ false }}">
+          <span style="flex-shrink: 0; width: 28px; height: 28px; border-radius: 14px; background: #FFC88A; display: flex; align-items: center; justify-content: center"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+        </sc-if>
+        <sc-if value="{{s.active}}" hint-placeholder-val="{{ false }}">
+          <span style="flex-shrink: 0; width: 28px; height: 28px; display: flex; align-items: center; justify-content: center"><svg class="ms-spin" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#BBE4DE" stroke-width="2.4" stroke-linecap="round"><path d="M12 3a9 9 0 1 1-9 9"/></svg></span>
+        </sc-if>
+        <sc-if value="{{s.waiting}}" hint-placeholder-val="{{ true }}">
+          <span style="flex-shrink: 0; width: 28px; height: 28px; box-sizing: border-box; border-radius: 14px; border: 2px solid rgba(187,228,222,0.3)"></span>
+        </sc-if>
+        <span style="display: flex; flex-direction: column; gap: 2px">
+          <span style="font-size: 16px; font-weight: 700">{{s.t}}</span>
+          <span style="font-size: 13px; color: #BBE4DE">{{s.d}}</span>
+        </span>
+      </li>
+    </sc-for>
+  </ol>
+
+  <div style="flex-grow: 1"></div>
+  <button type="button" onClick="{{replay}}" style="align-self: center; height: 44px; border: 1px solid rgba(187,228,222,0.35); border-radius: 22px; background: transparent; color: #BBE4DE; font-family: Figtree, sans-serif; font-size: 13px; font-weight: 600; padding: 0 16px; cursor: pointer">Replay animation (design only)</button>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { step: 0 };
+  }
+  componentDidMount() { this.run(); }
+  componentWillUnmount() { if (this.t) clearInterval(this.t); }
+  run() {
+    if (this.t) clearInterval(this.t);
+    this.setState({ step: 0 });
+    this.t = setInterval(() => {
+      if (this.state.step >= 4) { clearInterval(this.t); return; }
+      this.setState({ step: this.state.step + 1 });
+    }, 1100);
+  }
+  renderVals() {
+    const items = [
+      { t: 'Saving your focus areas', d: '[3] areas and how heavy each one feels' },
+      { t: 'Setting reminders for your sessions', d: 'Sessions on [Thursdays at 6:00 PM]' },
+      { t: 'Setting how [Orca] talks to you', d: 'Talks like a [coach]' },
+      { t: "Writing [Orca]'s first read on you", d: 'Based only on what you told us' }
+    ];
+    const step = this.state.step;
+    return {
+      steps: items.map((it, i) => ({
+        ...it,
+        done: i < step,
+        active: i === step,
+        waiting: i > step,
+        row: 'display: flex; align-items: center; gap: 14px; transition: opacity .3s; opacity: ' + (i > step ? '0.45' : '1')
+      })),
+      replay: () => this.run()
+    };
+  }
+}
+</script>
+</body>
+</html>

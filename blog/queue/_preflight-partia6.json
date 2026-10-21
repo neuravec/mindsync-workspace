@@ -1,0 +1,84 @@
+{
+  "_opis": "KROK 0 partia 6 bloga MindSync (2026-10-07). Trzecia partia stylem Moniki (docs/blog/brand-mindsync.md par. 2, wzorzec docs/blog/voice-sample-monika.md). 5 tematow do realizacji (drip 2026-10-08..2026-10-12, 1 dziennie, bez dziur) plus 2 rezerwy bez briefow. Dobor tematow: pozycja 6 z blog/queue/_gsc-odswiezenia.md ZAAKCEPTOWANA przez operatora 2026-09-28 (nowe wpisy wokol klastrow, ktore Google juz laczy z nami): (a) koszty terapii x2, (b) zmiana terapeuty i platformy x2, (c) prywatnosc aplikacji i AI x1. Dane: seo/blog/gsc-wyniki/BLOG-WYNIKI-2026-10-07.md (blog 1738 wysw., 17 klik., poz. 9,1; widoczne frazy 248 z 1738). Zadna fraza glowna partii NIE ma jeszcze wlasnych wyswietlen w GSC (nowe intencje); jedyne dosłowne zapytanie z GSC uzyte w partii to FAQ wpisu 03 ('what should i do if my betterhelp therapist isn't the right fit?', 9 wysw., poz. 23,1 na wpisie fit, czyli poza top 15). Frazy glowne i poboczne z researchu SERP 2026-10-07 (tytuly: Grow Therapy, Rula, SimplePractice, TherapyDen, Simply Psychology, SonderMind, Spring Health, Talkspace, Zocdoc, Psych Central, Healthgrades, Medical News Today, Northeastern). Brak wolumenow i KD (Ahrefs niedostepny w subagencie; zapytania do Keywords Explorer w briefach). Mapowanie na klastry z blog/kalendarz-tresci.md: 4 (Therapy logistics) x3, 6 (Data & measurement) x1, 1 (Getting more from therapy) x1; rezerwy: 5 x2. Klaster 7 (For therapists) ZAMROZONY. Keywordy EN to DOSLOWNE podciagi z blog/app-features.json (id + name + short + keywords). Uruchomienie bramki: python scripts/blog-coverage-preflight.py --temat blog/queue/_preflight-partia6.json",
+
+  "_wynik_bramki": "Wynik wyliczony RECZNIE wedlug logiki skryptu (substring znormalizowanego keywordu w blobie funkcji id+name+short+keywords; werdykt OK gdy >= 1 funkcja live). Oczekiwany wynik uruchomienia: 7x OK, 0 RYZYKO, 0 BRAK, exit code 0. 01: session-prep ('therapy prep', 'therapy agenda'), workspace ('therapy agenda'), homework ('therapy homework', 'follow through'), goals ('therapy goals'), mood-trends ('is therapy working'), summaries ('monthly summary'), session-recording ('remember therapy'). 02: reflect ('ai journaling', 'voice chat', 'journaling app'), mood-trends ('mental health data'), timeline ('recycle bin' z pola short), voice-notes ('review and accept' z pola short), check-ins ('mood log'). 03: health-check ('switch therapist', 'therapy fit', 'is my therapist right for me'), timeline ('therapy record', 'therapy journey'), summaries ('progress report'), goals ('therapy goals'), session-prep ('questions for therapist'). 04: timeline ('therapy timeline', 'history'), check-ins ('history' w 'trend history'), summaries ('monthly summary'), session-prep ('session preparation', 'what to talk about in therapy'), session-recording ('remember therapy'), workspace ('insights from therapy', 'realizations'). 05: summaries ('progress report'), mood-trends ('progress over time', 'is therapy working'), goals ('therapy goals', 'goal tracking'), timeline ('therapy record'), session-prep ('therapy agenda', 'before session'), workspace ('therapy agenda'). 06 i 07 (rezerwy) = listy z partii 5 (08 i 09), juz policzone jako OK. Zadne slowo nie trafia w funkcje planned: sprawdzone recznie przeciw blobom streaks ('journaling habit', 'consistency', 'character', 'companion', 'milestones') i therapist-sharing ('share with therapist', 'show therapist', 'between sessions data', 'consent', 'clinician'); dlatego w listach nie ma golego 'session', 'therapist', 'share', 'journaling' ani 'consent' ('journaling app' i 'switch therapist' nie sa podciagami blobow planned). Funkcji eksportu danych NIE MA w katalogu: zaden keyword ani karta jej nie dotyczy. DO POTWIERDZENIA przez lidera jednym uruchomieniem komendy z _opis.",
+
+  "_zasady_partii": "Nie obiecujemy funkcji planned: streaks (brak UI) i therapist-sharing (portal ukryty, MSV3.4 CS-11). 'Bring it to your next session' dozwolone (czytelnik sam niesie notatki), zero sugestii wysylania czegokolwiek terapeucie z apki; w 03 i 04 'take it to your new therapist' znaczy: przeczytaj, wydrukuj, pokaz telefon, opowiedz. Habit Tracker i ekran wyboru trybu w Reflect poza katalogiem: zadna karta i zadne zdanie na nich. EKSPORT DANYCH: apka go NIE ma (brak w katalogu, notatka 2026-09-03), wiec zaden wpis nie obiecuje 'export your entries' ani 'download your history'; w 04 przenoszenie historii odbywa sie przez czytanie osi czasu i podsumowan, nie przez plik. USUWANIE KONTA istnieje (opisane we wpisie are-mental-health-apps-private wg stanu z 09.2026), ale nie ma go w katalogu: wolno opisac proza w 02 dopiero po weryfikacji na froncie (redesign subskrypcji i menu 2026-10-03 mogl zmienic sciezke) i w polityce prywatnosci, bez karty. Lekcje z partii 4 nadal wiazace: Mood & focus-area trends wykresla WYLACZNIE oceny z check-inow; Voice notes to transkrypcje bez odtwarzania (nigdy 'listen back'). Nagrywanie sesji zawsze 'ask your therapist first'. YMYL: 01 i 05 to nie porada finansowa ani prawna, liczby o kosztach WYLACZNIE ze zrodlem i data, kontekst USA nazwany wprost; 01 nie namawia do rzadszych sesji bez rozmowy z terapeuta (Bruijniks 2020); 02 nie odradza ani nie poleca AI jako terapii, zero przypadkow kryzysowych i pozwow dotyczacych samobojstw (decyzja operatora); 03 i 04 nie oceniaja platform ani terapeutow, nazwy BetterHelp i Talkspace tylko w faktach z ich wlasnych stron pomocy; 05 nie opisuje regul parytetu z 2024 jako egzekwowanych (wstrzymane 15.05.2025).",
+
+  "_granice_kanibalizacji": "01 trzyma 'how to afford therapy / affordable therapy / sliding scale therapy / low cost therapy / therapy without insurance / how to pay less for therapy' i NIE przejmuje: 'is therapy worth the money / is therapy worth the cost / is therapy expensive / how much is therapy a month / how much does therapy cost' (wszystkie w top 20 na /journal/is-therapy-worth-the-money; to pozycja 1 z _gsc-odswiezenia, rozbudowa istniejacego wpisu), sredniej ceny sesji (SimplePractice, Grow: jedno zdanie i link), liczby sesji (/journal/how-long-therapy-takes-to-work), ubezpieczenia poza jednym zdaniem (05). 02 trzyma 'is it safe to talk to AI about mental health / is ChatGPT private / AI therapy privacy / does ChatGPT train on my chats / are AI chats confidential' i NIE przejmuje: czytania polityki prywatnosci aplikacji (7 slow, HIPAA, usuwanie danych, 'which mental health apps do not sell data', 'what ai mental health app will not share my personal conversations' oraz zapytan o export i account deletion: wszystko w top 15 na /journal/are-mental-health-apps-private, zostaje tam jako FAQ z pozycji 4 _gsc-odswiezenia). 03 trzyma 'how to switch therapists / changing therapists / how to change therapist on BetterHelp / switch provider on Talkspace / is it rude to switch therapists' w ujeciu MECHANIKI ZMIANY i NIE przejmuje: rozpoznania zlego dopasowania, rupture vs bad fit, zdan do rozmowy z obecnym terapeuta, FAQ 'How do I tell my therapist I want to switch?', 'Do I have to tell my therapist why I am leaving?', 'Should I give my therapist another chance?' (/journal/what-to-do-when-your-therapist-is-not-the-right-fit), pytan na konsultacje i 'first three sessions' (/journal/how-to-choose-a-therapist), konca zaplanowanego (/journal/when-to-stop-therapy). 03 konczy sie w momencie umowienia nowej osoby. 04 trzyma 'starting over with a new therapist / what to tell a new therapist / first session with a new therapist / can I get my therapy records' i zaczyna sie od pierwszej sesji z nowa osoba; NIE powtarza mechaniki zmiany (03), pytan konsultacyjnych (how-to-choose), techniki agendy sesji (/journal/how-to-prepare-for-a-therapy-session: jedno zdanie i link) ani debriefu po sesji (/journal/how-to-remember-what-you-talk-about-in-therapy: link, nie powtorka). 05 trzyma 'does insurance cover therapy / how to use insurance for therapy / out-of-network therapy / superbill / HSA FSA therapy / how many sessions does insurance cover' i NIE przejmuje sposobow bez ubezpieczenia (01: jedno zdanie i link) ani wartosci terapii (is-therapy-worth-the-money).",
+
+  "_plan_dripu": "01 how-to-afford-therapy (2026-10-08), 02 is-it-safe-to-talk-to-ai-about-mental-health (2026-10-09), 03 how-to-switch-therapists (2026-10-10), 04 starting-over-with-a-new-therapist (2026-10-11), 05 does-insurance-cover-therapy (2026-10-12). Klastry 4, 6, 4, 1, 4: zaden klaster dwa dni z rzedu. Kolejnosc pod linkowanie: wszystkie linki wewnatrz partii biegna WSTECZ (03 -> 01, 04 -> 03, 05 -> 01, 05 -> 03), wiec partia nie tworzy dlugu [LINK-LATER:]. Link 01 -> 05 (ubezpieczenie) i 02 -> nic nie powstaja w tresci; 01 -> 05 idzie jako PATCH po publikacji 05 (lista w briefach). Pierwszy wpis to JUTRO 07:00: jesli proza 01 nie zdazy, przesun CALA partie o tyle samo dni z zachowaniem kolejnosci. Gdyby tylko jeden wpis wypadl, link do niego w pozniejszym wpisie zamienia sie na [LINK-LATER: slug | ten sam anchor] wg blog/queue/_format.md.",
+
+  "_odrzucone": "(a) 'how many therapy sessions do I need / ile sesji potrzeba' jako osobny wpis: intencje trzyma /journal/how-long-therapy-takes-to-work (FAQ 'How many therapy sessions do I need?') i FAQ is-therapy-worth-the-money; nowy wpis to kanibalizacja; w 05 tylko 'how many sessions does insurance cover' (limit planu, nie dawka). (b) 'is therapy expensive / how much is therapy a month': frazy z GSC na is-therapy-worth-the-money (poz. 10-19) = rozbudowa istniejacego wpisu (pozycja 1 _gsc-odswiezenia), nie nowy wpis. (c) 'which mental health apps do not sell data / what to verify about data export and account deletion / checklist przed instalacja': are-mental-health-apps-private JUZ jest checklista przed instalacja (tytul 'A Checklist Before You Type Anything') i ma pozycje 1-6 na tych zapytaniach; wlasciwa akcja to FAQ w istniejacym wpisie (pozycja 4); dodatkowo eksportu danych w apce nie ma, wiec wpis 'how to export your data' prowadzilby w slepy zaulek. (d) 'how to delete your data from a mental health app': sekcja i FAQ w are-mental-health-apps-private. (e) 'BetterHelp vs Talkspace': strona porownawcza konkurentow, ryzyko prawne i marki, a nasza intencja to zmiana terapeuty, nie wybor platformy. (f) 'free therapy / free therapy apps': SERP prowadzi do linii kryzysowych i polecania konkurencji; tematy kryzysowe tylko za decyzja operatora. (g) 'Medicaid and therapy' osobno: reguly zalezne od stanu, jedno zdanie w 05. (h) 'therapist red flags': granica przemocowa i licencyjna, jedno zdanie we wpisie fit juz jest. (i) Loneliness in adulthood i imposter syndrome zostaja rezerwami (06, 07): operator zaakceptowal priorytet trzech klastrow, a partia ma juz piec tematow z nich.",
+
+  "01 KLASTER4 [2026-10-08]: how to afford therapy (the price tag is not the only door)": [
+    "therapy prep",
+    "therapy agenda",
+    "therapy homework",
+    "follow through",
+    "therapy goals",
+    "is therapy working",
+    "monthly summary",
+    "remember therapy"
+  ],
+
+  "02 KLASTER6 [2026-10-09]: is it safe to talk to AI about mental health (what happens to the 2 a.m. confession)": [
+    "ai journaling",
+    "voice chat",
+    "journaling app",
+    "mental health data",
+    "recycle bin",
+    "review and accept",
+    "mood log"
+  ],
+
+  "03 KLASTER4 [2026-10-10]: how to switch therapists, online or off (it is a change of provider, not a breakup)": [
+    "switch therapist",
+    "therapy fit",
+    "is my therapist right for me",
+    "therapy record",
+    "therapy journey",
+    "progress report",
+    "therapy goals",
+    "questions for therapist"
+  ],
+
+  "04 KLASTER1 [2026-10-11]: starting over with a new therapist (you do not have to start from zero)": [
+    "therapy timeline",
+    "history",
+    "monthly summary",
+    "session preparation",
+    "what to talk about in therapy",
+    "remember therapy",
+    "insights from therapy",
+    "realizations"
+  ],
+
+  "05 KLASTER4 [2026-10-12]: does insurance cover therapy (find out before the first bill)": [
+    "progress report",
+    "progress over time",
+    "therapy goals",
+    "goal tracking",
+    "therapy record",
+    "therapy agenda",
+    "is therapy working",
+    "before session"
+  ],
+
+  "06 KLASTER5 [rezerwa]: loneliness in adulthood, and why it is not about how many people you know": [
+    "reflection",
+    "talk it through",
+    "voice note",
+    "rate your day",
+    "know yourself"
+  ],
+
+  "07 KLASTER5 [rezerwa]: imposter syndrome, and why the evidence never seems to count": [
+    "realizations",
+    "look back",
+    "voice note",
+    "self-awareness",
+    "track progress",
+    "progress on goals"
+  ]
+}

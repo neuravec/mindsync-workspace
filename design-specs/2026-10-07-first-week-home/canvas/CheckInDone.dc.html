@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Check-in saved</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; padding: 64px 20px 24px 20px; display: flex; flex-direction: column; gap: 18px">
+
+<span aria-hidden="true" style="width: 56px; height: 56px; border-radius: 28px; background: #26767B; display: flex; align-items: center; justify-content: center"><svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h1 style="margin: 0; font-size: 28px; line-height: 1.15; font-weight: 800">Check-in saved</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #5A7A73">Here it is next to where you started in setup.</p>
+</div>
+
+<section aria-label="Today next to setup" style="border-radius: 18px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 6px 16px">
+<sc-for list="{{rows}}" as="r" hint-placeholder-count="3">
+<div role="group" aria-label="{{r.aria}}" style="display: flex; align-items: center; gap: 12px; min-height: 60px; border-bottom: 1px solid #F2FBFA">
+<span style="flex-grow: 1; font-size: 17px; font-weight: 800">{{r.name}}</span>
+<span aria-hidden="true" style="display: flex; flex-direction: column; align-items: center; width: 64px"><span style="font-size: 13px; color: #5A7A73">{{r.leftLabel}}</span><span style="{{r.wasStyle}}">{{r.was}}</span></span>
+<span aria-hidden="true" style="display: flex; flex-direction: column; align-items: center; width: 64px"><span style="font-size: 13px; color: #5A7A73">Today</span><span style="font-size: 20px; font-weight: 800">{{r.now}}</span></span>
+</div>
+</sc-for>
+</section>
+
+<section style="border-radius: 18px; background: #F2FBFA; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+<span style="font-size: 17px; line-height: 1.35; font-weight: 800">{{nextTitle}}</span>
+<span style="font-size: 16px; line-height: 1.45; color: #1F4C50">{{nextBody}}</span>
+<a href="{{nextHref}}" style="align-self: flex-start; height: 48px; padding: 0 18px; border-radius: 14px; background: #FFFFFF; border: 1px solid #BBE4DE; color: #113237; font-size: 16px; font-weight: 800; display: flex; align-items: center; text-decoration: none">{{nextCta}}</a>
+</section>
+
+<p style="margin: 0; font-size: 15px; line-height: 1.45; color: #5A7A73">Orca will include this in your first-week look back on Monday.</p>
+
+<div style="flex-grow: 1"></div>
+<a href="Main.dc.html" style="width: 100%; height: 56px; border-radius: 18px; background: #113237; color: #FFFFFF; font-size: 17px; font-weight: 800; display: flex; align-items: center; justify-content: center; text-decoration: none">Back to home</a>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"branch":{"editor":"enum","options":["schedule","none"],"default":"schedule"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const therapy = (this.props.branch ?? 'schedule') === 'schedule';
+    const num = 'font-size: 20px; font-weight: 700; color: #5A7A73; line-height: 1.4';
+    const none = 'font-size: 14px; font-weight: 600; color: #5A7A73; line-height: 28px';
+    const rows = [
+      { name: 'Stress', was: '8', now: '6', leftLabel: 'Setup', wasStyle: num, aria: 'Stress: 8 in setup, 6 today' },
+      { name: 'Sleep', was: '7', now: '7', leftLabel: 'Setup', wasStyle: num, aria: 'Sleep: 7 in setup, 7 today' },
+      { name: 'Focus', was: 'Not set', now: '4', leftLabel: 'Setup', wasStyle: none, aria: 'Focus: first rating today, 4' }
+    ];
+    return {
+      rows: rows,
+      nextTitle: therapy ? 'Bring this to your next session?' : 'Want to talk any of this over?',
+      nextBody: therapy ? 'Add these numbers to your notes for Thursday. You decide what to say about them.' : 'Orca can go through it with you, at your pace. Voice or text.',
+      nextCta: therapy ? 'Add to session notes' : 'Talk with Orca',
+      nextHref: therapy ? '#' : 'FollowUp.dc.html'
+    };
+  }
+}
+</script>
+</body>
+</html>

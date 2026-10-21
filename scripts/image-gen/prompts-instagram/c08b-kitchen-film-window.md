@@ -1,0 +1,5 @@
+# c08b: poranna kuchnia, analogowy aparat, miękkie światło z okna (test naturalności, 2026-10-02)
+
+```
+A quiet, natural photograph of a man in his mid thirties leaning against the kitchen counter in his apartment early on a weekday morning, waiting for the kettle, holding a mug of coffee and looking down at it, relaxed and a bit sleepy. Gentle diffused morning light comes through a window with a sheer curtain, soft shadows, low contrast, true-to-life colors with no color grading. He wears a faded navy sweatshirt with no logo or text, his hair is uncombed, his skin shows ordinary texture and a little stubble. Around him are normal everyday things: a kettle, a jar of oats, a few mugs on hooks, a sticky note on the fridge, a plant on the windowsill. Photographed on a Fujifilm compact camera with a 35mm lens at chest height, natural film-like grain, slightly imperfect framing. Vertical 4:5 frame; the top third of the frame is a plain pale wall and the upper part of the window, calm and empty enough for a headline.
+```

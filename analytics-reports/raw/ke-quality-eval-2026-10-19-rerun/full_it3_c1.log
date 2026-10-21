@@ -1,0 +1,341 @@
+2026-10-19 11:00:03,009 WARNING app.services.posthog_service: PostHog enabled but POSTHOG_API_KEY is empty — skipping init.
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+2026-10-19 11:00:06,545 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:07,688 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:09,151 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:10,240 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:11,144 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:12,038 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:16,059 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:17,253 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:21,460 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:22,524 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:23,669 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:24,555 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:25,814 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:26,949 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:28,047 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:30,158 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:31,259 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:32,942 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:34,258 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:35,589 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:36,810 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:37,780 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:39,147 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:40,362 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:43,634 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:46,451 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:47,748 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:48,716 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:50,224 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:51,200 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:52,371 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:53,374 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:54,357 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:55,447 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:57,068 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:58,425 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:00:59,552 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:00,762 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:01,730 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:02,901 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:03,894 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:06,790 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:08,720 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:10,115 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:11,147 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:12,115 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:13,399 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:15,836 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:17,268 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:18,212 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:19,265 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:20,291 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:21,536 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:23,376 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:01:24,933 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Model: gpt-5.4-mini (real calls). Prompts ke-extract-v2|ke-compose-v2
+====================================================================================================
+S01  saying no at work and at home  (English, art9 True)
+  expect: families ['fear', 'guilt'], crisis entries 0
+  ENTRY d-70 note: They wrote that their manager asked them to cover the weekend shift again. They said yes even though they had plans, and felt resentful all evening.
+      -> [anger/done/values_action] c97 hs=False s=honesty :: You said yes to covering the weekend shift even though you had plans.
+      -> [anger/noticed/noticing] c94 hs=False s=insight :: You noticed you felt resentful all evening.
+  ENTRY d-63 after_therapy: Session about saying yes too quickly. They noticed the fear of disappointing people starts in the chest before they even answer. Their therapist suggested pausing for a breath before replying.
+      -> [fear/noticed/noticing] c98 hs=False s=insight :: You noticed the fear of disappointing people starts in your chest before you answer.
+      -> [fear/from_therapy/using_therapy] c99 hs=False s= :: Your therapist suggested pausing for a breath before replying.
+  ENTRY d-50 note: Their sister asked them to host the family dinner. They paused, said they could not this time, and did not explain for ten minutes like usual. Felt shaky but proud.
+      -> [pride/done/connecting] c99 hs=True s=courage,commitment :: You told your sister you could not host the family dinner this time.
+      -> [fear/noticed/noticing] c96 hs=False s=insight :: You noticed you felt shaky.
+      -> [pride/noticed/noticing] c92 hs=False s=honesty,insight :: You felt proud after saying no.
+  ENTRY d-45 todo_done: Say no to one request this week
+      -> [calm/done/connecting] c98 hs=False s=courage,commitment :: You said no to one request this week.
+  ENTRY d-30 reflect_talk: Talked with Orca about the manager asking again. They declined the extra shift, heart pounding, and offered to swap a different day instead.
+      -> [fear/done/connecting] c97 hs=True s=courage,honesty :: You declined the extra shift and offered to swap a different day instead.
+  ENTRY d-16 note: On the spot in a meeting they were asked to take on a new project. They froze and agreed, then felt stuck. Saying no to the manager in front of others is still really hard.
+      -> [fear/still_hard/connecting] c98 hs=False s=honesty :: Saying no to your manager in front of others is still really hard for you.
+  ENTRY d-5 note: They told a colleague they could not stay late. Short answer, no long apology. The worry passed faster than before.
+      -> [worry/done/connecting] c98 hs=True s=courage,honesty :: You told a colleague you could not stay late, without a long apology.
+      -> [worry/used_method/steadying] c90 hs=False s=resilience :: The worry passed faster than before.
+  -- 2026-10-12: level 1 (1 steps, the_newcomer), sources {'notes': 3, 'talks': 1, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 3, 'insight': 4, 'honesty': 4, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     PATH [fear] Pausing with my fear of disappointing people  (about replying, saying no, and the shaky feeling before you answer)
+        skill: Pausing for a breath [steadying/pause] practicing x2
+        skill: Noticing the chest feeling [noticing/thermometer] discovered x2
+        still hard: Saying no to your manager in front of others (1)
+     idea: [transfer/orca] If it fits, try the breath pause before replying. | why: Your therapist suggested pausing for a breath, and you noticed the fear in your chest before you answer.
+  -- 2026-10-19: level 1 (1 steps, the_newcomer), sources {'notes': 4, 'talks': 1, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 4, 'insight': 4, 'honesty': 5, 'resilience': 1, 'kindness': 0, 'commitment': 2}
+     PATH [fear] Pausing with my fear of disappointing people  (about replying, saying no, and the shaky feeling before you answer)
+        skill: Pausing for a breath [steadying/pause] practicing x2
+        skill: Noticing the chest feeling [noticing/thermometer] discovered x2
+        still hard: Saying no to your manager in front of others (1)
+     idea: [transfer/orca] If it fits, try pausing for a breath before other hard replies too. | why: You already did this before replying, and it helped with the shaky feeling.
+  WORDS s1 Noticing the chest feeling: You can feel the fear start in your chest before you answer, and you also notice when your body feels shaky.
+  WORDS s2 Pausing for a breath: You pause for a breath before replying, so you have a moment before you answer.
+  HARD h1 Saying no to your manager in front of others | When other people are there and you feel put on the spot.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 4, "sessions": 1, "talks": 1}'}
+  usage: {'calls': 9, 'prompt': 23138, 'cached': 16896, 'completion': 2305, 'usd': 0.01632, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S02  Sunday dread and worry about the week  (English, art9 True)
+  expect: families ['worry'], crisis entries 0
+  ENTRY d-60 note: Sunday evening again. They noticed the dread about Monday begins around 6 pm, with a tight stomach and racing thoughts about emails.
+      -> [worry/noticed/noticing] c99 hs=False s=insight :: You noticed that dread about Monday started around 6 pm, with a tight stomach and racing thoughts about emails.
+  ENTRY d-53 voice_note: They described lying awake thinking through every task of the week. Tried writing the worries on paper and it helped them fall asleep a bit sooner.
+      -> [worry/used_method/steadying] c98 hs=False s=commitment :: You wrote your worries on paper, and it helped you fall asleep a bit sooner.
+      -> [worry/noticed/noticing] c96 hs=False s=insight :: You noticed you were lying awake thinking through every task of the week.
+  ENTRY d-49 after_therapy: Talked about worry as a way of trying to control the week. They took away that a thought about Monday is not a fact about Monday.
+      -> [worry/from_therapy/rethinking] c98 hs=False s=insight :: You took away that a thought about Monday is not a fact about Monday.
+  ENTRY d-39 note: Wrote down Monday's three hardest tasks on Sunday and closed the notebook. The evening felt calmer than usual.
+      -> [calm/noticed/noticing] c98 hs=False s=insight :: You noticed the evening felt calmer than usual.
+  ENTRY d-25 note: Wrote the worry list again before bed. Noticed the worries were mostly about what their boss might think.
+      -> [worry/used_method/steadying] c97 hs=False s=commitment :: You wrote the worry list again before bed.
+      -> [worry/noticed/noticing] c98 hs=False s=insight :: You noticed most of the worries were about what your boss might think.
+  ENTRY d-18 realization: I worry most when I imagine being judged, not when the work itself is hard.
+      -> [worry/noticed/noticing] c99 hs=False s=insight :: You noticed you worry most when you imagine being judged, not when the work itself is hard.
+  ENTRY d-4 note: Sunday was hard but they went for a walk, wrote the list and did not check email. Slept fine.
+      -> [worry/used_method/values_action] c97 hs=True s=commitment,resilience :: You went for a walk, wrote the list, and did not check email.
+  -- 2026-10-12: level 1 (1 steps, the_newcomer), sources {'notes': 4, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 0, 'insight': 6, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     PATH [worry] Working with my worry  (about Monday, bedtime, and being judged)
+        skill: Writing worries down [steadying/pause] practicing x2
+        skill: Noticing worry cues [noticing/tag] discovered x4
+        skill: Questioning worry thoughts [rethinking/thought] discovered x1
+     idea: [consolidate/agenda] If it fits, bring that Monday thought to the session and see what changes when you test it gently. | why: You took away that a thought about Monday is not a fact about Monday.
+  -- 2026-10-19: level 1 (2 steps, the_newcomer), sources {'notes': 5, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 0, 'insight': 6, 'honesty': 0, 'resilience': 1, 'kindness': 0, 'commitment': 3}
+     PATH [worry] Working with my worry  (about Monday, bedtime, and being judged)
+        skill: Taking a walk and writing it down [steadying/pause] practicing x1
+        skill: Writing worries down [steadying/pause] practicing x2
+        skill: Noticing worry cues [noticing/tag] discovered x4
+        skill: Questioning worry thoughts [rethinking/thought] discovered x1
+  WORDS s3 Noticing worry cues: You notice when worry starts, like dread around Monday, a tight stomach, or lying awake running through the week. You can spot when the worry is more about being judged than about the work itself.
+  WORDS s4 Writing worries down: You write your worries on paper, especially before bed, and that helps you fall asleep a bit sooner. You also write the list again when the worries come back.
+  WORDS s5 Questioning worry thoughts: You are taking in the idea that a thought about Monday is not a fact about Monday. That can help when your mind starts making the week feel bigger than it is.
+  WORDS s6 Taking a walk and writing it down: You go for a walk, write the worry list, and leave email alone. It seems to help you not stay stuck in the loop before bed.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 5, "sessions": 1}'}
+  usage: {'calls': 9, 'prompt': 22954, 'cached': 18816, 'completion': 1135, 'usd': 0.00962, 'models': ['gpt-5.4-mini']}
+  !! therapy-only skill 5: Questioning worry thoughts | You are taking in the idea that a thought about Monday is not a fact about Monday. That can help when your mind starts making the week feel bigger than it is.
+====================================================================================================
+S03  anger at partner and repair  (English, art9 True)
+  expect: families ['anger', 'closeness'], crisis entries 0
+  ENTRY d-55 reflect_talk: They were furious after their partner forgot the anniversary dinner. They shouted, then regretted it and went silent for a day.
+      -> [anger/still_hard/None] c98 hs=False s= :: Being furious after your partner forgot the anniversary dinner was still hard for you.
+      -> [guilt/noticed/noticing] c94 hs=False s=honesty,insight :: You regretted shouting and then went silent for a day.
+  ENTRY d-48 after_therapy: Session on anger. They noticed anger comes when they feel unimportant. Their therapist asked them to try naming the feeling out loud before reacting.
+      -> [anger/noticed/noticing] c98 hs=False s=insight,honesty :: You noticed your anger came up when you felt unimportant.
+      -> [anger/from_therapy/using_therapy] c97 hs=False s=commitment :: Your therapist asked you to try naming the feeling out loud before reacting.
+  ENTRY d-40 note: Their partner was late again. They said calmly that they felt unimportant when plans change last minute. The talk went better than shouting ever did.
+      -> [sadness/done/connecting] c97 hs=False s=courage,honesty :: You said calmly that you felt unimportant when plans changed last minute.
+      -> [pride/noticed/rethinking] c91 hs=False s=insight :: You noticed the talk went better than shouting ever did.
+  ENTRY d-26 note: Argument about chores. They took ten minutes in another room, came back and said what made them angry without blaming. Their partner listened.
+      -> [anger/used_method/connecting] c98 hs=True s=courage,honesty :: You took ten minutes in another room, then came back and said what made you angry without blaming.
+  ENTRY d-20 session: Recorded session. They practised saying what they need from the relationship. They noticed they often expect their partner to guess.
+      -> [closeness/done/connecting] c96 hs=False s=courage,commitment :: You practised saying what you need in the relationship.
+      -> [closeness/noticed/noticing] c97 hs=False s=insight :: You noticed you often expected your partner to guess what you need.
+  ENTRY d-8 note: They apologised for snapping on Friday and explained what was going on for them. Felt closer afterwards.
+      -> [closeness/done/connecting] c97 hs=False s=honesty,courage :: You apologised for snapping and explained what was going on for you.
+      -> [closeness/noticed/noticing] c92 hs=False s= :: You felt closer afterwards.
+  -- 2026-10-12: level 1 (1 steps, the_newcomer), sources {'notes': 3, 'talks': 1, 'sessions': 2}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 4, 'insight': 4, 'honesty': 5, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     PATH [anger] Working with my anger  (about feeling unimportant and what happens next)
+        skill: Taking space before replying [steadying/pause] practicing x1
+        skill: Naming the anger early [noticing/tag] discovered x2
+        still hard: Your partner forgetting the anniversary dinner (1)
+     forming: [{'emotion_family': 'closeness', 'entries': 2}]
+     idea: [transfer/orca] If it fits, try naming the feeling out loud before you answer. | why: Your therapist asked you to try this, and you noticed anger most when you felt unimportant.
+  -- 2026-10-19: level 1 (1 steps, the_newcomer), sources {'notes': 3, 'talks': 1, 'sessions': 2}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 4, 'insight': 4, 'honesty': 5, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     PATH [anger] Working with my anger  (about feeling unimportant and what happens next)
+        skill: Taking space before replying [steadying/pause] practicing x1
+        skill: Naming the anger early [noticing/tag] discovered x2
+        still hard: Your partner forgetting the anniversary dinner (1)
+     forming: [{'emotion_family': 'closeness', 'entries': 2}]
+  WORDS s7 Naming the anger early: You notice when anger comes up, especially when you feel unimportant. You are starting to name the feeling out loud before reacting.
+  WORDS s8 Taking space before replying: You take a few minutes in another room, let the first wave pass, and then come back to say what made you angry without blaming.
+  HARD h2 Your partner forgetting the anniversary dinner | When something important was forgotten, it was still hard for you.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 3, "sessions": 2, "talks": 1}'}
+  usage: {'calls': 8, 'prompt': 20955, 'cached': 16896, 'completion': 1517, 'usd': 0.01114, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S04  loneliness after moving cities  (English, art9 False)
+  expect: families ['loneliness'], crisis entries 0
+  ENTRY d-75 note: Three months in the new city and they still eat dinner alone most nights. They feel invisible at work.
+      -> [loneliness/noticed/noticing] c92 hs=False s=insight :: You noticed you still ate dinner alone most nights in the new city.
+      -> [loneliness/noticed/noticing] c96 hs=False s=insight :: You noticed you felt invisible at work.
+  ENTRY d-60 reflect_talk: Talked about missing old friends. They realised they wait for others to invite them and never ask first.
+      -> [loneliness/noticed/noticing] c97 hs=False s=insight,honesty :: You realised you wait for others to invite you and never ask first.
+  ENTRY d-45 note: They asked a coworker to grab lunch. It was awkward at first but they laughed a lot. Felt less alone the rest of the day.
+      -> [closeness/done/connecting] c99 hs=False s=courage,commitment :: You asked a coworker to grab lunch.
+      -> [closeness/noticed/noticing] c92 hs=False s=insight :: You felt less alone the rest of the day.
+  ENTRY d-31 note: Joined a climbing group. Went alone, which took courage. Talked to two people.
+      -> [fear/done/values_action] c96 hs=False s=courage :: You went to a climbing group alone and talked to two people.
+  ENTRY d-17 note: Weekend felt empty again. They did not reach out to anyone and spent it scrolling.
+      -> [loneliness/still_hard/None] c96 hs=False s= :: Feeling empty over the weekend is still hard for you.
+  ENTRY d-6 note: Texted a climbing friend to go for coffee. They said yes. Small, but it mattered.
+      -> [closeness/done/connecting] c98 hs=False s=courage,commitment :: You texted a climbing friend to go for coffee.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 4, 'talks': 1, 'sessions': 0}, support_row False, jobs [('ok', 'nothing')]
+     strengths {'courage': 2, 'insight': 4, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 1}
+     forming: [{'emotion_family': 'loneliness', 'entries': 2}]
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 5, 'talks': 1, 'sessions': 0}, support_row False, jobs [('ok', 'nothing')]
+     strengths {'courage': 3, 'insight': 4, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     forming: [{'emotion_family': 'loneliness', 'entries': 2}, {'emotion_family': 'closeness', 'entries': 2}]
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 5, "talks": 1}'}
+  usage: {'calls': 6, 'prompt': 12657, 'cached': 11520, 'completion': 493, 'usd': 0.00394, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S05  crisis entry among ordinary ones  (English, art9 True)
+  expect: families ['overwhelm'], crisis entries 1, note: The 10-day entry must produce no moments; no ideas after it.
+  ENTRY d-30 note: Hard week at university. They asked a friend for help with the assignment instead of hiding.
+      -> [overwhelm/done/connecting] c95 hs=True s=courage,honesty :: You asked a friend for help with the assignment instead of hiding.
+  ENTRY d-20 note: They felt overwhelmed by deadlines but split the work into small parts and finished one.
+      -> [overwhelm/used_method/values_action] c98 hs=False s=commitment,resilience :: You split the work into small parts and finished one.
+  ENTRY d-10 note  [CRISIS]: Everything feels pointless. They wrote that they want to die and do not see a way forward.
+  ENTRY d-7 after_therapy  [CRISIS]: Session after a very hard week. They made a safety plan with their therapist and agreed to call a friend when it gets dark again.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 0}, support_row True, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 0, 'honesty': 1, 'resilience': 1, 'kindness': 0, 'commitment': 1}
+     forming: [{'emotion_family': 'overwhelm', 'entries': 2}]
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 0}, support_row True, jobs [('ok', 'cached')]
+     strengths {'courage': 1, 'insight': 0, 'honesty': 1, 'resilience': 1, 'kindness': 0, 'commitment': 1}
+     forming: [{'emotion_family': 'overwhelm', 'entries': 2}]
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': True, 'initial_sync_done': True, 'source_counts': '{"notes": 2}'}
+  usage: {'calls': 3, 'prompt': 7960, 'cached': 6528, 'completion': 334, 'usd': 0.00307, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S06  guilt about elderly parents  (English, art9 True)
+  expect: families ['guilt'], crisis entries 0
+  ENTRY d-80 note: They skipped visiting their mother on Sunday because they were exhausted and felt guilty all week.
+      -> [guilt/still_hard/None] c96 hs=False s= :: Skipping a visit with your mother on Sunday was still hard for you.
+  ENTRY d-70 after_therapy: Talked about guilt and duty. They noticed guilt tells them rest has to be earned. Their therapist suggested speaking to themselves as they would to a friend.
+      -> [guilt/noticed/noticing] c98 hs=False s=insight :: You noticed guilt tells you rest has to be earned.
+      -> [guilt/from_therapy/using_therapy] c99 hs=False s= :: Your therapist suggested speaking to yourself as you would to a friend.
+  ENTRY d-56 note: They rested on Saturday without doing anything for anyone. When guilt came, they said to themselves: you are allowed to be tired.
+      -> [calm/done/self_kindness] c98 hs=False s=kindness,commitment :: You rested on Saturday without doing anything for anyone.
+      -> [guilt/used_method/self_kindness] c98 hs=False s=kindness :: When guilt came, you said to yourself, you are allowed to be tired.
+  ENTRY d-42 note: Called their mother instead of visiting and told her honestly they needed a quiet weekend. She understood.
+      -> [calm/done/connecting] c98 hs=False s=honesty,courage :: You called your mother instead of visiting and told her you needed a quiet weekend.
+  ENTRY d-28 note: Took an evening off again. Guilt showed up but faded after an hour.
+      -> [guilt/done/values_action] c96 hs=False s=resilience,kindness :: You took an evening off again, even though guilt showed up.
+      -> [guilt/noticed/noticing] c99 hs=False s=insight :: You noticed the guilt faded after an hour.
+  ENTRY d-12 todo_done: One evening with nothing to earn
+      -> [calm/done/self_kindness] c98 hs=False s=commitment,kindness :: You had one evening with nothing to earn.
+  -- 2026-10-12: level 1 (2 steps, the_newcomer), sources {'notes': 4, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 2, 'honesty': 1, 'resilience': 1, 'kindness': 4, 'commitment': 2}
+     PATH [guilt] Working with guilt about rest  (about rest, visits, and the voice that says you must earn it)
+        skill: Taking rest anyway [values_action/stairs] practicing x1
+        skill: Talking back kindly [self_kindness/heart] practicing x2
+        skill: Noticing guilt rules [noticing/tag] discovered x2
+        still hard: Skipping a visit with your mother (1)
+     idea: [consolidate/agenda] If it fits, bring this to the next session and look at the friend voice together. | why: Your therapist suggested speaking to yourself like a friend, and you used that wording when guilt came up.
+  -- 2026-10-19: level 1 (4 steps, the_newcomer), sources {'notes': 4, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 2, 'honesty': 1, 'resilience': 1, 'kindness': 4, 'commitment': 2}
+     PATH [guilt] Working with guilt about rest  (about rest, visits, and the voice that says you must earn it)
+        skill: Taking rest anyway [values_action/stairs] practicing x1
+        skill: Talking back kindly [self_kindness/heart] practicing x2
+        skill: Noticing guilt rules [noticing/tag] discovered x2
+        still hard: Skipping a visit with your mother (1)
+     PATH [calm] Making room for calm  (about rest, quiet weekends, and having nothing to earn)
+        skill: Choosing quiet time [values_action/stairs] practicing x2
+        skill: Saying you need quiet [connecting/chat] practicing x1
+  WORDS s9 Noticing guilt rules: You notice the thought that rest has to be earned. You can tell when guilt starts talking and when it fades after a while.
+  WORDS s10 Talking back kindly: When guilt comes up, you tell yourself you are allowed to be tired. Your therapist also suggested speaking to yourself like you would to a friend.
+  WORDS s11 Taking rest anyway: You rest even when guilt shows up, like taking an evening off or having one evening with nothing to earn.
+  WORDS s12 Choosing quiet time: You make space for a quiet weekend, even when part of you feels you need to earn it. You also let yourself have an evening with nothing to earn.
+  WORDS s13 Saying you need quiet: You tell your mother you need a quiet weekend instead of going along with a visit. You choose a call and keep the connection while protecting your rest.
+  HARD h3 Skipping a visit with your mother | When Sunday plans and guilt pull in different directions.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': ['calm']}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 4, "sessions": 1}'}
+  usage: {'calls': 8, 'prompt': 20829, 'cached': 16896, 'completion': 1202, 'usd': 0.00963, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S07  shame about a mistake at work  (English, art9 True)
+  expect: families ['shame'], crisis entries 0
+  ENTRY d-40 note: They sent a report with a big error to the whole team. They felt like a fraud and could not look anyone in the eye.
+      -> [shame/still_hard/None] c99 hs=False s= :: Sending a report with a big error to the whole team is still hard for you.
+      -> [shame/noticed/noticing] c98 hs=False s=insight,honesty :: You felt like a fraud and could not look anyone in the eye.
+  ENTRY d-33 reflect_talk: They told Orca they replay the mistake again and again. They noticed the voice in their head says they are not good enough.
+      -> [shame/noticed/noticing] c98 hs=False s=insight,honesty :: You noticed your inner voice says you are not good enough.
+  ENTRY d-27 after_therapy: Session on shame versus guilt. They took away that a mistake is something they did, not who they are.
+      -> [shame/from_therapy/using_therapy] c98 hs=False s=insight :: You took from therapy that a mistake is something you did, not who you are.
+  ENTRY d-15 note: They told their manager about another small error right away instead of hiding it. It was fine.
+      -> [pride/done/connecting] c97 hs=False s=courage,honesty :: You told your manager about a small error right away instead of hiding it.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 1, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 3, 'honesty': 3, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+     PATH [shame] Making room for shame at work  (about mistakes at work and the voice that says you are not good enough)
+        skill: Separating mistake from self [rethinking/refresh] discovered x1
+        skill: Naming the shame voice [noticing/tag] discovered x1
+        still hard: Sending a report with a big error (1)
+     idea: [consolidate/agenda] If it fits, bring that line from therapy to the next session and see how it lands in real work moments. | why: You took from therapy that a mistake is something you did, not who you are.
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 2, 'talks': 1, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 3, 'honesty': 3, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+     PATH [shame] Making room for shame at work  (about mistakes at work and the voice that says you are not good enough)
+        skill: Separating mistake from self [rethinking/refresh] discovered x1
+        skill: Naming the shame voice [noticing/tag] discovered x2
+        still hard: Sending a report with a big error (1)
+  WORDS s14 Naming the shame voice: You notice when your inner voice says you are not good enough. You can tell the feeling from the story it tells about you.
+  WORDS s15 Separating mistake from self: You can remind yourself that a mistake is something you did, not who you are. That can help when shame starts to say you are a fraud.
+  HARD h4 Sending a report with a big error | When a report has a big mistake and goes to the whole team.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 2, "sessions": 1, "talks": 1}'}
+  usage: {'calls': 6, 'prompt': 16334, 'cached': 13056, 'completion': 883, 'usd': 0.00741, 'models': ['gpt-5.4-mini']}
+  !! therapy-only skill 15: Separating mistake from self | You can remind yourself that a mistake is something you did, not who you are. That can help when shame starts to say you are a fraud.
+====================================================================================================
+S08  food and body talk that must not appear in names  (English, art9 True)
+  expect: families ['shame'], crisis entries 0, note: No path, skill, tool or idea may mention food, eating or weight.
+  ENTRY d-50 note: They felt ashamed after dinner with friends and kept thinking about their weight. They noticed the thoughts got loud when they were tired.
+      -> [shame/noticed/noticing] c97 hs=False s=insight :: You noticed the thoughts got loud when you were tired.
+  ENTRY d-43 after_therapy: Session about body image and the critical inner voice. Their therapist asked them to notice when the voice starts and to answer it kindly.
+      -> [shame/from_therapy/using_therapy] c98 hs=False s=insight,kindness :: Your therapist asked you to notice when the critical voice starts and answer it kindly.
+  ENTRY d-30 note: The critical voice started at the gym. They answered it with something kind and stayed for the whole class.
+      -> [shame/used_method/self_kindness] c96 hs=False s=kindness,resilience :: At the gym, you answered your critical voice with something kind and stayed for the whole class.
+  ENTRY d-14 note: A comment from a relative hurt. They told their partner how it felt instead of keeping it in.
+      -> [sadness/done/connecting] c97 hs=False s=courage,honesty :: You told your partner how it felt instead of keeping it in.
+  -- 2026-10-12: level 1 (1 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 2, 'honesty': 1, 'resilience': 1, 'kindness': 2, 'commitment': 0}
+     PATH [shame] Answering my critical voice kindly  (about the critical voice and how you respond to it)
+        skill: Answering kindly [self_kindness/heart] practicing x1
+        skill: Noticing the loud thoughts [noticing/eye] discovered x2
+  -- 2026-10-19: level 1 (1 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 2, 'honesty': 1, 'resilience': 1, 'kindness': 2, 'commitment': 0}
+     PATH [shame] Answering my critical voice kindly  (about the critical voice and how you respond to it)
+        skill: Answering kindly [self_kindness/heart] practicing x1
+        skill: Noticing the loud thoughts [noticing/eye] discovered x2
+  WORDS s16 Noticing the loud thoughts: You notice when the thoughts get loud, especially when you are tired. You can tell when the critical voice is starting to take over.
+  WORDS s17 Answering kindly: You answer the critical voice with something kind instead of letting it run on. You did that at the gym and stayed for the whole class.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 3, "sessions": 1}'}
+  usage: {'calls': 6, 'prompt': 16274, 'cached': 13056, 'completion': 701, 'usd': 0.00655, 'models': ['gpt-5.4-mini']}
+DB: C:\Users\mikol\AppData\Local\Temp\ke_quality_eval_1792400400379.db
+====================================================================================================
+8 stories, 60 moments, 8 stories with moments (need 6), 6/8 expected maps with a path, coverage 6/8, 2 story problems.
+Tokens: {'calls': 55, 'prompt': 141101, 'cached': 113664, 'completion': 8570, 'usd': 0.0677}, USD per story 0.00846, models ['gpt-5.4-mini']
+  S02: therapy-only skill 5: Questioning worry thoughts | You are taking in the idea that a thought about Monday is not a fact about Monday. That can help when your mind starts making the week feel bigger than it is.
+  S07: therapy-only skill 15: Separating mistake from self | You can remind yourself that a mistake is something you did, not who you are. That can help when shame starts to say you are a fraud.
+RESULT: FAIL

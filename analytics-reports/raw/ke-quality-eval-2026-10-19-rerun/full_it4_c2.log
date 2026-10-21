@@ -1,0 +1,397 @@
+2026-10-19 11:09:31,514 WARNING app.services.posthog_service: PostHog enabled but POSTHOG_API_KEY is empty � skipping init.
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+2026-10-19 11:09:34,875 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:36,382 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:37,705 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:39,095 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:40,804 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:42,441 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:43,552 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:44,813 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:45,952 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:47,209 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:48,368 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:49,986 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:53,525 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:56,456 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:09:59,473 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:02,583 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:04,809 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:06,743 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:08,055 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:09,678 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:11,110 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:12,533 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:13,762 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:17,840 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:19,137 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:24,284 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:34,486 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:36,967 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:40,222 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:41,787 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:43,238 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:46,973 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:51,048 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:56,089 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:57,802 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:10:59,195 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:00,779 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:01,918 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:02,923 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:05,682 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:07,176 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:08,641 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:10,387 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:11,952 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:13,374 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:18,447 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:24,191 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:28,396 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:31,043 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:32,566 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:34,217 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:35,973 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:37,537 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:42,257 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:46,634 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:49,600 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:50,794 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:52,281 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:53,606 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:11:55,836 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:12:06,289 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 11:12:09,426 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Model: gpt-5.4-mini (real calls). Prompts ke-extract-v2|ke-compose-v2
+====================================================================================================
+S09  medication talk that must stay out  (English, art9 True)
+  expect: families ['calm', 'worry'], crisis entries 0, note: Nothing about medication or doses in any generated text or idea.
+  ENTRY d-45 after_therapy: Talked about starting a new medication with the psychiatrist and how sleep has been. They noticed they feel calmer when they keep a routine.
+      -> [calm/noticed/noticing] c97 hs=False s=insight :: You noticed you feel calmer when you keep a routine.
+  ENTRY d-35 note: They kept the evening routine: tea, reading, no phone. Fell asleep calmer.
+      -> [calm/done/values_action] c98 hs=False s=commitment :: You kept your evening routine with tea, reading, and no phone.
+      -> [calm/noticed/noticing] c95 hs=False s= :: You noticed you fell asleep calmer.
+  ENTRY d-21 note: Missed the routine on Friday and felt wired. Came back to it on Saturday.
+      -> [overwhelm/still_hard/None] c95 hs=False s=resilience :: Missing the routine on Friday was still hard for you.
+      -> [overwhelm/done/values_action] c98 hs=False s=resilience,commitment :: You came back to the routine on Saturday.
+  ENTRY d-7 note: The routine holds most nights now. They feel steadier.
+      -> [calm/noticed/noticing] c92 hs=False s=resilience :: You felt steadier most nights now.
+  -- 2026-10-12: level 1 (1 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 0, 'insight': 1, 'honesty': 0, 'resilience': 3, 'kindness': 0, 'commitment': 2}
+     PATH [calm] Making room for calm  (about your evening routine and sleep)
+        skill: Keeping an evening routine [steadying/anchor] practicing x4
+  -- 2026-10-19: level 1 (1 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 0, 'insight': 1, 'honesty': 0, 'resilience': 3, 'kindness': 0, 'commitment': 2}
+     PATH [calm] Making room for calm  (about your evening routine and sleep)
+        skill: Keeping an evening routine [steadying/anchor] practicing x4
+  WORDS s1 Keeping an evening routine: You feel calmer when you keep your evening routine with tea, reading, and no phone. You also noticed you fell asleep calmer, and felt steadier most nights now.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 3, "sessions": 1}'}
+  usage: {'calls': 6, 'prompt': 16811, 'cached': 13568, 'completion': 828, 'usd': 0.00718, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S10  long backfill, many notes on overwhelm  (English, art9 False)
+  expect: families ['overwhelm', 'calm', 'pride'], crisis entries 0, note: More than 15 entries: needs two jobs before the first read is done.
+  ENTRY d-88 note: Too many things at once: work launch, sick kid, moving flat. They cried in the car.
+      -> [overwhelm/noticed/noticing] c97 hs=False s=insight :: You noticed that too many things were happening at once.
+  ENTRY d-84 note: They wrote a list and picked one thing for the day. Felt slightly lighter.
+      -> [calm/used_method/values_action] c96 hs=False s=commitment :: You wrote a list and picked one thing for the day.
+      -> [calm/noticed/noticing] c92 hs=False s= :: You felt slightly lighter.
+  ENTRY d-80 note: Asked their partner to take the school runs this week. They said yes.
+      -> [overwhelm/done/connecting] c93 hs=False s=courage,honesty :: You asked your partner to take the school runs this week.
+  ENTRY d-76 note: Overwhelmed again at work. Took a five minute walk before answering emails.
+      -> [overwhelm/used_method/steadying] c99 hs=True s=commitment :: You took a five minute walk before answering emails.
+  ENTRY d-72 note: They said no to a new committee at work. It felt good.
+      -> [pride/done/connecting] c98 hs=False s=courage,honesty :: You said no to a new committee at work, and it felt good.
+  ENTRY d-68 note: Bad day. Snapped at the kids. Later apologised.
+      -> [anger/done/connecting] c94 hs=False s=courage,honesty :: You apologised later.
+  ENTRY d-64 note: Picked one thing again, finished it, stopped there.
+      -> [overwhelm/done/values_action] c91 hs=False s=commitment,resilience :: You picked one thing, finished it, and stopped there.
+  ENTRY d-60 note: Took the five minute walk before a hard meeting.
+      -> [overwhelm/used_method/steadying] c98 hs=True s=commitment :: You took a five minute walk before a hard meeting.
+  ENTRY d-56 note: Asked a friend to help pack boxes. They came with pizza.
+      -> [overwhelm/done/connecting] c95 hs=False s=courage,commitment :: You asked a friend to help pack boxes.
+  ENTRY d-52 note: The move happened. Exhausted but proud of how they handled it.
+      -> [pride/noticed/noticing] c90 hs=False s=resilience :: You felt proud of how you handled the move.
+  ENTRY d-48 note: They noticed overwhelm starts when they try to do everything perfectly.
+      -> [overwhelm/noticed/noticing] c98 hs=False s=insight :: You noticed overwhelm starts when you try to do everything perfectly.
+  ENTRY d-44 note: Left some laundry undone on purpose. Rested instead.
+      -> [calm/done/self_kindness] c95 hs=False s=kindness,commitment :: You left some laundry undone on purpose and rested instead.
+  ENTRY d-40 note: Five minute walk again, this time after a fight with their manager.
+      -> [anger/used_method/steadying] c93 hs=True s=resilience :: You took a five minute walk after a fight with your manager.
+  ENTRY d-36 note: One thing a day still works. Today it was the tax form.
+      -> [calm/done/values_action] c92 hs=False s=commitment :: You did one thing today, the tax form.
+  ENTRY d-32 note: Asked for an extension on a deadline. Got it.
+      -> [overwhelm/done/connecting] c96 hs=False s=courage :: You asked for an extension on a deadline.
+  ENTRY d-28 note: Calm weekend in the new flat. Read a book in the sun.
+      -> [calm/noticed/noticing] c94 hs=False s= :: You noticed a calm weekend in the new flat.
+      -> [calm/used_method/steadying] c97 hs=False s= :: You read a book in the sun.
+  ENTRY d-24 note: They noticed they now ask for help sooner.
+      -> [closeness/noticed/noticing] c99 hs=False s=insight :: You noticed you now ask for help sooner.
+  ENTRY d-20 note: Overwhelm came back with the school concert week. Wrote the list, picked one thing.
+      -> [overwhelm/used_method/values_action] c96 hs=False s=commitment,resilience :: You wrote the list and picked one thing.
+  ENTRY d-12 note: They turned down a second project and felt no guilt this time.
+      -> [guilt/done/connecting] c96 hs=False s=courage,honesty :: You turned down a second project and felt no guilt this time.
+  ENTRY d-3 note: Quiet week. They feel steadier than in spring.
+      -> [calm/noticed/noticing] c93 hs=False s=insight :: You noticed you felt steadier than in spring.
+  -- 2026-10-12: level 2 (5 steps, the_doer), sources {'notes': 19, 'talks': 0, 'sessions': 0}, support_row False, jobs [('ok', 'none'), ('ok', 'composed')]
+     strengths {'courage': 6, 'insight': 3, 'honesty': 4, 'resilience': 4, 'kindness': 1, 'commitment': 8}
+     PATH [calm] Making room for calm  (about calm moments and what helps them last)
+        skill: Noticing calm feels lighter [noticing/eye] practicing x3
+        skill: Doing one thing, then stopping [values_action/sparkle] practicing x2
+     PATH [overwhelm] Making overwhelm smaller  (about too many things at once and what helps)
+        skill: Picking one thing [values_action/stairs] growing x5
+        skill: Taking a short pause [steadying/pause] practicing x2
+        skill: Noticing what sets it off [noticing/eye] discovered x1
+     tool: Writing a list and picking one thing [self] used 2
+     tool: Reading a book in the sun [self] used 1
+     tool: Taking a five minute walk [self] used 3
+     idea: [recurring/orca] If it fits, notice what makes calm feel a bit lighter. | why: You noticed a calm weekend in the new flat and felt slightly lighter after writing a list.
+     idea: [consolidate/agenda] If it fits, bring the list making to the next session. | why: You already use writing a list and picking one thing when everything feels like too much.
+  -- 2026-10-19: level 2 (5 steps, the_doer), sources {'notes': 20, 'talks': 0, 'sessions': 0}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 6, 'insight': 4, 'honesty': 4, 'resilience': 4, 'kindness': 1, 'commitment': 8}
+     PATH [calm] Making room for calm  (about calm moments and what helps them last)
+        skill: Noticing calm feels lighter [noticing/eye] practicing x3
+        skill: Doing one thing, then stopping [values_action/sparkle] practicing x2
+        skill: Noticing when calm feels steadier [noticing/eye] discovered x1
+     PATH [overwhelm] Making overwhelm smaller  (about too many things at once and what helps)
+        skill: Picking one thing [values_action/stairs] growing x5
+        skill: Taking a short pause [steadying/pause] practicing x2
+        skill: Noticing what sets it off [noticing/eye] discovered x1
+        skill: Picking one thing and stopping [values_action/stairs] discovered x1
+     tool: Writing a list and picking one thing [self] used 2
+     tool: Reading a book in the sun [self] used 1
+     tool: Taking a five minute walk [self] used 3
+  WORDS s2 Picking one thing: When too many things are happening at once, you choose one thing for the day and stop there. You also ask for help or ask for more time when that helps.
+  WORDS s3 Taking a short pause: You take a short walk before emails or a hard meeting, then come back more settled. It helps you slow down before you reply or carry on.
+  WORDS s4 Noticing what sets it off: You notice overwhelm can start when you try to do everything perfectly. That helps you spot the moment it begins, instead of only seeing it after it has built up.
+  WORDS s5 Doing one thing, then stopping: You do one thing for the day, like the tax form, and let the rest wait. You also leave some jobs undone on purpose and rest instead.
+  WORDS s6 Noticing calm feels lighter: You notice when you feel slightly lighter, or when a weekend feels calm. You also notice what helps, like reading a book in the sun.
+  WORDS s7 Noticing when calm feels steadier: You notice when calm feels steadier than before, and you notice calm weekends too. You are paying attention to what makes those calm moments last.
+  WORDS s8 Picking one thing and stopping: You write the list and pick one thing, and you also ask for an extension when the load is too much. One clear step can help when everything piles up.
+  TOOL t1 Writing a list and picking one thing [self]: You write a list, choose one thing for the day, and keep the rest for later. | note: None
+  TOOL t2 Taking a five minute walk [self]: You take a short walk before emails or before or after a hard moment, then return more settled. | note: None
+  TOOL t3 Reading a book in the sun [self]: You sit with a book in the sun as a simple way to rest and feel more settled. | note: None
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 20}'}
+  usage: {'calls': 22, 'prompt': 54366, 'cached': 44288, 'completion': 2942, 'usd': 0.02412, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S11  fear of driving after an accident  (English, art9 True)
+  expect: families ['fear'], crisis entries 0
+  ENTRY d-50 after_therapy: Talked about the small accident last winter. They noticed their hands sweat when they even think about driving on the motorway.
+      -> [fear/noticed/noticing] c98 hs=False s=insight :: You noticed your hands sweat when you even think about driving on the motorway.
+  ENTRY d-41 note: Drove to the shop on quiet streets with a friend in the car. Breathed out slowly at each light.
+      -> [calm/used_method/steadying] c97 hs=False s=commitment,resilience :: You breathed out slowly at each light.
+  ENTRY d-29 note: Drove alone to work on the back roads. Scared but did it.
+      -> [fear/done/values_action] c99 hs=True s=courage :: You drove alone to work on the back roads, even though you were scared.
+  ENTRY d-15 note: Still avoided the motorway when a colleague offered the faster route. That is still hard.
+      -> [fear/still_hard/None] c97 hs=False s= :: Taking the motorway when a colleague offered the faster route is still hard for you.
+  ENTRY d-4 note: Drove to their parents, back roads, slow breathing at the lights. Felt almost normal.
+      -> [fear/used_method/steadying] c95 hs=False s=courage,commitment :: You used slow breathing at the lights while driving to your parents.
+      -> [calm/noticed/noticing] c86 hs=False s=insight :: You noticed you felt almost normal.
+  -- 2026-10-12: level 1 (1 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 1, 'honesty': 0, 'resilience': 1, 'kindness': 0, 'commitment': 1}
+     PATH [fear] Working with fear around driving  (about driving and taking the motorway)
+        skill: Driving even when scared [values_action/stairs] practicing x1
+        skill: Noticing fear in your body [noticing/eye] discovered x1
+        still hard: Taking the motorway to work (1)
+  -- 2026-10-19: level 1 (2 steps, the_newcomer), sources {'notes': 4, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 2, 'insight': 2, 'honesty': 0, 'resilience': 1, 'kindness': 0, 'commitment': 2}
+     PATH [fear] Working with fear around driving  (about driving and taking the motorway)
+        skill: Breathing out slowly [steadying/wind] practicing x1
+        skill: Driving even when scared [values_action/stairs] practicing x1
+        skill: Noticing fear in your body [noticing/eye] discovered x1
+        still hard: Taking the motorway to work (1)
+     forming: [{'emotion_family': 'calm', 'entries': 2}]
+     tool: Slow breathing [self] used 2
+  WORDS s9 Noticing fear in your body: You notice your hands sweat when you even think about driving on the motorway. That tells you when fear is showing up before you even start the car.
+  WORDS s10 Driving even when scared: You drove alone to work on the back roads even though you were scared. You kept going with fear along for the ride.
+  WORDS s11 Breathing out slowly: You breathe out slowly at the lights while you drive, and it helps you keep going even when you feel scared.
+  TOOL t4 Slow breathing [self]: You breathe out slowly at the lights while driving. | note: You did this while driving to your parents.
+  HARD h1 Taking the motorway to work | When a colleague offers the faster route, it is still hard for you.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 4, "sessions": 1}'}
+  usage: {'calls': 7, 'prompt': 19189, 'cached': 15616, 'completion': 1083, 'usd': 0.00872, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S12  mostly good feelings  (English, art9 False)
+  expect: families ['joy', 'pride', 'calm'], crisis entries 0
+  ENTRY d-40 note: Spent Saturday painting for the first time in years. Lost track of time. Pure fun.
+      -> [joy/done/values_action] c98 hs=False s=commitment :: You spent Saturday painting for the first time in years.
+      -> [joy/noticed/noticing] c96 hs=False s= :: You noticed it felt like pure fun.
+  ENTRY d-30 note: Showed a painting to a friend. They were proud and a bit shy.
+      -> [pride/done/values_action] c98 hs=False s=courage,commitment :: You showed a painting to a friend.
+      -> [pride/noticed/noticing] c96 hs=False s=insight :: You noticed you felt proud and a bit shy.
+  ENTRY d-22 reflect_talk: Told Orca that making things just for fun used to feel selfish. Now it feels like breathing.
+      -> [calm/noticed/noticing] c94 hs=False s=insight :: You noticed that making things just for fun had started to feel like breathing.
+  ENTRY d-12 note: Signed up for an evening class. Proud they followed through.
+      -> [pride/done/values_action] c98 hs=False s=commitment :: You signed up for an evening class.
+  ENTRY d-3 note: Sat in the park after class, calm and happy.
+      -> [calm/noticed/noticing] c98 hs=False s= :: You noticed you felt calm and happy in the park after class.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 3, 'talks': 1, 'sessions': 0}, support_row False, jobs [('ok', 'nothing')]
+     strengths {'courage': 1, 'insight': 2, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 3}
+     forming: [{'emotion_family': 'pride', 'entries': 2}]
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 4, 'talks': 1, 'sessions': 0}, support_row False, jobs [('ok', 'nothing')]
+     strengths {'courage': 1, 'insight': 2, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 3}
+     forming: [{'emotion_family': 'calm', 'entries': 2}, {'emotion_family': 'pride', 'entries': 2}]
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 4, "talks": 1}'}
+  usage: {'calls': 5, 'prompt': 11351, 'cached': 10240, 'completion': 548, 'usd': 0.00407, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S13  lęk przed oceną w pracy (Polish)  (Polish, art9 True)
+  expect: families ['fear', 'worry'], crisis entries 0, note: Names and texts in Polish, no dashes.
+  ENTRY d-60 note: Napisała, że przed prezentacją w pracy cała się trzęsła i bała się, że szef ją oceni. Prawie odwołała spotkanie.
+      -> [fear/noticed/noticing] c97 hs=False s=insight :: Przed prezentacją w pracy czułaś strach i trzęsło ci się całe ciało.
+  ENTRY d-52 after_therapy: Sesja o lęku przed oceną. Zauważyła, że najgorsze są pierwsze minuty. Terapeutka zaproponowała, żeby na początku powiedzieć jedno zdanie o tym, jak się czuje.
+      -> [fear/noticed/noticing] c96 hs=False s=insight,honesty :: Zauważyłaś, że najgorsze są pierwsze minuty.
+      -> [fear/from_therapy/using_therapy] c95 hs=False s= :: Na początku masz powiedzieć jedno zdanie o tym, jak się czujesz.
+  ENTRY d-38 note: Na spotkaniu zespołu powiedziała, że trochę się stresuje, i od razu zrobiło się lżej. Poprowadziła prezentację do końca.
+      -> [worry/done/connecting] c98 hs=False s=courage,honesty :: Powiedziałaś na spotkaniu zespołu, że trochę się stresujesz, i zrobiło się lżej.
+      -> [worry/done/values_action] c96 hs=False s=commitment,courage :: Poprowadziłaś prezentację do końca.
+  ENTRY d-24 note: Zgłosiła się do prowadzenia kolejnego spotkania. Bała się, ale była dumna.
+      -> [fear/done/values_action] c96 hs=True s=courage,commitment :: Zgłosiłaś się do prowadzenia kolejnego spotkania, choć było to trudne.
+      -> [fear/noticed/noticing] c94 hs=False s=insight :: Zauważyłaś, że bałaś się i byłaś dumna.
+  ENTRY d-9 note: Odpowiedziała szefowi wprost, że potrzebuje więcej czasu na raport. Wciąż trudno jej mówić to na głos przy wszystkich.
+      -> [overwhelm/done/connecting] c97 hs=True s=courage,honesty :: Powiedziałaś szefowi wprost, że potrzebujesz więcej czasu na raport.
+      -> [fear/still_hard/None] c95 hs=False s= :: Wciąż trudno ci mówić to na głos przy wszystkich.
+  -- 2026-10-12: level 1 (1 steps, the_newcomer), sources {'notes': 4, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 4, 'insight': 3, 'honesty': 3, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     PATH [fear] Mówienie o strachu w pracy  (o mówieniu o strachu przed ludźmi w pracy)
+        skill: Mówienie jednego zdania [connecting/chat] practicing x1
+        skill: Zauważanie strachu i dumy [noticing/tag] discovered x1
+        skill: Rozpoznawanie pierwszych minut [noticing/eye] discovered x1
+        still hard: Mówienie tego na głos przy wszystkich (1)
+     idea: [recurring/todo] Jeśli chcesz, zauważaj pierwsze minuty i zobacz, co wtedy pomaga najbardziej. | why: Zauważyłaś, że najgorsze są pierwsze minuty.
+  -- 2026-10-19: level 1 (1 steps, the_newcomer), sources {'notes': 4, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 4, 'insight': 3, 'honesty': 3, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     PATH [fear] Mówienie o strachu w pracy  (o mówieniu o strachu przed ludźmi w pracy)
+        skill: Mówienie jednego zdania [connecting/chat] practicing x2
+        skill: Zauważanie strachu i dumy [noticing/tag] discovered x1
+        skill: Rozpoznawanie pierwszych minut [noticing/eye] discovered x1
+        still hard: Mówienie tego na głos przy wszystkich (1)
+  WORDS s12 Mówienie jednego zdania: Mówisz jedno zdanie o tym, jak się czujesz, zamiast wszystko trzymać w sobie. Tak zaczynasz, gdy przed spotkaniem albo prezentacją strach jest silny.
+  WORDS s13 Rozpoznawanie pierwszych minut: Zauważasz, że najtrudniejsze są pierwsze minuty. Dzięki temu możesz lepiej zobaczyć, kiedy strach najmocniej cię zalewa.
+  WORDS s14 Zauważanie strachu i dumy: Zauważasz, że możesz się bać i jednocześnie czuć dumę. To pomaga ci lepiej zobaczyć, co się w tobie dzieje, gdy bierzesz na siebie trudne rzeczy.
+  HARD h2 Mówienie tego na głos przy wszystkich | Na spotkaniach, gdy chcesz powiedzieć, że czegoś potrzebujesz.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 4, "sessions": 1}'}
+  usage: {'calls': 7, 'prompt': 19832, 'cached': 5376, 'completion': 1978, 'usd': 0.02015, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S14  grief after a parent's death  (English, art9 True)
+  expect: families ['grief', 'sadness', 'closeness'], crisis entries 0
+  ENTRY d-85 note: Three months since their father died. They keep picking up the phone to call him.
+      -> [grief/still_hard/None] c95 hs=False s=resilience :: Three months after your father died is still hard for you.
+      -> [grief/still_hard/None] c92 hs=False s=honesty :: Picking up the phone to call him is still hard for you.
+  ENTRY d-78 after_therapy: Session on grief. They noticed they push sadness away by staying busy. Their therapist suggested letting a wave come and pass without fixing it.
+      -> [sadness/noticed/noticing] c98 hs=False s=insight :: You noticed you push sadness away by staying busy.
+      -> [sadness/from_therapy/using_therapy] c97 hs=False s= :: Your therapist suggested letting a wave come and pass without fixing it.
+  ENTRY d-63 note: Looked at old photos and let themselves cry for a while. Afterwards felt lighter.
+      -> [grief/used_method/steadying] c94 hs=False s=courage,resilience :: You looked at old photos and let yourself cry for a while.
+      -> [grief/noticed/noticing] c88 hs=False s= :: You felt lighter afterwards.
+  ENTRY d-47 reflect_talk: Talked about the funeral and what they never said. Wrote a letter to their father in the app.
+      -> [grief/noticed/noticing] c94 hs=False s=honesty,insight :: You talked about the funeral and what you never said.
+      -> [grief/used_method/values_action] c95 hs=False s=courage,honesty :: You wrote a letter to your father in the app.
+  ENTRY d-30 note: Told their brother they miss dad. They talked for an hour, the first real talk in years.
+      -> [grief/done/connecting] c96 hs=False s=honesty,courage :: You told your brother you miss dad.
+      -> [closeness/noticed/connecting] c78 hs=False s=resilience :: You talked for an hour, the first real talk in years.
+  ENTRY d-11 note: His birthday. Hard day. They let the sadness come and went for a walk to his favourite bench.
+      -> [sadness/used_method/steadying] c95 hs=True s=courage,resilience :: You let the sadness come and went for a walk to his favourite bench.
+  -- 2026-10-12: level 1 (4 steps, the_newcomer), sources {'notes': 4, 'talks': 1, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 4, 'insight': 2, 'honesty': 4, 'resilience': 4, 'kindness': 0, 'commitment': 0}
+     PATH [grief] Making room for grief  (about your father, the funeral, and missing him)
+        skill: Talking about missing him [connecting/people] practicing x1
+        skill: Saying what was left unsaid [using_therapy/notebook] practicing x2
+        skill: Letting the wave pass [steadying/wave] practicing x2
+        still hard: Three months after your father died (1)
+        still hard: Picking up the phone to call him (1)
+     PATH [sadness] Working with sadness  (about staying busy, letting sadness in, and walking with it)
+        skill: Letting sadness move on [steadying/anchor] practicing x1
+        skill: Noticing the busy push-away [noticing/eye] discovered x1
+     tool: Writing a letter [self] used 1
+     tool: Looking at old photos [self] used 1
+     idea: [consolidate/todo] Maybe write down when you notice the busy push-away. | why: You noticed you push sadness away by staying busy.
+     idea: [transfer/orca] If it fits, try the wave your therapist talked about when the grief feels heavy. | why: You already noticed that letting the sadness come and walking helped it move through.
+  -- 2026-10-19: level 1 (4 steps, the_newcomer), sources {'notes': 4, 'talks': 1, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 4, 'insight': 2, 'honesty': 4, 'resilience': 4, 'kindness': 0, 'commitment': 0}
+     PATH [grief] Making room for grief  (about your father, the funeral, and missing him)
+        skill: Talking about missing him [connecting/people] practicing x1
+        skill: Saying what was left unsaid [using_therapy/notebook] practicing x2
+        skill: Letting the wave pass [steadying/wave] practicing x2
+        still hard: Three months after your father died (1)
+        still hard: Picking up the phone to call him (1)
+     PATH [sadness] Working with sadness  (about staying busy, letting sadness in, and walking with it)
+        skill: Letting sadness move on [steadying/anchor] practicing x1
+        skill: Noticing the busy push-away [noticing/eye] discovered x1
+     tool: Writing a letter [self] used 1
+     tool: Looking at old photos [self] used 1
+     idea: [consolidate/orca] Maybe notice what helps you let sadness move on after a walk. | why: You walked to his favourite bench after letting the sadness come.
+     idea: [consolidate/agenda] If it fits, bring the wave idea to your next session. | why: Your therapist suggested letting the wave come and pass, and you already tried it with photos and crying.
+  WORDS s15 Letting the wave pass: You let grief come instead of pushing it away, then let it pass in its own time. You noticed you felt lighter after looking at old photos and crying, and you walked to his favourite bench when the sadness came.
+  WORDS s16 Saying what was left unsaid: You bring the funeral and what you never said into words. You wrote a letter to your father in the app, and you talked about the funeral when it came up.
+  WORDS s17 Talking about missing him: You let someone close know you miss your dad. You told your brother, and you had a long talk that felt like the first real talk in years.
+  WORDS s18 Noticing the busy push-away: You can tell when you push sadness away by staying busy. Seeing that pattern gives you a place to start when the feeling keeps getting pushed aside.
+  WORDS s19 Letting sadness move on: You let the sadness come, then you kept moving with a walk. That gave the feeling some room without needing to fix it.
+  TOOL t5 Writing a letter [self]: You write down what you wish you had said and keep it in the app. | note: You wrote a letter to your father in the app.
+  TOOL t6 Looking at old photos [self]: You look at old photos and let the feelings come for a while. | note: You looked at old photos and let yourself cry for a while.
+  HARD h3 Three months after your father died | None
+  HARD h4 Picking up the phone to call him | None
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 4, "sessions": 1, "talks": 1}'}
+  usage: {'calls': 8, 'prompt': 22202, 'cached': 17664, 'completion': 2135, 'usd': 0.01434, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S15  new account, two entries in the first days  (English, art9 True)
+  expect: families ['worry', 'fear'], crisis entries 0, note: First 14 days: 2 entries are enough for a path.
+  ENTRY d-8 reflect_talk: First talk with Orca. They are anxious about starting therapy and worried the therapist will think they are overreacting.
+      -> [worry/noticed/noticing] c97 hs=False s=insight :: You noticed you felt worried about starting therapy.
+  ENTRY d-3 after_therapy: First session went better than expected. They told the therapist about the panic before exams and felt heard.
+      -> [fear/done/using_therapy] c95 hs=True s=honesty,courage :: You told your therapist about the panic before exams.
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 0, 'talks': 1, 'sessions': 0}, support_row False, jobs [('ok', 'nothing')]
+     strengths {'courage': 0, 'insight': 1, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+     forming: [{'emotion_family': 'worry', 'entries': 1}]
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 0, 'talks': 1, 'sessions': 1}, support_row False, jobs [('ok', 'nothing')]
+     strengths {'courage': 1, 'insight': 1, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+     forming: [{'emotion_family': 'worry', 'entries': 1}, {'emotion_family': 'fear', 'entries': 1}]
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"sessions": 1, "talks": 1}'}
+  usage: {'calls': 2, 'prompt': 4557, 'cached': 4096, 'completion': 175, 'usd': 0.00144, 'models': ['gpt-5.4-mini']}
+====================================================================================================
+S16  homework that keeps coming back  (English, art9 True)
+  expect: families ['shame'], crisis entries 0, note: Idea reason should be homework.
+  ENTRY d-20 homework_open: Notice one moment a day when you criticise yourself and write what you said
+  ENTRY d-20 after_therapy: Session about the harsh inner critic. They noticed it is loudest after small mistakes. Homework: notice the critic and write it down.
+      -> [shame/noticed/noticing] c97 hs=False s=insight :: You noticed the critic was loudest after small mistakes.
+      -> [shame/from_therapy/using_therapy] c96 hs=False s= :: You were told to notice the critic and write it down.
+  ENTRY d-14 note: Dropped a glass and heard themselves say you are so useless. They wrote it down and it sounded silly on paper.
+      -> [shame/noticed/noticing] c94 hs=False s=insight,honesty :: You noticed you called yourself useless after dropping a glass.
+      -> [shame/used_method/rethinking] c90 hs=False s=insight :: You wrote it down, and it sounded silly on paper.
+  ENTRY d-6 note: The critic came back after a late email. They did not write it down this time and felt bad all evening.
+      -> [shame/noticed/noticing] c93 hs=False s=insight :: You noticed your inner critic came back after a late email.
+      -> [shame/still_hard/None] c84 hs=False s= :: Writing it down after a late email is still hard for you.
+  -- 2026-10-12: level 1 (1 steps, the_newcomer), sources {'notes': 1, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 0, 'insight': 3, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+     PATH [shame] Noticing my inner critic  (about the critic and the harsh words you say to yourself)
+        skill: Writing it down [using_therapy/notebook] practicing x1
+        skill: Noticing the critic [noticing/tag] discovered x2
+  -- 2026-10-19: level 1 (1 steps, the_newcomer), sources {'notes': 2, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 0, 'insight': 4, 'honesty': 1, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+     PATH [shame] Noticing my inner critic  (about the critic and the harsh words you say to yourself)
+        skill: Writing it down [using_therapy/notebook] practicing x1
+        skill: Noticing the critic after mistakes [noticing/eye] discovered x1
+        skill: Noticing the critic [noticing/tag] discovered x2
+        still hard: Writing it down after a late email (1)
+     idea: [homework/agenda] If it fits, write down the exact words you said to yourself after a late email. | why: Your therapist asked you to notice the critic and write it down, and this came up again after a late email.
+  WORDS s20 Noticing the critic: You notice when the critic gets loud, especially after small mistakes. You catch the harsh words, like calling yourself useless after dropping a glass.
+  WORDS s21 Writing it down: You write the critic's words down, and seeing them on paper can make them sound silly. You are bringing the therapist's suggestion into your own way of noticing.
+  WORDS s22 Noticing the critic after mistakes: You notice the critic gets louder after small mistakes, and after a late email it came back again. You are starting to catch the moment it shows up.
+  HARD h5 Writing it down after a late email | When the critic comes back after a late email.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 2, "sessions": 1}'}
+  usage: {'calls': 5, 'prompt': 14919, 'cached': 11520, 'completion': 1060, 'usd': 0.00818, 'models': ['gpt-5.4-mini']}
+DB: C:\Users\mikol\AppData\Local\Temp\ke_quality_eval_1792400969031.db
+====================================================================================================
+8 stories, 69 moments, 8 stories with moments (need 6), 6/8 expected maps with a path, coverage 6/8, 0 story problems.
+Tokens: {'calls': 62, 'prompt': 163227, 'cached': 122368, 'completion': 10749, 'usd': 0.0882}, USD per story 0.01103, models ['gpt-5.4-mini']
+RESULT: PASS

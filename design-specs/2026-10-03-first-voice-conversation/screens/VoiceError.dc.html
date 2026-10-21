@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Connection lost</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0F3D33}a:hover{color:#0F3D33}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; background: radial-gradient(120% 80% at 50% 18%, #1B584B 0%, #0F3D33 55%, #0A2B24 100%); font-family: Figtree, sans-serif; color: #FFFFFF; overflow: hidden">
+
+  <div style="align-self: stretch; padding: 18px 24px 0 24px; display: flex; justify-content: space-between; align-items: baseline">
+    <span style="font-size: 16px; font-weight: 600; letter-spacing: -0.16px">First conversation with [Orca]</span>
+    <span style="font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.7)">01:08</span>
+  </div>
+
+  <div style="flex-grow: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; padding: 0 32px">
+    <div style="position: relative; width: 184px; height: 184px; display: flex; align-items: center; justify-content: center">
+      <span style="position: absolute; width: 140px; height: 140px; border-radius: 70px; border: 1.5px dashed rgba(255,255,255,0.25)"></span>
+      <span style="width: 118px; height: 118px; border-radius: 59px; background: rgba(255,255,255,0.14); display: flex; align-items: center; justify-content: center">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8.5a15 15 0 0 1 20 0M5 12a10 10 0 0 1 9-2.6M8.5 15.5a5 5 0 0 1 4-1.3M12 19h.01M3 3l18 18"/></svg>
+      </span>
+    </div>
+    <div style="display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; max-width: 300px">
+      <span style="font-size: 15px; font-weight: 600; letter-spacing: 0.3px; color: #A6E8D8">Connection lost</span>
+      <p style="margin: 0; font-size: 19px; line-height: 1.45; color: rgba(255,255,255,0.92)">What you said so far is saved. You can pick up in text, right where you left off.</p>
+    </div>
+  </div>
+
+  <div style="align-self: stretch; padding: 0 24px 40px 24px; display: flex; flex-direction: column; gap: 10px">
+    <a href="TypeFallback.dc.html" style="height: 56px; border-radius: 28px; background: #FFFFFF; color: #0F3D33; font-size: 16px; font-weight: 700; text-decoration: none; display: flex; align-items: center; justify-content: center">Continue in text</a>
+    <a href="VoiceLive.dc.html" style="height: 52px; border-radius: 26px; border: 1.5px solid rgba(255,255,255,0.4); color: #FFFFFF; font-size: 16px; font-weight: 600; text-decoration: none; display: flex; align-items: center; justify-content: center">Try voice again</a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

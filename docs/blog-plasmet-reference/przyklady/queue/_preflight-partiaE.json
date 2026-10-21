@@ -1,0 +1,37 @@
+{
+  "_opis": "Bramka asortymentowa dla partii E (briefy 11-20 z _batch-2026-08b-briefs.md, pliki 82-91). Slowa dopasowywane do nazw produktow. Uruchom: python scripts/blog-asortyment-preflight.py --temat blog/queue/_preflight-partiaE.json",
+
+  "82 Dmuchawa do lisci akumulatorowa": ["dmuchawa", "odkurzacz ogrodowy", "wydmuchiwacz"],
+  "82 (dokup) akumulator i ladowarka M18": ["akumulator milwaukee m18", "ladowarka milwaukee m18", "akumulator m18"],
+
+  "83 Drewno opalowe: pilarki lancuchowe": ["pilarka", "pila lancuchowa", "lancuch do pilarki", "prowadnica"],
+  "83 (dokup) siekiera, luparka, kliny do drewna": ["siekiera", "topor", "lupark", "klin do drewna", "maczuga"],
+  "83 (dokup) olej do prowadnicy i lancucha": ["olej do prowadnicy", "olej lancuchowy", "olej do lancucha"],
+  "83 (dokup) wilgotnosciomierz do drewna": ["wilgotnosciomierz", "miernik wilgotnosci", "higrometr"],
+
+  "84 Wilgoc w piwnicy: osuszanie i hydroizolacja wewnetrzna": ["osuszacz", "folia w plynie", "hydroizolacj", "membrana hydroizolacyjna", "tynk renowacyjny"],
+  "84 (dokup) wentylacja piwnicy": ["kratka wentylacyjna", "wentylator scienny", "kanal wentylacyjny"],
+
+  "85 Nawiewniki okienne": ["nawiewnik", "nawietrzak"],
+  "85 (dokup) higrostat i wentylator z czujnikiem": ["higrostat", "czujnik wilgoci", "wentylator sufitowy"],
+
+  "86 Zazimowanie narzedzi ogrodowych": ["kosiarka", "podkaszarka", "nozyce do zywoplotu", "glowica zylkowa", "zylka"],
+  "86 (dokup) preparaty konserwujace i smary": ["smar", "preparat konserwuj", "spray wielofunkcyjny", "odrdzewiacz", "wd-40"],
+
+  "87 Rekawice do pracy w chlodzie (EN 511)": ["rekawice ocieplane", "rekawice zimowe", "rekawice zimow"],
+  "87 (szerzej) rekawice robocze w ogole": ["rekawice"],
+  "87 (dokup) czapka i komin zimowy": ["czapka zimowa", "komin", "chusta"],
+
+  "88 Detektor napiecia bezdotykowy": ["detektor napiecia", "wykrywacz napiecia", "probnik napiecia", "detektor"],
+  "88 (dokup) miernik dwubiegunowy i multimetr": ["multimetr", "miernik napiecia", "cyfrowy miernik", "cegielka"],
+  "88 (dokup) wkretaki VDE i izolowane": ["vde", "izolowany wkretak", "wkretaki izolowane"],
+
+  "89 Montaz na elewacji i w ociepleniu": ["kolek do ocieplen", "kotwa dystansowa", "kolek ramowy", "kotwa chemiczna", "sruba dwugwintowa"],
+  "89 (dokup) wiertla do betonu": ["wiertlo do betonu", "wiertlo sds"],
+
+  "90 Mroz w garazu: chemia i akumulatory": ["pianka zimowa", "piana zimowa", "gun foam winter", "srodek do szyb", "plyn do chlodnic"],
+  "90 (dokup) skrzynie i organizery na chemie": ["skrzynia", "organizer", "packout", "walizka"],
+
+  "91 Lampa warsztatowa i latarka akumulatorowa": ["lampa warsztatowa", "latarka", "naswietlacz", "lampa robocza", "reflektor"],
+  "91 (dokup) czolowka": ["czolowka", "latarka czolowa"]
+}

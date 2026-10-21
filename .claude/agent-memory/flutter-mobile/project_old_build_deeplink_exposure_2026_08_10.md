@@ -1,0 +1,23 @@
+---
+name: project-old-build-deeplink-exposure-2026-08-10
+description: Investigation of what old-build users (2.0.60/2.0.44/2.0.36) experience when a push deep-link targets a route their build lacks, and the client-side errorBuilder fix implemented for it.
+metadata:
+  type: project
+---
+
+Investigated 2026-08-10 what happens to old-build users when a push notification deep-link targets a route their installed build doesn't have.
+
+**Version-to-commit mapping method**: `pubspec.yaml`'s `version:` line is bumped every release; find the commit with `git log --follow -p -- pubspec.yaml | grep -E "^commit|^\+version:"`. Repo toplevel for this repo is `mindsync-frontend/` (one level above `mindsync_app/`), so `git show <rev>:mindsync_app/lib/...` is root-relative, but `git log -- <path>` / `git ls-tree -- <path>` are CWD-relative — easy to get inconsistent results mixing the two path conventions in the same investigation (I did, twice).
+
+**Findings**:
+- `lib/navigation/ms_routes.dart` has NEVER had a GoRouter `errorBuilder` at any point in history (checked 2.0.36/2.0.44/2.0.60 and HEAD before this fix) — this is not a legacy-only gap, HEAD had it too.
+- go_router 14.6.0's default fallback (`ErrorScreen` in `lib/src/misc/error_screen.dart`) is NOT a crash: unbranded white screen, bold "Page Not Found" + raw `GoException` text, but includes a working "Go to home page" button (`context.go('/')`). So the failure mode is jarring/unbranded, not a dead end.
+- Old builds' `_resolveNotificationRoute` (in `main.dart`, pre-`notification_route_resolver.dart` which was added 2026-07-06 commit 24a2f44) has a `default: return route;` passthrough for any unrecognized `route` value in the FCM payload — same passthrough exists at HEAD (`resolveNotificationRoute` in `lib/utils/notification_route_resolver.dart`).
+- Backend (`MindSync/app/services/notification_routes.py`) sends `route`/`deep_link_route` on every notification-moment push UNCONDITIONALLY — zero app-version awareness anywhere in the backend (grepped for app_version/min_version/client_version/build_number in `app/` — no hits) or the frontend (only use of version-related code is displaying it in About/Settings; no forced-update mechanism exists at all).
+- PostHog quantification (30d, `notification_opened` event, `$app_version` in 2.0.60/2.0.44/2.0.36): only 3 taps total across 3 distinct users (out of 19 active old-build users). `deep_link_route` property on the event showed the actual paths: 2 of 3 resolved to routes that already existed in that user's build (graceful — query params like `?section=` are just ignored since GoRouter matches on path only); 1 of 3 (2.0.44/build113, 2026-07-25, route `/main-page/tab/main?section=mood_trends`) almost certainly DID hit the raw error screen, since `/main-page/tab/:tab` wasn't registered until build ≥131. So the failure mode is real but rare (~1 confirmed hit in 30d across 19 users), not theoretical, not zero.
+
+**Decision**: implemented a client-side `RouteNotFoundScreen` + `errorBuilder` wiring (cheap, protects all FUTURE builds including current HEAD) — see `lib/screens/errors/route_not_found_screen.dart`, wired in `lib/navigation/ms_routes.dart`'s `GoRouter(errorBuilder: ...)`. Logs a new `route_not_found` PostHog event (`AnalyticsEvents.routeNotFound` / `routeNotFoundPath`) with the attempted path for future observability without needing this kind of PostHog archaeology again. Deliberately does NOT use `AnalyticsEvents.withUserParams()` (calls `sl<FirebaseAuth>()` with no try/catch — would throw pre-auth). Cannot fix already-shipped binaries; the only lever for the existing 19 old-build users is backend-side (version-aware route capping in `notification_routes.py`, or a store-update nudge) — specced for integration-devops/backend-api, not implemented by this agent (backend is out of scope). Committed locally only (`3d99741`, dev branch, NOT pushed) per task constraints.
+
+**Reusable l10n keys discovered**: `common_errorOccurred` ("An error occurred"), `common_errorTryLater`, `common_goToMainPage` ("Go to Main Page") already exist fully translated in all 7 ARB files but were unused in any `.dart` file before this fix — good generic-error-screen copy to reach for again.
+
+**Test pattern for go_router errorBuilder**: don't pump the real `MsRoutes.router` (heavy, no existing test does this — needs full app DI). Instead build a small local `GoRouter` in the test that mirrors the real `errorBuilder` wiring, call `router.go('/unknown/path')`, `pumpAndSettle`, assert the fallback widget appears and `find.text('Page Not Found')` (go_router's own default heading) is absent — proves you replaced it, not just added text. See `test/screens/errors/route_not_found_screen_test.dart`.

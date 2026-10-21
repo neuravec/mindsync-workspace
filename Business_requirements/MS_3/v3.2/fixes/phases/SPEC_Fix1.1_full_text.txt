@@ -1,0 +1,220 @@
+MindSync Change Spec — MSV3.2 Fix.1
+For Claude Code · 2026-07-07 · author: Darek
+Summary
+Total items: 16 (DELETE: 0 · FIX: 5 · CHANGE: 11)
+Areas touched: Voice input (error card, iOS recording, recording screen copy), Notifications, Output cards → Workspace triage, Main (module order, Next therapy session, Zadania domowe, Mood Trend, AI Summary, weekly check-in), Workspace (To do, Agenda, category rename), Timeline (weekly/monthly summaries).
+Intent: Post-MSV3.2 cleanup batch. Fixes the broken iOS voice path, restores the lost error-card secondary action, wires every output card into Workspace triage, re-implements the Main order that failed on iOS, and repairs the session state machine, Mood Trend input, and summary generation. Numbering continues the previous batch — old IDs (CS-12–CS-19) referenced below belong to that batch and are already live.
+
+CS-01 · CHANGE · [Voice input] · Record error card — full redesign + pufferfish Lottie
+Type: CHANGE
+Location: Recording error card → whole card. Shown whenever a voice recording fails, in ALL voice-input flows (one shared component — per decision). Reached: any feature → voice input → recording fails. Lead: grep the current error-card widget / &quot;Ups!&quot; strings.
+What it is: The error card users see when a recording can't be processed. Currently: Coral Pink circle animation, and the secondary button has been changed to text button.
+UI anatomy (top to bottom):
+Top: card title + X to close the window
+Middle: Lottie animation — pufferfish (existing asset; loop + autoplay). Coral Pink circle removed.
+Below: title — PL &quot;Ups!&quot; / ENG &quot;Yieks!&quot; (intentional spelling, verbatim) + subtext with error-type information — distinct string per error type (e.g. mic permission / nothing heard / upload failed; enumerate the failure types the recording flow can raise)
+Bottom: primary button PL &quot;Ponów próbę&quot; / ENG &quot;Try again&quot;; below it secondary button PL &quot;Porzuć&quot; / ENG &quot;Discard&quot; (restore — currently missing)
+Logic:
+X → tap → discards recording, closes card, no confirm → previous screen
+&quot;ponów próbę&quot; / &quot;Try again&quot; → tap → restarts recording in the same flow, card dismissed
+&quot;Porzuć&quot; / &quot;Discard&quot; → tap → identical to X: discard + close, no confirm dialog
+Action: From: current card (Coral Pink circle, missing secondary). To: anatomy 1–4 above. Remove the Coral Pink circle from the animation layer entirely.
+Outcome: Every failed recording shows what went wrong and offers retry or discard in one tap; the &quot;Porzuć&quot; action has UI of secondary button, which is ghost button style.
+Value: The secondary action has wrong UI. Now it’s text link, and it should be styled as secondary button (ghost button)
+Do NOT touch: Happy-path recording UI; permission-request flow; other modal states.
+Done when: Error card in every voice flow matches anatomy 1–4 in a screenshot; each error type shows its own subtext; all three exits behave per Logic;no Coral Pink circle rendered; builds pass Android + iOS.
+
+CS-02 · FIX · [Voice input] · iOS recording upload fails everywhere
+Type: FIX
+Location: Every voice-input entry point, iOS only. Reached: any feature → voice note → stop/submit recording.
+Now (wrong): On iOS, attempting a voice recording in ANY functionality immediately errors that the recording can't be uploaded. Manual text input works fine. (Author flags the symptom only — no technical fix prescribed; diagnose from code.)
+Expected: Voice recordings record, upload, and process on iOS exactly as on Android.
+Action: Reproduce on iOS, diagnose (permissions / audio codec / upload pipeline are leads, not conclusions), fix at root.
+Do NOT touch: Android voice path (working); manual text input.
+Done when: A voice note records and processes successfully on iOS in every voice-enabled feature, including the weekly check-in / therapy-relationship card (same root — see FIX.04 note); Android unchanged.
+
+CS-04 · FIX · [Voice input] · Remove the transcription-promise line
+Type: FIX
+Location: Recording screen → on-screen helper text, all voice inputs → the line &quot;Your transcript will appear here after you stop recording. &quot;
+Now (wrong): Screen displays that line; the promised transcript behavior doesn't match what users experience.
+Expected: The line is gone.
+Action: Delete ONLY that exact string (its PL localization sibling of the same string key goes with it — per decision, scope is this one line, not all transcription copy).
+Do NOT touch: Any other recording-screen copy; the transcription feature itself.
+Done when: Grep for the string returns no live references; recording screen renders without it in PL and ENG; nothing else on the screen changed.
+
+CS-06 · FIX · [Notyfikacje] · Deep-link every notification to its card
+Type: FIX
+Location: All app notifications → tap action.
+Now (wrong): Notifications open the app generically (user lands on Main).
+Expected: Every notification navigates directly to the input card or output card it refers to (&quot;w zależności o czym przypominają&quot;).
+Action: Implement a payload → route mapping covering every notification type that exists after this batch. Enumerate the types from the codebase (per decision — no external list).
+Do NOT touch: Notification scheduling/content — only the tap-through routing.
+Value: &quot;Reminders that dump the user on Main don't convert to the action.&quot;
+Done when: Tapping each notification type — cold start AND backgrounded app — lands on the exact card it references; manual test matrix (type × app state) listed in the PR.
+
+CS-07 · CHANGE · [Output cards] · Triage into Workspace
+Type: CHANGE
+Location: Every generated output card — Record, Prep, Between sessions, After Therapy → card body items, immediately after generation and on any later reopen. Reached: generate any card, or open one from Timeline.
+What it is: Output cards present AI-generated findings. Currently NO card offers saving anything to Workspace (&quot;Nie pojawia się możliwość zapisywania do workspace w żadnym z output cards&quot;).
+Action:
+Audit first (per decision): each output card has its own existing structure. Audit every card type's sections; identify which existing elements correspond to the four Workspace kinds and align/rename ONLY those to the mapping below. Each card's other categories stay unedited.If an output card doesn't have a corresponding workspace issues section, then create those. If the conversation won't have any matching data, then just leave those elements empty. 
+Mapping (cross-referenced with Workspace section E, previous batch):
+pytania / tematy (questions, topics) → Workspace §1 Agenda następnej sesji (CS-15)
+action pointy → Workspace §2 Do zrobienia (CS-16) — &quot;AI proponuje, Ty zatwierdzasz w triage&quot;
+threads / wątki → Workspace §3 Wątki (CS-17)
+realizations → Workspace §4 Realizations (CS-18) — no extra step (author's &quot;extra step&quot; note = the shared bookmark mechanic; see also FIX.05)
+Mechanics: each mappable item on the card gets a bookmark icon (ikonka zakładki).
+Logic:
+Bookmark icon → tap → item saved to its Workspace section instantly (no batch confirm) → icon shows selected state
+Bookmark icon (selected) → tap again → item removed from Workspace → icon back to unselected
+Bookmarks remain active forever — triage works right after generation AND on any later reopen from Timeline
+All items — selected and unselected — remain on the card as a reference point (&quot;nic nie ginie&quot;)
+Outcome: After any card generates, the user curates which findings become working material; Workspace fills only with what they chose, cards keep everything.
+Value: &quot;The user, not the AI, decides what is important enough to work on; Workspace stays curated.&quot;
+Do NOT touch: Card sections that don't map to the four kinds; the generation logic itself; Timeline card storage (nothing is removed from cards).
+AI: No new AI pass — triage uses each card's existing generated structure.
+Done when: All four card types show bookmark icons on every mappable item; tap/untap syncs the item into/out of the correct Workspace section instantly; items persist on cards regardless of selection; reopening an old card from Timeline still allows triage; all four Workspace sections receive their kind correctly. 
+
+CS-08 · CHANGE · [Main] · Feature order (re-implement — iOS failed)
+Type: CHANGE
+Location: Main screen → module stack, top to bottom.
+What it is: The previous batch defined the Main order; on iOS it was not implemented correctly (&quot;na iOS to nie zostało wdrożone poprawnie&quot;). Android is the reference.
+Action: Final Main order, top to bottom:
+Next therapy session (CS-09)
+Zadania domowe / Homework (CS-10)
+Mood Trend (CS-11) — with AI Summary inside its box (FIX.03)
+Therapy relationship prompt (old CS-12; conditional — visible only until the weekly check-in is done)
+Weekly Observations (old CS-13)
+[Afirmacja] — bez zmian, only its position Realizations and Goal leave Main — their Workspace homes (old CS-18, CS-19) are live; removal loses nothing (per decision).
+Do NOT touch: Afirmacja content/behavior.
+Done when: Main renders exactly these modules in this order on BOTH platforms; Realizations and Goal no longer on Main; AI Summary appears only inside Mood Trend.
+Blocked by: CS-10 (Homework module must exist), CS-11 + FIX.03 (Mood Trend box integration), CS-09.
+
+CS-09 · CHANGE · [Main] · &quot;Next therapy session&quot; — formats + state-dependent buttons
+Type: CHANGE
+Location: Main → module 1 → Next therapy session (countdown + action area).
+What it is: Countdown module with action-reminder elements guiding the user through the session cycle.
+Action: Keep the countdown with the existing action-reminder elements; change format and add state-dependent buttons. Countdown formats:
+&gt;24 h to session: day + time, e.g. &quot;jutro o 12:45&quot;, &quot;czwartek o 10:00&quot;. No minute countdown. Sessions further out than the weekday horizon: keep the current display as-is (Darek, 2026-07-05: &quot;Don't change anything. It's already good as it is now&quot;) — no new format work beyond these two rules.
+&lt;24 h: &quot;dzisiaj o [godzina sesji], za x godz y minut&quot;. State chain (confirmed): set session → prep CTA → session happens → debrief CTA → between-sessions encouragement → next session (loops). States &amp; buttons:
+No therapy set: button opening a hub-and-spoke flow to set therapy date, time, cadence (kiedy się odbywa) and with whom — writes the SAME fields as settings' session data.
+No prep done before upcoming session (zero &quot;przygotowanie do terapii&quot;): button → przygotowanie do terapii.
+Session already happened — begins at the session's start time (per decision): button → debrief po terapii.
+After debrief (between-sessions period): encouragement → between sessions. Embedded bug (fold — per decision): currently, after completing the debrief the module does NOT switch to between-sessions, and the next session stopped displaying even with weekly cadence set. Both are state-machine defects this rebuild must fix.
+Logic:
+Set-therapy button → tap → hub-and-spoke opens → save → module shows countdown; settings reflect the same data
+Prep button → tap → przygotowanie do terapii flow
+Debrief button → tap → debrief po terapii flow; on debrief completion → module switches to between-sessions state
+Between-sessions encouragement → tap → between sessions feature
+Cadence rollover: once a session's debrief is done (or the between-sessions state begins), the next session per cadence becomes the new countdown target
+Outcome: The module always tells the user the one next thing to do, and never strands them after a debrief.
+Value: The state chain is the app's core loop; a stuck state kills the cycle.
+Do NOT touch: Existing reminder elements (&quot;tak jak jest obecnie&quot;); settings' session data model; the current far-out-date display.
+Done when: Both countdown formats render per the examples; each state shows its button/encouragement; hub-and-spoke saves the same fields as settings; completing a debrief flips the module to between-sessions; with weekly cadence set, the next session appears automatically; state transitions correct across the day boundary and at session start time.
+Risk: Medium — state machine with time edge cases (e.g. session starting right now).
+
+CS-10 · CHANGE · [Main] · &quot;Zadania domowe / Homework&quot; module (re-implement — iOS missing)
+Type: CHANGE
+Location: Main → module 2 → Zadania domowe / Homework. Not implemented on iOS (&quot;na iOS nie zostało wdrożone&quot;); Android is the reference.
+What it is: &quot;Zadania domowe / Homework na dziś&quot; — today's view of the homework queue whose repository lives in Workspace §2 Do zrobienia (CS-16).
+Action: Max 3 items, each with a checkbox to tick off. Selection rule: the 3 oldest open items (FIFO); the rest wait in Workspace §2. Repeating tasks (FIX.01) re-enter the queue each period: on its repeat day a task becomes open again and queues FIFO by that day's date (per decision). The repository of done items is Homework within Workspace §2 — Main is only today's view.
+Logic: Checkbox → tap → item marked done → appears as zrobione in Workspace §2 → next oldest open item surfaces on Main.
+Outcome: User sees at most three concrete things to do today, ticks them off in place.
+Do NOT touch: n/a
+Done when: Main shows the ≤3 oldest open homework items with working checkboxes on BOTH platforms; checking one surfaces the next oldest; checked items appear as zrobione in Workspace §2; repeating tasks re-enter per their period; module reads/writes the same data as Workspace §2 (single source).
+Blocked by: FIX.01 (repeat mechanics live in the To-do feature).
+
+CS-11 · CHANGE · [Main] · Mood Trend — restore score input, rewrite narrative, add update dates
+Type: CHANGE
+Location: Main → Mood Trend module (Stats no longer exists; Mood Trend already lives on Main) → symptom rows + per-symptom narrative.
+What it is: Symptom tracking module. The old Stats version allowed entering/updating symptom scores; the Main version lost that. The per-symptom narrative currently recites point deltas between dates, symptom history, and &quot;add a note&quot; suggestions.
+Action (three parts):
+Restore score input: user can again add and change symptom scores (&quot;znów dodawać i zmieniać punktację symptomów&quot;), as the Stats version allowed. (Covers the reported bug &quot;nie można dodawać nowych punktacji dotyczących nastroju&quot;.)
+Narrative content rewrite (content ONLY — regeneration mechanics/timing untouched, per decision): each symptom's narrative must tell the user WHY it rises or falls, grounded in data they entered into the app. Qualitative wording — &quot;urosło mocno&quot;, &quot;urosło słabo&quot;, &quot;trochę zmalało&quot; — plus context from the user's own inputs. It must NOT: state point deltas between dates, recite symptom history, or suggest adding a note.
+Last-update date: a small (&quot;malutka&quot;) date next to each symptom name — relative format, PL &quot;2 dni temu&quot; / ENG &quot;2 days ago&quot; (per decision).
+Logic: Symptom row → tap score control → enter/adjust score → saved; narrative and update date refresh per existing mechanics.
+Outcome: User can score symptoms again, sees when each was last updated, and reads a narrative that explains changes from their own data instead of reciting numbers.
+AI: Input — the user's app data relevant to the symptom (entries, scores, card content). Output — short qualitative narrative per symptom, wording per Action 2, PL + ENG. Trigger — unchanged (current mechanics). Failure — unchanged (current behavior).
+Do NOT touch: Regeneration timing/mechanics; the module's position (handled by CS-08); AI Summary placement (FIX.03).
+Done when: Scores can be added and edited for every symptom; each symptom shows its relative last-update date; generated narratives contain qualitative phrasing with app-data context and none of the three banned patterns (spot-check across symptoms in PL and ENG).
+
+FIX.01 · CHANGE · [Workspace] · Feature &quot;To do&quot; — list, edit, repeats, Done
+Type: CHANGE
+Location: Workspace → §2 Do zrobienia → To-do list rows + list footer.
+What it is: The to-do list backing the Main Homework module (CS-10). Currently: bullet-point rows, a dots icon opening a menu containing &quot;Odkliknij&quot;, no repeats, no history.
+UI anatomy (top to bottom):
+List: max 5 to-do's visible
+Below list: text button &quot;Pokaż więcej&quot; / &quot;Pokaż mniej&quot; (ENG &quot;Show more&quot; / &quot;Show less&quot;) — appears only when 6+ tasks exist
+Each row: checkbox (replaces bullet point) + task title + edit icon (ołówek) (replaces dots icon; &quot;Odkliknij&quot; removed from the menu entirely)
+Bottom of feature: PL “Pokaż zakończone” (ENG&quot;Show completed&quot;) section — collapsed by default; each entry shows its completion date
+Logic:
+Checkbox → tap → task done → moves to Done section with today's date; if repeating, task reappears unchecked at its next period (each completion is a separate Done entry; a missed period just stays open — no stacking)
+&quot;Pokaż więcej&quot; → tap → full list expands, button becomes &quot;Pokaż mniej&quot; → tap → collapses to 5
+Edit icon (ołówek) → tap → hub-and-spoke opens task edit: change tytuł, opis, and manage repetition — label PL &quot;Powtarzaj&quot; / ENG &quot;Repeats&quot; + repeat icon; options PL &quot;Codziennie&quot;, &quot;Tygodniowo&quot;, &quot;Miesięcznie&quot; / ENG &quot;daily&quot;, &quot;weekly&quot;, &quot;monthly&quot; → save → row updates
+Done section header → tap → expands/collapses history
+Done entry checkbox → un-tap → task restored to the open list (per decision)
+Outcome: To-dos behave like tasks: checkable, editable, repeatable, with visible history.
+Do NOT touch: Task data shared with Main Homework (CS-10 reads the same source).
+Done when: ≤5 rows + expander per rule; checkboxes replace bullets; pencil replaces dots and &quot;Odkliknij&quot; is gone (grep clean); edit hub-and-spoke saves title/description/repeat; repeating tasks reappear per period and log each completion; Done section collapsed by default, dated, restorable.
+
+FIX.02 · CHANGE · [Main + Workspace] · &quot;Agenda następnej sesji&quot; — DONE section
+Type: CHANGE
+Location: Agenda następnej sesji — everywhere it renders (Main and Workspace §1) → below the open-topics list.
+What it is: The list of topics queued for the next session. No way to see resolved topics today.
+Action: Add a DONE section showing topics already resolved. Resolution is a manual tick by the user; the DONE section is visible in BOTH places the agenda renders (per decision).
+Logic: Topic → tick as resolved → moves from open list to DONE section (both surfaces, same data).
+Outcome: User sees what's already been handled without losing the record.
+Do NOT touch: Open-topic behavior; CS-07 feed into this agenda (§1).
+Done when: Ticking a topic moves it to DONE on Main and in Workspace §1 simultaneously; resolved topics persist; open list shows only unresolved.
+
+FIX.03 · CHANGE · [Main] · AI Summary — merge into Mood Trend box, trim, delete empty-state boxes
+Type: CHANGE
+Location: Main → AI Summary (currently a standalone module) → moves inside the Mood Trend box, above the first symptom.
+What it is: Descriptive summary of all symptom change based on context. Currently standalone, bulleted, with an &quot;add an entry&quot; / &quot;it's been a while&quot; box that shows &quot;Nie dodałeś od kilku dni notatki&quot; — a message that neither disappears after adding a note nor gets replaced by an actual summary (reported bug).
+Action:
+Move AI Summary INTO the Mood Trend UI box, positioned above the first symptom. It stops being a standalone Main module (hence absent from CS-08's order — confirmed).
+Content: short, descriptive summary of symptom change — max 4–5 lines, NO bullet points.
+DELETE outright (no relocation) the box with &quot;add an entry&quot; and &quot;it's been a while&quot; — this also removes the stale &quot;Nie dodałeś od kilku dni notatki&quot; defect.
+The summary itself must actually generate and render after new data (part of the reported bug).
+Outcome: One Mood Trend box: summary on top, symptoms with dates and narratives below; no nagging empty-state boxes.
+Do NOT touch: Mood Trend symptom rows (CS-11); 
+Done when: AI Summary renders inside the Mood Trend box above symptom 1, ≤5 lines, no bullets; standalone module gone from Main; &quot;add an entry&quot; / &quot;it's been a while&quot; boxes gone (grep clean, PL + ENG); after adding a note a real summary appears.
+Blocked by: CS-11 (shared box).
+
+FIX.04 · FIX · [Main] · Weekly check-in doesn't dismiss after completion
+Type: FIX
+Location: Main → therapy relationship prompt (weekly check-in) AND the therapy-relationship card itself.
+Now (wrong): After adding the therapy-relationship note, the weekly check-in prompt does not disappear from Main, and the same stale state shows on the relationship card. (The recording-processing/full-transcript error on this card is the CS-02 iOS root — fixed there, verified here.)
+Expected: Completing the weekly check-in dismisses the prompt on Main (per CS-08 module 4: &quot;visible only until the weekly check-in is done&quot;) and the relationship card reflects the completed state.
+Do NOT touch: The check-in content/flow itself.
+Done when: Adding the relationship note removes the Main prompt until the next weekly cycle; the relationship card shows the completed entry; a voice check-in on iOS processes and renders its full transcript (CS-02 verification point).
+Blocked by: CS-02 (transcript part).
+
+FIX.05 · FIX · [Workspace] · Realization pinned to agenda cannot be unpinned
+Type: FIX
+Location: Workspace → §4 Realizations → realization item pinned to Agenda następnej sesji.
+Now (wrong): A realization can be pinned to the agenda, but there is no way to unpin it.
+Expected: The pin action is reversible — unpin removes the realization from the agenda (the realization itself stays in §4).
+Do NOT touch: The Realizations three-point list with expandable full list (&quot;okay for now&quot; — author); pinning behavior.
+Done when: Pin → unpin round-trip works; unpinned realization gone from agenda, still present in §4.
+
+CS-20 · CHANGE · [Workspace] · Rename category &quot;Therapy&quot; → &quot;Workspace&quot; / &quot;Pracownia&quot;
+Type: CHANGE
+Location: The whole category currently named &quot;Therapy&quot; (navigation label + anywhere the category name renders).
+Action: Rename to ENG &quot;Workspace&quot;, PL &quot;Pracownia&quot; (spelling per decision — &quot;Pracowania&quot; in the answer was a typo).
+Do NOT touch: The category's contents, routes' behavior, or the four sections inside.
+Done when: Every user-visible instance shows Workspace/Pracownia per locale; grep for the old user-facing &quot;Therapy&quot; category label returns no live UI references; navigation still works.
+
+CS-21 · CHANGE · [Timeline] · Weekly &amp; monthly summaries — auto-generate + fix the 500
+Type: CHANGE
+Location: Timeline → weekly and monthly views → summary card + &quot;Generate Now&quot; button.
+What it is: Weekly/monthly summary cards. Currently the &quot;Generate Now&quot; button throws an on-screen error 500 and no summaries generate at all.
+Action:
+Fix generation end-to-end — no raw 500 reaches the screen.
+Summary cards generate automatically for each weekly and monthly period (per author's answer). The &quot;Generate Now&quot; button stays as a manual trigger (decision — author didn't revoke it).
+Logic: Period ends → card auto-generates → appears in Timeline weekly/monthly view. &quot;Generate Now&quot; → tap → generates/regenerates the current period's card. Generation failure → in-app error state on the card with retry via &quot;Generate Now&quot; (decision), never a raw 500.
+Outcome: User opens Timeline and finds ready weekly/monthly summaries tracking their therapy progression.
+Value: Answers the user's core question: is the current therapy approach working, and am I feeling better, worse, or neutral.
+AI: Input — the period's app data (entries, cards, scores, homework/work done). Output — a summary card covering the most important topics, changes, and work done in the period, oriented to the user's specific therapy progression, and answering: is the current therapy approach working; is the user feeling better, worse, or neutral. Trigger — automatic at period end + manual &quot;Generate Now&quot;. Failure — error state on card with retry; no 500 on screen.
+Do NOT touch: Other Timeline views; existing cards.
+Done when: Weekly and monthly cards auto-generate at period boundaries; &quot;Generate Now&quot; produces a card without errors; content covers topics/changes/work done and the approach-working + better/worse/neutral answers; failure shows the in-card error state.

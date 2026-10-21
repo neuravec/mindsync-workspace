@@ -1,0 +1,82 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://mindsync.app/#organization",
+      "name": "MindSync",
+      "url": "https://mindsync.app",
+      "sameAs": [
+        "https://apps.apple.com/us/app/mindsync-ai-health-journal/id6739644256",
+        "https://play.google.com/store/apps/details?id=com.mindsync.app"
+      ]
+    },
+    {
+      "@type": "BlogPosting",
+      "@id": "https://mindsync.app/journal/regulate-nervous-system-between-therapy-sessions#article",
+      "headline": "Your Nervous System Doesn't Wait for Your Next Appointment",
+      "description": "You leave therapy feeling sorted, then Tuesday hits and your chest tightens over an email. What the research says about regulating your nervous system between sessions, and the techniques you can run tonight.",
+      "inLanguage": "en",
+      "url": "https://mindsync.app/journal/regulate-nervous-system-between-therapy-sessions",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://mindsync.app/journal/regulate-nervous-system-between-therapy-sessions"
+      },
+      "datePublished": "2026-03-28",
+      "author": {
+        "@id": "https://mindsync.app/#organization"
+      },
+      "publisher": {
+        "@id": "https://mindsync.app/#organization"
+      },
+      "articleSection": "Therapy",
+      "dateModified": "2026-08-28"
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://mindsync.app/journal/regulate-nervous-system-between-therapy-sessions#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How do I calm my nervous system quickly?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Use something that works faster than thinking. Two short inhales through the nose followed by one long exhale through the mouth, repeated for about a minute, shifts most people's state quickest. Cold water on the face for 15 to 30 seconds works when you're too activated to count breaths. Neither fixes what caused the activation, and neither is meant to."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What are the signs of a dysregulated nervous system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "People usually describe a braced body and an unsettled mind: shallow breathing, a tight chest, a clenched jaw, broken sleep, constant scanning of a room, and either racing looping thoughts or flat, foggy shutdown. This is a description, not a diagnostic list. The same signs come from sleep debt, illness and medication changes, so raise them with a professional rather than sorting them yourself."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How long does it take to regulate your nervous system?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "In the moment, minutes. A few rounds of slow breathing or cyclic sighing shift your state inside one sitting. Changing your baseline is slower: Lehrer and Gevirtz, in a 2014 Frontiers in Psychology paper, describe resting baroreflex gain improving after twice-daily practice over roughly three months. Your own timeline won't look like the laboratory one."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Do vagus nerve exercises actually work?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "It depends what you mean by the phrase. Slow breathing and cold exposure have measurable effects on vagally mediated heart rate variability. Clinical vagus nerve stimulation, implanted or transcutaneous, has trial evidence behind it. The popular extras, humming, gargling, ear massage, are much thinner on evidence. And a change in vagal tone isn't the same thing as feeling better."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I do this before a therapy session?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes, and the 20 minutes beforehand is a good use of the time. Run something you already know rather than testing a new technique in a waiting room. Arriving calm isn't the target. Arriving inside your window is, awake enough to feel things and settled enough to think about them. Tell your therapist what you did."
+          }
+        }
+      ]
+    }
+  ]
+}

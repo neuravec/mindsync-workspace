@@ -1,0 +1,342 @@
+/* ─────────────────────────────────────────────────────────────────
+   MindSync — colors_and_type.css
+   Base + semantic design tokens for the MindSync mobile app
+   (a supportive tool used between therapy sessions).
+
+   Three-channel color logic:
+     FOREST  — authority, gravity, primary actions, user voice
+     MINT    — calm structure, content containers, hairlines
+     SAND    — guided suggestions, AI-offered nudges, warmth
+
+   Surfaces stay almost-white; the system relies on hairline borders,
+   never on heavy shadows. Light only — no dark mode (yet).
+   ───────────────────────────────────────────────────────────────── */
+
+/* ----------------------------- 1 · FONTS ----------------------------- */
+
+@font-face {
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("fonts/Figtree-VariableFont_wght.ttf") format("truetype-variations");
+}
+@font-face {
+  font-family: "Figtree";
+  font-style: italic;
+  font-weight: 300 900;
+  font-display: swap;
+  src: url("fonts/Figtree-Italic-VariableFont_wght.ttf") format("truetype-variations");
+}
+
+/* ----------------------------- 2 · TOKENS ----------------------------- */
+
+:root {
+  /* ─── PRIMARY · DEEP TEAL / FOREST ───────────────────────────────── */
+  --ms-p-50:           #f2fbfa;
+  --ms-p-100:          #d5f2f0;
+  --ms-p-200:          #aae5e2;
+  --ms-p-300:          #78d0d0;
+  --ms-p-400:          #4cb2b5;
+  --ms-p-500:          #339499;       /* mid teal */
+  --ms-p-600:          #26767b;
+  --ms-p-700:          #225e63;
+  --ms-p-800:          #1f4c50;       /* button fill (filled-default) */
+  --ms-p-900:          #1f3d38;       /* forest primary — ink, FAB, CTA */
+  --ms-p-900-header:   #113237;       /* DEEP OCEAN — only dark chrome on light surface */
+  --ms-p-950:          #0e1d1f;       /* Abyss Black — highest-contrast text */
+
+  /* Semantic aliases on top of the forest scale */
+  --ms-forest:          var(--ms-p-900);
+  --ms-forest-deep:     var(--ms-p-900-header);
+  --ms-forest-700:      #3a5b55;      /* secondary forest (chip leading icons) */
+  --ms-forest-500:      #5a7a73;      /* muted forest (inactive labels, mic) */
+
+  /* ─── NEUTRAL · WARM-GREY SCALE ─────────────────────────────────── */
+  --ms-n-50:  #f6f6f6;
+  --ms-n-100: #e7e7e7;
+  --ms-n-200: #d1d1d1;
+  --ms-n-300: #b0b0b0;
+  --ms-n-400: #888888;
+  --ms-n-500: #6d6d6d;
+  --ms-n-600: #5d5d5d;
+  --ms-n-700: #4f4f4f;
+  --ms-n-800: #404040;
+  --ms-n-900: #2e2e2e;
+  --ms-n-950: #1b1b1b;
+
+  /* ─── ERROR · WARM RED ──────────────────────────────────────────── */
+  --ms-e-50:  #fef2f2;
+  --ms-e-100: #fde3e3;
+  --ms-e-200: #fdcbcb;
+  --ms-e-300: #faa7a7;
+  --ms-e-400: #f57474;
+  --ms-e-500: #ee5d5d;
+  --ms-e-600: #cb3737;
+  --ms-e-700: #aa2b2b;     /* error primary */
+  --ms-e-800: #8d2727;
+  --ms-e-950: #3f1010;
+
+  /* ─── INFO · OCEAN BLUE ─────────────────────────────────────────── */
+  --ms-i-50:  #f3f7fc;
+  --ms-i-100: #e7f1f8;
+  --ms-i-200: #cee4f3;
+  --ms-i-300: #a9d1ea;
+  --ms-i-400: #7fb6dc;
+  --ms-i-500: #609cd2;
+  --ms-i-600: #4a83c4;
+  --ms-i-700: #3c67a5;     /* info primary */
+  --ms-i-800: #355587;
+  --ms-i-950: #1e2a3e;
+
+  /* ─── ALERT (NOTICE) · YELLOW / SAND-WARM ───────────────────────── */
+  --ms-a-50:  #fefce8;
+  --ms-a-100: #fef8c3;
+  --ms-a-200: #fdec7e;
+  --ms-a-500: #e8af0a;
+  --ms-a-600: #c98705;
+  --ms-a-700: #a06008;
+  --ms-a-800: #844b0f;
+  --ms-a-900: #703e13;
+  --ms-a-950: #421f06;
+
+  /* ─── BRAND MAIN — the "cosy beach" palette ─────────────────────── */
+  --ms-ocean-mist:    #f6fffd;   /* THE page background. Almost-white. */
+  --ms-aqua-breeze:   #dbf0ed;
+  --ms-lagoon-blue:   #bbe4de;   /* mint outline — calm structure       */
+  --ms-coral-pink:    #ff9f8a;
+  --ms-sunset-orange: #ffc88a;   /* warm sand — guided suggestions      */
+  --ms-sand-beige:    #ffefdd;
+  --ms-deep-ocean:    #113237;
+  --ms-abyss:         #0e1d1f;
+
+  /* Accent sand sub-shades (used in chat) */
+  --ms-sand-300:      #c99a6e;   /* empty-state center dot               */
+  --ms-sand-400:      #e8c9a7;   /* unread dot                           */
+  --ms-sand-500:      #ffc88a;   /* sand fill / chip dashed border       */
+
+  /* ─── SURFACES ──────────────────────────────────────────────────── */
+  --ms-page:        var(--ms-ocean-mist);     /* every screen body       */
+  --ms-surface-1:   #e8f2ee;                  /* active tab pill bg      */
+  --ms-surface-2:   #ffffff;                  /* cards, AI bubbles, input */
+
+  /* ─── INK (text colors) ─────────────────────────────────────────── */
+  --ms-ink-primary:   var(--ms-abyss);        /* #0e1d1f — body text     */
+  --ms-ink-title:     var(--ms-p-900);        /* #1f3d38 — titles        */
+  --ms-ink-secondary: var(--ms-forest-500);   /* #5a7a73 — body 2        */
+  --ms-ink-tertiary:  #8a9a97;                /* timestamps              */
+  --ms-ink-group:     #5d9a9a;                /* sticky date headers     */
+  --ms-on-dark:       #ffffff;                /* ink on forest fills     */
+
+  /* ─── LINES / DIVIDERS ──────────────────────────────────────────── */
+  --ms-border-hair:     rgba(31, 61, 56, 0.08);
+  --ms-border-card:     rgba(31, 61, 56, 0.12);
+  --ms-border-divider:  rgba(31, 61, 56, 0.18);
+  --ms-border-mint:     var(--ms-lagoon-blue);
+  --ms-border-sand:     var(--ms-sand-500);
+
+  /* ─── RADIUS ────────────────────────────────────────────────────── */
+  --r-xs:        4px;
+  --r-s:         8px;     /* small */
+  --r-m:        14px;     /* cards */
+  --r-l:        16px;     /* sections */
+  --r-xl:       24px;
+  --r-full:    9999px;    /* pills — every primary interactive surface  */
+
+  /* Composed bubble radii */
+  --r-bubble-ai:    16px 16px 16px 4px;  /* @kind radius */ /* sharp tail bottom-left  */
+  --r-bubble-user:  16px 16px 4px 16px;  /* @kind radius */ /* sharp tail bottom-right */
+
+  /* ─── SHADOWS (used sparingly) ──────────────────────────────────── */
+  --shadow-cta:           0 6px 14px rgba(31, 61, 56, 0.18);
+  --shadow-fab:           0 8px 20px rgba(31, 61, 56, 0.22);
+  --shadow-input-focus:   0 2px 8px  rgba(31, 61, 56, 0.08);
+
+  /* ─── SPACING (base 4px) ────────────────────────────────────────── */
+  --space-1:  4px;
+  --space-2:  6px;
+  --space-3:  8px;
+  --space-4:  10px;
+  --space-5:  12px;
+  --space-6:  14px;
+  --space-7:  16px;
+  --space-8:  18px;
+  --space-9:  20px;
+  --space-10: 24px;
+  --space-12: 32px;
+  --space-14: 40px;
+  --space-16: 48px;
+
+  /* ─── MOTION ────────────────────────────────────────────────────── */
+  --ease-out:          cubic-bezier(0.2, 0, 0, 1);   /* @kind other */
+  --ease-standard:     cubic-bezier(0.4, 0, 0.2, 1);  /* @kind other */
+  --dur-tap:           180ms;   /* @kind other */
+  --dur-focus:         200ms;   /* @kind other */
+  --dur-enter:         250ms;   /* @kind other */
+  --dur-breathing:     4000ms;  /* @kind other */
+}
+
+/* ----------------------------- 3 · TYPE BASE ----------------------------- */
+
+html, body {
+  background: var(--ms-page);
+  color: var(--ms-ink-primary);
+  font-family: "Figtree", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  font-feature-settings: "ss01", "cv11";
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ----------------------------- 4 · SEMANTIC TYPE ----------------------------- */
+
+/* Headline · biggest typo, for splash / marketing */
+.ms-headline {
+  font-family: "Figtree";
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.25px;
+  color: var(--ms-ink-title);
+}
+.ms-headline-bold { font-weight: 700; }
+
+/* Display — empty-chat welcome ("Co dziś wraca?") */
+.ms-display-lg {
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.2px;
+  color: var(--ms-ink-title);
+}
+
+/* Title — screen title in list app-bar */
+.ms-title-screen {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.2px;
+  color: var(--ms-ink-title);
+}
+
+/* Title — empty-state h2 */
+.ms-title-empty {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1.25;
+  letter-spacing: -0.2px;
+  color: var(--ms-ink-title);
+  text-wrap: balance;
+}
+
+/* Title — conversation header (dark app-bar) */
+.ms-title-bar {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.3;
+  letter-spacing: -0.1px;
+  color: var(--ms-on-dark);
+}
+
+/* Title — section / chart */
+.ms-title-section {
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.22;
+  letter-spacing: 0.5px;
+  color: var(--ms-ink-title);
+}
+
+/* Body */
+.ms-body-md {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.55;
+  letter-spacing: 0;
+  color: var(--ms-ink-primary);
+}
+.ms-body-md.is-ai { font-weight: 500; }   /* AI bubble runs slightly heavier */
+
+.ms-body-sm {
+  font-size: 13.5px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--ms-ink-primary);
+}
+
+.ms-body-preview {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.45;
+  color: var(--ms-ink-secondary);
+}
+
+/* Card title — 700 unread, 600 read */
+.ms-card-title {
+  font-size: 14.5px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: -0.1px;
+  color: var(--ms-ink-title);
+}
+.ms-card-title.is-unread { font-weight: 700; }
+
+/* Label · section eyebrow ("Pomocne pytania") */
+.ms-label-sm {
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--ms-ink-title);
+}
+
+/* Meta · card timestamps */
+.ms-meta {
+  font-size: 11.5px;
+  font-weight: 500;
+  line-height: 1.3;
+  color: var(--ms-ink-tertiary);
+}
+
+/* Caption · bubble timestamps */
+.ms-caption {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.3;
+  color: var(--ms-ink-tertiary);
+}
+
+/* Date-group sticky header */
+.ms-date-group {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.3;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: var(--ms-ink-group);
+}
+
+/* Tab-bar label */
+.ms-nav-label {
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.3;
+  letter-spacing: 0.1px;
+  color: var(--ms-forest-500);
+}
+.ms-nav-label.is-active {
+  font-weight: 500;
+  color: var(--ms-ink-title);
+}
+
+/* Button label */
+.ms-button-label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1;
+  letter-spacing: 0.2px;
+}
+
+/* Utility: ellipsis 1 / 2 lines */
+.ms-clamp-1 { display:-webkit-box; -webkit-line-clamp:1; -webkit-box-orient:vertical; overflow:hidden; }
+.ms-clamp-2 { display:-webkit-box; -webkit-line-clamp:2; -webkit-box-orient:vertical; overflow:hidden; }

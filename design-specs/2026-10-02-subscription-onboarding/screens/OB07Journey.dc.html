@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Your therapy</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.ms-scroll::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; display: flex; flex-direction: column">
+  <div style="display: flex; align-items: center; gap: 8px; padding: 48px 20px 0 8px">
+    <button type="button" aria-label="Back" style="width: 44px; height: 44px; border: none; background: transparent; padding: 0; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <div style="flex-grow: 1; height: 6px; border-radius: 3px; background: #DBF0ED; display: flex"><div style="width: 43%; border-radius: 3px; background: #26767B"></div></div>
+    <span style="font-size: 13px; font-weight: 600; color: #3D5C60">3 of 7</span>
+  </div>
+  <div class="ms-scroll" style="flex-grow: 1; overflow-y: auto; scrollbar-width: none; padding: 20px 24px 16px 24px; display: flex; flex-direction: column; gap: 14px">
+    <h1 style="margin: 0; font-size: 28px; line-height: 1.15; font-weight: 800">Are you in therapy right now?</h1>
+    <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #3D5C60">If you are, MindSync prepares you before each session and helps you capture what happened after.</p>
+    <label style="display: flex; gap: 12px; align-items: flex-start; background: #FFFFFF; border: 1px solid #DBF0ED; border-radius: 16px; padding: 14px 16px; font-size: 14px; line-height: 1.45">
+      <input type="checkbox" checked="{{ok}}" onChange="{{toggle}}" style="width: 22px; height: 22px; margin: 0; accent-color: #113237; flex-shrink: 0">
+      <span><b style="font-weight: 700">Use my therapy status to set up the app.</b> This is health information, so we need your explicit permission. You can withdraw it anytime.</span>
+    </label>
+    <sc-if value="{{ok}}" hint-placeholder-val="{{ true }}">
+      <div role="radiogroup" aria-label="Are you in therapy" style="display: flex; flex-direction: column; gap: 10px">
+        <sc-for list="{{opts}}" as="o" hint-placeholder-count="4">
+          <button type="button" role="radio" aria-checked="{{o.pressed}}" onClick="{{o.pick}}" style="{{o.style}}">{{o.label}}</button>
+        </sc-for>
+      </div>
+    </sc-if>
+    <sc-if value="{{showGoal}}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; flex-direction: column; gap: 6px">
+        <label for="ob-goal" style="font-size: 15px; font-weight: 700">What do you want from therapy? <span style="font-weight: 500; color: #5A7376">(optional)</span></label>
+        <input id="ob-goal" type="text" placeholder="e.g. feel calmer at work" style="height: 50px; box-sizing: border-box; border: 1px solid #BBE4DE; border-radius: 12px; padding: 0 14px; font-family: Figtree, sans-serif; font-size: 16px; background: #FFFFFF">
+      </div>
+    </sc-if>
+  </div>
+  <div style="padding: 12px 24px 28px 24px; display: flex; flex-direction: column; gap: 4px">
+    <button type="button" style="width: 100%; height: 56px; border: none; border-radius: 16px; background: #113237; color: #FFFFFF; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 700">Continue</button>
+    <button type="button" style="height: 44px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 600; color: #3D5C60">Skip</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { ok: true, pick: 'regular' }; }
+  renderVals() {
+    const opts = [['regular', 'Yes, regularly'], ['occasional', 'Yes, now and then'], ['notnow', 'Not right now'], ['never', 'Never been']];
+    const inTherapy = this.state.pick === 'regular' || this.state.pick === 'occasional';
+    return {
+      ok: this.state.ok,
+      toggle: () => this.setState({ ok: !this.state.ok }),
+      showGoal: this.state.ok && inTherapy,
+      opts: opts.map(([k, l]) => {
+        const on = this.state.pick === k;
+        return {
+          label: l,
+          pressed: on ? 'true' : 'false',
+          pick: () => this.setState({ pick: k }),
+          style: 'min-height: 52px; text-align: left; padding: 0 16px; border-radius: 14px; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 600; cursor: pointer; ' + (on ? 'background: #113237; color: #FFFFFF; border: 1.5px solid #113237' : 'background: #FFFFFF; color: #113237; border: 1.5px solid #BBE4DE')
+        };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>

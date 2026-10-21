@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Onboarding last step</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; padding: 12px 20px 28px 20px; display: flex; flex-direction: column; gap: 16px">
+  <div style="display: flex; align-items: center; gap: 8px; height: 44px">
+    <button type="button" aria-label="Back" style="width: 44px; height: 44px; border: none; background: transparent; padding: 0; display: flex; align-items: center; justify-content: center">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+    </button>
+    <div style="flex-grow: 1; height: 6px; border-radius: 3px; background: #339499"></div>
+    <span style="font-size: 13px; font-weight: 600; color: #3D5C60; padding-right: 4px">8/8</span>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 8px; padding-top: 8px">
+    <h1 style="margin: 0; font-size: 26px; line-height: 1.2; font-weight: 700">How did you hear about MindSync?</h1>
+    <p style="margin: 0; font-size: 15px; color: #4F6669">It helps us reach more people who'd benefit.</p>
+  </div>
+  <div style="display: flex; flex-direction: column; gap: 10px">
+    <sc-for list="{{opts}}" as="o" hint-placeholder-count="6">
+      <div style="{{o.style}}">{{o.label}}</div>
+    </sc-for>
+  </div>
+  <div style="text-align: center; font-size: 14px; color: #5A7376">I'd rather not say</div>
+  <div style="flex-grow: 1"></div>
+  <button type="button" style="height: 56px; border: none; border-radius: 30px; background: #FF9F8A; color: #113237; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 700">Done</button>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const labels = ['From my therapist or doctor', 'A friend recommended it', 'Social media (Instagram, TikTok, Reddit, etc.)', 'App Store', 'Blog or website', 'Other'];
+    return {
+      opts: labels.map((l, i) => ({
+        label: l,
+        style: 'padding: 15px 16px; border-radius: 14px; font-size: 15px; font-weight: 500; ' + (i === 3 ? 'background: #F2FBFA; border: 2px solid #339499' : 'background: #FFFFFF; border: 1px solid #E2E8E8; margin: 1px')
+      }))
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,2 @@
+- [Design assets live on Drive](reference_design_assets_live_on_drive.md) — Dawid's deliverables are Drive folders linked in ClickUp, not attachments; `--comments` hides bookmark links
+- [ClickUp members + where tickets live](reference_clickup_members_and_lists.md) — member IDs (Dawid has 2 accounts, use 6649304); MSV tickets in Tech Tasks, not Features

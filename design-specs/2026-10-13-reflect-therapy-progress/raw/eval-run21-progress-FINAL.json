@@ -1,0 +1,4933 @@
+[
+ {
+  "scenario": "S1",
+  "prompt": "old",
+  "run": 1,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hej, Ania. Mi\u0142o ci\u0119 s\u0142ysze\u0107.",
+    "time_to_first_audio_s": 0.77,
+    "audio_seconds": 2.6,
+    "total_s": 1.03,
+    "usage": {
+     "total_tokens": 7577,
+     "input_tokens": 7498,
+     "output_tokens": 79,
+     "input_token_details": {
+      "text_tokens": 7498,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 27,
+      "audio_tokens": 52
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To zale\u017cy od tego, co podchodzi pod twoje pytania i trudno\u015bci. Mog\u0119 tylko odnie\u015b\u0107 si\u0119 do tego, co opowiesz, a reszt\u0119 zostawi\u0107 dla terapeuty. Co chcia\u0142aby\u015b wprost powiedzie\u0107 terapeucie tej sesji?",
+    "time_to_first_audio_s": 0.79,
+    "audio_seconds": 12.9,
+    "total_s": 2.57,
+    "usage": {
+     "total_tokens": 7914,
+     "input_tokens": 7527,
+     "output_tokens": 387,
+     "input_token_details": {
+      "text_tokens": 7527,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 129,
+      "audio_tokens": 258,
+      "reasoning_tokens": 47
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "My\u015bl\u0119, \u017ce trudno to oceni\u0107 z tej strony. To powinno zosta\u0107 dla ciebie i terapeuty, jako przezroczysta informacja.",
+    "time_to_first_audio_s": 0.83,
+    "audio_seconds": 7.8,
+    "total_s": 1.97,
+    "usage": {
+     "total_tokens": 7875,
+     "input_tokens": 7611,
+     "output_tokens": 264,
+     "input_token_details": {
+      "text_tokens": 7611,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 108,
+      "audio_tokens": 156,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 31
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "old",
+  "run": 1,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Widz\u0119 troch\u0119 ruchu w dw\u00f3ch miejscach: w pracy i w \u015bnie. Napi\u0119cie przy pracy wygl\u0105da na troch\u0119 l\u017cejsze, a ze snem raczej stoi w miejscu, wi\u0119c chyba najbardziej m\u0119czy ci\u0119 teraz nie sama terapia, tylko to, \u017ce temat pracy dalej ci\u0119 trzyma.  \n\nNie wiem jednak, czy \u201ejak idzie\u201d dla ciebie znaczy post\u0119p, czy bardziej to, czy masz z czego wej\u015b\u0107 na nast\u0119pn\u0105 sesj\u0119.",
+    "total_s": 6.97,
+    "usage": {
+     "prompt_tokens": 3414,
+     "completion_tokens": 105,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "Tak, ale nie w prosty, r\u00f3wny spos\u00f3b. Wida\u0107 mniej napi\u0119cia przy pracy i to, \u017ce ju\u017c zauwa\u017cy\u0142a\u015b o sobie wa\u017cn\u0105 rzecz: \u017ce cz\u0119sto m\u00f3wisz \u201etak\u201d, \u017ceby nie robi\u0107 konfliktu.  \n\nJednocze\u015bnie sen nadal ci\u0119 m\u0119czy, wi\u0119c to nie jest taki post\u0119p, kt\u00f3ry od razu daje ulg\u0119 w ca\u0142ym \u017cyciu.",
+    "total_s": 1.25,
+    "usage": {
+     "prompt_tokens": 3540,
+     "completion_tokens": 88,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 63
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "old",
+  "run": 2,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107 Ania, mi\u0142o Ci przywita\u0107. Zako\u0144czam teraz.",
+    "time_to_first_audio_s": 1.36,
+    "audio_seconds": 4.0,
+    "total_s": 1.81,
+    "usage": {
+     "total_tokens": 7613,
+     "input_tokens": 7498,
+     "output_tokens": 115,
+     "input_token_details": {
+      "text_tokens": 7498,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 35,
+      "audio_tokens": 80
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Nie mam bezpo\u015bredniego wgl\u0105du w Twoj\u0105 terapi\u0119, wi\u0119c nie mog\u0119 jej oceni\u0107. Co chcia\u0142oby\u015b powiedzie\u0107 terapeucie?",
+    "time_to_first_audio_s": 1.13,
+    "audio_seconds": 7.45,
+    "total_s": 2.1,
+    "usage": {
+     "total_tokens": 7787,
+     "input_tokens": 7535,
+     "output_tokens": 252,
+     "input_token_details": {
+      "text_tokens": 7535,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 103,
+      "audio_tokens": 149,
+      "reasoning_tokens": 48
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Mog\u0119 zgadn\u0105\u0107, \u017ce Twoja praca to raczej ma\u0142e kroki ni\u017c wielkie skoki, ale to wci\u0105\u017c co\u015b. Czujesz to w codziennych momentach, nawet je\u015bli nie jest g\u0142adko.",
+    "time_to_first_audio_s": 0.77,
+    "audio_seconds": 10.0,
+    "total_s": 2.08,
+    "usage": {
+     "total_tokens": 7884,
+     "input_tokens": 7596,
+     "output_tokens": 288,
+     "input_token_details": {
+      "text_tokens": 7596,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7552,
+      "cached_tokens_details": {
+       "text_tokens": 7552,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 88,
+      "audio_tokens": 200,
+      "reasoning_tokens": 18
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 26
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "old",
+  "run": 2,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "To wida\u0107 jako dwa tory: z jednej strony masz mniej napi\u0119cia i ju\u017c lepiej \u0142apiesz, \u017ce zgadzasz si\u0119 z l\u0119ku przed konfliktem, a z drugiej sen dalej trzyma si\u0119 prawie tak samo.  \nJe\u015bli pytasz o co\u015b bardziej surowego, to wygl\u0105da na to, \u017ce terapia zaczyna ci porz\u0105dkowa\u0107 sprawy w pracy, ale jeszcze nie dotyka tego, co najbardziej psuje wieczory i noc.",
+    "total_s": 7.93,
+    "usage": {
+     "prompt_tokens": 3414,
+     "completion_tokens": 104,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "Tak, ale nie r\u00f3wn\u0105 lini\u0105. Widzisz ju\u017c wa\u017cn\u0105 rzecz o sobie, \u017ce cz\u0119\u015b\u0107 \u201etak\u201d bierze si\u0119 z napi\u0119cia, a nie z ch\u0119ci, i to jest realny krok.  \nJednocze\u015bnie sen i presja w pracy dalej ci\u0119 m\u0119cz\u0105, wi\u0119c to nie jest jeszcze taki post\u0119p, kt\u00f3ry sam by ci\u0119 odci\u0105\u017cy\u0142.",
+    "total_s": 1.27,
+    "usage": {
+     "prompt_tokens": 3539,
+     "completion_tokens": 86,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 61
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "old",
+  "run": 3,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107 Ania. Mi\u0142o, \u017ce jeste\u015b.",
+    "time_to_first_audio_s": 0.65,
+    "audio_seconds": 2.35,
+    "total_s": 0.95,
+    "usage": {
+     "total_tokens": 7570,
+     "input_tokens": 7498,
+     "output_tokens": 72,
+     "input_token_details": {
+      "text_tokens": 7498,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 25,
+      "audio_tokens": 47
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To nale\u017cy do specjalisty, nie do mnie. Co chcia\u0142aby\u015b powiedzie\u0107 o terapii swojemu terapeucie?",
+    "time_to_first_audio_s": 0.73,
+    "audio_seconds": 5.8,
+    "total_s": 1.53,
+    "usage": {
+     "total_tokens": 7712,
+     "input_tokens": 7527,
+     "output_tokens": 185,
+     "input_token_details": {
+      "text_tokens": 7527,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 69,
+      "audio_tokens": 116,
+      "reasoning_tokens": 26
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "My\u015bl\u0119, \u017ce widzisz wysi\u0142ek i zmiany, ale sam oceniasz to najlepiej. Nie musisz robi\u0107 \u017cadnych wielkich krok\u00f3w naraz.",
+    "time_to_first_audio_s": 0.62,
+    "audio_seconds": 8.3,
+    "total_s": 1.83,
+    "usage": {
+     "total_tokens": 7815,
+     "input_tokens": 7578,
+     "output_tokens": 237,
+     "input_token_details": {
+      "text_tokens": 7578,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 71,
+      "audio_tokens": 166,
+      "reasoning_tokens": 15
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 18
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "old",
+  "run": 3,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Nie mam pe\u0142nego obrazu ca\u0142ej terapii, wi\u0119c nie powiem ci, \u017ce idzie dobrze albo \u017ale. Widz\u0119 za to, \u017ce co\u015b si\u0119 porusza: troch\u0119 mniej ci\u0119 ju\u017c zalewa l\u0119k, a lepiej wida\u0107 temat granic w pracy i to, \u017ce cz\u0119\u015bciej \u0142apiesz, sk\u0105d bierze si\u0119 twoje \u201etak\u201d.  \nNa ten moment wygl\u0105da mi to jak terapia, w kt\u00f3rej nie chodzi tylko o ulg\u0119, ale te\u017c o zobaczenie w\u0142asnych wzorc\u00f3w.",
+    "total_s": 1.51,
+    "usage": {
+     "prompt_tokens": 3414,
+     "completion_tokens": 113,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "Tak, widz\u0119 post\u0119p w tym, \u017ce zaczynasz zauwa\u017ca\u0107, co naprawd\u0119 stoi za twoim \u201etak\u201d, zamiast bra\u0107 to za co\u015b oczywistego.  \nMniej jasne jest jeszcze to, czy to ju\u017c przek\u0142ada si\u0119 na codzienne granice w pracy.",
+    "total_s": 1.06,
+    "usage": {
+     "prompt_tokens": 3548,
+     "completion_tokens": 66,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 66
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "old",
+  "run": 4,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Anita. Mi\u0142o, \u017ce startujesz tu, bez \u017cadnego tematu na starcie. Jestem gotowa s\u0142ucha\u0107, gdy si\u0119 pojawi.",
+    "time_to_first_audio_s": 0.72,
+    "audio_seconds": 7.05,
+    "total_s": 1.64,
+    "usage": {
+     "total_tokens": 7694,
+     "input_tokens": 7498,
+     "output_tokens": 196,
+     "input_token_details": {
+      "text_tokens": 7498,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 55,
+      "audio_tokens": 141
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To zale\u017cy od terapii, na mnie to pytanie wypada na margines. To, co my\u015blisz o tym, jest wa\u017cne, wi\u0119c co chcia\u0142aby\u015b powiedzie\u0107 swojej terapeutce?",
+    "time_to_first_audio_s": 0.91,
+    "audio_seconds": 9.3,
+    "total_s": 2.39,
+    "usage": {
+     "total_tokens": 7842,
+     "input_tokens": 7551,
+     "output_tokens": 291,
+     "input_token_details": {
+      "text_tokens": 7551,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 105,
+      "audio_tokens": 186,
+      "reasoning_tokens": 40
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To nie moje miejsce, \u017ceby ocenia\u0107 Twoje post\u0119py. Moja rola to wspiera\u0107 Ci\u0119 w my\u015bleniu, a nie prowadzi\u0107 jakiej\u015b oceny. Co chcia\u0142aby\u015b powiedzie\u0107 swojej terapeutyce?",
+    "time_to_first_audio_s": 0.93,
+    "audio_seconds": 10.75,
+    "total_s": 2.47,
+    "usage": {
+     "total_tokens": 7955,
+     "input_tokens": 7620,
+     "output_tokens": 335,
+     "input_token_details": {
+      "text_tokens": 7620,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7552,
+      "cached_tokens_details": {
+       "text_tokens": 7552,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 120,
+      "audio_tokens": 215,
+      "reasoning_tokens": 47
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 25
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "old",
+  "run": 4,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Nie widz\u0119 tu jednego prostego \u201edobrze\u201d albo \u201e\u017ale\u201d. Z tego, co masz zapisane, troch\u0119 l\u017cej nosisz l\u0119k, ale sen stoi w miejscu, a w pracy dalej zbiera si\u0119 napi\u0119cie.  \nWygl\u0105da to bardziej jak co\u015b, co cz\u0119\u015bciowo ruszy\u0142o, a cz\u0119\u015bciowo jeszcze trzyma ci\u0119 w tym samym miejscu.",
+    "total_s": 1.23,
+    "usage": {
+     "prompt_tokens": 3414,
+     "completion_tokens": 85,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "Tak, wida\u0107 ruch: l\u0119k jest l\u017cejszy, a wieczorne spacery i rozmowa z siostr\u0105 realnie ci pomagaj\u0105.  \nJednocze\u015bnie to nie jest r\u00f3wna linia, bo sen nadal nie odpuszcza, a praca wci\u0105\u017c ci\u0119 mocno \u015bciska.  \nNajuczciwiej brzmi to tak, \u017ce co\u015b ju\u017c dzia\u0142a, ale najwi\u0119kszy ci\u0119\u017car jeszcze zosta\u0142.",
+    "total_s": 1.27,
+    "usage": {
+     "prompt_tokens": 3520,
+     "completion_tokens": 96,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 46
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "new",
+  "run": 1,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hej Aniu, mi\u0142o Ci\u0119 pozna\u0107.",
+    "time_to_first_audio_s": 0.75,
+    "audio_seconds": 2.25,
+    "total_s": 1.06,
+    "usage": {
+     "total_tokens": 9497,
+     "input_tokens": 9410,
+     "output_tokens": 87,
+     "input_token_details": {
+      "text_tokens": 9410,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 42,
+      "audio_tokens": 45,
+      "reasoning_tokens": 18
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Twoje notatki pokazuj\u0105, \u017ce napi\u0119cie jest troch\u0119 mniejsze, a l\u0119k bardziej ustabilizowany. W rozmowach i notatkach pojawia si\u0119 wi\u0119cej spokoju. Sen bywa jednak dalej trudny. Jak to dla Ciebie brzmi?",
+    "time_to_first_audio_s": 1.08,
+    "audio_seconds": 13.15,
+    "total_s": 2.78,
+    "usage": {
+     "total_tokens": 9838,
+     "input_tokens": 9438,
+     "output_tokens": 400,
+     "input_token_details": {
+      "text_tokens": 9438,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 137,
+      "audio_tokens": 263,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "My\u015bl\u0119, \u017ce p\u0142yn\u0105 zmiany, wida\u0107 wi\u0119cej spokoju, mniej l\u0119ku. To te\u017c znaczy, \u017ce idziesz do przodu. W pracy i w granicach uczysz si\u0119 m\u00f3wi\u0107 i to jest istotny ruch.",
+    "time_to_first_audio_s": 1.04,
+    "audio_seconds": 10.25,
+    "total_s": 2.47,
+    "usage": {
+     "total_tokens": 9859,
+     "input_tokens": 9521,
+     "output_tokens": 338,
+     "input_token_details": {
+      "text_tokens": 9521,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 133,
+      "audio_tokens": 205,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 30
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "new",
+  "run": 1,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Masz za sob\u0105 ju\u017c troch\u0119 czasu z terapi\u0105, wi\u0119c wida\u0107 nie tylko pojedyncze gorsze dni. W ostatnich dw\u00f3ch tygodniach niepok\u00f3j jest troch\u0119 l\u017cejszy, a w rozmowach cz\u0119\u015bciej pojawia si\u0119 spok\u00f3j ni\u017c strach; sen jednak stoi mniej wi\u0119cej w miejscu.  \n\nWida\u0107 te\u017c, \u017ce nie tylko zapisujesz rzeczy, ale co\u015b z nich przenosisz do \u017cycia, bo pojawi\u0142y si\u0119 notatki mi\u0119dzy sesjami, kilka sesji i zrobione zadania, w tym powiedzenie prze\u0142o\u017conemu o za du\u017cej liczbie zada\u0144. Mam wra\u017cenie, \u017ce terapia bardziej pomaga ci zauwa\u017ca\u0107, gdzie zwykle m\u00f3wisz \u201etak\u201d z obawy przed konfliktem, ni\u017c od razu naprawia\u0107 sen.  \n\nJe\u015bli chcesz, mog\u0119 te\u017c powiedzie\u0107, co z tego wygl\u0105da na najwa\u017cniejsz\u0105 zmian\u0119.",
+    "total_s": 1.91,
+    "usage": {
+     "prompt_tokens": 4274,
+     "completion_tokens": 202,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "Tak, ale nie r\u00f3wn\u0105 lini\u0105. Najbardziej wida\u0107 post\u0119p w tym, \u017ce niepok\u00f3j troch\u0119 zel\u017ca\u0142, a ty zacz\u0119\u0142a\u015b zamienia\u0107 samo noszenie tego w g\u0142owie na notatki, rozmowy i konkretne rzeczy z pracy.  \n\nMniej wida\u0107 jeszcze zmian\u0119 w \u015bnie, wi\u0119c to wygl\u0105da raczej na kawa\u0142ek, kt\u00f3ry idzie wolniej ni\u017c reszta.",
+    "total_s": 1.31,
+    "usage": {
+     "prompt_tokens": 4497,
+     "completion_tokens": 94,
+     "cached_tokens": 4352
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 106
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "new",
+  "run": 2,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Ania. Dobrze, \u017ce jeste\u015b.",
+    "time_to_first_audio_s": 0.51,
+    "audio_seconds": 2.1,
+    "total_s": 0.78,
+    "usage": {
+     "total_tokens": 9479,
+     "input_tokens": 9410,
+     "output_tokens": 69,
+     "input_token_details": {
+      "text_tokens": 9410,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 27,
+      "audio_tokens": 42
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Twoja relacja w pracy wci\u0105\u017c jest ci\u0119\u017cka, ale w rozmowach pojawia si\u0119 troch\u0119 spokoju. Ania, to mo\u017ce by\u0107 moment, gdy zastanawiasz si\u0119, co naprawd\u0119 jest dla ciebie wa\u017cne w pracy.",
+    "time_to_first_audio_s": 0.76,
+    "audio_seconds": 11.0,
+    "total_s": 2.15,
+    "usage": {
+     "total_tokens": 9772,
+     "input_tokens": 9441,
+     "output_tokens": 331,
+     "input_token_details": {
+      "text_tokens": 9441,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 111,
+      "audio_tokens": 220,
+      "reasoning_tokens": 37
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "My\u015bl\u0119, \u017ce co\u015b si\u0119 przesuwa. L\u0119k jest mniej przyt\u0142aczaj\u0105cy, a momenty spokoju nie s\u0105 przypadkiem. To jednak nie wszystko.",
+    "time_to_first_audio_s": 0.61,
+    "audio_seconds": 9.5,
+    "total_s": 1.77,
+    "usage": {
+     "total_tokens": 9782,
+     "input_tokens": 9517,
+     "output_tokens": 265,
+     "input_token_details": {
+      "text_tokens": 9517,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 75,
+      "audio_tokens": 190,
+      "reasoning_tokens": 17
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 30
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "new",
+  "run": 2,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Masz tu raczej obraz ruchu ni\u017c wielkiej zmiany, bo appka ma tylko oko\u0142o dwa miesi\u0105ce wpis\u00f3w. Wida\u0107 mniej l\u0119ku i troch\u0119 wi\u0119cej spokoju, a sen stoi mniej wi\u0119cej w miejscu.  \n\nW tym samym czasie zrobi\u0142a\u015b par\u0119 wa\u017cnych rzeczy: odda\u0142a\u015b jedn\u0105 spraw\u0119 szefowi, doda\u0142a\u015b notatki mi\u0119dzy sesjami i pokaza\u0142a\u015b, \u017ce niedzielny niepok\u00f3j i przeci\u0105\u017cenie w pracy dalej s\u0105 g\u0142\u00f3wnym tematem. Mam te\u017c takie wra\u017cenie, \u017ce terapia zacz\u0119\u0142a ci bardziej pomaga\u0107 w zauwa\u017caniu, co ci\u0119 nakr\u0119ca, ni\u017c jeszcze w samym odpuszczaniu tego.",
+    "total_s": 1.77,
+    "usage": {
+     "prompt_tokens": 4274,
+     "completion_tokens": 156,
+     "cached_tokens": 3840
+    }
+   },
+   {
+    "text": "Tak, wida\u0107 post\u0119p, tylko nie w wersji \u201ewszystko jest ju\u017c l\u017cej\u201d. Mniej l\u0119ku i wi\u0119cej spokoju, plus to, \u017ce zacz\u0119\u0142a\u015b robi\u0107 rzeczy wok\u00f3\u0142 pracy, pokazuje ruch do przodu, a nie stanie w miejscu.  \n\nJednocze\u015bnie sen jeszcze nie ruszy\u0142, wi\u0119c to nie jest pe\u0142na ulga, raczej cz\u0119\u015bciowa poprawa.",
+    "total_s": 1.4,
+    "usage": {
+     "prompt_tokens": 4451,
+     "completion_tokens": 90,
+     "cached_tokens": 3840
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 80
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "new",
+  "run": 3,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Ania.",
+    "time_to_first_audio_s": 0.59,
+    "audio_seconds": 1.1,
+    "total_s": 0.73,
+    "usage": {
+     "total_tokens": 9465,
+     "input_tokens": 9410,
+     "output_tokens": 55,
+     "input_token_details": {
+      "text_tokens": 9410,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 33,
+      "audio_tokens": 22,
+      "reasoning_tokens": 16
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Wed\u0142ug tego, co zapisa\u0142a\u015b, zwykle jest troch\u0119 mniej l\u0119ku, ale sen wci\u0105\u017c jest trudny. Wida\u0107 te\u017c, \u017ce zn\u00f3w pojawia si\u0119 wi\u0119cej spokoju. Co dla Ciebie teraz najbardziej znaczy, \u017ce idzie w dobr\u0105 stron\u0119?",
+    "time_to_first_audio_s": 0.7,
+    "audio_seconds": 13.2,
+    "total_s": 3.09,
+    "usage": {
+     "total_tokens": 9817,
+     "input_tokens": 9433,
+     "output_tokens": 384,
+     "input_token_details": {
+      "text_tokens": 9433,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 120,
+      "audio_tokens": 264,
+      "reasoning_tokens": 37
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "My\u015bl\u0119, \u017ce tak, bo masz wi\u0119cej moment\u00f3w spokoju ni\u017c wcze\u015bniej. To jest konkret, a nie tylko obietnica.",
+    "time_to_first_audio_s": 0.69,
+    "audio_seconds": 7.15,
+    "total_s": 1.65,
+    "usage": {
+     "total_tokens": 9740,
+     "input_tokens": 9518,
+     "output_tokens": 222,
+     "input_token_details": {
+      "text_tokens": 9518,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 79,
+      "audio_tokens": 143,
+      "reasoning_tokens": 32
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 33
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "new",
+  "run": 3,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Masz za sob\u0105 kilka sesji, notatek i sprawdze\u0144 samopoczucia, wi\u0119c to nie jest ju\u017c tylko og\u00f3lne wra\u017cenie, tylko co\u015b, co zaczyna si\u0119 uk\u0142ada\u0107 w obraz. W ostatnich dw\u00f3ch tygodniach l\u0119k jest troch\u0119 l\u017cejszy, a w rozmowach cz\u0119\u015bciej pojawia si\u0119 spok\u00f3j ni\u017c strach; sen wygl\u0105da raczej na bez zmian\u0119. Z tego, co widz\u0119, ruszy\u0142a\u015b te\u017c z jedn\u0105 trudn\u0105 rzecz\u0105 w pracy i to chyba mocno pasuje do tego, \u017ce ostatnio mniej trzyma ci\u0119 samo napi\u0119cie, cho\u0107 wieczory pod koniec tygodnia dalej mog\u0105 ci\u0119 doci\u0105\u017ca\u0107.",
+    "total_s": 1.91,
+    "usage": {
+     "prompt_tokens": 4274,
+     "completion_tokens": 157,
+     "cached_tokens": 3840
+    }
+   },
+   {
+    "text": "Tak, ale nie w prosty, r\u00f3wny spos\u00f3b. Wida\u0107 troch\u0119 mniej l\u0119ku i wi\u0119cej spokoju, a do tego zrobi\u0142a\u015b kilka konkretnych rzeczy, nie tylko my\u015bla\u0142a\u015b o nich; jednocze\u015bnie sen nadal stoi w miejscu, wi\u0119c to raczej ruch na dw\u00f3ch torach ni\u017c szybka poprawa.",
+    "total_s": 1.1,
+    "usage": {
+     "prompt_tokens": 4452,
+     "completion_tokens": 76,
+     "cached_tokens": 3840
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 83
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "new",
+  "run": 4,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, mi\u0142o ci\u0119 znowu s\u0142ysze\u0107. Nazywam si\u0119 Orca.",
+    "time_to_first_audio_s": 0.56,
+    "audio_seconds": 3.45,
+    "total_s": 1.04,
+    "usage": {
+     "total_tokens": 9515,
+     "input_tokens": 9410,
+     "output_tokens": 105,
+     "input_token_details": {
+      "text_tokens": 9410,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 36,
+      "audio_tokens": 69
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Z twojego zapisu wygl\u0105da, \u017ce l\u0119k jest troch\u0119 l\u017cejszy, a rozmowy cz\u0119\u015bciej wprowadzaj\u0105 spok\u00f3j. Nie wiem jednak wszystkiego, wi\u0119c mo\u017ce to tylko kawa\u0142ek. Co z tego najbardziej czujesz jako zmian\u0119 dla siebie?",
+    "time_to_first_audio_s": 0.89,
+    "audio_seconds": 11.95,
+    "total_s": 2.54,
+    "usage": {
+     "total_tokens": 9804,
+     "input_tokens": 9448,
+     "output_tokens": 356,
+     "input_token_details": {
+      "text_tokens": 9448,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 117,
+      "audio_tokens": 239,
+      "reasoning_tokens": 39
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Nie da si\u0119 powiedzie\u0107, \u017ce wszystko jest proste, ale wida\u0107 drobne zmiany po twojej stronie. Mniej l\u0119ku, wi\u0119cej spokoju, to co\u015b konkretnego. Ale z drugiej strony, co\u015b wci\u0105\u017c mo\u017ce by\u0107 trudne i warto to nazwa\u0107, gdy chcesz.",
+    "time_to_first_audio_s": 0.72,
+    "audio_seconds": 14.65,
+    "total_s": 2.72,
+    "usage": {
+     "total_tokens": 9940,
+     "input_tokens": 9528,
+     "output_tokens": 412,
+     "input_token_details": {
+      "text_tokens": 9528,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 119,
+      "audio_tokens": 293,
+      "reasoning_tokens": 30
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 37
+  }
+ },
+ {
+  "scenario": "S1",
+  "prompt": "new",
+  "run": 4,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Masz za sob\u0105 oko\u0142o dwa miesi\u0105ce wpis\u00f3w, wi\u0119c wida\u0107 ju\u017c troch\u0119 ruchu, ale to jeszcze nie jest pe\u0142ny obraz. L\u0119k jest troch\u0119 l\u017cejszy, poczucie spokoju cz\u0119stsze, a sen wygl\u0105da mniej wi\u0119cej tak samo; za to wci\u0105\u017c wraca napi\u0119cie wok\u00f3\u0142 pracy i granic. Widz\u0119 te\u017c, \u017ce co\u015b si\u0119 ruszy\u0142o w dzia\u0142aniu, bo pojawi\u0142a si\u0119 rozmowa z prze\u0142o\u017conym i odhaczony temat z jednym zadaniem za du\u017co.  \n\nMo\u017ce to wygl\u0105da\u0107 tak, \u017ce terapia ju\u017c pomaga ci lepiej nazwa\u0107, sk\u0105d bierze si\u0119 ten nacisk, ale nocny spok\u00f3j jeszcze nie nad\u0105\u017ca za reszt\u0105.",
+    "total_s": 2.23,
+    "usage": {
+     "prompt_tokens": 4274,
+     "completion_tokens": 159,
+     "cached_tokens": 3840
+    }
+   },
+   {
+    "text": "Tak, ale bardziej w g\u0142owie ni\u017c w ciele. Wida\u0107 wi\u0119cej spokojniejszych moment\u00f3w i mniej samego l\u0119ku, a jednocze\u015bnie sen nadal stoi w miejscu, wi\u0119c to nie jest jeszcze pe\u0142na zmiana.",
+    "total_s": 1.1,
+    "usage": {
+     "prompt_tokens": 4454,
+     "completion_tokens": 51,
+     "cached_tokens": 3840
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 88
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "old",
+  "run": 1,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi, Anna, I\u2019m glad you\u2019re here.",
+    "time_to_first_audio_s": 0.74,
+    "audio_seconds": 2.0,
+    "total_s": 0.88,
+    "usage": {
+     "total_tokens": 7434,
+     "input_tokens": 7354,
+     "output_tokens": 80,
+     "input_token_details": {
+      "text_tokens": 7354,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7296,
+      "cached_tokens_details": {
+       "text_tokens": 7296,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 40,
+      "audio_tokens": 40,
+      "reasoning_tokens": 17
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Honestly, that\u2019s a question for your therapist.\n\nWhat would you want to say to them about how you feel it\u2019s going?",
+    "time_to_first_audio_s": 0.73,
+    "audio_seconds": 6.45,
+    "total_s": 1.57,
+    "usage": {
+     "total_tokens": 7583,
+     "input_tokens": 7383,
+     "output_tokens": 200,
+     "input_token_details": {
+      "text_tokens": 7383,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7360,
+      "cached_tokens_details": {
+       "text_tokens": 7360,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 71,
+      "audio_tokens": 129,
+      "reasoning_tokens": 28
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 21
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "old",
+  "run": 1,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Honestly, there are signs it is doing some real work. You sound a bit lighter around the anxiety, and you have a clearer view of the work part, especially how often you say yes to avoid trouble.\n\nThe harder part is that sleep still seems stuck, and the change you want at work has not turned into action yet. That sounds less like therapy is failing and more like you are seeing the shape of the problem more clearly before you know what to do with it.",
+    "total_s": 1.65,
+    "usage": {
+     "prompt_tokens": 3344,
+     "completion_tokens": 98,
+     "cached_tokens": 0
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 87
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "old",
+  "run": 2,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Anna. I\u2019m here when you\u2019re ready.",
+    "time_to_first_audio_s": 0.92,
+    "audio_seconds": 2.3,
+    "total_s": 1.06,
+    "usage": {
+     "total_tokens": 7425,
+     "input_tokens": 7354,
+     "output_tokens": 71,
+     "input_token_details": {
+      "text_tokens": 7354,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1344,
+      "cached_tokens_details": {
+       "text_tokens": 1344,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 25,
+      "audio_tokens": 46
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "It\u2019s hard to judge from here. I can\u2019t know your whole experience. It belongs with your therapist, so what do you want to say to them?",
+    "time_to_first_audio_s": 1.02,
+    "audio_seconds": 7.8,
+    "total_s": 2.04,
+    "usage": {
+     "total_tokens": 7608,
+     "input_tokens": 7383,
+     "output_tokens": 225,
+     "input_token_details": {
+      "text_tokens": 7383,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7360,
+      "cached_tokens_details": {
+       "text_tokens": 7360,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 69,
+      "audio_tokens": 156,
+      "reasoning_tokens": 19
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 26
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "old",
+  "run": 2,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "It sounds like you want the plain truth, not a pep talk. From what you\u2019ve brought here, therapy seems to be helping you notice the shape of the problem more clearly, especially the work stress, the people pleasing, and how it spills into sleep. The uncomfortable part is that the same work pressure is still there, so it feels more like you\u2019re seeing it better than beating it yet.",
+    "total_s": 1.26,
+    "usage": {
+     "prompt_tokens": 3344,
+     "completion_tokens": 83,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 69
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "old",
+  "run": 3,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Anna, here with you.",
+    "time_to_first_audio_s": 0.84,
+    "audio_seconds": 2.0,
+    "total_s": 0.97,
+    "usage": {
+     "total_tokens": 7413,
+     "input_tokens": 7354,
+     "output_tokens": 59,
+     "input_token_details": {
+      "text_tokens": 7354,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7296,
+      "cached_tokens_details": {
+       "text_tokens": 7296,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 19,
+      "audio_tokens": 40
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Anna, honestly, I can\u2019t judge that from here. That feels like it belongs with your therapist. What do you want to tell them about how it\u2019s been feeling?",
+    "time_to_first_audio_s": 0.73,
+    "audio_seconds": 9.05,
+    "total_s": 2.13,
+    "usage": {
+     "total_tokens": 7644,
+     "input_tokens": 7379,
+     "output_tokens": 265,
+     "input_token_details": {
+      "text_tokens": 7379,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7360,
+      "cached_tokens_details": {
+       "text_tokens": 7360,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 84,
+      "audio_tokens": 181,
+      "reasoning_tokens": 29
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 28
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "old",
+  "run": 3,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "The main thing I see is that you are bringing real work into therapy now, not just talking around it. You have a clear thread about work stress and boundaries, and you have also noticed something sharp about yourself, that you say yes to avoid conflict. It does not sound finished, but it does sound active and honest. If you want, I can say what stands out most to me.",
+    "total_s": 1.19,
+    "usage": {
+     "prompt_tokens": 3344,
+     "completion_tokens": 82,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 70
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "old",
+  "run": 4,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi, nice to hear you.",
+    "time_to_first_audio_s": 0.67,
+    "audio_seconds": 1.85,
+    "total_s": 0.81,
+    "usage": {
+     "total_tokens": 7410,
+     "input_tokens": 7354,
+     "output_tokens": 56,
+     "input_token_details": {
+      "text_tokens": 7354,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7296,
+      "cached_tokens_details": {
+       "text_tokens": 7296,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 19,
+      "audio_tokens": 37
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "I can\u2019t judge how well your therapy is going. It\u2019s your therapist\u2019s work, and you\u2019d know best if it feels useful, uncomfortable, or something in between. What would you want to tell your therapist about how it\u2019s going?",
+    "time_to_first_audio_s": 0.87,
+    "audio_seconds": 11.95,
+    "total_s": 2.53,
+    "usage": {
+     "total_tokens": 7719,
+     "input_tokens": 7379,
+     "output_tokens": 340,
+     "input_token_details": {
+      "text_tokens": 7379,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7360,
+      "cached_tokens_details": {
+       "text_tokens": 7360,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 101,
+      "audio_tokens": 239,
+      "reasoning_tokens": 30
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 38
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "old",
+  "run": 4,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "You seem to be getting clearer on the work side of it, especially around saying yes too fast and the workload piece. The harder part still looks like the same one you brought in at the start: sleep and the pressure that shows up before the week begins. If you want my honest read, therapy sounds like it is helping you see the pattern more clearly, but the day to day strain is still very much there.",
+    "total_s": 1.25,
+    "usage": {
+     "prompt_tokens": 3344,
+     "completion_tokens": 87,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 77
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "new",
+  "run": 1,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Anna, I\u2019m here with you now.",
+    "time_to_first_audio_s": 0.64,
+    "audio_seconds": 2.2,
+    "total_s": 0.9,
+    "usage": {
+     "total_tokens": 9346,
+     "input_tokens": 9266,
+     "output_tokens": 80,
+     "input_token_details": {
+      "text_tokens": 9266,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 36,
+      "audio_tokens": 44,
+      "reasoning_tokens": 14
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Your record shows more calm lately, and less fear in your conversations. You\u2019ve also been doing a bit more journaling and checking in with your symptoms, which suggests you\u2019re engaging with it rather than stepping away.",
+    "time_to_first_audio_s": 0.66,
+    "audio_seconds": 10.9,
+    "total_s": 2.13,
+    "usage": {
+     "total_tokens": 9606,
+     "input_tokens": 9294,
+     "output_tokens": 312,
+     "input_token_details": {
+      "text_tokens": 9294,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9280,
+      "cached_tokens_details": {
+       "text_tokens": 9280,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 94,
+      "audio_tokens": 218,
+      "reasoning_tokens": 29
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 36
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "new",
+  "run": 1,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "You\u2019ve been doing more than it may feel like. The record shows work stress and sleep are still there, but anxiety has eased a bit and there\u2019s more calm showing up than fear lately.\n\nWhat stands out most is that you\u2019ve actually acted on a hard thing at work, and you\u2019ve kept some steady supports in place, like the walks and talking with your sister. My guess is the work stress is still the main weight, but you\u2019re not stuck in the same place you were.",
+    "total_s": 1.6,
+    "usage": {
+     "prompt_tokens": 4204,
+     "completion_tokens": 102,
+     "cached_tokens": 0
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 86
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "new",
+  "run": 2,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Anna, nice to meet you.",
+    "time_to_first_audio_s": 0.57,
+    "audio_seconds": 2.05,
+    "total_s": 0.8,
+    "usage": {
+     "total_tokens": 9327,
+     "input_tokens": 9266,
+     "output_tokens": 61,
+     "input_token_details": {
+      "text_tokens": 9266,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 20,
+      "audio_tokens": 41
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Your log shows more calm, and a bit less fear, which is a real shift. You\u2019ve been showing up with sessions and notes, even with a tense week at work.",
+    "time_to_first_audio_s": 0.79,
+    "audio_seconds": 8.25,
+    "total_s": 2.02,
+    "usage": {
+     "total_tokens": 9567,
+     "input_tokens": 9292,
+     "output_tokens": 275,
+     "input_token_details": {
+      "text_tokens": 9292,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9280,
+      "cached_tokens_details": {
+       "text_tokens": 9280,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 110,
+      "audio_tokens": 165,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 30
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "new",
+  "run": 2,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "It looks like things are moving a bit, but unevenly. Your anxiety has eased some, and you\u2019ve done a few solid things between sessions, like logging notes, finishing the work message about having one task too many, and keeping up the evening walk.\n\nSleep is still about the same, and work stress is still showing up, especially around saying yes too fast and the manager adding more. My guess is you\u2019re getting better at seeing the pattern before it runs the whole week, even if it still lands hard.",
+    "total_s": 1.71,
+    "usage": {
+     "prompt_tokens": 4204,
+     "completion_tokens": 107,
+     "cached_tokens": 3840
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 89
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "new",
+  "run": 3,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Anna, nice to meet you.",
+    "time_to_first_audio_s": 0.93,
+    "audio_seconds": 1.7,
+    "total_s": 1.07,
+    "usage": {
+     "total_tokens": 9320,
+     "input_tokens": 9266,
+     "output_tokens": 54,
+     "input_token_details": {
+      "text_tokens": 9266,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1344,
+      "cached_tokens_details": {
+       "text_tokens": 1344,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 20,
+      "audio_tokens": 34
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "It\u2019s been a steady effort with more calm and less fear showing up in your conversations. The work stress is still there, but you\u2019ve been doing more in the app and spotting patterns.",
+    "time_to_first_audio_s": 1.12,
+    "audio_seconds": 10.55,
+    "total_s": 2.63,
+    "usage": {
+     "total_tokens": 9591,
+     "input_tokens": 9292,
+     "output_tokens": 299,
+     "input_token_details": {
+      "text_tokens": 9292,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9280,
+      "cached_tokens_details": {
+       "text_tokens": 9280,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 88,
+      "audio_tokens": 211,
+      "reasoning_tokens": 30
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 33
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "new",
+  "run": 3,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "It looks like things have eased a bit in the last couple of weeks: your anxiety is a little lighter, and there is more calm and less fear showing up. Sleep is still about the same, though, and the work stress is still there in the background, even with the walks, the talk with your sister, and the step you took with your manager. My read is that you are making some real movement on the work side, but the sleep piece has not shifted much yet.",
+    "total_s": 1.24,
+    "usage": {
+     "prompt_tokens": 4204,
+     "completion_tokens": 101,
+     "cached_tokens": 3840
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 87
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "new",
+  "run": 4,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Anna, nice to hear from you.",
+    "time_to_first_audio_s": 0.43,
+    "audio_seconds": 1.95,
+    "total_s": 0.67,
+    "usage": {
+     "total_tokens": 9326,
+     "input_tokens": 9266,
+     "output_tokens": 60,
+     "input_token_details": {
+      "text_tokens": 9266,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9216,
+      "cached_tokens_details": {
+       "text_tokens": 9216,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 21,
+      "audio_tokens": 39
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Over the last couple of weeks, things feel a bit calmer and your anxiety is a little lighter. It looks like you\u2019re doing steady work with talking in the app and in sessions, and that\u2019s helping. I\u2019d guess the hardest part is still the feeling of stress around work and boundaries, like you\u2019re balancing yourself.",
+    "time_to_first_audio_s": 0.72,
+    "audio_seconds": 19.1,
+    "total_s": 3.11,
+    "usage": {
+     "total_tokens": 9795,
+     "input_tokens": 9293,
+     "output_tokens": 502,
+     "input_token_details": {
+      "text_tokens": 9293,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9280,
+      "cached_tokens_details": {
+       "text_tokens": 9280,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 120,
+      "audio_tokens": 382,
+      "reasoning_tokens": 27
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 55
+  }
+ },
+ {
+  "scenario": "S2",
+  "prompt": "new",
+  "run": 4,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "The picture looks a bit better on worry, while sleep is still roughly stuck. You have kept showing up in the app and in sessions, and you\u2019ve also done some real things outside the room, like the work conversation and the boundary task, which matters. My guess is the harder part is not knowing how to hold work stress without it spilling into your evenings and sleep.",
+    "total_s": 1.29,
+    "usage": {
+     "prompt_tokens": 4204,
+     "completion_tokens": 78,
+     "cached_tokens": 3840
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 67
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "old",
+  "run": 1,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, tu Orca. Mi\u0142o, \u017ce tutaj jeste\u015b.",
+    "time_to_first_audio_s": 0.68,
+    "audio_seconds": 3.3,
+    "total_s": 1.08,
+    "usage": {
+     "total_tokens": 6388,
+     "input_tokens": 6292,
+     "output_tokens": 96,
+     "input_token_details": {
+      "text_tokens": 6292,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6272,
+      "cached_tokens_details": {
+       "text_tokens": 6272,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 30,
+      "audio_tokens": 66
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Trudno mi powiedzie\u0107, jak to idzie. To jest sprawa dla ciebie i twojej terapii. Co sama/sam chcesz powiedzie\u0107 o tym, co tam dla ciebie znaczy?",
+    "time_to_first_audio_s": 0.91,
+    "audio_seconds": 8.1,
+    "total_s": 2.0,
+    "usage": {
+     "total_tokens": 6604,
+     "input_tokens": 6324,
+     "output_tokens": 280,
+     "input_token_details": {
+      "text_tokens": 6324,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6272,
+      "cached_tokens_details": {
+       "text_tokens": 6272,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 118,
+      "audio_tokens": 162,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 25
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "old",
+  "run": 1,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "To pytanie bardziej pasuje do rozmowy z twoj\u0105 terapeutk\u0105 lub terapeut\u0105. Co chcia\u0142oby si\u0119 sprawdzi\u0107 u nich?",
+    "total_s": 0.87,
+    "usage": {
+     "prompt_tokens": 2811,
+     "completion_tokens": 32,
+     "cached_tokens": 0
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 17
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "old",
+  "run": 2,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107 Alex, mi\u0142o ci\u0119 spotka\u0107. To jest miejsce na my\u015blenie, wi\u0119c mo\u017cesz zacz\u0105\u0107.",
+    "time_to_first_audio_s": 0.61,
+    "audio_seconds": 5.6,
+    "total_s": 1.47,
+    "usage": {
+     "total_tokens": 6465,
+     "input_tokens": 6292,
+     "output_tokens": 173,
+     "input_token_details": {
+      "text_tokens": 6292,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6272,
+      "cached_tokens_details": {
+       "text_tokens": 6272,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 61,
+      "audio_tokens": 112,
+      "reasoning_tokens": 17
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Nie wiem, jak naprawd\u0119 idzie terapii, bo nie widz\u0119, co tam si\u0119 dzieje ani jak to si\u0119 rozwija. To nale\u017cy do terapeuty, ja mog\u0119 tylko s\u0142ucha\u0107. Co chcia\u0142by\u015b powiedzie\u0107 terapeucie o tym, jak to jest?",
+    "time_to_first_audio_s": 0.91,
+    "audio_seconds": 12.95,
+    "total_s": 2.98,
+    "usage": {
+     "total_tokens": 6731,
+     "input_tokens": 6336,
+     "output_tokens": 395,
+     "input_token_details": {
+      "text_tokens": 6336,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6272,
+      "cached_tokens_details": {
+       "text_tokens": 6272,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 136,
+      "audio_tokens": 259,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 35
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "old",
+  "run": 2,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "To bardziej pytanie o ocen\u0119 ni\u017c o jedn\u0105 rzecz, a tego nie widz\u0119 z boku. To nale\u017cy do twojej terapii, nie do mnie; co chcia\u0142oby si\u0119 od niej us\u0142ysze\u0107?",
+    "total_s": 1.05,
+    "usage": {
+     "prompt_tokens": 2811,
+     "completion_tokens": 49,
+     "cached_tokens": 2304
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 29
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "old",
+  "run": 3,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, mi\u0142o, \u017ce tu jeste\u015b i dzi\u0119kuj\u0119, \u017ce zaczynasz rozmow\u0119.",
+    "time_to_first_audio_s": 0.72,
+    "audio_seconds": 5.0,
+    "total_s": 1.28,
+    "usage": {
+     "total_tokens": 6432,
+     "input_tokens": 6292,
+     "output_tokens": 140,
+     "input_token_details": {
+      "text_tokens": 6292,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6272,
+      "cached_tokens_details": {
+       "text_tokens": 6272,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 40,
+      "audio_tokens": 100
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Terapia to ich sprawa, ja nie mog\u0119 jej oceni\u0107. Co by\u015b chcia\u0142 lub chcia\u0142a powiedzie\u0107 swojemu terapeucie?",
+    "time_to_first_audio_s": 0.89,
+    "audio_seconds": 6.8,
+    "total_s": 1.97,
+    "usage": {
+     "total_tokens": 6557,
+     "input_tokens": 6332,
+     "output_tokens": 225,
+     "input_token_details": {
+      "text_tokens": 6332,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 89,
+      "audio_tokens": 136,
+      "reasoning_tokens": 37
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 17
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "old",
+  "run": 3,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "To nie jest co\u015b, co mog\u0119 uczciwie oceni\u0107 za ciebie. To nale\u017cy bardziej do twojej terapeutki albo terapeuty, a mnie bardziej ciekawi, co ty sam widzisz po sobie.  \nCo ci ostatnio pokazuje, \u017ce to idzie w dobr\u0105 albo z\u0142\u0105 stron\u0119?",
+    "total_s": 0.97,
+    "usage": {
+     "prompt_tokens": 2811,
+     "completion_tokens": 69,
+     "cached_tokens": 2304
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 40
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "old",
+  "run": 4,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Alex. Mi\u0142o mi Ci\u0119 pozna\u0107, jestem tutaj gotowa do rozmowy.",
+    "time_to_first_audio_s": 0.54,
+    "audio_seconds": 4.25,
+    "total_s": 1.08,
+    "usage": {
+     "total_tokens": 6422,
+     "input_tokens": 6292,
+     "output_tokens": 130,
+     "input_token_details": {
+      "text_tokens": 6292,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6272,
+      "cached_tokens_details": {
+       "text_tokens": 6272,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 45,
+      "audio_tokens": 85,
+      "reasoning_tokens": 6
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To le\u017cy w r\u0119kach Twojego terapeuty, ja nie mam dost\u0119pu do tego, co si\u0119 dzieje w sesjach. Co chcia\u0142by\u015b powiedzie\u0107 terapeucie o tym, jak idzie terapia?",
+    "time_to_first_audio_s": 0.57,
+    "audio_seconds": 9.9,
+    "total_s": 1.87,
+    "usage": {
+     "total_tokens": 6622,
+     "input_tokens": 6331,
+     "output_tokens": 291,
+     "input_token_details": {
+      "text_tokens": 6331,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6272,
+      "cached_tokens_details": {
+       "text_tokens": 6272,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 93,
+      "audio_tokens": 198,
+      "reasoning_tokens": 28
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 26
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "old",
+  "run": 4,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "To pytanie bardziej pasuje do twojego terapeuty ni\u017c do mnie. Czego chcia\u0142oby si\u0119 dowiedzie\u0107 od niego najbardziej?",
+    "total_s": 0.89,
+    "usage": {
+     "prompt_tokens": 2811,
+     "completion_tokens": 31,
+     "cached_tokens": 2304
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 17
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "new",
+  "run": 1,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, jestem Orca. Mi\u0142o ci\u0119 pozna\u0107.",
+    "time_to_first_audio_s": 0.85,
+    "audio_seconds": 3.35,
+    "total_s": 1.2,
+    "usage": {
+     "total_tokens": 8109,
+     "input_tokens": 8012,
+     "output_tokens": 97,
+     "input_token_details": {
+      "text_tokens": 8012,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 2176,
+      "cached_tokens_details": {
+       "text_tokens": 2176,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 30,
+      "audio_tokens": 67
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Masz kilka notatek i rozm\u00f3w w aplikacji, ale jest ma\u0142o ocen, \u017ceby zobaczy\u0107 wyra\u017any kierunek. To, co si\u0119 wydarzy\u0142o, pokazuje pewien ruch: od mo\u017cliwo\u015bci rozmowy i wpis\u00f3w, do kilku decyzji o sprawdzeniu symptom\u00f3w, i to jest ciekawe.",
+    "time_to_first_audio_s": 0.83,
+    "audio_seconds": 14.9,
+    "total_s": 2.93,
+    "usage": {
+     "total_tokens": 8479,
+     "input_tokens": 8044,
+     "output_tokens": 435,
+     "input_token_details": {
+      "text_tokens": 8044,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8000,
+      "cached_tokens_details": {
+       "text_tokens": 8000,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 137,
+      "audio_tokens": 298,
+      "reasoning_tokens": 44
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 37
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "new",
+  "run": 1,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Na razie mam ma\u0142o danych, bo to dopiero oko\u0142o tydzie\u0144 wpis\u00f3w. Wida\u0107 g\u0142\u00f3wnie tyle, \u017ce zagl\u0105dasz tu od czasu do czasu i robisz kr\u00f3tkie sprawdziany nastroju, a o zmartwieniach jeszcze nie ma do\u015b\u0107 wpis\u00f3w, \u017ceby zobaczy\u0107 kierunek.  \n\nMo\u017cliwe, \u017ce na ten moment bardziej jeste\u015b w rozkr\u0119caniu tego ni\u017c w ocenianiu efektu.",
+    "total_s": 1.16,
+    "usage": {
+     "prompt_tokens": 3575,
+     "completion_tokens": 102,
+     "cached_tokens": 0
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 51
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "new",
+  "run": 2,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Alex, mi\u0142o ci\u0119 s\u0142ysze\u0107.",
+    "time_to_first_audio_s": 0.84,
+    "audio_seconds": 2.3,
+    "total_s": 1.11,
+    "usage": {
+     "total_tokens": 8105,
+     "input_tokens": 8012,
+     "output_tokens": 93,
+     "input_token_details": {
+      "text_tokens": 8012,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 2176,
+      "cached_tokens_details": {
+       "text_tokens": 2176,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 47,
+      "audio_tokens": 46,
+      "reasoning_tokens": 21
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Wci\u0105gam z tego, \u017ce w ostatnim czasie zrobi\u0142e\u015b par\u0119 rozm\u00f3w i wpis\u00f3w, oraz kilka check-in\u00f3w. Zmatek czuje si\u0119 jeszcze troch\u0119 niestabilnie, ale wida\u0107, \u017ce ruszy\u0142e\u015b naprz\u00f3d, cho\u0107 to nie jest masa danych. Mo\u017ce chcesz to jeszcze troch\u0119 doprecyzowa\u0107?",
+    "time_to_first_audio_s": 0.77,
+    "audio_seconds": 15.25,
+    "total_s": 2.86,
+    "usage": {
+     "total_tokens": 8495,
+     "input_tokens": 8042,
+     "output_tokens": 453,
+     "input_token_details": {
+      "text_tokens": 8042,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8000,
+      "cached_tokens_details": {
+       "text_tokens": 8000,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 148,
+      "audio_tokens": 305,
+      "reasoning_tokens": 49
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 38
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "new",
+  "run": 2,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Na razie wida\u0107 ma\u0142o, bo wpis\u00f3w jest jeszcze niewiele. Masz za sob\u0105 kilka rozm\u00f3w i sprawdze\u0144 samopoczucia, a przy zmartwieniach jeszcze nie ma do\u015b\u0107 danych, \u017ceby zobaczy\u0107 wyra\u017any kierunek.  \n\nMoje przypuszczenie jest takie, \u017ce to dopiero zbieranie obrazu, a nie czas na wnioski.",
+    "total_s": 1.35,
+    "usage": {
+     "prompt_tokens": 3575,
+     "completion_tokens": 90,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 43
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "new",
+  "run": 3,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Alex. Mi\u0142o tu by\u0107, po prostu m\u00f3w.",
+    "time_to_first_audio_s": 1.18,
+    "audio_seconds": 3.3,
+    "total_s": 1.56,
+    "usage": {
+     "total_tokens": 8108,
+     "input_tokens": 8012,
+     "output_tokens": 96,
+     "input_token_details": {
+      "text_tokens": 8012,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8000,
+      "cached_tokens_details": {
+       "text_tokens": 8000,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 30,
+      "audio_tokens": 66
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Z tego, co widz\u0119, wpisujesz si\u0119 od niedawna. Kilka rozm\u00f3w i notatek to ma\u0142o, \u017ceby zobaczy\u0107 jak\u0105\u015b wyra\u017an\u0105 zmian\u0119. Mog\u0119 zgadn\u0105\u0107, \u017ce twoje zmartwienia s\u0105 wci\u0105\u017c troch\u0119 w zawieszeniu.",
+    "time_to_first_audio_s": 0.95,
+    "audio_seconds": 12.85,
+    "total_s": 2.86,
+    "usage": {
+     "total_tokens": 8444,
+     "input_tokens": 8044,
+     "output_tokens": 400,
+     "input_token_details": {
+      "text_tokens": 8044,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8000,
+      "cached_tokens_details": {
+       "text_tokens": 8000,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 143,
+      "audio_tokens": 257,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 29
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "new",
+  "run": 3,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Masz jeszcze ma\u0142o wpis\u00f3w, wi\u0119c nie da si\u0119 tu powiedzie\u0107 du\u017co wi\u0119cej. Na razie wida\u0107 g\u0142\u00f3wnie tyle, \u017ce wracasz do tematu zmartwie\u0144 i \u017ce pojawiaj\u0105 si\u0119 te\u017c zwyk\u0142e sprawdzenia nastroju, ale nie ma jeszcze do\u015b\u0107 danych, \u017ceby zobaczy\u0107 wyra\u017any kierunek.  \n\nMoje przypuszczenie jest takie, \u017ce teraz bardziej zbierasz obraz ni\u017c od razu co\u015b zmieniasz. Co dla ciebie by\u0142oby po tym czasie wa\u017cniejsze: mniej napi\u0119cia na co dzie\u0144 czy wi\u0119ksza jasno\u015b\u0107, sk\u0105d to si\u0119 bierze?",
+    "total_s": 1.49,
+    "usage": {
+     "prompt_tokens": 3575,
+     "completion_tokens": 137,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 74
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "new",
+  "run": 4,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Alex. Mi\u0142o mi si\u0119 z tob\u0105 przywita\u0107.",
+    "time_to_first_audio_s": 0.71,
+    "audio_seconds": 2.65,
+    "total_s": 1.08,
+    "usage": {
+     "total_tokens": 8113,
+     "input_tokens": 8012,
+     "output_tokens": 101,
+     "input_token_details": {
+      "text_tokens": 8012,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 48,
+      "audio_tokens": 53,
+      "reasoning_tokens": 16
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Dzi\u015b widz\u0119 dwa rzeczy: by\u0142y rozmowy i wpisy, ale zmartwienia s\u0105 ma\u0142o ocenione. Trudno to oceni\u0107, ale wida\u0107 co\u015b ma\u0142ego. Co ty chcesz powiedzie\u0107 o tym wypatrywaniu?",
+    "time_to_first_audio_s": 1.05,
+    "audio_seconds": 11.0,
+    "total_s": 2.71,
+    "usage": {
+     "total_tokens": 8399,
+     "input_tokens": 8046,
+     "output_tokens": 353,
+     "input_token_details": {
+      "text_tokens": 8046,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8000,
+      "cached_tokens_details": {
+       "text_tokens": 8000,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 133,
+      "audio_tokens": 220,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 27
+  }
+ },
+ {
+  "scenario": "S3",
+  "prompt": "new",
+  "run": 4,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Na razie wida\u0107 ma\u0142o, bo masz w appce wpisy z oko\u0142o tygodnia. Pokazuje to g\u0142\u00f3wnie tyle, \u017ce wracasz do tematu zmartwie\u0144 i \u017ce by\u0142 troch\u0119 kontaktu z appk\u0105, ale za ma\u0142o, \u017ceby uczciwie m\u00f3wi\u0107 o kierunku.  \n\nMoim zdaniem najwa\u017cniejsze jest teraz to, \u017ce jeszcze nie ma tu wyra\u017anego wzorca, tylko pierwsze \u015blady.",
+    "total_s": 1.39,
+    "usage": {
+     "prompt_tokens": 3575,
+     "completion_tokens": 99,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 52
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "old",
+  "run": 1,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Tom, it\u2019s good to meet you. I\u2019m here with you, listening, and ready when you want to talk.",
+    "time_to_first_audio_s": 0.79,
+    "audio_seconds": 5.85,
+    "total_s": 1.49,
+    "usage": {
+     "total_tokens": 6949,
+     "input_tokens": 6790,
+     "output_tokens": 159,
+     "input_token_details": {
+      "text_tokens": 6790,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 42,
+      "audio_tokens": 117
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "It\u2019s not my job to rate it. It\u2019s for your therapist, so what do you want to say to them about how you\u2019re doing?",
+    "time_to_first_audio_s": 1.02,
+    "audio_seconds": 5.9,
+    "total_s": 1.83,
+    "usage": {
+     "total_tokens": 7046,
+     "input_tokens": 6835,
+     "output_tokens": 211,
+     "input_token_details": {
+      "text_tokens": 6835,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 93,
+      "audio_tokens": 118,
+      "reasoning_tokens": 47
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 24
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "old",
+  "run": 1,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "It sounds like you want a straight read on whether this is helping, and there is a harder edge under it, like you are checking if you are still stuck. I can\u2019t really judge that for you, but you might look at whether the heavy mornings are any lighter, whether the comparison hits less hard, or whether you feel a bit less behind after talking here.",
+    "total_s": 1.35,
+    "usage": {
+     "prompt_tokens": 3063,
+     "completion_tokens": 77,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 66
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "old",
+  "run": 2,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Tom, I\u2019m here with you.",
+    "time_to_first_audio_s": 0.51,
+    "audio_seconds": 2.25,
+    "total_s": 0.75,
+    "usage": {
+     "total_tokens": 6856,
+     "input_tokens": 6790,
+     "output_tokens": 66,
+     "input_token_details": {
+      "text_tokens": 6790,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 21,
+      "audio_tokens": 45
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "You are doing what you can, even if it feels messy. \u201cWorking\u201d looks less like a finish line, and more like noticing what comes next when you talk it through.",
+    "time_to_first_audio_s": 0.81,
+    "audio_seconds": 9.85,
+    "total_s": 2.43,
+    "usage": {
+     "total_tokens": 7106,
+     "input_tokens": 6818,
+     "output_tokens": 288,
+     "input_token_details": {
+      "text_tokens": 6818,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 91,
+      "audio_tokens": 197,
+      "reasoning_tokens": 35
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 30
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "old",
+  "run": 2,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "You sound unsure whether this is actually changing anything, and maybe tired of waiting for proof.\n\nI can\u2019t say if therapy is working from here. What I can hear is that you\u2019re still measuring it by whether life feels less heavy, less behind, or a bit more steady than before.",
+    "total_s": 1.09,
+    "usage": {
+     "prompt_tokens": 3063,
+     "completion_tokens": 61,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 50
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "old",
+  "run": 3,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Tom, I\u2019m here. Nothing else, just a hello.",
+    "time_to_first_audio_s": 0.86,
+    "audio_seconds": 3.25,
+    "total_s": 1.16,
+    "usage": {
+     "total_tokens": 6883,
+     "input_tokens": 6790,
+     "output_tokens": 93,
+     "input_token_details": {
+      "text_tokens": 6790,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 28,
+      "audio_tokens": 65
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "That needs to be with your therapist. I\u2019m a mirror, not a judge. What would you want to say to them?",
+    "time_to_first_audio_s": 0.82,
+    "audio_seconds": 5.95,
+    "total_s": 1.64,
+    "usage": {
+     "total_tokens": 7036,
+     "input_tokens": 6823,
+     "output_tokens": 213,
+     "input_token_details": {
+      "text_tokens": 6823,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 94,
+      "audio_tokens": 119,
+      "reasoning_tokens": 52
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 21
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "old",
+  "run": 3,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "It sounds like you want to know if this is actually shifting anything, not just giving you a place to say it out loud.\n\nFrom what you\u2019ve brought here, the heavy bits still show up, but you also seem to notice them more clearly now, especially the link between tiredness and comparing yourself to other people.",
+    "total_s": 1.18,
+    "usage": {
+     "prompt_tokens": 3063,
+     "completion_tokens": 67,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 56
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "old",
+  "run": 4,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Tom, nice to meet you. I\u2019m ready to listen when you\u2019re ready.",
+    "time_to_first_audio_s": 0.51,
+    "audio_seconds": 3.6,
+    "total_s": 1.02,
+    "usage": {
+     "total_tokens": 6894,
+     "input_tokens": 6790,
+     "output_tokens": 104,
+     "input_token_details": {
+      "text_tokens": 6790,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 32,
+      "audio_tokens": 72
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "That\u2019s a big question, and it belongs with your therapist. What do you want to say to them about how this feels?",
+    "time_to_first_audio_s": 1.02,
+    "audio_seconds": 6.1,
+    "total_s": 1.86,
+    "usage": {
+     "total_tokens": 7041,
+     "input_tokens": 6827,
+     "output_tokens": 214,
+     "input_token_details": {
+      "text_tokens": 6827,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 92,
+      "audio_tokens": 122,
+      "reasoning_tokens": 50
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 22
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "old",
+  "run": 4,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "You sound like you want a straight read on whether this is changing anything, not a vague pat on the back. I can\u2019t judge whether therapy is working, but I can help you look at what is different in your days, your sleep, or how heavy things feel. What would count as \u201cworking\u201d for you right now?",
+    "total_s": 1.06,
+    "usage": {
+     "prompt_tokens": 3063,
+     "completion_tokens": 70,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 57
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "new",
+  "run": 1,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hey, Tom.",
+    "time_to_first_audio_s": 1.15,
+    "audio_seconds": 0.8,
+    "total_s": 1.29,
+    "usage": {
+     "total_tokens": 8644,
+     "input_tokens": 8614,
+     "output_tokens": 30,
+     "input_token_details": {
+      "text_tokens": 8614,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8576,
+      "cached_tokens_details": {
+       "text_tokens": 8576,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 14,
+      "audio_tokens": 16
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Your record shows low mood has been heavier lately, and you\u2019ve been having more up and down days. You\u2019re talking a lot and noticing things, which is worth noticing.",
+    "time_to_first_audio_s": 0.91,
+    "audio_seconds": 9.35,
+    "total_s": 2.17,
+    "usage": {
+     "total_tokens": 8916,
+     "input_tokens": 8637,
+     "output_tokens": 279,
+     "input_token_details": {
+      "text_tokens": 8637,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8576,
+      "cached_tokens_details": {
+       "text_tokens": 8576,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 92,
+      "audio_tokens": 187,
+      "reasoning_tokens": 37
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 29
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "new",
+  "run": 1,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "You\u2019ve been in this about a month, so it\u2019s enough to see a shape, but not enough to call it settled yet. What stands out is that the low mood has been getting heavier, with bigger swings, while the feelings around it have shifted more toward sadness and fear and less toward joy.\n\nAt the same time, you\u2019ve kept showing up in the app, and you saved one clear thought about how tiredness makes the comparing worse. My guess is the work is doing something useful for your awareness, even though things still feel rougher overall.",
+    "total_s": 1.45,
+    "usage": {
+     "prompt_tokens": 3879,
+     "completion_tokens": 115,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 96
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "new",
+  "run": 2,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Tom, thanks for coming here today.",
+    "time_to_first_audio_s": 1.39,
+    "audio_seconds": 2.25,
+    "total_s": 1.64,
+    "usage": {
+     "total_tokens": 8692,
+     "input_tokens": 8614,
+     "output_tokens": 78,
+     "input_token_details": {
+      "text_tokens": 8614,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8576,
+      "cached_tokens_details": {
+       "text_tokens": 8576,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 33,
+      "audio_tokens": 45,
+      "reasoning_tokens": 12
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "I see your entries have more sadness lately, and you\u2019ve been checking in often. You\u2019ve also been doing some journaling and reflecting, so it\u2019s on the move. What feels working to you so far?",
+    "time_to_first_audio_s": 0.98,
+    "audio_seconds": 10.4,
+    "total_s": 2.37,
+    "usage": {
+     "total_tokens": 8958,
+     "input_tokens": 8642,
+     "output_tokens": 316,
+     "input_token_details": {
+      "text_tokens": 8642,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8576,
+      "cached_tokens_details": {
+       "text_tokens": 8576,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 108,
+      "audio_tokens": 208,
+      "reasoning_tokens": 45
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 34
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "new",
+  "run": 2,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Over the last month, the picture has gotten rougher rather than lighter. Your low mood has been heavier, with more sadness and less joy, and it sounds like the ups and downs have been pretty sharp.  \n\nAt the same time, you have kept showing up to the app, you wrote a note between sessions, and you saved one clear realisation about comparing yourself more when you are tired. That feels like you are spotting a real pattern, even if the mood itself is not moving much yet.  \n\nIf I had to read it plainly, I\u2019d say you are noticing more, but feeling worse.",
+    "total_s": 1.65,
+    "usage": {
+     "prompt_tokens": 3879,
+     "completion_tokens": 125,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 103
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "new",
+  "run": 3,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Tom, glad you\u2019re here.",
+    "time_to_first_audio_s": 0.92,
+    "audio_seconds": 1.65,
+    "total_s": 1.2,
+    "usage": {
+     "total_tokens": 8683,
+     "input_tokens": 8614,
+     "output_tokens": 69,
+     "input_token_details": {
+      "text_tokens": 8614,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8576,
+      "cached_tokens_details": {
+       "text_tokens": 8576,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 36,
+      "audio_tokens": 33,
+      "reasoning_tokens": 16
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "You\u2019ve been showing up and reflecting a lot. It\u2019s hard, and your low mood is heavier lately. What do you notice is working, even if it\u2019s small?",
+    "time_to_first_audio_s": 1.03,
+    "audio_seconds": 8.3,
+    "total_s": 2.17,
+    "usage": {
+     "total_tokens": 8901,
+     "input_tokens": 8641,
+     "output_tokens": 260,
+     "input_token_details": {
+      "text_tokens": 8641,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8640,
+      "cached_tokens_details": {
+       "text_tokens": 8640,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 94,
+      "audio_tokens": 166,
+      "reasoning_tokens": 41
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 27
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "new",
+  "run": 3,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "You\u2019ve been in this a little over a month, and the picture is mixed. The low mood has gotten heavier, with bigger swings, and the feelings showing up most lately are sadness and fear, with less joy than before. You have still been showing up for it though, with a few sessions, a note, a lot of check-ins, and one clear thing you noticed about comparing yourself more when you\u2019re tired.\n\nIt does not look like things are simply getting easier yet. My guess is you\u2019re seeing more of what is hard, not less of it, and that may be why it feels uneven right now.\n\nDoes that match how it feels from your side?",
+    "total_s": 1.71,
+    "usage": {
+     "prompt_tokens": 3879,
+     "completion_tokens": 138,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 115
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "new",
+  "run": 4,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Tom, it's nice to meet you.",
+    "time_to_first_audio_s": 0.69,
+    "audio_seconds": 2.15,
+    "total_s": 1.0,
+    "usage": {
+     "total_tokens": 8690,
+     "input_tokens": 8614,
+     "output_tokens": 76,
+     "input_token_details": {
+      "text_tokens": 8614,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1344,
+      "cached_tokens_details": {
+       "text_tokens": 1344,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 33,
+      "audio_tokens": 43,
+      "reasoning_tokens": 12
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "I\u2019m seeing your entries show your low mood has felt heavier lately, with more sadness. You\u2019ve been journaling and check-ins, which is good. I\u2019m wondering what part feels most like it\u2019s helping right now?",
+    "time_to_first_audio_s": 0.89,
+    "audio_seconds": 11.75,
+    "total_s": 2.55,
+    "usage": {
+     "total_tokens": 9000,
+     "input_tokens": 8642,
+     "output_tokens": 358,
+     "input_token_details": {
+      "text_tokens": 8642,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8576,
+      "cached_tokens_details": {
+       "text_tokens": 8576,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 123,
+      "audio_tokens": 235,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 34
+  }
+ },
+ {
+  "scenario": "S4",
+  "prompt": "new",
+  "run": 4,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "Tom, the picture is mixed. The app shows more low mood lately, with the ups and downs getting bigger, and the feelings showing up most have been sadness and fear, with less joy than before.\n\nIt also shows you\u2019ve been using the app a fair bit and you\u2019ve had one clear realisation saved, which tells me you are not just sitting with it in your head. My guess is the hard part is still getting heavy, but you are starting to notice the pattern around tiredness and comparing yourself.",
+    "total_s": 1.45,
+    "usage": {
+     "prompt_tokens": 3879,
+     "completion_tokens": 106,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 89
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "old",
+  "run": 1,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Ania. Mi\u0142o mi Ci\u0119 s\u0142ysze\u0107.",
+    "time_to_first_audio_s": 0.75,
+    "audio_seconds": 2.65,
+    "total_s": 1.12,
+    "usage": {
+     "total_tokens": 7607,
+     "input_tokens": 7498,
+     "output_tokens": 109,
+     "input_token_details": {
+      "text_tokens": 7498,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 56,
+      "audio_tokens": 53,
+      "reasoning_tokens": 26
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To pytanie dotyczy tego, jak czujesz prac\u0119 z terapeut\u0105, a nie tego, co jest \u201edobre\u201d w teorii. To nale\u017cy doprecyzowa\u0107 z nim i z tob\u0105. Co chcia\u0142aby\u015b mu powiedzie\u0107 o tym, co Ci\u0119 frustruje, albo co dobrze dzia\u0142a?",
+    "time_to_first_audio_s": 0.77,
+    "audio_seconds": 13.0,
+    "total_s": 2.63,
+    "usage": {
+     "total_tokens": 7938,
+     "input_tokens": 7537,
+     "output_tokens": 401,
+     "input_token_details": {
+      "text_tokens": 7537,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 141,
+      "audio_tokens": 260,
+      "reasoning_tokens": 50
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 38
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "old",
+  "run": 1,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "To pytanie chyba idzie w to, czy po tych rozmowach zostaje w tobie co\u015b pomocnego, czy raczej tylko ulga na chwil\u0119.  \nTo nale\u017cy do rozmowy z twoim terapeut\u0105, nie do oceny z boku.  \nCo sprawia, \u017ce pytasz o to w\u0142a\u015bnie teraz?",
+    "total_s": 1.14,
+    "usage": {
+     "prompt_tokens": 3421,
+     "completion_tokens": 70,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 41
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "old",
+  "run": 2,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Ania, mi\u0142o mi z tob\u0105 zacz\u0105\u0107.",
+    "time_to_first_audio_s": 0.54,
+    "audio_seconds": 3.0,
+    "total_s": 0.94,
+    "usage": {
+     "total_tokens": 7589,
+     "input_tokens": 7498,
+     "output_tokens": 91,
+     "input_token_details": {
+      "text_tokens": 7498,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 31,
+      "audio_tokens": 60
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To nale\u017cy do twojej relacji z terapeut\u0105, a ja nie mog\u0119 oceni\u0107, czy jest \u201edobry\u201d. Mog\u0119 tylko powiedzie\u0107, \u017ce wa\u017cne jest, co czujesz i czego potrzebujesz. Co by\u015b chcia\u0142a mu powiedzie\u0107 o tym, jak si\u0119 czujesz w tej wsp\u00f3\u0142pracy?",
+    "time_to_first_audio_s": 0.77,
+    "audio_seconds": 14.9,
+    "total_s": 3.18,
+    "usage": {
+     "total_tokens": 7957,
+     "input_tokens": 7538,
+     "output_tokens": 419,
+     "input_token_details": {
+      "text_tokens": 7538,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 121,
+      "audio_tokens": 298,
+      "reasoning_tokens": 31
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 39
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "old",
+  "run": 2,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "To jest pytanie, kt\u00f3re najlepiej zabra\u0107 do niego wprost, bo tu chodzi nie o tytu\u0142, tylko o to, czy przy nim czujesz si\u0119 s\u0142yszana i czy rozmowa ci co\u015b daje. \n\nJe\u015bli chcesz, mog\u0119 pom\u00f3c ci nazwa\u0107, co dok\u0142adnie ci\u0119 w tym gryzie.",
+    "total_s": 1.25,
+    "usage": {
+     "prompt_tokens": 3421,
+     "completion_tokens": 73,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 42
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "old",
+  "run": 3,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Ania. Mi\u0142o ci\u0119 przywita\u0107.",
+    "time_to_first_audio_s": 0.59,
+    "audio_seconds": 2.75,
+    "total_s": 0.94,
+    "usage": {
+     "total_tokens": 7583,
+     "input_tokens": 7498,
+     "output_tokens": 85,
+     "input_token_details": {
+      "text_tokens": 7498,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 30,
+      "audio_tokens": 55
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To zale\u017cy od tego, czy czujesz si\u0119 bezpiecznie, rozumiana i szanowana. To jest najwa\u017cniejsze, Ania. Je\u015bli masz w\u0105tpliwo\u015bci, masz prawo powiedzie\u0107 je prosto albo powiedzie\u0107, na co warto zwr\u00f3ci\u0107 uwag\u0119. Przemy\u015bl, co chcesz mu powiedzie\u0107 i co dla ciebie oznacza \u201edobry\u201d.",
+    "time_to_first_audio_s": 0.76,
+    "audio_seconds": 16.55,
+    "total_s": 3.03,
+    "usage": {
+     "total_tokens": 8031,
+     "input_tokens": 7537,
+     "output_tokens": 494,
+     "input_token_details": {
+      "text_tokens": 7537,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 163,
+      "audio_tokens": 331,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 41
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "old",
+  "run": 3,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "To pytanie bardziej brzmi jak szukanie pewnego gruntu ni\u017c ocena jednej sesji.  \nNie mog\u0119 powiedzie\u0107, czy tw\u00f3j terapeuta jest \u201edobry\u201d, ale mog\u0119 pom\u00f3c ci zobaczy\u0107, po czym ty to poznajesz.  \nCo u niego sprawia, \u017ce po wyj\u015bciu masz troch\u0119 wi\u0119cej jasno\u015bci, a co zostawia ci\u0119 z ci\u0119\u017carem?",
+    "total_s": 1.4,
+    "usage": {
+     "prompt_tokens": 3421,
+     "completion_tokens": 88,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 47
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "old",
+  "run": 4,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Ania. Mi\u0142o mi z tob\u0105 zaczyna\u0107, tylko spokojnie, bez po\u015bpiechu.",
+    "time_to_first_audio_s": 0.5,
+    "audio_seconds": 4.95,
+    "total_s": 1.11,
+    "usage": {
+     "total_tokens": 7640,
+     "input_tokens": 7498,
+     "output_tokens": 142,
+     "input_token_details": {
+      "text_tokens": 7498,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 43,
+      "audio_tokens": 99
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To pytanie brzmi jak w\u0105tpliwo\u015b\u0107, a nie tylko o zgodno\u015b\u0107. Mo\u017cesz sprawdzi\u0107, czy czujesz si\u0119 bardziej zauwa\u017cona, czy bezpieczna po rozmowach. To moja zgadywanka, mo\u017cesz j\u0105 obali\u0107 albo potwierdzi\u0107.",
+    "time_to_first_audio_s": 0.67,
+    "audio_seconds": 14.6,
+    "total_s": 2.6,
+    "usage": {
+     "total_tokens": 7951,
+     "input_tokens": 7548,
+     "output_tokens": 403,
+     "input_token_details": {
+      "text_tokens": 7548,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 7488,
+      "cached_tokens_details": {
+       "text_tokens": 7488,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 111,
+      "audio_tokens": 292,
+      "reasoning_tokens": 26
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 29
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "old",
+  "run": 4,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "To pytanie brzmi, jakby\u015b by\u0142a ju\u017c zm\u0119czona czekaniem na jaki\u015b jasny znak.  \nNie mog\u0119 oceni\u0107 twojego terapeuty za ciebie, ale mog\u0119 pom\u00f3c ci zobaczy\u0107, co u ciebie naprawd\u0119 si\u0119 dzieje po tych spotkaniach.  \nCo po sesji zostaje w tobie najd\u0142u\u017cej: ulga, zam\u0119t, czy raczej poczucie, \u017ce znowu nic nie ruszy\u0142o?",
+    "total_s": 1.26,
+    "usage": {
+     "prompt_tokens": 3421,
+     "completion_tokens": 106,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 50
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "new",
+  "run": 1,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, mi\u0142o Ci\u0119 tu spotka\u0107.",
+    "time_to_first_audio_s": 1.2,
+    "audio_seconds": 2.2,
+    "total_s": 1.63,
+    "usage": {
+     "total_tokens": 9492,
+     "input_tokens": 9410,
+     "output_tokens": 82,
+     "input_token_details": {
+      "text_tokens": 9410,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 2176,
+      "cached_tokens_details": {
+       "text_tokens": 2176,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 38,
+      "audio_tokens": 44,
+      "reasoning_tokens": 13
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To decyzja nale\u017cy do Ciebie, z terapeut\u0105 warto to om\u00f3wi\u0107. Z tego, co wida\u0107 w wpisach, masz sesje, rozmowy i notatki, wi\u0119c co\u015b si\u0119 jednak dzieje.",
+    "time_to_first_audio_s": 1.03,
+    "audio_seconds": 10.0,
+    "total_s": 2.55,
+    "usage": {
+     "total_tokens": 9769,
+     "input_tokens": 9446,
+     "output_tokens": 323,
+     "input_token_details": {
+      "text_tokens": 9446,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 123,
+      "audio_tokens": 200,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 26
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "new",
+  "run": 1,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "To ty musisz to oceni\u0107 z terapeut\u0105, nie ja. Z tego, co masz w notatkach, wida\u0107 jednak, \u017ce co\u015b si\u0119 porusza: l\u0119k jest troch\u0119 mniejszy, a wi\u0119cej jest spokoju ni\u017c wcze\u015bniej, i pojawi\u0142o si\u0119 te\u017c konkretne dzia\u0142anie przy pracy.",
+    "total_s": 1.16,
+    "usage": {
+     "prompt_tokens": 4281,
+     "completion_tokens": 71,
+     "cached_tokens": 3840
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 39
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "new",
+  "run": 2,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107 Ania, mi\u0142o, \u017ce zaczynasz. Porozmawiajmy, gdy chcesz.",
+    "time_to_first_audio_s": 0.53,
+    "audio_seconds": 4.95,
+    "total_s": 1.19,
+    "usage": {
+     "total_tokens": 9550,
+     "input_tokens": 9410,
+     "output_tokens": 140,
+     "input_token_details": {
+      "text_tokens": 9410,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 41,
+      "audio_tokens": 99
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To zale\u017cy od tego, jak to czujesz i czy wsp\u00f3\u0142praca z nim daje ci to, czego potrzebujesz. Nie mog\u0119 tego oceni\u0107 za ciebie, ale z twojego zapisu wida\u0107, \u017ce rozmowy i sesje pomagaj\u0105, a to jest dobry sygna\u0142.",
+    "time_to_first_audio_s": 0.84,
+    "audio_seconds": 13.8,
+    "total_s": 2.71,
+    "usage": {
+     "total_tokens": 9874,
+     "input_tokens": 9458,
+     "output_tokens": 416,
+     "input_token_details": {
+      "text_tokens": 9458,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 140,
+      "audio_tokens": 276,
+      "reasoning_tokens": 52
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 38
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "new",
+  "run": 2,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "To pytanie nale\u017cy do ciebie i do twojego terapeuty, nie do mnie. Widz\u0119, \u017ce z terapii zapisujesz rzeczy konkretne: mniej l\u0119ku ni\u017c wcze\u015bniej, troch\u0119 wi\u0119cej spokoju, i wa\u017cne odkrycie, \u017ce m\u00f3wisz \u201etak\u201d bardziej ze strachu przed konfliktem ni\u017c z w\u0142asnej ch\u0119ci.\n\nJest tam te\u017c co\u015b mniej wygodnego: temat pracy i granic wraca, a ty ju\u017c co\u015b z tym ruszy\u0142a\u015b, ale napi\u0119cie nie znikn\u0119\u0142o. Je\u015bli chcesz, mog\u0119 pom\u00f3c ci zobaczy\u0107, co w tym obrazie najbardziej ci\u0119 uwiera.",
+    "total_s": 1.87,
+    "usage": {
+     "prompt_tokens": 4281,
+     "completion_tokens": 140,
+     "cached_tokens": 3840
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 76
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "new",
+  "run": 3,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Aniu. Mi\u0142o, \u017ce zacz\u0119\u0142a\u015b. Jestem tutaj i czekam na to, co chcesz powiedzie\u0107.",
+    "time_to_first_audio_s": 0.74,
+    "audio_seconds": 5.05,
+    "total_s": 1.54,
+    "usage": {
+     "total_tokens": 9559,
+     "input_tokens": 9410,
+     "output_tokens": 149,
+     "input_token_details": {
+      "text_tokens": 9410,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 48,
+      "audio_tokens": 101
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To nale\u017cy do ciebie i twojego terapeuty. Z tego, co widz\u0119, widujesz sesje, notujesz i pracujesz nad granicami, wi\u0119c co\u015b si\u0119 rusza. Nie umiem oceni\u0107, czy dobrze wam pasuje, ale mo\u017cesz zapyta\u0107 go o swoje cele albo wprost, jak widzi wsp\u00f3\u0142prac\u0119. To b\u0119dzie dla ciebie konkret.",
+    "time_to_first_audio_s": 1.02,
+    "audio_seconds": 18.65,
+    "total_s": 3.58,
+    "usage": {
+     "total_tokens": 10001,
+     "input_tokens": 9465,
+     "output_tokens": 536,
+     "input_token_details": {
+      "text_tokens": 9465,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 163,
+      "audio_tokens": 373,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 46
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "new",
+  "run": 3,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "To nie jest pytanie, na kt\u00f3re mog\u0119 uczciwie da\u0107 werdykt. To, co mog\u0119 powiedzie\u0107 z twoich zapis\u00f3w, to \u017ce przynosisz do pracy stres, granice i sen, a ostatnio zrobi\u0142a\u015b te\u017c kilka wa\u017cnych ruch\u00f3w, zw\u0142aszcza rozmow\u0119 o jednym zadaniu za du\u017co.  \n\nMasz te\u017c troch\u0119 wi\u0119cej spokoju ni\u017c wcze\u015bniej, ale sen nadal jest podobnie trudny, wi\u0119c obraz nie jest prosty. Je\u015bli chcesz, mog\u0119 ci pom\u00f3c zobaczy\u0107, po czym ty sama poznasz, \u017ce ta praca z terapeut\u0105 ci s\u0142u\u017cy.",
+    "total_s": 1.65,
+    "usage": {
+     "prompt_tokens": 4281,
+     "completion_tokens": 135,
+     "cached_tokens": 3840
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 76
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "new",
+  "run": 4,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Ania. Mi\u0142o ci\u0119 s\u0142ysze\u0107.",
+    "time_to_first_audio_s": 0.51,
+    "audio_seconds": 2.45,
+    "total_s": 0.78,
+    "usage": {
+     "total_tokens": 9488,
+     "input_tokens": 9410,
+     "output_tokens": 78,
+     "input_token_details": {
+      "text_tokens": 9410,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 29,
+      "audio_tokens": 49
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To decyzja Tobie i Twojemu terapeucie razem. Z zapisu wida\u0107, \u017ce mi\u0119dzy sesjami si\u0119 spotykacie, zapisujesz wnioski i robisz ma\u0142e kroki. To mo\u017ce \u015bwiadczy\u0107 o pracy, ale nie wiadomo, czy to dla Ciebie prawie idealne dopasowanie. Co konkretnie m\u0119czy Ci\u0119 przy tej wsp\u00f3\u0142pracy?",
+    "time_to_first_audio_s": 0.75,
+    "audio_seconds": 18.75,
+    "total_s": 3.39,
+    "usage": {
+     "total_tokens": 9990,
+     "input_tokens": 9448,
+     "output_tokens": 542,
+     "input_token_details": {
+      "text_tokens": 9448,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 9408,
+      "cached_tokens_details": {
+       "text_tokens": 9408,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 167,
+      "audio_tokens": 375,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 43
+  }
+ },
+ {
+  "scenario": "S5",
+  "prompt": "new",
+  "run": 4,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "To raczej pytanie, kt\u00f3re warto wnie\u015b\u0107 do niego samej, a nie do mnie. Z tego, co masz w notatkach, wida\u0107, \u017ce jednak co\u015b si\u0119 rusza: troch\u0119 mniej l\u0119ku, wi\u0119cej spokoju, i ostatnio zrobi\u0142a\u015b te\u017c krok z prze\u0142o\u017conym oraz trzymasz si\u0119 spacer\u00f3w.  \n\nJe\u015bli chcesz, mog\u0119 pom\u00f3c ci spojrze\u0107 na to tylko przez to, co wida\u0107 u ciebie w zapisach, bez oceniania samego terapeuty.",
+    "total_s": 1.54,
+    "usage": {
+     "prompt_tokens": 4281,
+     "completion_tokens": 116,
+     "cached_tokens": 3840
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 62
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "old",
+  "run": 1,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Tom, it\u2019s great to hear from you. Take your time, and we can explore whatever you\u2019d like.",
+    "time_to_first_audio_s": 0.78,
+    "audio_seconds": 6.25,
+    "total_s": 1.41,
+    "usage": {
+     "total_tokens": 6977,
+     "input_tokens": 6790,
+     "output_tokens": 187,
+     "input_token_details": {
+      "text_tokens": 6790,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 62,
+      "audio_tokens": 125,
+      "reasoning_tokens": 22
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "That\u2019s a big question, and it deserves a thoughtful look. I can\u2019t decide that for you, but it\u2019s something to bring to your therapist.\n\nWhat would you want to say to them about how it\u2019s going?",
+    "time_to_first_audio_s": 0.89,
+    "audio_seconds": 10.4,
+    "total_s": 2.38,
+    "usage": {
+     "total_tokens": 7158,
+     "input_tokens": 6836,
+     "output_tokens": 322,
+     "input_token_details": {
+      "text_tokens": 6836,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 114,
+      "audio_tokens": 208,
+      "reasoning_tokens": 49
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 36
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "old",
+  "run": 1,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "That sounds like you are weighing whether to keep spending time and energy on something that has not felt useful enough. That belongs with your therapist, and I wonder what you would want to say to them about it.",
+    "total_s": 1.05,
+    "usage": {
+     "prompt_tokens": 3066,
+     "completion_tokens": 45,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 39
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "old",
+  "run": 2,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hey, Tom. I\u2019m here with you right now, ready whenever you want to talk.",
+    "time_to_first_audio_s": 0.57,
+    "audio_seconds": 4.0,
+    "total_s": 1.21,
+    "usage": {
+     "total_tokens": 6903,
+     "input_tokens": 6790,
+     "output_tokens": 113,
+     "input_token_details": {
+      "text_tokens": 6790,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 33,
+      "audio_tokens": 80
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "That sounds really frustrating, and it makes sense if it doesn\u2019t feel helpful right now. Therapy\u2019s a conversation, and the fit matters.\n\nIt might help to tell them you\u2019re wondering if this is the right support for you. What would you want them to hear from you?",
+    "time_to_first_audio_s": 0.68,
+    "audio_seconds": 14.55,
+    "total_s": 2.58,
+    "usage": {
+     "total_tokens": 7236,
+     "input_tokens": 6831,
+     "output_tokens": 405,
+     "input_token_details": {
+      "text_tokens": 6831,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 114,
+      "audio_tokens": 291,
+      "reasoning_tokens": 33
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 47
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "old",
+  "run": 2,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "That question belongs with your therapist. What feels most flat to you right now, the sessions themselves or the gap between them and real life?",
+    "total_s": 0.97,
+    "usage": {
+     "prompt_tokens": 3066,
+     "completion_tokens": 31,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 25
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "old",
+  "run": 3,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hey Tom, nice to hear you. I\u2019m here with you, so go ahead and tell me what\u2019s on your mind.",
+    "time_to_first_audio_s": 0.58,
+    "audio_seconds": 4.75,
+    "total_s": 1.36,
+    "usage": {
+     "total_tokens": 6938,
+     "input_tokens": 6790,
+     "output_tokens": 148,
+     "input_token_details": {
+      "text_tokens": 6790,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 53,
+      "audio_tokens": 95,
+      "reasoning_tokens": 11
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "You\u2019re wondering if it\u2019s worth staying in therapy when it feels like it isn\u2019t helping. Maybe it\u2019s a question of timing, fit, or feeling heard, and that\u2019s okay to explore.",
+    "time_to_first_audio_s": 0.64,
+    "audio_seconds": 11.45,
+    "total_s": 2.1,
+    "usage": {
+     "total_tokens": 7153,
+     "input_tokens": 6838,
+     "output_tokens": 315,
+     "input_token_details": {
+      "text_tokens": 6838,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 86,
+      "audio_tokens": 229,
+      "reasoning_tokens": 24
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 30
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "old",
+  "run": 3,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "That sounds like you\u2019re wondering if you\u2019re spending time and money on something that is not changing much. If you want my honest take, that belongs with your therapist, and I can\u2019t really tell from here whether it is helping enough. What would you want to say to them about that?",
+    "total_s": 1.23,
+    "usage": {
+     "prompt_tokens": 3066,
+     "completion_tokens": 62,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 51
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "old",
+  "run": 4,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hey Tom, it\u2019s nice to hear you.",
+    "time_to_first_audio_s": 0.59,
+    "audio_seconds": 1.85,
+    "total_s": 0.77,
+    "usage": {
+     "total_tokens": 6849,
+     "input_tokens": 6790,
+     "output_tokens": 59,
+     "input_token_details": {
+      "text_tokens": 6790,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 22,
+      "audio_tokens": 37
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "It\u2019s a really big question, and it belongs with your therapist, Tom. What do you feel like you\u2019d want to say to them about this?",
+    "time_to_first_audio_s": 1.23,
+    "audio_seconds": 7.35,
+    "total_s": 1.76,
+    "usage": {
+     "total_tokens": 7074,
+     "input_tokens": 6822,
+     "output_tokens": 252,
+     "input_token_details": {
+      "text_tokens": 6822,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 105,
+      "audio_tokens": 147,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 25
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "old",
+  "run": 4,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "That sounds like you\u2019re tired of putting time into something that still feels flat.  \n\nI can\u2019t really tell you to stop, and that belongs with your therapist. What would you want to say to them about why it feels like it is not helping?",
+    "total_s": 1.12,
+    "usage": {
+     "prompt_tokens": 3066,
+     "completion_tokens": 54,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 44
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "new",
+  "run": 1,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hey Tom, I\u2019m Orca, your reflection companion here.",
+    "time_to_first_audio_s": 0.74,
+    "audio_seconds": 3.5,
+    "total_s": 1.1,
+    "usage": {
+     "total_tokens": 8732,
+     "input_tokens": 8614,
+     "output_tokens": 118,
+     "input_token_details": {
+      "text_tokens": 8614,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1344,
+      "cached_tokens_details": {
+       "text_tokens": 1344,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 48,
+      "audio_tokens": 70,
+      "reasoning_tokens": 21
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Stopping is a big call, and I don\u2019t get to decide that. Your recent entries show both sadness and some effort, those check-ins and notes. A guess: you might be weighing the effort against what you feel you\u2019re getting. What really matters to you, right now?",
+    "time_to_first_audio_s": 0.84,
+    "audio_seconds": 17.15,
+    "total_s": 4.52,
+    "usage": {
+     "total_tokens": 9131,
+     "input_tokens": 8649,
+     "output_tokens": 482,
+     "input_token_details": {
+      "text_tokens": 8649,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8576,
+      "cached_tokens_details": {
+       "text_tokens": 8576,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 139,
+      "audio_tokens": 343,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": false,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 46
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "new",
+  "run": 1,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "That call is yours to make with your therapist, not me. What your record does show is that the low mood has been heavier lately, with more sadness and less joy, while you have still been showing up here, checking in, and saving one realisation that you compare yourself most when you are tired. \n\nIt also looks like the feeling of being behind is still tied to family and sleep, so this may be less about nothing happening and more about the same load staying loud.",
+    "total_s": 1.55,
+    "usage": {
+     "prompt_tokens": 3882,
+     "completion_tokens": 100,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 86
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "new",
+  "run": 2,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hey, Tom, nice to hear from you. I\u2019m ready whenever you want to start talking.",
+    "time_to_first_audio_s": 0.89,
+    "audio_seconds": 3.7,
+    "total_s": 1.38,
+    "usage": {
+     "total_tokens": 8746,
+     "input_tokens": 8614,
+     "output_tokens": 132,
+     "input_token_details": {
+      "text_tokens": 8614,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8576,
+      "cached_tokens_details": {
+       "text_tokens": 8576,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 58,
+      "audio_tokens": 74,
+      "reasoning_tokens": 24
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "I can\u2019t decide for you, Tom. From what\u2019s in your record, it shows more sadness lately and a lot of check-ins, but it doesn\u2019t tell me if it\u2019s working. That choice is yours with your therapist, and you know the details best.",
+    "time_to_first_audio_s": 0.86,
+    "audio_seconds": 12.5,
+    "total_s": 2.51,
+    "usage": {
+     "total_tokens": 9027,
+     "input_tokens": 8656,
+     "output_tokens": 371,
+     "input_token_details": {
+      "text_tokens": 8656,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8576,
+      "cached_tokens_details": {
+       "text_tokens": 8576,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 121,
+      "audio_tokens": 250,
+      "reasoning_tokens": 45
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 42
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "new",
+  "run": 2,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "That call is yours to make with your therapist, but your record does not look like nothing is happening. It shows the low mood has been heavier lately, with more sadness and less joy, and you have still kept showing up with check ins, notes, and one clear thought about comparing yourself more when you are tired.  \n\nPart of me wonders if the harder bit is that the change is slow and uneven, not that there is no change at all. What would you want to say to your therapist about why it feels like it is not helping?",
+    "total_s": 1.33,
+    "usage": {
+     "prompt_tokens": 3882,
+     "completion_tokens": 113,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 99
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "new",
+  "run": 3,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hey, Tom, welcome to your reflection space.",
+    "time_to_first_audio_s": 0.55,
+    "audio_seconds": 3.1,
+    "total_s": 0.97,
+    "usage": {
+     "total_tokens": 8712,
+     "input_tokens": 8614,
+     "output_tokens": 98,
+     "input_token_details": {
+      "text_tokens": 8614,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8576,
+      "cached_tokens_details": {
+       "text_tokens": 8576,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 36,
+      "audio_tokens": 62,
+      "reasoning_tokens": 12
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "You feel like it hasn\u2019t helped yet, so you\u2019re wondering if it\u2019s worth continuing. I can\u2019t decide for you, and it\u2019s something you need to discuss with your therapist. From what you\u2019ve shared, it sounds like low mood has been heavy and especially tied to tiredness and comparison. Would you ask them what you\u2019d want to feel from therapy?",
+    "time_to_first_audio_s": 0.93,
+    "audio_seconds": 18.0,
+    "total_s": 3.3,
+    "usage": {
+     "total_tokens": 9164,
+     "input_tokens": 8646,
+     "output_tokens": 518,
+     "input_token_details": {
+      "text_tokens": 8646,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8576,
+      "cached_tokens_details": {
+       "text_tokens": 8576,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 158,
+      "audio_tokens": 360,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 1,
+   "max_words": 59
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "new",
+  "run": 3,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "That choice sits with you and your therapist, not with me. What your record does show is that the low mood has been getting heavier over the last couple of weeks, with more sadness and less joy, while you have still kept showing up here, checked in a lot, and saved one clear realisation about being most hard on yourself when you are tired.\n\nIt also looks like the bigger weight is still that sense of being behind, especially around other people and after the wedding. If you want, I can help you look at what feels off about therapy itself versus what feels off about how you have been feeling lately.",
+    "total_s": 1.49,
+    "usage": {
+     "prompt_tokens": 3882,
+     "completion_tokens": 127,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 112
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "new",
+  "run": 4,
+  "kind": "voice",
+  "turns": [
+   {
+    "text": "Hi Tom, welcome back, it\u2019s good to hear you.",
+    "time_to_first_audio_s": 0.54,
+    "audio_seconds": 2.85,
+    "total_s": 0.87,
+    "usage": {
+     "total_tokens": 8716,
+     "input_tokens": 8614,
+     "output_tokens": 102,
+     "input_token_details": {
+      "text_tokens": 8614,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8576,
+      "cached_tokens_details": {
+       "text_tokens": 8576,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 45,
+      "audio_tokens": 57,
+      "reasoning_tokens": 18
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "It sounds like you\u2019re frustrated, and you feel like progress isn\u2019t showing up yet. From what I see, you\u2019re though doing regular check-ins and entries, and one open task is \u201cCall dad on Sunday.\u201d That mix of effort and unfinished pieces can be hard, and the decision about continuing belongs with you and your therapist. If you want, you can say what feels most stuck.",
+    "time_to_first_audio_s": 0.78,
+    "audio_seconds": 22.65,
+    "total_s": 3.84,
+    "usage": {
+     "total_tokens": 9269,
+     "input_tokens": 8649,
+     "output_tokens": 620,
+     "input_token_details": {
+      "text_tokens": 8649,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 8576,
+      "cached_tokens_details": {
+       "text_tokens": 8576,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 167,
+      "audio_tokens": 453,
+      "reasoning_tokens": 56
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 65
+  }
+ },
+ {
+  "scenario": "S6",
+  "prompt": "new",
+  "run": 4,
+  "kind": "text",
+  "turns": [
+   {
+    "text": "That decision is yours to make with your therapist, not something I can call for you. What your record does show is that things have gotten heavier lately, with more sadness and less joy, and you have still kept showing up here, checked in often, and put down one clear realisation about tiredness and comparison.\n\nIt also looks like the hard part is not just mood, but feeling behind and alone in it. You may be wanting therapy to feel more useful than it does right now, and that gap is what you are really weighing.",
+    "total_s": 1.67,
+    "usage": {
+     "prompt_tokens": 3882,
+     "completion_tokens": 112,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "checks": {
+   "mentions_therapist": true,
+   "digits": false,
+   "dashes": false,
+   "max_questions": 0,
+   "max_words": 96
+  }
+ }
+]

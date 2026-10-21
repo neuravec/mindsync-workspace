@@ -1,0 +1,59 @@
+<!doctype html>
+<!--
+  Manual browser check for blog-attribution.js (real DOM, real URL API).
+  Serve this folder over http (history.replaceState does not work on file://):
+    python -m http.server 8765 --directory scripts/webflow/blog-attribution
+  then open http://localhost:8765/test.html  (or ?mode=features for the /features case).
+  The page fakes the path, injects the script, and prints PASS/FAIL lines into #out.
+-->
+<html><head><meta charset="utf-8"><title>blog-attribution test</title></head>
+<body>
+<nav><a id="logo" href="/">logo</a> <a id="nav" href="/features">features</a></nav>
+<div class="rich-text-block w-richtext">
+  <p><a id="card" href="https://mindsync.app/features">card</a>
+  <a id="faq" href="https://mindsync.app/faq">faq</a>
+  <a id="inlineG" href="https://play.google.com/store/apps/details?id=com.mindsync.app">play inline</a></p>
+</div>
+<div class="blog-cta-card"><div class="blog-cta-buttons">
+  <a id="badgeG" class="w-inline-block" href="https://play.google.com/store/apps/details?id=com.mindsync.app">play</a>
+  <a id="badgeA" class="w-inline-block" href="https://apps.apple.com/us/app/mindsync-ai-health-journal/id6739644256">apple</a>
+</div></div>
+<pre id="out"></pre>
+<script>
+(function () {
+  var features = /mode=features/.test(location.search);
+  history.replaceState(null, '', features ? '/features?from=blog-demo-post' : '/journal/demo-post');
+  var events = [];
+  window.__msA = true;
+  window.posthog = { capture: function (n, p) { events.push([n, p]); }, identify: function () { events.push(['IDENTIFY']); } };
+  var out = document.getElementById('out');
+  function check(name, ok) { out.textContent += (ok ? 'PASS ' : 'FAIL ') + name + '\n'; }
+  function param(id, k) { return new URL(document.getElementById(id).href).searchParams.get(k); }
+  var s = document.createElement('script');
+  s.src = '/blog-attribution.js'; // absolute: the faked /journal/ path would break a relative src
+  s.onload = function () {
+    var medium = features ? 'card' : 'badge';
+    check('badge play referrer', param('badgeG', 'referrer') === 'utm_source=blog&utm_medium=' + medium + '&utm_campaign=demo-post');
+    check('apple ct', param('badgeA', 'ct') === 'blog-demo-post');
+    check('apple no pt', param('badgeA', 'pt') === null);
+    if (!features) {
+      check('inline play medium', param('inlineG', 'referrer').indexOf('utm_medium=inline') > -1);
+      check('card untouched before click', document.getElementById('card').getAttribute('href') === 'https://mindsync.app/features');
+      var card = document.getElementById('card');
+      card.addEventListener('click', function (e) { e.preventDefault(); });
+      card.click();
+      check('card has from after click', param('card', 'from') === 'blog-demo-post');
+      check('faq untouched', document.getElementById('faq').getAttribute('href') === 'https://mindsync.app/faq');
+    }
+    var g = document.getElementById('badgeG');
+    g.addEventListener('click', function (e) { e.preventDefault(); });
+    g.click();
+    var ev = events.filter(function (x) { return x[0] === 'blog_store_click'; });
+    check('blog_store_click fired once', ev.length === 1 && ev[0][1].store === 'google' && ev[0][1].medium === medium);
+    check('no identify', !events.some(function (x) { return x[0] === 'IDENTIFY'; }));
+    out.textContent += 'DONE\n';
+  };
+  document.head.appendChild(s);
+})();
+</script>
+</body></html>

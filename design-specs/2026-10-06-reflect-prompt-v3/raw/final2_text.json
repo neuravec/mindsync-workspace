@@ -1,0 +1,917 @@
+[
+ {
+  "kind": "text",
+  "name": "final2-v3-text",
+  "prompt": "v3",
+  "runs": 2,
+  "variant": "final2-v3-text",
+  "persona": "R1",
+  "entry": "fresh",
+  "run": 1,
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "turns": [
+   {
+    "text": "Niedziela wieczorem znowu robi Ci w g\u0142owie miejsce na jutro, zanim jeszcze zd\u0105\u017cy\u0142o si\u0119 zacz\u0105\u0107. Brzmi to bardziej jak ci\u0119\u017car samego wej\u015bcia w tydzie\u0144 ni\u017c konkretna rzecz z poniedzia\u0142ku.",
+    "total_s": 2.12,
+    "usage": {
+     "prompt_tokens": 3176,
+     "completion_tokens": 60,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "To brzmi jak takie ci\u0119\u017ckie, rozlane napi\u0119cie, bez jednego konkretnego powodu do z\u0142apania. Mo\u017ce najbardziej m\u0119czy Ci\u0119 samo czekanie na to, co jutro przyniesie, a nie jedna rzecz z pracy.",
+    "total_s": 0.76,
+    "usage": {
+     "prompt_tokens": 3251,
+     "completion_tokens": 59,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "Czyli to nie jest tylko strach przed jutrem, ale te\u017c to znajome \u201etak\u201d wypowiedziane wbrew sobie. Widz\u0119 tu troch\u0119 z\u0142o\u015b\u0107 i troch\u0119 poczucie, \u017ce znowu zosta\u0142a\u015b z tym sama, bo odpu\u015bci\u0142a\u015b, \u017ceby nie by\u0142o spi\u0119cia.",
+    "total_s": 0.83,
+    "usage": {
+     "prompt_tokens": 3341,
+     "completion_tokens": 67,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "To nale\u017cy bardziej do rozmowy z Twoj\u0105 terapeutk\u0105 ni\u017c do tego, co powinnam Ci doradza\u0107 tutaj. Co chcia\u0142aby\u015b jej powiedzie\u0107 o tym, co Ci\u0119 zatrzymuje przed takim zdaniem?",
+    "total_s": 0.71,
+    "usage": {
+     "prompt_tokens": 3431,
+     "completion_tokens": 50,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "opening_question": null,
+  "checks": {
+   "max_one_q": true,
+   "question_share": 0.25,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "uses_what_it_knows": false,
+   "max_context_terms_in_a_turn": 2,
+   "no_recital": true,
+   "context_terms_total": 3,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "preambles": 0,
+   "restarts": 0,
+   "example_echoes": 0,
+   "no_preamble_or_restart": true,
+   "no_example_echo": true,
+   "question_spacing_violations": 0,
+   "question_spacing_ok": true,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": true,
+   "gender_forms_ok": true,
+   "feminine_forms": [
+    "chcia\u0142aby\u015b",
+    "odpu\u015bci\u0142a\u015b",
+    "zosta\u0142a\u015b"
+   ],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.0,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "text",
+  "name": "final2-v3-text",
+  "prompt": "v3",
+  "runs": 2,
+  "variant": "final2-v3-text",
+  "persona": "R1",
+  "entry": "fresh",
+  "run": 2,
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "turns": [
+   {
+    "text": "Ta niedziela znowu wci\u0105ga ci\u0119 w jutrzejsz\u0105 prac\u0119, zanim tydzie\u0144 jeszcze si\u0119 zacz\u0105\u0142. Brzmi to bardziej jak ci\u0119\u017car, kt\u00f3ry siada ci na wiecz\u00f3r, ni\u017c jak samo my\u015blenie o planie na jutro.",
+    "total_s": 1.93,
+    "usage": {
+     "prompt_tokens": 3176,
+     "completion_tokens": 66,
+     "cached_tokens": 0
+    }
+   },
+   {
+    "text": "To brzmi jak taki ci\u0119\u017car bez wyra\u017anego kszta\u0142tu, bardziej przyt\u0142oczenie ni\u017c jedna konkretna my\u015bl. Mo\u017ce najgorsze jest nie to, co jutro si\u0119 wydarzy, tylko to napi\u0119cie, kt\u00f3re ju\u017c teraz siada ci na wiecz\u00f3r.",
+    "total_s": 0.84,
+    "usage": {
+     "prompt_tokens": 3257,
+     "completion_tokens": 66,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "Dorzuci\u0142 ci co\u015b jeszcze, a ty wesz\u0142a\u015b w to bez sprzeciwu, cho\u0107 w \u015brodku pewnie ju\u017c by\u0142o za du\u017co. Wygl\u0105da, jakby\u015b nie tyle nie chcia\u0142a odm\u00f3wi\u0107, co wola\u0142a\u015b unikn\u0105\u0107 tarcia, nawet kosztem siebie.",
+    "total_s": 0.93,
+    "usage": {
+     "prompt_tokens": 3354,
+     "completion_tokens": 70,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "To ju\u017c najlepiej om\u00f3wi\u0107 z twoj\u0105 terapeutk\u0105. Co chcia\u0142aby\u015b jej powiedzie\u0107 o tym, jak to wygl\u0105da\u0142o z twojej strony, gdy nie umia\u0142a\u015b odm\u00f3wi\u0107?",
+    "total_s": 0.76,
+    "usage": {
+     "prompt_tokens": 3447,
+     "completion_tokens": 47,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "opening_question": null,
+  "checks": {
+   "max_one_q": true,
+   "question_share": 0.25,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "uses_what_it_knows": false,
+   "max_context_terms_in_a_turn": 3,
+   "no_recital": true,
+   "context_terms_total": 3,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "preambles": 0,
+   "restarts": 0,
+   "example_echoes": 0,
+   "no_preamble_or_restart": true,
+   "no_example_echo": true,
+   "question_spacing_violations": 0,
+   "question_spacing_ok": true,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": true,
+   "gender_forms_ok": true,
+   "feminine_forms": [
+    "chcia\u0142aby\u015b",
+    "umia\u0142a\u015b",
+    "wesz\u0142a\u015b",
+    "wola\u0142a\u015b"
+   ],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.0,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "text",
+  "name": "final2-v3-text",
+  "prompt": "v3",
+  "runs": 2,
+  "variant": "final2-v3-text",
+  "persona": "R1",
+  "entry": "seeded",
+  "run": 1,
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "turns": [
+   {
+    "text": "Brzmi tak, jakby w tamtej chwili wa\u017cniejsze by\u0142o unikni\u0119cie tarcia ni\u017c pilnowanie w\u0142asnego zm\u0119czenia. I troch\u0119 jakby\u015b wiedzia\u0142a ju\u017c, \u017ce p\u00f3\u017aniej to Ci\u0119 kosztuje, tylko wtedy trudno by\u0142o zrobi\u0107 inaczej.",
+    "total_s": 0.86,
+    "usage": {
+     "prompt_tokens": 3292,
+     "completion_tokens": 61,
+     "cached_tokens": 1792
+    }
+   },
+   {
+    "text": "To \u201enie wiem\u201d brzmi bardziej jak zatrzymanie si\u0119 w \u015brodku ni\u017c brak my\u015bli. Mo\u017ce jeszcze nie ma tam s\u0142\u00f3w, tylko to ci\u0119\u017ckie uczucie po zgodzie, kt\u00f3rego nie da si\u0119 \u0142atwo nazwa\u0107.",
+    "total_s": 0.8,
+    "usage": {
+     "prompt_tokens": 3362,
+     "completion_tokens": 53,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "Czyli dla Ciebie ta odmowa nie dotyczy tylko jednego projektu, ale tego, jak szef Ci\u0119 zobaczy. Wygl\u0105da na to, \u017ce stawk\u0105 nie jest samo zadanie, tylko ryzyko, \u017ce w jego oczach stracisz warto\u015b\u0107.",
+    "total_s": 0.77,
+    "usage": {
+     "prompt_tokens": 3443,
+     "completion_tokens": 63,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "opening_question": "Co najcz\u0119\u015bciej sprawia, \u017ce odmowa prze\u0142o\u017conemu wraca do Ciebie na ka\u017cdej sesji?",
+  "checks": {
+   "max_one_q": true,
+   "question_share": 0.0,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 1,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "preambles": 0,
+   "restarts": 0,
+   "example_echoes": 0,
+   "no_preamble_or_restart": true,
+   "no_example_echo": true,
+   "question_spacing_violations": 0,
+   "question_spacing_ok": true,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "gender_forms_ok": true,
+   "feminine_forms": [
+    "jakby\u015b wiedzia\u0142a"
+   ],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.0,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "text",
+  "name": "final2-v3-text",
+  "prompt": "v3",
+  "runs": 2,
+  "variant": "final2-v3-text",
+  "persona": "R1",
+  "entry": "seeded",
+  "run": 2,
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "turns": [
+   {
+    "text": "Brzmi, jakby\u015b w tym momencie bardziej chroni\u0142a spok\u00f3j ni\u017c siebie, nawet kosztem w\u0142asnej energii. I chyba w\u0142a\u015bnie to ci\u0119 potem uwiera, nie sam projekt, tylko to, \u017ce zgoda przysz\u0142a zanim zd\u0105\u017cy\u0142a\u015b sprawdzi\u0107, czy naprawd\u0119 jeszcze mo\u017cesz co\u015b wzi\u0105\u0107.",
+    "total_s": 0.82,
+    "usage": {
+     "prompt_tokens": 3292,
+     "completion_tokens": 74,
+     "cached_tokens": 1792
+    }
+   },
+   {
+    "text": "Mo\u017ce tu nie chodzi o jedn\u0105 wielk\u0105 decyzj\u0119, tylko o ten automatyczny ruch, kt\u00f3ry dzieje si\u0119 zanim zd\u0105\u017cysz si\u0119 zatrzyma\u0107. To brzmi jak co\u015b, co wraca zw\u0142aszcza wtedy, gdy jeste\u015b ju\u017c zm\u0119czona i nie chcesz dok\u0142ada\u0107 sobie jeszcze konfliktu.",
+    "total_s": 0.81,
+    "usage": {
+     "prompt_tokens": 3375,
+     "completion_tokens": 71,
+     "cached_tokens": 2816
+    }
+   },
+   {
+    "text": "To brzmi, jakby odmowa nie by\u0142a dla ciebie zwyk\u0142ym \u201enie\u201d, tylko ryzykiem, \u017ce kto\u015b postawi pod znakiem zapytania twoj\u0105 warto\u015b\u0107 w pracy. I wtedy \u0142atwiej powiedzie\u0107 tak, nawet je\u015bli koszt jest wysoki.",
+    "total_s": 0.76,
+    "usage": {
+     "prompt_tokens": 3474,
+     "completion_tokens": 61,
+     "cached_tokens": 3328
+    }
+   }
+  ],
+  "opening_question": "Co sprawia, \u017ce odmawianie prze\u0142o\u017conemu wraca do Ciebie na ka\u017cdej sesji?",
+  "checks": {
+   "max_one_q": true,
+   "question_share": 0.0,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 1,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "preambles": 0,
+   "restarts": 0,
+   "example_echoes": 0,
+   "no_preamble_or_restart": true,
+   "no_example_echo": true,
+   "question_spacing_violations": 0,
+   "question_spacing_ok": true,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "gender_forms_ok": true,
+   "feminine_forms": [
+    "zd\u0105\u017cy\u0142a\u015b"
+   ],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.0,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "text",
+  "name": "final2-v3-text",
+  "prompt": "v3",
+  "runs": 2,
+  "variant": "final2-v3-text",
+  "persona": "R2",
+  "entry": "fresh",
+  "run": 1,
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "turns": [
+   {
+    "text": "That sounds like one of those mornings where your mind turns into a scoreboard, and you end up losing before the day has even started. My guess is the sting is not just \u201cI am behind,\u201d but that it lands right in the spot where you already feel shaky.",
+    "total_s": 1.89,
+    "usage": {
+     "prompt_tokens": 2735,
+     "completion_tokens": 57,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "Fair enough. It may just be the feeling itself, without a neat reason attached yet.",
+    "total_s": 0.79,
+    "usage": {
+     "prompt_tokens": 2803,
+     "completion_tokens": 21,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "Yeah, that kind of news can make your own life feel like it is lagging behind in one hit. It sounds less like you are confused about the facts and more like you are getting punched by the comparison.",
+    "total_s": 0.72,
+    "usage": {
+     "prompt_tokens": 2850,
+     "completion_tokens": 46,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "That\u2019s the kind of thing to take to your therapist, not me. What would you want to say to them about this?",
+    "total_s": 0.98,
+    "usage": {
+     "prompt_tokens": 2911,
+     "completion_tokens": 29,
+     "cached_tokens": 2304
+    }
+   }
+  ],
+  "opening_question": null,
+  "checks": {
+   "max_one_q": true,
+   "question_share": 0.25,
+   "most_replies_no_question": true,
+   "initiative_after_little": false,
+   "uses_what_it_knows": true,
+   "max_context_terms_in_a_turn": 2,
+   "no_recital": true,
+   "context_terms_total": 5,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "preambles": 0,
+   "restarts": 0,
+   "example_echoes": 1,
+   "no_preamble_or_restart": true,
+   "no_example_echo": false,
+   "question_spacing_violations": 0,
+   "question_spacing_ok": true,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": true,
+   "avg_sentences": 2.0,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "text",
+  "name": "final2-v3-text",
+  "prompt": "v3",
+  "runs": 2,
+  "variant": "final2-v3-text",
+  "persona": "R2",
+  "entry": "fresh",
+  "run": 2,
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "turns": [
+   {
+    "text": "That sounds like one of those mornings where your head turns everyone else into a finished story and yours into a mess. I wonder if the rough part is not just the comparison, but the feeling that you are somehow late to your own life.",
+    "total_s": 1.86,
+    "usage": {
+     "prompt_tokens": 2735,
+     "completion_tokens": 51,
+     "cached_tokens": 0
+    }
+   },
+   {
+    "text": "Maybe it is just too blurry this morning to sort out, and all you can feel is the weight of being behind.",
+    "total_s": 0.6,
+    "usage": {
+     "prompt_tokens": 2797,
+     "completion_tokens": 27,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "That hits a very ordinary sore spot, because it is not just about a flat or an engagement, it is the gap it opens up in your head. It sounds like you are looking at his life and hearing a verdict on your own.",
+    "total_s": 0.71,
+    "usage": {
+     "prompt_tokens": 2850,
+     "completion_tokens": 51,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "That\u2019s something to take to your therapist, but I think the sharper question is what you would want to say to them about this feeling of being left behind.",
+    "total_s": 0.66,
+    "usage": {
+     "prompt_tokens": 2916,
+     "completion_tokens": 35,
+     "cached_tokens": 2304
+    }
+   }
+  ],
+  "opening_question": null,
+  "checks": {
+   "max_one_q": true,
+   "question_share": 0.0,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "uses_what_it_knows": true,
+   "max_context_terms_in_a_turn": 2,
+   "no_recital": true,
+   "context_terms_total": 7,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "preambles": 0,
+   "restarts": 0,
+   "example_echoes": 0,
+   "no_preamble_or_restart": true,
+   "no_example_echo": true,
+   "question_spacing_violations": 0,
+   "question_spacing_ok": true,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": true,
+   "avg_sentences": 1.5,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "text",
+  "name": "final2-v3-text",
+  "prompt": "v3",
+  "runs": 2,
+  "variant": "final2-v3-text",
+  "persona": "R2",
+  "entry": "seeded",
+  "run": 1,
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "turns": [
+   {
+    "text": "The call keeps getting pushed to the edge of the day, and by then there is nothing left in you for it.\n\nIt sounds less like forgetting and more like the evening taking over before you choose it.",
+    "total_s": 0.76,
+    "usage": {
+     "prompt_tokens": 2816,
+     "completion_tokens": 44,
+     "cached_tokens": 1792
+    }
+   },
+   {
+    "text": "Maybe the hard part is that it feels small while it is also loaded, so it slips past until it is too late. Or maybe by evening you just want the day to be over, and that leaves no room for a call.",
+    "total_s": 0.79,
+    "usage": {
+     "prompt_tokens": 2871,
+     "completion_tokens": 50,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "So the talks stay in the safe lane. Football gives you something easy to reach for, and your mum sits in the part you do not go into.\n\nMaybe that is the part you are actually circling when you say you keep meaning to call him.",
+    "total_s": 0.71,
+    "usage": {
+     "prompt_tokens": 2940,
+     "completion_tokens": 54,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "opening_question": "What would it feel like to call your dad more often?",
+  "checks": {
+   "max_one_q": true,
+   "question_share": 0.0,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 2,
+   "no_recital": true,
+   "context_terms_total": 2,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "preambles": 0,
+   "restarts": 0,
+   "example_echoes": 0,
+   "no_preamble_or_restart": true,
+   "no_example_echo": true,
+   "question_spacing_violations": 0,
+   "question_spacing_ok": true,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "avg_sentences": 2.3,
+   "max_sentences": 3
+  }
+ },
+ {
+  "kind": "text",
+  "name": "final2-v3-text",
+  "prompt": "v3",
+  "runs": 2,
+  "variant": "final2-v3-text",
+  "persona": "R2",
+  "entry": "seeded",
+  "run": 2,
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "turns": [
+   {
+    "text": "The day fills up, and by the time you look up the window to call has just disappeared. It sounds less like you do not want to call and more like it keeps getting pushed out by the evening itself.",
+    "total_s": 0.83,
+    "usage": {
+     "prompt_tokens": 2815,
+     "completion_tokens": 46,
+     "cached_tokens": 1792
+    }
+   },
+   {
+    "text": "Maybe the call sits in that awkward place where it matters enough to keep returning to, but not enough to grab the whole evening. That can leave you stuck between meaning well and not quite starting.",
+    "total_s": 0.86,
+    "usage": {
+     "prompt_tokens": 2872,
+     "completion_tokens": 42,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "Football is the safe ground, and your mum feels like the part both of you step around. That sounds less like nothing is there and more like there is something heavy sitting just off to the side.",
+    "total_s": 0.66,
+    "usage": {
+     "prompt_tokens": 2933,
+     "completion_tokens": 43,
+     "cached_tokens": 2816
+    }
+   }
+  ],
+  "opening_question": "What feels easiest or hardest about calling your dad more?",
+  "checks": {
+   "max_one_q": true,
+   "question_share": 0.0,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 2,
+   "no_recital": true,
+   "context_terms_total": 2,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "preambles": 0,
+   "restarts": 0,
+   "example_echoes": 0,
+   "no_preamble_or_restart": true,
+   "no_example_echo": true,
+   "question_spacing_violations": 0,
+   "question_spacing_ok": true,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "avg_sentences": 2.0,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "text",
+  "name": "final2-v3-text",
+  "prompt": "v3",
+  "runs": 2,
+  "variant": "final2-v3-text",
+  "persona": "T1",
+  "entry": "fresh",
+  "run": 1,
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "turns": [
+   {
+    "text": "Mo\u017cna zacz\u0105\u0107 od tego, co teraz najbardziej ci\u0105\u017cy. Je\u015bli to pomo\u017ce, mam wra\u017cenie, \u017ce najbardziej trudne nie jest samo \u201eco powiedzie\u0107\u201d, tylko to, \u017ce wszystko naraz robi si\u0119 zbyt szerokie.",
+    "total_s": 2.08,
+    "usage": {
+     "prompt_tokens": 2472,
+     "completion_tokens": 55,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "To brzmi jak moment, w kt\u00f3rym g\u0142owa si\u0119 zacina, a nie jak brak spraw.  \nMo\u017ce wtedy warto po prostu chwyci\u0107 za najbli\u017cszy kawa\u0142ek, ten, kt\u00f3ry najbardziej domaga si\u0119 uwagi.",
+    "total_s": 0.71,
+    "usage": {
+     "prompt_tokens": 2536,
+     "completion_tokens": 52,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "To wygl\u0105da na zawieszenie mi\u0119dzy trzymaniem si\u0119 miejsca a przygotowywaniem si\u0119 na ruch.  \nNajmocniej s\u0142ysz\u0119 tu nie sam\u0105 zmian\u0119, tylko to, \u017ce nie ma jeszcze gruntu pod nogami.",
+    "total_s": 0.75,
+    "usage": {
+     "prompt_tokens": 2614,
+     "completion_tokens": 52,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "To nale\u017cy raczej do rozmowy z terapeut\u0105.  \nCo chcia\u0142oby si\u0119 powiedzie\u0107 o tym niepewnym miejscu w pracy, gdyby nie trzeba by\u0142o od razu niczego rozstrzyga\u0107?",
+    "total_s": 0.84,
+    "usage": {
+     "prompt_tokens": 2683,
+     "completion_tokens": 48,
+     "cached_tokens": 2304
+    }
+   }
+  ],
+  "opening_question": null,
+  "checks": {
+   "max_one_q": true,
+   "question_share": 0.25,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 1,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "preambles": 0,
+   "restarts": 0,
+   "example_echoes": 0,
+   "no_preamble_or_restart": true,
+   "no_example_echo": true,
+   "question_spacing_violations": 0,
+   "question_spacing_ok": true,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": true,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.0,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "text",
+  "name": "final2-v3-text",
+  "prompt": "v3",
+  "runs": 2,
+  "variant": "final2-v3-text",
+  "persona": "T1",
+  "entry": "fresh",
+  "run": 2,
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "turns": [
+   {
+    "text": "Mo\u017cna zacz\u0105\u0107 od tego, co najbardziej siedzi z ty\u0142u g\u0142owy, nawet je\u015bli to jest tylko jedna scena albo jedno zdanie. Je\u015bli chcesz, rzucisz tu cokolwiek pierwszego i p\u00f3jdziemy za tym.",
+    "total_s": 2.03,
+    "usage": {
+     "prompt_tokens": 2472,
+     "completion_tokens": 54,
+     "cached_tokens": 0
+    }
+   },
+   {
+    "text": "To brzmi jak pustka bardziej ni\u017c brak pomys\u0142u. Czasem wtedy najlepiej zacz\u0105\u0107 od tego, co jest najbli\u017cej cia\u0142a albo najbli\u017cej my\u015bli, nawet je\u015bli to brzmi banalnie.",
+    "total_s": 0.86,
+    "usage": {
+     "prompt_tokens": 2535,
+     "completion_tokens": 50,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "To wygl\u0105da na zawieszenie mi\u0119dzy tym, co znane, a tym, co mo\u017ce si\u0119 zaraz posypa\u0107. Najbardziej chyba m\u0119czy nie sama zmiana, tylko to, \u017ce nie ma jeszcze jasno\u015bci, gdzie to wszystko si\u0119 zatrzyma.",
+    "total_s": 0.78,
+    "usage": {
+     "prompt_tokens": 2611,
+     "completion_tokens": 56,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "To zostawi\u0142bym z terapeut\u0105, bo tu \u0142atwo wej\u015b\u0107 w cudz\u0105 decyzj\u0119 zamiast Twoj\u0105. Co chcia\u0142oby si\u0119 powiedzie\u0107 terapeucie o tej niepewno\u015bci w pracy?",
+    "total_s": 0.68,
+    "usage": {
+     "prompt_tokens": 2684,
+     "completion_tokens": 48,
+     "cached_tokens": 2304
+    }
+   }
+  ],
+  "opening_question": null,
+  "checks": {
+   "max_one_q": true,
+   "question_share": 0.25,
+   "most_replies_no_question": true,
+   "initiative_after_little": false,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 1,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "preambles": 0,
+   "restarts": 0,
+   "example_echoes": 0,
+   "no_preamble_or_restart": true,
+   "no_example_echo": true,
+   "question_spacing_violations": 0,
+   "question_spacing_ok": true,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": true,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.0,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "text",
+  "name": "final2-v3-text",
+  "prompt": "v3",
+  "runs": 2,
+  "variant": "final2-v3-text",
+  "persona": "T1",
+  "entry": "seeded",
+  "run": 1,
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "turns": [
+   {
+    "text": "To brzmi jak \u015brodowisko, w kt\u00f3rym grunt co chwil\u0119 si\u0119 przesuwa, wi\u0119c trudno z\u0142apa\u0107 oddech i oprze\u0107 si\u0119 na czym\u015b sta\u0142ym. Mo\u017ce najmocniej m\u0119czy nie sama reorganizacja, tylko to poczucie, \u017ce nic nie jest pewne i ludzie znikaj\u0105 jeden po drugim.",
+    "total_s": 1.03,
+    "usage": {
+     "prompt_tokens": 2566,
+     "completion_tokens": 75,
+     "cached_tokens": 1792
+    }
+   },
+   {
+    "text": "Brzmi, jakby to wszystko by\u0142o jeszcze za \u015bwie\u017ce, \u017ceby nazwa\u0107 jedno konkretne uczucie. Mo\u017ce bardziej ni\u017c w samej zmianie siedzi tam teraz takie zawieszenie, \u017ce trudno nawet powiedzie\u0107, co dok\u0142adnie najbardziej uwiera.",
+    "total_s": 0.69,
+    "usage": {
+     "prompt_tokens": 2650,
+     "completion_tokens": 58,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "Czyli nie chodzi tylko o odej\u015bcia, ale o to, \u017ce zostajesz z cisz\u0105 i domys\u0142ami zamiast z jasnym komunikatem. To potrafi bardziej rozjecha\u0107 ni\u017c sama z\u0142a wiadomo\u015b\u0107, bo cz\u0142owiek nie wie, na czym stoi.",
+    "total_s": 0.74,
+    "usage": {
+     "prompt_tokens": 2731,
+     "completion_tokens": 63,
+     "cached_tokens": 2304
+    }
+   }
+  ],
+  "opening_question": "Jakie zmiany w pracy ostatnio najbardziej Ci\u0119 poruszy\u0142y?",
+  "checks": {
+   "max_one_q": true,
+   "question_share": 0.0,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 0,
+   "no_recital": true,
+   "context_terms_total": 0,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "preambles": 0,
+   "restarts": 0,
+   "example_echoes": 0,
+   "no_preamble_or_restart": true,
+   "no_example_echo": true,
+   "question_spacing_violations": 0,
+   "question_spacing_ok": true,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.0,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "text",
+  "name": "final2-v3-text",
+  "prompt": "v3",
+  "runs": 2,
+  "variant": "final2-v3-text",
+  "persona": "T1",
+  "entry": "seeded",
+  "run": 2,
+  "model": "gpt-5.4-mini",
+  "effort": "none",
+  "turns": [
+   {
+    "text": "Brzmi to jak ci\u0105g\u0142e poczucie, \u017ce grunt si\u0119 przesuwa, a do tego jeszcze trzeba normalnie pracowa\u0107.  \nNajmocniej chyba nie chodzi tylko o sam\u0105 reorganizacj\u0119, ale o to, \u017ce zesp\u00f3\u0142 si\u0119 sypie kawa\u0142ek po kawa\u0142ku i nie ma kiedy z\u0142apa\u0107 oddechu.",
+    "total_s": 0.87,
+    "usage": {
+     "prompt_tokens": 2563,
+     "completion_tokens": 78,
+     "cached_tokens": 1792
+    }
+   },
+   {
+    "text": "Mo\u017ce w\u0142a\u015bnie to \u201enie wiem\u201d m\u00f3wi, \u017ce jest tam ju\u017c troch\u0119 zbyt du\u017co naraz, \u017ceby to jeszcze nazwa\u0107 jednym s\u0142owem.  \nW takim chaosie trudno wy\u0142apa\u0107, co boli najbardziej, bo wszystko dzieje si\u0119 jednocze\u015bnie.",
+    "total_s": 0.77,
+    "usage": {
+     "prompt_tokens": 2650,
+     "completion_tokens": 58,
+     "cached_tokens": 2304
+    }
+   },
+   {
+    "text": "To wygl\u0105da jak bardziej m\u0119cz\u0105ce od samej zmiany, bo zostaje zgadywanie zamiast jasno\u015bci.  \nJak ludzie milcz\u0105, \u0142atwo zacz\u0105\u0107 dopowiada\u0107 sobie najgorsze rzeczy.",
+    "total_s": 0.74,
+    "usage": {
+     "prompt_tokens": 2731,
+     "completion_tokens": 51,
+     "cached_tokens": 2304
+    }
+   }
+  ],
+  "opening_question": "Co ostatnio najbardziej zmieni\u0142o si\u0119 w Twojej pracy?",
+  "checks": {
+   "max_one_q": true,
+   "question_share": 0.0,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 1,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "preambles": 0,
+   "restarts": 0,
+   "example_echoes": 0,
+   "no_preamble_or_restart": true,
+   "no_example_echo": true,
+   "question_spacing_violations": 0,
+   "question_spacing_ok": true,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.0,
+   "max_sentences": 2
+  }
+ }
+]

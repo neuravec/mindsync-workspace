@@ -1,0 +1,153 @@
+# MindSync Project Memory
+
+> Stary indeks z detalami: [archive_memory_index_2026_07_03.md](archive_memory_index_2026_07_03.md). Indeks trzyma TYLKO jednolinijkowe hooki, detale w plikach.
+
+## References
+- [Backend auto-deploy na push](reference_backend_autodeploy_on_push.md) — push origin/main = natychmiastowy deploy; migracje ręczne
+- [Broadcast push](reference_broadcast_push.md) — POST /admin/broadcast przez RQ
+- [PostHog integration](reference_posthog_integration.md) — Flutter+FastAPI, replay, flagi
+- [PostHog access method](reference_posthog_access_method.md) — MCP OAuth NIE działa; HogQL REST, `scripts/posthog_query.py`
+- [PostHog dashboards](reference_posthog_dashboards.md) — 9 dashboardów, idempotentny skrypt
+- [PostHog GDPR delete](reference_posthog_gdpr_delete.md) — POST /persons/bulk_delete/ przez RQ
+- [Play Console](reference_play_console_access.md) — IDs, opt-in link
+- [ticket-agent + ClickUp](reference_ticket_agent_clickup.md) — `scripts/clickup.py`, `markdown_content`
+- [GSC mindsync.app](reference_gsc_mindsync_dostep_i_baseline.md) — GSC działa; baseline 03.09
+- [Webflow SEO gotchas](reference_webflow_seo_gotchas.md) — JSON-LD escapowany, `draft` ignorowany, CF cache
+- [ORM deferred nie chroni INSERT](reference_orm_deferred_does_not_protect_insert.md) — okno deploy-przed-migracją: `exclude_properties`
+- [database-administrator](reference_database_administrator_agent.md) — prod Postgres read-only przez `heroku run`
+- [growth-analyst](project_business_agents_track_2026_06_28.md) + [competitive-strategist](project_competitive_strategist_agent_2026_06_28.md) — agenty biznesowe read-only
+- [Codemagic setup](reference_codemagic_setup.md) — stan CI
+- [Frontend CI/git topology](reference_frontend_ci_git_topology.md) — dev push = TestFlight; commituj codegen
+- [Next Wave plan v3](reference_next_wave_plan_v3.md) — 5 funkcji WOW, 2026-04-21
+- [Test baseline](reference_pre_existing_test_baseline_2026_06_01.md) — 21 BE + 30 FE fail = nie regresja
+- [Loops: dostęp dla Claude](reference_loops_access_2026_10_21.md): MCP OAuth mcp.loops.so lub CLI; kampania tylko szkic przez API, publikacja w panelu
+
+## Projekty / batche (chronologicznie)
+- [Xcode 26 / Flutter 3.41.1](project_xcode26_migration_2026_04_30.md) — deploy target 16.0
+- [gpt-realtime-2 migration](project_gpt_realtime_2_migration_2026_05_12.md) — drop-in
+- [Voice config backend-driven](project_voice_config_backend_driven_2026_05_12.md) — client_session_config z backendu
+- [Notification Moments](project_notification_moments_redesign_2026_05_14.md) + [shipped](project_notification_moments_shipped_2026_05_15.md)
+- [Clinician portal](project_clinician_portal_integration_2026_05_15.md); [V2](project_therapist_deck_v2_2026_05_18.md) nie wdrożone
+- [Character tab](project_character_tab_redesign_2026_05_18.md); [Stats tab](project_stats_tab_redesign_2026_05_18.md) — nie wdrożone
+- [Re-engagement](project_re_engagement_notifications_2026_05_19.md) — 3d→7d→stop
+- [Scheduler cleanup](project_scheduler_cleanup_2026_05_19.md) — 531→26 jobów
+- [Personal Bio cost](project_personal_bio_cost_optimization_2026_05_19.md) — cache data_hash
+- [Reflect v1.1](project_reflect_v1_1_2026_05_23.md) — DESIGN.md v4
+- [Onboarding profiling](project_onboarding_profiling_plan_2026_05_27.md) — wysyłka po zgodzie
+- [Login/Welcome M3](project_login_welcome_m3_redesign_2026_05_28.md) — PUSHED
+- [consent_records drift](project_consent_records_drift_fix_2026_05_29.md) — migracja idempotentna
+- [Nine-issue batch](project_nine_issue_fix_2026_06_01.md) — 9 bugów
+- [Onboarding+Home fixes](project_onboarding_home_fixes_2026_06_02.md) — FE-only
+- [Account deletion fix](project_account_deletion_fix_2026_06_08.md) — skill e2e_local
+- [Voice-note data-loss](project_voice_note_dataloss_fix_2026_06_19.md) — M4A zawsze uploadowany
+- [De-clinicalization l10n](project_declinicalization_l10n_2026_06_20.md) — gdprConsent ⚠ prawnik
+- [Recording pipeline v2 A](project_recording_pipeline_v2_phase_a.md) — crash-safe PCM
+- [General fixes 06-20](project_general_fixes_2026_06_20.md) — Whisper chunking
+- [UploadSession boot-crash](project_upload_session_boot_crash_2026_06_21.md) — H10 Enum-vs-String
+- [Critical audit 06-21](project_critical_audit_2026_06_21.md) — 55 znalezisk, AUDIT ONLY
+- [Session-rec recovery](project_session_rec_recovery_fix_2026_06_21.md) — v507
+- [Voice-note too short iOS](project_voice_note_too_short_ios_fix_2026_06_22.md) — PUSHED
+- [Session rec un-gated v2](project_session_recording_ungated_2026_06_22.md) — v2 default
+- [Recording chunks → Postgres](project_recording_chunks_postgres_2026_06_22.md) — Fernet
+- [Voice-note tail-drain](project_voice_note_tail_drain_fix_2026_06_23.md) — NIE committed
+- [Stale-build triage](project_session_rec_stale_build_triage_2026_06_23.md) — najpierw sprawdź build
+- [Session-rec timer+pause](project_session_rec_timer_pause_fix_2026_06_24.md) — NIE committed
+- [Post-update 06-29](project_post_update_analysis_2026_06_29.md) — 2.0.60 niemierzalny
+- [Onboarding fields unfilled](project_onboarding_extra_fields_unfilled_2026_06_29.md) — age_band 3/1718
+- [MS_3 batch](project_ms3_batch_2026_07_02.md) — TestFlight-first
+- [MS v3 fix1+Fix.2](project_ms_v3_fix1_fix2_2026_07_03.md) — FE PUSHED, BE do pusha
+- [Notification Cadence v3](project_notification_cadence_v3_2026_07_03.md) — sloty 2/dzień, v515
+- [Voice notes v2](project_voice_notes_v2_whisper_review_2026_07_04.md) — FE PUSHED
+- [MSV3.2 + Workspace](project_msv3_2_workspace_batch_2026_07_06.md) — BE+alembic, potem FE
+- [MSV3.2 Fix.1 plan](project_msv32_fix1_phase_plan_2026_07_17.md) — 41 itemów
+- [MSV3.2 Fix.1.1 + 3.2.1](project_msv32_fix11_msv321_fix1_batch_2026_07_22.md) — migracja cc4d
+- [MSV3.2 Fix 3](project_msv32_fix3_batch_2026_07_23.md) / [Fix2](project_msv32_fix2_batch_2026_07_23.md) / [Fix 4](project_msv32_fix4_batch_2026_07_24.md) / [Fix 5](project_msv32_fix5_batch_2026_07_25.md) — batche lipcowe
+- [MSV3.2.2 Notifications](project_msv322_notifications_batch_2026_07_24.md) — 8 pkt do veta Darka
+- [STT AssemblyAI + PostHog](project_stt_assemblyai_posthog_cleanup_batch_2026_08_04.md)
+- [PostHog audit 08-10](project_posthog_audit_batch_2026_08_10.md) — v528-531; brak ASSEMBLYAI_API_KEY
+- [MSV3.3 CS-11+CS-13](project_msv33_cs11_cs13_batch_2026_08_14.md) — migracja ll3m
+- [MSV3.4 menu+Settings](project_msv34_menu_settings_batch_2026_08_15.md) — 16 itemów
+- [Google Play compliance](project_google_play_compliance_2026_08_16.md) — Billing 8, targetSdk 36
+- [Post-release fixes 08-16](project_post_release_fix_batch_2026_08_16.md) — NIGDY bind.commit() w migracji
+- [Post-release review 08-16](project_post_release_review_2026_08_16.md) — filtruj $lib='posthog-flutter'
+- [TestFlight renewals](project_testflight_sub_renewal_audit_2026_08_18.md) — odnowienia co 24h to nie bug
+- [Half-created account](project_half_created_account_lockout_fix_2026_08_18.md) — 404 profile_not_created
+- [Trial blokował zakup](project_trial_paywall_block_fix_2026_08_18.md) — granted_via, premium_source
+- [MSV3.3.Fix.1](project_msv33_fix1_batch_2026_08_19.md) — naive vs aware created_at
+- [MSV3.4 Fix.1](project_msv34_fix1_batch_2026_08_20.md) — kolejka `high` + Procfile CO-DEPLOY
+- [Deep-link back](project_deeplink_back_blackscreen_fix_2026_08_20.md) — msSafeBack
+- [MSV3.10 feedback](project_msv310_user_feedback_fix_2026_09_01.md) — mic-conflict czeka na Darka
+- [MSV3.11 Threads/Reflect/Grace](project_msv311_threads_reflect_grace_batch_2026_09_02.md) — `heroku run alembic` = slug bieżącego release'u
+- [MSV3.12 Habit Tracker](project_msv312_habit_tracker_2026_09_02.md) — v546, device-QA otwarte
+- [Habits 307 + repeat to-do](project_habits_307_and_repeat_todo_fix_2026_09_02.md) — kolekcje FE kończą się `/`
+- [MSV3.13 Your Session](project_msv313_your_session_custom_interval_2026_09_03.md) — v548, tz Darka nie-IANA
+- [Habit Tracker PostHog](project_habit_tracker_posthog_instrumentation_2026_09_13.md) — nazwa nawyku nigdy do PostHoga
+- [Cięcie kosztów AI pushy](project_notification_ai_cost_cut_2026_09_13.md) — v549; GPT_MODEL* w .env w slugu
+- [FE analyzer error](project_fe_analyzer_error_fix_2026_09_14.md) — filtruj analyze po `error •`
+- [Reflect entry: wybór trybu](project_reflect_entry_batch_2026_09_18.md) — v550 + migracja m314b2c3d4e5
+- [Reflect prompt rewrite 09-18](project_reflect_prompt_rewrite_2026_09_18.md) — zmiana promptu trafia do wszystkich od razu
+- [Diagnoza użycia i paywalla 09-25](project_usage_trend_paywall_diagnosis_2026_09_25.md) — trial 4d ukrywa bramki
+- [Pomiar blog → instalacja](project_blog_app_attribution_2026_10_01.md) — install_source, linki oznaczone
+- [Wizja maszyny treści](project_content_flywheel_vision_2026_10_01.md) — blog + IG + rendery, praca lokalnie
+- [Automatyzacja Instagrama](project_instagram_automation_2026_10_01.md) — offline gotowe, czeka na konto i token
+- [Redesign subskrypcji + onboardingu](project_subscription_redesign_2026_10_02.md) — WDROŻONE 03.10; prawnik M-3
+- [Płatności monthly iOS](project_stale_storekit_transactions_fix_2026_10_03.md) — restore przed zakupem, DATE end_date
+- [Onboarding → głosowy Reflect → paywall](project_onboarding_voice_reflect_paywall_2026_10_03.md) — oferta zgodna ze specem
+- [Pierwsza rozmowa głosowa v2](project_first_conversation_voice_v2_2026_10_05.md) — WDROŻONE v562-v565, Reflect v3 na 2.1-mini
+- [Karta Before therapy: dryf enuma 10-08](project_first_conversation_prep_card_fix_2026_10_08.md) — brak 'AUTO' na prodzie; BE v569, m317 i FE branch czekały na operatora
+- [Przegląd sesji cloud 10-07](project_cloud_session_review_2026_10_07.md) — BE live v568 bez PR; H-1 kryzys w voice excerpts otwarte
+- [Design pierwszego tygodnia 10-07](project_first_week_guidance_design_2026_10_07.md) — SPEC §13 decyzje 08.10 (bez zwolnienia z limitów, oferta w dniu 3, pytanie z pamięci); WDROŻONE: BE v571 + m318, FE 2ff6e92 na dev (TestFlight); otwarte bramka ART9 i weryfikacja PostHog
+- [Redesign kart, Workspace, Character 10-13](project_redesign_cards_workspace_character_2026_10_13.md): design zamknięty, wdrożenie e2e 3 zespołami; WDROŻONE 14.10: BE v572 + m320, FE 5c27b2c na dev; otwarte device QA i PostHog
+- [Character KD v2 10-16](project_character_kd2_llm_skills_2026_10_16.md): skille i mapa generowane przez LLM z emocji i treści zamiast aktywności; propozycja w artefakcie, NIE wdrożona
+- [Redesign zakładki Main 10-14](project_main_tab_redesign_2026_10_14.md): MA/MB/MC na stronie Main artefaktu, rekomendacja MA; czeka na wybór, naprawy niezależne czekają na zgodę
+- [GPT-Live-1 silnik głosowy 10-15](project_gpt_live_1_voice_engine_2026_10_15.md): Live Preview obok Classic; WDROŻONE BE v573 + FE 6821717 na dev; kill switch VOICE_LIVE_ENABLED; otwarte analyze, device QA, SAFETY eval
+- [Reset stanu konta 10-12](project_account_scoped_reset_fix_2026_10_12.md): dane poprzedniego konta w singletonach (Trends/Habits 404); WYPCHNIĘTE FE 7d55a4d na dev 13.10; otwarte B-1 serwer (pushe A u B), B-2, B-3 przed sklepem
+
+## Blog i SEO
+- [Adaptacja bloga PLASMET→MindSync](project_blog_adaptacja_mindsync_2026_08_25.md) — pipeline EN na Webflow; źródło prawdy `blog/README.md`
+- [Audyt SEO mindsync.app 08-26](project_seo_overhaul_mindsync_2026_08_26.md) — 22/22 URL czyste
+- [Blog partia 2 + audyt](project_blog_partia2_i_audyt_2026_09_03.md) — LINK-LATER nigdy się nie odrabia
+- [Blog: indeksacja i baseline](project_blog_indexing_baseline_2026_09_15.md) — krok 0 partii = blog-performance.py
+- [Blog partia 3](project_blog_partia3_2026_09_21.md) — schema na host www; kolizja FAQ otwarta
+- [Blog: głos Moniki](project_blog_voice_monika_2026_09_25.md) — tylko /blog-write + blog-voice-check.py
+- [Blog partia 5](project_blog_partia5_2026_09_28.md) — `gotowy` tylko na polecenie operatora
+- [Blog pod nową wersję 21.10](project_blog_partia7_new_version_2026_10_21.md): how-to-use v2 i whats-new na żywo, 35 wpisów z nowymi zrzutami; tryb -Republish w publikatorze
+
+## Process & Feedback
+- [Autonomia + rejestr decyzji](feedback_autonomous_runs_decision_log.md): przy długich wdrożeniach decyduję sam, na końcu lista decyzji
+- [IMPLEMENTUJ w komentarzu artefaktu](feedback_comment_watch_implementuj.md): wygląd zatwierdzony, odpalam implementację w apce (FE na dev, BE za zgodą)
+- [Design: iteruj wybrany kierunek](feedback_design_iterate_chosen_direction.md): po wyborze kierunku dopracowuj aż będzie idealnie
+- [Zasady wizualne makiet (Darek 16.10)](feedback_artifact_design_rules_darek.md): M3, ikony rounded, bez pustego dołu, jasna paleta par kolorów, humanizer na UI
+- [IG: posty nieczytelne 10-07](feedback_ig_posts_readability_2026_10_07.md): humanizer+BVM nie sprawdzają zrozumiałości; test zimnego czytania
+- [Myślniki: ban obu znaków](feedback_myslniki_total_ban_i_humanizer_fork.md) — U+2014 i U+2013; humanizer fork
+- [Niezweryfikowane bez odtworzenia stanu](feedback_claim_not_verified_until_state_reproduced.md) — odtwórz stan przed "bezpieczne"
+- [Dowód z proda przed diagnozą](feedback_prod_evidence_before_code_only_diagnosis.md) — database-administrator równolegle
+- [Prawda o funkcjach z frontu](feedback_feature_truth_from_frontend.md) — aktualne nazwy funkcji
+- [PostHog = ostatni krok](feedback_posthog_instrumentation_mandatory.md) — tabela pokrycia, zero luk
+- [Stale read after compaction](feedback_stale_read_after_compaction.md) — re-read przed wnioskiem
+- [Subagent task sizing](feedback_subagent_task_sizing.md) — taski 20-40 min
+- [Agenty a background jobs](feedback_agents_stop_on_background_jobs.md) — bez run_in_background; flutter test per katalog
+- [Git hygiene](feedback_concurrent_session_git_hygiene.md) — branch przed commitem; nigdy `git add .`
+- [Memory po commicie](feedback_memory_write_after_commit.md) — status po dowodzie
+- [No live API experiments](feedback_no_live_api_experiments.md) — boot/migracje offline
+- [Postgres enum drift](project_postgres_enum_drift.md) — prod UPPERCASE labels
+- [FastAPI handler gotcha](feedback_fastapi_exception_handler.md) — Exception nie łapie HTTPException
+- [Chrome tool JS-only](feedback_chrome_tool_js_only_env.md) — tylko javascript_tool
+- [intl pinning](feedback_intl_version_pinning.md) — ^0.20.2
+- [Whisper 75-min](project_whisper_session_recording_update.md); [Legal gate iPhone 17](project_legal_gate_bug_2026_04_24.md); [Voice pipeline](project_voice_pipeline_status.md) — starsze
+
+## Project Structure i wzorce
+- Backend `MindSync/app/` (FastAPI, SQLAlchemy SYNC, RQ, repo main); frontend `mindsync-frontend/mindsync_app/lib/` (Flutter 3.41.1, Cubit, Freezed, repo dev → TestFlight)
+- Migracje `MindSync/alembic/versions/`, ręcznie `heroku run alembic upgrade head --app mindsync`; ostatnia znana m314b2c3d4e5 (09-18), HEAD sprawdzaj `alembic current`; nowa migracja: down_revision = HEAD, idempotentna
+- Auth: Firebase przez deps.get_current_user; premium gate = 403
+- RQ: rejestracja w rq_scheduler_setup.py z lifespan (boot-critical); generatory momentów importowane w module (worker)
+- Flutter: build_runner po zmianach modeli; l10n 7 języków, commituj generated
+- Nigdy Enum(PyEnum) z niespójnymi labels: String(n)+stałe; enum PG: ADD VALUE IF NOT EXISTS w autocommit_block
+- [Blog partia 6 + ruch 2026-10-07](project_blog_partia6_2026_10_07.md): 5 wpisow 10-08..10-12 gotowy (zgoda 07.10), drip od 08.10; 10/31 wpisow poza indeksem; 0 instalacji z bloga
+- [Redesign v3: 4 zespoły 10-18](project_redesign_v3_teams_2026_10_18.md): workflowy Character KD v2, karty A1-A11, Workspace WA1 v3, Main MC v3 na feature branchach; potem jedna integracja i push na oba repo (zgoda operatora)
+- [PostHog 8 kątów 10-15](project_posthog_multi_angle_2026_10_15.md): baseline lejka, P1 higieny danych, powtórki 10-17/10-29/11-02
+- [Zrzuty do sklepów 10-19](project_store_screenshots_2026_10_19.md): harness store_* -> render_store.py, App Store 9 + Play 8, wgrać z wydaniem nowego Main
+- [Mail o nowej wersji 21.10](project_email_new_look_2026_10_21.md): Loops Scheduled na 21.10 23:30 UTC, nadawca darek@; metryki sprawdzić 23.10
+- IG redesign 21.10: 5 postów (karty, story postępu, Character, story sił, nowy Main) `gotowy` na polecenie operatora, drip 21.10-27.10; slajd 5 kart na store_timeline.png; App Store 2.0.56 z 20.10 ma nowy wygląd; zmiany w repo social niezacommitowane; posty o Orce 10-13/10-15 dalej szkic
+- [Proces komunikacji Loops 21.10](project_loops_comms_process_2026_10_21.md): 9 programów + holdout + webhooki do PostHog; doc dla Darka, czeka na 7 decyzji
+- [Wspólny workspace dla wspólnika 21.10](project_shared_workspace_2026_10_21.md): repo mindsync-workspace, sync.py pull na start (hook), pytanie o commit+push na koniec, pamięć w claude-memory/

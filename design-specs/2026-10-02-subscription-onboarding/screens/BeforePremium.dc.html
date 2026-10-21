@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Current premium view</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#113237}a:hover{color:#0E1D1F}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #DBF0ED; font-family: Figtree, sans-serif; color: #113237; padding: 12px 20px 28px 20px; display: flex; flex-direction: column">
+  <button type="button" style="align-self: flex-start; height: 32px; border: none; background: transparent; padding: 0; display: flex; align-items: center; gap: 6px; font-family: Figtree, sans-serif; font-size: 14px; color: #000000; cursor: pointer">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 6l-6 6 6 6"/></svg>
+    <span>BACK</span>
+  </button>
+  <div style="height: 30px"></div>
+  <img src="/_blob/b94ec25dbe8aed11e51c558f9089fecd" alt="MindSync logo" style="width: 84px; height: 84px; align-self: center; object-fit: contain">
+  <div style="text-align: center; font-size: 46px; font-weight: 700; line-height: 1.2">Synced!</div>
+  <div style="height: 8px"></div>
+  <div style="font-size: 13px; font-weight: 600; letter-spacing: 0.5px; color: rgba(17,50,55,0.6)">Your premium features</div>
+  <div style="height: 10px"></div>
+  <div style="display: flex; flex-direction: column; gap: 8px">
+    <sc-for list="{{feats}}" as="f" hint-placeholder-count="8">
+      <div style="display: flex; align-items: center; gap: 16px">
+        <span style="flex-shrink: 0; width: 20px; height: 20px; border-radius: 4px; background: #0E1D1F; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+        <span style="font-size: 16px; font-weight: 500; letter-spacing: -0.8px">{{f}}</span>
+      </div>
+    </sc-for>
+  </div>
+  <div style="flex-grow: 1"></div>
+  <button type="button" style="height: 56px; border: none; border-radius: 0; background: #113237; color: #FFFFFF; font-family: Figtree, sans-serif; font-size: 18px; font-weight: 600; cursor: pointer">Premium active!</button>
+  <div style="height: 16px"></div>
+  <div style="display: flex; justify-content: center; align-items: center; gap: 10px; font-size: 14px; font-weight: 500">
+    <a href="https://www.mindsync.app/terms-conditions" style="text-decoration: none">Terms of Service</a>
+    <span style="font-weight: 700">•</span>
+    <a href="https://www.mindsync.app/privacy-policy" style="text-decoration: none">Privacy policy</a>
+    <span style="font-weight: 700">•</span>
+    <button type="button" style="border: none; background: transparent; padding: 0; font-family: Figtree, sans-serif; font-size: 14px; font-weight: 500; color: #113237">Restore</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      feats: ['Unlimited Reflect messages', 'Unlimited session debriefs', 'Unlimited session recordings', '30-day & 90-day progress snapshots', 'Therapy tracking insights & explanations', 'AI goal narratives', 'Therapy Relationship recommendations', 'Full data export & sharing']
+    };
+  }
+}
+</script>
+</body>
+</html>

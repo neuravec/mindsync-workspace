@@ -1,0 +1,2371 @@
+........................................................................ [  0%]
+........................................................................ [  1%]
+........................................................................ [  1%]
+........................................................................ [  2%]
+........................................................................ [  3%]
+........................................................................ [  3%]
+........................................................................ [  4%]
+........................................................................ [  5%]
+........................................................................ [  5%]
+........................................................................ [  6%]
+........................................................................ [  7%]
+........................................................................ [  7%]
+........................................................................ [  8%]
+........................................................................ [  9%]
+.....................F.................................................. [  9%]
+........................................................................ [ 10%]
+........................................................................ [ 10%]
+........................................................................ [ 11%]
+........................................................................ [ 12%]
+........................................................................ [ 12%]
+........................................................................ [ 13%]
+........................................................................ [ 14%]
+........................................................................ [ 14%]
+........................................................................ [ 15%]
+........................................................................ [ 16%]
+........................................................................ [ 16%]
+........................................................................ [ 17%]
+........................................................................ [ 18%]
+....................................................F................... [ 18%]
+........................................................................ [ 19%]
+........................................................................ [ 19%]
+........................................................................ [ 20%]
+........................................................................ [ 21%]
+........................................................................ [ 21%]
+........................................................................ [ 22%]
+........................................................................ [ 23%]
+........................................................................ [ 23%]
+........................................................................ [ 24%]
+........................................................................ [ 25%]
+........................................................................ [ 25%]
+........................................................................ [ 26%]
+........................................................................ [ 27%]
+........................................................................ [ 27%]
+........................................................................ [ 28%]
+........................................................................ [ 28%]
+........................................................................ [ 29%]
+........................................................................ [ 30%]
+........................................................................ [ 30%]
+........................................................................ [ 31%]
+........................................................................ [ 32%]
+........................................................................ [ 32%]
+........................................................................ [ 33%]
+........................................................................ [ 34%]
+........................................................................ [ 34%]
+........................................................................ [ 35%]
+........................................................................ [ 36%]
+........................................................................ [ 36%]
+........................................................................ [ 37%]
+........................................................................ [ 37%]
+........................................................................ [ 38%]
+........................................................................ [ 39%]
+........................................................................ [ 39%]
+........................................................................ [ 40%]
+........................................................................ [ 41%]
+........................................................................ [ 41%]
+........................................................................ [ 42%]
+........................................................................ [ 43%]
+........................................................................ [ 43%]
+........................................................................ [ 44%]
+........................................................................ [ 45%]
+.FFF...............................F.................................... [ 45%]
+........................................................................ [ 46%]
+........................................................................ [ 46%]
+........................................................................ [ 47%]
+........................................................................ [ 48%]
+........................................................................ [ 48%]
+.............................................F.......................... [ 49%]
+........................................................................ [ 50%]
+........................................................................ [ 50%]
+........................................................................ [ 51%]
+........................................................................ [ 52%]
+........................................................................ [ 52%]
+........................................................................ [ 53%]
+........................................................................ [ 54%]
+........................................................................ [ 54%]
+........................................................................ [ 55%]
+........................................................................ [ 55%]
+........................................................................ [ 56%]
+........................................................................ [ 57%]
+........................................................................ [ 57%]
+........................................................................ [ 58%]
+........................................................................ [ 59%]
+........................................................................ [ 59%]
+........................................................................ [ 60%]
+........................................................................ [ 61%]
+........................................................................ [ 61%]
+........................................................................ [ 62%]
+........................................................................ [ 63%]
+........................................................................ [ 63%]
+........................................................................ [ 64%]
+........................................................................ [ 64%]
+........................................................................ [ 65%]
+........................................................................ [ 66%]
+........................................................................ [ 66%]
+........................................................................ [ 67%]
+........................................................................ [ 68%]
+........................................................................ [ 68%]
+........................................................................ [ 69%]
+........................................................................ [ 70%]
+........................................................................ [ 70%]
+........................................................................ [ 71%]
+........................................................................ [ 72%]
+........................................................................ [ 72%]
+........................................................................ [ 73%]
+........................................................................ [ 73%]
+........................................................................ [ 74%]
+........................................................................ [ 75%]
+........................................................................ [ 75%]
+........................................................................ [ 76%]
+........................................................................ [ 77%]
+........................................................................ [ 77%]
+........................................................................ [ 78%]
+.................................................................F...... [ 79%]
+........................................................................ [ 79%]
+........................................................................ [ 80%]
+......F................................................................. [ 81%]
+........................................................................ [ 81%]
+........................................................................ [ 82%]
+........................................................................ [ 82%]
+........................................................................ [ 83%]
+........................................................................ [ 84%]
+........................................................................ [ 84%]
+..............F......................................................... [ 85%]
+.....FFFF...F........................................................... [ 86%]
+.................................................F...................... [ 86%]
+........................................................................ [ 87%]
+..............................................F......................... [ 88%]
+........................................................................ [ 88%]
+........................................................................ [ 89%]
+........................................................................ [ 90%]
+........................................................................ [ 90%]
+........................................................................ [ 91%]
+........................................................................ [ 91%]
+........................................................................ [ 92%]
+........................................................................ [ 93%]
+........................................................................ [ 93%]
+........................................................................ [ 94%]
+........................................................................ [ 95%]
+........................................F............................... [ 95%]
+.............................................F.......................... [ 96%]
+........................................................................ [ 97%]
+........................................................................ [ 97%]
+........................................................................ [ 98%]
+..............FFFFFF.................................................... [ 99%]
+........................................................................ [ 99%]
+.................................                                        [100%]
+================================== FAILURES ===================================
+______ TestConsentCRUD.test_is_consent_active_after_regrant_returns_true ______
+
+self = <app.tests.test_consent.TestConsentCRUD object at 0x000001FF179450A0>
+
+    def test_is_consent_active_after_regrant_returns_true(self):
+        """is_consent_active returns True after re-granting previously withdrawn consent."""
+        from app.crud.consent import create_consent_record, withdraw_consent, is_consent_active
+        create_consent_record(self.db, _USER_ID, "PROFILING")
+        withdraw_consent(self.db, _USER_ID, "PROFILING")
+        create_consent_record(self.db, _USER_ID, "PROFILING")
+>       assert is_consent_active(self.db, _USER_ID, "PROFILING") is True
+E       AssertionError: assert False is True
+E        +  where False = <function is_consent_active at 0x000001FF46321BC0>(<sqlalchemy.orm.session.Session object at 0x000001FF5985D8E0>, 'test_user_consent', 'PROFILING')
+E        +    where <sqlalchemy.orm.session.Session object at 0x000001FF5985D8E0> = <app.tests.test_consent.TestConsentCRUD object at 0x000001FF179450A0>.db
+
+app\tests\test_consent.py:382: AssertionError
+______________ TestFirstImpressionEndpoint.test_language_mapping ______________
+
+self = <app.tests.test_first_impression.TestFirstImpressionEndpoint object at 0x000001FF155AFFB0>
+
+    def test_language_mapping(self):
+        """Verify language codes map to full names."""
+        therapy_ctx = _make_therapy_ctx(focus_areas=[{"name": "Anxiety"}])
+        prefs = _make_prefs(ai_language="de")
+        profile = _make_profile()
+        db = _SmartDb(therapy_ctx, prefs, profile)
+    
+        ai_result = FirstImpressionResult(welcome_message="Willkommen!")
+    
+        _, client = _build_test_app_and_client(db)
+    
+        with patch("app.api.v1.endpoints.dashboard.crud.get_therapy_context", return_value=therapy_ctx), \
+             patch("app.services.openai_service.OpenAIService.generate_first_impression", return_value=ai_result) as mock_ai:
+    
+            resp = client.post("/dashboard/first-impression")
+    
+        assert resp.status_code == 200
+        call_kwargs = mock_ai.call_args.kwargs
+>       assert call_kwargs["language"] == "German"
+E       AssertionError: assert 'de' == 'German'
+E         
+E         - German
+E         + de
+
+app\tests\test_first_impression.py:590: AssertionError
+____ TestBetweenSessionsPlaceholder.test_between_sessions_key_in_defaults _____
+
+self = <app.tests.test_notification_improvements.TestBetweenSessionsPlaceholder object at 0x000001FF48EAAD50>
+
+    def test_between_sessions_key_in_defaults(self):
+        """The between_sessions key must be present in the notification defaults."""
+        from app.crud import crud
+    
+>       assert "between_sessions" in crud._DEFAULT_NOTIFICATION_PREFS
+E       AssertionError: assert 'between_sessions' in {'dnd_end_hour': 8, 'dnd_start_hour': 22, 'health_check': True, 'health_check_reminder_frequency': 'weekly', ...}
+E        +  where {'dnd_end_hour': 8, 'dnd_start_hour': 22, 'health_check': True, 'health_check_reminder_frequency': 'weekly', ...} = <module 'app.crud.crud' from 'C:\\Users\\mikol\\Notebooks\\MindSync\\Heroku\\MindSync-wt-reflect-progress\\app\\crud\\crud.py'>._DEFAULT_NOTIFICATION_PREFS
+
+app\tests\test_notification_improvements.py:480: AssertionError
+____ TestBetweenSessionsPlaceholder.test_between_sessions_default_is_true _____
+
+self = <app.tests.test_notification_improvements.TestBetweenSessionsPlaceholder object at 0x000001FF48EAA690>
+
+    def test_between_sessions_default_is_true(self):
+        """Default value for between_sessions must be True."""
+        from app.crud import crud
+    
+>       assert crud._DEFAULT_NOTIFICATION_PREFS["between_sessions"] is True
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'between_sessions'
+
+app\tests\test_notification_improvements.py:486: KeyError
+_ TestBetweenSessionsPlaceholder.test_between_sessions_placeholder_comment_in_source _
+
+self = <app.tests.test_notification_improvements.TestBetweenSessionsPlaceholder object at 0x000001FF48EAA270>
+
+    def test_between_sessions_placeholder_comment_in_source(self):
+        """The source must contain the future-placeholder comment."""
+        import inspect
+        from app.crud import crud
+    
+        source = inspect.getsource(crud)
+>       assert "Future: between-session note completion notification" in source
+E       AssertionError: assert 'Future: between-session note completion notification' in '# app/crud/crud.py\n\nimport logging\nfrom sqlalchemy.orm import Session, joinedload\nfrom sqlalchemy import func, ca...tionLog.created_at < cutoff)\n        .delete(synchronize_session=False)\n    )\n    db.commit()\n    return deleted\n'
+
+app\tests\test_notification_improvements.py:494: AssertionError
+_____ TestNotificationTimezoneIndexMigration.test_migration_creates_index _____
+
+self = <app.tests.test_notification_improvements.TestNotificationTimezoneIndexMigration object at 0x000001FF48EA9D00>
+
+    def test_migration_creates_index(self):
+        """The timezone migration must call op.create_index for user_preferences."""
+        import os
+    
+        versions_dir = os.path.join(
+            os.path.dirname(__file__), "..", "..", "alembic", "versions"
+        )
+        versions_dir = os.path.normpath(versions_dir)
+        timezone_file = None
+        for f in os.listdir(versions_dir):
+            if "timezone" in f and f.endswith(".py"):
+                timezone_file = os.path.join(versions_dir, f)
+                break
+    
+        assert timezone_file is not None
+        with open(timezone_file, encoding="utf-8") as fh:
+            source = fh.read()
+    
+>       assert "create_index" in source
+E       assert 'create_index' in '"""Add index on user_preferences timezone for notification query optimization.\n\nRevision ID: a0b1c2d3e4f5\nRevises:...> None:\n    op.drop_index(\n        "ix_user_preferences_time_zone",\n        table_name="user_preferences",\n    )\n'
+
+app\tests\test_notification_improvements.py:765: AssertionError
+___________ TestResetTherapyOnboarding.test_preserves_therapy_data ____________
+
+self = <app.tests.test_onboarding_v2.TestResetTherapyOnboarding object at 0x000001FF490B5AF0>
+
+    def test_preserves_therapy_data(self):
+        """Reset does NOT clear therapy content fields."""
+        db = MagicMock()
+        ctx = MagicMock()
+        ctx.onboarding_step = 5
+        ctx.onboarding_completed = True
+        ctx.medical_disclaimer_accepted_at = _NOW
+        ctx.gdpr_consent_at = _NOW
+        ctx.age_verified_at = _NOW
+        ctx.consent_version = "v2.0"
+        focus_json = json.dumps([{"name": "Anxiety", "is_custom": False}])
+        severity_json = json.dumps({"Anxiety": 7})
+        chips_json = json.dumps(["cost", "scheduling"])
+        modalities_json = json.dumps(["CBT", "DBT"])
+        ctx.focus_areas = focus_json
+        ctx.severity_ratings = severity_json
+        ctx.therapy_duration = "1-2 years"
+        ctx.frustration_chips = chips_json
+        ctx.frustration_text = "It's expensive"
+        ctx.goals_text = "Feel better"
+        ctx.therapy_modalities = modalities_json
+        db.query.return_value.filter.return_value.first.return_value = ctx
+    
+        from app.crud.crud import reset_therapy_onboarding
+        reset_therapy_onboarding(db, "user_1")
+    
+        # All therapy data should be untouched
+>       assert ctx.focus_areas == focus_json
+E       assert None == '[{"name": "Anxiety", "is_custom": false}]'
+E        +  where None = <MagicMock name='mock.query().filter().first()' id='2197893933648'>.focus_areas
+
+app\tests\test_onboarding_v2.py:420: AssertionError
+_ TestHowTheConversationStarts.test_voice_resumed_thread_carries_on_without_a_new_opening _
+
+self = <app.tests.test_reflect_prompt_v3.TestHowTheConversationStarts object at 0x000001FF49E0F170>
+
+    def test_voice_resumed_thread_carries_on_without_a_new_opening(self):
+        history = [("companion", "Hi Ania."), ("Person", "Work again.")]
+        prompt = _rp().build_prompt(_rich_ctx(), "voice", seed=_seed(), has_user_turns=True, history=history)
+        assert "CONTINUING THE CONVERSATION" in prompt
+        assert "OPENING GREETING" not in prompt and "OPENING TURN" not in prompt
+        assert "\n\nTHE CONVERSATION SO FAR\n- Orca: Hi Ania.\n- Person: Work again." in prompt
+        assert "NOW\n" not in prompt
+>       assert prompt.rstrip().endswith("Say only your reply.")
+E       AssertionError: assert False
+E        +  where False = <built-in method endswith of str object at 0x000001FFDD675FB0>('Say only your reply.')
+E        +    where <built-in method endswith of str object at 0x000001FFDD675FB0> = 'ROLE AND OBJECTIVE\nYou are Orca, the reflection companion in the MindSync app, talking with Ania. You are not a ther... turn names one or two things from their own record; sending them back to their therapist is not an answer on its own.'.endswith
+E        +      where 'ROLE AND OBJECTIVE\nYou are Orca, the reflection companion in the MindSync app, talking with Ania. You are not a ther... turn names one or two things from their own record; sending them back to their therapist is not an answer on its own.' = <built-in method rstrip of str object at 0x000001FFDD675FB0>()
+E        +        where <built-in method rstrip of str object at 0x000001FFDD675FB0> = 'ROLE AND OBJECTIVE\nYou are Orca, the reflection companion in the MindSync app, talking with Ania. You are not a ther... turn names one or two things from their own record; sending them back to their therapist is not an answer on its own.'.rstrip
+
+app\tests\test_reflect_prompt_v3.py:286: AssertionError
+_ TestMigrationDDLPostgresCompile.test_upgrade_downgrade_roundtrip_on_sqlite __
+
+self = <sqlalchemy.engine.base.Connection object at 0x000001FFD8727080>
+dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x000001FFE031F230>
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x000001FFE02E7650>
+statement = <sqlalchemy.dialects.sqlite.base.SQLiteDDLCompiler object at 0x000001FFE031C800>
+parameters = [()]
+
+    def _exec_single_context(
+        self,
+        dialect: Dialect,
+        context: ExecutionContext,
+        statement: Union[str, Compiled],
+        parameters: Optional[_AnyMultiExecuteParams],
+    ) -> CursorResult[Any]:
+        """continue the _execute_context() method for a single DBAPI
+        cursor.execute() or cursor.executemany() call.
+    
+        """
+        if dialect.bind_typing is BindTyping.SETINPUTSIZES:
+            generic_setinputsizes = context._prepare_set_input_sizes()
+    
+            if generic_setinputsizes:
+                try:
+                    dialect.do_set_input_sizes(
+                        context.cursor, generic_setinputsizes, context
+                    )
+                except BaseException as e:
+                    self._handle_dbapi_exception(
+                        e, str(statement), parameters, None, context
+                    )
+    
+        cursor, str_statement, parameters = (
+            context.cursor,
+            context.statement,
+            context.parameters,
+        )
+    
+        effective_parameters: Optional[_AnyExecuteParams]
+    
+        if not context.executemany:
+            effective_parameters = parameters[0]
+        else:
+            effective_parameters = parameters
+    
+        if self._has_events or self.engine._has_events:
+            for fn in self.dispatch.before_cursor_execute:
+                str_statement, effective_parameters = fn(
+                    self,
+                    cursor,
+                    str_statement,
+                    effective_parameters,
+                    context,
+                    context.executemany,
+                )
+    
+        if self._echo:
+            self._log_info(str_statement)
+    
+            stats = context._get_cache_stats()
+    
+            if not self.engine.hide_parameters:
+                self._log_info(
+                    "[%s] %r",
+                    stats,
+                    sql_util._repr_params(
+                        effective_parameters,
+                        batches=10,
+                        ismulti=context.executemany,
+                    ),
+                )
+            else:
+                self._log_info(
+                    "[%s] [SQL parameters hidden due to hide_parameters=True]",
+                    stats,
+                )
+    
+        evt_handled: bool = False
+        try:
+            if context.execute_style is ExecuteStyle.EXECUTEMANY:
+                effective_parameters = cast(
+                    "_CoreMultiExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_executemany:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_executemany(
+                        cursor,
+                        str_statement,
+                        effective_parameters,
+                        context,
+                    )
+            elif not effective_parameters and context.no_parameters:
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute_no_params:
+                        if fn(cursor, str_statement, context):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_execute_no_params(
+                        cursor, str_statement, context
+                    )
+            else:
+                effective_parameters = cast(
+                    "_CoreSingleExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+>                   self.dialect.do_execute(
+                        cursor, str_statement, effective_parameters, context
+                    )
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x000001FFE031F230>
+cursor = <sqlite3.Cursor object at 0x0000020012A85540>
+statement = '\nCREATE TABLE reflect_summary_cards (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\tconversation_id INTE... DELETE SET NULL, \n\tCONSTRAINT uq_reflect_summary_conversation_sequence UNIQUE (conversation_id, sequence_no)\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x000001FFE02E7650>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlite3.OperationalError: near "(": syntax error
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+
+The above exception was the direct cause of the following exception:
+
+self = <app.tests.test_reflect_summary.TestMigrationDDLPostgresCompile object at 0x000001FF49ECB350>
+
+    def test_upgrade_downgrade_roundtrip_on_sqlite(self):
+        """Smoke-test the migration itself (not just the model) runs cleanly
+        both directions -- separate from the model-based fixture above."""
+        import importlib.util
+        from pathlib import Path
+        from sqlalchemy import create_engine, inspect as sa_inspect
+        from alembic.runtime.migration import MigrationContext
+        from alembic.operations import Operations
+    
+        path = (
+            Path(__file__).resolve().parents[2]
+            / "alembic" / "versions" / "m311c3d4e5f6_create_reflect_summary_cards.py"
+        )
+        spec = importlib.util.spec_from_file_location("m311c3d4e5f6_roundtrip", path)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+    
+        engine = create_engine("sqlite:///:memory:")
+        # Minimal parent tables for the FKs (sqlite FK targets need not
+        # pre-exist for CREATE TABLE, but keep this close to real usage).
+        with engine.connect() as conn:
+            ctx = MigrationContext.configure(conn)
+            with Operations.context(ctx):
+>               module.upgrade()
+
+app\tests\test_reflect_summary.py:1206: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+alembic\versions\m311c3d4e5f6_create_reflect_summary_cards.py:79: in upgrade
+    op.create_table(
+<string>:8: in create_table
+    ???
+<string>:3: in create_table
+    ???
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\ops.py:1318: in create_table
+    return operations.invoke(op)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\base.py:442: in invoke
+    return fn(self, operation)
+           ^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\toimpl.py:143: in create_table
+    operations.impl.create_table(table, **kw)
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:369: in create_table
+    self._exec(schema.CreateTable(table, **kw))
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:210: in _exec
+    return conn.execute(construct, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1418: in execute
+    return meth(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\ddl.py:180: in _execute_on_connection
+    return connection._execute_ddl(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1529: in _execute_ddl
+    ret = self._execute_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1846: in _execute_context
+    return self._exec_single_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1986: in _exec_single_context
+    self._handle_dbapi_exception(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:2353: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: in _exec_single_context
+    self.dialect.do_execute(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x000001FFE031F230>
+cursor = <sqlite3.Cursor object at 0x0000020012A85540>
+statement = '\nCREATE TABLE reflect_summary_cards (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\tconversation_id INTE... DELETE SET NULL, \n\tCONSTRAINT uq_reflect_summary_conversation_sequence UNIQUE (conversation_id, sequence_no)\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x000001FFE02E7650>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) near "(": syntax error
+E       [SQL: 
+E       CREATE TABLE reflect_summary_cards (
+E       	id INTEGER NOT NULL, 
+E       	user_id VARCHAR NOT NULL, 
+E       	conversation_id INTEGER NOT NULL, 
+E       	sequence_no INTEGER DEFAULT '1' NOT NULL, 
+E       	previous_card_id INTEGER, 
+E       	covers_message_count INTEGER DEFAULT '0' NOT NULL, 
+E       	last_covered_message_id INTEGER, 
+E       	summary TEXT, 
+E       	questions TEXT, 
+E       	action_items TEXT, 
+E       	threads TEXT, 
+E       	processing_status VARCHAR(10) DEFAULT 'pending' NOT NULL, 
+E       	created_at DATETIME DEFAULT NOW(), 
+E       	updated_at DATETIME DEFAULT NOW(), 
+E       	xp_awarded BOOLEAN DEFAULT false NOT NULL, 
+E       	deleted_at DATETIME, 
+E       	PRIMARY KEY (id), 
+E       	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE, 
+E       	FOREIGN KEY(conversation_id) REFERENCES conversations (id) ON DELETE CASCADE, 
+E       	FOREIGN KEY(previous_card_id) REFERENCES reflect_summary_cards (id) ON DELETE SET NULL, 
+E       	CONSTRAINT uq_reflect_summary_conversation_sequence UNIQUE (conversation_id, sequence_no)
+E       )
+E       
+E       ]
+E       (Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+_ TestWorkerOnlyImportOfSubscriptionsJobInitialisesPostHog.test_worker_import_path_for_subscription_job_initialises_posthog _
+
+self = <app.tests.test_subscription_job_worker_wiring.TestWorkerOnlyImportOfSubscriptionsJobInitialisesPostHog object at 0x000001FF4A1078F0>
+
+    def test_worker_import_path_for_subscription_job_initialises_posthog(self):
+        """Fresh-subprocess proof, mirroring test_worker_posthog_init.py:
+        importing ONLY app.tasks.subscriptions (the RQ func_name's module
+        for this specific job) is enough to initialise PostHog, without
+        app.main ever being imported."""
+        repo_root = Path(__file__).resolve().parents[2]  # .../MindSync
+>       proc = subprocess.run(
+            [sys.executable, "-c", _WORKER_PATH_PROBE],
+            cwd=str(repo_root),
+            capture_output=True,
+            text=True,
+            timeout=60,
+        )
+
+app\tests\test_subscription_job_worker_wiring.py:125: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:550: in run
+    stdout, stderr = process.communicate(input, timeout=timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1209: in communicate
+    stdout, stderr = self._communicate(input, endtime, timeout)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <Popen: returncode: 1 args: ['C:\\Users\\mikol\\AppData\\Local\\Programs\\Py...>
+input = None, endtime = 1817556.89, orig_timeout = 60
+
+    def _communicate(self, input, endtime, orig_timeout):
+        # Start reader threads feeding into a list hanging off of this
+        # object, unless they've already been started.
+        if self.stdout and not hasattr(self, "_stdout_buff"):
+            self._stdout_buff = []
+            self.stdout_thread = \
+                    threading.Thread(target=self._readerthread,
+                                     args=(self.stdout, self._stdout_buff))
+            self.stdout_thread.daemon = True
+            self.stdout_thread.start()
+        if self.stderr and not hasattr(self, "_stderr_buff"):
+            self._stderr_buff = []
+            self.stderr_thread = \
+                    threading.Thread(target=self._readerthread,
+                                     args=(self.stderr, self._stderr_buff))
+            self.stderr_thread.daemon = True
+            self.stderr_thread.start()
+    
+        if self.stdin:
+            self._stdin_write(input)
+    
+        # Wait for the reader threads, or time out.  If we time out, the
+        # threads remain reading and the fds left open in case the user
+        # calls communicate again.
+        if self.stdout is not None:
+            self.stdout_thread.join(self._remaining_time(endtime))
+            if self.stdout_thread.is_alive():
+>               raise TimeoutExpired(self.args, orig_timeout)
+E               subprocess.TimeoutExpired: Command '['C:\\Users\\mikol\\AppData\\Local\\Programs\\Python\\Python312\\python.exe', '-c', '\nimport sys, os\nfrom unittest.mock import MagicMock\n\nos.environ.setdefault("DB_URL", "sqlite:///:memory:")\nos.environ.setdefault("MESSAGE_ENCRYPTION_KEY", "glVqxv-yXx4HSqLGQYYWD5Vs9QCklf7ySmt0zEbvI4w=")\nos.environ.setdefault("REDISGREEN_URL", "redis://localhost:6379/0")\nos.environ.setdefault("OPENAI_API_KEY", "sk-test-dummy")\nos.environ["POSTHOG_ENABLED"] = "true"\nos.environ["POSTHOG_API_KEY"] = "phc_test_dummy_key_1234"\n\nfor mod in ["tiktoken", "fpdf", "assemblyai", "googleapiclient.discovery", "google.oauth2"]:\n    sys.modules[mod] = MagicMock()\n\nimport app.services.posthog_service as posthog_service\nbefore_client_is_none = posthog_service._client is None\n\n# This is exactly what `rq worker` does to run the hourly subscription job\n# whose func path is now "app.tasks.subscriptions.deactivate_expired_subscriptions":\n# it imports the dotted module path. It never imports app.main.\nimport app.tasks.subscriptions  # noqa: E402\n\nafter_client_is_none = posthog_service._client is None\n\nprint("PROBE_RESULT " + str({\n    "before_client_is_none": before_client_is_none,\n    "after_client_is_none": after_client_is_none,\n    "app_main_in_sys_modules": "app.main" in sys.modules,\n}))\n']' timed out after 60 seconds
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\subprocess.py:1628: TimeoutExpired
+__ TestSecurityFixesM1M2.test_one_in_flight_debrief_closes_the_gate[pending] __
+
+self = <app.tests.test_subscription_onboarding_redesign.TestSecurityFixesM1M2 object at 0x000001FF4B2096A0>
+db = <sqlalchemy.orm.session.Session object at 0x000002002AFBB4A0>
+status = <ProcessingStatusEnum.PENDING: 'pending'>
+
+    @pytest.mark.parametrize("status", [PENDING, PROCESSING])
+    def test_one_in_flight_debrief_closes_the_gate(self, db, status):
+        _make_free(db, "u")
+        _debrief(db, "u", status=status, created_at=NOW)
+>       assert helpers.can_use_ai(db, "u", helpers.AI_FEATURE_DEBRIEF) is False
+E       AssertionError: assert True is False
+E        +  where True = <function can_use_ai at 0x000001FF46320680>(<sqlalchemy.orm.session.Session object at 0x000002002AFBB4A0>, 'u', 'debrief')
+E        +    where <function can_use_ai at 0x000001FF46320680> = helpers.can_use_ai
+E        +    and   'debrief' = helpers.AI_FEATURE_DEBRIEF
+
+app\tests\test_subscription_onboarding_redesign.py:1053: AssertionError
+_ TestSecurityFixesM1M2.test_one_in_flight_debrief_closes_the_gate[processing] _
+
+self = <app.tests.test_subscription_onboarding_redesign.TestSecurityFixesM1M2 object at 0x000001FF4B2097F0>
+db = <sqlalchemy.orm.session.Session object at 0x000002002B073C20>
+status = <ProcessingStatusEnum.PROCESSING: 'processing'>
+
+    @pytest.mark.parametrize("status", [PENDING, PROCESSING])
+    def test_one_in_flight_debrief_closes_the_gate(self, db, status):
+        _make_free(db, "u")
+        _debrief(db, "u", status=status, created_at=NOW)
+>       assert helpers.can_use_ai(db, "u", helpers.AI_FEATURE_DEBRIEF) is False
+E       AssertionError: assert True is False
+E        +  where True = <function can_use_ai at 0x000001FF46320680>(<sqlalchemy.orm.session.Session object at 0x000002002B073C20>, 'u', 'debrief')
+E        +    where <function can_use_ai at 0x000001FF46320680> = helpers.can_use_ai
+E        +    and   'debrief' = helpers.AI_FEATURE_DEBRIEF
+
+app\tests\test_subscription_onboarding_redesign.py:1053: AssertionError
+____ TestSecurityFixesM1M2.test_two_in_flight_between_notes_close_the_gate ____
+
+self = <app.tests.test_subscription_onboarding_redesign.TestSecurityFixesM1M2 object at 0x000001FF4B209AC0>
+db = <sqlalchemy.orm.session.Session object at 0x000002002B098410>
+
+    def test_two_in_flight_between_notes_close_the_gate(self, db):
+        _make_free(db, "u")
+        _note(db, "u")  # 1 completed
+        _note(db, "u", status=PENDING, created_at=NOW)
+        assert helpers.can_use_ai(db, "u", helpers.AI_FEATURE_BETWEEN_SESSIONS) is True
+        _note(db, "u", status=PROCESSING, created_at=NOW)
+>       assert crud.count_between_session_notes_this_month(db, "u") == 3
+E       AssertionError: assert 1 == 3
+E        +  where 1 = <function count_between_session_notes_this_month at 0x000001FF46061A80>(<sqlalchemy.orm.session.Session object at 0x000002002B098410>, 'u')
+E        +    where <function count_between_session_notes_this_month at 0x000001FF46061A80> = crud.count_between_session_notes_this_month
+
+app\tests\test_subscription_onboarding_redesign.py:1061: AssertionError
+_ TestSecurityFixesM1M2.test_parallel_second_request_falls_back_to_plain_text _
+
+self = <app.tests.test_subscription_onboarding_redesign.TestSecurityFixesM1M2 object at 0x000001FF4B209DF0>
+db = <sqlalchemy.orm.session.Session object at 0x000002002B11B830>
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x000002002B098320>
+
+    def test_parallel_second_request_falls_back_to_plain_text(self, db, monkeypatch):
+        # Request A already inserted its PENDING row and is inside the AI
+        # call; request B arrives now and must not reach the AI.
+        _make_free(db, "u")
+        _prep(db, "u", status=PENDING, created_at=NOW)
+        reached = []
+        monkeypatch.setattr(prep_cards_ep, "_process_prep_card_ai", lambda *a, **kw: reached.append(1))
+        try:
+            prep_cards_ep.create_text_prep_card(
+                data=schemas.PrepCardCreateText(raw_text="hello there"), db=db, current_user_id="u",
+            )
+        except Exception:
+            pass  # post-save side effects (XP, RAG, analytics) are irrelevant here
+>       assert reached == []
+E       assert [1] == []
+E         
+E         Left contains one more item: 1
+E         Use -v to get more diff
+
+app\tests\test_subscription_onboarding_redesign.py:1077: AssertionError
+------------------------------ Captured log call ------------------------------
+INFO     app.api.v1.endpoints.prep_cards:prep_cards.py:627 Text prep card 2 created for user u.
+__________ TestSecurityFixesM1M2.test_usage_used_includes_in_flight ___________
+
+self = <app.tests.test_subscription_onboarding_redesign.TestSecurityFixesM1M2 object at 0x000001FF4B20A900>
+db = <sqlalchemy.orm.session.Session object at 0x000002002B0DAED0>
+
+    def test_usage_used_includes_in_flight(self, db):
+        _make_free(db, "u")
+        _note(db, "u")
+        _note(db, "u", status=PENDING, created_at=NOW)
+        body = users_ep.get_user_usage(current_user_id="u", db=db).model_dump(mode="json")
+>       assert body["features"]["between_sessions"]["used"] == 2
+E       assert 1 == 2
+
+app\tests\test_subscription_onboarding_redesign.py:1101: AssertionError
+_______ TestSymptomSuggestionResponseSchema.test_from_attributes_config _______
+
+self = <app.tests.test_symptom_suggestions.TestSymptomSuggestionResponseSchema object at 0x000001FF4B26E420>
+
+    def test_from_attributes_config(self):
+>       assert schemas.SymptomSuggestionResponse.model_config.get("from_attributes") is True
+E       AssertionError: assert None is True
+E        +  where None = <built-in method get of dict object at 0x000001FF17BE2F40>('from_attributes')
+E        +    where <built-in method get of dict object at 0x000001FF17BE2F40> = {}.get
+E        +      where {} = <class 'app.schemas.schemas.SymptomSuggestionResponse'>.model_config
+E        +        where <class 'app.schemas.schemas.SymptomSuggestionResponse'> = schemas.SymptomSuggestionResponse
+
+app\tests\test_symptom_suggestions.py:176: AssertionError
+___ TestIsOnWeekYearBoundary.test_year_boundary_dec_to_jan_known_limitation ___
+
+self = <app.tests.test_therapy_frequency.TestIsOnWeekYearBoundary object at 0x000001FF4B3636E0>
+
+    def test_year_boundary_dec_to_jan_known_limitation(self):
+        """Document the known year-boundary limitation of _is_on_week.
+    
+        _is_on_week uses (candidate_week - anchor_week) % 2 == 0.  When the
+        anchor is in ISO week 53 (late December) and the candidate is in ISO
+        week 2 (early January), the raw subtraction is (2 - 53) = -51, which
+        is odd — making the function misclassify an on-week as off-week.
+    
+        BUG REPORT for backend-api agent:
+            File: app/utils/therapy_schedule_utils.py
+            Function: _is_on_week
+            Issue: Raw ISO-week subtraction breaks across year boundaries
+                   (e.g. week 53 -> week 2). The fix should compute the
+                   calendar-day distance between anchor and candidate, then
+                   use (days_diff // 7) % 2 == 0 instead of week-number parity.
+            Affected: biweekly users with sessions in late December / early January.
+    
+        This test documents the current (broken) behaviour so the fix is
+        verifiable.  Once the bug is fixed, update these assertions to the
+        correct values: True and False respectively.
+        """
+        from app.utils.therapy_schedule_utils import _is_on_week
+    
+        # Anchor = Monday Dec 28 2026 (ISO week 53)
+        anchor = _tz_dt(2026, 12, 28, 10, 0)
+    
+        # 14 days later = Jan 11 2027 (ISO week 2).
+        # CORRECT answer: True (even hop count).
+        # CURRENT (buggy) answer: False because (2-53)%2 != 0.
+        two_weeks_later = _tz_dt(2027, 1, 11, 10, 0)
+        result_two_weeks = _is_on_week(two_weeks_later, anchor)
+        # Document what the implementation currently returns (False — wrong).
+        # Change to `is True` once the bug is fixed.
+>       assert result_two_weeks is False, (
+            "Year-boundary bug: _is_on_week returns False for a valid on-week "
+            "date across the year boundary. Update this assertion to True after "
+            "the bug in _is_on_week is fixed."
+        )
+E       AssertionError: Year-boundary bug: _is_on_week returns False for a valid on-week date across the year boundary. Update this assertion to True after the bug in _is_on_week is fixed.
+E       assert True is False
+
+app\tests\test_therapy_frequency.py:979: AssertionError
+____ TestCompleteWalkthroughStepEndpoint.test_all_five_tabs_awards_points _____
+
+body = WalkthroughStepUpdate(step='character_completed')
+current_user_id = 'user_1', db = <MagicMock id='2200015783120'>
+
+    @router.post(
+        "/walkthrough/step",
+        response_model=schemas.WalkthroughStateResponse,
+        summary="Mark a walkthrough step as complete",
+    )
+    def complete_walkthrough_step_endpoint(
+        body: schemas.WalkthroughStepUpdate,
+        current_user_id: str = Depends(deps.get_current_user),
+        db: Session = Depends(deps.get_db),
+    ) -> schemas.WalkthroughStateResponse:
+        """Mark a single walkthrough step as completed.
+    
+        When all 5 tab steps are completed and the reward has not yet been
+        given, automatically awards 11 points to both user and orca tracks
+        (enough to reach Level 2 from zero) and sets ``reward_given`` to True.
+        """
+        try:
+            state = update_walkthrough_step(db, current_user_id, body.step)
+    
+            # Auto-award points when all 5 tab steps completed and reward not yet given
+            if is_walkthrough_all_completed(state) and not state.get("reward_given", False):
+                # Capture level before awarding points for level-up detection
+                leveling_before = get_or_create_user_leveling(db, current_user_id)
+>               user_level_before = compute_level(leveling_before.user_track_points, USER_LEVEL_THRESHOLDS)
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+app\api\v1\endpoints\gamification.py:655: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+total_points = <MagicMock name='mock.query().filter().first().user_track_points' id='2200016133712'>
+thresholds = [0, 11, 31, 61, 101, 161, ...]
+
+    def compute_level(total_points: int, thresholds: list[int]) -> int:
+        """Walk *thresholds* backwards and return a 1-indexed level (1-10).
+    
+        ``thresholds`` is a list of cumulative point breakpoints in ascending
+        order (e.g. ``[0, 11, 31, ...]``).  The level is the highest index
+        whose threshold the user has reached, plus 1 (since levels are 1-based).
+        """
+        level = 1
+        for i in range(len(thresholds) - 1, -1, -1):
+>           if total_points >= thresholds[i]:
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           TypeError: '>=' not supported between instances of 'MagicMock' and 'int'
+
+app\crud\crud.py:6970: TypeError
+
+During handling of the above exception, another exception occurred:
+
+self = <app.tests.test_walkthrough.TestCompleteWalkthroughStepEndpoint object at 0x000001FF4B737410>
+
+    def test_all_five_tabs_awards_points(self):
+        """Completing final tab step -> awards 11+11 points and sets reward_given."""
+        _ensure_rq_importable()
+        from app.api.v1.endpoints.gamification import complete_walkthrough_step_endpoint
+        from app.schemas.schemas import WalkthroughStepUpdate
+    
+        db = MagicMock()
+        body = WalkthroughStepUpdate(step="character_completed")
+    
+        # First call: update step returns all tabs True, reward not yet given
+        # Second call: update "reward_given" returns full state with reward_given=True
+        state_after_step = {
+            "welcome_shown": True,
+            "main_completed": True,
+            "therapy_completed": True,
+            "reflect_completed": True,
+            "stats_completed": True,
+            "character_completed": True,
+            "reward_given": False,
+        }
+        state_after_reward = dict(state_after_step)
+        state_after_reward["reward_given"] = True
+    
+        with patch(
+            "app.api.v1.endpoints.gamification.update_walkthrough_step",
+            side_effect=[state_after_step, state_after_reward],
+        ), patch(
+            "app.api.v1.endpoints.gamification.is_walkthrough_all_completed",
+            return_value=True,
+        ), patch(
+            "app.api.v1.endpoints.gamification.award_user_track_points",
+        ) as mock_user_pts, patch(
+            "app.api.v1.endpoints.gamification.award_orca_track_points",
+        ) as mock_orca_pts:
+>           result = complete_walkthrough_step_endpoint(
+                body=body, current_user_id="user_1", db=db,
+            )
+
+app\tests\test_walkthrough.py:732: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+body = WalkthroughStepUpdate(step='character_completed')
+current_user_id = 'user_1', db = <MagicMock id='2200015783120'>
+
+    @router.post(
+        "/walkthrough/step",
+        response_model=schemas.WalkthroughStateResponse,
+        summary="Mark a walkthrough step as complete",
+    )
+    def complete_walkthrough_step_endpoint(
+        body: schemas.WalkthroughStepUpdate,
+        current_user_id: str = Depends(deps.get_current_user),
+        db: Session = Depends(deps.get_db),
+    ) -> schemas.WalkthroughStateResponse:
+        """Mark a single walkthrough step as completed.
+    
+        When all 5 tab steps are completed and the reward has not yet been
+        given, automatically awards 11 points to both user and orca tracks
+        (enough to reach Level 2 from zero) and sets ``reward_given`` to True.
+        """
+        try:
+            state = update_walkthrough_step(db, current_user_id, body.step)
+    
+            # Auto-award points when all 5 tab steps completed and reward not yet given
+            if is_walkthrough_all_completed(state) and not state.get("reward_given", False):
+                # Capture level before awarding points for level-up detection
+                leveling_before = get_or_create_user_leveling(db, current_user_id)
+                user_level_before = compute_level(leveling_before.user_track_points, USER_LEVEL_THRESHOLDS)
+                orca_level_before = compute_level(leveling_before.orca_track_points, ORCA_LEVEL_THRESHOLDS)
+    
+                award_user_track_points(db, current_user_id, "walkthrough_complete")
+                award_orca_track_points(db, current_user_id, "walkthrough_complete")
+                state = update_walkthrough_step(db, current_user_id, "reward_given")
+                logger.info(
+                    "Walkthrough reward granted for user_id=%s (11+11 points)",
+                    current_user_id,
+                )
+    
+                # Check for level-up after awarding points
+                try:
+                    leveling_after = get_or_create_user_leveling(db, current_user_id)
+                    user_level_after = compute_level(leveling_after.user_track_points, USER_LEVEL_THRESHOLDS)
+                    orca_level_after = compute_level(leveling_after.orca_track_points, ORCA_LEVEL_THRESHOLDS)
+                    if user_level_after > user_level_before:
+                        posthog_capture(
+                            distinct_id=get_posthog_distinct_id() or current_user_id,
+                            event="level_up",
+                            properties={"track": "user", "new_level": user_level_after, "source": "walkthrough_complete"},
+                        )
+                    if orca_level_after > orca_level_before:
+                        posthog_capture(
+                            distinct_id=get_posthog_distinct_id() or current_user_id,
+                            event="level_up",
+                            properties={"track": "orca", "new_level": orca_level_after, "source": "walkthrough_complete"},
+                        )
+                except Exception:
+                    pass
+    
+            return schemas.WalkthroughStateResponse(**state)
+        except HTTPException:
+            raise
+        except Exception as exc:
+            logger.error(
+                "Error completing walkthrough step for user_id=%s: %s",
+                current_user_id,
+                exc,
+                exc_info=True,
+            )
+>           raise HTTPException(
+                status_code=500,
+                detail="An unexpected error occurred while completing walkthrough step.",
+            )
+E           fastapi.exceptions.HTTPException: 500: An unexpected error occurred while completing walkthrough step.
+
+app\api\v1\endpoints\gamification.py:696: HTTPException
+------------------------------ Captured log call ------------------------------
+ERROR    app.api.v1.endpoints.gamification:gamification.py:690 Error completing walkthrough step for user_id=user_1: '>=' not supported between instances of 'MagicMock' and 'int'
+Traceback (most recent call last):
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-reflect-progress\app\api\v1\endpoints\gamification.py", line 655, in complete_walkthrough_step_endpoint
+    user_level_before = compute_level(leveling_before.user_track_points, USER_LEVEL_THRESHOLDS)
+                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\mikol\Notebooks\MindSync\Heroku\MindSync-wt-reflect-progress\app\crud\crud.py", line 6970, in compute_level
+    if total_points >= thresholds[i]:
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '>=' not supported between instances of 'MagicMock' and 'int'
+_ TestWorkerOnlyImportPathInitialisesPostHog.test_worker_import_path_initialises_posthog_without_app_main _
+
+self = <app.tests.test_worker_posthog_init.TestWorkerOnlyImportPathInitialisesPostHog object at 0x000001FF4B7B3CB0>
+
+    def test_worker_import_path_initialises_posthog_without_app_main(self):
+        """Runs in a fresh subprocess deliberately -- other test modules in
+        this suite may already have initialised (or mocked) the module-level
+        `_client` singleton, so asserting on it in-process would not prove
+        anything about a cold worker boot. A clean child process is the only
+        way to reproduce "no PostHog init has ever run" -- the exact
+        starting condition on the worker dyno."""
+        repo_root = Path(__file__).resolve().parents[2]  # .../MindSync
+        proc = subprocess.run(
+            [sys.executable, "-c", _WORKER_PATH_PROBE],
+            cwd=str(repo_root),
+            capture_output=True,
+            text=True,
+            timeout=60,
+        )
+    
+        assert proc.returncode == 0, (
+            f"worker-path import probe failed:\nstdout={proc.stdout}\n"
+            f"stderr={proc.stderr}"
+        )
+    
+        line = next(
+            (l for l in proc.stdout.splitlines() if l.startswith("PROBE_RESULT ")),
+            None,
+        )
+        assert line is not None, f"probe produced no result line: {proc.stdout}"
+        result = eval(line[len("PROBE_RESULT "):])  # noqa: S307 -- our own trusted output
+    
+        assert result["app_main_in_sys_modules"] is False, (
+            "test setup bug: this probe must prove the fix works WITHOUT "
+            "app.main ever being imported, matching the real rq worker process"
+        )
+        assert result["before_client_is_none"] is True, (
+            "sanity check: the PostHog client must be uninitialised before "
+            "any of our code runs -- if this fails, the probe's premise "
+            "(a cold process) is no longer valid"
+        )
+>       assert result["after_client_is_none"] is False, (
+            "importing a single app.tasks.* module must be enough to "
+            "initialise the PostHog client on a process that never imports "
+            "app.main -- otherwise every posthog_capture() call from any "
+            "task module (recording processing, prep-card auto-generation, "
+            "etc.) is a silent no-op on the real worker dyno, which is "
+            "exactly the bug this fix closes"
+        )
+E       AssertionError: importing a single app.tasks.* module must be enough to initialise the PostHog client on a process that never imports app.main -- otherwise every posthog_capture() call from any task module (recording processing, prep-card auto-generation, etc.) is a silent no-op on the real worker dyno, which is exactly the bug this fix closes
+E       assert True is False
+
+app\tests\test_worker_posthog_init.py:165: AssertionError
+_ TestSqliteUpgradeDowngradeRoundTrip.test_upgrade_creates_topic_question_items _
+
+self = <sqlalchemy.engine.base.Connection object at 0x0000020059F8B440>
+dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020058F62F00>
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020058F81010>
+statement = <sqlalchemy.dialects.sqlite.base.SQLiteDDLCompiler object at 0x00000200563F2D50>
+parameters = [()]
+
+    def _exec_single_context(
+        self,
+        dialect: Dialect,
+        context: ExecutionContext,
+        statement: Union[str, Compiled],
+        parameters: Optional[_AnyMultiExecuteParams],
+    ) -> CursorResult[Any]:
+        """continue the _execute_context() method for a single DBAPI
+        cursor.execute() or cursor.executemany() call.
+    
+        """
+        if dialect.bind_typing is BindTyping.SETINPUTSIZES:
+            generic_setinputsizes = context._prepare_set_input_sizes()
+    
+            if generic_setinputsizes:
+                try:
+                    dialect.do_set_input_sizes(
+                        context.cursor, generic_setinputsizes, context
+                    )
+                except BaseException as e:
+                    self._handle_dbapi_exception(
+                        e, str(statement), parameters, None, context
+                    )
+    
+        cursor, str_statement, parameters = (
+            context.cursor,
+            context.statement,
+            context.parameters,
+        )
+    
+        effective_parameters: Optional[_AnyExecuteParams]
+    
+        if not context.executemany:
+            effective_parameters = parameters[0]
+        else:
+            effective_parameters = parameters
+    
+        if self._has_events or self.engine._has_events:
+            for fn in self.dispatch.before_cursor_execute:
+                str_statement, effective_parameters = fn(
+                    self,
+                    cursor,
+                    str_statement,
+                    effective_parameters,
+                    context,
+                    context.executemany,
+                )
+    
+        if self._echo:
+            self._log_info(str_statement)
+    
+            stats = context._get_cache_stats()
+    
+            if not self.engine.hide_parameters:
+                self._log_info(
+                    "[%s] %r",
+                    stats,
+                    sql_util._repr_params(
+                        effective_parameters,
+                        batches=10,
+                        ismulti=context.executemany,
+                    ),
+                )
+            else:
+                self._log_info(
+                    "[%s] [SQL parameters hidden due to hide_parameters=True]",
+                    stats,
+                )
+    
+        evt_handled: bool = False
+        try:
+            if context.execute_style is ExecuteStyle.EXECUTEMANY:
+                effective_parameters = cast(
+                    "_CoreMultiExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_executemany:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_executemany(
+                        cursor,
+                        str_statement,
+                        effective_parameters,
+                        context,
+                    )
+            elif not effective_parameters and context.no_parameters:
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute_no_params:
+                        if fn(cursor, str_statement, context):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_execute_no_params(
+                        cursor, str_statement, context
+                    )
+            else:
+                effective_parameters = cast(
+                    "_CoreSingleExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+>                   self.dialect.do_execute(
+                        cursor, str_statement, effective_parameters, context
+                    )
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020058F62F00>
+cursor = <sqlite3.Cursor object at 0x0000020058EAE6C0>
+statement = '\nCREATE TABLE topic_question_items (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\ttext TEXT NOT NULL, \... \n\tclosed_at DATETIME, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020058F81010>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlite3.OperationalError: near "(": syntax error
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+
+The above exception was the direct cause of the following exception:
+
+self = <app.tests.test_workspace_fix1_a1_migration.TestSqliteUpgradeDowngradeRoundTrip object at 0x000001FF4B92CE90>
+
+    def test_upgrade_creates_topic_question_items(self):
+        engine, sa_inspect = self._make_engine()
+>       self._run_upgrade(engine)
+
+app\tests\test_workspace_fix1_a1_migration.py:139: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+app\tests\test_workspace_fix1_a1_migration.py:134: in _run_upgrade
+    module.upgrade()
+alembic\versions\aa2b3c4d5e6f_add_workspace_fix1_a1_tables.py:100: in upgrade
+    op.create_table(
+<string>:8: in create_table
+    ???
+<string>:3: in create_table
+    ???
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\ops.py:1318: in create_table
+    return operations.invoke(op)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\base.py:442: in invoke
+    return fn(self, operation)
+           ^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\toimpl.py:143: in create_table
+    operations.impl.create_table(table, **kw)
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:369: in create_table
+    self._exec(schema.CreateTable(table, **kw))
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:210: in _exec
+    return conn.execute(construct, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1418: in execute
+    return meth(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\ddl.py:180: in _execute_on_connection
+    return connection._execute_ddl(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1529: in _execute_ddl
+    ret = self._execute_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1846: in _execute_context
+    return self._exec_single_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1986: in _exec_single_context
+    self._handle_dbapi_exception(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:2353: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: in _exec_single_context
+    self.dialect.do_execute(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020058F62F00>
+cursor = <sqlite3.Cursor object at 0x0000020058EAE6C0>
+statement = '\nCREATE TABLE topic_question_items (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\ttext TEXT NOT NULL, \... \n\tclosed_at DATETIME, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020058F81010>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) near "(": syntax error
+E       [SQL: 
+E       CREATE TABLE topic_question_items (
+E       	id INTEGER NOT NULL, 
+E       	user_id VARCHAR NOT NULL, 
+E       	text TEXT NOT NULL, 
+E       	kind VARCHAR(24) DEFAULT 'topic' NOT NULL, 
+E       	source_type VARCHAR(32) DEFAULT 'manual' NOT NULL, 
+E       	source_id INTEGER, 
+E       	status VARCHAR(16) DEFAULT 'open' NOT NULL, 
+E       	created_at DATETIME DEFAULT NOW(), 
+E       	updated_at DATETIME DEFAULT NOW(), 
+E       	closed_at DATETIME, 
+E       	PRIMARY KEY (id), 
+E       	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+E       )
+E       
+E       ]
+E       (Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+__ TestSqliteUpgradeDowngradeRoundTrip.test_upgrade_creates_todo_completions __
+
+self = <sqlalchemy.engine.base.Connection object at 0x0000020059FE0080>
+dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020059F88FB0>
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020058F81010>
+statement = <sqlalchemy.dialects.sqlite.base.SQLiteDDLCompiler object at 0x0000020058F637D0>
+parameters = [()]
+
+    def _exec_single_context(
+        self,
+        dialect: Dialect,
+        context: ExecutionContext,
+        statement: Union[str, Compiled],
+        parameters: Optional[_AnyMultiExecuteParams],
+    ) -> CursorResult[Any]:
+        """continue the _execute_context() method for a single DBAPI
+        cursor.execute() or cursor.executemany() call.
+    
+        """
+        if dialect.bind_typing is BindTyping.SETINPUTSIZES:
+            generic_setinputsizes = context._prepare_set_input_sizes()
+    
+            if generic_setinputsizes:
+                try:
+                    dialect.do_set_input_sizes(
+                        context.cursor, generic_setinputsizes, context
+                    )
+                except BaseException as e:
+                    self._handle_dbapi_exception(
+                        e, str(statement), parameters, None, context
+                    )
+    
+        cursor, str_statement, parameters = (
+            context.cursor,
+            context.statement,
+            context.parameters,
+        )
+    
+        effective_parameters: Optional[_AnyExecuteParams]
+    
+        if not context.executemany:
+            effective_parameters = parameters[0]
+        else:
+            effective_parameters = parameters
+    
+        if self._has_events or self.engine._has_events:
+            for fn in self.dispatch.before_cursor_execute:
+                str_statement, effective_parameters = fn(
+                    self,
+                    cursor,
+                    str_statement,
+                    effective_parameters,
+                    context,
+                    context.executemany,
+                )
+    
+        if self._echo:
+            self._log_info(str_statement)
+    
+            stats = context._get_cache_stats()
+    
+            if not self.engine.hide_parameters:
+                self._log_info(
+                    "[%s] %r",
+                    stats,
+                    sql_util._repr_params(
+                        effective_parameters,
+                        batches=10,
+                        ismulti=context.executemany,
+                    ),
+                )
+            else:
+                self._log_info(
+                    "[%s] [SQL parameters hidden due to hide_parameters=True]",
+                    stats,
+                )
+    
+        evt_handled: bool = False
+        try:
+            if context.execute_style is ExecuteStyle.EXECUTEMANY:
+                effective_parameters = cast(
+                    "_CoreMultiExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_executemany:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_executemany(
+                        cursor,
+                        str_statement,
+                        effective_parameters,
+                        context,
+                    )
+            elif not effective_parameters and context.no_parameters:
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute_no_params:
+                        if fn(cursor, str_statement, context):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_execute_no_params(
+                        cursor, str_statement, context
+                    )
+            else:
+                effective_parameters = cast(
+                    "_CoreSingleExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+>                   self.dialect.do_execute(
+                        cursor, str_statement, effective_parameters, context
+                    )
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020059F88FB0>
+cursor = <sqlite3.Cursor object at 0x000002003C9EE540>
+statement = '\nCREATE TABLE topic_question_items (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\ttext TEXT NOT NULL, \... \n\tclosed_at DATETIME, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020058F81010>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlite3.OperationalError: near "(": syntax error
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+
+The above exception was the direct cause of the following exception:
+
+self = <app.tests.test_workspace_fix1_a1_migration.TestSqliteUpgradeDowngradeRoundTrip object at 0x000001FF4B92E0C0>
+
+    def test_upgrade_creates_todo_completions(self):
+        engine, sa_inspect = self._make_engine()
+>       self._run_upgrade(engine)
+
+app\tests\test_workspace_fix1_a1_migration.py:147: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+app\tests\test_workspace_fix1_a1_migration.py:134: in _run_upgrade
+    module.upgrade()
+alembic\versions\aa2b3c4d5e6f_add_workspace_fix1_a1_tables.py:100: in upgrade
+    op.create_table(
+<string>:8: in create_table
+    ???
+<string>:3: in create_table
+    ???
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\ops.py:1318: in create_table
+    return operations.invoke(op)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\base.py:442: in invoke
+    return fn(self, operation)
+           ^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\toimpl.py:143: in create_table
+    operations.impl.create_table(table, **kw)
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:369: in create_table
+    self._exec(schema.CreateTable(table, **kw))
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:210: in _exec
+    return conn.execute(construct, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1418: in execute
+    return meth(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\ddl.py:180: in _execute_on_connection
+    return connection._execute_ddl(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1529: in _execute_ddl
+    ret = self._execute_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1846: in _execute_context
+    return self._exec_single_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1986: in _exec_single_context
+    self._handle_dbapi_exception(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:2353: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: in _exec_single_context
+    self.dialect.do_execute(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020059F88FB0>
+cursor = <sqlite3.Cursor object at 0x000002003C9EE540>
+statement = '\nCREATE TABLE topic_question_items (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\ttext TEXT NOT NULL, \... \n\tclosed_at DATETIME, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020058F81010>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) near "(": syntax error
+E       [SQL: 
+E       CREATE TABLE topic_question_items (
+E       	id INTEGER NOT NULL, 
+E       	user_id VARCHAR NOT NULL, 
+E       	text TEXT NOT NULL, 
+E       	kind VARCHAR(24) DEFAULT 'topic' NOT NULL, 
+E       	source_type VARCHAR(32) DEFAULT 'manual' NOT NULL, 
+E       	source_id INTEGER, 
+E       	status VARCHAR(16) DEFAULT 'open' NOT NULL, 
+E       	created_at DATETIME DEFAULT NOW(), 
+E       	updated_at DATETIME DEFAULT NOW(), 
+E       	closed_at DATETIME, 
+E       	PRIMARY KEY (id), 
+E       	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+E       )
+E       
+E       ]
+E       (Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+_ TestSqliteUpgradeDowngradeRoundTrip.test_upgrade_adds_todo_items_repeat_freq _
+
+self = <sqlalchemy.engine.base.Connection object at 0x0000020059FE1250>
+dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020059F8B9B0>
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020059F89EB0>
+statement = <sqlalchemy.dialects.sqlite.base.SQLiteDDLCompiler object at 0x0000020059F8ADE0>
+parameters = [()]
+
+    def _exec_single_context(
+        self,
+        dialect: Dialect,
+        context: ExecutionContext,
+        statement: Union[str, Compiled],
+        parameters: Optional[_AnyMultiExecuteParams],
+    ) -> CursorResult[Any]:
+        """continue the _execute_context() method for a single DBAPI
+        cursor.execute() or cursor.executemany() call.
+    
+        """
+        if dialect.bind_typing is BindTyping.SETINPUTSIZES:
+            generic_setinputsizes = context._prepare_set_input_sizes()
+    
+            if generic_setinputsizes:
+                try:
+                    dialect.do_set_input_sizes(
+                        context.cursor, generic_setinputsizes, context
+                    )
+                except BaseException as e:
+                    self._handle_dbapi_exception(
+                        e, str(statement), parameters, None, context
+                    )
+    
+        cursor, str_statement, parameters = (
+            context.cursor,
+            context.statement,
+            context.parameters,
+        )
+    
+        effective_parameters: Optional[_AnyExecuteParams]
+    
+        if not context.executemany:
+            effective_parameters = parameters[0]
+        else:
+            effective_parameters = parameters
+    
+        if self._has_events or self.engine._has_events:
+            for fn in self.dispatch.before_cursor_execute:
+                str_statement, effective_parameters = fn(
+                    self,
+                    cursor,
+                    str_statement,
+                    effective_parameters,
+                    context,
+                    context.executemany,
+                )
+    
+        if self._echo:
+            self._log_info(str_statement)
+    
+            stats = context._get_cache_stats()
+    
+            if not self.engine.hide_parameters:
+                self._log_info(
+                    "[%s] %r",
+                    stats,
+                    sql_util._repr_params(
+                        effective_parameters,
+                        batches=10,
+                        ismulti=context.executemany,
+                    ),
+                )
+            else:
+                self._log_info(
+                    "[%s] [SQL parameters hidden due to hide_parameters=True]",
+                    stats,
+                )
+    
+        evt_handled: bool = False
+        try:
+            if context.execute_style is ExecuteStyle.EXECUTEMANY:
+                effective_parameters = cast(
+                    "_CoreMultiExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_executemany:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_executemany(
+                        cursor,
+                        str_statement,
+                        effective_parameters,
+                        context,
+                    )
+            elif not effective_parameters and context.no_parameters:
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute_no_params:
+                        if fn(cursor, str_statement, context):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_execute_no_params(
+                        cursor, str_statement, context
+                    )
+            else:
+                effective_parameters = cast(
+                    "_CoreSingleExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+>                   self.dialect.do_execute(
+                        cursor, str_statement, effective_parameters, context
+                    )
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020059F8B9B0>
+cursor = <sqlite3.Cursor object at 0x000002005A852240>
+statement = '\nCREATE TABLE topic_question_items (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\ttext TEXT NOT NULL, \... \n\tclosed_at DATETIME, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020059F89EB0>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlite3.OperationalError: near "(": syntax error
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+
+The above exception was the direct cause of the following exception:
+
+self = <app.tests.test_workspace_fix1_a1_migration.TestSqliteUpgradeDowngradeRoundTrip object at 0x000001FF4B92E3F0>
+
+    def test_upgrade_adds_todo_items_repeat_freq(self):
+        engine, sa_inspect = self._make_engine()
+>       self._run_upgrade(engine)
+
+app\tests\test_workspace_fix1_a1_migration.py:154: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+app\tests\test_workspace_fix1_a1_migration.py:134: in _run_upgrade
+    module.upgrade()
+alembic\versions\aa2b3c4d5e6f_add_workspace_fix1_a1_tables.py:100: in upgrade
+    op.create_table(
+<string>:8: in create_table
+    ???
+<string>:3: in create_table
+    ???
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\ops.py:1318: in create_table
+    return operations.invoke(op)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\base.py:442: in invoke
+    return fn(self, operation)
+           ^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\toimpl.py:143: in create_table
+    operations.impl.create_table(table, **kw)
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:369: in create_table
+    self._exec(schema.CreateTable(table, **kw))
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:210: in _exec
+    return conn.execute(construct, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1418: in execute
+    return meth(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\ddl.py:180: in _execute_on_connection
+    return connection._execute_ddl(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1529: in _execute_ddl
+    ret = self._execute_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1846: in _execute_context
+    return self._exec_single_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1986: in _exec_single_context
+    self._handle_dbapi_exception(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:2353: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: in _exec_single_context
+    self.dialect.do_execute(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020059F8B9B0>
+cursor = <sqlite3.Cursor object at 0x000002005A852240>
+statement = '\nCREATE TABLE topic_question_items (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\ttext TEXT NOT NULL, \... \n\tclosed_at DATETIME, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020059F89EB0>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) near "(": syntax error
+E       [SQL: 
+E       CREATE TABLE topic_question_items (
+E       	id INTEGER NOT NULL, 
+E       	user_id VARCHAR NOT NULL, 
+E       	text TEXT NOT NULL, 
+E       	kind VARCHAR(24) DEFAULT 'topic' NOT NULL, 
+E       	source_type VARCHAR(32) DEFAULT 'manual' NOT NULL, 
+E       	source_id INTEGER, 
+E       	status VARCHAR(16) DEFAULT 'open' NOT NULL, 
+E       	created_at DATETIME DEFAULT NOW(), 
+E       	updated_at DATETIME DEFAULT NOW(), 
+E       	closed_at DATETIME, 
+E       	PRIMARY KEY (id), 
+E       	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+E       )
+E       
+E       ]
+E       (Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+_ TestSqliteUpgradeDowngradeRoundTrip.test_upgrade_adds_triage_proposals_linked_item_columns _
+
+self = <sqlalchemy.engine.base.Connection object at 0x0000020059FE3E00>
+dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020059FE25D0>
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020059F88CB0>
+statement = <sqlalchemy.dialects.sqlite.base.SQLiteDDLCompiler object at 0x0000020059FE2630>
+parameters = [()]
+
+    def _exec_single_context(
+        self,
+        dialect: Dialect,
+        context: ExecutionContext,
+        statement: Union[str, Compiled],
+        parameters: Optional[_AnyMultiExecuteParams],
+    ) -> CursorResult[Any]:
+        """continue the _execute_context() method for a single DBAPI
+        cursor.execute() or cursor.executemany() call.
+    
+        """
+        if dialect.bind_typing is BindTyping.SETINPUTSIZES:
+            generic_setinputsizes = context._prepare_set_input_sizes()
+    
+            if generic_setinputsizes:
+                try:
+                    dialect.do_set_input_sizes(
+                        context.cursor, generic_setinputsizes, context
+                    )
+                except BaseException as e:
+                    self._handle_dbapi_exception(
+                        e, str(statement), parameters, None, context
+                    )
+    
+        cursor, str_statement, parameters = (
+            context.cursor,
+            context.statement,
+            context.parameters,
+        )
+    
+        effective_parameters: Optional[_AnyExecuteParams]
+    
+        if not context.executemany:
+            effective_parameters = parameters[0]
+        else:
+            effective_parameters = parameters
+    
+        if self._has_events or self.engine._has_events:
+            for fn in self.dispatch.before_cursor_execute:
+                str_statement, effective_parameters = fn(
+                    self,
+                    cursor,
+                    str_statement,
+                    effective_parameters,
+                    context,
+                    context.executemany,
+                )
+    
+        if self._echo:
+            self._log_info(str_statement)
+    
+            stats = context._get_cache_stats()
+    
+            if not self.engine.hide_parameters:
+                self._log_info(
+                    "[%s] %r",
+                    stats,
+                    sql_util._repr_params(
+                        effective_parameters,
+                        batches=10,
+                        ismulti=context.executemany,
+                    ),
+                )
+            else:
+                self._log_info(
+                    "[%s] [SQL parameters hidden due to hide_parameters=True]",
+                    stats,
+                )
+    
+        evt_handled: bool = False
+        try:
+            if context.execute_style is ExecuteStyle.EXECUTEMANY:
+                effective_parameters = cast(
+                    "_CoreMultiExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_executemany:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_executemany(
+                        cursor,
+                        str_statement,
+                        effective_parameters,
+                        context,
+                    )
+            elif not effective_parameters and context.no_parameters:
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute_no_params:
+                        if fn(cursor, str_statement, context):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_execute_no_params(
+                        cursor, str_statement, context
+                    )
+            else:
+                effective_parameters = cast(
+                    "_CoreSingleExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+>                   self.dialect.do_execute(
+                        cursor, str_statement, effective_parameters, context
+                    )
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020059FE25D0>
+cursor = <sqlite3.Cursor object at 0x000002005A4354C0>
+statement = '\nCREATE TABLE topic_question_items (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\ttext TEXT NOT NULL, \... \n\tclosed_at DATETIME, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020059F88CB0>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlite3.OperationalError: near "(": syntax error
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+
+The above exception was the direct cause of the following exception:
+
+self = <app.tests.test_workspace_fix1_a1_migration.TestSqliteUpgradeDowngradeRoundTrip object at 0x000001FF4B92E720>
+
+    def test_upgrade_adds_triage_proposals_linked_item_columns(self):
+        engine, sa_inspect = self._make_engine()
+>       self._run_upgrade(engine)
+
+app\tests\test_workspace_fix1_a1_migration.py:160: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+app\tests\test_workspace_fix1_a1_migration.py:134: in _run_upgrade
+    module.upgrade()
+alembic\versions\aa2b3c4d5e6f_add_workspace_fix1_a1_tables.py:100: in upgrade
+    op.create_table(
+<string>:8: in create_table
+    ???
+<string>:3: in create_table
+    ???
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\ops.py:1318: in create_table
+    return operations.invoke(op)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\base.py:442: in invoke
+    return fn(self, operation)
+           ^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\toimpl.py:143: in create_table
+    operations.impl.create_table(table, **kw)
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:369: in create_table
+    self._exec(schema.CreateTable(table, **kw))
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:210: in _exec
+    return conn.execute(construct, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1418: in execute
+    return meth(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\ddl.py:180: in _execute_on_connection
+    return connection._execute_ddl(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1529: in _execute_ddl
+    ret = self._execute_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1846: in _execute_context
+    return self._exec_single_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1986: in _exec_single_context
+    self._handle_dbapi_exception(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:2353: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: in _exec_single_context
+    self.dialect.do_execute(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020059FE25D0>
+cursor = <sqlite3.Cursor object at 0x000002005A4354C0>
+statement = '\nCREATE TABLE topic_question_items (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\ttext TEXT NOT NULL, \... \n\tclosed_at DATETIME, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020059F88CB0>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) near "(": syntax error
+E       [SQL: 
+E       CREATE TABLE topic_question_items (
+E       	id INTEGER NOT NULL, 
+E       	user_id VARCHAR NOT NULL, 
+E       	text TEXT NOT NULL, 
+E       	kind VARCHAR(24) DEFAULT 'topic' NOT NULL, 
+E       	source_type VARCHAR(32) DEFAULT 'manual' NOT NULL, 
+E       	source_id INTEGER, 
+E       	status VARCHAR(16) DEFAULT 'open' NOT NULL, 
+E       	created_at DATETIME DEFAULT NOW(), 
+E       	updated_at DATETIME DEFAULT NOW(), 
+E       	closed_at DATETIME, 
+E       	PRIMARY KEY (id), 
+E       	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+E       )
+E       
+E       ]
+E       (Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+_______ TestSqliteUpgradeDowngradeRoundTrip.test_upgrade_is_idempotent ________
+
+self = <sqlalchemy.engine.base.Connection object at 0x0000020059FF32F0>
+dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020059FF1AF0>
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020059FF24B0>
+statement = <sqlalchemy.dialects.sqlite.base.SQLiteDDLCompiler object at 0x0000020059FF1520>
+parameters = [()]
+
+    def _exec_single_context(
+        self,
+        dialect: Dialect,
+        context: ExecutionContext,
+        statement: Union[str, Compiled],
+        parameters: Optional[_AnyMultiExecuteParams],
+    ) -> CursorResult[Any]:
+        """continue the _execute_context() method for a single DBAPI
+        cursor.execute() or cursor.executemany() call.
+    
+        """
+        if dialect.bind_typing is BindTyping.SETINPUTSIZES:
+            generic_setinputsizes = context._prepare_set_input_sizes()
+    
+            if generic_setinputsizes:
+                try:
+                    dialect.do_set_input_sizes(
+                        context.cursor, generic_setinputsizes, context
+                    )
+                except BaseException as e:
+                    self._handle_dbapi_exception(
+                        e, str(statement), parameters, None, context
+                    )
+    
+        cursor, str_statement, parameters = (
+            context.cursor,
+            context.statement,
+            context.parameters,
+        )
+    
+        effective_parameters: Optional[_AnyExecuteParams]
+    
+        if not context.executemany:
+            effective_parameters = parameters[0]
+        else:
+            effective_parameters = parameters
+    
+        if self._has_events or self.engine._has_events:
+            for fn in self.dispatch.before_cursor_execute:
+                str_statement, effective_parameters = fn(
+                    self,
+                    cursor,
+                    str_statement,
+                    effective_parameters,
+                    context,
+                    context.executemany,
+                )
+    
+        if self._echo:
+            self._log_info(str_statement)
+    
+            stats = context._get_cache_stats()
+    
+            if not self.engine.hide_parameters:
+                self._log_info(
+                    "[%s] %r",
+                    stats,
+                    sql_util._repr_params(
+                        effective_parameters,
+                        batches=10,
+                        ismulti=context.executemany,
+                    ),
+                )
+            else:
+                self._log_info(
+                    "[%s] [SQL parameters hidden due to hide_parameters=True]",
+                    stats,
+                )
+    
+        evt_handled: bool = False
+        try:
+            if context.execute_style is ExecuteStyle.EXECUTEMANY:
+                effective_parameters = cast(
+                    "_CoreMultiExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_executemany:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_executemany(
+                        cursor,
+                        str_statement,
+                        effective_parameters,
+                        context,
+                    )
+            elif not effective_parameters and context.no_parameters:
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute_no_params:
+                        if fn(cursor, str_statement, context):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_execute_no_params(
+                        cursor, str_statement, context
+                    )
+            else:
+                effective_parameters = cast(
+                    "_CoreSingleExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+>                   self.dialect.do_execute(
+                        cursor, str_statement, effective_parameters, context
+                    )
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020059FF1AF0>
+cursor = <sqlite3.Cursor object at 0x000002003CA234C0>
+statement = '\nCREATE TABLE topic_question_items (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\ttext TEXT NOT NULL, \... \n\tclosed_at DATETIME, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020059FF24B0>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlite3.OperationalError: near "(": syntax error
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+
+The above exception was the direct cause of the following exception:
+
+self = <app.tests.test_workspace_fix1_a1_migration.TestSqliteUpgradeDowngradeRoundTrip object at 0x000001FF4B92EA50>
+
+    def test_upgrade_is_idempotent(self):
+        engine, sa_inspect = self._make_engine()
+>       self._run_upgrade(engine, times=2)  # must not raise
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+app\tests\test_workspace_fix1_a1_migration.py:167: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+app\tests\test_workspace_fix1_a1_migration.py:134: in _run_upgrade
+    module.upgrade()
+alembic\versions\aa2b3c4d5e6f_add_workspace_fix1_a1_tables.py:100: in upgrade
+    op.create_table(
+<string>:8: in create_table
+    ???
+<string>:3: in create_table
+    ???
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\ops.py:1318: in create_table
+    return operations.invoke(op)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\base.py:442: in invoke
+    return fn(self, operation)
+           ^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\toimpl.py:143: in create_table
+    operations.impl.create_table(table, **kw)
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:369: in create_table
+    self._exec(schema.CreateTable(table, **kw))
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:210: in _exec
+    return conn.execute(construct, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1418: in execute
+    return meth(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\ddl.py:180: in _execute_on_connection
+    return connection._execute_ddl(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1529: in _execute_ddl
+    ret = self._execute_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1846: in _execute_context
+    return self._exec_single_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1986: in _exec_single_context
+    self._handle_dbapi_exception(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:2353: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: in _exec_single_context
+    self.dialect.do_execute(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x0000020059FF1AF0>
+cursor = <sqlite3.Cursor object at 0x000002003CA234C0>
+statement = '\nCREATE TABLE topic_question_items (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\ttext TEXT NOT NULL, \... \n\tclosed_at DATETIME, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x0000020059FF24B0>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) near "(": syntax error
+E       [SQL: 
+E       CREATE TABLE topic_question_items (
+E       	id INTEGER NOT NULL, 
+E       	user_id VARCHAR NOT NULL, 
+E       	text TEXT NOT NULL, 
+E       	kind VARCHAR(24) DEFAULT 'topic' NOT NULL, 
+E       	source_type VARCHAR(32) DEFAULT 'manual' NOT NULL, 
+E       	source_id INTEGER, 
+E       	status VARCHAR(16) DEFAULT 'open' NOT NULL, 
+E       	created_at DATETIME DEFAULT NOW(), 
+E       	updated_at DATETIME DEFAULT NOW(), 
+E       	closed_at DATETIME, 
+E       	PRIMARY KEY (id), 
+E       	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+E       )
+E       
+E       ]
+E       (Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+____ TestSqliteUpgradeDowngradeRoundTrip.test_downgrade_removes_everything ____
+
+self = <sqlalchemy.engine.base.Connection object at 0x000002005A0438F0>
+dialect = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x000002005A041FD0>
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x000002005A042D50>
+statement = <sqlalchemy.dialects.sqlite.base.SQLiteDDLCompiler object at 0x000002005A041BE0>
+parameters = [()]
+
+    def _exec_single_context(
+        self,
+        dialect: Dialect,
+        context: ExecutionContext,
+        statement: Union[str, Compiled],
+        parameters: Optional[_AnyMultiExecuteParams],
+    ) -> CursorResult[Any]:
+        """continue the _execute_context() method for a single DBAPI
+        cursor.execute() or cursor.executemany() call.
+    
+        """
+        if dialect.bind_typing is BindTyping.SETINPUTSIZES:
+            generic_setinputsizes = context._prepare_set_input_sizes()
+    
+            if generic_setinputsizes:
+                try:
+                    dialect.do_set_input_sizes(
+                        context.cursor, generic_setinputsizes, context
+                    )
+                except BaseException as e:
+                    self._handle_dbapi_exception(
+                        e, str(statement), parameters, None, context
+                    )
+    
+        cursor, str_statement, parameters = (
+            context.cursor,
+            context.statement,
+            context.parameters,
+        )
+    
+        effective_parameters: Optional[_AnyExecuteParams]
+    
+        if not context.executemany:
+            effective_parameters = parameters[0]
+        else:
+            effective_parameters = parameters
+    
+        if self._has_events or self.engine._has_events:
+            for fn in self.dispatch.before_cursor_execute:
+                str_statement, effective_parameters = fn(
+                    self,
+                    cursor,
+                    str_statement,
+                    effective_parameters,
+                    context,
+                    context.executemany,
+                )
+    
+        if self._echo:
+            self._log_info(str_statement)
+    
+            stats = context._get_cache_stats()
+    
+            if not self.engine.hide_parameters:
+                self._log_info(
+                    "[%s] %r",
+                    stats,
+                    sql_util._repr_params(
+                        effective_parameters,
+                        batches=10,
+                        ismulti=context.executemany,
+                    ),
+                )
+            else:
+                self._log_info(
+                    "[%s] [SQL parameters hidden due to hide_parameters=True]",
+                    stats,
+                )
+    
+        evt_handled: bool = False
+        try:
+            if context.execute_style is ExecuteStyle.EXECUTEMANY:
+                effective_parameters = cast(
+                    "_CoreMultiExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_executemany:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_executemany(
+                        cursor,
+                        str_statement,
+                        effective_parameters,
+                        context,
+                    )
+            elif not effective_parameters and context.no_parameters:
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute_no_params:
+                        if fn(cursor, str_statement, context):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+                    self.dialect.do_execute_no_params(
+                        cursor, str_statement, context
+                    )
+            else:
+                effective_parameters = cast(
+                    "_CoreSingleExecuteParams", effective_parameters
+                )
+                if self.dialect._has_events:
+                    for fn in self.dialect.dispatch.do_execute:
+                        if fn(
+                            cursor,
+                            str_statement,
+                            effective_parameters,
+                            context,
+                        ):
+                            evt_handled = True
+                            break
+                if not evt_handled:
+>                   self.dialect.do_execute(
+                        cursor, str_statement, effective_parameters, context
+                    )
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x000002005A041FD0>
+cursor = <sqlite3.Cursor object at 0x000001FF4B924740>
+statement = '\nCREATE TABLE topic_question_items (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\ttext TEXT NOT NULL, \... \n\tclosed_at DATETIME, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x000002005A042D50>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlite3.OperationalError: near "(": syntax error
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+
+The above exception was the direct cause of the following exception:
+
+self = <app.tests.test_workspace_fix1_a1_migration.TestSqliteUpgradeDowngradeRoundTrip object at 0x000001FF4B92ED80>
+
+    def test_downgrade_removes_everything(self):
+        from alembic.runtime.migration import MigrationContext
+        from alembic.operations import Operations
+    
+        engine, sa_inspect = self._make_engine()
+>       module = self._run_upgrade(engine)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+app\tests\test_workspace_fix1_a1_migration.py:176: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+app\tests\test_workspace_fix1_a1_migration.py:134: in _run_upgrade
+    module.upgrade()
+alembic\versions\aa2b3c4d5e6f_add_workspace_fix1_a1_tables.py:100: in upgrade
+    op.create_table(
+<string>:8: in create_table
+    ???
+<string>:3: in create_table
+    ???
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\ops.py:1318: in create_table
+    return operations.invoke(op)
+           ^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\base.py:442: in invoke
+    return fn(self, operation)
+           ^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\operations\toimpl.py:143: in create_table
+    operations.impl.create_table(table, **kw)
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:369: in create_table
+    self._exec(schema.CreateTable(table, **kw))
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\alembic\ddl\impl.py:210: in _exec
+    return conn.execute(construct, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1418: in execute
+    return meth(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\sql\ddl.py:180: in _execute_on_connection
+    return connection._execute_ddl(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1529: in _execute_ddl
+    ret = self._execute_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1846: in _execute_context
+    return self._exec_single_context(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1986: in _exec_single_context
+    self._handle_dbapi_exception(
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:2353: in _handle_dbapi_exception
+    raise sqlalchemy_exception.with_traceback(exc_info[2]) from e
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\base.py:1967: in _exec_single_context
+    self.dialect.do_execute(
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
+
+self = <sqlalchemy.dialects.sqlite.pysqlite.SQLiteDialect_pysqlite object at 0x000002005A041FD0>
+cursor = <sqlite3.Cursor object at 0x000001FF4B924740>
+statement = '\nCREATE TABLE topic_question_items (\n\tid INTEGER NOT NULL, \n\tuser_id VARCHAR NOT NULL, \n\ttext TEXT NOT NULL, \... \n\tclosed_at DATETIME, \n\tPRIMARY KEY (id), \n\tFOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE\n)\n\n'
+parameters = ()
+context = <sqlalchemy.dialects.sqlite.base.SQLiteExecutionContext object at 0x000002005A042D50>
+
+    def do_execute(self, cursor, statement, parameters, context=None):
+>       cursor.execute(statement, parameters)
+E       sqlalchemy.exc.OperationalError: (sqlite3.OperationalError) near "(": syntax error
+E       [SQL: 
+E       CREATE TABLE topic_question_items (
+E       	id INTEGER NOT NULL, 
+E       	user_id VARCHAR NOT NULL, 
+E       	text TEXT NOT NULL, 
+E       	kind VARCHAR(24) DEFAULT 'topic' NOT NULL, 
+E       	source_type VARCHAR(32) DEFAULT 'manual' NOT NULL, 
+E       	source_id INTEGER, 
+E       	status VARCHAR(16) DEFAULT 'open' NOT NULL, 
+E       	created_at DATETIME DEFAULT NOW(), 
+E       	updated_at DATETIME DEFAULT NOW(), 
+E       	closed_at DATETIME, 
+E       	PRIMARY KEY (id), 
+E       	FOREIGN KEY(user_id) REFERENCES users (id) ON DELETE CASCADE
+E       )
+E       
+E       ]
+E       (Background on this error at: https://sqlalche.me/e/20/e3q8)
+
+..\..\..\..\AppData\Local\Programs\Python\Python312\Lib\site-packages\sqlalchemy\engine\default.py:924: OperationalError
+=========================== short test summary info ===========================
+FAILED app/tests/test_consent.py::TestConsentCRUD::test_is_consent_active_after_regrant_returns_true
+FAILED app/tests/test_first_impression.py::TestFirstImpressionEndpoint::test_language_mapping
+FAILED app/tests/test_notification_improvements.py::TestBetweenSessionsPlaceholder::test_between_sessions_key_in_defaults
+FAILED app/tests/test_notification_improvements.py::TestBetweenSessionsPlaceholder::test_between_sessions_default_is_true
+FAILED app/tests/test_notification_improvements.py::TestBetweenSessionsPlaceholder::test_between_sessions_placeholder_comment_in_source
+FAILED app/tests/test_notification_improvements.py::TestNotificationTimezoneIndexMigration::test_migration_creates_index
+FAILED app/tests/test_onboarding_v2.py::TestResetTherapyOnboarding::test_preserves_therapy_data
+FAILED app/tests/test_reflect_prompt_v3.py::TestHowTheConversationStarts::test_voice_resumed_thread_carries_on_without_a_new_opening
+FAILED app/tests/test_reflect_summary.py::TestMigrationDDLPostgresCompile::test_upgrade_downgrade_roundtrip_on_sqlite
+FAILED app/tests/test_subscription_job_worker_wiring.py::TestWorkerOnlyImportOfSubscriptionsJobInitialisesPostHog::test_worker_import_path_for_subscription_job_initialises_posthog
+FAILED app/tests/test_subscription_onboarding_redesign.py::TestSecurityFixesM1M2::test_one_in_flight_debrief_closes_the_gate[pending]
+FAILED app/tests/test_subscription_onboarding_redesign.py::TestSecurityFixesM1M2::test_one_in_flight_debrief_closes_the_gate[processing]
+FAILED app/tests/test_subscription_onboarding_redesign.py::TestSecurityFixesM1M2::test_two_in_flight_between_notes_close_the_gate
+FAILED app/tests/test_subscription_onboarding_redesign.py::TestSecurityFixesM1M2::test_parallel_second_request_falls_back_to_plain_text
+FAILED app/tests/test_subscription_onboarding_redesign.py::TestSecurityFixesM1M2::test_usage_used_includes_in_flight
+FAILED app/tests/test_symptom_suggestions.py::TestSymptomSuggestionResponseSchema::test_from_attributes_config
+FAILED app/tests/test_therapy_frequency.py::TestIsOnWeekYearBoundary::test_year_boundary_dec_to_jan_known_limitation
+FAILED app/tests/test_walkthrough.py::TestCompleteWalkthroughStepEndpoint::test_all_five_tabs_awards_points
+FAILED app/tests/test_worker_posthog_init.py::TestWorkerOnlyImportPathInitialisesPostHog::test_worker_import_path_initialises_posthog_without_app_main
+FAILED app/tests/test_workspace_fix1_a1_migration.py::TestSqliteUpgradeDowngradeRoundTrip::test_upgrade_creates_topic_question_items
+FAILED app/tests/test_workspace_fix1_a1_migration.py::TestSqliteUpgradeDowngradeRoundTrip::test_upgrade_creates_todo_completions
+FAILED app/tests/test_workspace_fix1_a1_migration.py::TestSqliteUpgradeDowngradeRoundTrip::test_upgrade_adds_todo_items_repeat_freq
+FAILED app/tests/test_workspace_fix1_a1_migration.py::TestSqliteUpgradeDowngradeRoundTrip::test_upgrade_adds_triage_proposals_linked_item_columns
+FAILED app/tests/test_workspace_fix1_a1_migration.py::TestSqliteUpgradeDowngradeRoundTrip::test_upgrade_is_idempotent
+FAILED app/tests/test_workspace_fix1_a1_migration.py::TestSqliteUpgradeDowngradeRoundTrip::test_downgrade_removes_everything
+25 failed, 11168 passed in 2652.42s (0:44:12)

@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home, first week</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 1280px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; position: relative; overflow: hidden">
+<div style="padding: 52px 20px 120px 20px; display: flex; flex-direction: column; gap: 16px">
+
+<div style="display: flex; justify-content: space-between; align-items: center">
+<button type="button" aria-label="Open menu" style="width: 48px; height: 48px; border-radius: 24px; border: none; background: #DBF0ED; color: #113237; font-family: Figtree, sans-serif; font-size: 18px; font-weight: 700; cursor: pointer">S</button>
+<button type="button" aria-label="About Home" style="width: 48px; height: 48px; border-radius: 24px; border: 1px solid #DBF0ED; background: #FFFFFF; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><path d="M12 8h.01"/></svg></button>
+</div>
+
+<div style="display: flex; flex-direction: column; gap: 6px">
+<h1 style="margin: 0; font-size: 28px; line-height: 1.15; font-weight: 800">{{greeting}}</h1>
+<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #5A7A73">{{subtitle}}</p>
+</div>
+
+<sc-if value="{{isAction}}" hint-placeholder-val="{{ false }}">
+<section aria-label="Today" style="border-radius: 24px; background: #113237; color: #FFFFFF; padding: 20px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+<span style="font-size: 14px; font-weight: 700; color: #AAE5E2">{{card.eyebrow}}</span>
+<sc-if value="{{showChip}}" hint-placeholder-val="{{ false }}">
+<span style="font-size: 13px; font-weight: 700; color: #113237; background: #AAE5E2; padding: 4px 8px; border-radius: 8px">{{card.chip}}</span>
+</sc-if>
+</div>
+<h2 style="margin: 0; font-size: 24px; line-height: 1.2; font-weight: 800">{{card.title}}</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #DBF0ED">{{card.body}}</p>
+<div style="display: flex; align-items: center; gap: 8px; margin-top: 6px">
+<a href="{{card.href}}" style="flex-grow: 1; height: 52px; border-radius: 16px; background: #FFC88A; color: #113237; font-size: 17px; font-weight: 800; display: flex; align-items: center; justify-content: center; text-decoration: none">{{card.cta}}</a>
+<button type="button" onClick="{{notTodayTap}}" style="height: 52px; padding: 0 12px; border: none; background: transparent; color: #DBF0ED; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 600; cursor: pointer">Not today</button>
+</div>
+<sc-if value="{{card.hasQuota}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px; border-top: 1px solid rgba(219,240,237,0.2); padding-top: 8px">
+<span style="font-size: 14px; color: #DBF0ED">{{card.quota}}</span>
+<a href="#" style="min-height: 44px; display: flex; align-items: center; font-size: 14px; font-weight: 700; color: #FFC88A">See Premium</a>
+</div>
+</sc-if>
+<sc-if value="{{card.hasExtra}}" hint-placeholder-val="{{ false }}">
+<a href="{{card.extraHref}}" style="align-self: flex-start; min-height: 44px; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #FFC88A">{{card.extra}}</a>
+</sc-if>
+<sc-if value="{{card.hasSupport}}" hint-placeholder-val="{{ false }}">
+<a href="#" style="align-self: flex-start; min-height: 44px; display: flex; align-items: center; gap: 8px; font-size: 15px; font-weight: 700; color: #FFC88A"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC88A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Need someone now? Find a helpline</a>
+</sc-if>
+</section>
+</sc-if>
+
+<sc-if value="{{isLight}}" hint-placeholder-val="{{ true }}">
+<section aria-label="Today" style="border-radius: 24px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 20px; display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; align-items: center; gap: 10px">
+<sc-if value="{{light.check}}" hint-placeholder-val="{{ true }}">
+<span aria-hidden="true" style="width: 28px; height: 28px; border-radius: 14px; background: #26767B; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+</sc-if>
+<span style="font-size: 14px; font-weight: 700; color: #26767B">{{light.eyebrow}}</span>
+</div>
+<h2 style="margin: 0; font-size: 24px; line-height: 1.2; font-weight: 800">{{light.title}}</h2>
+<p style="margin: 0; font-size: 16px; line-height: 1.45; color: #5A7A73">{{light.body}}</p>
+
+<sc-if value="{{light.tomorrow}}" hint-placeholder-val="{{ true }}">
+<div style="border-radius: 16px; background: #F2FBFA; padding: 14px 16px; display: flex; flex-direction: column; gap: 4px">
+<span style="font-size: 14px; font-weight: 700; color: #26767B">{{tomorrowLabel}}</span>
+<span style="font-size: 16px; line-height: 1.4; font-weight: 700">{{tomorrowText}}</span>
+</div>
+</sc-if>
+
+<sc-if value="{{showReminder}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 6px; padding-top: 4px">
+<div style="display: flex; align-items: center; gap: 10px">
+<span style="flex-grow: 1; font-size: 16px; font-weight: 700">{{remindLabel}}</span>
+<button type="button" aria-label="Reminder time, 7:00 pm. Change time" style="height: 44px; padding: 0 12px; border-radius: 12px; border: 1px solid #BBE4DE; background: #FFFFFF; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 700; color: #113237; cursor: pointer">7:00 pm</button>
+<button type="button" role="switch" aria-checked="{{remindAria}}" aria-label="{{remindLabel}}" onClick="{{toggleRemind}}" style="{{switchStyle}}"><span style="width: 26px; height: 26px; border-radius: 13px; background: #FFFFFF"></span></button>
+</div>
+<span style="font-size: 14px; line-height: 1.45; color: #5A7A73">{{reminderNote}}</span>
+</div>
+</sc-if>
+
+<sc-if value="{{showDenied}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 10px; padding-top: 4px">
+<span style="font-size: 15px; line-height: 1.4; color: #5A7A73">Notifications are off for MindSync on this phone.</span>
+<a href="#" style="flex-shrink: 0; min-height: 44px; display: flex; align-items: center; font-size: 15px; font-weight: 700; color: #26767B">Open Settings</a>
+</div>
+</sc-if>
+
+<sc-if value="{{showReminderSet}}" hint-placeholder-val="{{ false }}">
+<span style="font-size: 14px; line-height: 1.45; color: #5A7A73">We'll remind you at 7:00 pm. One reminder a day at most.</span>
+</sc-if>
+
+<sc-if value="{{light.cta}}" hint-placeholder-val="{{ false }}">
+<a href="{{light.href}}" style="align-self: flex-start; height: 48px; padding: 0 18px; border-radius: 14px; background: #DBF0ED; color: #113237; font-size: 16px; font-weight: 800; display: flex; align-items: center; text-decoration: none">{{light.ctaLabel}}</a>
+</sc-if>
+<sc-if value="{{light.support}}" hint-placeholder-val="{{ false }}">
+<a href="#" style="align-self: flex-start; min-height: 48px; display: flex; align-items: center; gap: 8px; font-size: 16px; font-weight: 700; color: #1F4C50"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1F4C50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Need someone now? Find a helpline</a>
+</sc-if>
+<sc-if value="{{light.undo}}" hint-placeholder-val="{{ false }}">
+<button type="button" onClick="{{undoTap}}" style="align-self: flex-start; height: 44px; padding: 0 4px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 16px; font-weight: 700; color: #26767B; cursor: pointer">Undo</button>
+</sc-if>
+</section>
+</sc-if>
+
+<section aria-label="{{weekTitle}}" style="border-radius: 24px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 16px 18px; display: flex; flex-direction: column; gap: 12px">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 12px">
+<h2 style="margin: 0; font-size: 18px; font-weight: 800">{{weekTitle}}</h2>
+<button type="button" aria-expanded="{{expandedAria}}" onClick="{{toggleExpanded}}" style="height: 44px; padding: 0 4px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 700; color: #26767B; cursor: pointer">{{expandLabel}}</button>
+</div>
+
+<sc-if value="{{collapsed}}" hint-placeholder-val="{{ true }}">
+<div style="display: flex; flex-direction: column; gap: 10px">
+<div style="display: flex; flex-wrap: wrap; gap: 6px">
+<sc-for list="{{doneChips}}" as="c" hint-placeholder-count="2">
+<span style="display: flex; align-items: center; gap: 6px; height: 32px; padding: 0 10px 0 6px; border-radius: 16px; background: #F2FBFA; font-size: 14px; font-weight: 700; color: #1F4C50"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#26767B" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>{{c}}</span>
+</sc-for>
+</div>
+<sc-if value="{{hasNext}}" hint-placeholder-val="{{ true }}">
+<p style="margin: 0; font-size: 16px; line-height: 1.4"><span style="color: #5A7A73">{{nextLead}}</span> <strong>{{nextTitle}}</strong> <span style="color: #5A7A73">· {{nextWhen}}</span></p>
+</sc-if>
+</div>
+</sc-if>
+
+<sc-if value="{{expanded}}" hint-placeholder-val="{{ false }}">
+<div style="display: flex; flex-direction: column">
+<sc-for list="{{steps}}" as="s" hint-placeholder-count="6">
+<div style="display: flex; align-items: center; gap: 12px; min-height: 60px; border-top: 1px solid #F2FBFA">
+<sc-if value="{{s.isDone}}" hint-placeholder-val="{{ false }}">
+<span aria-hidden="true" style="width: 28px; height: 28px; flex-shrink: 0; border-radius: 14px; background: #26767B; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></span>
+</sc-if>
+<sc-if value="{{s.isCurrent}}" hint-placeholder-val="{{ false }}">
+<span aria-hidden="true" style="width: 28px; height: 28px; flex-shrink: 0; box-sizing: border-box; border-radius: 14px; border: 2.5px solid #A06008; display: flex; align-items: center; justify-content: center"><span style="width: 10px; height: 10px; border-radius: 5px; background: #A06008"></span></span>
+</sc-if>
+<sc-if value="{{s.isUp}}" hint-placeholder-val="{{ true }}">
+<span aria-hidden="true" style="width: 28px; height: 28px; flex-shrink: 0; box-sizing: border-box; border-radius: 14px; border: 2px solid #339499"></span>
+</sc-if>
+<span style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px; min-width: 0">
+<span style="{{s.titleStyle}}">{{s.title}}</span>
+<span style="font-size: 14px; color: #5A7A73">{{s.meta}}</span>
+</span>
+<span style="{{s.whenStyle}}">{{s.when}}</span>
+</div>
+</sc-for>
+<button type="button" style="align-self: flex-start; height: 44px; margin-top: 4px; padding: 0; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 700; color: #5A7A73; cursor: pointer">{{hideLabel}}</button>
+</div>
+</sc-if>
+</section>
+
+<sc-if value="{{showTrial}}" hint-placeholder-val="{{ true }}">
+<a href="#" style="display: flex; align-items: center; gap: 12px; padding: 12px 14px; border-radius: 16px; background: #113237; color: #FFFFFF; text-decoration: none">
+<span aria-hidden="true" style="flex-shrink: 0; width: 36px; height: 36px; border-radius: 18px; background: rgba(255,200,138,0.18); display: flex; align-items: center; justify-content: center"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#FFC88A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></svg></span>
+<span style="flex-grow: 1; display: flex; flex-direction: column; gap: 6px">
+<span style="font-size: 15px; font-weight: 700">{{trialLabel}}</span>
+<span style="height: 5px; border-radius: 3px; background: rgba(255,255,255,0.15); display: flex"><span style="{{trialBarStyle}}"></span></span>
+</span>
+<span style="font-size: 15px; font-weight: 700; color: #FFC88A">See plans</span>
+</a>
+</sc-if>
+
+<sc-if value="{{showSideCard}}" hint-placeholder-val="{{ false }}">
+<section aria-label="{{side.title}}" style="border-radius: 20px; background: #F2FBFA; border: 1px solid #DBF0ED; padding: 14px 8px 6px 18px; display: flex; flex-direction: column; gap: 4px">
+<div style="display: flex; align-items: center; justify-content: space-between; gap: 8px">
+<h3 style="margin: 0; font-size: 17px; font-weight: 800">{{side.title}}</h3>
+<button type="button" aria-label="Dismiss" onClick="{{dismissSide}}" style="width: 44px; height: 44px; border: none; background: transparent; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#5A7A73" stroke-width="2.4" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg></button>
+</div>
+<p style="margin: 0; padding-right: 10px; font-size: 16px; line-height: 1.45; color: #1F4C50">{{side.body}}</p>
+<a href="#" style="align-self: flex-start; min-height: 44px; display: flex; align-items: center; font-size: 16px; font-weight: 800; color: #1F4C50">{{side.cta}}</a>
+</section>
+</sc-if>
+
+<div style="display: flex; flex-direction: column; gap: 8px; margin-top: 4px">
+<span style="font-size: 14px; font-weight: 700; color: #26767B">More when you're ready</span>
+<a href="#" style="display: flex; align-items: center; gap: 12px; min-height: 64px; padding: 0 16px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DBF0ED; text-decoration: none; color: #113237">
+<span style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 700">Mood &amp; symptom trends</span><span style="font-size: 14px; color: #5A7A73">{{trendsMeta}}</span></span>
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A7A73" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+</a>
+<a href="#" style="display: flex; align-items: center; gap: 12px; min-height: 64px; padding: 0 16px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DBF0ED; text-decoration: none; color: #113237">
+<span style="flex-grow: 1; display: flex; flex-direction: column; gap: 2px"><span style="font-size: 16px; font-weight: 700">Habits</span><span style="font-size: 14px; color: #5A7A73">Track one small thing each day</span></span>
+<svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#5A7A73" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+</a>
+</div>
+
+</div>
+
+<button type="button" aria-label="Add" style="position: absolute; right: 20px; bottom: 100px; width: 56px; height: 56px; border-radius: 28px; border: none; background: #113237; display: flex; align-items: center; justify-content: center; cursor: pointer"><svg aria-hidden="true" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg></button>
+
+<nav aria-label="Main navigation" style="position: absolute; left: 0; right: 0; bottom: 0; height: 80px; background: #FFFFFF; border-top: 1px solid #DBF0ED; display: flex; justify-content: space-around; align-items: center">
+<a href="#" aria-current="page" style="font-size: 13px; font-weight: 800; color: #113237; text-decoration: none; padding: 12px; border-radius: 14px; background: #DBF0ED">Main</a>
+<a href="#" style="font-size: 13px; font-weight: 600; color: #5A7A73; text-decoration: none; padding: 12px 6px">Timeline</a>
+<a href="#" style="font-size: 13px; font-weight: 600; color: #5A7A73; text-decoration: none; padding: 12px 6px">Reflect</a>
+<a href="#" style="font-size: 13px; font-weight: 600; color: #5A7A73; text-decoration: none; padding: 12px 6px">Workspace</a>
+<a href="#" style="font-size: 13px; font-weight: 600; color: #5A7A73; text-decoration: none; padding: 12px 6px">Character</a>
+</nav>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"branch":{"editor":"enum","options":["schedule","no_schedule","none"],"default":"schedule"},"day":{"editor":"int","min":0,"max":14,"default":0},"doneSteps":{"editor":"text","default":""},"todayDone":{"editor":"boolean","default":false},"firstTalk":{"editor":"enum","options":["done","skipped"],"default":"done"},"calm":{"editor":"boolean","default":false},"pushState":{"editor":"enum","options":["undecided","granted","denied"],"default":"undecided"},"lateNight":{"editor":"boolean","default":false},"premium":{"editor":"boolean","default":false},"quotaOut":{"editor":"enum","options":["none","prep","after","talk"],"default":"none"},"expanded":{"editor":"boolean","default":false},"$preview":{"width":390,"height":1280}}'>
+class Component extends DCLogic {
+  state = { expanded: null, notToday: false, remind: false, sideGone: false };
+
+  renderVals() {
+    const branch = this.props.branch ?? 'schedule';
+    const A = branch === 'schedule';
+    let day = Number(this.props.day ?? 0);
+    if (!(day >= 0)) day = 0;
+    day = Math.min(14, Math.round(day));
+    const week2 = day >= 8;
+    const calm = !!(this.props.calm ?? false) && day <= 2;
+    const premium = !!(this.props.premium ?? false);
+    const quotaOut = week2 && !premium ? String(this.props.quotaOut ?? 'none') : 'none';
+    const skippedFirst = (this.props.firstTalk ?? 'done') === 'skipped';
+    const pushState = this.props.pushState ?? 'undecided';
+    const lateNight = !!(this.props.lateNight ?? false) && day === 0;
+    const expanded = this.state.expanded === null ? !!(this.props.expanded ?? false) : this.state.expanded;
+    const doneSet = new Set(String(this.props.doneSteps ?? '').split(',').map((x) => x.trim()).filter(Boolean));
+    if (this.props.todayDone) doneSet.add('__today__');
+    const names = ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun', 'Mon'];
+
+    const setup = { key: 'setup', d: 0, pre: true, title: 'Set up MindSync', meta: 'Your starting point is saved', chip: 'Setup' };
+    const meet = { key: 'meet', d: 0, pre: true, title: 'First talk with Orca', meta: 'You talked on day one', chip: 'First talk' };
+    const talk = skippedFirst
+      ? { key: 'talk', d: 1, title: 'First talk with Orca', meta: 'About 3 min · voice or text', chip: 'First talk' }
+      : { key: 'talk', d: 1, title: 'Follow up with Orca', meta: 'About 3 min · voice or text', chip: 'Follow-up' };
+    const week = { key: 'week', d: 7, title: 'Your first week', meta: 'A look back with Orca', chip: 'Week recap' };
+    let base;
+    if (week2) {
+      base = A ? [
+        { key: 'week', d: 7, title: 'Your first week', meta: 'Looked back with Orca', chip: 'Week recap' },
+        { key: 'prep', d: 9, title: 'Get ready for your session', meta: 'Before therapy · 2 min', chip: 'Prepared' },
+        { key: 'after', d: 10, title: 'After your session', meta: 'After therapy · 2 min', chip: 'Session captured' },
+        { key: 'checkin', d: 14, title: 'Quick check-in', meta: 'Mondays · 30 sec', chip: 'Check-in' }
+      ] : [
+        { key: 'week', d: 7, title: 'Your first week', meta: 'Looked back with Orca', chip: 'Week recap' },
+        { key: 'talk', d: 9, title: 'Talk with Orca', meta: 'Wednesdays · about 3 min', chip: 'Talk' },
+        { key: 'checkin', d: 14, title: 'Quick check-in', meta: 'Mondays · 30 sec', chip: 'Check-in' }
+      ];
+    } else if (A) {
+      base = [setup, meet, talk,
+        { key: 'prep', d: 2, title: 'Get ready for your session', meta: 'Before therapy · 2 min', chip: 'Prepared' },
+        { key: 'after', d: 3, title: 'After your session', meta: 'After therapy · 2 min', chip: 'Session captured' },
+        { key: 'checkin', d: 5, title: 'Quick check-in', meta: '30 sec · next to setup', chip: 'Check-in' },
+        week];
+    } else {
+      base = [setup, meet, talk,
+        { key: 'note', d: 3, title: branch === 'no_schedule' ? 'Note something for therapy' : 'Leave a voice note', meta: 'Voice note · 1 min', chip: 'Voice note' },
+        { key: 'checkin', d: 4, title: 'Quick check-in', meta: '30 sec · next to setup', chip: 'Check-in' },
+        { key: 'talk2', d: 6, title: 'A short talk with Orca', meta: 'About 3 min · voice or text', chip: 'Talk' },
+        week];
+    }
+    if (skippedFirst && !week2) base = base.filter((s) => s.key !== 'meet');
+
+    const original = base.map((s) => s.d);
+    let plan = base.map((s) => ({ ...s, done: !!s.pre || doneSet.has(s.key) }));
+    plan.forEach((s) => {
+      if (s.done || s.d >= day) return;
+      const nd = s.d + 1;
+      const busy = original.some((d, i) => d === nd && base[i].key !== s.key);
+      if (!busy && nd <= day) s.d = nd;
+      if (s.d < day) s.dropped = true;
+    });
+    plan = plan.filter((s) => !s.dropped);
+
+    const todayRaw = plan.find((s) => s.d === day && !s.pre);
+    if (todayRaw && doneSet.has('__today__')) todayRaw.done = true;
+
+    const steps = plan.map((s) => {
+      let st;
+      if (s.done) st = 'done';
+      else if (s.d === day) st = 'current';
+      else st = 'up';
+      const when = st === 'done' ? 'Done' : (st === 'current' ? 'Today' : (s.d === day + 1 ? 'Tomorrow' : names[s.d]));
+      return {
+        key: s.key, title: s.title, meta: s.meta, chip: s.chip, d: s.d, when: when,
+        isDone: st === 'done', isCurrent: st === 'current', isUp: st === 'up',
+        titleStyle: st === 'done' ? 'font-size: 16px; font-weight: 700; color: #5A7A73' : (st === 'current' ? 'font-size: 16px; font-weight: 800; color: #113237' : 'font-size: 16px; font-weight: 600; color: #113237'),
+        whenStyle: st === 'current' ? 'font-size: 14px; font-weight: 800; color: #A06008; white-space: nowrap' : (st === 'done' ? 'font-size: 14px; font-weight: 700; color: #26767B; white-space: nowrap' : 'font-size: 14px; font-weight: 600; color: #5A7A73; white-space: nowrap')
+      };
+    });
+
+    const cards = {
+      talk: skippedFirst
+        ? { eyebrow: 'Today · about 3 min', title: 'Your first talk with Orca', body: 'Whenever you are ready. Start with whatever is on your mind, by voice or in writing.', cta: 'Talk with Orca', href: 'FollowUp.dc.html' }
+        : { eyebrow: 'Today · about 3 min', title: 'Orca has a follow-up', body: 'A question from your first talk, picked up where you left off. Voice or text, your choice.', cta: 'Open the follow-up', href: 'FollowUp.dc.html' },
+      talk2: { eyebrow: 'Today · about 3 min', title: 'A short talk with Orca', body: 'How has the week been so far? Orca will listen, by voice or in writing.', cta: 'Talk with Orca', href: 'FollowUp.dc.html' },
+      prep: { eyebrow: 'Today · 2 min', title: "Get ready for tomorrow's session", body: 'What do you want to bring? Say it now and read it in the waiting room.', cta: 'Prepare', href: '#', hasExtra: true, extra: 'Session moved?', extraHref: 'SessionCheck.dc.html' },
+      after: { eyebrow: 'Today · 2 min', title: 'How did your session go?', body: "Capture it while it's fresh. Voice is fine, Orca writes it up.", cta: 'Capture session', href: '#', hasExtra: true, extra: "It didn't happen", extraHref: 'SessionCheck.dc.html' },
+      note: branch === 'no_schedule'
+        ? { eyebrow: 'Today · 1 min', title: 'Note something for therapy', body: 'Say what happened this week that you might want to bring up. Orca turns it into a short summary.', cta: 'Record a voice note', href: '#' }
+        : { eyebrow: 'Today · 1 min', title: 'Leave a voice note', body: 'Say how your week is going. Orca turns it into a short summary of how you feel.', cta: 'Record a voice note', href: '#' },
+      checkin: { eyebrow: 'Today · 30 sec', title: 'Quick check-in', body: 'How strong are the things you picked in setup today? Then see them next to where you started.', cta: 'Start check-in', href: 'CheckIn.dc.html' },
+      week: { eyebrow: 'Today · 2 min read', title: 'Your first week is ready', body: 'What you did, what Orca noticed, and a rhythm that fits you.', cta: 'See my week', href: 'WeekOne.dc.html' }
+    };
+
+    const todayStep = steps.find((s) => s.d === day && s.key !== 'setup' && s.key !== 'meet' && !(week2 && s.key === 'week'));
+    const nextUp = steps.find((s) => s.isUp);
+    const nextText = nextUp ? (nextUp.title + (nextUp.d === day + 1 ? ', tomorrow.' : ', on ' + names[nextUp.d] + '.')) : 'Nothing else this week.';
+    let mode;
+    if (day === 0) mode = 'day0';
+    else if (this.state.notToday && todayStep && !todayStep.isDone) mode = 'waiting';
+    else if (todayStep && !todayStep.isDone) mode = 'action';
+    else if (todayStep) mode = 'done';
+    else mode = 'rest';
+
+    let card = { eyebrow: '', title: '', body: '', cta: '', href: '#', hasExtra: false, extra: '', extraHref: '#', hasQuota: false, quota: '', hasSupport: false };
+    const blank = { eyebrow: 'Today', check: false, title: '', body: '', tomorrow: false, cta: false, ctaLabel: '', href: '#', support: false, undo: false };
+    let light = { ...blank };
+    if (mode === 'action') {
+      card = { ...card, ...cards[todayStep.key] };
+      if (week2 && todayStep.key === 'talk') card = { ...card, title: 'Your Wednesday talk', body: 'A few minutes with Orca about your week. Voice or text.', cta: 'Talk with Orca' };
+      if (week2 && !premium && (todayStep.key === 'prep' || todayStep.key === 'after')) card = { ...card, chip: '1 free this month' };
+      if (quotaOut === 'prep' && todayStep.key === 'prep') {
+        card = { ...card, chip: '', body: "This month's free Before therapy is used. Your agenda is free: add the points you want to bring.", cta: 'Add to my agenda', hasQuota: true, quota: 'Before therapy: 0 of 1 left until Nov 1' };
+      }
+      if (quotaOut === 'after' && todayStep.key === 'after') {
+        card = { ...card, chip: '', body: "This month's free After therapy is used. Save one takeaway to your agenda, then a 30-second check-in if you like.", cta: 'Save a takeaway', hasQuota: true, quota: 'After therapy: 0 of 1 left until Nov 1' };
+      }
+      if (quotaOut === 'talk' && (todayStep.key === 'talk' || todayStep.key === 'talk2')) {
+        card = { ...card, title: 'Talks resume Nov 1', body: "This month's 15 free messages are used. A 30-second check-in is free any day.", cta: 'Quick check-in', href: 'CheckIn.dc.html', hasQuota: true, quota: 'Reflect messages: 0 of 15 left until Nov 1' };
+      }
+      if (calm) {
+        if (todayStep.key === 'prep') card = { ...card, eyebrow: 'Today · only if it helps', title: "Tomorrow's session", body: "If it helps, note what you'd like your therapist to know. A few words are enough." };
+        else if (todayStep.key === 'after') card = { ...card, eyebrow: 'Today · only if it helps', title: "Today's session", body: 'If you feel up to it, keep a few words about it. It can also wait.' };
+        else card = { ...card, eyebrow: 'Today · only if you want', title: "Orca is here when you're ready", body: 'No pressure. If you would like to talk, Orca will listen.', cta: 'Talk with Orca', href: 'FollowUp.dc.html' };
+        card = { ...card, hasSupport: true };
+      }
+    } else if (mode === 'day0') {
+      if (calm) light = { ...blank, title: 'Take the rest of today easy', body: 'You shared a lot today. Orca is here whenever you want to talk.', tomorrow: true, support: true };
+      else light = skippedFirst
+        ? { ...blank, check: true, title: "You're set for today", body: 'Setup is done. Your first talk with Orca can wait until you are ready.', tomorrow: true }
+        : { ...blank, check: true, title: "You're set for today", body: "Setup and your first talk with Orca are done. That's plenty for day one.", tomorrow: true };
+    } else if (mode === 'waiting') {
+      light = { ...blank, title: "Okay, it'll wait", body: "No reminder today. It'll be here when you're ready.", undo: true };
+    } else if (mode === 'done') {
+      light = { ...blank, check: true, title: 'Done for today', body: 'Next: ' + nextText, support: calm };
+    } else {
+      light = { ...blank, title: 'Nothing planned today', body: calm ? 'Take your time. Orca is here if you want to talk.' : "That's on purpose. If something comes up, Orca is here.", cta: true, ctaLabel: 'Talk with Orca', href: 'FollowUp.dc.html', support: calm };
+    }
+
+    let subtitle;
+    if (calm) subtitle = 'Take your time. Nothing here is urgent.';
+    else if (day === 0) subtitle = 'Good to meet you. Here is how your first week will go.';
+    else if (week2) subtitle = A ? 'Your rhythm: ready before each session, a few words after, a check-in on Mondays.' : 'Your rhythm: a talk on Wednesdays, a check-in on Mondays.';
+    else if (day === 7) subtitle = 'One week with Orca today.';
+    else if (A && day === 2) subtitle = 'Your next session is tomorrow at 5:00 pm.';
+    else if (A && day === 3) subtitle = 'Your session is today at 5:00 pm.';
+    else if (A) subtitle = 'Next session: Thursday at 5:00 pm.';
+    else subtitle = 'Day ' + (day + 1) + ' of your first week.';
+
+    let side = { title: '', body: '', cta: '' };
+    if (branch === 'none') side = { title: 'Seeing a therapist?', body: 'Add your sessions and Orca will help you get ready for each one.', cta: 'Add sessions' };
+    if (branch === 'no_schedule') side = { title: 'When is your next session?', body: 'Add the day and time, and Orca will help you get ready the day before.', cta: 'Add session time' };
+
+    const doneChips = steps.filter((s) => s.isDone).map((s) => s.chip);
+    const daysLeft = 4 - day;
+    const on = this.state.remind;
+    const firstAfterSleep = lateNight ? 'After some sleep' : 'Tomorrow';
+    return {
+      greeting: lateNight ? 'Hi, Sam' : (day === 0 ? 'Good evening, Sam' : 'Hi, Sam'),
+      subtitle: subtitle,
+      tomorrowLabel: firstAfterSleep,
+      tomorrowText: calm ? 'Orca will be here, whenever you want to talk.' : (skippedFirst ? 'Orca will be ready for your first talk. About 3 minutes.' : 'Orca has a follow-up from your first talk. About 3 minutes.'),
+      remindLabel: lateNight ? 'Remind me this evening' : 'Remind me tomorrow',
+      isAction: mode === 'action',
+      isLight: mode !== 'action',
+      card: card,
+      showChip: !!card.chip,
+      light: light,
+      showReminder: mode === 'day0' && pushState === 'undecided' && !calm,
+      showDenied: mode === 'day0' && pushState === 'denied' && !calm,
+      showReminderSet: mode === 'day0' && pushState === 'granted' && !calm,
+      remindAria: on ? 'true' : 'false',
+      toggleRemind: () => this.setState({ remind: !this.state.remind }),
+      reminderNote: on ? 'Your phone will ask you to allow notifications. One reminder a day at most, and it never shows what you talked about.' : 'One reminder a day at most. It never shows what you talked about.',
+      switchStyle: 'flex-shrink: 0; width: 52px; height: 32px; border-radius: 16px; border: none; padding: 3px; box-sizing: border-box; display: flex; align-items: center; cursor: pointer; background: ' + (on ? '#26767B' : '#5A7A73') + '; justify-content: ' + (on ? 'flex-end' : 'flex-start'),
+      notTodayTap: () => this.setState({ notToday: true }),
+      undoTap: () => this.setState({ notToday: false }),
+      weekTitle: week2 ? 'This week' : 'Your first week',
+      expanded: expanded,
+      collapsed: !expanded,
+      expandedAria: expanded ? 'true' : 'false',
+      expandLabel: expanded ? 'Show less' : 'See the week',
+      toggleExpanded: () => this.setState({ expanded: !expanded }),
+      doneChips: doneChips,
+      hasNext: !!nextUp && mode !== 'day0' && mode !== 'done' && mode !== 'calm0',
+      nextLead: calm ? "When you're ready:" : 'Next:',
+      nextTitle: nextUp ? nextUp.title : '',
+      nextWhen: nextUp ? (nextUp.d === day + 1 ? 'Tomorrow' : names[nextUp.d]) : '',
+      steps: steps,
+      hideLabel: week2 ? 'Change my rhythm' : 'Hide this plan',
+      showTrial: daysLeft > 0 && !premium,
+      trialLabel: daysLeft === 1 ? 'Premium trial: 1 day left' : 'Premium trial: ' + daysLeft + ' days left',
+      trialBarStyle: 'width: ' + Math.max(0, Math.round((daysLeft / 4) * 100)) + '%; border-radius: 3px; background: #FFC88A',
+      showSideCard: branch !== 'schedule' && !this.state.sideGone && !week2,
+      side: side,
+      dismissSide: () => this.setState({ sideGone: true }),
+      trendsMeta: day >= 4 ? 'Setup and your latest check-in' : 'Your focus areas from setup'
+    };
+  }
+}
+</script>
+</body>
+</html>

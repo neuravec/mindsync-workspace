@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en" class="fmt-{{fmt}}">
+<head>
+<meta charset="utf-8">
+<!-- Store screenshot, type "screen": headline (2 forced lines), subtitle, phone with a real app
+     screen. Filled by scripts/store/render_store.py; the shot is pasted as is (no overlay, no
+     retouching). Frame: frame-ios (App Store) or frame-android (Google Play).
+     The decor slot right after <body> stays empty unless the slide sets "decor" (background layer,
+     painted under everything). -->
+<link rel="stylesheet" href="store.css">
+</head>
+<body class="screen-slide">{{decor}}
+  <h1 class="headline" id="hl">{{headline}}</h1>
+  <div class="subzone" id="subzone"><p class="subtitle {{sub_class}}" id="sub">{{subtitle}}</p></div>
+  <div class="phone frame-{{frame}}" id="phone">
+    <span class="btn l ios action"></span>
+    <span class="btn l ios vol-up"></span>
+    <span class="btn l ios vol-down"></span>
+    <span class="btn r ios power"></span>
+    <span class="btn r android power"></span>
+    <span class="btn r android volume"></span>
+    <div class="screen" style="{{screen_style}}">
+      <div class="band"></div>
+      <div class="viewport"><div class="clip"><img id="shot" src="{{shot_url}}" alt=""></div></div>
+    </div>
+    <div class="island"></div>
+    <div class="punch"></div>
+  </div>
+  <script src="fit.js"></script>
+</body>
+</html>

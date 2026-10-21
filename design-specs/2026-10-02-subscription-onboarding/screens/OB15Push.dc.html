@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Turn on reminders</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; padding: 72px 24px 28px 24px; display: flex; flex-direction: column; gap: 16px">
+  <h1 style="margin: 0; font-size: 28px; line-height: 1.15; font-weight: 800">Want a heads-up before your session?</h1>
+  <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #3D5C60">We only send what helps your therapy. You can turn each one off in Settings.</p>
+
+  <div style="display: flex; flex-direction: column; gap: 10px; padding-top: 6px">
+    <div style="background: #FFFFFF; border: 1px solid #DBF0ED; border-radius: 18px; padding: 12px 14px; display: flex; gap: 12px; box-shadow: 0 6px 18px rgba(17,50,55,0.08)">
+      <img src="/_blob/b94ec25dbe8aed11e51c558f9089fecd" alt="" style="width: 34px; height: 35px; flex-shrink: 0">
+      <div style="display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 12px; color: #5A7376">MindSync · Wednesday, 6:00 PM</span>
+        <span style="font-size: 15px; font-weight: 700">Your session is tomorrow</span>
+        <span style="font-size: 14px; color: #1E4043">Your Before therapy card is ready: 3 things to bring up.</span>
+      </div>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #DBF0ED; border-radius: 18px; padding: 12px 14px; display: flex; gap: 12px; opacity: 0.85">
+      <img src="/_blob/b94ec25dbe8aed11e51c558f9089fecd" alt="" style="width: 34px; height: 35px; flex-shrink: 0">
+      <div style="display: flex; flex-direction: column; gap: 2px">
+        <span style="font-size: 12px; color: #5A7376">MindSync · Thursday, 7:15 PM</span>
+        <span style="font-size: 15px; font-weight: 700">How did it go?</span>
+        <span style="font-size: 14px; color: #1E4043">Two minutes of After therapy while it is fresh.</span>
+      </div>
+    </div>
+  </div>
+
+  <div style="flex-grow: 1"></div>
+  <button type="button" style="height: 56px; border: none; border-radius: 16px; background: #113237; color: #FFFFFF; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 700">Turn on reminders</button>
+  <button type="button" style="height: 44px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 600; color: #3D5C60">Not now</button>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() { return {}; }
+}
+</script>
+</body>
+</html>

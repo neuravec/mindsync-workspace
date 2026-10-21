@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home with usage counters</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; padding: 56px 20px 0 20px; display: flex; flex-direction: column; gap: 16px; overflow: hidden">
+  <div style="display: flex; flex-direction: column; gap: 2px">
+    <span style="font-size: 26px; font-weight: 800">Good morning,</span>
+    <span style="font-size: 15px; color: #3D5C60">What's happening today?</span>
+  </div>
+
+  <div style="border-radius: 18px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 16px; display: flex; flex-direction: column; gap: 12px">
+    <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #26767B">Next therapy session</span>
+    <span style="font-size: 18px; font-weight: 700">[Weekday] at [time]</span>
+    <div style="display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px">
+      <button type="button" style="min-height: 64px; border: none; border-radius: 14px; background: #113237; color: #FFFFFF; font-family: Figtree, sans-serif; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 4px; padding: 8px 12px; cursor: pointer">
+        <span style="font-size: 15px; font-weight: 700">Before therapy</span>
+        <span style="{{c.before.style}}">{{c.before.label}}</span>
+      </button>
+      <button type="button" style="min-height: 64px; border: none; border-radius: 14px; background: #DBF0ED; color: #113237; font-family: Figtree, sans-serif; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 4px; padding: 8px 12px; cursor: pointer">
+        <span style="font-size: 15px; font-weight: 700">After therapy</span>
+        <span style="{{c.after.style}}">{{c.after.label}}</span>
+      </button>
+    </div>
+  </div>
+
+  <div style="display: flex; flex-direction: column; gap: 10px">
+    <span style="font-size: 16px; font-weight: 800">Between sessions</span>
+    <sc-for list="{{rows}}" as="r" hint-placeholder-count="3">
+      <a href="#" style="display: flex; align-items: center; gap: 12px; min-height: 60px; padding: 0 14px; border-radius: 16px; background: #FFFFFF; border: 1px solid #DBF0ED; text-decoration: none; color: #113237">
+        <span style="flex-grow: 1; font-size: 15px; font-weight: 600">{{r.name}}</span>
+        <span style="{{r.style}}">{{r.label}}</span>
+      </a>
+    </sc-for>
+  </div>
+
+  <sc-if value="{{isFree}}" hint-placeholder-val="{{ true }}">
+    <div style="display: flex; align-items: center; gap: 8px; font-size: 13px; color: #3D5C60; padding: 0 4px">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#3D5C60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 12a9 9 0 1 0 3-6.7L3 8M3 3v5h5"/></svg>
+      <span>Free limits reset on [Nov 1]</span>
+    </div>
+  </sc-if>
+
+  <div style="flex-grow: 1"></div>
+  <div style="height: 76px; margin: 0 -20px; border-top: 1px solid #DBF0ED; background: #FFFFFF; display: flex; justify-content: space-around; align-items: center; font-size: 12px; font-weight: 600; color: #3D5C60">
+    <span style="color: #113237">Home</span><span>Therapy</span><span>Reflect</span><span>Stats</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"plan":{"editor":"enum","options":["free","trial"],"default":"free"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const plan = this.props.plan ?? 'free';
+    const chip = (left, total, dark) => {
+      const base = 'display: inline-flex; align-items: center; gap: 4px; font-size: 12px; font-weight: 700; border-radius: 999px; padding: 3px 9px; white-space: nowrap; ';
+      if (plan === 'trial') return { label: 'Unlimited in trial', style: base + (dark ? 'background: rgba(255,200,138,0.2); color: #FFC88A' : 'background: #FFEFDD; color: #8A4B12') };
+      if (left === 0) return { label: '0 left · Premium', style: base + (dark ? 'background: rgba(255,255,255,0.14); color: #DBF0ED' : 'background: #E8EEEE; color: #4F6669') };
+      if (left === 1) return { label: (total === 1 ? '1 free this month' : 'Last one this month'), style: base + (dark ? 'background: rgba(255,200,138,0.2); color: #FFC88A' : 'background: #FFEFDD; color: #8A4B12') };
+      return { label: left + ' of ' + total + ' left', style: base + (dark ? 'background: rgba(187,228,222,0.2); color: #BBE4DE' : 'background: #DBF0ED; color: #1F4C50') };
+    };
+    return {
+      isFree: plan === 'free',
+      c: { before: chip(1, 1, true), after: chip(0, 1, false) },
+      rows: [
+        { name: 'Between Sessions', ...chip(2, 3, false) },
+        { name: 'Talk with [Orca] in Reflect', ...chip(12, 15, false) },
+        { name: 'Record a session', ...chip(1, 2, false) }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

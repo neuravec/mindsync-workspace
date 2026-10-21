@@ -1,0 +1,107 @@
+{
+  "_opis": "KROK 0 partia 5 bloga MindSync (2026-09-28). Druga partia stylem Moniki (docs/blog/brand-mindsync.md par. 2, wzorzec docs/blog/voice-sample-monika.md). 7 tematow do realizacji (drip 2026-09-29..2026-10-05, 1 dziennie, bez dziur) plus 2 rezerwy bez briefow. Klastry wg blog/kalendarz-tresci.md: 5 (Modern life) x2, 3 (Understanding your patterns) x3, 4 (Therapy logistics) x1, 1 (Getting more from therapy) x1; rezerwy: 5 x2. Klaster 7 (For therapists) ZAMROZONY. Dobor tematow: scripts/gsc/blog-tematy.py uruchomiony 2026-09-28 (seo/blog/gsc-frazy/): 0 luk tematycznych, blog 124 wysw. / 0 klik. w roku, wiec popyt z researchu SERP (tytuly konkurencji: Healthline, Cleveland Clinic, Talkspace, Psychology Today, Two Chairs, Lyra, Grow Therapy, Attachment Project, Gottman Institute, HelpGuide). Brak wolumenow i KD (Ahrefs niedostepny w tej sesji). Przy remisie pierwszenstwo tematow z materialem Moniki: play (#17, dosłownie), avoidant jako duet do #24 (anxious attachment). Keywordy EN to DOSLOWNE podciagi z blog/app-features.json (id + name + short + keywords), wiec dopasowanie jest weryfikowalne recznie. Uruchomienie bramki: python scripts/blog-coverage-preflight.py --temat blog/queue/_preflight-partia5.json",
+
+  "_wynik_bramki": "Wynik wyliczony RECZNIE wedlug logiki skryptu (substring znormalizowanego keywordu w blobie funkcji id+name+short+keywords; werdykt OK gdy >= 1 funkcja live). Oczekiwany wynik uruchomienia: 9x OK, 0 RYZYKO, 0 BRAK, exit code 0. 01: check-ins, daily-affirmation, mood-trends, voice-notes, reflect, session-debrief, smart-reminders (reflection trafia tez w 'session reflection' i 'reflections'). 02: voice-notes, reflect, mood-trends, personal-bio, workspace, summaries. 03: session-recording, session-prep, session-debrief, health-check ('transcript' NIE trafia w 'transcribed' z voice-notes). 04: voice-notes, reflect, check-ins, mood-trends, personal-bio, workspace, summaries. 05: check-ins, mood-trends, voice-notes, summaries, daily-affirmation. 06: workspace, timeline, check-ins ('trend history'), voice-notes, reflect, session-prep. 07: summaries, timeline, goals, mood-trends, health-check. 08: reflect, session-debrief, smart-reminders, voice-notes, check-ins, personal-bio. 09: workspace, timeline, voice-notes, personal-bio, mood-trends, goals. Zadne slowo nie trafia w funkcje planned: sprawdzone recznie przeciw blobom streaks (m.in. 'journaling habit', 'character', 'companion', 'consistency') i therapist-sharing (m.in. 'between sessions data', 'therapist', 'share', 'consent'), dlatego w listach nie ma golego 'journaling', 'between sessions', 'habit' ani 'character'. DO POTWIERDZENIA przez lidera jednym uruchomieniem komendy z _opis.",
+
+  "_zasady_partii": "Nie obiecujemy funkcji planned: streaks (brak UI) i therapist-sharing (portal ukryty, MSV3.4 CS-11). Rytm Moniki 'bring it to your next session' dozwolony (czytelnik sam niesie notatki), zero sugestii wysylania czegokolwiek terapeucie z apki. Habit Tracker i ekran wyboru trybu w Reflect nadal poza katalogiem: zadna karta na nich nie wisi (dotyczy zwlaszcza 05 play: zero 'track your play habit'). Dwie lekcje z partii 4 wiazace dla autora: (1) Mood & focus-area trends wykresla WYLACZNIE oceny z check-inow, nie wykrywa ludzi ani wzorcow w notatkach; gdy wpis mowi o notatkach, 'Give it time' opiera sie na Weekly & monthly summaries albo Therapy timeline. (2) Voice notes to transkrypcje bez odtwarzania: nigdy 'listen back' ani 'hear yourself'. 03 i nagrywanie sesji: zawsze 'ask your therapist first' (zgoda), bez wyjatku. YMYL: 01 nie diagnozuje zaburzen lekowych ani hormonalnych, 02 nie robi z overthinkingu objawu choroby, 03 nie odradza terapii stacjonarnej ani online i nie wchodzi w tematy kryzysowe, 04 nie diagnozuje stylu przywiazania czytelnika ani partnera, 06 nie dotyczy relacji przemocowych, 07 nie namawia do konczenia terapii ani do odstawiania lekow.",
+
+  "_granice_kanibalizacji": "01 trzyma 'morning anxiety / waking up with anxiety / anxiety worse in the morning / cortisol awakening response' i NIE przejmuje nocy ani zasypiania od /journal/racing-thoughts-at-night (lustro: tam wieczor, tu pierwsza godzina po przebudzeniu) ani kalendarza tygodnia od /journal/sunday-scaries. 02 trzyma 'how to stop overthinking / why do I overthink everything / rumination' w ujeciu DZIENNYM i NIE powtarza trojpodzialu worry / rumination / racing thoughts ani FAQ 'How do I stop overthinking at night?' z /journal/racing-thoughts-at-night (jedno zdanie i link). 02 i 01 dziela temat petli mysli: 01 = cialo rano, 02 = myslenie w ciagu dnia. 03 trzyma 'online vs in-person therapy / is online therapy as effective / disadvantages of online therapy' i NIE wchodzi w koszty (FAQ 'Is online therapy cheaper than in person?' nalezy do /journal/is-therapy-worth-the-money) ani w wybor terapeuty (/journal/how-to-choose-a-therapist) czy przygotowanie tresci sesji (/journal/how-to-prepare-for-a-therapy-session): tylko format i jego logistyka. 04 trzyma 'avoidant attachment style / signs / can avoidant attachment change / hyper-independence' i NIE powtarza definicji dwoch wymiarow ani badan Fraleya z /journal/anxious-attachment-style (link zamiast powtorzenia; Chopik 2019 wolno przywolac jednym zdaniem, bo mowi o unikaniu). 05 trzyma 'benefits of play for adults / why adults stop playing / how adults play' i NIE wchodzi w ekrany (/journal/digital-burnout-brain-rewiring, /journal/how-to-stop-doomscrolling) ani w burnout (/journal/early-signs-of-burnout). 06 trzyma 'same argument over and over / recurring arguments / perpetual problems / demand-withdraw' i NIE wchodzi w metodyke triggerow (/journal/how-to-identify-emotional-triggers) ani w opis stylow przywiazania (04 i anxious-attachment-style: po jednym zdaniu i linku). 07 trzyma 'when to stop therapy / how to end therapy / ready to stop therapy / taking a break from therapy' w ujeciu KONCA ZAPLANOWANEGO i NIE przejmuje: sygnalow postepu (/journal/how-to-know-if-therapy-is-working), liczby sesji (/journal/how-long-therapy-takes-to-work), odejscia z powodu dopasowania i FAQ 'Do I have to tell my therapist why I am leaving?' (/journal/what-to-do-when-your-therapist-is-not-the-right-fit).",
+
+  "_plan_dripu": "01 morning-anxiety (2026-09-29), 02 how-to-stop-overthinking (2026-09-30), 03 online-vs-in-person-therapy (2026-10-01), 04 avoidant-attachment-style (2026-10-02), 05 play-for-adults (2026-10-03), 06 same-argument-over-and-over (2026-10-04), 07 when-to-stop-therapy (2026-10-05). Kolejnosc pod linkowanie: wszystkie linki wewnatrz partii biegna WSTECZ (02 -> 01, 05 -> 01, 06 -> 04 i 02, 07 -> 03), wiec partia nie tworzy dlugu [LINK-LATER:]. Jesli publikacja ktoregos wpisu sie przesunie, przesuwaj cala reszte partii z zachowaniem kolejnosci; gdyby tylko jeden wpis wypadl z kolejki, link do niego w pozniejszym wpisie zamienia sie na [LINK-LATER: slug | ten sam anchor] wg blog/queue/_format.md.",
+
+  "_odrzucone": "(a) 'restart a check-in habit' (rezerwa partii 3), bo /journal/why-mood-tracking-stops-working trzyma te intencje, a nowy wpis kusilby do obietnic z obszaru streaks; (b) 'high-functioning anxiety', bo SERP traktuje to jak rozpoznanie ('signs you have'), co lamie YMYL; (c) 'what to talk about in therapy', bo FAQ /journal/how-to-prepare-for-a-therapy-session juz trzyma te intencje; (d) 'emotional exhaustion / social battery', bo pokrywa sie z /journal/early-signs-of-burnout (wymiar wyczerpania); (e) 'hyper-independence' jako osobny wpis: framing SERP 'trauma response' jest diagnostyczny, wchodzi do 04 jako fraza poboczna z uczciwym zastrzezeniem; (f) 'fearful avoidant / disorganized attachment': najwiecej materialu klinicznego i trauma w SERP, jedno zdanie w 04; (g) loneliness in adulthood i imposter syndrome zostaja rezerwami (08, 09), bo partia ma juz dwa tematy z klastra 5 i trzy z klastra 3.",
+
+  "01 KLASTER5 [2026-09-29]: morning anxiety (anxious before your feet hit the floor)": [
+    "track anxiety",
+    "rate your day",
+    "morning routine",
+    "grounding",
+    "mood patterns",
+    "voice note",
+    "reflection",
+    "sleep"
+  ],
+
+  "02 KLASTER3 [2026-09-30]: how to stop overthinking (the loop that feels like problem-solving)": [
+    "voice note",
+    "talk it through",
+    "processing emotions",
+    "guided journaling",
+    "journal prompt",
+    "see patterns",
+    "self-awareness",
+    "what to bring up",
+    "weekly summary"
+  ],
+
+  "03 KLASTER4 [2026-10-01]: online vs in-person therapy (the room or the laptop)": [
+    "session recording",
+    "transcript",
+    "prepare for therapy",
+    "before session",
+    "after therapy",
+    "therapy fit",
+    "therapeutic alliance",
+    "remember therapy"
+  ],
+
+  "04 KLASTER3 [2026-10-02]: avoidant attachment style (I'm fine, I'll handle it)": [
+    "voice note",
+    "talk it through",
+    "processing emotions",
+    "track anxiety",
+    "mood trend",
+    "self-awareness",
+    "weekly summary",
+    "realizations"
+  ],
+
+  "05 KLASTER5 [2026-10-03]: benefits of play for adults (who decided adults don't get to play)": [
+    "rate your day",
+    "mood patterns",
+    "see patterns",
+    "voice note",
+    "weekly summary",
+    "focus areas",
+    "daily affirmation"
+  ],
+
+  "06 KLASTER3 [2026-10-04]: the same argument over and over (it's never really about the dishes)": [
+    "threads",
+    "what to bring up",
+    "realizations",
+    "look back",
+    "history",
+    "voice note",
+    "talk it through",
+    "therapy agenda"
+  ],
+
+  "07 KLASTER1 [2026-10-05]: when to stop therapy (ending well is part of the work)": [
+    "therapy progress",
+    "monthly summary",
+    "therapy timeline",
+    "therapy goals",
+    "progress on goals",
+    "is therapy working",
+    "look back",
+    "therapy fit"
+  ],
+
+  "08 KLASTER5 [rezerwa]: loneliness in adulthood, and why it is not about how many people you know": [
+    "reflection",
+    "talk it through",
+    "voice note",
+    "rate your day",
+    "know yourself"
+  ],
+
+  "09 KLASTER5 [rezerwa]: imposter syndrome, and why the evidence never seems to count": [
+    "realizations",
+    "look back",
+    "voice note",
+    "self-awareness",
+    "track progress",
+    "progress on goals"
+  ]
+}

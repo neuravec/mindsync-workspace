@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Home, simplified</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; padding: 56px 20px 0 20px; display: flex; flex-direction: column; gap: 16px; position: relative; overflow: hidden">
+  <div style="display: flex; flex-direction: column; gap: 2px">
+    <span style="font-size: 26px; font-weight: 800">Good morning,</span>
+    <span style="font-size: 15px; color: #3D5C60">What's happening today?</span>
+  </div>
+
+  <sc-if value="{{showTrial}}" hint-placeholder-val="{{ false }}">
+    <a href="#" style="display: flex; align-items: center; gap: 12px; padding: 14px 16px; border-radius: 16px; background: #113237; color: #FFFFFF; text-decoration: none">
+      <span style="flex-shrink: 0; width: 40px; height: 40px; border-radius: 20px; background: rgba(255,200,138,0.18); display: flex; align-items: center; justify-content: center"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFC88A" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M13 3L5 13h6l-1 8 8-10h-6z"/></svg></span>
+      <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 4px">
+        <span style="font-size: 15px; font-weight: 700">Premium trial: {{daysLeft}} days left</span>
+        <span style="height: 6px; border-radius: 3px; background: rgba(255,255,255,0.15); display: flex"><span style="{{barStyle}}"></span></span>
+      </span>
+      <span style="font-size: 14px; font-weight: 700; color: #FFC88A">See plans</span>
+    </a>
+  </sc-if>
+
+  <div style="border-radius: 18px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 16px; display: flex; flex-direction: column; gap: 10px">
+    <span style="font-size: 13px; font-weight: 700; letter-spacing: 0.8px; text-transform: uppercase; color: #26767B">Next therapy session</span>
+    <span style="font-size: 18px; font-weight: 700">[Weekday] at [time]</span>
+    <div style="display: flex; gap: 8px">
+      <span style="height: 40px; padding: 0 16px; border-radius: 12px; background: #113237; color: #FFFFFF; display: flex; align-items: center; font-size: 14px; font-weight: 700">Prepare</span>
+      <span style="height: 40px; padding: 0 16px; border-radius: 12px; background: #DBF0ED; display: flex; align-items: center; font-size: 14px; font-weight: 700">After Therapy</span>
+    </div>
+  </div>
+
+  <div style="border-radius: 18px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+    <span style="font-size: 16px; font-weight: 700">Start your journey</span>
+    <span style="font-size: 14px; color: #3D5C60">Capture a session · Add a check-in · Start reflecting</span>
+  </div>
+  <div style="border-radius: 18px; background: #FFFFFF; border: 1px solid #DBF0ED; padding: 16px; height: 120px; box-sizing: border-box; display: flex; flex-direction: column; gap: 8px">
+    <span style="font-size: 16px; font-weight: 700">Mood trend</span>
+    <span style="flex-grow: 1; border-radius: 10px; background: #F2FBFA"></span>
+  </div>
+  <div style="flex-grow: 1"></div>
+  <div style="height: 76px; margin: 0 -20px; border-top: 1px solid #DBF0ED; background: #FFFFFF; display: flex; justify-content: space-around; align-items: center; font-size: 12px; font-weight: 600; color: #3D5C60">
+    <span style="color: #113237">Home</span><span>Therapy</span><span>Reflect</span><span>Stats</span>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"showTrial":{"editor":"boolean","default":false},"daysLeft":{"editor":"int","default":4,"min":0,"max":4},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const d = this.props.daysLeft ?? 4;
+    return {
+      showTrial: this.props.showTrial ?? false,
+      daysLeft: d,
+      barStyle: 'width: ' + Math.round((d / 4) * 100) + '%; border-radius: 3px; background: #FFC88A'
+    };
+  }
+}
+</script>
+</body>
+</html>

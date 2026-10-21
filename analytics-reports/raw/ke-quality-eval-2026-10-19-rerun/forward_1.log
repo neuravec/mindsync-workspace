@@ -1,0 +1,181 @@
+2026-10-19 12:38:00,363 WARNING app.services.posthog_service: PostHog enabled but POSTHOG_API_KEY is empty — skipping init.
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'orm_mode' has been renamed to 'from_attributes'
+  warnings.warn(message, UserWarning)
+C:\Users\mikol\AppData\Roaming\Python\Python314\site-packages\pydantic\_internal\_config.py:383: UserWarning: Valid config keys have changed in V2:
+* 'schema_extra' has been renamed to 'json_schema_extra'
+  warnings.warn(message, UserWarning)
+2026-10-19 12:38:05,934 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:06,986 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:08,560 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:12,258 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:13,832 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:15,530 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:17,087 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:18,296 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:19,540 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:21,180 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:22,596 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:23,640 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:24,871 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:26,654 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:27,887 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:28,837 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:29,968 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:31,690 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:33,117 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+2026-10-19 12:38:34,785 INFO httpx: HTTP Request: POST https://api.openai.com/v1/chat/completions "HTTP/1.1 200 OK"
+Model: gpt-5.4-mini (real calls). Prompts ke-extract-v2|ke-compose-v2
+====================================================================================================
+F01  forward-only, crisis note 3 days before the first open  (English, art9 False, forward, first open d-17)
+  expect: families ['worry'], crisis entries 1, note: Crisis at d-20, window until d-6: entries d-15 and d-9 give no moments, help row on at d-16, d-10 and d-7, no ideas; entries from d-5 on are read; d-40 is never read.
+  ENTRY d-40 note: They asked their manager for a day off and got it. Felt lighter afterwards.
+  ENTRY d-20 note  [CRISIS]: Everything feels pointless. They wrote that they want to die and do not see a way forward.
+  ENTRY d-15 note: They told a friend they were having a hard week and went for a walk together.
+  ENTRY d-9 reflect_talk: Talked with Orca about worry before a work review. They wrote down three questions to ask.
+  ENTRY d-5 note: Worried about the review again. They wrote the three questions on a card and felt steadier.
+      -> [worry/noticed/noticing] c98 hs=False s=insight :: You noticed you were worried about the review again.
+      -> [worry/used_method/steadying] c96 hs=False s=commitment :: You wrote the three questions on a card, and it helped you feel steadier.
+  ENTRY d-3 note: In the review they asked their manager one of the questions. Their voice shook, but they asked it.
+      -> [fear/done/values_action] c98 hs=True s=courage :: You asked your manager one of the questions, even though your voice shook.
+  ENTRY d-1 note: They noticed the worry about work starts on Sunday evening. They wrote a short list and went to bed on time.
+      -> [worry/noticed/noticing] c98 hs=False s=insight :: You noticed the worry about work started on Sunday evening.
+      -> [worry/used_method/values_action] c96 hs=False s=commitment :: You wrote a short list and went to bed on time.
+  -- 2026-10-03: level 1 (0 steps, the_newcomer), sources {'notes': 0, 'talks': 0, 'sessions': 0}, support_row True, jobs [('ok', 'not_due')]
+     strengths {'courage': 0, 'insight': 0, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+  -- 2026-10-09: level 1 (0 steps, the_newcomer), sources {'notes': 0, 'talks': 0, 'sessions': 0}, support_row True, jobs [('ok', 'not_due')]
+     strengths {'courage': 0, 'insight': 0, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 0, 'talks': 0, 'sessions': 0}, support_row True, jobs [('ok', 'not_due')]
+     strengths {'courage': 0, 'insight': 0, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 0}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 2, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     forming: [{'emotion_family': 'worry', 'entries': 2}]
+     tool: Short list [self] used 1
+     tool: Three questions card [self] used 1
+  TOOL t1 Three questions card [self]: You write the three questions on a card and use it when worry shows up. | note: None
+  TOOL t2 Short list [self]: You write a short list to help settle work worry and then go to bed on time. | note: None
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 3}'}
+  usage: {'calls': 4, 'prompt': 10688, 'cached': 2688, 'completion': 962, 'usd': 0.01053, 'models': ['gpt-5.4-mini']}
+  validator drops: {'compose.malformed_item': 0, 'compose.path_not_eligible': 1, 'compose.skill_unknown_path': 2, 'compose.hard_unknown_path': 2, 'compose.bad_pin': 1, 'compose.idea_unknown_path': 2}; name guard caught: []
+  extractor calls with forming families: 0/3
+====================================================================================================
+F02  forward-only, crisis note 10 days before the first open  (English, art9 False, forward, first open d-12)
+  expect: families ['loneliness', 'closeness'], crisis entries 1, note: Crisis at d-22, window until d-8: entries d-11 and d-9 give no moments, help row on at d-11 and d-9, off from d-7; d-35 is never read.
+  ENTRY d-35 note: They felt lonely after the move and called their brother for an hour.
+  ENTRY d-22 note  [CRISIS]: They wrote that they keep thinking about ending their life and that nobody would notice.
+  ENTRY d-11 note: They texted a colleague to have lunch together. It felt awkward but okay.
+  ENTRY d-9 reflect_talk: Told Orca they feel invisible at work. They noticed they wait for others to start a conversation.
+  ENTRY d-6 note: They joined the colleagues for lunch again and asked one of them about her weekend.
+      -> [closeness/done/connecting] c92 hs=False s=commitment,courage :: You joined your colleagues for lunch again and asked one of them about her weekend.
+  ENTRY d-4 note: They went to a board game evening alone and talked to two people. Scared at first, then glad.
+      -> [fear/done/values_action] c95 hs=False s=courage,commitment :: You went to a board game evening alone and talked to two people.
+      -> [fear/noticed/noticing] c92 hs=False s=insight :: You noticed you felt scared at first, then glad.
+  ENTRY d-2 note: They noticed they feel less alone when they make the first move. They invited a neighbour for coffee.
+      -> [loneliness/noticed/noticing] c98 hs=False s=insight :: You noticed you feel less alone when you make the first move.
+      -> [loneliness/done/connecting] c99 hs=False s=courage,commitment :: You invited a neighbour for coffee.
+  -- 2026-10-08: level 1 (0 steps, the_newcomer), sources {'notes': 0, 'talks': 0, 'sessions': 0}, support_row True, jobs [('ok', 'not_due')]
+     strengths {'courage': 0, 'insight': 0, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+  -- 2026-10-10: level 1 (0 steps, the_newcomer), sources {'notes': 0, 'talks': 0, 'sessions': 0}, support_row True, jobs [('ok', 'not_due')]
+     strengths {'courage': 0, 'insight': 0, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+  -- 2026-10-12: level 1 (0 steps, the_newcomer), sources {'notes': 0, 'talks': 0, 'sessions': 0}, support_row False, jobs [('ok', 'not_due')]
+     strengths {'courage': 0, 'insight': 0, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+  -- 2026-10-19: level 1 (0 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 0}, support_row False, jobs [('ok', 'nothing')]
+     strengths {'courage': 3, 'insight': 2, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 3}
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 3}'}
+  usage: {'calls': 3, 'prompt': 6853, 'cached': 0, 'completion': 402, 'usd': 0.00695, 'models': ['gpt-5.4-mini']}
+  extractor calls with forming families: 0/3
+====================================================================================================
+F03  forward-only control, no crisis  (English, art9 True, forward, first open d-17)
+  expect: families ['anger'], crisis entries 0, note: Builds normally from the entries after the open (d-15 on); d-30 and d-20 are never read; help row off throughout.
+  ENTRY d-30 note: They snapped at their partner after a long day and apologised the next morning.
+  ENTRY d-20 note: They felt angry when a colleague took credit for their work and said nothing.
+  ENTRY d-15 note: Angry after a meeting. They took a short walk before replying to the email.
+      -> [anger/used_method/steadying] c96 hs=False s=courage,commitment :: You took a short walk before replying to the email.
+  ENTRY d-12 after_therapy: Session about anger at work. They noticed anger rises when they feel overlooked. Their therapist suggested naming the feeling before replying.
+      -> [anger/noticed/noticing] c98 hs=False s=insight :: You noticed your anger rose when you felt overlooked.
+      -> [anger/from_therapy/using_therapy] c99 hs=False s=insight :: Your therapist suggested naming the feeling before replying.
+  ENTRY d-9 note: A colleague interrupted them again. They said calmly that they would like to finish their point.
+      -> [anger/still_hard/None] c97 hs=False s= :: A colleague interrupting you again was still hard for you.
+      -> [anger/done/connecting] c99 hs=True s=courage,honesty :: You said calmly that you would like to finish your point.
+  ENTRY d-5 note: Irritated in traffic. They breathed out slowly and let it pass.
+      -> [anger/used_method/steadying] c98 hs=True s=resilience :: You breathed out slowly and let it pass in traffic.
+  ENTRY d-2 note: They told their partner they felt overlooked at work instead of snapping. The evening went better.
+      -> [anger/done/connecting] c98 hs=True s=courage,honesty :: You told your partner you felt overlooked at work instead of snapping.
+      -> [closeness/noticed/noticing] c80 hs=False s= :: You noticed the evening went better.
+  -- 2026-10-03: level 1 (0 steps, the_newcomer), sources {'notes': 0, 'talks': 0, 'sessions': 0}, support_row False, jobs [('ok', 'not_due')]
+     strengths {'courage': 0, 'insight': 0, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+  -- 2026-10-09: level 1 (1 steps, the_newcomer), sources {'notes': 1, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 2, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 1}
+     PATH [anger] Working with my anger  (about what sets off your anger and how you reply)
+        skill: Pausing before replying [steadying/pause] practicing x1
+        skill: Naming the feeling first [noticing/tag] discovered x2
+  -- 2026-10-19: level 1 (3 steps, the_newcomer), sources {'notes': 4, 'talks': 0, 'sessions': 1}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 3, 'insight': 2, 'honesty': 2, 'resilience': 1, 'kindness': 0, 'commitment': 1}
+     PATH [anger] Working with my anger  (about what sets off your anger and how you reply)
+        skill: Saying what you need [connecting/chat] practicing x2
+        skill: Slowing down the wave [steadying/wind] practicing x1
+        skill: Pausing before replying [steadying/pause] practicing x1
+        skill: Naming the feeling first [noticing/tag] discovered x2
+        still hard: A colleague interrupting you again (1)
+  WORDS s1 Pausing before replying: You take a short walk before replying, so you have a little space before you answer. That gives you a moment to settle before you write back.
+  WORDS s2 Naming the feeling first: You notice when your anger rises, especially when you feel overlooked. You try naming the feeling before you reply.
+  WORDS s3 Saying what you need: You said calmly that you would like to finish your point. You also told your partner you felt overlooked at work instead of snapping.
+  WORDS s4 Slowing down the wave: You breathed out slowly and let it pass in traffic. That gives you a little space before you reply.
+  HARD h1 A colleague interrupting you again | In conversations at work when you are trying to finish your point.
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 4, "sessions": 1}'}
+  usage: {'calls': 7, 'prompt': 19473, 'cached': 5376, 'completion': 1059, 'usd': 0.01574, 'models': ['gpt-5.4-mini']}
+  validator drops: {'compose.malformed_item': 0, 'compose.bad_pin': 2}; name guard caught: []
+  extractor calls with forming families: 0/5
+====================================================================================================
+U01  forward-only, crisis 5 days before the first open, then a premium upgrade  (English, art9 False, forward, first open d-12, upgrade d-8)
+  expect: families ['worry'], crisis entries 1, note: Crisis at d-17, window until d-3: d-17, d-10 and d-6 give no moments; help row on at d-11, d-9, d-7 and d-4, off at d-0; before the upgrade nothing older than the open is read, after it d-60, d-45 and d-30 are.
+  ENTRY d-60 note: They wrote a worry list before bed and fell asleep sooner.
+      -> [worry/used_method/steadying] c98 hs=False s=commitment :: You wrote a worry list before bed, and you fell asleep sooner.
+  ENTRY d-45 note: Worried about money. They talked to their partner about the budget and felt calmer.
+      -> [worry/done/connecting] c98 hs=False s=courage,commitment :: You talked to your partner about the budget, and you felt calmer.
+  ENTRY d-30 note: They noticed the money worry starts after checking the bank app at night.
+      -> [worry/noticed/noticing] c98 hs=False s=insight :: You noticed the money worry started after checking the bank app at night.
+  ENTRY d-17 note  [CRISIS]: They wrote that they do not want to be alive anymore and feel like a burden to everyone.
+  ENTRY d-10 note: They told their sister about the hard weeks and let her help with the groceries.
+  ENTRY d-6 note: Worried about the rent again. They wrote the worry list and closed the notebook.
+  ENTRY d-1 note: They checked the bank app in the morning instead of at night and noticed the worry stayed smaller.
+      -> [worry/used_method/values_action] c97 hs=False s=insight,commitment :: You checked the bank app in the morning instead of at night, and the worry stayed smaller.
+      -> [worry/noticed/noticing] c94 hs=False s=insight :: You noticed the worry stayed smaller in the morning.
+  -- 2026-10-08: level 1 (0 steps, the_newcomer), sources {'notes': 0, 'talks': 0, 'sessions': 0}, support_row True, jobs [('ok', 'not_due')]
+     strengths {'courage': 0, 'insight': 0, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+  -- 2026-10-10: level 1 (0 steps, the_newcomer), sources {'notes': 0, 'talks': 0, 'sessions': 0}, support_row True, jobs [('ok', 'not_due')]
+     strengths {'courage': 0, 'insight': 0, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 0}
+  -- 2026-10-12: level 1 (2 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 0}, support_row True, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 1, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     PATH [worry] Making room for worry  (about money, bedtime, and talking it through)
+        skill: Writing down the worry [noticing/tag] practicing x2
+        skill: Talking about the budget [connecting/chat] practicing x1
+  -- 2026-10-15: level 1 (2 steps, the_newcomer), sources {'notes': 3, 'talks': 0, 'sessions': 0}, support_row True, jobs [('ok', 'not_due')]
+     strengths {'courage': 1, 'insight': 1, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 2}
+     PATH [worry] Making room for worry  (about money, bedtime, and talking it through)
+        skill: Writing down the worry [noticing/tag] practicing x2
+        skill: Talking about the budget [connecting/chat] practicing x1
+  -- 2026-10-19: level 1 (3 steps, the_newcomer), sources {'notes': 4, 'talks': 0, 'sessions': 0}, support_row False, jobs [('ok', 'composed')]
+     strengths {'courage': 1, 'insight': 3, 'honesty': 0, 'resilience': 0, 'kindness': 0, 'commitment': 3}
+     PATH [worry] Making room for worry  (about money, bedtime, and talking it through)
+        skill: Checking the bank app in the morning [steadying/anchor] practicing x2
+        skill: Writing down the worry [noticing/tag] practicing x2
+        skill: Talking about the budget [connecting/chat] practicing x1
+     tool: Writing down the worry [self] used 1
+  WORDS s5 Writing down the worry: You write a worry list before bed, and it helps you settle down enough to fall asleep sooner. You also noticed the money worry starts after checking the bank app at night.
+  WORDS s6 Talking about the budget: You talked to your partner about the budget, and you felt calmer after saying it out loud.
+  WORDS s7 Checking the bank app in the morning: You check the bank app in the morning instead of at night, and the worry stays smaller.
+  TOOL t3 Writing down the worry [self]: You write out the worry before bed so it is not stuck in your head. | note: None
+  stability: {'renamed_paths': [], 'lost_paths': [], 'new_paths': []}
+  state: {'activated': True, 'latest_entry_crisis': False, 'initial_sync_done': True, 'source_counts': '{"notes": 4}'}
+  usage: {'calls': 6, 'prompt': 16908, 'cached': 5376, 'completion': 833, 'usd': 0.0128, 'models': ['gpt-5.4-mini']}
+  validator drops: {'compose.malformed_item': 0, 'compose.bad_pin': 1}; name guard caught: []
+  extractor calls with forming families: 0/4
+DB: C:\Users\mikol\AppData\Local\Temp\ke_quality_eval_1792406277124.db
+====================================================================================================
+4 stories, 23 moments, 4 stories with moments (need 3), 2/4 expected maps with a path, coverage 2/4, 0 story problems.
+Tokens: {'calls': 20, 'prompt': 53922, 'cached': 13440, 'completion': 3256, 'usd': 0.046}, USD per story 0.0115, models ['gpt-5.4-mini']
+RESULT: PASS

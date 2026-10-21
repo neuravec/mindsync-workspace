@@ -1,0 +1,1985 @@
+[
+  {
+    "id": "S07",
+    "theme": "shame about a mistake at work",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "shame"
+      ],
+      "crisis_entries": 0
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 4,
+            "moments": 6,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 1,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 1,
+            "insight": 4,
+            "honesty": 4,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 0
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "shame",
+              "name": "Working with my shame",
+              "focus": "about mistakes, self-talk, and speaking up after errors",
+              "skills": [
+                "Separating mistake from self [rethinking/thought] discovered x1",
+                "Noticing shame thoughts [noticing/tag] discovered x2"
+              ],
+              "hard": [
+                "Sending a report with a big error (1)"
+              ]
+            }
+          ],
+          "forming": [
+            {
+              "emotion_family": "worry",
+              "entries": 2
+            }
+          ],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 0,
+            "moments": 0,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 1,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 1,
+            "insight": 4,
+            "honesty": 4,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 0
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "shame",
+              "name": "Working with my shame",
+              "focus": "about mistakes, self-talk, and speaking up after errors",
+              "skills": [
+                "Separating mistake from self [rethinking/thought] discovered x1",
+                "Noticing shame thoughts [noticing/tag] discovered x2"
+              ],
+              "hard": [
+                "Sending a report with a big error (1)"
+              ]
+            }
+          ],
+          "forming": [
+            {
+              "emotion_family": "worry",
+              "entries": 2
+            }
+          ],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "usage": {
+      "ke_compose": {
+        "calls": 1,
+        "tokens": 3785
+      },
+      "ke_extract": {
+        "calls": 3,
+        "tokens": 4754
+      }
+    },
+    "moments": [
+      {
+        "days_ago": 40,
+        "source_kind": "note",
+        "family": "shame",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You noticed you felt like a fraud after sending the report.",
+        "attached": {
+          "path": 1,
+          "skill": 1,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 40,
+        "source_kind": "note",
+        "family": "shame",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 94,
+        "hard_situation": false,
+        "text": "Sending a report with a big error to the whole team was still hard.",
+        "attached": {
+          "path": 1,
+          "skill": null,
+          "tool": null,
+          "hard": 1
+        }
+      },
+      {
+        "days_ago": 33,
+        "source_kind": "reflect_talk",
+        "family": "shame",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You noticed your inner voice said you were not good enough.",
+        "attached": {
+          "path": 1,
+          "skill": 1,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 33,
+        "source_kind": "reflect_talk",
+        "family": "worry",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 92,
+        "hard_situation": false,
+        "text": "You noticed you replayed the mistake again and again.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 27,
+        "source_kind": "after_therapy",
+        "family": "shame",
+        "kind": "from_therapy",
+        "anchor": "using_therapy",
+        "strengths": "insight",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You took away that a mistake is something you did, not who you are.",
+        "attached": {
+          "path": 1,
+          "skill": 2,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 15,
+        "source_kind": "note",
+        "family": "worry",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,honesty",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You told your manager about another small error right away instead of hiding it.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [
+      {
+        "id": 1,
+        "path_id": 1,
+        "anchor": "noticing",
+        "icon": "tag",
+        "name": "Noticing shame thoughts",
+        "in_your_words": "You notice when shame shows up, like feeling like a fraud or hearing that you are not good enough. You can name the inner voice and see it as a thought, not a fact."
+      },
+      {
+        "id": 2,
+        "path_id": 1,
+        "anchor": "rethinking",
+        "icon": "thought",
+        "name": "Separating mistake from self",
+        "in_your_words": "You remind yourself that a mistake is something you did, not who you are. That can help you step back from the story shame tells after an error."
+      }
+    ],
+    "paths_full": [
+      {
+        "id": 1,
+        "family": "shame",
+        "name": "Working with my shame",
+        "focus": "about mistakes, self-talk, and speaking up after errors",
+        "merged_into": null
+      }
+    ],
+    "tools_full": [],
+    "hard_full": [
+      {
+        "id": 1,
+        "label": "Sending a report with a big error",
+        "context": "When it goes to the whole team."
+      }
+    ],
+    "ideas_full": [],
+    "state": {
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 2, \"sessions\": 1, \"talks\": 1}"
+    },
+    "usage_split": {
+      "ke_compose|gpt-5.4-mini": {
+        "calls": 1,
+        "prompt": 3442,
+        "completion": 343,
+        "cached": 2688
+      },
+      "ke_extract|gpt-5.4-mini": {
+        "calls": 3,
+        "prompt": 4491,
+        "completion": 263,
+        "cached": 3840
+      }
+    },
+    "art9_granted": true
+  },
+  {
+    "id": "S08",
+    "theme": "food and body talk that must not appear in names",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "shame"
+      ],
+      "crisis_entries": 0,
+      "note": "No path, skill, tool or idea may mention food, eating or weight."
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 4,
+            "moments": 4,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 3,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 1,
+            "insight": 2,
+            "honesty": 1,
+            "resilience": 1,
+            "kindness": 2,
+            "commitment": 0
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "shame",
+              "name": "Working with my shame",
+              "focus": "about the critical voice and what helps when it gets loud",
+              "skills": [
+                "Answering kindly [self_kindness/heart] practicing x1",
+                "Noticing the critical voice [noticing/eye] discovered x2"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 0,
+            "moments": 0,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 3,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 1,
+            "insight": 2,
+            "honesty": 1,
+            "resilience": 1,
+            "kindness": 2,
+            "commitment": 0
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "shame",
+              "name": "Working with my shame",
+              "focus": "about the critical voice and what helps when it gets loud",
+              "skills": [
+                "Answering kindly [self_kindness/heart] practicing x1",
+                "Noticing the critical voice [noticing/eye] discovered x2"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "usage": {
+      "ke_compose": {
+        "calls": 1,
+        "tokens": 3588
+      },
+      "ke_extract": {
+        "calls": 3,
+        "tokens": 4710
+      }
+    },
+    "moments": [
+      {
+        "days_ago": 50,
+        "source_kind": "note",
+        "family": "shame",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You noticed the thoughts got loud when you were tired.",
+        "attached": {
+          "path": 2,
+          "skill": 3,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 43,
+        "source_kind": "after_therapy",
+        "family": "shame",
+        "kind": "from_therapy",
+        "anchor": "using_therapy",
+        "strengths": "insight,kindness",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You took from therapy to notice when the critical voice starts and answer it kindly.",
+        "attached": {
+          "path": 2,
+          "skill": 3,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 30,
+        "source_kind": "note",
+        "family": "shame",
+        "kind": "used_method",
+        "anchor": "self_kindness",
+        "strengths": "kindness,resilience",
+        "confidence": 97,
+        "hard_situation": true,
+        "text": "You answered the critical voice with something kind and stayed for the whole class.",
+        "attached": {
+          "path": 2,
+          "skill": 4,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 14,
+        "source_kind": "note",
+        "family": "sadness",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,honesty",
+        "confidence": 96,
+        "hard_situation": true,
+        "text": "You told your partner how it felt instead of keeping it in after a relative's comment hurt.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [
+      {
+        "id": 3,
+        "path_id": 2,
+        "anchor": "noticing",
+        "icon": "eye",
+        "name": "Noticing the critical voice",
+        "in_your_words": "You notice when the critical voice starts, especially when you are tired. You can catch the moment it gets loud instead of getting pulled in right away."
+      },
+      {
+        "id": 4,
+        "path_id": 2,
+        "anchor": "self_kindness",
+        "icon": "heart",
+        "name": "Answering kindly",
+        "in_your_words": "You answer the critical voice with something kind. You used that to stay with the class, even when the thoughts were loud."
+      }
+    ],
+    "paths_full": [
+      {
+        "id": 2,
+        "family": "shame",
+        "name": "Working with my shame",
+        "focus": "about the critical voice and what helps when it gets loud",
+        "merged_into": null
+      }
+    ],
+    "tools_full": [],
+    "hard_full": [],
+    "ideas_full": [],
+    "state": {
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 3, \"sessions\": 1}"
+    },
+    "usage_split": {
+      "ke_compose|gpt-5.4-mini": {
+        "calls": 1,
+        "prompt": 3378,
+        "completion": 210,
+        "cached": 2688
+      },
+      "ke_extract|gpt-5.4-mini": {
+        "calls": 3,
+        "prompt": 4488,
+        "completion": 222,
+        "cached": 3840
+      }
+    },
+    "art9_granted": true
+  },
+  {
+    "id": "S09",
+    "theme": "medication talk that must stay out",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "calm",
+        "worry"
+      ],
+      "crisis_entries": 0,
+      "note": "Nothing about medication or doses in any generated text or idea."
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 4,
+            "moments": 5,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 3,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 0,
+            "insight": 3,
+            "honesty": 0,
+            "resilience": 1,
+            "kindness": 0,
+            "commitment": 2
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "calm",
+              "name": "Making room for calm",
+              "focus": "about your evening routine and feeling steadier",
+              "skills": [
+                "Keeping your evening routine [steadying/anchor] practicing x4"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [],
+          "tools": [
+            "Evening routine [self] used 1"
+          ],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 0,
+            "moments": 0,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 3,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 0,
+            "insight": 3,
+            "honesty": 0,
+            "resilience": 1,
+            "kindness": 0,
+            "commitment": 2
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "calm",
+              "name": "Making room for calm",
+              "focus": "about your evening routine and feeling steadier",
+              "skills": [
+                "Keeping your evening routine [steadying/anchor] practicing x4"
+              ],
+              "hard": []
+            }
+          ],
+          "forming": [],
+          "tools": [
+            "Evening routine [self] used 1"
+          ],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "usage": {
+      "ke_compose": {
+        "calls": 1,
+        "tokens": 3630
+      },
+      "ke_extract": {
+        "calls": 3,
+        "tokens": 4722
+      }
+    },
+    "moments": [
+      {
+        "days_ago": 45,
+        "source_kind": "after_therapy",
+        "family": "calm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You noticed you felt calmer when you kept a routine.",
+        "attached": {
+          "path": 3,
+          "skill": 5,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 35,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "used_method",
+        "anchor": "steadying",
+        "strengths": "commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You kept your evening routine, tea, reading, no phone, and fell asleep calmer.",
+        "attached": {
+          "path": 3,
+          "skill": 5,
+          "tool": 1,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 21,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You noticed you felt wired after missing your routine on Friday.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 21,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "resilience,commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You came back to your routine on Saturday.",
+        "attached": {
+          "path": 3,
+          "skill": 5,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 7,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You noticed the routine held most nights now, and you felt steadier.",
+        "attached": {
+          "path": 3,
+          "skill": 5,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [
+      {
+        "id": 5,
+        "path_id": 3,
+        "anchor": "steadying",
+        "icon": "anchor",
+        "name": "Keeping your evening routine",
+        "in_your_words": "You keep your evening routine, tea, reading, and no phone, and it helps you settle before sleep. When you miss it, you notice you feel wired, and you can come back to it the next day."
+      }
+    ],
+    "paths_full": [
+      {
+        "id": 3,
+        "family": "calm",
+        "name": "Making room for calm",
+        "focus": "about your evening routine and feeling steadier",
+        "merged_into": null
+      }
+    ],
+    "tools_full": [
+      {
+        "id": 1,
+        "name": "Evening routine",
+        "what": "You make time for tea, reading, and no phone in the evening to help you feel calmer and sleep more easily.",
+        "origin": "self",
+        "origin_note": "You found it helps when you keep the same routine at night."
+      }
+    ],
+    "hard_full": [],
+    "ideas_full": [],
+    "state": {
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 3, \"sessions\": 1}"
+    },
+    "usage_split": {
+      "ke_compose|gpt-5.4-mini": {
+        "calls": 1,
+        "prompt": 3403,
+        "completion": 227,
+        "cached": 2688
+      },
+      "ke_extract|gpt-5.4-mini": {
+        "calls": 3,
+        "prompt": 4465,
+        "completion": 257,
+        "cached": 3840
+      }
+    },
+    "art9_granted": true
+  },
+  {
+    "id": "S10",
+    "theme": "long backfill, many notes on overwhelm",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "overwhelm",
+        "calm",
+        "pride"
+      ],
+      "crisis_entries": 0,
+      "note": "More than 15 entries: needs two jobs before the first read is done."
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "none",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 15,
+            "moments": 19,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": false,
+            "stopped": null
+          },
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 4,
+            "moments": 4,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 2,
+          "steps": 8,
+          "class": "the_brave_voice",
+          "sources": {
+            "notes": 19,
+            "talks": 0,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 8,
+            "insight": 5,
+            "honesty": 2,
+            "resilience": 5,
+            "kindness": 1,
+            "commitment": 8
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "calm",
+              "name": "Making room for calm",
+              "focus": "about resting, choosing less, and feeling lighter",
+              "skills": [
+                "Picking one thing [values_action/stairs] growing x3",
+                "Enjoying a small pause [values_action/sun] practicing x1",
+                "Leaving some undone [self_kindness/moon] practicing x1",
+                "Noticing when you feel lighter [noticing/eye] discovered x2"
+              ],
+              "hard": []
+            },
+            {
+              "family": "overwhelm",
+              "name": "Working with overwhelm",
+              "focus": "about work, home, and too many things at once",
+              "skills": [
+                "Asking for help [connecting/lifebuoy] growing x3",
+                "Picking one thing [values_action/stairs] practicing x1",
+                "Taking a short walk [steadying/wind] practicing x1",
+                "Noticing perfection pressure [noticing/eye] discovered x1"
+              ],
+              "hard": [
+                "Too many things at once (1)"
+              ]
+            }
+          ],
+          "forming": [],
+          "tools": [
+            "Writing a list and picking one thing [self] used 2",
+            "Five minute walk [self] used 3"
+          ],
+          "ideas": [
+            "[consolidate/agenda] If it fits, bring the five minute walk to the next session. | why: You used a short walk before emails and a hard meeting, and it seemed to help.",
+            "[transfer/todo] Maybe try leaving one small thing undone and rest instead. | why: You left the laundry undone on purpose and rested instead."
+          ],
+          "pending_stages": [],
+          "idea_count": 2
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 1,
+            "moments": 1,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 2,
+          "steps": 8,
+          "class": "the_brave_voice",
+          "sources": {
+            "notes": 20,
+            "talks": 0,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 8,
+            "insight": 6,
+            "honesty": 2,
+            "resilience": 5,
+            "kindness": 1,
+            "commitment": 8
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "calm",
+              "name": "Making room for calm",
+              "focus": "about resting, choosing less, and feeling lighter",
+              "skills": [
+                "Picking one thing [values_action/stairs] growing x3",
+                "Enjoying a small pause [values_action/sun] practicing x1",
+                "Leaving some undone [self_kindness/moon] practicing x1",
+                "Noticing when you feel steadier [noticing/eye] discovered x1",
+                "Noticing when you feel lighter [noticing/eye] discovered x2"
+              ],
+              "hard": []
+            },
+            {
+              "family": "overwhelm",
+              "name": "Working with overwhelm",
+              "focus": "about work, home, and too many things at once",
+              "skills": [
+                "Asking for help [connecting/lifebuoy] growing x3",
+                "Picking one thing [values_action/stairs] practicing x1",
+                "Taking a short walk [steadying/wind] practicing x1",
+                "Noticing perfection pressure [noticing/eye] discovered x1",
+                "Noticing the exhausted feeling [noticing/thermometer] discovered x1"
+              ],
+              "hard": [
+                "Too many things at once (1)"
+              ]
+            }
+          ],
+          "forming": [],
+          "tools": [
+            "Writing a list and picking one thing [self] used 2",
+            "Five minute walk [self] used 3"
+          ],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "usage": {
+      "ke_compose": {
+        "calls": 1,
+        "tokens": 4952
+      },
+      "ke_extract": {
+        "calls": 17,
+        "tokens": 26534
+      }
+    },
+    "moments": [
+      {
+        "days_ago": 88,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You had too many things at once, work launch, a sick kid, and moving flat.",
+        "attached": {
+          "path": 5,
+          "skill": null,
+          "tool": null,
+          "hard": 2
+        }
+      },
+      {
+        "days_ago": 88,
+        "source_kind": "note",
+        "family": "sadness",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 92,
+        "hard_situation": false,
+        "text": "You noticed you cried in the car.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 84,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "used_method",
+        "anchor": "values_action",
+        "strengths": "commitment",
+        "confidence": 94,
+        "hard_situation": false,
+        "text": "You wrote a list and picked one thing for the day.",
+        "attached": {
+          "path": 4,
+          "skill": 10,
+          "tool": 2,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 84,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "",
+        "confidence": 90,
+        "hard_situation": false,
+        "text": "You felt slightly lighter.",
+        "attached": {
+          "path": 4,
+          "skill": 12,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 80,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,honesty",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You asked your partner to take the school runs this week.",
+        "attached": {
+          "path": 5,
+          "skill": 7,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 76,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "used_method",
+        "anchor": "steadying",
+        "strengths": "commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You took a five minute walk before answering emails.",
+        "attached": {
+          "path": 5,
+          "skill": 8,
+          "tool": 3,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 72,
+        "source_kind": "note",
+        "family": "pride",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You said no to a new committee at work, and it felt good.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 68,
+        "source_kind": "note",
+        "family": "anger",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,honesty",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You apologised to your kids later.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 64,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "commitment,resilience",
+        "confidence": 94,
+        "hard_situation": false,
+        "text": "You picked one thing again, finished it, and stopped there.",
+        "attached": {
+          "path": 4,
+          "skill": 10,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 60,
+        "source_kind": "note",
+        "family": "worry",
+        "kind": "used_method",
+        "anchor": "steadying",
+        "strengths": "courage,commitment",
+        "confidence": 98,
+        "hard_situation": true,
+        "text": "You took a five minute walk before a hard meeting.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": 3,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 56,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,insight",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "You asked a friend to help pack boxes.",
+        "attached": {
+          "path": 5,
+          "skill": 7,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 56,
+        "source_kind": "note",
+        "family": "closeness",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "",
+        "confidence": 92,
+        "hard_situation": false,
+        "text": "Your friend came with pizza.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 52,
+        "source_kind": "note",
+        "family": "pride",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "resilience,commitment",
+        "confidence": 96,
+        "hard_situation": true,
+        "text": "You handled the move, and felt proud of how you handled it.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 52,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 93,
+        "hard_situation": false,
+        "text": "You noticed you felt exhausted after the move.",
+        "attached": {
+          "path": 5,
+          "skill": 15,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 48,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 99,
+        "hard_situation": false,
+        "text": "You noticed overwhelm starts when you try to do everything perfectly.",
+        "attached": {
+          "path": 5,
+          "skill": 9,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 44,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "done",
+        "anchor": "self_kindness",
+        "strengths": "kindness",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You left some laundry undone on purpose and rested instead.",
+        "attached": {
+          "path": 4,
+          "skill": 11,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 40,
+        "source_kind": "note",
+        "family": "anger",
+        "kind": "used_method",
+        "anchor": "steadying",
+        "strengths": "courage,resilience",
+        "confidence": 98,
+        "hard_situation": true,
+        "text": "You took a five minute walk after a fight with your manager.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": 3,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 36,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "commitment,resilience",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You did one thing a day, and today it was the tax form.",
+        "attached": {
+          "path": 4,
+          "skill": 10,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 32,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You asked for an extension on a deadline, and got it.",
+        "attached": {
+          "path": 5,
+          "skill": 7,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 28,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You read a book in the sun.",
+        "attached": {
+          "path": 4,
+          "skill": 13,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 24,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 99,
+        "hard_situation": false,
+        "text": "You noticed you now ask for help sooner.",
+        "attached": {
+          "path": 4,
+          "skill": 12,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 20,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "used_method",
+        "anchor": "values_action",
+        "strengths": "commitment,resilience",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You wrote the list and picked one thing.",
+        "attached": {
+          "path": 5,
+          "skill": 6,
+          "tool": 2,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 12,
+        "source_kind": "note",
+        "family": "guilt",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You turned down a second project and felt no guilt this time.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 3,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 97,
+        "hard_situation": false,
+        "text": "You noticed you felt steadier than in spring.",
+        "attached": {
+          "path": 4,
+          "skill": 14,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [
+      {
+        "id": 6,
+        "path_id": 5,
+        "anchor": "values_action",
+        "icon": "stairs",
+        "name": "Picking one thing",
+        "in_your_words": "When everything piles up, you write a list and choose one thing for the day. You keep it small, finish that, and stop there."
+      },
+      {
+        "id": 7,
+        "path_id": 5,
+        "anchor": "connecting",
+        "icon": "lifebuoy",
+        "name": "Asking for help",
+        "in_your_words": "You ask your partner, your friend, or work for help when there is too much on your plate. You let other people take some of the load."
+      },
+      {
+        "id": 8,
+        "path_id": 5,
+        "anchor": "steadying",
+        "icon": "wind",
+        "name": "Taking a short walk",
+        "in_your_words": "You take a five minute walk before a hard moment, like emails or a meeting. It helps you come back a bit steadier."
+      },
+      {
+        "id": 9,
+        "path_id": 5,
+        "anchor": "noticing",
+        "icon": "eye",
+        "name": "Noticing perfection pressure",
+        "in_your_words": "You notice overwhelm can start when you try to do everything perfectly. That gives you a clearer sign of what is setting it off."
+      },
+      {
+        "id": 10,
+        "path_id": 4,
+        "anchor": "values_action",
+        "icon": "stairs",
+        "name": "Picking one thing",
+        "in_your_words": "You choose one thing for the day, finish it, and leave the rest. That can help you feel lighter and keep some space for rest."
+      },
+      {
+        "id": 11,
+        "path_id": 4,
+        "anchor": "self_kindness",
+        "icon": "moon",
+        "name": "Leaving some undone",
+        "in_your_words": "You leave some laundry undone on purpose and rest instead. You give yourself permission to stop without guilt."
+      },
+      {
+        "id": 12,
+        "path_id": 4,
+        "anchor": "noticing",
+        "icon": "eye",
+        "name": "Noticing when you feel lighter",
+        "in_your_words": "You notice the small shift when you slow down, like feeling slightly lighter or asking for help sooner. That helps you see what calms things down."
+      },
+      {
+        "id": 13,
+        "path_id": 4,
+        "anchor": "values_action",
+        "icon": "sun",
+        "name": "Enjoying a small pause",
+        "in_your_words": "You make room for a quiet bit of calm, like reading a book in the sun. It is a small moment that helps you settle."
+      },
+      {
+        "id": 14,
+        "path_id": 4,
+        "anchor": "noticing",
+        "icon": "eye",
+        "name": "Noticing when you feel steadier",
+        "in_your_words": "You notice when you feel steadier than before, and you can see that lighter feeling in everyday life. You also notice when asking for help sooner is part of that shift."
+      },
+      {
+        "id": 15,
+        "path_id": 5,
+        "anchor": "noticing",
+        "icon": "thermometer",
+        "name": "Noticing the exhausted feeling",
+        "in_your_words": "You notice when overwhelm shows up as feeling exhausted, like after the move. That helps you spot what is happening before you try to do everything perfectly."
+      }
+    ],
+    "paths_full": [
+      {
+        "id": 4,
+        "family": "calm",
+        "name": "Making room for calm",
+        "focus": "about resting, choosing less, and feeling lighter",
+        "merged_into": null
+      },
+      {
+        "id": 5,
+        "family": "overwhelm",
+        "name": "Working with overwhelm",
+        "focus": "about work, home, and too many things at once",
+        "merged_into": null
+      }
+    ],
+    "tools_full": [
+      {
+        "id": 2,
+        "name": "Writing a list and picking one thing",
+        "what": "You write down what is on your plate, then choose one thing to do today.",
+        "origin": "self",
+        "origin_note": "You used it on your own when things felt like too much."
+      },
+      {
+        "id": 3,
+        "name": "Five minute walk",
+        "what": "You step away for a short walk before or after something hard, then come back more settled.",
+        "origin": "self",
+        "origin_note": "You used it yourself before emails, meetings, and after a fight."
+      }
+    ],
+    "hard_full": [
+      {
+        "id": 2,
+        "label": "Too many things at once",
+        "context": "When work, home, and family needs all land together."
+      }
+    ],
+    "ideas_full": [
+      {
+        "id": 1,
+        "path_id": 5,
+        "skill_id": 8,
+        "text": "If it fits, bring the five minute walk to the next session.",
+        "why": "You used a short walk before emails and a hard meeting, and it seemed to help.",
+        "reason": "consolidate",
+        "cta": "agenda",
+        "state": "active",
+        "created_at": "2026-10-19 07:21:39"
+      },
+      {
+        "id": 2,
+        "path_id": 4,
+        "skill_id": 11,
+        "text": "Maybe try leaving one small thing undone and rest instead.",
+        "why": "You left the laundry undone on purpose and rested instead.",
+        "reason": "transfer",
+        "cta": "todo",
+        "state": "active",
+        "created_at": "2026-10-19 07:21:39"
+      }
+    ],
+    "state": {
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 20}"
+    },
+    "usage_split": {
+      "ke_compose|gpt-5.4-mini": {
+        "calls": 1,
+        "prompt": 4000,
+        "completion": 952,
+        "cached": 2688
+      },
+      "ke_extract|gpt-5.4-mini": {
+        "calls": 17,
+        "prompt": 25268,
+        "completion": 1266,
+        "cached": 21760
+      }
+    },
+    "art9_granted": true
+  },
+  {
+    "id": "S11",
+    "theme": "fear of driving after an accident",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "fear"
+      ],
+      "crisis_entries": 0
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 4,
+            "moments": 4,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 3,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 2,
+            "insight": 1,
+            "honesty": 1,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 1
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "fear",
+              "name": "Driving with the fear",
+              "focus": "about motorway driving and getting to work",
+              "skills": [
+                "Driving to work anyway [values_action/stairs] practicing x1",
+                "Noticing body signs [noticing/thermometer] discovered x1"
+              ],
+              "hard": [
+                "Taking the motorway (1)"
+              ]
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 1,
+            "moments": 2,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 1,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 4,
+            "talks": 0,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 3,
+            "insight": 1,
+            "honesty": 1,
+            "resilience": 1,
+            "kindness": 0,
+            "commitment": 1
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "fear",
+              "name": "Driving with the fear",
+              "focus": "about motorway driving and getting to work",
+              "skills": [
+                "Driving to work anyway [values_action/stairs] practicing x1",
+                "Noticing body signs [noticing/thermometer] discovered x1"
+              ],
+              "hard": [
+                "Taking the motorway (1)"
+              ]
+            }
+          ],
+          "forming": [
+            {
+              "emotion_family": "calm",
+              "entries": 2
+            }
+          ],
+          "tools": [
+            "Slow breathing at the lights [self] used 2"
+          ],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "usage": {
+      "ke_compose": {
+        "calls": 1,
+        "tokens": 3741
+      },
+      "ke_extract": {
+        "calls": 3,
+        "tokens": 4684
+      }
+    },
+    "moments": [
+      {
+        "days_ago": 50,
+        "source_kind": "after_therapy",
+        "family": "fear",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You noticed your hands sweat when you even think about driving on the motorway.",
+        "attached": {
+          "path": 6,
+          "skill": 16,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 41,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "used_method",
+        "anchor": "steadying",
+        "strengths": "courage,commitment",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You breathed out slowly at each light while driving to the shop with a friend in the car.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": 4,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 29,
+        "source_kind": "note",
+        "family": "fear",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "courage",
+        "confidence": 98,
+        "hard_situation": true,
+        "text": "You drove alone to work on the back roads, scared but did it.",
+        "attached": {
+          "path": 6,
+          "skill": 17,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 15,
+        "source_kind": "note",
+        "family": "fear",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You still found taking the motorway hard when your colleague offered the faster route.",
+        "attached": {
+          "path": 6,
+          "skill": null,
+          "tool": null,
+          "hard": 3
+        }
+      },
+      {
+        "days_ago": 4,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "used_method",
+        "anchor": "steadying",
+        "strengths": "courage,resilience",
+        "confidence": 97,
+        "hard_situation": true,
+        "text": "You used slow breathing at the lights while driving to your parents on the back roads.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": 4,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 4,
+        "source_kind": "note",
+        "family": "calm",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "",
+        "confidence": 86,
+        "hard_situation": false,
+        "text": "You felt almost normal.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [
+      {
+        "id": 16,
+        "path_id": 6,
+        "anchor": "noticing",
+        "icon": "thermometer",
+        "name": "Noticing body signs",
+        "in_your_words": "You notice when your hands sweat as soon as you think about driving on the motorway. That helps you spot the fear early, before you get behind the wheel."
+      },
+      {
+        "id": 17,
+        "path_id": 6,
+        "anchor": "values_action",
+        "icon": "stairs",
+        "name": "Driving to work anyway",
+        "in_your_words": "You drove alone to work on the back roads, even though you were scared. You kept going and got yourself there."
+      }
+    ],
+    "paths_full": [
+      {
+        "id": 6,
+        "family": "fear",
+        "name": "Driving with the fear",
+        "focus": "about motorway driving and getting to work",
+        "merged_into": null
+      }
+    ],
+    "tools_full": [
+      {
+        "id": 4,
+        "name": "Slow breathing at the lights",
+        "what": "You breathe out slowly at each light while driving.",
+        "origin": "self",
+        "origin_note": "You did this on the way to the shop and on the way to your parents."
+      }
+    ],
+    "hard_full": [
+      {
+        "id": 3,
+        "label": "Taking the motorway",
+        "context": "When your colleague offers the faster route to work."
+      }
+    ],
+    "ideas_full": [],
+    "state": {
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 4, \"sessions\": 1}"
+    },
+    "usage_split": {
+      "ke_compose|gpt-5.4-mini": {
+        "calls": 1,
+        "prompt": 3378,
+        "completion": 363,
+        "cached": 2688
+      },
+      "ke_extract|gpt-5.4-mini": {
+        "calls": 3,
+        "prompt": 4476,
+        "completion": 208,
+        "cached": 3840
+      }
+    },
+    "art9_granted": true
+  }
+]

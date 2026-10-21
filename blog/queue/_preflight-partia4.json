@@ -1,0 +1,61 @@
+{
+  "_opis": "KROK 0 partia 4 bloga MindSync (2026-09-25). Pierwsza partia pisana stylem Moniki (docs/blog/brand-mindsync.md par. 2, wzorzec docs/blog/voice-sample-monika.md). 3 tematy do realizacji (drip 2026-09-26, 2026-09-27, 2026-09-28) plus 2 rezerwy bez briefow. Klastry wg blog/kalendarz-tresci.md: 5 (Modern life) x1, 3 (Understanding your patterns) x2; rezerwy: 5 x1, 3 x1. Klaster 7 (For therapists) ZAMROZONY. Dobor tematow: popyt z researchu SERP (GSC wlasciwosci dziala, ale blog ma zerowy ruch, a sesja autora briefow nie miala dostepu do powloki, wiec scripts/gsc/blog-tematy.py NIE zostal uruchomiony); przy remisie pierwszenstwo tematow, na ktore Monika ma material w newsletterach (people-pleasing / fawn / anticipatory guilt, burnout, anxious attachment #24). Keywordy EN dobrane jako DOSLOWNE podciagi z blog/app-features.json (id + name + short + keywords), wiec dopasowanie jest weryfikowalne recznie. Uruchomienie bramki (skrypt przyjmuje plik, nie pojedynczy temat): python scripts/blog-coverage-preflight.py --temat blog/queue/_preflight-partia4.json",
+
+  "_wynik_bramki": "Wynik wyliczony RECZNIE wedlug logiki skryptu (substring znormalizowanego keywordu w blobie funkcji; werdykt OK gdy >= 1 funkcja live). Oczekiwany wynik uruchomienia: 5x OK, 0 RYZYKO, 0 BRAK, exit code 0. 01: check-ins, mood-trends, summaries, reflect, session-debrief, voice-notes (wszystkie live). 02: voice-notes, reflect, mood-trends, workspace, session-prep, check-ins (live). 03: voice-notes, check-ins, mood-trends, workspace, personal-bio (live). 04: reflect, session-debrief, voice-notes, check-ins, personal-bio (live). 05: check-ins, mood-trends, daily-affirmation (live). Zadne slowo nie trafia w funkcje planned (streaks, therapist-sharing). DO POTWIERDZENIA przez lidera jednym uruchomieniem komendy z _opis.",
+
+  "_zasady_partii": "Nie obiecujemy funkcji planned: streaks (brak UI) i therapist-sharing (portal ukryty, MSV3.4 CS-11). Dotyczy zwlaszcza 03: rytm Moniki z #24 konczy sie 'bring it to your next session', co jest dozwolone (czytelnik sam niesie notatki na sesje), ale zero sugestii wysylania czegokolwiek terapeucie z apki. Nazwy funkcji z katalogu, nie z newslettera: 'Between-session voice notes' zamiast 'Between-Session Notes', 'Mood & focus-area trends' / 'Wellbeing check-ins' zamiast 'Symptom Tracking', 'Workspace' bez zmian. Habit Tracker i ekran wyboru trybu w Reflect nadal poza katalogiem: zaden brief nie opiera na nich karty. YMYL: 01 nie rozstrzyga 'burnout czy depresja' (rozroznienie diagnostyczne), 02 nie nazywa people-pleasingu trauma czytelnika (fawn to termin praktyka, nie rozpoznanie), 03 nie diagnozuje stylu przywiazania, nie ocenia partnera czytelnika i nie daje quizu.",
+
+  "_granice_kanibalizacji": "01 trzyma 'early signs of burnout / burnt out or just tired / how long does burnout last' i NIE przejmuje 'digital burnout' od zywego /journal/digital-burnout-brain-rewiring (tam: przeciazenie ekranami, wprost odcina sie od burnoutu zawodowego; tu: burnout zawodowy wg WHO ICD-11) ani 'sunday scaries' od /journal/sunday-scaries (tam niedzielny lek jako zjawisko; tu jeden objaw w liscie, z linkiem). 02 trzyma 'how to stop people pleasing / fawn response / say no without guilt' i NIE wchodzi w mechanike triggerow z /journal/how-to-identify-emotional-triggers (link zamiast powtorzenia). 03 trzyma 'anxious attachment style / anxious attachment triggers / can anxious attachment be healed' i uzywa slowa 'trigger' tylko w kontekscie przywiazania, bez ogolnej metodyki wyszukiwania triggerow. 02 i 03 dziela temat uspokajania (reassurance vs yes): 02 = ustepowanie cudzym prosbom, 03 = szukanie zapewnien w bliskiej relacji; po jednym akapicie i linku, bez dublowania.",
+
+  "_plan_dripu": "01 (2026-09-26), 02 (2026-09-27), 03 (2026-09-28). Kolejnosc pod linkowanie: wszystkie linki wewnatrz partii biegna WSTECZ (02 -> 01, 03 -> 02), wiec partia nie tworzy dlugu [LINK-LATER:]. Jesli publikacja ktoregos wpisu sie przesunie, link do niego w pozniejszym wpisie zamienia sie na [LINK-LATER: slug | ten sam anchor] wg blog/queue/_format.md.",
+
+  "_odrzucone": "(a) 'sleep and mental health', bo rodzine fraz o nocy i zasypianiu trzyma /journal/racing-thoughts-at-night, a w partii 3 czeka rezerwa 'morning anxiety'; (b) 'burnout vs depression' (diagnostyka, lamie YMYL); (c) 'avoidant attachment' jako osobny wpis w tej partii: dwa wpisy o przywiazaniu z rzedu zjadlyby sie nawzajem, avoidant idzie do kolejnej partii jako duet z 03; (d) 'setting boundaries' jako osobny temat: ta sama intencja co 02, wchodzi do 02 jako fraza poboczna.",
+
+  "01 KLASTER5 [TRIO 2026-09-26]: early signs of burnout (burnout does not announce itself)": [
+    "rate your day",
+    "track mood",
+    "mood patterns",
+    "progress over time",
+    "weekly summary",
+    "review your week",
+    "reflection",
+    "voice note"
+  ],
+
+  "02 KLASTER3 [TRIO 2026-09-27]: how to stop people pleasing (no is enough on its own)": [
+    "voice note",
+    "processing emotions",
+    "talk it through",
+    "see patterns",
+    "what to bring up",
+    "realizations",
+    "therapy agenda",
+    "focus areas"
+  ],
+
+  "03 KLASTER3 [TRIO 2026-09-28]: anxious attachment style (asking again will not change the answer)": [
+    "voice note",
+    "voice journal",
+    "track anxiety",
+    "mood trend",
+    "see patterns",
+    "threads",
+    "what to bring up",
+    "self-awareness"
+  ],
+
+  "04 KLASTER5 [rezerwa]: loneliness in adulthood, and why it is not about how many people you know": [
+    "reflection",
+    "talk it through",
+    "voice note",
+    "rate your day",
+    "know yourself"
+  ],
+
+  "05 KLASTER5 [rezerwa]: why adults stop playing, and what play does to stress": [
+    "rate your day",
+    "mood patterns",
+    "see patterns",
+    "daily affirmation"
+  ]
+}

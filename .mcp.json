@@ -1,0 +1,17 @@
+{
+  "mcpServers": {
+    "heroku": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@modelcontextprotocol/server-heroku"],
+      "env": { "HEROKU_API_KEY": "${HEROKU_API_KEY}" }
+    },
+    "clickup": {
+      "type": "sse",
+      "url": "https://mcp.clickup.com/sse"
+    },
+    "loops": {
+      "type": "http",
+      "url": "https://mcp.loops.so"
+    }
+  }
+}

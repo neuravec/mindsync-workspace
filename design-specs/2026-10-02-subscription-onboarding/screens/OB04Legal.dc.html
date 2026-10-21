@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Before we start</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#113237}a:hover{color:#0E1D1F}
+.ms-scroll::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; display: flex; flex-direction: column">
+  <div class="ms-scroll" style="flex-grow: 1; overflow-y: auto; scrollbar-width: none; padding: 52px 24px 16px 24px; display: flex; flex-direction: column; gap: 16px">
+    <img src="/_blob/b94ec25dbe8aed11e51c558f9089fecd" alt="" style="width: 44px; height: 46px">
+    <h1 style="margin: 0; font-size: 28px; line-height: 1.15; font-weight: 800">Hi [Name]. Seven short questions, then MindSync is set up for you.</h1>
+    <p style="margin: 0; font-size: 15px; line-height: 1.45; color: #3D5C60">First, two things we need you to know and agree to.</p>
+    <div style="background: #FFFFFF; border: 1px solid #DBF0ED; border-radius: 16px; padding: 16px; display: flex; flex-direction: column; gap: 8px">
+      <span style="font-size: 15px; font-weight: 800">MindSync is not a medical device</span>
+      <span style="font-size: 14px; line-height: 1.45; color: #1E4043">It is a journaling tool that works alongside therapy. The AI can make mistakes. For medical decisions, talk to a professional.</span>
+    </div>
+    <label style="display: flex; gap: 12px; align-items: flex-start; font-size: 15px; line-height: 1.4; min-height: 44px">
+      <input type="checkbox" checked="{{a}}" onChange="{{ta}}" style="width: 22px; height: 22px; margin: 0; accent-color: #113237; flex-shrink: 0">
+      <span>I agree that MindSync can process my wellbeing and reflection data as described in the <a href="https://www.mindsync.app/privacy-policy">Privacy Policy</a>.</span>
+    </label>
+    <label style="display: flex; gap: 12px; align-items: flex-start; font-size: 15px; line-height: 1.4; min-height: 44px">
+      <input type="checkbox" checked="{{b}}" onChange="{{tb}}" style="width: 22px; height: 22px; margin: 0; accent-color: #113237; flex-shrink: 0">
+      <span>I am 16 or older.</span>
+    </label>
+    <div style="display: flex; align-items: center; justify-content: space-between; padding: 10px 14px; border-radius: 12px; background: #EEF8F6; font-size: 14px">
+      <span>Language: English</span><button type="button" style="min-height: 44px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 14px; font-weight: 700; color: #113237; text-decoration: underline">Change</button>
+    </div>
+  </div>
+  <div style="padding: 12px 24px 28px 24px">
+    <button type="button" disabled="{{off}}" style="{{btn}}">Agree and continue</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { a: false, b: false }; }
+  renderVals() {
+    const ok = this.state.a && this.state.b;
+    return {
+      a: this.state.a, b: this.state.b,
+      ta: () => this.setState({ a: !this.state.a }),
+      tb: () => this.setState({ b: !this.state.b }),
+      off: !ok,
+      btn: 'width: 100%; height: 56px; border: none; border-radius: 16px; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 700; ' + (ok ? 'background: #113237; color: #FFFFFF; cursor: pointer' : 'background: #DBF0ED; color: #5A7376')
+    };
+  }
+}
+</script>
+</body>
+</html>

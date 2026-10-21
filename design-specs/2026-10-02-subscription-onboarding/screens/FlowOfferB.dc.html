@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Store trial offer, option B</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#113237}a:hover{color:#0E1D1F}
+.ms-scroll::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; overflow: hidden">
+  <div class="ms-scroll" style="flex-grow: 1; overflow-y: auto; scrollbar-width: none">
+    <div style="background: #113237; color: #FFFFFF; padding: 12px 16px 26px 16px; display: flex; flex-direction: column; gap: 16px">
+      <div style="display: flex; justify-content: space-between; align-items: center">
+        <button type="button" aria-label="Close" style="width: 44px; height: 44px; border: none; border-radius: 22px; background: rgba(255,255,255,0.10); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+        <button type="button" style="height: 44px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 600; color: #DBF0ED; padding: 0 8px; cursor: pointer">Restore</button>
+      </div>
+      <div style="display: flex; flex-direction: column; gap: 10px; padding: 0 4px">
+        <h1 style="margin: 0; font-size: 31px; line-height: 1.1; font-weight: 800; letter-spacing: -0.6px">Try Premium free for 7 days.</h1>
+        <p style="margin: 0; font-size: 16px; line-height: 1.45; color: #DBF0ED">Unlimited Before therapy, After therapy, recordings and Reflect. We remind you before anything is charged.</p>
+      </div>
+    </div>
+
+    <div style="padding: 22px 24px 6px 24px; display: flex; flex-direction: column">
+      <sc-for list="{{steps}}" as="s" hint-placeholder-count="3">
+        <div style="display: flex; gap: 14px">
+          <div style="display: flex; flex-direction: column; align-items: center">
+            <span style="{{s.dot}}"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="{{s.ic}}" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="{{s.path}}"/></svg></span>
+            <span style="{{s.line}}"></span>
+          </div>
+          <div style="padding-bottom: 16px; display: flex; flex-direction: column; gap: 2px">
+            <span style="font-size: 16px; font-weight: 700">{{s.t}}</span>
+            <span style="font-size: 14px; line-height: 1.4; color: #3D5C60">{{s.b}}</span>
+          </div>
+        </div>
+      </sc-for>
+    </div>
+
+    <div style="padding: 4px 20px 20px 20px; display: flex; flex-direction: column; gap: 10px">
+      <div role="radiogroup" aria-label="Choose a plan" style="display: flex; flex-direction: column; gap: 10px">
+        <label style="{{annualStyle}}">
+          <input type="radio" name="planb" checked="{{isAnnual}}" onChange="{{pickAnnual}}" style="position: absolute; opacity: 0; width: 1px; height: 1px">
+          <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 3px">
+            <span style="display: flex; align-items: center; gap: 8px"><span style="font-size: 16px; font-weight: 700">Annual</span><span style="font-size: 11px; font-weight: 800; letter-spacing: 0.8px; text-transform: uppercase; background: #FFC88A; border-radius: 999px; padding: 3px 8px">7 days free</span></span>
+            <span style="font-size: 13px; color: #3D5C60">then {{annualPrice}} a year</span>
+          </span>
+        </label>
+        <label style="{{monthlyStyle}}">
+          <input type="radio" name="planb" checked="{{isMonthly}}" onChange="{{pickMonthly}}" style="position: absolute; opacity: 0; width: 1px; height: 1px">
+          <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 3px">
+            <span style="font-size: 16px; font-weight: 700">Monthly</span>
+            <span style="font-size: 13px; color: #3D5C60">{{monthlyPrice}} a month, no trial</span>
+          </span>
+        </label>
+      </div>
+      <div style="display: flex; justify-content: center; gap: 20px">
+        <a href="https://www.mindsync.app/terms-conditions" style="font-size: 13px; min-height: 44px; display: flex; align-items: center">Terms of Service</a>
+        <a href="https://www.mindsync.app/privacy-policy" style="font-size: 13px; min-height: 44px; display: flex; align-items: center">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
+  <div style="flex-shrink: 0; background: #FFFFFF; border-top: 1px solid #DBF0ED; padding: 12px 20px 26px 20px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 -8px 24px rgba(17,50,55,0.06)">
+    <button type="button" style="height: 56px; border: none; border-radius: 16px; background: #113237; color: #FFFFFF; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 700; cursor: pointer">{{cta}}</button>
+    <p style="margin: 0; text-align: center; font-size: 12px; line-height: 1.4; color: #3D5C60">{{billing}}</p>
+    <button type="button" style="height: 44px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 600; color: #113237; cursor: pointer">Not now</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"monthlyPrice":{"editor":"text","default":"$12.99","section":"Prices (from store)"},"annualPrice":{"editor":"text","default":"[annual price]","section":"Prices (from store)"},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { plan: 'annual' };
+  }
+  renderVals() {
+    const annual = this.props.annualPrice ?? '[annual price]';
+    const monthly = this.props.monthlyPrice ?? '$12.99';
+    const isAnnual = this.state.plan === 'annual';
+    const card = (on) => 'position: relative; display: flex; align-items: center; min-height: 64px; box-sizing: border-box; padding: 12px 16px; border-radius: 16px; background: #FFFFFF; cursor: pointer; ' +
+      (on ? 'border: 2px solid #113237' : 'border: 1px solid #BBE4DE; margin: 1px');
+    const dot = (bg, border) => 'flex-shrink: 0; width: 32px; height: 32px; box-sizing: border-box; border-radius: 16px; display: flex; align-items: center; justify-content: center; background: ' + bg + (border ? '; border: 1px solid ' + border : '');
+    const line = 'width: 2px; flex-grow: 1; background: #BBE4DE; margin: 4px 0';
+    return {
+      steps: [
+        { t: 'Today', b: 'Everything in Premium unlocks. Nothing is charged.', dot: dot('#113237'), ic: '#FFC88A', path: 'M13 3L5 13h6l-1 8 8-10h-6z', line: line },
+        { t: 'Day 5', b: 'We send you a reminder that your trial ends in 2 days.', dot: dot('#DBF0ED'), ic: '#113237', path: 'M18 8a6 6 0 0 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0', line: line },
+        { t: 'Day 7', b: 'Your annual plan starts. Cancel before this day in your store settings and you pay nothing.', dot: dot('#FFEFDD', '#FFC88A'), ic: '#8A4B12', path: 'M3 6h18v13H3zM3 10h18', line: 'width: 2px; flex-grow: 1' }
+      ],
+      isAnnual: isAnnual,
+      isMonthly: !isAnnual,
+      annualStyle: card(isAnnual),
+      monthlyStyle: card(!isAnnual),
+      pickAnnual: () => this.setState({ plan: 'annual' }),
+      pickMonthly: () => this.setState({ plan: 'monthly' }),
+      annualPrice: annual,
+      monthlyPrice: monthly,
+      cta: isAnnual ? 'Start my 7 free days' : 'Subscribe monthly',
+      billing: isAnnual
+        ? 'Free for 7 days, then ' + annual + ' a year. Cancel anytime in your store settings.'
+        : 'Billed ' + monthly + ' today, then every month. Cancel anytime in your store settings.'
+    };
+  }
+}
+</script>
+</body>
+</html>

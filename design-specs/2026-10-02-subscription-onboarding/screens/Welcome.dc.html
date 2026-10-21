@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Welcome to Premium</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#113237}a:hover{color:#0E1D1F}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237">
+  <div style="background: #DBF0ED; padding: 72px 24px 32px 24px; display: flex; flex-direction: column; align-items: center; gap: 16px; text-align: center">
+    <div style="width: 72px; height: 72px; border-radius: 36px; background: #113237; display: flex; align-items: center; justify-content: center">
+      <svg width="34" height="34" viewBox="0 0 24 24" fill="none" stroke="#FFC88A" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>
+    </div>
+    <h1 style="margin: 0; font-size: 30px; line-height: 1.15; font-weight: 800; letter-spacing: -0.5px">Welcome to Premium</h1>
+    <p style="margin: 0; font-size: 16px; line-height: 1.45; color: #1E4043; max-width: 300px">The monthly limits are off. Here are three good places to start.</p>
+  </div>
+
+  <div style="padding: 24px 20px; display: flex; flex-direction: column; gap: 12px; flex-grow: 1">
+    <sc-for list="{{starts}}" as="s" hint-placeholder-count="3">
+      <a href="#" style="display: flex; align-items: center; gap: 14px; padding: 16px; min-height: 76px; box-sizing: border-box; border: 1px solid #BBE4DE; border-radius: 16px; background: #FFFFFF; text-decoration: none; color: #113237">
+        <span style="flex-shrink: 0; width: 44px; height: 44px; border-radius: 12px; background: #DBF0ED; display: flex; align-items: center; justify-content: center; font-size: 16px; font-weight: 800">{{s.n}}</span>
+        <span style="flex-grow: 1; display: flex; flex-direction: column; gap: 3px">
+          <span style="font-size: 16px; font-weight: 700">{{s.title}}</span>
+          <span style="font-size: 14px; line-height: 1.35; color: #3D5C60">{{s.body}}</span>
+        </span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#26767B" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" style="flex-shrink: 0"><path d="M9 6l6 6-6 6"/></svg>
+      </a>
+    </sc-for>
+  </div>
+
+  <div style="padding: 14px 20px 30px 20px; display: flex; flex-direction: column; gap: 6px">
+    <button type="button" style="height: 56px; border: none; border-radius: 16px; background: #113237; color: #FFFFFF; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 700; cursor: pointer">Open After therapy</button>
+    <button type="button" style="height: 48px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 600; color: #113237; cursor: pointer">Back to home</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      starts: [
+        { n: '1', title: 'After therapy', body: 'Capture what came up in your last session while it is still fresh.' },
+        { n: '2', title: 'Record your next session', body: 'Recordings are no longer capped, so every session can be saved.' },
+        { n: '3', title: 'Your monthly therapy summary', body: 'See the full picture of how the last month of therapy went.' }
+      ]
+    };
+  }
+}
+</script>
+</body>
+</html>

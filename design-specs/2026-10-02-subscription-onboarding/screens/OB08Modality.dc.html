@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Therapy approach</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+.ms-scroll::-webkit-scrollbar{display:none}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; background: #F6FFFD; font-family: Figtree, sans-serif; color: #113237; display: flex; flex-direction: column">
+  <div style="display: flex; align-items: center; gap: 8px; padding: 48px 20px 0 8px">
+    <button type="button" aria-label="Back" style="width: 44px; height: 44px; border: none; background: transparent; padding: 0; display: flex; align-items: center; justify-content: center"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#113237" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg></button>
+    <div style="flex-grow: 1; height: 6px; border-radius: 3px; background: #DBF0ED; display: flex"><div style="width: 57%; border-radius: 3px; background: #26767B"></div></div>
+    <span style="font-size: 13px; font-weight: 600; color: #3D5C60">4 of 7</span>
+  </div>
+  <div class="ms-scroll" style="flex-grow: 1; overflow-y: auto; scrollbar-width: none; padding: 20px 24px 16px 24px; display: flex; flex-direction: column; gap: 12px">
+    <h1 style="margin: 0; font-size: 28px; line-height: 1.15; font-weight: 800">What kind of therapy is it?</h1>
+    <p style="margin: 0 0 4px 0; font-size: 15px; color: #3D5C60">[Orca]'s questions follow the approach you pick.</p>
+    <sc-for list="{{opts}}" as="o" hint-placeholder-count="9">
+      <button type="button" onClick="{{o.toggle}}" aria-pressed="{{o.pressed}}" style="{{o.style}}">
+        <span style="font-size: 16px; font-weight: 700">{{o.t}}</span>
+        <span style="font-size: 13px; color: {{o.sub}}">{{o.d}}</span>
+      </button>
+    </sc-for>
+  </div>
+  <div style="padding: 12px 24px 28px 24px; display: flex; flex-direction: column; gap: 4px">
+    <button type="button" style="width: 100%; height: 56px; border: none; border-radius: 16px; background: #113237; color: #FFFFFF; font-family: Figtree, sans-serif; font-size: 17px; font-weight: 700">Continue</button>
+    <button type="button" style="height: 44px; border: none; background: transparent; font-family: Figtree, sans-serif; font-size: 15px; font-weight: 600; color: #3D5C60">Skip</button>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  constructor(p) { super(p); this.state = { sel: ['CBT'] }; }
+  renderVals() {
+    const list = [
+      ['CBT', 'Cognitive Behavioral Therapy'], ['DBT', 'Dialectical Behavior Therapy'], ['EMDR', 'Working through difficult memories'],
+      ['Psychodynamic', 'How past experiences shape today'], ['ACT', 'Acceptance and Commitment Therapy'], ['Somatic', 'Body-centered work on stress and tension'],
+      ['Talk therapy', 'General conversation-based therapy'], ["I'm not sure", 'The app adapts to you'], ['Other', 'Integrative, Gestalt or something else']
+    ];
+    const sel = this.state.sel;
+    return {
+      opts: list.map(([t, d]) => {
+        const on = sel.indexOf(t) >= 0;
+        return {
+          t: t, d: d, sub: on ? '#BBE4DE' : '#3D5C60',
+          pressed: on ? 'true' : 'false',
+          toggle: () => {
+            if (t === "I'm not sure") return this.setState({ sel: on ? [] : [t] });
+            const base = sel.filter((x) => x !== "I'm not sure");
+            this.setState({ sel: on ? base.filter((x) => x !== t) : base.concat([t]) });
+          },
+          style: 'display: flex; flex-direction: column; align-items: flex-start; gap: 2px; min-height: 60px; text-align: left; padding: 10px 16px; border-radius: 14px; font-family: Figtree, sans-serif; cursor: pointer; ' + (on ? 'background: #113237; color: #FFFFFF; border: 1.5px solid #113237' : 'background: #FFFFFF; color: #113237; border: 1.5px solid #BBE4DE')
+        };
+      })
+    };
+  }
+}
+</script>
+</body>
+</html>

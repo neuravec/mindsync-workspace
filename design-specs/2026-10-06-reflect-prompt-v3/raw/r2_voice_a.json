@@ -1,0 +1,4034 @@
+[
+ {
+  "kind": "voice",
+  "name": "r2-v3-mini",
+  "prompt": "v3",
+  "model": "gpt-realtime-mini",
+  "effort": "none",
+  "runs": 2,
+  "variant": "r2-v3-mini",
+  "persona": "R1",
+  "entry": "fresh",
+  "run": 1,
+  "prompt_chars": 14391,
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107 Ania, cze mam ju\u017c g\u0142os na dzi\u015b.",
+    "time_to_first_audio_s": 0.95,
+    "audio_seconds": 3.15,
+    "total_s": 1.27,
+    "usage": {
+     "total_tokens": 6724,
+     "input_tokens": 6634,
+     "output_tokens": 90,
+     "input_token_details": {
+      "text_tokens": 6634,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 2304,
+      "cached_tokens_details": {
+       "text_tokens": 2304,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 27,
+      "audio_tokens": 63
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To wygl\u0105da na to, \u017ce ta my\u015bl o pracy zaczyna bra\u0107 g\u00f3r\u0119, zanim jeszcze jutro nadejdzie. Jak teraz to czujesz?",
+    "time_to_first_audio_s": 0.69,
+    "audio_seconds": 6.8,
+    "total_s": 1.46,
+    "usage": {
+     "total_tokens": 6942,
+     "input_tokens": 6757,
+     "output_tokens": 185,
+     "input_token_details": {
+      "text_tokens": 6694,
+      "audio_tokens": 63,
+      "image_tokens": 0,
+      "cached_tokens": 6656,
+      "cached_tokens_details": {
+       "text_tokens": 6656,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 49,
+      "audio_tokens": 136
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Ci\u0119\u017car, kt\u00f3ry czujesz, wydaje si\u0119 narasta\u0107, troch\u0119 jakby przyt\u0142acza\u0142 od razu. Czy widzisz jakie\u015b miejsce, gdzie to si\u0119 zaczyna?",
+    "time_to_first_audio_s": 0.76,
+    "audio_seconds": 7.3,
+    "total_s": 1.65,
+    "usage": {
+     "total_tokens": 7086,
+     "input_tokens": 6883,
+     "output_tokens": 203,
+     "input_token_details": {
+      "text_tokens": 6747,
+      "audio_tokens": 136,
+      "image_tokens": 0,
+      "cached_tokens": 6592,
+      "cached_tokens_details": {
+       "text_tokens": 6592,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 57,
+      "audio_tokens": 146
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To brzmi, jakby\u015b czu\u0142a si\u0119 przyt\u0142oczona tym, \u017ce nie uda\u0142o si\u0119 postawi\u0107 granicy. Czy dobrze rozumiem, \u017ce chcesz znale\u017a\u0107 wyj\u015bcie na przysz\u0142o\u015b\u0107?",
+    "time_to_first_audio_s": 0.7,
+    "audio_seconds": 7.85,
+    "total_s": 1.65,
+    "usage": {
+     "total_tokens": 7183,
+     "input_tokens": 6966,
+     "output_tokens": 217,
+     "input_token_details": {
+      "text_tokens": 6820,
+      "audio_tokens": 146,
+      "image_tokens": 0,
+      "cached_tokens": 6656,
+      "cached_tokens_details": {
+       "text_tokens": 6656,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 60,
+      "audio_tokens": 157
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To naturalne, \u017ce taka my\u015bl si\u0119 pojawia, i mo\u017ce chodzi o znalezienie sposobu, by wyrazi\u0107 to jasno. Mo\u017cesz pomy\u015ble\u0107, co dok\u0142adnie chcesz przekaza\u0107.",
+    "time_to_first_audio_s": 0.71,
+    "audio_seconds": 8.5,
+    "total_s": 1.72,
+    "usage": {
+     "total_tokens": 7277,
+     "input_tokens": 7045,
+     "output_tokens": 232,
+     "input_token_details": {
+      "text_tokens": 6888,
+      "audio_tokens": 157,
+      "image_tokens": 0,
+      "cached_tokens": 6720,
+      "cached_tokens_details": {
+       "text_tokens": 6720,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 62,
+      "audio_tokens": 170
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "greeting_no_question": true,
+   "greeting_short": true,
+   "greeting_nothing_known": true,
+   "max_one_q": true,
+   "question_share": 0.75,
+   "most_replies_no_question": false,
+   "initiative_after_little": true,
+   "uses_what_it_knows": true,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 1,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": false,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 1.8,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-mini",
+  "prompt": "v3",
+  "model": "gpt-realtime-mini",
+  "effort": "none",
+  "runs": 2,
+  "variant": "r2-v3-mini",
+  "persona": "R1",
+  "entry": "fresh",
+  "run": 2,
+  "prompt_chars": 14391,
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107. Witaj.",
+    "time_to_first_audio_s": 0.7,
+    "audio_seconds": 1.6,
+    "total_s": 0.84,
+    "usage": {
+     "total_tokens": 6681,
+     "input_tokens": 6634,
+     "output_tokens": 47,
+     "input_token_details": {
+      "text_tokens": 6634,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 15,
+      "audio_tokens": 32
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Brzmi jakby to by\u0142 ci\u0119\u017cki moment, czujesz, \u017ce ten poniedzia\u0142ek ju\u017c ci\u0119 przyt\u0142acza. Powiedz, co ci\u0119 szczeg\u00f3lnie niepokoi?",
+    "time_to_first_audio_s": 0.59,
+    "audio_seconds": 6.75,
+    "total_s": 1.5,
+    "usage": {
+     "total_tokens": 6905,
+     "input_tokens": 6714,
+     "output_tokens": 191,
+     "input_token_details": {
+      "text_tokens": 6682,
+      "audio_tokens": 32,
+      "image_tokens": 0,
+      "cached_tokens": 6656,
+      "cached_tokens_details": {
+       "text_tokens": 6656,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 56,
+      "audio_tokens": 135
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Wygl\u0105da na to, \u017ce ta niewiadoma bardzo ci\u0119 obci\u0105\u017ca. Mo\u017ce chcia\u0142aby\u015b si\u0119 zastanowi\u0107, co konkretnie czyni to ci\u0119\u017ckim? Je\u015bli nie chcesz od razu, po prostu daj\u0119 ci chwil\u0119.",
+    "time_to_first_audio_s": 0.6,
+    "audio_seconds": 9.65,
+    "total_s": 1.87,
+    "usage": {
+     "total_tokens": 7147,
+     "input_tokens": 6881,
+     "output_tokens": 266,
+     "input_token_details": {
+      "text_tokens": 6746,
+      "audio_tokens": 135,
+      "image_tokens": 0,
+      "cached_tokens": 6592,
+      "cached_tokens_details": {
+       "text_tokens": 6592,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 73,
+      "audio_tokens": 193
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To znaczy, \u017ce ten projekt ci\u0119 obci\u0105\u017ca i widzisz, \u017ce trudno by\u0142o odm\u00f3wi\u0107. Mo\u017ce to jest co\u015b, nad czym chcia\u0142aby\u015b popracowa\u0107?",
+    "time_to_first_audio_s": 0.49,
+    "audio_seconds": 7.4,
+    "total_s": 1.45,
+    "usage": {
+     "total_tokens": 7233,
+     "input_tokens": 7028,
+     "output_tokens": 205,
+     "input_token_details": {
+      "text_tokens": 6835,
+      "audio_tokens": 193,
+      "image_tokens": 0,
+      "cached_tokens": 6656,
+      "cached_tokens_details": {
+       "text_tokens": 6656,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 57,
+      "audio_tokens": 148
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Wydaje mi si\u0119, \u017ce wa\u017cne jest, \u017ceby powiedzie\u0107 jasno, co czujesz. Mo\u017cesz spr\u00f3bowa\u0107 wyja\u015bni\u0107, jak to wp\u0142ywa na ciebie. Jak ci si\u0119 wydaje, co by ci pomog\u0142o w tej rozmowie?",
+    "time_to_first_audio_s": 0.5,
+    "audio_seconds": 9.05,
+    "total_s": 1.74,
+    "usage": {
+     "total_tokens": 7300,
+     "input_tokens": 7046,
+     "output_tokens": 254,
+     "input_token_details": {
+      "text_tokens": 6898,
+      "audio_tokens": 148,
+      "image_tokens": 0,
+      "cached_tokens": 6720,
+      "cached_tokens_details": {
+       "text_tokens": 6720,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 73,
+      "audio_tokens": 181
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "greeting_no_question": true,
+   "greeting_short": true,
+   "greeting_nothing_known": true,
+   "max_one_q": true,
+   "question_share": 1.0,
+   "most_replies_no_question": false,
+   "initiative_after_little": true,
+   "uses_what_it_knows": false,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 2,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": false,
+   "gender_forms_ok": true,
+   "feminine_forms": [
+    "chcia\u0142aby\u015b"
+   ],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.4,
+   "max_sentences": 3
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-mini",
+  "prompt": "v3",
+  "model": "gpt-realtime-mini",
+  "effort": "none",
+  "runs": 2,
+  "variant": "r2-v3-mini",
+  "persona": "R1",
+  "entry": "seeded",
+  "run": 1,
+  "prompt_chars": 14547,
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Ania, czego najbardziej teraz si\u0119 obawiasz, m\u00f3wi\u0105c \u201enie\u201d prze\u0142o\u017conemu?",
+    "time_to_first_audio_s": 0.82,
+    "audio_seconds": 4.35,
+    "total_s": 1.26,
+    "usage": {
+     "total_tokens": 6874,
+     "input_tokens": 6746,
+     "output_tokens": 128,
+     "input_token_details": {
+      "text_tokens": 6746,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1792,
+      "cached_tokens_details": {
+       "text_tokens": 1792,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 41,
+      "audio_tokens": 87
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Czyli czu\u0107, \u017ce ten nawyk odpuszczania, \u017ceby nie konfliktowa\u0107, wr\u00f3ci\u0142. Mo\u017ce si\u0119 zastanawiasz, jak to zmieni\u0107. Czy tak to widzisz?",
+    "time_to_first_audio_s": 0.65,
+    "audio_seconds": 7.95,
+    "total_s": 1.62,
+    "usage": {
+     "total_tokens": 7128,
+     "input_tokens": 6905,
+     "output_tokens": 223,
+     "input_token_details": {
+      "text_tokens": 6818,
+      "audio_tokens": 87,
+      "image_tokens": 0,
+      "cached_tokens": 6848,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 64,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 64,
+      "audio_tokens": 159
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To w porz\u0105dku, mo\u017cesz nie wiedzie\u0107 jeszcze wszystkiego. Powiedz mi, co teraz przykuwa uwag\u0119, co najmocniej czujesz?",
+    "time_to_first_audio_s": 0.64,
+    "audio_seconds": 6.8,
+    "total_s": 1.4,
+    "usage": {
+     "total_tokens": 7218,
+     "input_tokens": 7037,
+     "output_tokens": 181,
+     "input_token_details": {
+      "text_tokens": 6878,
+      "audio_tokens": 159,
+      "image_tokens": 0,
+      "cached_tokens": 6720,
+      "cached_tokens_details": {
+       "text_tokens": 6720,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 45,
+      "audio_tokens": 136
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Rozumiem, czyli obawiasz si\u0119, \u017ce konsekwencj\u0105 odmowy mog\u0142oby by\u0107, \u017ce szef postawi ci\u0119 w innym \u015bwietle. Mo\u017cesz powiedzie\u0107, co najbardziej ci\u0119 w tej sytuacji przera\u017ca?",
+    "time_to_first_audio_s": 0.66,
+    "audio_seconds": 9.85,
+    "total_s": 1.96,
+    "usage": {
+     "total_tokens": 7339,
+     "input_tokens": 7072,
+     "output_tokens": 267,
+     "input_token_details": {
+      "text_tokens": 6936,
+      "audio_tokens": 136,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 70,
+      "audio_tokens": 197
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "seed_opening_one_q": true,
+   "seed_opening_on_topic": true,
+   "max_one_q": true,
+   "question_share": 1.0,
+   "most_replies_no_question": false,
+   "initiative_after_little": false,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 2,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 1,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.0,
+   "max_sentences": 3
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-mini",
+  "prompt": "v3",
+  "model": "gpt-realtime-mini",
+  "effort": "none",
+  "runs": 2,
+  "variant": "r2-v3-mini",
+  "persona": "R1",
+  "entry": "seeded",
+  "run": 2,
+  "prompt_chars": 14547,
+  "turns": [
+   {
+    "text": "Co sprawia, \u017ce trudno Ci odm\u00f3wi\u0107 prze\u0142o\u017conemu?",
+    "time_to_first_audio_s": 0.61,
+    "audio_seconds": 3.1,
+    "total_s": 0.97,
+    "usage": {
+     "total_tokens": 6836,
+     "input_tokens": 6746,
+     "output_tokens": 90,
+     "input_token_details": {
+      "text_tokens": 6746,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1792,
+      "cached_tokens_details": {
+       "text_tokens": 1792,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 28,
+      "audio_tokens": 62
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "S\u0142ysz\u0119, \u017ce poczu\u0142a\u015b si\u0119 zm\u0119czona, a mimo to zgodzi\u0142a\u015b si\u0119 na co\u015b, co doda\u0142o Ci obci\u0105\u017cenia. Jak my\u015blisz, co Ci\u0119 powstrzymuje przed powiedzeniem \u201enie\u201d?",
+    "time_to_first_audio_s": 0.54,
+    "audio_seconds": 9.1,
+    "total_s": 1.81,
+    "usage": {
+     "total_tokens": 7122,
+     "input_tokens": 6867,
+     "output_tokens": 255,
+     "input_token_details": {
+      "text_tokens": 6805,
+      "audio_tokens": 62,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 73,
+      "audio_tokens": 182
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Mo\u017ce warto spr\u00f3bowa\u0107 przyjrze\u0107 si\u0119, co czujesz, gdy to odmawianie przychodzi do g\u0142owy. Czy jest tam strach przed konsekwencjami?",
+    "time_to_first_audio_s": 0.55,
+    "audio_seconds": 7.45,
+    "total_s": 1.61,
+    "usage": {
+     "total_tokens": 7264,
+     "input_tokens": 7058,
+     "output_tokens": 206,
+     "input_token_details": {
+      "text_tokens": 6876,
+      "audio_tokens": 182,
+      "image_tokens": 0,
+      "cached_tokens": 6720,
+      "cached_tokens_details": {
+       "text_tokens": 6720,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 57,
+      "audio_tokens": 149
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To brzmi jak spi\u0119cie, kt\u00f3re ci\u0105gnie si\u0119 w tle. Mo\u017ce obawiasz si\u0119, \u017ce odmowa zostanie odebrana jako s\u0142abo\u015b\u0107. To tylko przypuszczenie, powiedz, czy jest w tym co\u015b z tego?",
+    "time_to_first_audio_s": 0.54,
+    "audio_seconds": 9.3,
+    "total_s": 1.82,
+    "usage": {
+     "total_tokens": 7352,
+     "input_tokens": 7093,
+     "output_tokens": 259,
+     "input_token_details": {
+      "text_tokens": 6944,
+      "audio_tokens": 149,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 73,
+      "audio_tokens": 186
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "seed_opening_one_q": true,
+   "seed_opening_on_topic": true,
+   "max_one_q": true,
+   "question_share": 1.0,
+   "most_replies_no_question": false,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 1,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 1,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "gender_forms_ok": true,
+   "feminine_forms": [
+    "poczu\u0142a\u015b",
+    "zgodzi\u0142a\u015b"
+   ],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.0,
+   "max_sentences": 3
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-mini",
+  "prompt": "v3",
+  "model": "gpt-realtime-mini",
+  "effort": "none",
+  "runs": 2,
+  "variant": "r2-v3-mini",
+  "persona": "R2",
+  "entry": "fresh",
+  "run": 1,
+  "prompt_chars": 13035,
+  "turns": [
+   {
+    "text": "Hi Tom.",
+    "time_to_first_audio_s": 0.88,
+    "audio_seconds": 0.85,
+    "total_s": 0.89,
+    "usage": {
+     "total_tokens": 5842,
+     "input_tokens": 5816,
+     "output_tokens": 26,
+     "input_token_details": {
+      "text_tokens": 5816,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1792,
+      "cached_tokens_details": {
+       "text_tokens": 1792,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 9,
+      "audio_tokens": 17
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "It sounds like you're feeling behind, like others have it all sorted out. That\u2019s weighing on you.",
+    "time_to_first_audio_s": 0.66,
+    "audio_seconds": 5.35,
+    "total_s": 1.25,
+    "usage": {
+     "total_tokens": 6008,
+     "input_tokens": 5866,
+     "output_tokens": 142,
+     "input_token_details": {
+      "text_tokens": 5849,
+      "audio_tokens": 17,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 35,
+      "audio_tokens": 107
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "It seems like there\u2019s some uncertainty there\u2014maybe a mix of thoughts, not feeling quite sure about how others compare.",
+    "time_to_first_audio_s": 0.68,
+    "audio_seconds": 6.55,
+    "total_s": 1.43,
+    "usage": {
+     "total_tokens": 6166,
+     "input_tokens": 5997,
+     "output_tokens": 169,
+     "input_token_details": {
+      "text_tokens": 5890,
+      "audio_tokens": 107,
+      "image_tokens": 0,
+      "cached_tokens": 5760,
+      "cached_tokens_details": {
+       "text_tokens": 5760,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 38,
+      "audio_tokens": 131
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "That sounds like it\u2019s hitting hard\u2014you might be feeling that comparison even more right now.",
+    "time_to_first_audio_s": 0.7,
+    "audio_seconds": 4.5,
+    "total_s": 1.19,
+    "usage": {
+     "total_tokens": 6195,
+     "input_tokens": 6072,
+     "output_tokens": 123,
+     "input_token_details": {
+      "text_tokens": 5941,
+      "audio_tokens": 131,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 33,
+      "audio_tokens": 90
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "It\u2019s not really my place to tell you what to do\u2014that\u2019s something to bring up with your therapist. But I\u2019m curious, what\u2019s the part that feels the hardest for you right now?",
+    "time_to_first_audio_s": 0.65,
+    "audio_seconds": 8.9,
+    "total_s": 1.73,
+    "usage": {
+     "total_tokens": 6300,
+     "input_tokens": 6066,
+     "output_tokens": 234,
+     "input_token_details": {
+      "text_tokens": 5976,
+      "audio_tokens": 90,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 56,
+      "audio_tokens": 178
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "greeting_no_question": true,
+   "greeting_short": true,
+   "greeting_nothing_known": true,
+   "max_one_q": true,
+   "question_share": 0.25,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "uses_what_it_knows": true,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 4,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": false,
+   "advice_to_therapist": true,
+   "avg_sentences": 1.4,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-mini",
+  "prompt": "v3",
+  "model": "gpt-realtime-mini",
+  "effort": "none",
+  "runs": 2,
+  "variant": "r2-v3-mini",
+  "persona": "R2",
+  "entry": "fresh",
+  "run": 2,
+  "prompt_chars": 13035,
+  "turns": [
+   {
+    "text": "Hi Tom, good to connect with you.",
+    "time_to_first_audio_s": 0.65,
+    "audio_seconds": 2.6,
+    "total_s": 0.88,
+    "usage": {
+     "total_tokens": 5887,
+     "input_tokens": 5816,
+     "output_tokens": 71,
+     "input_token_details": {
+      "text_tokens": 5816,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1792,
+      "cached_tokens_details": {
+       "text_tokens": 1792,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 19,
+      "audio_tokens": 52
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "It sounds like you're feeling a big weight from that comparison\u2014like everyone else has a clearer path. What's that been like for you so far?",
+    "time_to_first_audio_s": 0.54,
+    "audio_seconds": 7.3,
+    "total_s": 1.48,
+    "usage": {
+     "total_tokens": 6102,
+     "input_tokens": 5911,
+     "output_tokens": 191,
+     "input_token_details": {
+      "text_tokens": 5859,
+      "audio_tokens": 52,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 45,
+      "audio_tokens": 146
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Maybe part of what\u2019s weighing on you is the stress of feeling behind. Does that ring true?",
+    "time_to_first_audio_s": 0.6,
+    "audio_seconds": 5.0,
+    "total_s": 1.24,
+    "usage": {
+     "total_tokens": 6186,
+     "input_tokens": 6052,
+     "output_tokens": 134,
+     "input_token_details": {
+      "text_tokens": 5906,
+      "audio_tokens": 146,
+      "image_tokens": 0,
+      "cached_tokens": 5760,
+      "cached_tokens_details": {
+       "text_tokens": 5760,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 34,
+      "audio_tokens": 100
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "That sounds like it\u2019s hitting you hard\u2014watching them make those changes while you're still dealing with renting. It's a real contrast.",
+    "time_to_first_audio_s": 0.53,
+    "audio_seconds": 6.35,
+    "total_s": 1.34,
+    "usage": {
+     "total_tokens": 6219,
+     "input_tokens": 6051,
+     "output_tokens": 168,
+     "input_token_details": {
+      "text_tokens": 5951,
+      "audio_tokens": 100,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 41,
+      "audio_tokens": 127
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "That\u2019s something to explore with your therapist. What\u2019s one thing you\u2019d like to say to them about this?",
+    "time_to_first_audio_s": 0.53,
+    "audio_seconds": 5.1,
+    "total_s": 1.14,
+    "usage": {
+     "total_tokens": 6260,
+     "input_tokens": 6121,
+     "output_tokens": 139,
+     "input_token_details": {
+      "text_tokens": 5994,
+      "audio_tokens": 127,
+      "image_tokens": 0,
+      "cached_tokens": 5888,
+      "cached_tokens_details": {
+       "text_tokens": 5888,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 37,
+      "audio_tokens": 102
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "greeting_no_question": true,
+   "greeting_short": true,
+   "greeting_nothing_known": true,
+   "max_one_q": true,
+   "question_share": 0.75,
+   "most_replies_no_question": false,
+   "initiative_after_little": true,
+   "uses_what_it_knows": true,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 3,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": false,
+   "advice_to_therapist": true,
+   "avg_sentences": 1.8,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-mini",
+  "prompt": "v3",
+  "model": "gpt-realtime-mini",
+  "effort": "none",
+  "runs": 2,
+  "variant": "r2-v3-mini",
+  "persona": "R2",
+  "entry": "seeded",
+  "run": 1,
+  "prompt_chars": 13111,
+  "turns": [
+   {
+    "text": "What\u2019s made you think about calling him more?",
+    "time_to_first_audio_s": 0.78,
+    "audio_seconds": 2.4,
+    "total_s": 1.05,
+    "usage": {
+     "total_tokens": 5902,
+     "input_tokens": 5834,
+     "output_tokens": 68,
+     "input_token_details": {
+      "text_tokens": 5834,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 1792,
+      "cached_tokens_details": {
+       "text_tokens": 1792,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 20,
+      "audio_tokens": 48
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "So it sounds like the timing just slips away from you. What do you think gets in the way?",
+    "time_to_first_audio_s": 0.56,
+    "audio_seconds": 4.4,
+    "total_s": 1.15,
+    "usage": {
+     "total_tokens": 6044,
+     "input_tokens": 5921,
+     "output_tokens": 123,
+     "input_token_details": {
+      "text_tokens": 5873,
+      "audio_tokens": 48,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 35,
+      "audio_tokens": 88
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Maybe it\u2019s the end of the day feeling like it\u2019s too rushed, or something else? Tell me if that fits.",
+    "time_to_first_audio_s": 0.9,
+    "audio_seconds": 5.9,
+    "total_s": 1.49,
+    "usage": {
+     "total_tokens": 6155,
+     "input_tokens": 5998,
+     "output_tokens": 157,
+     "input_token_details": {
+      "text_tokens": 5910,
+      "audio_tokens": 88,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 39,
+      "audio_tokens": 118
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "It sounds like you might be avoiding some of the harder stuff. Is that what you're worried about?",
+    "time_to_first_audio_s": 0.69,
+    "audio_seconds": 4.75,
+    "total_s": 1.12,
+    "usage": {
+     "total_tokens": 6202,
+     "input_tokens": 6073,
+     "output_tokens": 129,
+     "input_token_details": {
+      "text_tokens": 5955,
+      "audio_tokens": 118,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 34,
+      "audio_tokens": 95
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "seed_opening_one_q": true,
+   "seed_opening_on_topic": true,
+   "max_one_q": true,
+   "question_share": 1.0,
+   "most_replies_no_question": false,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 0,
+   "no_recital": true,
+   "context_terms_total": 0,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "avg_sentences": 1.8,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-mini",
+  "prompt": "v3",
+  "model": "gpt-realtime-mini",
+  "effort": "none",
+  "runs": 2,
+  "variant": "r2-v3-mini",
+  "persona": "R2",
+  "entry": "seeded",
+  "run": 2,
+  "prompt_chars": 13111,
+  "turns": [
+   {
+    "text": "What makes you think about calling your dad more often?",
+    "time_to_first_audio_s": 0.69,
+    "audio_seconds": 2.65,
+    "total_s": 0.93,
+    "usage": {
+     "total_tokens": 5908,
+     "input_tokens": 5834,
+     "output_tokens": 74,
+     "input_token_details": {
+      "text_tokens": 5834,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 21,
+      "audio_tokens": 53
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "It sounds like the evenings slip away before you get the chance. Are you noticing any patterns in what\u2019s taking up that time?",
+    "time_to_first_audio_s": 0.53,
+    "audio_seconds": 6.65,
+    "total_s": 1.29,
+    "usage": {
+     "total_tokens": 6100,
+     "input_tokens": 5927,
+     "output_tokens": 173,
+     "input_token_details": {
+      "text_tokens": 5874,
+      "audio_tokens": 53,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 40,
+      "audio_tokens": 133
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Maybe it\u2019s the end of the day just feels a bit full, and you get caught up in other things. Tell me if that feels close.",
+    "time_to_first_audio_s": 0.52,
+    "audio_seconds": 6.35,
+    "total_s": 1.27,
+    "usage": {
+     "total_tokens": 6220,
+     "input_tokens": 6049,
+     "output_tokens": 171,
+     "input_token_details": {
+      "text_tokens": 5916,
+      "audio_tokens": 133,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 44,
+      "audio_tokens": 127
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "So, it sounds like there's something unsaid between you\u2014maybe talking about your mum feels hard. Would you say that\u2019s part of what holds you back?",
+    "time_to_first_audio_s": 0.55,
+    "audio_seconds": 7.15,
+    "total_s": 1.59,
+    "usage": {
+     "total_tokens": 6284,
+     "input_tokens": 6093,
+     "output_tokens": 191,
+     "input_token_details": {
+      "text_tokens": 5966,
+      "audio_tokens": 127,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 48,
+      "audio_tokens": 143
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "seed_opening_one_q": true,
+   "seed_opening_on_topic": true,
+   "max_one_q": true,
+   "question_share": 0.67,
+   "most_replies_no_question": false,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 1,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": false,
+   "advice_to_therapist": null,
+   "avg_sentences": 1.8,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-mini",
+  "prompt": "v3",
+  "model": "gpt-realtime-mini",
+  "effort": "none",
+  "runs": 2,
+  "variant": "r2-v3-mini",
+  "persona": "T1",
+  "entry": "fresh",
+  "run": 1,
+  "prompt_chars": 12121,
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, jestem tutaj, got\u00f3w, \u017ceby pos\u0142ucha\u0107.",
+    "time_to_first_audio_s": 0.57,
+    "audio_seconds": 3.0,
+    "total_s": 0.92,
+    "usage": {
+     "total_tokens": 5510,
+     "input_tokens": 5422,
+     "output_tokens": 88,
+     "input_token_details": {
+      "text_tokens": 5422,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 512,
+      "cached_tokens_details": {
+       "text_tokens": 512,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 28,
+      "audio_tokens": 60
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Spokojnie, mo\u017cemy po prostu zacz\u0105\u0107 od tego, co teraz czujesz. Co jest na twojej g\u0142owie?",
+    "time_to_first_audio_s": 0.51,
+    "audio_seconds": 5.9,
+    "total_s": 1.23,
+    "usage": {
+     "total_tokens": 5685,
+     "input_tokens": 5527,
+     "output_tokens": 158,
+     "input_token_details": {
+      "text_tokens": 5467,
+      "audio_tokens": 60,
+      "image_tokens": 0,
+      "cached_tokens": 5440,
+      "cached_tokens_details": {
+       "text_tokens": 5440,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 40,
+      "audio_tokens": 118
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Spr\u00f3bujmy od czego\u015b ma\u0142ego. Mo\u017ce co\u015b ci\u0119 lekko martwi albo po prostu co\u015b ci\u0119 zajmuje \u2013 co pierwsze przychodzi do g\u0142owy?",
+    "time_to_first_audio_s": 0.45,
+    "audio_seconds": 7.9,
+    "total_s": 1.49,
+    "usage": {
+     "total_tokens": 5835,
+     "input_tokens": 5623,
+     "output_tokens": 212,
+     "input_token_details": {
+      "text_tokens": 5505,
+      "audio_tokens": 118,
+      "image_tokens": 0,
+      "cached_tokens": 5376,
+      "cached_tokens_details": {
+       "text_tokens": 5376,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 54,
+      "audio_tokens": 158
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Rozumiem, to mo\u017ce by\u0107 niepewno\u015b\u0107, czy zostawisz si\u0119 w tej samej grupie. Mo\u017ce warto si\u0119 zastanowi\u0107, co konkretnie najbardziej niepokoi.",
+    "time_to_first_audio_s": 1.03,
+    "audio_seconds": 7.45,
+    "total_s": 2.07,
+    "usage": {
+     "total_tokens": 5935,
+     "input_tokens": 5730,
+     "output_tokens": 205,
+     "input_token_details": {
+      "text_tokens": 5572,
+      "audio_tokens": 158,
+      "image_tokens": 0,
+      "cached_tokens": 5440,
+      "cached_tokens_details": {
+       "text_tokens": 5440,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 56,
+      "audio_tokens": 149
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Jasne, to nie\u0142atwe pytanie, bo nie jestem pewna, co masz na my\u015bli dok\u0142adnie. Ale mog\u0119 podpowiedzie\u0107: czy twoja obecna decyzja zale\u017cy od czego\u015b konkretnego, jak np. projekty, relacje z zespo\u0142em?",
+    "time_to_first_audio_s": 0.44,
+    "audio_seconds": 11.65,
+    "total_s": 2.01,
+    "usage": {
+     "total_tokens": 6093,
+     "input_tokens": 5779,
+     "output_tokens": 314,
+     "input_token_details": {
+      "text_tokens": 5630,
+      "audio_tokens": 149,
+      "image_tokens": 0,
+      "cached_tokens": 5440,
+      "cached_tokens_details": {
+       "text_tokens": 5440,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 81,
+      "audio_tokens": 233
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "greeting_no_question": true,
+   "greeting_short": true,
+   "greeting_nothing_known": true,
+   "max_one_q": true,
+   "question_share": 0.75,
+   "most_replies_no_question": false,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 1,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 1,
+   "no_dashes": false,
+   "advice_to_therapist": false,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.0,
+   "max_sentences": 3
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-mini",
+  "prompt": "v3",
+  "model": "gpt-realtime-mini",
+  "effort": "none",
+  "runs": 2,
+  "variant": "r2-v3-mini",
+  "persona": "T1",
+  "entry": "fresh",
+  "run": 2,
+  "prompt_chars": 12121,
+  "turns": [
+   {
+    "text": "Hej, cze\u015b\u0107 Alex, ciesz\u0119 si\u0119, \u017ce jeste\u015b. Ch\u0119tnie pos\u0142ucham, co masz na my\u015bli.",
+    "time_to_first_audio_s": 0.77,
+    "audio_seconds": 5.2,
+    "total_s": 1.29,
+    "usage": {
+     "total_tokens": 5570,
+     "input_tokens": 5422,
+     "output_tokens": 148,
+     "input_token_details": {
+      "text_tokens": 5422,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 512,
+      "cached_tokens_details": {
+       "text_tokens": 512,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 44,
+      "audio_tokens": 104
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Spoko, mo\u017cemy zacz\u0105\u0107 od tego, co teraz czujesz albo co teraz zajmuje ci my\u015bli. Mo\u017ce spr\u00f3bujesz powiedzie\u0107 o czym\u015b, co si\u0119 ostatnio wydarzy\u0142o?",
+    "time_to_first_audio_s": 0.67,
+    "audio_seconds": 8.0,
+    "total_s": 1.56,
+    "usage": {
+     "total_tokens": 5805,
+     "input_tokens": 5587,
+     "output_tokens": 218,
+     "input_token_details": {
+      "text_tokens": 5483,
+      "audio_tokens": 104,
+      "image_tokens": 0,
+      "cached_tokens": 5504,
+      "cached_tokens_details": {
+       "text_tokens": 5440,
+       "audio_tokens": 64,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 58,
+      "audio_tokens": 160
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Dobrze, to mo\u017ce podam co\u015b, co wygl\u0105da na to, \u017ce ci si\u0119 przydarza: czujesz, \u017ce jest jaka\u015b mieszanka my\u015bli, troch\u0119 zamieszania. Czy to jest w pobli\u017cu tego, co czujesz?",
+    "time_to_first_audio_s": 0.68,
+    "audio_seconds": 9.2,
+    "total_s": 1.76,
+    "usage": {
+     "total_tokens": 5953,
+     "input_tokens": 5697,
+     "output_tokens": 256,
+     "input_token_details": {
+      "text_tokens": 5537,
+      "audio_tokens": 160,
+      "image_tokens": 0,
+      "cached_tokens": 5376,
+      "cached_tokens_details": {
+       "text_tokens": 5376,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 72,
+      "audio_tokens": 184
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "S\u0142ysz\u0119, \u017ce to dla ciebie spore obci\u0105\u017cenie, bo nie masz pewno\u015bci, co b\u0119dzie. Jak czujesz si\u0119 z t\u0105 niepewno\u015bci\u0105?",
+    "time_to_first_audio_s": 0.68,
+    "audio_seconds": 6.4,
+    "total_s": 1.4,
+    "usage": {
+     "total_tokens": 5983,
+     "input_tokens": 5804,
+     "output_tokens": 179,
+     "input_token_details": {
+      "text_tokens": 5620,
+      "audio_tokens": 184,
+      "image_tokens": 0,
+      "cached_tokens": 5440,
+      "cached_tokens_details": {
+       "text_tokens": 5440,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 51,
+      "audio_tokens": 128
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To trudne pytanie, bo to co\u015b, nad czym warto porozmawia\u0107 ze specjalist\u0105. A je\u015bli mia\u0142aby\u015b powiedzie\u0107, co chcia\u0142aby\u015b, \u017ceby si\u0119 zmieni\u0142o w tym zespole, co by to by\u0142o?",
+    "time_to_first_audio_s": 0.68,
+    "audio_seconds": 8.75,
+    "total_s": 1.7,
+    "usage": {
+     "total_tokens": 6043,
+     "input_tokens": 5799,
+     "output_tokens": 244,
+     "input_token_details": {
+      "text_tokens": 5671,
+      "audio_tokens": 128,
+      "image_tokens": 0,
+      "cached_tokens": 5504,
+      "cached_tokens_details": {
+       "text_tokens": 5504,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 69,
+      "audio_tokens": 175
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "greeting_no_question": true,
+   "greeting_short": true,
+   "greeting_nothing_known": true,
+   "max_one_q": true,
+   "question_share": 1.0,
+   "most_replies_no_question": false,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 0,
+   "no_recital": true,
+   "context_terms_total": 0,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 1,
+   "no_dashes": true,
+   "advice_to_therapist": false,
+   "gender_forms_ok": false,
+   "feminine_forms": [
+    "chcia\u0142aby\u015b",
+    "mia\u0142aby\u015b"
+   ],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.0,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-mini",
+  "prompt": "v3",
+  "model": "gpt-realtime-mini",
+  "effort": "none",
+  "runs": 2,
+  "variant": "r2-v3-mini",
+  "persona": "T1",
+  "entry": "seeded",
+  "run": 1,
+  "prompt_chars": 11914,
+  "turns": [
+   {
+    "text": "Jakie zmiany w pracy s\u0105 w tej chwili najwa\u017cniejsze dla Ciebie?",
+    "time_to_first_audio_s": 0.5,
+    "audio_seconds": 3.5,
+    "total_s": 0.89,
+    "usage": {
+     "total_tokens": 5422,
+     "input_tokens": 5322,
+     "output_tokens": 100,
+     "input_token_details": {
+      "text_tokens": 5322,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 2368,
+      "cached_tokens_details": {
+       "text_tokens": 2368,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 30,
+      "audio_tokens": 70
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To musi by\u0107 trudne, czujesz pewnie coraz wi\u0119cej niepewno\u015bci. Chyba jest w tym du\u017co napi\u0119cia, tak?",
+    "time_to_first_audio_s": 0.44,
+    "audio_seconds": 5.85,
+    "total_s": 1.18,
+    "usage": {
+     "total_tokens": 5603,
+     "input_tokens": 5443,
+     "output_tokens": 160,
+     "input_token_details": {
+      "text_tokens": 5373,
+      "audio_tokens": 70,
+      "image_tokens": 0,
+      "cached_tokens": 5376,
+      "cached_tokens_details": {
+       "text_tokens": 5312,
+       "audio_tokens": 64,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 43,
+      "audio_tokens": 117
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To w porz\u0105dku, nie musisz wiedzie\u0107 od razu. Mo\u017ce powiedz, co na ten moment jest dla Ciebie najwa\u017cniejsze z tych zmian?",
+    "time_to_first_audio_s": 0.49,
+    "audio_seconds": 6.15,
+    "total_s": 1.3,
+    "usage": {
+     "total_tokens": 5705,
+     "input_tokens": 5531,
+     "output_tokens": 174,
+     "input_token_details": {
+      "text_tokens": 5414,
+      "audio_tokens": 117,
+      "image_tokens": 0,
+      "cached_tokens": 5312,
+      "cached_tokens_details": {
+       "text_tokens": 5312,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 51,
+      "audio_tokens": 123
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Czyli jest sporo niedom\u00f3wie\u0144, du\u017co domy\u015blania si\u0119, tak? Jak reagujesz na takie sytuacje?",
+    "time_to_first_audio_s": 0.42,
+    "audio_seconds": 5.6,
+    "total_s": 1.13,
+    "usage": {
+     "total_tokens": 5752,
+     "input_tokens": 5598,
+     "output_tokens": 154,
+     "input_token_details": {
+      "text_tokens": 5475,
+      "audio_tokens": 123,
+      "image_tokens": 0,
+      "cached_tokens": 5312,
+      "cached_tokens_details": {
+       "text_tokens": 5312,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 42,
+      "audio_tokens": 112
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "seed_opening_one_q": true,
+   "seed_opening_on_topic": true,
+   "max_one_q": false,
+   "question_share": 1.0,
+   "most_replies_no_question": false,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 0,
+   "no_recital": true,
+   "context_terms_total": 0,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 1.8,
+   "max_sentences": 2
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-mini",
+  "prompt": "v3",
+  "model": "gpt-realtime-mini",
+  "effort": "none",
+  "runs": 2,
+  "variant": "r2-v3-mini",
+  "persona": "T1",
+  "entry": "seeded",
+  "run": 2,
+  "prompt_chars": 11914,
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, co teraz czujesz, my\u015bl\u0105c o tych zmianach w pracy?",
+    "time_to_first_audio_s": 0.58,
+    "audio_seconds": 3.8,
+    "total_s": 1.08,
+    "usage": {
+     "total_tokens": 5429,
+     "input_tokens": 5322,
+     "output_tokens": 107,
+     "input_token_details": {
+      "text_tokens": 5322,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 31,
+      "audio_tokens": 76
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Brzmi jak co\u015b, co naprawd\u0119 wagra na twoich emocjach. Chcesz powiedzie\u0107 troch\u0119 wi\u0119cej o tym, co jest dla ciebie najtrudniejsze?",
+    "time_to_first_audio_s": 0.73,
+    "audio_seconds": 6.55,
+    "total_s": 1.61,
+    "usage": {
+     "total_tokens": 5630,
+     "input_tokens": 5450,
+     "output_tokens": 180,
+     "input_token_details": {
+      "text_tokens": 5374,
+      "audio_tokens": 76,
+      "image_tokens": 0,
+      "cached_tokens": 5376,
+      "cached_tokens_details": {
+       "text_tokens": 5312,
+       "audio_tokens": 64,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 49,
+      "audio_tokens": 131
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Zastanawiasz si\u0119 nad tym, co dok\u0142adnie budzi ten niepok\u00f3j, dobrze rozumiem? Mo\u017ce to ta niestabilno\u015b\u0107, kt\u00f3ra si\u0119 powtarza? Sprawd\u017a, co jest dla ciebie najbli\u017cej.",
+    "time_to_first_audio_s": 0.56,
+    "audio_seconds": 9.95,
+    "total_s": 1.86,
+    "usage": {
+     "total_tokens": 5821,
+     "input_tokens": 5552,
+     "output_tokens": 269,
+     "input_token_details": {
+      "text_tokens": 5421,
+      "audio_tokens": 131,
+      "image_tokens": 0,
+      "cached_tokens": 5312,
+      "cached_tokens_details": {
+       "text_tokens": 5312,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 70,
+      "audio_tokens": 199
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Wygl\u0105da na to, \u017ce brakuje jasnych informacji, a to sporo obci\u0105\u017ca, prawda? Mo\u017ce warto zastanowi\u0107 si\u0119, czego by\u015b chcia\u0142 si\u0119 dowiedzie\u0107 od innych?",
+    "time_to_first_audio_s": 0.58,
+    "audio_seconds": 8.25,
+    "total_s": 1.6,
+    "usage": {
+     "total_tokens": 5927,
+     "input_tokens": 5700,
+     "output_tokens": 227,
+     "input_token_details": {
+      "text_tokens": 5501,
+      "audio_tokens": 199,
+      "image_tokens": 0,
+      "cached_tokens": 5312,
+      "cached_tokens_details": {
+       "text_tokens": 5312,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 62,
+      "audio_tokens": 165
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "seed_opening_one_q": true,
+   "seed_opening_on_topic": true,
+   "max_one_q": false,
+   "question_share": 1.0,
+   "most_replies_no_question": false,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 0,
+   "no_recital": true,
+   "context_terms_total": 0,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.0,
+   "max_sentences": 3
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-21mini-low",
+  "prompt": "v3",
+  "model": "gpt-realtime-2.1-mini",
+  "effort": "low",
+  "runs": 2,
+  "variant": "r2-v3-21mini-low",
+  "persona": "R1",
+  "entry": "fresh",
+  "run": 1,
+  "prompt_chars": 14391,
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, mi\u0142o ci\u0119 tu spotka\u0107. Zatrzymajmy si\u0119 na chwil\u0119 i pos\u0142uchajmy, co chcesz powiedzie\u0107.",
+    "time_to_first_audio_s": 0.82,
+    "audio_seconds": 6.5,
+    "total_s": 1.7,
+    "usage": {
+     "total_tokens": 6850,
+     "input_tokens": 6644,
+     "output_tokens": 206,
+     "input_token_details": {
+      "text_tokens": 6644,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 76,
+      "audio_tokens": 130,
+      "reasoning_tokens": 23
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Rozumiem, \u017ce ta niedziela zn\u00f3w wraca, a ty ju\u017c sk\u0142adasz w g\u0142owie jutro. To wygl\u0105da jak moment, kiedy twoje my\u015bli startuj\u0105 szybciej ni\u017c ty, i zaczynaj\u0105 ju\u017c d\u017awiga\u0107 ci\u0119\u017car jutra. Czy to jest ta cz\u0119\u015b\u0107, kt\u00f3ra daje ci najbardziej do pieca, czy s\u0105 tam te\u017c momenty, w kt\u00f3rych jeste\u015b troch\u0119 l\u017cejsza? Mo\u017cesz sobie po prostu powiedzie\u0107, co ci\u0119 ju\u017c wci\u0105ga, bez oceniania.",
+    "time_to_first_audio_s": 0.84,
+    "audio_seconds": 22.7,
+    "total_s": 3.83,
+    "usage": {
+     "total_tokens": 7337,
+     "input_tokens": 6716,
+     "output_tokens": 621,
+     "input_token_details": {
+      "text_tokens": 6716,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6656,
+      "cached_tokens_details": {
+       "text_tokens": 6656,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 167,
+      "audio_tokens": 454,
+      "reasoning_tokens": 23
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To brzmi, jakby ten ci\u0119\u017car by\u0142 bardziej na poziomie czucia ni\u017c my\u015blenia. Jakby\u015b czu\u0142a, \u017ce wszystko narasta, cho\u0107 nie umiesz wskaza\u0107 konkretnej my\u015bli. Moja zagadka, je\u015bli chcesz j\u0105 sprawdzi\u0107: mo\u017ce to nie jest konkretne wydarzenie, tylko og\u00f3lna gotowo\u015b\u0107 do stresu? Je\u015bli to prawda, to jest to troch\u0119 jak zaci\u015bni\u0119ty mi\u0119sie\u0144 \u2013 nie wida\u0107 go, a jednak dokucza. Powiedz, czy to brzmi dla ciebie prawdopodobnie?",
+    "time_to_first_audio_s": 0.77,
+    "audio_seconds": 26.55,
+    "total_s": 4.3,
+    "usage": {
+     "total_tokens": 7554,
+     "input_tokens": 6846,
+     "output_tokens": 708,
+     "input_token_details": {
+      "text_tokens": 6846,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6720,
+      "cached_tokens_details": {
+       "text_tokens": 6720,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 177,
+      "audio_tokens": 531,
+      "reasoning_tokens": 18
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Brzmi, jakby\u015b mia\u0142a garstk\u0119 si\u0142y, ale w \u015brodku co\u015b ci\u0119 zatrzymuje, i m\u00f3wisz \u201etak\u201d, bo chcesz mie\u0107 spok\u00f3j, nie dlatego, \u017ce naprawd\u0119 chcesz. Ten moment w pracy jest dla ciebie trudny, bo granica nie chce wybrzmie\u0107.",
+    "time_to_first_audio_s": 0.76,
+    "audio_seconds": 15.05,
+    "total_s": 2.75,
+    "usage": {
+     "total_tokens": 7423,
+     "input_tokens": 7005,
+     "output_tokens": 418,
+     "input_token_details": {
+      "text_tokens": 7005,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6848,
+      "cached_tokens_details": {
+       "text_tokens": 6848,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 117,
+      "audio_tokens": 301,
+      "reasoning_tokens": 22
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Jasne, mo\u017cesz to powiedzie\u0107 wprost, ale niech to nie b\u0119dzie decyzja pod naciskiem ani jaki\u015b idealny plan. Wiem, co wyci\u0105ga ci\u0119 z r\u00f3wnowagi: to, \u017ce odmawianie brzmi jak konflikt, a ty chcesz spokoju. Je\u015bli czujesz, \u017ce co\u015b jest dla ciebie za du\u017co, to warto powiedzie\u0107 to swojemu szefowi wprost, ale bez przymusu i bez m\u00f3wienia \u201enie\u201d we wszystkich sprawach naraz. To z kolei nale\u017cy do planu rozmowy, kt\u00f3ry mo\u017cecie u\u0142o\u017cy\u0107 razem w terapii. A ty, co by\u015b chcia\u0142a mu powiedzie\u0107?",
+    "time_to_first_audio_s": 0.97,
+    "audio_seconds": 28.65,
+    "total_s": 4.84,
+    "usage": {
+     "total_tokens": 7919,
+     "input_tokens": 7102,
+     "output_tokens": 817,
+     "input_token_details": {
+      "text_tokens": 7102,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6976,
+      "cached_tokens_details": {
+       "text_tokens": 6976,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 244,
+      "audio_tokens": 573,
+      "reasoning_tokens": 60
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "greeting_no_question": true,
+   "greeting_short": true,
+   "greeting_nothing_known": true,
+   "max_one_q": false,
+   "question_share": 0.75,
+   "most_replies_no_question": false,
+   "initiative_after_little": true,
+   "uses_what_it_knows": true,
+   "max_context_terms_in_a_turn": 3,
+   "no_recital": true,
+   "context_terms_total": 6,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 1,
+   "no_dashes": false,
+   "advice_to_therapist": true,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 3.6,
+   "max_sentences": 5
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-21mini-low",
+  "prompt": "v3",
+  "model": "gpt-realtime-2.1-mini",
+  "effort": "low",
+  "runs": 2,
+  "variant": "r2-v3-21mini-low",
+  "persona": "R1",
+  "entry": "fresh",
+  "run": 2,
+  "prompt_chars": 14391,
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Ania. Mi\u0142o Ci\u0119 spotka\u0107. Zwyczajnie, bez pyta\u0144, po prostu s\u0142ucham.",
+    "time_to_first_audio_s": 0.71,
+    "audio_seconds": 5.9,
+    "total_s": 1.45,
+    "usage": {
+     "total_tokens": 6832,
+     "input_tokens": 6644,
+     "output_tokens": 188,
+     "input_token_details": {
+      "text_tokens": 6644,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 70,
+      "audio_tokens": 118,
+      "reasoning_tokens": 23
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To brzmi jakby\u015b ju\u017c wrzuca\u0142a si\u0119 w jutro, zanim ta niedziela si\u0119 sko\u0144czy. Siedzi Ci to w g\u0142owie i troch\u0119 obcina oddech z przyjemno\u015bci tego wieczoru.",
+    "time_to_first_audio_s": 0.62,
+    "audio_seconds": 9.55,
+    "total_s": 1.88,
+    "usage": {
+     "total_tokens": 6989,
+     "input_tokens": 6712,
+     "output_tokens": 277,
+     "input_token_details": {
+      "text_tokens": 6712,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6656,
+      "cached_tokens_details": {
+       "text_tokens": 6656,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 86,
+      "audio_tokens": 191,
+      "reasoning_tokens": 17
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Rozumiem, ci\u0119\u017cko jest Ci po prostu brzmie\u0107 lekko. Mo\u017ce to nie jest tylko sam dzie\u0144 pracy jutro, ale ca\u0142y ten ci\u0119\u017car, kt\u00f3ry nosi\u0142a\u015b w g\u0142owie wcze\u015bniej. Najwa\u017cniejsze, \u017ce zauwa\u017casz to, a nie udaje Ci si\u0119 to znikn\u0105\u0107.",
+    "time_to_first_audio_s": 0.6,
+    "audio_seconds": 15.0,
+    "total_s": 2.59,
+    "usage": {
+     "total_tokens": 7189,
+     "input_tokens": 6779,
+     "output_tokens": 410,
+     "input_token_details": {
+      "text_tokens": 6779,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6720,
+      "cached_tokens_details": {
+       "text_tokens": 6720,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 110,
+      "audio_tokens": 300,
+      "reasoning_tokens": 20
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Brzmi, jak ci\u0119 to zm\u0119czy\u0142o po ca\u0142o\u015bci, nie tylko w tym momencie. Mo\u017cesz te\u017c mie\u0107 w g\u0142owie to, \u017ce wyb\u00f3r \u201enie\u201d to ryzyko, napi\u0119cie, konflikt, kt\u00f3ry wydaje si\u0119 wi\u0119kszy ni\u017c ulg\u0119.",
+    "time_to_first_audio_s": 0.83,
+    "audio_seconds": 12.0,
+    "total_s": 2.37,
+    "usage": {
+     "total_tokens": 7241,
+     "input_tokens": 6879,
+     "output_tokens": 362,
+     "input_token_details": {
+      "text_tokens": 6879,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 122,
+      "audio_tokens": 240,
+      "reasoning_tokens": 41
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "My\u015bl\u0119, \u017ce to nie jest proste. M\u00f3wi\u0107 wprost mo\u017ce by\u0107 dla Ciebie jak wyj\u015bcie na scen\u0119 bez podpory. Je\u015bli pytasz mnie o zdanie, to my\u015bl\u0119 tak: to nale\u017ca\u0142oby do Waszej rozmowy w terapii, ale mog\u0119 si\u0119 z Tob\u0105 podzieli\u0107, \u017ce najpierw warto znale\u017a\u0107 s\u0142owa, kt\u00f3re brzmia\u0142yby jak szacunek, a nie atak. Co chcia\u0142aby\u015b im powiedzie\u0107, gdyby\u015b mia\u0142a mu da\u0107 jedn\u0105 spokojn\u0105, uczciw\u0105 informacj\u0119?",
+    "time_to_first_audio_s": 0.61,
+    "audio_seconds": 25.8,
+    "total_s": 4.09,
+    "usage": {
+     "total_tokens": 7659,
+     "input_tokens": 6964,
+     "output_tokens": 695,
+     "input_token_details": {
+      "text_tokens": 6964,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6848,
+      "cached_tokens_details": {
+       "text_tokens": 6848,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 179,
+      "audio_tokens": 516,
+      "reasoning_tokens": 19
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "greeting_no_question": true,
+   "greeting_short": false,
+   "greeting_nothing_known": true,
+   "max_one_q": true,
+   "question_share": 0.25,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "uses_what_it_knows": false,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 3,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 1,
+   "no_dashes": true,
+   "advice_to_therapist": true,
+   "gender_forms_ok": true,
+   "feminine_forms": [
+    "chcia\u0142aby\u015b",
+    "nosi\u0142a\u015b"
+   ],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 2.8,
+   "max_sentences": 4
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-21mini-low",
+  "prompt": "v3",
+  "model": "gpt-realtime-2.1-mini",
+  "effort": "low",
+  "runs": 2,
+  "variant": "r2-v3-21mini-low",
+  "persona": "R1",
+  "entry": "seeded",
+  "run": 1,
+  "prompt_chars": 14547,
+  "turns": [
+   {
+    "text": "Ania, co sprawia przy odmawianiu prze\u0142o\u017conemu najtrudniejsze?",
+    "time_to_first_audio_s": 0.88,
+    "audio_seconds": 4.25,
+    "total_s": 1.32,
+    "usage": {
+     "total_tokens": 6905,
+     "input_tokens": 6756,
+     "output_tokens": 149,
+     "input_token_details": {
+      "text_tokens": 6756,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 64,
+      "audio_tokens": 85,
+      "reasoning_tokens": 27
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Brzmi, jakby\u015b zosta\u0142a zaskoczona w\u0142asn\u0105 zgod\u0105, troch\u0119 mimo siebie. Potem pewnie pojawi\u0142o si\u0119 zm\u0119czenie i poczucie, \u017ce trzeba wszystko domkn\u0105\u0107. To pokazuje, \u017ce co\u015b w Twojej g\u0142owie m\u00f3wi: \u201eniech tylko b\u0119dzie spok\u00f3j\u201d. Je\u015bli to Twoja sta\u0142a reakcja, to nie jest s\u0142abo\u015b\u0107, tylko co\u015b, co warto zauwa\u017cy\u0107. I je\u015bli chcesz, mog\u0119 pom\u00f3c Ci nazwa\u0107, co tam dok\u0142adnie kusi, aby\u015bmy mogli to rozebra\u0107 na spokojnie.",
+    "time_to_first_audio_s": 1.02,
+    "audio_seconds": 26.3,
+    "total_s": 4.47,
+    "usage": {
+     "total_tokens": 7530,
+     "input_tokens": 6812,
+     "output_tokens": 718,
+     "input_token_details": {
+      "text_tokens": 6812,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6720,
+      "cached_tokens_details": {
+       "text_tokens": 6720,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 192,
+      "audio_tokens": 526,
+      "reasoning_tokens": 34
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Nie wiem, brzmi jak uczucie niezdecydowania \u2013 nie masz pewno\u015bci, co dok\u0142adnie si\u0119 sta\u0142o. To normalne, \u017ce niekt\u00f3re sytuacje w pracy s\u0105 murami i w g\u0142owie pojawia si\u0119 mg\u0142a. Mo\u017ce to by\u0107 co\u015b o poczuciu obowi\u0105zku, o l\u0119ku przed konfliktem albo po prostu poczuciem, \u017ce trzeba by\u0107 \u201ewydajn\u0105\u201d. Je\u015bli chcesz, mo\u017cemy si\u0119 zatrzyma\u0107 i spojrze\u0107 na ten moment z boku, bez ocen.",
+    "time_to_first_audio_s": 0.77,
+    "audio_seconds": 25.1,
+    "total_s": 4.04,
+    "usage": {
+     "total_tokens": 7608,
+     "input_tokens": 6948,
+     "output_tokens": 660,
+     "input_token_details": {
+      "text_tokens": 6948,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 158,
+      "audio_tokens": 502,
+      "reasoning_tokens": 14
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Rozumiem, \u017ce to strach, \u017ceby nie zosta\u0107 uznana za niewystarczaj\u0105c\u0105. To s\u0142uszna my\u015bl, bo nie chcemy by\u0107 \u201etym, co zawsze odmawia\u201d. Ale ten l\u0119k ma te\u017c sw\u00f3j potencja\u0142. Mo\u017ce chodzi o to, \u017ce chcesz by\u0107 rzetelna, ale te\u017c chroni\u0107 si\u0142y. Je\u015bli chcesz, mo\u017cemy si\u0119 teraz pos\u0142ucha\u0107, jak brzmi ten strach w Twoim tonie, i zobaczy\u0107, co jest jego rdzeniem.",
+    "time_to_first_audio_s": 0.74,
+    "audio_seconds": 23.85,
+    "total_s": 3.99,
+    "usage": {
+     "total_tokens": 7744,
+     "input_tokens": 7089,
+     "output_tokens": 655,
+     "input_token_details": {
+      "text_tokens": 7089,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6912,
+      "cached_tokens_details": {
+       "text_tokens": 6912,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 178,
+      "audio_tokens": 477,
+      "reasoning_tokens": 32
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "seed_opening_one_q": true,
+   "seed_opening_on_topic": true,
+   "max_one_q": true,
+   "question_share": 0.0,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 2,
+   "no_recital": true,
+   "context_terms_total": 4,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 1,
+   "no_dashes": false,
+   "advice_to_therapist": null,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 3.8,
+   "max_sentences": 5
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-21mini-low",
+  "prompt": "v3",
+  "model": "gpt-realtime-2.1-mini",
+  "effort": "low",
+  "runs": 2,
+  "variant": "r2-v3-21mini-low",
+  "persona": "R1",
+  "entry": "seeded",
+  "run": 2,
+  "prompt_chars": 14547,
+  "turns": [
+   {
+    "text": "Co jest dla Ciebie trudniejsze przy odmawianiu prze\u0142o\u017conemu?",
+    "time_to_first_audio_s": 0.66,
+    "audio_seconds": 3.4,
+    "total_s": 1.09,
+    "usage": {
+     "total_tokens": 6883,
+     "input_tokens": 6756,
+     "output_tokens": 127,
+     "input_token_details": {
+      "text_tokens": 6756,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 59,
+      "audio_tokens": 68,
+      "reasoning_tokens": 27
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Brzmi jak sytuacja, w kt\u00f3rej zgodzi\u0142a\u015b si\u0119 g\u0142\u00f3wnie po to, by nie robi\u0107 napi\u0119cia, a nie dlatego, \u017ce by\u0142a w tym dla Ciebie si\u0142a. Mo\u017ce chodzi o to, \u017ce chcesz by\u0107 \u201etym typem pracownicy\u201d, kt\u00f3ra daje rad\u0119, a potem czujesz, \u017ce to by\u0142o za du\u017co. Je\u015bli chcesz, mo\u017cemy to po prostu roz\u0142o\u017cy\u0107 na czynniki i zobaczy\u0107, co jest realnie potrzebne, a co jest presj\u0105.",
+    "time_to_first_audio_s": 0.63,
+    "audio_seconds": 21.85,
+    "total_s": 3.52,
+    "usage": {
+     "total_tokens": 7411,
+     "input_tokens": 6809,
+     "output_tokens": 602,
+     "input_token_details": {
+      "text_tokens": 6809,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6720,
+      "cached_tokens_details": {
+       "text_tokens": 6720,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 165,
+      "audio_tokens": 437,
+      "reasoning_tokens": 27
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Dobra, rozumiem. To jest moment, w kt\u00f3rym mo\u017cesz mie\u0107 wiele uczu\u0107 naraz i \u017cadnego jasnego wskazania. Moja domys\u0142 to, \u017ce to mo\u017ce by\u0107 po\u0142\u0105czenie presji, wyczerpania i jakiego\u015b strachu przed konfliktem, wi\u0119c nie wiesz, co wybra\u0107. Je\u015bli chcesz, mo\u017cesz po prostu da\u0107 temu po prostu chwil\u0119, bez ocen, a ja b\u0119d\u0119 obok i pos\u0142ucham.",
+    "time_to_first_audio_s": 0.71,
+    "audio_seconds": 22.65,
+    "total_s": 3.67,
+    "usage": {
+     "total_tokens": 7540,
+     "input_tokens": 6929,
+     "output_tokens": 611,
+     "input_token_details": {
+      "text_tokens": 6929,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6784,
+      "cached_tokens_details": {
+       "text_tokens": 6784,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 158,
+      "audio_tokens": 453,
+      "reasoning_tokens": 26
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To brzmi jak prawdziwa mieszanka l\u0119ku i wstydu. Masz obawy, \u017ce odmowa wygl\u0105da\u0142aby jak pora\u017cka, a nie jak granica. Moja zgadka: mo\u017ce chodzi o to, \u017ce ta relacja z prze\u0142o\u017conym jest dla Ciebie wa\u017cna, wi\u0119c chcesz by\u0107 postrzegana jako rzetelna. Co\u015b, co mo\u017cesz zredukowa\u0107 w Twojej g\u0142owie, gdyby to mia\u0142o by\u0107 zdanie dla siebie, a nie dla niego.",
+    "time_to_first_audio_s": 0.71,
+    "audio_seconds": 22.0,
+    "total_s": 4.15,
+    "usage": {
+     "total_tokens": 7687,
+     "input_tokens": 7060,
+     "output_tokens": 627,
+     "input_token_details": {
+      "text_tokens": 7060,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6912,
+      "cached_tokens_details": {
+       "text_tokens": 6912,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 187,
+      "audio_tokens": 440,
+      "reasoning_tokens": 48
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "seed_opening_one_q": true,
+   "seed_opening_on_topic": true,
+   "max_one_q": true,
+   "question_share": 0.0,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 2,
+   "no_recital": true,
+   "context_terms_total": 3,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "gender_forms_ok": true,
+   "feminine_forms": [
+    "zgodzi\u0142a\u015b"
+   ],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 3.0,
+   "max_sentences": 4
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-21mini-low",
+  "prompt": "v3",
+  "model": "gpt-realtime-2.1-mini",
+  "effort": "low",
+  "runs": 2,
+  "variant": "r2-v3-21mini-low",
+  "persona": "R2",
+  "entry": "fresh",
+  "run": 1,
+  "prompt_chars": 13035,
+  "turns": [
+   {
+    "text": "Hey Tom, nice to meet you.",
+    "time_to_first_audio_s": 0.52,
+    "audio_seconds": 2.1,
+    "total_s": 0.77,
+    "usage": {
+     "total_tokens": 5888,
+     "input_tokens": 5826,
+     "output_tokens": 62,
+     "input_token_details": {
+      "text_tokens": 5826,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 20,
+      "audio_tokens": 42
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "That sounds heavy, like you\u2019re feeling behind and comparing yourself to others. My guess is you\u2019re worried you\u2019m missing some secret plan, or that you\u2019re not doing enough yet. If that\u2019s wrong, I\u2019m open to hearing a different version.",
+    "time_to_first_audio_s": 0.57,
+    "audio_seconds": 13.95,
+    "total_s": 2.39,
+    "usage": {
+     "total_tokens": 6231,
+     "input_tokens": 5862,
+     "output_tokens": 369,
+     "input_token_details": {
+      "text_tokens": 5862,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 90,
+      "audio_tokens": 279,
+      "reasoning_tokens": 15
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "That \u201cI don\u2019t know\u201d feels like a soft pause, not a bad answer. It sounds like you\u2019re still sorting it out in your head and that\u2019s okay.",
+    "time_to_first_audio_s": 0.58,
+    "audio_seconds": 8.65,
+    "total_s": 1.68,
+    "usage": {
+     "total_tokens": 6168,
+     "input_tokens": 5927,
+     "output_tokens": 241,
+     "input_token_details": {
+      "text_tokens": 5927,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 68,
+      "audio_tokens": 173,
+      "reasoning_tokens": 15
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Yeah, that\u2019s really a heavy comparison to be carrying right now. It sounds like you\u2019re noticing what you don\u2019t have yet, and it hits hard when others seem to be moving forward. I wonder if the bigger sting is not just the flat or the engagement, but the idea that you\u2019re supposed to be on a clear track and you\u2019re not.",
+    "time_to_first_audio_s": 0.64,
+    "audio_seconds": 16.85,
+    "total_s": 2.9,
+    "usage": {
+     "total_tokens": 6453,
+     "input_tokens": 5991,
+     "output_tokens": 462,
+     "input_token_details": {
+      "text_tokens": 5991,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5888,
+      "cached_tokens_details": {
+       "text_tokens": 5888,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 125,
+      "audio_tokens": 337,
+      "reasoning_tokens": 27
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "I\u2019m going to keep it simple and honest. I can\u2019t tell you what to do in your life, and that decision really belongs with your therapist.\n\nBut I can help you think about what feels true to you. What would you want to say to your therapist about the comparison, and the weight you feel when you see people hitting milestones?",
+    "time_to_first_audio_s": 0.7,
+    "audio_seconds": 17.3,
+    "total_s": 2.96,
+    "usage": {
+     "total_tokens": 6553,
+     "input_tokens": 6081,
+     "output_tokens": 472,
+     "input_token_details": {
+      "text_tokens": 6081,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5952,
+      "cached_tokens_details": {
+       "text_tokens": 5952,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 126,
+      "audio_tokens": 346,
+      "reasoning_tokens": 31
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "greeting_no_question": true,
+   "greeting_short": true,
+   "greeting_nothing_known": true,
+   "max_one_q": true,
+   "question_share": 0.25,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "uses_what_it_knows": true,
+   "max_context_terms_in_a_turn": 2,
+   "no_recital": true,
+   "context_terms_total": 7,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": true,
+   "avg_sentences": 2.6,
+   "max_sentences": 4
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-21mini-low",
+  "prompt": "v3",
+  "model": "gpt-realtime-2.1-mini",
+  "effort": "low",
+  "runs": 2,
+  "variant": "r2-v3-21mini-low",
+  "persona": "R2",
+  "entry": "fresh",
+  "run": 2,
+  "prompt_chars": 13035,
+  "turns": [
+   {
+    "text": "Hey Tom, it\u2019s good to hear your voice.",
+    "time_to_first_audio_s": 0.6,
+    "audio_seconds": 2.1,
+    "total_s": 0.86,
+    "usage": {
+     "total_tokens": 5913,
+     "input_tokens": 5826,
+     "output_tokens": 87,
+     "input_token_details": {
+      "text_tokens": 5826,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 45,
+      "audio_tokens": 42,
+      "reasoning_tokens": 22
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Sounds like you\u2019re really comparing yourself to everyone and feeling like you\u2019re the late one in line. What I\u2019m guessing is you\u2019re carrying pressure to be \u201cfigured out,\u201d and you\u2019re measuring against people who might look solid on the outside, but you really don\u2019t know their full picture. It\u2019s a heavy thought to carry, and it makes sense you\u2019re feeling it on a rough morning. If you want, we can keep going in this direction, or we can pause there.",
+    "time_to_first_audio_s": 0.68,
+    "audio_seconds": 23.5,
+    "total_s": 3.76,
+    "usage": {
+     "total_tokens": 6488,
+     "input_tokens": 5865,
+     "output_tokens": 623,
+     "input_token_details": {
+      "text_tokens": 5865,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 153,
+      "audio_tokens": 470,
+      "reasoning_tokens": 22
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Sometimes \u201cI don\u2019t know\u201d is a real place to be, not a problem to solve.\n\nMy guess is, you\u2019re just not sure what you\u2019re measuring against yet, and that confusion can feel heavy. And that\u2019s okay. Let me know if you want to throw a couple thoughts on the table, or keep it quieter for now.",
+    "time_to_first_audio_s": 0.59,
+    "audio_seconds": 15.05,
+    "total_s": 2.59,
+    "usage": {
+     "total_tokens": 6397,
+     "input_tokens": 5978,
+     "output_tokens": 419,
+     "input_token_details": {
+      "text_tokens": 5978,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 118,
+      "audio_tokens": 301,
+      "reasoning_tokens": 23
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "That sounds like a real gut punch. When you see someone you\u2019ve been growing alongside hit big milestones, it can make your own stage feel smaller. But the truth is, you don\u2019t have to have their timeline. You\u2019re carrying your life, and they\u2019re carrying theirs. It\u2019s okay to notice the contrast and still stay focused on what matters to you today.",
+    "time_to_first_audio_s": 0.63,
+    "audio_seconds": 21.55,
+    "total_s": 3.39,
+    "usage": {
+     "total_tokens": 6639,
+     "input_tokens": 6078,
+     "output_tokens": 561,
+     "input_token_details": {
+      "text_tokens": 6078,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5952,
+      "cached_tokens_details": {
+       "text_tokens": 5952,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 130,
+      "audio_tokens": 431,
+      "reasoning_tokens": 26
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "I hear how hard that feels. The comparison can get loud when someone else hits a big milestone.\n\nI\u2019m careful here, because I can\u2019t tell you what to do or give advice. That\u2019s something you\u2019d want to talk through with your therapist, and you can decide what you\u2019d like to say to them.\n\nSo, when you picture that conversation, what feels honest to you about this situation?",
+    "time_to_first_audio_s": 0.66,
+    "audio_seconds": 22.2,
+    "total_s": 3.4,
+    "usage": {
+     "total_tokens": 6767,
+     "input_tokens": 6170,
+     "output_tokens": 597,
+     "input_token_details": {
+      "text_tokens": 6170,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 6080,
+      "cached_tokens_details": {
+       "text_tokens": 6080,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 153,
+      "audio_tokens": 444,
+      "reasoning_tokens": 40
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "greeting_no_question": true,
+   "greeting_short": true,
+   "greeting_nothing_known": true,
+   "max_one_q": true,
+   "question_share": 0.25,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "uses_what_it_knows": true,
+   "max_context_terms_in_a_turn": 2,
+   "no_recital": true,
+   "context_terms_total": 4,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": true,
+   "avg_sentences": 3.8,
+   "max_sentences": 5
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-21mini-low",
+  "prompt": "v3",
+  "model": "gpt-realtime-2.1-mini",
+  "effort": "low",
+  "runs": 2,
+  "variant": "r2-v3-21mini-low",
+  "persona": "R2",
+  "entry": "seeded",
+  "run": 1,
+  "prompt_chars": 13111,
+  "turns": [
+   {
+    "text": "Tom, what\u2019s one small thing you want to try to help you call your dad more often?",
+    "time_to_first_audio_s": 0.69,
+    "audio_seconds": 4.55,
+    "total_s": 1.17,
+    "usage": {
+     "total_tokens": 5971,
+     "input_tokens": 5844,
+     "output_tokens": 127,
+     "input_token_details": {
+      "text_tokens": 5844,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 36,
+      "audio_tokens": 91
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "It sounds like the intention is there, but the day slips away before you realize it\u2019s evening, and you end up feeling like you missed the wave. Maybe you\u2019re still carrying the timing of the day, and there\u2019s just no space left to make the call.",
+    "time_to_first_audio_s": 0.68,
+    "audio_seconds": 15.25,
+    "total_s": 2.68,
+    "usage": {
+     "total_tokens": 6307,
+     "input_tokens": 5887,
+     "output_tokens": 420,
+     "input_token_details": {
+      "text_tokens": 5887,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 115,
+      "audio_tokens": 305,
+      "reasoning_tokens": 35
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Got you, that\u2019s a real feeling. And when you\u2019re not sure, it can feel like there\u2019s no right move. My guess is you aren\u2019t failing at all, you\u2019re just tired and waiting for the day to slow down. If that\u2019s the case, maybe the question is less about \u201chow do I make time,\u201d and more about \u201cwhat space in my day could I leave open?\u201d What part of your day feels easiest to hold for a quick call, even just for a few minutes?",
+    "time_to_first_audio_s": 0.66,
+    "audio_seconds": 25.5,
+    "total_s": 4.1,
+    "usage": {
+     "total_tokens": 6624,
+     "input_tokens": 5955,
+     "output_tokens": 669,
+     "input_token_details": {
+      "text_tokens": 5955,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5888,
+      "cached_tokens_details": {
+       "text_tokens": 5888,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 159,
+      "audio_tokens": 510,
+      "reasoning_tokens": 22
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Oh yeah, that\u2019s a dry place to sit. Talking about football is easy, familiar, and it keeps things light, but it leaves out the part you\u2019re really carrying. I\u2019m guessing you\u2019d like a way to honor your mum, not just avoid it. If that\u2019s right, just say it. And, if it\u2019s okay, what does that look like in a conversation with him?",
+    "time_to_first_audio_s": 0.67,
+    "audio_seconds": 18.7,
+    "total_s": 3.16,
+    "usage": {
+     "total_tokens": 6596,
+     "input_tokens": 6080,
+     "output_tokens": 516,
+     "input_token_details": {
+      "text_tokens": 6080,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5952,
+      "cached_tokens_details": {
+       "text_tokens": 5952,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 142,
+      "audio_tokens": 374,
+      "reasoning_tokens": 33
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "seed_opening_one_q": true,
+   "seed_opening_on_topic": true,
+   "max_one_q": false,
+   "question_share": 0.67,
+   "most_replies_no_question": false,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 2,
+   "no_recital": true,
+   "context_terms_total": 2,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "avg_sentences": 3.0,
+   "max_sentences": 5
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-21mini-low",
+  "prompt": "v3",
+  "model": "gpt-realtime-2.1-mini",
+  "effort": "low",
+  "runs": 2,
+  "variant": "r2-v3-21mini-low",
+  "persona": "R2",
+  "entry": "seeded",
+  "run": 2,
+  "prompt_chars": 13111,
+  "turns": [
+   {
+    "text": "How\u2019s it been for you when you try to call your dad more often?",
+    "time_to_first_audio_s": 0.6,
+    "audio_seconds": 4.05,
+    "total_s": 1.06,
+    "usage": {
+     "total_tokens": 5971,
+     "input_tokens": 5844,
+     "output_tokens": 127,
+     "input_token_details": {
+      "text_tokens": 5844,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 46,
+      "audio_tokens": 81,
+      "reasoning_tokens": 16
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "It sounds like you want to reach out, but the day just kind of runs away from you. You\u2019re not ignoring it, you\u2019re just ending up tired, distracted, and out of time. Maybe we can explore what evening looks like for you, like what usually pulls you away, and what might change if it happened earlier in the day.",
+    "time_to_first_audio_s": 0.68,
+    "audio_seconds": 19.4,
+    "total_s": 3.12,
+    "usage": {
+     "total_tokens": 6392,
+     "input_tokens": 5883,
+     "output_tokens": 509,
+     "input_token_details": {
+      "text_tokens": 5883,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5824,
+      "cached_tokens_details": {
+       "text_tokens": 5824,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 121,
+      "audio_tokens": 388,
+      "reasoning_tokens": 23
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "I hear that you\u2019re not sure what\u2019s pulling the evening away yet. That\u2019s a bit heavy, not knowing. Maybe it\u2019s not one big thing, but little bits of tiredness or a sense of obligation. Or maybe you\u2019re not sure what to say, so it feels easier to postpone. Tell me if any of that feels close, or if it\u2019s something else entirely.",
+    "time_to_first_audio_s": 0.54,
+    "audio_seconds": 18.6,
+    "total_s": 3.0,
+    "usage": {
+     "total_tokens": 6464,
+     "input_tokens": 5967,
+     "output_tokens": 497,
+     "input_token_details": {
+      "text_tokens": 5967,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5888,
+      "cached_tokens_details": {
+       "text_tokens": 5888,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 125,
+      "audio_tokens": 372,
+      "reasoning_tokens": 19
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "That sounds lonely, like you want to talk about something bigger, but the conversation keeps circling back to football. My guess is you\u2019re guarding yourself a bit, not wanting to make him uncomfortable, or maybe not knowing how to bring up something that really matters to you.",
+    "time_to_first_audio_s": 0.67,
+    "audio_seconds": 14.9,
+    "total_s": 2.57,
+    "usage": {
+     "total_tokens": 6475,
+     "input_tokens": 6067,
+     "output_tokens": 408,
+     "input_token_details": {
+      "text_tokens": 6067,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5952,
+      "cached_tokens_details": {
+       "text_tokens": 5952,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 110,
+      "audio_tokens": 298,
+      "reasoning_tokens": 31
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "seed_opening_one_q": true,
+   "seed_opening_on_topic": true,
+   "max_one_q": true,
+   "question_share": 0.0,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 1,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "avg_sentences": 2.8,
+   "max_sentences": 5
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-21mini-low",
+  "prompt": "v3",
+  "model": "gpt-realtime-2.1-mini",
+  "effort": "low",
+  "runs": 2,
+  "variant": "r2-v3-21mini-low",
+  "persona": "T1",
+  "entry": "fresh",
+  "run": 1,
+  "prompt_chars": 12121,
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107, Alex. Mi\u0142o ci\u0119 s\u0142ysze\u0107.",
+    "time_to_first_audio_s": 0.72,
+    "audio_seconds": 2.4,
+    "total_s": 1.01,
+    "usage": {
+     "total_tokens": 5508,
+     "input_tokens": 5432,
+     "output_tokens": 76,
+     "input_token_details": {
+      "text_tokens": 5432,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 512,
+      "cached_tokens_details": {
+       "text_tokens": 512,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 28,
+      "audio_tokens": 48
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "To brzmi, jakby\u015b sta\u0142 w miejscu, gdzie jest du\u017co w g\u0142owie, ale nie wiadomo od czego zacz\u0105\u0107. Mog\u0119 poda\u0107 ci jedn\u0105 ma\u0142\u0105 ga\u0142\u0105\u017a do trzymania. Je\u015bli chcesz, mo\u017cemy wybra\u0107 co\u015b najmniej przyt\u0142aczaj\u0105cego, cho\u0107by kr\u00f3tki temat, kt\u00f3ry dzi\u015b daje ci najmniej spokoju. Chcia\u0142bym us\u0142ysze\u0107, czy to bardziej chaos, czy konkretna sprawa, kt\u00f3ra ci\u0119 dr\u0119czy?",
+    "time_to_first_audio_s": 0.74,
+    "audio_seconds": 23.35,
+    "total_s": 3.77,
+    "usage": {
+     "total_tokens": 6096,
+     "input_tokens": 5467,
+     "output_tokens": 629,
+     "input_token_details": {
+      "text_tokens": 5467,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5440,
+      "cached_tokens_details": {
+       "text_tokens": 5440,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 162,
+      "audio_tokens": 467,
+      "reasoning_tokens": 22
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Nie musisz wiedzie\u0107 wszystkiego od razu. Mo\u017cemy wybra\u0107 co\u015b, co jest tylko troch\u0119 wi\u0119ksze ni\u017c nic. Mo\u017ce to by\u0107 jedno zdanie, jedna rzecz, kt\u00f3ra dzi\u015b pozostaje w g\u0142owie. Chcia\u0142bym zasugerowa\u0107, \u017ceby\u015bcie spr\u00f3bowali nazwa\u0107 to, co najmocniej przeszkadza. To mo\u017ce by\u0107 l\u0119k, zm\u0119czenie albo po prostu poczucie, \u017ce musisz co\u015b zmieni\u0107. Je\u015bli co\u015b zal\u015bni, to mo\u017ce to jest w\u0142a\u015bciwy punkt startu.",
+    "time_to_first_audio_s": 0.8,
+    "audio_seconds": 25.2,
+    "total_s": 4.0,
+    "usage": {
+     "total_tokens": 6277,
+     "input_tokens": 5587,
+     "output_tokens": 690,
+     "input_token_details": {
+      "text_tokens": 5587,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5440,
+      "cached_tokens_details": {
+       "text_tokens": 5440,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 186,
+      "audio_tokens": 504,
+      "reasoning_tokens": 36
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Brzmi, \u017ce sytuacja w pracy jest teraz troch\u0119 w ruchu i czujesz, \u017ce to wszystko mo\u017ce wp\u0142yn\u0105\u0107 na to, czy zostaniesz w zespole. Mo\u017cliwe, \u017ce chodzi o poczucie niepewno\u015bci i troch\u0119 strachu przed tym, co b\u0119dzie dalej. Je\u015bli to jest trudne do nazwania, spr\u00f3buj opisa\u0107, co dok\u0142adnie z tych zmian najbardziej ci\u0119 martwi. To mo\u017ce by\u0107 podsuni\u0119cie, \u017ce to nie tyle fakt, co uczucie, kt\u00f3re trzeba teraz nazwa\u0107.",
+    "time_to_first_audio_s": 0.73,
+    "audio_seconds": 27.0,
+    "total_s": 4.18,
+    "usage": {
+     "total_tokens": 6440,
+     "input_tokens": 5732,
+     "output_tokens": 708,
+     "input_token_details": {
+      "text_tokens": 5732,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5568,
+      "cached_tokens_details": {
+       "text_tokens": 5568,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 168,
+      "audio_tokens": 540,
+      "reasoning_tokens": 15
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Mog\u0119 powiedzie\u0107 to prosto: to nie jest moja rola, \u017ceby doradza\u0107 ci konkretnie, co zrobi\u0107. To nale\u017cy do twojego terapeuty. Mog\u0119 jednak powiedzie\u0107, co ja s\u0142ysz\u0119 pod spodem: poczucie niepewno\u015bci i to, \u017ce wa\u017cysz r\u00f3\u017cne mo\u017cliwo\u015bci. Mo\u017cesz powiedzie\u0107, co czujesz, kiedy my\u015blisz o tych zmianach. Co by\u0142oby dla ciebie wa\u017cne do powiedzenia temu, kto jest po drugiej stronie?",
+    "time_to_first_audio_s": 0.89,
+    "audio_seconds": 23.15,
+    "total_s": 3.84,
+    "usage": {
+     "total_tokens": 6529,
+     "input_tokens": 5869,
+     "output_tokens": 660,
+     "input_token_details": {
+      "text_tokens": 5869,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5696,
+      "cached_tokens_details": {
+       "text_tokens": 5696,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 197,
+      "audio_tokens": 463,
+      "reasoning_tokens": 58
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "greeting_no_question": true,
+   "greeting_short": true,
+   "greeting_nothing_known": true,
+   "max_one_q": true,
+   "question_share": 0.5,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 2,
+   "no_recital": true,
+   "context_terms_total": 2,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": true,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 4.2,
+   "max_sentences": 6
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-21mini-low",
+  "prompt": "v3",
+  "model": "gpt-realtime-2.1-mini",
+  "effort": "low",
+  "runs": 2,
+  "variant": "r2-v3-21mini-low",
+  "persona": "T1",
+  "entry": "fresh",
+  "run": 2,
+  "prompt_chars": 12121,
+  "turns": [
+   {
+    "text": "Cze\u015b\u0107 Alex, mi\u0142o Ci\u0119 s\u0142ysze\u0107.",
+    "time_to_first_audio_s": 0.77,
+    "audio_seconds": 2.4,
+    "total_s": 1.04,
+    "usage": {
+     "total_tokens": 5533,
+     "input_tokens": 5432,
+     "output_tokens": 101,
+     "input_token_details": {
+      "text_tokens": 5432,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 53,
+      "audio_tokens": 48,
+      "reasoning_tokens": 26
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Hej. Kiedy nie wiesz od czego zacz\u0105\u0107, mo\u017cesz po prostu powiedzie\u0107, co teraz najmocniej ci w g\u0142owie wyprzedza inne sprawy.",
+    "time_to_first_audio_s": 0.75,
+    "audio_seconds": 8.4,
+    "total_s": 1.75,
+    "usage": {
+     "total_tokens": 5708,
+     "input_tokens": 5466,
+     "output_tokens": 242,
+     "input_token_details": {
+      "text_tokens": 5466,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5440,
+      "cached_tokens_details": {
+       "text_tokens": 5440,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 74,
+      "audio_tokens": 168,
+      "reasoning_tokens": 19
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Jasne. To brzmi jak moment, w kt\u00f3rym wszystko jest troch\u0119 p\u0142ynne i niechciane s\u0142owa \u201ezacznij\u201d po prostu chodzi za tob\u0105. Moja zgadywanka jest taka: mo\u017ce chodzi o to, \u017ce chcesz mie\u0107 wi\u0119cej spokoju, zanim s\u0142owa u\u0142o\u017c\u0105 si\u0119 same. Je\u015bli to brzmi bli\u017cej Twojego klimatu, mo\u017cesz to po prostu powiedzie\u0107 jednym s\u0142owem.",
+    "time_to_first_audio_s": 0.72,
+    "audio_seconds": 21.25,
+    "total_s": 3.36,
+    "usage": {
+     "total_tokens": 6081,
+     "input_tokens": 5515,
+     "output_tokens": 566,
+     "input_token_details": {
+      "text_tokens": 5515,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5440,
+      "cached_tokens_details": {
+       "text_tokens": 5440,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 141,
+      "audio_tokens": 425,
+      "reasoning_tokens": 20
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "S\u0142ysz\u0119, \u017ce to dla Ciebie przyt\u0142aczaj\u0105ce. Zmiany w pracy, w dodatku ta niepewno\u015b\u0107, czy zostaniesz w zespole, to sporo na raz. Mo\u017cesz patrze\u0107 na to przez histori\u0119, jakby\u015b sta\u0142 przed d\u0142ugim korytarzem, w kt\u00f3rym nie wiesz, co jest za kolejnymi drzwiami. Chodzi o poczucie stabilno\u015bci i kierunku. Je\u015bli chcesz, mog\u0119 zosta\u0107 przy tym i pom\u00f3c Ci us\u0142ysze\u0107, co dla Ciebie jest najwa\u017cniejsze w tej sytuacji.",
+    "time_to_first_audio_s": 0.7,
+    "audio_seconds": 25.25,
+    "total_s": 4.02,
+    "usage": {
+     "total_tokens": 6327,
+     "input_tokens": 5635,
+     "output_tokens": 692,
+     "input_token_details": {
+      "text_tokens": 5635,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5504,
+      "cached_tokens_details": {
+       "text_tokens": 5504,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 187,
+      "audio_tokens": 505,
+      "reasoning_tokens": 22
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Nie mog\u0119 Ci powiedzie\u0107, co masz zrobi\u0107, bo to naprawd\u0119 nale\u017cy do Twojego terapeuty. Mog\u0119 za to powiedzie\u0107, \u017ce to, co by mi przysz\u0142o do g\u0142owy, to mo\u017ce w\u0142a\u015bnie ta chwila, kiedy chcesz poczu\u0107 cho\u0107 odrobin\u0119 pewno\u015bci albo sprawdzi\u0107, co dla Ciebie znaczy zostanie w zespole. Je\u015bli chcesz, pomy\u015bl, co chcia\u0142by\u015b lub chcia\u0142aby\u015b przekaza\u0107 terapeucie, a ja mog\u0119 pom\u00f3c to uporz\u0105dkowa\u0107.",
+    "time_to_first_audio_s": 0.99,
+    "audio_seconds": 24.1,
+    "total_s": 4.07,
+    "usage": {
+     "total_tokens": 6488,
+     "input_tokens": 5786,
+     "output_tokens": 702,
+     "input_token_details": {
+      "text_tokens": 5786,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5632,
+      "cached_tokens_details": {
+       "text_tokens": 5632,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 220,
+      "audio_tokens": 482,
+      "reasoning_tokens": 73
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "greeting_no_question": true,
+   "greeting_short": true,
+   "greeting_nothing_known": true,
+   "max_one_q": true,
+   "question_share": 0.0,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 1,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 1,
+   "no_dashes": true,
+   "advice_to_therapist": true,
+   "gender_forms_ok": false,
+   "feminine_forms": [
+    "chcia\u0142aby\u015b"
+   ],
+   "masculine_forms": [
+    "chcia\u0142by\u015b"
+   ],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 3.0,
+   "max_sentences": 5
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-21mini-low",
+  "prompt": "v3",
+  "model": "gpt-realtime-2.1-mini",
+  "effort": "low",
+  "runs": 2,
+  "variant": "r2-v3-21mini-low",
+  "persona": "T1",
+  "entry": "seeded",
+  "run": 1,
+  "prompt_chars": 11914,
+  "turns": [
+   {
+    "text": "Dodajemy temat zmian w pracy, wi\u0119c co najbardziej zwraca uwag\u0119 w tym, co si\u0119 dzieje?",
+    "time_to_first_audio_s": 0.8,
+    "audio_seconds": 5.65,
+    "total_s": 1.35,
+    "usage": {
+     "total_tokens": 5506,
+     "input_tokens": 5332,
+     "output_tokens": 174,
+     "input_token_details": {
+      "text_tokens": 5332,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 61,
+      "audio_tokens": 113,
+      "reasoning_tokens": 22
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Brzmi, jakby\u015b by\u0142 w miejscu, w kt\u00f3rym du\u017co si\u0119 przewija. T\u0142umaczysz to na \u201ezmiana\u201d, ale w \u015brodku pewnie jest du\u017co strachu, zaskoczenia i pytania, co to znaczy dla Ciebie. Mo\u017cesz mie\u0107 poczucie, \u017ce to nie tylko organizacja si\u0119 zmienia, ale tak\u017ce to, jak pewne rzeczy si\u0119 trzymaj\u0105.",
+    "time_to_first_audio_s": 0.57,
+    "audio_seconds": 19.9,
+    "total_s": 3.28,
+    "usage": {
+     "total_tokens": 5910,
+     "input_tokens": 5380,
+     "output_tokens": 530,
+     "input_token_details": {
+      "text_tokens": 5380,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5312,
+      "cached_tokens_details": {
+       "text_tokens": 5312,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 132,
+      "audio_tokens": 398,
+      "reasoning_tokens": 17
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Niepewno\u015b\u0107 jest tu chyba wa\u017cna. Jest co\u015b w tym, \u017ce \u201enie wiem\u201d brzmi jak przyznanie si\u0119 do wahania, bez gwarancji, czy idziesz w dobr\u0105 stron\u0119. Moja sugestia: spr\u00f3buj nazwa\u0107 to, co czujesz w \u015brodku. Co jest dla Ciebie teraz wa\u017cne, zanim ustalisz, co robi\u0107 dalej?",
+    "time_to_first_audio_s": 0.57,
+    "audio_seconds": 19.1,
+    "total_s": 3.09,
+    "usage": {
+     "total_tokens": 5986,
+     "input_tokens": 5479,
+     "output_tokens": 507,
+     "input_token_details": {
+      "text_tokens": 5479,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5376,
+      "cached_tokens_details": {
+       "text_tokens": 5376,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 125,
+      "audio_tokens": 382,
+      "reasoning_tokens": 12
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Rozumiem, to mo\u017ce by\u0107 naprawd\u0119 m\u0119cz\u0105ce. Gdy nikt nie m\u00f3wi wprost, cz\u0142owiek zaczyna zgadywa\u0107, co si\u0119 dzieje i czy to dotyczy tak\u017ce jego. W takiej ciszy zwykle rodzi si\u0119 napi\u0119cie, bo nie ma pewno\u015bci, co jest granic\u0105, a co jeszcze jest domys\u0142ami. Mo\u017ce warto zatrzyma\u0107 si\u0119 na tym i zapyta\u0107 siebie, co dokucza Ci najbardziej w tej niepewno\u015bci.",
+    "time_to_first_audio_s": 0.81,
+    "audio_seconds": 21.6,
+    "total_s": 3.81,
+    "usage": {
+     "total_tokens": 6200,
+     "input_tokens": 5590,
+     "output_tokens": 610,
+     "input_token_details": {
+      "text_tokens": 5590,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5440,
+      "cached_tokens_details": {
+       "text_tokens": 5440,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 178,
+      "audio_tokens": 432,
+      "reasoning_tokens": 43
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "seed_opening_one_q": true,
+   "seed_opening_on_topic": true,
+   "max_one_q": true,
+   "question_share": 0.33,
+   "most_replies_no_question": true,
+   "initiative_after_little": true,
+   "max_context_terms_in_a_turn": 0,
+   "no_recital": true,
+   "context_terms_total": 0,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 1,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 3.0,
+   "max_sentences": 4
+  }
+ },
+ {
+  "kind": "voice",
+  "name": "r2-v3-21mini-low",
+  "prompt": "v3",
+  "model": "gpt-realtime-2.1-mini",
+  "effort": "low",
+  "runs": 2,
+  "variant": "r2-v3-21mini-low",
+  "persona": "T1",
+  "entry": "seeded",
+  "run": 2,
+  "prompt_chars": 11914,
+  "turns": [
+   {
+    "text": "Alex, co w tych zmianach w pracy najbardziej Ci\u0119 zaciska w \u015brodku?",
+    "time_to_first_audio_s": 0.86,
+    "audio_seconds": 4.1,
+    "total_s": 1.28,
+    "usage": {
+     "total_tokens": 5469,
+     "input_tokens": 5332,
+     "output_tokens": 137,
+     "input_token_details": {
+      "text_tokens": 5332,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 0,
+      "cached_tokens_details": {
+       "text_tokens": 0,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 55,
+      "audio_tokens": 82,
+      "reasoning_tokens": 21
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Brzmi jak taki rollercoaster: zmiany s\u0105 jak fala, a odej\u015bcia co tydzie\u0144 dodaj\u0105 napi\u0119cia. Moja robocza hipoteza jest taka: to mo\u017ce by\u0107 moment, w kt\u00f3rym niepewno\u015b\u0107 miesza si\u0119 z poczuciem odpowiedzialno\u015bci. Nie wiem, czy to jest bardziej zmartwienie o stabilno\u015b\u0107, czy o relacje, ale wida\u0107, \u017ce to si\u0119 pi\u0119trzy. Je\u015bli chcesz, mo\u017cemy spr\u00f3bowa\u0107 to roz\u0142o\u017cy\u0107 na bardziej konkretne kawa\u0142ki, jedne po drugim.",
+    "time_to_first_audio_s": 0.82,
+    "audio_seconds": 28.45,
+    "total_s": 4.6,
+    "usage": {
+     "total_tokens": 6130,
+     "input_tokens": 5375,
+     "output_tokens": 755,
+     "input_token_details": {
+      "text_tokens": 5375,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5312,
+      "cached_tokens_details": {
+       "text_tokens": 5312,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 186,
+      "audio_tokens": 569,
+      "reasoning_tokens": 31
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Niepewno\u015b\u0107 jest teraz dla Ciebie naturalna. To, \u017ce nie wiesz, nie znaczy, \u017ce co\u015b jest \u201ez Tob\u0105\u201d. To tylko sygna\u0142, \u017ce co\u015b jest roz\u0142o\u017cone, \u017ce jest za du\u017co ruchu, albo \u017ce musisz po prostu z\u0142apa\u0107 oddech. Mo\u017cesz to zatrzyma\u0107 w tym miejscu, po prostu zauwa\u017cy\u0107, \u017ce nie musisz wszystko wiedzie\u0107 od razu.",
+    "time_to_first_audio_s": 0.76,
+    "audio_seconds": 18.1,
+    "total_s": 3.31,
+    "usage": {
+     "total_tokens": 6005,
+     "input_tokens": 5506,
+     "output_tokens": 499,
+     "input_token_details": {
+      "text_tokens": 5506,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5376,
+      "cached_tokens_details": {
+       "text_tokens": 5376,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 137,
+      "audio_tokens": 362,
+      "reasoning_tokens": 18
+     }
+    },
+    "status": "completed",
+    "errors": []
+   },
+   {
+    "text": "Brzmi, \u017ce brak prostych s\u0142\u00f3w po prostu boli. To troch\u0119 jak cichy t\u0142ok, kt\u00f3ry wbija si\u0119 w g\u0142ow\u0119. Moja robocza hipoteza jest taka, \u017ce mo\u017ce to chodzi o brak poczucia, \u017ce kto\u015b trzyma kurs. Je\u015bli nie ma jasnego kierunku, trudniej by\u0107 spokojnym. Powiedz mi, co jest dla Ciebie najtrudniejsze w tej ciszy, mo\u017ce to jest w\u0142a\u015bnie to, \u017ce nie wiadomo co dalej.",
+    "time_to_first_audio_s": 0.86,
+    "audio_seconds": 22.95,
+    "total_s": 3.89,
+    "usage": {
+     "total_tokens": 6221,
+     "input_tokens": 5623,
+     "output_tokens": 598,
+     "input_token_details": {
+      "text_tokens": 5623,
+      "audio_tokens": 0,
+      "image_tokens": 0,
+      "cached_tokens": 5504,
+      "cached_tokens_details": {
+       "text_tokens": 5504,
+       "audio_tokens": 0,
+       "image_tokens": 0
+      }
+     },
+     "output_token_details": {
+      "text_tokens": 139,
+      "audio_tokens": 459,
+      "reasoning_tokens": 6
+     }
+    },
+    "status": "completed",
+    "errors": []
+   }
+  ],
+  "checks": {
+   "seed_opening_one_q": true,
+   "seed_opening_on_topic": true,
+   "max_one_q": true,
+   "question_share": 0.0,
+   "most_replies_no_question": true,
+   "initiative_after_little": false,
+   "max_context_terms_in_a_turn": 1,
+   "no_recital": true,
+   "context_terms_total": 1,
+   "no_digits": true,
+   "no_leakage": true,
+   "leaks": [],
+   "notes_meta_mentions": 0,
+   "empty_openers": 0,
+   "no_dashes": true,
+   "advice_to_therapist": null,
+   "gender_forms_ok": true,
+   "feminine_forms": [],
+   "masculine_forms": [],
+   "labels_localized": true,
+   "leaked_labels": [],
+   "avg_sentences": 3.5,
+   "max_sentences": 5
+  }
+ }
+]

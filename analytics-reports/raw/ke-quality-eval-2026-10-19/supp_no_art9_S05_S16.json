@@ -1,0 +1,428 @@
+[
+  {
+    "id": "S05",
+    "theme": "crisis entry among ordinary ones",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "overwhelm"
+      ],
+      "crisis_entries": 1,
+      "note": "The 10-day entry must produce no moments; no ideas after it."
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "nothing",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "art9_moments": 0,
+            "art9_tools": 0,
+            "art9_ideas": 0,
+            "art9_items": 0,
+            "processed": 2,
+            "moments": 2,
+            "crisis": 1,
+            "skipped": 1,
+            "art9_skipped": 1,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 0,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 1,
+            "insight": 0,
+            "honesty": 0,
+            "resilience": 1,
+            "kindness": 0,
+            "commitment": 2
+          },
+          "support_row": true,
+          "paths": [],
+          "forming": [
+            {
+              "emotion_family": "overwhelm",
+              "entries": 2
+            }
+          ],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "nothing",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "art9_moments": 0,
+            "art9_tools": 0,
+            "art9_ideas": 0,
+            "art9_items": 0,
+            "processed": 0,
+            "moments": 0,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 0,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 1,
+            "insight": 0,
+            "honesty": 0,
+            "resilience": 1,
+            "kindness": 0,
+            "commitment": 2
+          },
+          "support_row": true,
+          "paths": [],
+          "forming": [
+            {
+              "emotion_family": "overwhelm",
+              "entries": 2
+            }
+          ],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "usage": {},
+    "moments": [
+      {
+        "days_ago": 30,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "done",
+        "anchor": "connecting",
+        "strengths": "courage,commitment",
+        "confidence": 98,
+        "hard_situation": true,
+        "text": "You asked a friend for help with the assignment instead of hiding.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 20,
+        "source_kind": "note",
+        "family": "overwhelm",
+        "kind": "done",
+        "anchor": "values_action",
+        "strengths": "commitment,resilience",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You split the work into small parts and finished one.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [],
+    "paths_full": [],
+    "tools_full": [],
+    "hard_full": [],
+    "ideas_full": [],
+    "state": {
+      "latest_entry_crisis": true,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 2}"
+    },
+    "usage_split": {
+      "ke_extract": {
+        "calls": 2,
+        "prompt": 2980,
+        "cached": 2560,
+        "completion": 137,
+        "usd": 0.00112
+      },
+      "total": {
+        "calls": 2,
+        "prompt": 2980,
+        "cached": 2560,
+        "completion": 137,
+        "usd": 0.00112
+      }
+    },
+    "models_used": [
+      "gpt-5.4-mini"
+    ],
+    "art9_granted": false
+  },
+  {
+    "id": "S16",
+    "theme": "homework that keeps coming back",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "shame"
+      ],
+      "crisis_entries": 0,
+      "note": "Idea reason should be homework."
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "art9_moments": 0,
+            "art9_tools": 0,
+            "art9_ideas": 0,
+            "art9_items": 0,
+            "processed": 1,
+            "moments": 2,
+            "crisis": 0,
+            "skipped": 1,
+            "art9_skipped": 1,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 1,
+            "talks": 0,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 0,
+            "insight": 1,
+            "honesty": 0,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 1
+          },
+          "support_row": false,
+          "paths": [],
+          "forming": [],
+          "tools": [
+            "Writing it down [self] used 1"
+          ],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "nothing",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "art9_moments": 0,
+            "art9_tools": 0,
+            "art9_ideas": 0,
+            "art9_items": 0,
+            "processed": 1,
+            "moments": 1,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 2,
+            "talks": 0,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 0,
+            "insight": 1,
+            "honesty": 0,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 1
+          },
+          "support_row": false,
+          "paths": [],
+          "forming": [],
+          "tools": [
+            "Writing it down [self] used 1"
+          ],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": []
+    },
+    "usage": {},
+    "moments": [
+      {
+        "days_ago": 14,
+        "source_kind": "note",
+        "family": "shame",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight",
+        "confidence": 96,
+        "hard_situation": false,
+        "text": "You noticed that saying you are so useless sounded silly on paper.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 14,
+        "source_kind": "note",
+        "family": "shame",
+        "kind": "used_method",
+        "anchor": "using_therapy",
+        "strengths": "commitment",
+        "confidence": 92,
+        "hard_situation": false,
+        "text": "You wrote it down after dropping a glass.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": 1,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 6,
+        "source_kind": "note",
+        "family": "guilt",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 92,
+        "hard_situation": false,
+        "text": "The late email brought back your critic, and it stayed hard all evening.",
+        "attached": {
+          "path": null,
+          "skill": null,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [],
+    "paths_full": [],
+    "tools_full": [
+      {
+        "id": 1,
+        "name": "Writing it down",
+        "what": "You write the thought down so you can look at it on paper instead of carrying it around in your head.",
+        "origin": "self",
+        "origin_note": null
+      }
+    ],
+    "hard_full": [],
+    "ideas_full": [],
+    "state": {
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"notes\": 2}"
+    },
+    "usage_split": {
+      "ke_compose": {
+        "calls": 1,
+        "prompt": 3293,
+        "cached": 2688,
+        "completion": 113,
+        "usd": 0.00116
+      },
+      "ke_extract": {
+        "calls": 2,
+        "prompt": 2992,
+        "cached": 2560,
+        "completion": 182,
+        "usd": 0.00134
+      },
+      "total": {
+        "calls": 3,
+        "prompt": 6285,
+        "cached": 5248,
+        "completion": 295,
+        "usd": 0.0025
+      }
+    },
+    "models_used": [
+      "gpt-5.4-mini"
+    ],
+    "art9_granted": false
+  }
+]

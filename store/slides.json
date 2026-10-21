@@ -1,0 +1,77 @@
+[
+  {
+    "id": "main",
+    "type": "screen",
+    "headline_lines": ["Your therapy week", "**at a glance**"],
+    "subtitle": "**Next session**, agenda, to-dos, and habits, right on your home screen",
+    "shot_ios": ["store/renders/ios/store_main.png", "social/images/app-shots/main_v3_home.png"],
+    "shot_android": ["store/renders/android/store_main.png"],
+    "decor": {"play": "bird_wave"},
+    "note": "Copy: store/copy.md slide 1. Only if the screen shows the Your first week tile, use the subtitle variant from copy.md. Decor: trial on Play only (Darek, 2026-10-19)."
+  },
+  {
+    "id": "after_therapy",
+    "type": "screen",
+    "headline_lines": ["**Never forget**", "a session again"],
+    "subtitle": "Take a note **After Therapy** by voice or text",
+    "shot_ios": ["store/renders/ios/store_after_therapy.png", "social/images/app-shots/after_card_v2.png"],
+    "shot_android": ["store/renders/android/store_after_therapy.png"]
+  },
+  {
+    "id": "recording",
+    "type": "screen",
+    "headline_lines": ["**Be present**", "We'll take notes"],
+    "subtitle": "**Record your session** and get a summary with topics and to-dos",
+    "shot_ios": ["store/renders/ios/store_recording.png", "social/images/app-shots/session_summary.png"],
+    "shot_android": ["store/renders/android/store_recording.png"]
+  },
+  {
+    "id": "reflect",
+    "type": "screen",
+    "headline_lines": ["Make every session", "**count twice**"],
+    "subtitle": "**Reflect** using AI that knows your therapy history",
+    "shot_ios": ["store/renders/ios/store_reflect.png", "social/images/app-shots/reflect_mode_choice.png"],
+    "shot_android": ["store/renders/android/store_reflect.png"]
+  },
+  {
+    "id": "prep",
+    "type": "screen",
+    "headline_lines": ["**Always know**", "what to talk about"],
+    "subtitle": "**Prepare for every session** in under a minute",
+    "shot_ios": ["store/renders/ios/store_prep.png", "social/images/app-shots/prep_card_v2.png"],
+    "shot_android": ["store/renders/android/store_prep.png"]
+  },
+  {
+    "id": "workspace",
+    "type": "screen",
+    "headline_lines": ["All your **therapy work**", "in one space"],
+    "subtitle": "**Workspace** gathers goals, questions, and to-dos from your sessions",
+    "shot_ios": ["store/renders/ios/store_workspace.png", "social/images/app-shots/workspace_v2.png"],
+    "shot_android": ["store/renders/android/store_workspace.png"]
+  },
+  {
+    "id": "timeline",
+    "type": "screen",
+    "headline_lines": ["See your", "**therapy timeline**"],
+    "subtitle": "Every session, note, and breakthrough **in one feed**",
+    "shot_ios": ["store/renders/ios/store_timeline.png", "social/images/app-shots/timeline_filters.png"],
+    "shot_android": ["store/renders/android/store_timeline.png"]
+  },
+  {
+    "id": "character",
+    "type": "screen",
+    "headline_lines": ["Watch your", "**strengths grow**"],
+    "subtitle": "**Character** turns your notes and sessions into a map of your skills",
+    "shot_ios": ["store/renders/ios/store_character.png", "social/images/app-shots/character_sheet.png"],
+    "shot_android": ["store/renders/android/store_character.png"]
+  },
+  {
+    "id": "testimonial",
+    "type": "testimonial",
+    "targets": ["appstore"],
+    "quote": "My therapist costs $100 a\nweek. Between work and the\nkids, **I kept forgetting\neverything** from my\nsessions.\n\nI started using the voice\ndebrief in my car right after\ntherapy, and **now I\nremember the most**\nimportant parts. It’s the first\ntime I’ve actually felt like the\nmoney is worth it.",
+    "attribution": "Rachel K., Austin, TX",
+    "stars": 5,
+    "note": "Review text and line breaks copied from the current ios-8 slide, never edit. App Store only (Play: user review + rating + no app UI). Keep only with the author's written consent (copy.md par. 4)."
+  }
+]

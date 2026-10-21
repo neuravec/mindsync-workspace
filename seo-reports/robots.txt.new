@@ -1,0 +1,70 @@
+# STAN: WDROZONE NA ZYWO 2026-08-26 (Webflow > Site Settings > SEO > robots.txt).
+# Ten plik to kopia referencyjna tego, co jest opublikowane.
+#
+# WAZNE: NIE dodawaj tu linii "Sitemap:".
+# Przelacznik "Remove sitemap.xml from robots.txt" jest Off, wiec Webflow dopisuje
+# dyrektywe Sitemap automatycznie. Wlasna linia = zdublowana dyrektywa (tak bylo wczesniej).
+#
+# Zmiany wobec wersji sprzed 2026-08-26:
+#  1. Usunieta wlasna dyrektywa Sitemap (zrodlo duplikatu).
+#  2. Usuniete Disallow dla /admin/, /admin---under-construction/, /copy/.
+#     Te strony sa odpublikowane i zwracaja 404. Blokada w robots.txt UNIEMOZLIWIA
+#     Googlebotowi zobaczenie 404, wiec zostalyby w indeksie jako
+#     "Indexed, though blocked by robots.txt". Bez blokady wypadna same.
+#  3. Usunieta wzmianka o /llms-full.txt (Webflow nie wspiera takiego pliku, 404).
+#  4. Dodane nowsze user-agenty AI.
+
+# --- ponizej dokladna tresc wklejona w Webflow ---
+
+# robots.txt for mindsync.app
+# The Sitemap directive is appended automatically by Webflow
+# (Site Settings > SEO > "Remove sitemap.xml from robots.txt" is Off).
+# Do not add a Sitemap line here or it will be duplicated.
+
+User-agent: *
+Allow: /
+
+# AI crawlers, explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: FacebookBot
+Allow: /
+
+User-agent: Omgilibot
+Allow: /
+
+# Product context for LLMs: https://www.mindsync.app/llms.txt

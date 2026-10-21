@@ -1,0 +1,34 @@
+{
+  "_opis": "KROK 0 partii 7 bloga MindSync (2026-10-21): wpisy o nowej wersji aplikacji (App Store 2.0.56, Google Play 2.0.117). A = nowy wpis whats-new-in-mindsync, B = przepisanie opublikowanego how-to-use-mindsync (item 6a8dd78d9711593bac37a6f8). Keywordy EN to doslowne podciagi blobow funkcji live z OBECNEGO katalogu (id+name+short+keywords), plus slowa nowych pozycji z briefu par. 5.1, ktore zaczna trafiac po aktualizacji katalogu. Brief: blog/queue/_brief-partia7-nowa-wersja.md.",
+  "_wynik_bramki": "Policzone recznie wg logiki skryptu, oczekiwane: 2x OK, 0 RYZYKO, 0 BRAK na obecnym katalogu. A: session-prep i workspace ('therapy agenda'), timeline ('therapy timeline'), session-prep ('session preparation'), session-debrief ('after therapy'), check-ins ('focus areas'), reflect ('ai journaling'), summaries ('weekly summary'), daily-affirmation ('daily affirmation'), health-check ('therapeutic alliance'), mood-trends, homework i daily-affirmation ('home screen' w polu short). B: session-prep ('prepare for therapy'), session-debrief ('after therapy'), session-recording ('session recording'), voice-notes ('voice note'), check-ins ('focus areas'), homework ('therapy homework'), timeline ('therapy timeline'), reflect ('ai journaling'), mood-trends i homework ('home screen'). Po aktualizacji katalogu dochodza: main-home, first-week-plan, first-conversation, orca-memory, character ('first week', 'strengths', 'what orca remembers', 'ai therapy assistant', 'how to use mindsync', 'orca'). Zadne slowo nie trafia w bloby planned: streaks ('character tab', 'companion', 'habit streak', 'journaling habit') i therapist-sharing ('between sessions data', 'consent', 'share with therapist'); dlatego brak golego 'character', 'companion', 'habit', 'between sessions' i 'consent'.",
+  "A KLASTER1 [2026-10-23]: what's new in MindSync (new home screen, first-week plan, therapy cards, Character, Orca)": [
+    "therapy agenda",
+    "therapy timeline",
+    "session preparation",
+    "after therapy",
+    "focus areas",
+    "ai journaling",
+    "weekly summary",
+    "daily affirmation",
+    "therapeutic alliance",
+    "home screen",
+    "first week",
+    "strengths",
+    "what orca remembers",
+    "ai therapy assistant"
+  ],
+  "B KLASTER1 [aktualizacja po A]: how to use MindSync, your first week step by step": [
+    "prepare for therapy",
+    "after therapy",
+    "session recording",
+    "voice note",
+    "focus areas",
+    "therapy homework",
+    "therapy timeline",
+    "ai journaling",
+    "home screen",
+    "how to use mindsync",
+    "first week",
+    "orca"
+  ]
+}

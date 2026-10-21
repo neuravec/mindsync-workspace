@@ -1,0 +1,5 @@
+# c08c: stół kuchenny rano, zwykłe światło dnia (test naturalności, 2026-10-02)
+
+```
+An everyday photo of a woman in her late twenties sitting at a small kitchen table by the window on a weekday morning, one hand around a mug of tea, the other resting near a notebook that is closed, looking out of the window thoughtfully but at ease. Plain daylight from a cloudy sky fills the room evenly, low contrast, realistic neutral colors, nothing stylized. She wears a soft oatmeal-colored knit sweater with no pattern or text and her hair is tied up loosely with a few loose strands; her face shows natural skin texture with no makeup look. The table has a few real breakfast leftovers: a plate with toast crusts, a spoon, a half-peeled orange. Taken with a phone camera from across the table at eye level, slightly tilted horizon, gentle softness and a little noise. Vertical 4:5 frame; the upper third of the image is mostly the light wall above the window and soft daylight, simple and uncluttered for a headline.
+```

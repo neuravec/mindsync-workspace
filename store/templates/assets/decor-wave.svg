@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 1000 260" aria-hidden="true">
+  <!-- MindSync store decor: a small wave that reads as a line chart. Extremes of a gently rising
+       sine joined by a Catmull-Rom spline, with data dots only where the phone never covers them
+       (x <= 150 and x >= 850 of 1000). Drawn full slide width; the phone hides the middle. -->
+  <path d="M-60 260.4 C-38.3 250 26.7 204.3 70 198.2 C113.3 192.1 156.7 230.1 200 224 C243.3 217.9 286.7 167.9 330 161.8 C373.3 155.7 416.7 193.7 460 187.6 C503.3 181.5 546.7 131.5 590 125.4 C633.3 119.3 676.7 157.3 720 151.2 C763.3 145.1 806.7 95.1 850 89 C893.3 82.9 936.7 120.9 980 114.8 C1023.3 108.7 1088.3 63 1110 52.6"
+        fill="none" stroke="#9acbd4" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+  <g fill="#9acbd4">
+    <circle cx="70" cy="198.2" r="6"/>
+    <circle cx="850" cy="89" r="6"/>
+    <circle cx="980" cy="114.8" r="6"/>
+  </g>
+</svg>

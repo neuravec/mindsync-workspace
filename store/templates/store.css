@@ -1,0 +1,244 @@
+/* MindSync store screenshots: shared layer for screen.html and testimonial.html.
+   Renderer: scripts/store/render_store.py (Playwright + Chromium, offline).
+   Colours: docs/blog/brand-mindsync.md par. 3 (design system tokens). Font: Figtree from assets/
+   (the renderer copies it from social/templates/assets/ on the first run).
+
+   Two formats, chosen by a class on <html>:
+     html.fmt-appstore  1290x2796  App Store 6.9", iPhone frame
+     html.fmt-play      1080x1920  Google Play phone 9:16, neutral Android frame
+   App Store values were measured on the current set (blog/images/app-screenshots/ios-1..8.webp,
+   600x1299) and multiplied by 2.15 (= 1290/600). In comments "u" means px of that 600 px original.
+   Play values are the same layout rescaled for 9:16 with smaller type (Play asks for text on at
+   most ~20% of the image), never enlarged. */
+
+@font-face { font-family: "Figtree"; font-weight: 400; src: url("assets/Figtree-Regular.ttf") format("truetype"); }
+@font-face { font-family: "Figtree"; font-weight: 500; src: url("assets/Figtree-Medium.ttf") format("truetype"); }
+@font-face { font-family: "Figtree"; font-weight: 600; src: url("assets/Figtree-SemiBold.ttf") format("truetype"); }
+@font-face { font-family: "Figtree"; font-weight: 700; src: url("assets/Figtree-Bold.ttf") format("truetype"); }
+
+:root {
+  --ocean: #113237;      /* Deep Ocean: all text */
+  --teal-600: #26767b;   /* illustration: hill and lighthouse */
+  --teal-300: #78d0d0;   /* illustration: sea and sailboat */
+  --mist: #f6fffd;       /* gradient top */
+  --lagoon: #bbe4de;     /* gradient bottom */
+  --coral: #ff9f8a;      /* rating stars */
+}
+
+/* ---- format variables ---- */
+html.fmt-appstore {
+  --W: 1290px; --H: 2796px;
+  --pad: 86px;            /* 40u side margin of the text */
+  --hl-top: 148px;        /* headline line centres at 100u and 162u */
+  --hl-fs: 114px;         /* 53u */
+  --hl-lh: 1.17;          /* 62u line pitch */
+  --sub-top: 414px;       /* subtitle zone 414..726, centred at 265u */
+  --sub-h: 312px;
+  --sub-fs: 73px;         /* 34u */
+  --sub-lh: 1.19;         /* 40.5u line pitch */
+  --ph-top: 828px;        /* phone top at 385u */
+  --ew: 836px;            /* screen width 389u, phone outer width 405u */
+  /* testimonial */
+  --t-top: 150px; --t-left: 107px; --t-right: 86px;
+  --q-w: 108px; --q-h: 60px; --q-gap: 73px;
+  --t-fs: 84px; --t-lh: 1.19;
+  --st-size: 107px; --st-gap: 52px;
+  /* optional decor (slides.json "decor"): bird in the right margin between subtitle and phone,
+     wave across the lower part, behind the phone */
+  --bird-l: 1124px; --bird-t: 752px; --bird-w: 126px; --bird-rot: -4deg;
+  --wave-t: 2230px;
+}
+html.fmt-play {
+  --W: 1080px; --H: 1920px;
+  --pad: 72px;
+  --hl-top: 76px;
+  --hl-fs: 80px;
+  --hl-lh: 1.17;
+  --sub-top: 263px;
+  --sub-h: 216px;
+  --sub-fs: 50px;
+  --sub-lh: 1.19;
+  --ph-top: 512px;
+  --ew: 600px;
+  --t-top: 96px; --t-left: 80px; --t-right: 72px;
+  --q-w: 90px; --q-h: 50px; --q-gap: 56px;
+  --t-fs: 54px; --t-lh: 1.19;
+  --st-size: 86px; --st-gap: 42px;
+  --bird-l: 912px; --bird-t: 486px; --bird-w: 112px; --bird-rot: -4deg;
+  --wave-t: 1370px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+html {
+  width: var(--W);
+  height: var(--H);
+  overflow: hidden;
+  /* pale mint to white, top to bottom: ocean mist -> lagoon */
+  background: linear-gradient(180deg, var(--mist) 0%, var(--lagoon) 100%);
+}
+body {
+  position: relative;
+  width: var(--W);
+  height: var(--H);
+  overflow: hidden;
+  font-family: "Figtree", "Segoe UI", Arial, sans-serif;
+  color: var(--ocean);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
+  font-kerning: normal;
+}
+b { font-weight: 700; }
+
+/* forced line: one line of the copy, never wraps; fit.js shrinks the block instead */
+.ln { display: block; white-space: nowrap; }
+
+/* ---- headline and subtitle (screen slides) ---- */
+.headline {
+  position: absolute;
+  left: var(--pad); right: var(--pad); top: var(--hl-top);
+  text-align: center;
+  font-weight: 400;
+  font-size: calc(var(--hl-fs) * var(--hl-s, 1));
+  line-height: var(--hl-lh);
+}
+.subzone {
+  position: absolute;
+  left: var(--pad); right: var(--pad); top: var(--sub-top);
+  height: var(--sub-h);
+  display: flex; align-items: center; justify-content: center;
+}
+.subtitle {
+  width: 100%;
+  text-align: center;
+  font-weight: 400;
+  font-size: calc(var(--sub-fs) * var(--sub-s, 1));
+  line-height: var(--sub-lh);
+}
+.subtitle.wrap { text-wrap: balance; }
+.subtitle.empty { display: none; }
+
+/* ---- optional background decor (slides.json "decor", off by default) ----
+   bird_wave: a line bird (assets/decor-bird.svg) in the empty margin beside headline line 2 and a
+   line-chart wave (assets/decor-wave.svg) across the lower part, behind the phone. The layer is the
+   first child of <body>, so the headline, subtitle and phone all paint over it; it never covers
+   text or the screen. fit.js warns when the bird box comes near the text or the phone. */
+.decor-layer { position: absolute; inset: 0; pointer-events: none; }
+.decor-layer img { position: absolute; display: block; height: auto; }
+.decor-layer .bird {
+  left: var(--bird-l); top: var(--bird-t); width: var(--bird-w);
+  transform: rotate(var(--bird-rot)); transform-origin: 50% 50%;
+}
+.decor-layer .wave { left: 0; top: var(--wave-t); width: var(--W); }
+
+/* ---- phone: everything scales from --ew (screen width) ---- */
+.phone {
+  --ow: calc(var(--ew) + 2 * var(--rim));          /* outer width */
+  position: absolute;
+  top: var(--ph-top);
+  left: calc((var(--W) - var(--ow)) / 2);
+  width: var(--ow);
+  padding: var(--rim);
+  border-radius: calc(var(--sr) + var(--rim));
+  /* light silver rim, as on the current set */
+  background: linear-gradient(160deg, #f8fafa 0%, #dce2e2 26%, #eef2f2 50%, #d3dada 76%, #f2f5f5 100%);
+  box-shadow:
+    0 0 0 1px rgba(17, 50, 55, 0.12),
+    inset 0 0 0 calc(var(--ew) * 0.003) rgba(255, 255, 255, 0.85),
+    0 calc(var(--ew) * 0.04) calc(var(--ew) * 0.08) rgba(17, 50, 55, 0.16),
+    0 calc(var(--ew) * 0.01) calc(var(--ew) * 0.024) rgba(17, 50, 55, 0.10);
+}
+/* iPhone: rim 8u on a 389u screen, rounder corners, screen 1179:2556 */
+.phone.frame-ios { --rim: calc(var(--ew) * 0.0206); --sr: calc(var(--ew) * 0.13); --aspect: 2.1679; }
+/* neutral Android: slimmer rim, tighter corners, screen 20:9 (1080x2400) */
+.phone.frame-android { --rim: calc(var(--ew) * 0.014); --sr: calc(var(--ew) * 0.075); --aspect: 2.2222; }
+
+.screen {
+  position: relative;
+  width: var(--ew);
+  height: calc(var(--ew) * var(--aspect));
+  border-radius: var(--sr);
+  overflow: hidden;
+  background: var(--bottom-bg, #f6fffd);   /* shows below a shot that is shorter than the screen */
+  box-shadow: 0 0 0 calc(var(--ew) * 0.0025) rgba(14, 29, 31, 0.30);
+}
+/* empty status band (no clock, no icons): only for shots whose content starts at y=0 */
+.band { height: calc(var(--ew) * var(--band, 0)); background: var(--top-bg, #f6fffd); }
+/* the shot: pasted as is, scaled to the screen width, cut at the bottom of the screen;
+   --crop removes the iOS status area (Android frame) and the optional crop_top,
+   --vis (visible source height / screen width) hides the iOS home indicator in the Android frame */
+.viewport {
+  position: relative;
+  overflow: hidden;
+  height: calc(var(--ew) * (var(--aspect) - var(--band, 0)));
+}
+.viewport .clip {
+  position: absolute; left: 0; top: 0;
+  width: 100%;
+  height: calc(var(--ew) * var(--vis, 4));
+  overflow: hidden;
+}
+.viewport img {
+  position: absolute; left: 0;
+  top: calc(var(--ew) * var(--crop, 0) * -1);
+  width: 100%; height: auto;
+  display: block;
+}
+
+/* dynamic island (iPhone) and punch-hole camera (Android) */
+.island, .punch { position: absolute; z-index: 3; display: none; }
+.frame-ios .island {
+  display: block;
+  top: calc(var(--rim) + var(--ew) * 0.026);
+  left: calc(50% - var(--ew) * 0.1325);
+  width: calc(var(--ew) * 0.265);
+  height: calc(var(--ew) * 0.076);
+  border-radius: 999px;
+  background: #050708;
+}
+.frame-ios .island::after {
+  content: ""; position: absolute; top: 50%; right: calc(var(--ew) * 0.038);
+  width: calc(var(--ew) * 0.03); height: calc(var(--ew) * 0.03); margin-top: calc(var(--ew) * -0.015);
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 38%, #3a4d75 0%, #141c2e 45%, #05070c 75%);
+}
+.frame-android .punch {
+  display: block;
+  top: calc(var(--rim) + var(--ew) * 0.028);
+  left: calc(50% - var(--ew) * 0.017);
+  width: calc(var(--ew) * 0.034);
+  height: calc(var(--ew) * 0.034);
+  border-radius: 50%;
+  background: radial-gradient(circle at 38% 38%, #2c3852 0%, #07090d 62%);
+}
+
+/* side buttons (positions measured on the current set, in units of the outer width) */
+.btn { position: absolute; display: none; width: calc(var(--ow) * 0.008); }
+.btn.l { left: calc(var(--ow) * -0.008 + 1px); border-radius: 4px 0 0 4px;
+  background: linear-gradient(90deg, #c7cece 0%, #e8eded 100%); }
+.btn.r { right: calc(var(--ow) * -0.008 + 1px); border-radius: 0 4px 4px 0;
+  background: linear-gradient(270deg, #c7cece 0%, #e8eded 100%); }
+.frame-ios .btn.ios { display: block; }
+.frame-android .btn.android { display: block; }
+.btn.ios.action   { top: calc(var(--ow) * 0.259); height: calc(var(--ow) * 0.079); }
+.btn.ios.vol-up   { top: calc(var(--ow) * 0.440); height: calc(var(--ow) * 0.155); }
+.btn.ios.vol-down { top: calc(var(--ow) * 0.630); height: calc(var(--ow) * 0.148); }
+.btn.ios.power    { top: calc(var(--ow) * 0.440); height: calc(var(--ow) * 0.215); }
+.btn.android.power  { top: calc(var(--ow) * 0.36); height: calc(var(--ow) * 0.11); }
+.btn.android.volume { top: calc(var(--ow) * 0.52); height: calc(var(--ow) * 0.22); }
+
+/* ---- testimonial ---- */
+.tcol {
+  position: absolute;
+  top: var(--t-top); left: var(--t-left); right: var(--t-right);
+  --tf: calc(var(--t-fs) * var(--t-s, 1));
+}
+.qmark { display: block; width: var(--q-w); height: var(--q-h); margin-left: calc(var(--q-w) * -0.055); fill: var(--ocean); }
+.quote { margin-top: var(--q-gap); font-size: var(--tf); line-height: var(--t-lh); font-weight: 400; }
+.quote .para + .para, .quote .attrib { margin-top: calc(var(--tf) * var(--t-lh)); }
+.quote .attrib { font-style: italic; }
+.stars { display: flex; gap: var(--st-gap); margin-top: calc(var(--tf) * 1.1); color: var(--coral); }
+.stars:empty { display: none; }
+.stars svg { display: block; flex: 0 0 auto; width: var(--st-size); height: var(--st-size); }
+/* flat lighthouse and sailboat scene, full width, anchored to the bottom (viewBox 600x369) */
+.illus { position: absolute; left: 0; bottom: 0; display: block; width: var(--W); height: calc(var(--W) * 0.615); }

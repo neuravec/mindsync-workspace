@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>First conversation with Orca</title>
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
+<style>
+body{margin:0}
+a{color:#0F3D33}a:hover{color:#0F3D33}
+</style>
+</helmet>
+<div style="width: 390px; height: 844px; box-sizing: border-box; display: flex; flex-direction: column; align-items: center; background: radial-gradient(120% 80% at 50% 18%, #1B584B 0%, #0F3D33 55%, #0A2B24 100%); font-family: Figtree, sans-serif; color: #FFFFFF; overflow: hidden">
+
+  <div style="align-self: stretch; padding: 18px 24px 0 24px; display: flex; flex-direction: column; gap: 12px">
+    <div style="display: flex; justify-content: space-between; align-items: baseline">
+      <span style="font-size: 16px; font-weight: 600; letter-spacing: -0.16px">First conversation with [Orca]</span>
+      <span style="font-size: 15px; font-weight: 600; color: rgba(255,255,255,0.7)">{{timer}}</span>
+    </div>
+    <sc-if value="{{isOpening}}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <div style="display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 6px" aria-label="{{progressAria}}">
+          <sc-for list="{{segments}}" as="s" hint-placeholder-count="3"><span style="{{s}}"></span></sc-for>
+        </div>
+        <span style="font-size: 13px; font-weight: 600; color: #A6E8D8">{{topicLabel}}</span>
+      </div>
+    </sc-if>
+    <sc-if value="{{isOpen}}" hint-placeholder-val="{{ false }}">
+      <div style="align-self: flex-start; display: flex; align-items: center; gap: 8px; background: rgba(166,232,216,0.14); border-radius: 999px; padding: 6px 12px 6px 10px">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#A6E8D8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg>
+        <span style="font-size: 13px; font-weight: 600; color: #A6E8D8">Open conversation · end whenever you like</span>
+      </div>
+    </sc-if>
+  </div>
+
+  <div style="flex-grow: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 28px; padding: 0 24px">
+    <div style="position: relative; width: 184px; height: 184px; display: flex; align-items: center; justify-content: center">
+      <sc-for list="{{rings}}" as="r" hint-placeholder-count="3"><span style="{{r}}"></span></sc-for>
+      <span style="position: relative; width: 118px; height: 118px; border-radius: 59px; background: linear-gradient(160deg, #A6E8D8 0%, #6FCBB6 100%); box-shadow: 0 18px 44px rgba(0,0,0,0.35); display: flex; align-items: center; justify-content: center; gap: 6px">
+        <sc-for list="{{bars}}" as="b" hint-placeholder-count="4"><span style="{{b}}"></span></sc-for>
+      </span>
+    </div>
+
+    <div style="max-width: 300px; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center">
+      <span style="font-size: 15px; font-weight: 600; letter-spacing: 0.3px; color: #A6E8D8">{{stateLabel}}</span>
+      <p style="{{transcriptStyle}}">{{transcript}}</p>
+    </div>
+
+    <sc-if value="{{hasMemory}}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 6px; max-width: 320px">
+        <span style="font-size: 12px; font-weight: 600; color: rgba(255,255,255,0.7)">[Orca] remembers:</span>
+        <sc-for list="{{memory}}" as="m" hint-placeholder-count="3">
+          <span style="font-size: 12px; font-weight: 600; color: #FFFFFF; background: rgba(255,255,255,0.12); border-radius: 999px; padding: 2px 9px">{{m}}</span>
+        </sc-for>
+      </div>
+    </sc-if>
+  </div>
+
+  <div style="align-self: stretch; padding: 0 32px 40px 32px; display: flex; align-items: center; justify-content: space-between">
+    <button type="button" aria-label="Mute microphone" style="width: 64px; height: 64px; border: none; border-radius: 32px; background: rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center; cursor: pointer; padding: 0">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v3"/></svg>
+    </button>
+    <a href="Paywall.dc.html" style="height: 56px; padding: 0 34px; border-radius: 28px; background: #FFFFFF; color: #0F3D33; font-size: 16px; font-weight: 600; text-decoration: none; display: flex; align-items: center">End</a>
+    <a href="TypeFallback.dc.html" aria-label="Switch to text" style="width: 64px; height: 64px; border-radius: 32px; background: rgba(255,255,255,0.12); display: flex; align-items: center; justify-content: center">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M7 10h1M11 10h1M15 10h2M7 14h10"/></svg>
+    </a>
+  </div>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props='{"state":{"editor":"enum","options":["speaking","listening","wrapping","open"],"default":"speaking"},"answers":{"editor":"enum","options":["filled","skipped"],"default":"filled"},"inTherapy":{"editor":"boolean","default":true},"$preview":{"width":390,"height":844}}'>
+class Component extends DCLogic {
+  renderVals() {
+    const state = this.props.state ?? 'speaking';
+    const filled = (this.props.answers ?? 'filled') !== 'skipped';
+    const inTherapy = filled && (this.props.inTherapy ?? true);
+    const step = { speaking: 1, listening: 2, wrapping: 3, open: 3 }[state] || 1;
+    const listening = state === 'listening';
+
+    const third = inTherapy
+      ? 'Thanks, [Name]. What would you like [Thursday]’s session to focus on? I’ll turn it into your Before therapy card.'
+      : 'Thanks for sharing that. What would you like to feel more of in the next few weeks?';
+    const byData = filled ? {
+      speaking: { label: '[Orca] is speaking', text: 'Hi [Name]. You said [anxiety] has been about an 8 out of 10 lately. When did it feel heaviest this week?', timer: '00:24' },
+      listening: { label: 'Listening', text: '“[Walking after work, I guess. And talking to my sister on Sundays.]”', timer: '01:41' },
+      wrapping: { label: '[Orca] is speaking', text: third, timer: '02:52' },
+      open: { label: '[Orca] is speaking', text: 'You mentioned [sleep] earlier too. What does a rough night usually look like for you?', timer: '07:15' }
+    } : {
+      speaking: { label: '[Orca] is speaking', text: 'Hi [Name], I’m [Orca]. What made you want to try MindSync today?', timer: '00:18' },
+      listening: { label: 'Listening', text: '“[Work has been a lot lately, and I keep overthinking at night.]”', timer: '01:33' },
+      wrapping: { label: '[Orca] is speaking', text: third, timer: '02:40' },
+      open: { label: '[Orca] is speaking', text: 'You said nights are the hardest. What usually goes through your head when you can’t switch off?', timer: '06:50' }
+    };
+    const content = byData[state];
+    const topics = filled
+      ? ['This week', 'What helps', inTherapy ? 'Your next session' : 'Your week ahead']
+      : ['Why now', 'What’s on your mind', 'What you want more of'];
+
+    const ringSizes = listening ? [176, 156, 136] : [150, 136, 122];
+    const ringColors = ['rgba(166,232,216,0.25)', 'rgba(166,232,216,0.35)', 'rgba(166,232,216,0.45)'];
+    const barHeights = listening ? [14, 22, 16, 10] : [22, 34, 26, 16];
+
+    return {
+      timer: content.timer,
+      stateLabel: content.label,
+      transcript: content.text,
+      transcriptStyle: 'margin: 0; font-size: 19px; line-height: 1.45; color: rgba(255,255,255,0.92); ' + (listening ? 'font-style: italic' : ''),
+      isOpening: state !== 'open',
+      isOpen: state === 'open',
+      topicLabel: 'Getting to know you · ' + step + ' of 3 · ' + topics[step - 1],
+      progressAria: 'Opening question ' + step + ' of 3',
+      segments: [1, 2, 3].map((n) => 'height: 4px; border-radius: 2px; background: ' + (n <= step ? '#A6E8D8' : 'rgba(255,255,255,0.18)')),
+      rings: ringSizes.map((s, i) => 'position: absolute; width: ' + s + 'px; height: ' + s + 'px; border-radius: ' + (s / 2) + 'px; border: 1.5px solid ' + ringColors[i]),
+      bars: barHeights.map((h) => 'width: 5px; height: ' + h + 'px; border-radius: 3px; background: #0F3D33'),
+      hasMemory: filled,
+      memory: inTherapy ? ['[Anxiety] 8/10', '[Sleep]', '[Thursday] 6 PM'] : ['[Anxiety] 8/10', '[Sleep]', 'Coach style']
+    };
+  }
+}
+</script>
+</body>
+</html>

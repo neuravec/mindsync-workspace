@@ -1,0 +1,235 @@
+[
+  {
+    "id": "S15",
+    "theme": "new account, two entries in the first days",
+    "language": "English",
+    "expect": {
+      "families_any": [
+        "worry",
+        "fear"
+      ],
+      "crisis_entries": 0,
+      "note": "First 14 days: 2 entries are enough for a path."
+    },
+    "checkpoints": [
+      {
+        "now": "2026-10-12",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "nothing",
+            "synced": true,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 1,
+            "moments": 2,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 0,
+            "talks": 1,
+            "sessions": 0
+          },
+          "strengths": {
+            "courage": 0,
+            "insight": 1,
+            "honesty": 1,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 0
+          },
+          "support_row": false,
+          "paths": [],
+          "forming": [
+            {
+              "emotion_family": "worry",
+              "entries": 1
+            }
+          ],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      },
+      {
+        "now": "2026-10-19",
+        "jobs": [
+          {
+            "status": "ok",
+            "compose": "composed",
+            "synced": false,
+            "purged_moments": 0,
+            "purged_rejected": 0,
+            "purged_items": 0,
+            "cleared_skills": 0,
+            "processed": 1,
+            "moments": 1,
+            "crisis": 0,
+            "skipped": 0,
+            "art9_skipped": 0,
+            "failed": 0,
+            "caught_up": true,
+            "stopped": null
+          }
+        ],
+        "map": {
+          "level": 1,
+          "steps": 0,
+          "class": "the_newcomer",
+          "sources": {
+            "notes": 0,
+            "talks": 1,
+            "sessions": 1
+          },
+          "strengths": {
+            "courage": 0,
+            "insight": 1,
+            "honesty": 2,
+            "resilience": 0,
+            "kindness": 0,
+            "commitment": 0
+          },
+          "support_row": false,
+          "paths": [
+            {
+              "family": "worry",
+              "name": "Working with worry",
+              "focus": "about therapy and feeling heard",
+              "skills": [
+                "Bringing worry to therapy [using_therapy/notebook] discovered x1",
+                "Naming the worry [noticing/tag] discovered x1"
+              ],
+              "hard": [
+                "Starting therapy (1)"
+              ]
+            }
+          ],
+          "forming": [],
+          "tools": [],
+          "ideas": [],
+          "pending_stages": [],
+          "idea_count": 0
+        },
+        "problems": []
+      }
+    ],
+    "stability": {
+      "renamed_paths": [],
+      "lost_paths": [],
+      "new_paths": [
+        "worry"
+      ]
+    },
+    "usage": {},
+    "moments": [
+      {
+        "days_ago": 8,
+        "source_kind": "reflect_talk",
+        "family": "worry",
+        "kind": "noticed",
+        "anchor": "noticing",
+        "strengths": "insight,honesty",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You noticed you were worried the therapist would think you were overreacting.",
+        "attached": {
+          "path": 1,
+          "skill": 1,
+          "tool": null,
+          "hard": null
+        }
+      },
+      {
+        "days_ago": 8,
+        "source_kind": "reflect_talk",
+        "family": "worry",
+        "kind": "still_hard",
+        "anchor": null,
+        "strengths": "",
+        "confidence": 92,
+        "hard_situation": false,
+        "text": "Starting therapy was still hard for you.",
+        "attached": {
+          "path": 1,
+          "skill": null,
+          "tool": null,
+          "hard": 1
+        }
+      },
+      {
+        "days_ago": 3,
+        "source_kind": "after_therapy",
+        "family": "worry",
+        "kind": "from_therapy",
+        "anchor": "using_therapy",
+        "strengths": "honesty",
+        "confidence": 98,
+        "hard_situation": false,
+        "text": "You told your therapist about the panic before exams and felt heard.",
+        "attached": {
+          "path": 1,
+          "skill": 2,
+          "tool": null,
+          "hard": null
+        }
+      }
+    ],
+    "skills_full": [
+      {
+        "id": 1,
+        "path_id": 1,
+        "anchor": "noticing",
+        "icon": "tag",
+        "name": "Naming the worry",
+        "in_your_words": "You notice when worry shows up, like worrying that your therapist will think you are overreacting. You can name it instead of keeping it vague."
+      },
+      {
+        "id": 2,
+        "path_id": 1,
+        "anchor": "using_therapy",
+        "icon": "notebook",
+        "name": "Bringing worry to therapy",
+        "in_your_words": "You bring the worry into therapy, like talking about the panic before exams. You noticed your therapist listened and you felt heard."
+      }
+    ],
+    "paths_full": [
+      {
+        "id": 1,
+        "family": "worry",
+        "name": "Working with worry",
+        "focus": "about therapy and feeling heard",
+        "merged_into": null
+      }
+    ],
+    "tools_full": [],
+    "hard_full": [
+      {
+        "id": 1,
+        "label": "Starting therapy",
+        "context": null
+      }
+    ],
+    "ideas_full": [],
+    "state": {
+      "latest_entry_crisis": false,
+      "initial_sync_done": true,
+      "source_counts": "{\"sessions\": 1, \"talks\": 1}"
+    },
+    "usage_split": {},
+    "art9_granted": true
+  }
+]
