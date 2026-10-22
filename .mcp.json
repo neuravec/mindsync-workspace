@@ -12,6 +12,18 @@
     "loops": {
       "type": "http",
       "url": "https://mcp.loops.so"
+    },
+    "reddit": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "reddit-mcp-server"],
+      "env": {
+        "REDDIT_CLIENT_ID": "${REDDIT_CLIENT_ID:-}",
+        "REDDIT_CLIENT_SECRET": "${REDDIT_CLIENT_SECRET:-}",
+        "REDDIT_USERNAME": "${REDDIT_USERNAME:-}",
+        "REDDIT_PASSWORD": "${REDDIT_PASSWORD:-}",
+        "REDDIT_SAFE_MODE": "standard",
+        "REDDIT_BOT_DISCLOSURE": "off"
+      }
     }
   }
 }
