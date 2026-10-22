@@ -71,3 +71,10 @@ desktop.ini
 /design-specs/**/uploads/
 /design-specs/**/.claude/
 /Business_requirements/**/.claude/
+
+# 2026-10-22: skrypty GA4 i przychodów (App Store Connect, Google Play). Klucze, tokeny i dane finansowe nigdy do repo.
+scripts/revenue/*.json
+scripts/revenue/*.p8
+scripts/ga4/token.json
+scripts/ga4/ga4.config.json
+/analytics-reports/raw/revenue/

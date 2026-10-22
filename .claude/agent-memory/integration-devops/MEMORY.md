@@ -45,6 +45,8 @@ Key discrepancies found vs. plan:
 - [Redesign integration 2026-10-14](project_redesign_integration_2026_10_14.md) - DEPLOYED: BE v572 (4c7675b) + m319/m320, FE dev 5c27b2c; device QA open
 - [KE rollout 2026-10-19](project_ke_rollout_deploy_2026_10_19.md) - v575 (73081cc) + v576 KE on (operator set it); both backfills done; first sweep ok
 
+- [GA4 + ASC + Play pull scripts 2026-10-22](reference_ga4_revenue_pull_scripts.md) - scripts/ga4, scripts/revenue; deps; unverified API details to check on first run
+
 ## PostHog Dashboard Rebuild (C4, 2026-08-10)
 
 - Updated `scripts/posthog_build_dashboards.py` (not run — operator decision) to reflect the drifted taxonomy; full report `analytics-reports/2026-08-10-dashboards-rebuild-plan.md`.
