@@ -1,0 +1,101 @@
+{
+  "code": "P2a",
+  "workflow": "P2 Pierwsza wartość",
+  "trigger": "event signupCompleted + 24 h, filter hasFirstConversation=false",
+  "sender_name": "Darek from MindSync",
+  "sender_email": "darek@mindsync.app",
+  "reply_to": "darek@mindsync.app",
+  "subject": "🐋 The easiest way to start",
+  "preview": "Five minutes and one question. Any answer is fine.",
+  "h1_light": "No pressure, just a start.",
+  "h1_bold": "Your first Reflect takes about five minutes.",
+  "blocks": [
+    {
+      "type": "image",
+      "key": "header",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms0hdlb20j9l0jx8frkpazgh.png",
+      "alt": "Illustration: an orca tail rising over waves in front of a coral sun"
+    },
+    {
+      "type": "paragraph",
+      "text": "Starting is usually the hardest part. So here's the smallest possible version: open MindSync, tap Reflect, and answer one question. How was today, really?"
+    },
+    {
+      "type": "pill",
+      "text": "What happens next",
+      "color": "#ffc88a"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Orca listens and asks a follow-up question or two.",
+        "You can reread the conversation later, or delete it if you'd rather not keep it.",
+        "If something comes up that you want to bring to therapy, add it to your Therapy Agenda."
+      ]
+    },
+    {
+      "type": "image",
+      "key": "orca",
+      "src": "https://images.vialoops.com/cmbhkwdyy14eeyc0hgckxd10a/cmvhzwgep2arc0j1s27omc9ea.jpg",
+      "alt": "Two MindSync screens: a Reflect conversation with Orca, and the What Orca remembers page"
+    },
+    {
+      "type": "buttons",
+      "buttons": [
+        {
+          "label": "OPEN ON IPHONE",
+          "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P2a",
+          "style": "primary"
+        },
+        {
+          "label": "OPEN ON ANDROID",
+          "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP2a",
+          "style": "dark"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Not the right time? That's fine. MindSync will be here when you are."
+    },
+    {
+      "type": "image",
+      "key": "divider",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7r0d2b0jzyfxhbkfdj.png",
+      "alt": ""
+    }
+  ],
+  "footer_promise": "We promise to only send you mental health-related tips & updates.",
+  "footer_signoff": "Darek from MindSync",
+  "footer_image": {
+    "type": "image",
+    "key": "lighthouse",
+    "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7l0d2a0jzyfwmupekb.png",
+    "alt": "Illustration: a lighthouse on a cliff, a sailboat and a coral sun"
+  },
+  "footer_icons": [
+    {
+      "name": "android",
+      "label": "Google Play",
+      "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP2a"
+    },
+    {
+      "name": "apple",
+      "label": "App Store",
+      "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P2a"
+    },
+    {
+      "name": "discord",
+      "label": "Discord",
+      "href": "https://discord.com/invite/UNqf45f5Gz"
+    },
+    {
+      "name": "instagram",
+      "label": "Instagram",
+      "href": "https://www.instagram.com/mindsync.app/"
+    }
+  ],
+  "crisis_line": "MindSync isn't a crisis service. If you're in crisis, call or text 988 in the US, or find a local helpline at findahelpline.com.",
+  "copyright": "© 2026 MindSync.app"
+}

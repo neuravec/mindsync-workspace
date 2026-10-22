@@ -17,5 +17,7 @@ metadata:
 
 - 21.10 wieczorem: repo neuravec/mindsync-workspace utworzone przez operatora i WYPCHNIĘTE (main, 4 commity), social wypchnięty (bff76ce). Audyt security-guardian: 13 blokerów usuniętych (handoffy z danymi prawdziwych kont w .gitignore, redakcja testerów, UID, terapeutki, webhook Slacka i hasła podpisu). OTWARTE dla operatora: zaproszenie wspólnika do 6 repo, rotacja webhooka Slacka i hasła podpisu Androida, backend MindSync śledzi .env, który config.py czyta ze slugu Heroku: usunięcie z gita dopiero po przeniesieniu wartości do config vars (backend-api + integration-devops), inaczej boot się wywróci.
 
+- 21.10: mail z instrukcją wysłany do Darka (na prywatny Gmail Darka, kopia darek@mindsync.app; obie skrzynki są aktywne, z darek@ Darek wysyłał maile). Czekamy na jego login GitHub i listę brakujących dostępów.
+
 **Why:** dwie osoby z własnym Claude muszą mieć ten sam stan treści, kolejek i pamięci; bez tego drip publikuje podwójnie, a wiedza się rozjeżdża.
 **How to apply:** na koniec każdej sesji `sync.py status` i pytanie o push; dripy tylko na maszynie operatora; nowe sekrety tylko do `.env.example` bez wartości. Powiązane: [[reference-backend-autodeploy-on-push]], [[feedback-concurrent-session-git-hygiene]].

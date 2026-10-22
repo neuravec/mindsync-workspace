@@ -1,0 +1,125 @@
+{
+  "code": "P2b",
+  "workflow": "P2 Pierwsza wartość",
+  "trigger": "event signupCompleted + 5 days (after the 4-day trial), filter hasFirstConversation=false",
+  "sender_name": "Darek from MindSync",
+  "sender_email": "darek@mindsync.app",
+  "reply_to": "darek@mindsync.app",
+  "subject": "🐋 Not sure what to say to Orca?",
+  "preview": "Three ways people start. Pick the one that fits today.",
+  "h1_light": "Blank page?",
+  "h1_bold": "Here are three ways people start.",
+  "blocks": [
+    {
+      "type": "image",
+      "key": "header",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms0hdlb20j9l0jx8frkpazgh.png",
+      "alt": "Illustration: an orca tail rising over waves in front of a coral sun"
+    },
+    {
+      "type": "pill",
+      "text": "Before a session",
+      "color": "#ff9f8a"
+    },
+    {
+      "type": "paragraph",
+      "text": "Open Before therapy the day before your session. You get a one-page card with a short summary of what came up since last time and up to three numbered questions to bring."
+    },
+    {
+      "type": "pill",
+      "text": "After a session",
+      "color": "#ffc88a"
+    },
+    {
+      "type": "paragraph",
+      "text": "Write down what stuck with you while it's fresh, so it doesn't fade by Tuesday. Your After therapy card keeps it for next time."
+    },
+    {
+      "type": "pill",
+      "text": "On a heavy evening",
+      "color": "#dbf0ed"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talk it through with Orca in Reflect instead of scrolling. A few lines are enough, and you can stop whenever you want."
+    },
+    {
+      "type": "paragraph",
+      "text": "All three work on the free version of MindSync, so you can start today."
+    },
+    {
+      "type": "buttons",
+      "buttons": [
+        {
+          "label": "OPEN ON IPHONE",
+          "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P2b",
+          "style": "primary"
+        },
+        {
+          "label": "OPEN ON ANDROID",
+          "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP2b",
+          "style": "dark"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This is our last nudge about getting started. If MindSync isn't for you right now, no hard feelings, and your account will be here if you change your mind."
+    },
+    {
+      "type": "image",
+      "key": "divider",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7r0d2b0jzyfxhbkfdj.png",
+      "alt": ""
+    }
+  ],
+  "footer_promise": "We promise to only send you mental health-related tips & updates.",
+  "footer_signoff": "Darek from MindSync",
+  "footer_image": {
+    "type": "image",
+    "key": "lighthouse",
+    "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7l0d2a0jzyfwmupekb.png",
+    "alt": "Illustration: a lighthouse on a cliff, a sailboat and a coral sun"
+  },
+  "footer_icons": [
+    {
+      "name": "android",
+      "label": "Google Play",
+      "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP2b"
+    },
+    {
+      "name": "apple",
+      "label": "App Store",
+      "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P2b"
+    },
+    {
+      "name": "discord",
+      "label": "Discord",
+      "href": "https://discord.com/invite/UNqf45f5Gz"
+    },
+    {
+      "name": "instagram",
+      "label": "Instagram",
+      "href": "https://www.instagram.com/mindsync.app/"
+    }
+  ],
+  "crisis_line": "MindSync isn't a crisis service. If you're in crisis, call or text 988 in the US, or find a local helpline at findahelpline.com.",
+  "copyright": "© 2026 MindSync.app",
+  "sources": [
+    {
+      "item": "Before therapy, After therapy and Reflect messages are available on Free (with monthly limits)",
+      "refs": [
+        "premium_comparison_table.dart:28-29,32",
+        "app_en.arb:1686 (1 a month)",
+        "app_en.arb:1689 (15 a month)"
+      ]
+    },
+    {
+      "item": "Reflect voice mode is Premium only, so P2b no longer says 'out loud'",
+      "refs": [
+        "premium_comparison_table.dart:33",
+        "app_en.arb:1692 (Locked on Free)"
+      ]
+    }
+  ]
+}

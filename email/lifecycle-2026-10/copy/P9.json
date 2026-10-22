@@ -1,0 +1,90 @@
+{
+  "code": "P9",
+  "workflow": "P9 Wygaszanie",
+  "trigger": "event repermissionDue (no emailPref filter)",
+  "sender_name": "Darek from MindSync",
+  "sender_email": "darek@mindsync.app",
+  "reply_to": "darek@mindsync.app",
+  "subject": "🐋 Should we keep writing to you?",
+  "preview": "One tap to stay. Nothing to do if you'd rather we stop.",
+  "h1_light": "We haven't heard from you in a while.",
+  "h1_bold": "Do you still want our emails?",
+  "blocks": [
+    {
+      "type": "image",
+      "key": "header",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms0hdlb20j9l0jx8frkpazgh.png",
+      "alt": "Illustration: an orca tail rising over waves in front of a coral sun"
+    },
+    {
+      "type": "paragraph",
+      "text": "We'd rather write to fewer people who find our emails useful than fill everyone's inbox. If you want to keep getting them, tap below and nothing changes."
+    },
+    {
+      "type": "paragraph",
+      "text": "If we don't hear back within 14 days, we'll stop emailing you. Your MindSync account and everything in it stay exactly as they are."
+    },
+    {
+      "type": "buttons",
+      "buttons": [
+        {
+          "label": "YES, KEEP ME ON THE LIST",
+          "href": "https://mindsync-829f3f05ed43.herokuapp.com/api/v1/email/a?t={contact.emailLinkToken}&p=P9&a=keep",
+          "style": "primary",
+          "answer": "keep"
+        },
+        {
+          "label": "ONLY BIG APP UPDATES, PLEASE",
+          "href": "https://mindsync-829f3f05ed43.herokuapp.com/api/v1/email/a?t={contact.emailLinkToken}&p=P9&a=updates",
+          "style": "sand",
+          "answer": "updates"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Either way, thanks for giving MindSync a try. If something put you off, hit reply. One line helps."
+    },
+    {
+      "type": "image",
+      "key": "divider",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7r0d2b0jzyfxhbkfdj.png",
+      "alt": ""
+    }
+  ],
+  "footer_promise": "We promise to only send you mental health-related tips & updates.",
+  "footer_signoff": "Darek from MindSync",
+  "footer_image": {
+    "type": "image",
+    "key": "lighthouse",
+    "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7l0d2a0jzyfwmupekb.png",
+    "alt": "Illustration: a lighthouse on a cliff, a sailboat and a coral sun"
+  },
+  "footer_icons": [
+    {
+      "name": "android",
+      "label": "Google Play",
+      "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP9"
+    },
+    {
+      "name": "apple",
+      "label": "App Store",
+      "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P9"
+    },
+    {
+      "name": "discord",
+      "label": "Discord",
+      "href": "https://discord.com/invite/UNqf45f5Gz"
+    },
+    {
+      "name": "instagram",
+      "label": "Instagram",
+      "href": "https://www.instagram.com/mindsync.app/"
+    }
+  ],
+  "crisis_line": "MindSync isn't a crisis service. If you're in crisis, call or text 988 in the US, or find a local helpline at findahelpline.com.",
+  "copyright": "© 2026 MindSync.app",
+  "fallbacks": {
+    "contact.emailLinkToken": "none"
+  }
+}

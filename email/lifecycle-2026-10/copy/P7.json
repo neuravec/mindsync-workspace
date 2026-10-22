@@ -1,0 +1,149 @@
+{
+  "code": "P7",
+  "workflow": "P7 Newsletter (campaign, manual)",
+  "trigger": "campaign to segment 'Newsletter: subscribed, not holdout, emailPref != paused', excluding emailPref = updates_only",
+  "sender_name": "Monika from MindSync",
+  "sender_email": "monika@mindsync.app",
+  "reply_to": "monika@mindsync.app",
+  "subject": "🐋 [Topic of the issue, e.g. Why the hour after therapy matters]",
+  "preview": "[One sentence that finishes the subject line. Never left empty.]",
+  "h1_light": "[Hook in a few words]",
+  "h1_bold": "[The one idea of this issue, in one line]",
+  "blocks": [
+    {
+      "type": "image",
+      "key": "header",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms0hdlb20j9l0jx8frkpazgh.png",
+      "alt": "Illustration: an orca tail rising over waves in front of a coral sun"
+    },
+    {
+      "type": "paragraph",
+      "text": "[Opening: a short, concrete moment from everyday life between sessions, 3 to 4 sentences in Monika's voice.]"
+    },
+    {
+      "type": "pill",
+      "text": "The idea",
+      "color": "#ff9f8a"
+    },
+    {
+      "type": "paragraph",
+      "text": "[What helps and why, in plain words. One source linked if a claim needs it. No diagnosis, no promises of healing.]"
+    },
+    {
+      "type": "pill",
+      "text": "Try this week",
+      "color": "#ffc88a"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "[One small step, under five minutes]",
+        "[A second step, optional]"
+      ]
+    },
+    {
+      "type": "pill",
+      "text": "Where MindSync helps",
+      "color": "#dbf0ed"
+    },
+    {
+      "type": "paragraph",
+      "text": "[One feature that fits the topic, named exactly as in the app (check blog/app-features.json and lib/l10n/app_en.arb), with a real screen below.]"
+    },
+    {
+      "type": "image",
+      "key": "workspace_character",
+      "src": "https://images.vialoops.com/cmbhkwdyy14eeyc0hgckxd10a/cmvhzwg7n2bly0j1jcvj79zph.jpg",
+      "alt": "Two MindSync screens: the Workspace with the next session agenda and to-dos, and Character with the six-strength chart"
+    },
+    {
+      "type": "buttons",
+      "buttons": [
+        {
+          "label": "OPEN ON IPHONE",
+          "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P7",
+          "style": "primary"
+        },
+        {
+          "label": "OPEN ON ANDROID",
+          "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP7",
+          "style": "dark"
+        }
+      ]
+    },
+    {
+      "type": "pill",
+      "text": "Was this issue useful?",
+      "color": "#bbe4de"
+    },
+    {
+      "type": "buttons",
+      "buttons": [
+        {
+          "label": "YES",
+          "href": "https://mindsync-829f3f05ed43.herokuapp.com/api/v1/email/a?t={contact.emailLinkToken}&p=P7&a=yes&i=[issue-slug]",
+          "style": "primary",
+          "answer": "yes"
+        },
+        {
+          "label": "NOT REALLY",
+          "href": "https://mindsync-829f3f05ed43.herokuapp.com/api/v1/email/a?t={contact.emailLinkToken}&p=P7&a=no&i=[issue-slug]",
+          "style": "sand-light",
+          "answer": "no"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "[One question to readers. Hit reply and tell me ...]"
+    },
+    {
+      "type": "image",
+      "key": "divider",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7r0d2b0jzyfxhbkfdj.png",
+      "alt": ""
+    }
+  ],
+  "footer_promise": "We promise to only send you mental health-related tips & updates.",
+  "footer_signoff": "Monika from MindSync",
+  "footer_image": {
+    "type": "image",
+    "key": "lighthouse",
+    "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7l0d2a0jzyfwmupekb.png",
+    "alt": "Illustration: a lighthouse on a cliff, a sailboat and a coral sun"
+  },
+  "footer_icons": [
+    {
+      "name": "android",
+      "label": "Google Play",
+      "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP7"
+    },
+    {
+      "name": "apple",
+      "label": "App Store",
+      "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P7"
+    },
+    {
+      "name": "discord",
+      "label": "Discord",
+      "href": "https://discord.com/invite/UNqf45f5Gz"
+    },
+    {
+      "name": "instagram",
+      "label": "Instagram",
+      "href": "https://www.instagram.com/mindsync.app/"
+    }
+  ],
+  "crisis_line": "MindSync isn't a crisis service. If you're in crisis, call or text 988 in the US, or find a local helpline at findahelpline.com.",
+  "copyright": "© 2026 MindSync.app",
+  "template_notes": [
+    "Monika fills every [placeholder]; the email is not ready while any [ remains.",
+    "[issue-slug] in both feedback links: short lowercase id of the issue, e.g. 2026-11-hour-after-therapy (letters, digits, dashes).",
+    "Run humanizer and scripts/blog-voice-check.py style check on the filled prose; zero U+2014 and U+2013.",
+    "Replace the screen image with the one that matches the feature named in 'Where MindSync helps'."
+  ],
+  "fallbacks": {
+    "contact.emailLinkToken": "none"
+  }
+}

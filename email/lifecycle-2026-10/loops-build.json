@@ -1,0 +1,454 @@
+{
+  "built_at": "2026-10-21",
+  "team": "cmbhkwdyy14eeyc0hgckxd10a",
+  "workflowGroup": {
+    "name": "Lifecycle 2026-10",
+    "id": "cmviie18501du0j0kk4tqrkaq"
+  },
+  "theme": "cmkn0tkkw0opg0i2ftjg46o8d",
+  "mailingListId": null,
+  "contactPropertiesCreated": {
+    "emailHoldout": "boolean",
+    "hasFirstConversation": "boolean",
+    "isPremium": "boolean",
+    "inTrial": "boolean",
+    "emailPref": "string",
+    "emailPausedUntil": "date",
+    "emailLinkToken": "string"
+  },
+  "workflows": [
+    {
+      "code": "P1",
+      "name": "P1 Powitanie",
+      "workflowId": "cmviie4cr01cg0jyzusbblift",
+      "url": "https://app.loops.so/workflows/cmviie4cr01cg0jyzusbblift",
+      "status": "Draft",
+      "trigger": {
+        "eventName": "signupCompleted",
+        "reEligible": false
+      },
+      "nodes": {
+        "n1": "EventTrigger",
+        "n3": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "emailHoldout isFalse AND emailPref notEquals 'paused'"
+        },
+        "n4": {
+          "type": "SendEmailAction",
+          "email": "P1"
+        },
+        "n2": "ExitAction"
+      },
+      "emails": {
+        "P1": {
+          "node": "n4",
+          "emailMessageId": "cmviiej5l01do0jz0g5ay7m1l",
+          "contactPropertiesFallbacks": {
+            "firstName": "there"
+          }
+        }
+      }
+    },
+    {
+      "code": "P2",
+      "name": "P2 Pierwsza wartość",
+      "workflowId": "cmviihkov01co0jyznwz7n3ui",
+      "url": "https://app.loops.so/workflows/cmviihkov01co0jyznwz7n3ui",
+      "status": "Draft",
+      "trigger": {
+        "eventName": "signupCompleted",
+        "reEligible": false
+      },
+      "nodes": {
+        "n1": "EventTrigger",
+        "n3": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "emailHoldout isFalse AND emailPref notEquals 'paused'"
+        },
+        "n4": "TimerAction 24h",
+        "n5": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "hasFirstConversation isFalse"
+        },
+        "n6": {
+          "type": "SendEmailAction",
+          "email": "P2a"
+        },
+        "n7": "TimerAction 96h",
+        "n8": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "hasFirstConversation isFalse"
+        },
+        "n9": {
+          "type": "SendEmailAction",
+          "email": "P2b"
+        },
+        "n2": "ExitAction"
+      },
+      "emails": {
+        "P2a": {
+          "node": "n6",
+          "emailMessageId": "cmviikiyf00130jxoyu4kkuid"
+        },
+        "P2b": {
+          "node": "n9",
+          "emailMessageId": "cmviil3a5000r0j2s1j7erspu"
+        }
+      }
+    },
+    {
+      "code": "P3a",
+      "name": "P3a Trial połowa",
+      "workflowId": "cmviihkx301gg0jzl5gsmkfw6",
+      "url": "https://app.loops.so/workflows/cmviihkx301gg0jzl5gsmkfw6",
+      "status": "Draft",
+      "trigger": {
+        "eventName": "trialStarted",
+        "reEligible": false
+      },
+      "nodes": {
+        "n1": "EventTrigger",
+        "n3": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "emailHoldout isFalse AND emailPref notEquals 'paused'"
+        },
+        "n4": "TimerAction 48h",
+        "n5": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "inTrial isTrue AND isPremium isFalse"
+        },
+        "n6": {
+          "type": "SendEmailAction",
+          "email": "P3a"
+        },
+        "n2": "ExitAction"
+      },
+      "emails": {
+        "P3a": {
+          "node": "n6",
+          "emailMessageId": "cmviikj5t00150jxoxvp6djgx"
+        }
+      }
+    },
+    {
+      "code": "P3b",
+      "name": "P3b Trial koniec",
+      "workflowId": "cmviihl5901db0jxcv9yqq84h",
+      "url": "https://app.loops.so/workflows/cmviihl5901db0jxcv9yqq84h",
+      "status": "Draft",
+      "trigger": {
+        "eventName": "trialEndingSoon",
+        "reEligible": false
+      },
+      "nodes": {
+        "n1": "EventTrigger",
+        "n3": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "emailHoldout isFalse AND emailPref notEquals 'paused'"
+        },
+        "n4": {
+          "type": "SendEmailAction",
+          "email": "P3b"
+        },
+        "n2": "ExitAction"
+      },
+      "emails": {
+        "P3b": {
+          "node": "n4",
+          "emailMessageId": "cmviijhcc000o0j251814fim8",
+          "eventPropertiesFallbacks": {
+            "reflects": "0",
+            "agendaItems": "0",
+            "activeDays": "1"
+          }
+        }
+      }
+    },
+    {
+      "code": "P3b-quiet",
+      "name": "P3b Trial koniec (cisza)",
+      "workflowId": "cmviihldt00on0jwu3zfzpket",
+      "url": "https://app.loops.so/workflows/cmviihldt00on0jwu3zfzpket",
+      "status": "Draft",
+      "trigger": {
+        "eventName": "trialEndingSoonQuiet",
+        "reEligible": false
+      },
+      "nodes": {
+        "n1": "EventTrigger",
+        "n3": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "emailHoldout isFalse AND emailPref notEquals 'paused'"
+        },
+        "n4": {
+          "type": "SendEmailAction",
+          "email": "P3b-quiet"
+        },
+        "n2": "ExitAction"
+      },
+      "emails": {
+        "P3b-quiet": {
+          "node": "n4",
+          "emailMessageId": "cmviijhkn000f0j0yoruubp9v"
+        }
+      }
+    },
+    {
+      "code": "P4",
+      "name": "P4 Po zakupie",
+      "workflowId": "cmviihllb01cp0kzcihpcolms",
+      "url": "https://app.loops.so/workflows/cmviihllb01cp0kzcihpcolms",
+      "status": "Draft",
+      "trigger": {
+        "eventName": "subscriptionPurchased",
+        "reEligible": false
+      },
+      "nodes": {
+        "n1": "EventTrigger",
+        "n3": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "emailHoldout isFalse AND emailPref notEquals 'paused'"
+        },
+        "n4": {
+          "type": "SendEmailAction",
+          "email": "P4a"
+        },
+        "n5": "TimerAction 14d",
+        "n6": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "isPremium isTrue"
+        },
+        "n7": {
+          "type": "SendEmailAction",
+          "email": "P4b"
+        },
+        "n2": "ExitAction"
+      },
+      "emails": {
+        "P4a": {
+          "node": "n4",
+          "emailMessageId": "cmviijhsh000q0j25wccyk0dg"
+        },
+        "P4b": {
+          "node": "n7",
+          "emailMessageId": "cmviiko35000m0j22k76fx963",
+          "contactPropertiesFallbacks": {
+            "emailLinkToken": "none"
+          }
+        }
+      }
+    },
+    {
+      "code": "P5",
+      "name": "P5 Rezygnacja",
+      "workflowId": "cmviihlt600np0j14gd49pv3o",
+      "url": "https://app.loops.so/workflows/cmviihlt600np0j14gd49pv3o",
+      "status": "Draft",
+      "trigger": {
+        "eventName": "subscriptionCancelled",
+        "reEligible": false
+      },
+      "nodes": {
+        "n1": "EventTrigger",
+        "n3": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "emailHoldout isFalse AND emailPref notEquals 'paused'"
+        },
+        "n4": "TimerAction 1h",
+        "n5": {
+          "type": "SendEmailAction",
+          "email": "P5"
+        },
+        "n2": "ExitAction"
+      },
+      "emails": {
+        "P5": {
+          "node": "n5",
+          "emailMessageId": "cmviik0vl000b0j2qp3rcal91",
+          "contactPropertiesFallbacks": {
+            "emailLinkToken": "none"
+          }
+        }
+      }
+    },
+    {
+      "code": "P5-expired",
+      "name": "P5 Wygaśnięcie",
+      "workflowId": "cmviihm0s01di0jyih1q5l909",
+      "url": "https://app.loops.so/workflows/cmviihm0s01di0jyih1q5l909",
+      "status": "Draft",
+      "trigger": {
+        "eventName": "subscriptionExpired",
+        "reEligible": false
+      },
+      "nodes": {
+        "n1": "EventTrigger",
+        "n3": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "emailHoldout isFalse AND emailPref notEquals 'paused'"
+        },
+        "n4": "TimerAction 1h",
+        "n5": {
+          "type": "SendEmailAction",
+          "email": "P5-expired"
+        },
+        "n2": "ExitAction"
+      },
+      "emails": {
+        "P5-expired": {
+          "node": "n5",
+          "emailMessageId": "cmviik17i000t0j1i6rwa2iz0",
+          "contactPropertiesFallbacks": {
+            "emailLinkToken": "none"
+          }
+        }
+      }
+    },
+    {
+      "code": "P6a",
+      "name": "P6a Powrót d14",
+      "workflowId": "cmviihmd801fj0jxgl8f1uqfo",
+      "url": "https://app.loops.so/workflows/cmviihmd801fj0jxgl8f1uqfo",
+      "status": "Draft",
+      "trigger": {
+        "eventName": "inactive14d",
+        "reEligible": true
+      },
+      "nodes": {
+        "n1": "EventTrigger",
+        "n3": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "emailHoldout isFalse AND emailPref notEquals 'paused'"
+        },
+        "n4": {
+          "type": "SendEmailAction",
+          "email": "P6a"
+        },
+        "n2": "ExitAction"
+      },
+      "emails": {
+        "P6a": {
+          "node": "n4",
+          "emailMessageId": "cmviijigp000o0j09yatjx0f5",
+          "contactPropertiesFallbacks": {
+            "emailLinkToken": "none"
+          }
+        }
+      }
+    },
+    {
+      "code": "P6b",
+      "name": "P6b Powrót d30",
+      "workflowId": "cmviihmnj00o90jxi7uq1nv2l",
+      "url": "https://app.loops.so/workflows/cmviihmnj00o90jxi7uq1nv2l",
+      "status": "Draft",
+      "trigger": {
+        "eventName": "inactive30d",
+        "reEligible": true
+      },
+      "nodes": {
+        "n1": "EventTrigger",
+        "n3": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "emailHoldout isFalse AND emailPref notEquals 'paused'"
+        },
+        "n4": {
+          "type": "SendEmailAction",
+          "email": "P6b"
+        },
+        "n2": "ExitAction"
+      },
+      "emails": {
+        "P6b": {
+          "node": "n4",
+          "emailMessageId": "cmviijip600090j3ejl65ijj9"
+        }
+      }
+    },
+    {
+      "code": "P9",
+      "name": "P9 Wygaszanie",
+      "workflowId": "cmviihmuz01ge0j08aphr8ckm",
+      "url": "https://app.loops.so/workflows/cmviihmuz01ge0j08aphr8ckm",
+      "status": "Draft",
+      "trigger": {
+        "eventName": "repermissionDue",
+        "reEligible": false
+      },
+      "nodes": {
+        "n1": "EventTrigger",
+        "n3": {
+          "type": "AudienceFilter",
+          "appliesDownstream": true,
+          "filter": "emailHoldout isFalse"
+        },
+        "n4": {
+          "type": "SendEmailAction",
+          "email": "P9"
+        },
+        "n2": "ExitAction"
+      },
+      "emails": {
+        "P9": {
+          "node": "n4",
+          "emailMessageId": "cmviijiye000b0j2vp8tk3u1n",
+          "contactPropertiesFallbacks": {
+            "emailLinkToken": "none"
+          }
+        }
+      }
+    }
+  ],
+  "campaigns": [
+    {
+      "code": "P7",
+      "name": "P7 Newsletter Moniki: szablon",
+      "campaignId": "cmviirg9i003q0j4hte30s3rs",
+      "emailMessageId": "cmviirg9s003r0j4hlz554f1l",
+      "url": "https://app.loops.so/campaigns/cmviirg9i003q0j4hte30s3rs",
+      "status": "Draft",
+      "audience": null,
+      "contactPropertiesFallbacks": {
+        "emailLinkToken": "none"
+      }
+    }
+  ],
+  "audienceSegments": [
+    {
+      "name": "Newsletter: subscribed, not holdout, not paused",
+      "id": "cmviisfax00590j3tlfimjumo",
+      "filter": "emailHoldout isFalse AND emailPref notEquals 'paused'"
+    }
+  ],
+  "guardian": {
+    "P1": "0 errors, 0 warnings",
+    "P2a": "0/0",
+    "P2b": "0/0",
+    "P3a": "0/0",
+    "P3b": "0/0",
+    "P3b-quiet": "0/0",
+    "P4a": "0/0",
+    "P4b": "0/0",
+    "P5": "0/0",
+    "P5-expired": "0/0",
+    "P6a": "0/0",
+    "P6b": "0/0",
+    "P9": "0/0",
+    "P7": "0/0"
+  },
+  "lmx_source": "scratchpad loops_build/gen_lmx.py (copy/*.json + house template email/2026-10-23-new-look/email.lmx)"
+}

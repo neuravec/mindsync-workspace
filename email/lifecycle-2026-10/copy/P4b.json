@@ -1,0 +1,92 @@
+{
+  "code": "P4b",
+  "workflow": "P4 Po zakupie",
+  "trigger": "P4a + 14 days, filter isPremium=true",
+  "sender_name": "Darek from MindSync",
+  "sender_email": "darek@mindsync.app",
+  "reply_to": "darek@mindsync.app",
+  "subject": "🐋 Two weeks in: is it helping?",
+  "preview": "One tap and you're done. It goes straight to the team.",
+  "h1_light": "Two weeks with Premium.",
+  "h1_bold": "Is MindSync helping between sessions?",
+  "blocks": [
+    {
+      "type": "image",
+      "key": "header",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms0hdlb20j9l0jx8frkpazgh.png",
+      "alt": "Illustration: an orca tail rising over waves in front of a coral sun"
+    },
+    {
+      "type": "paragraph",
+      "text": "Tap the answer closest to how it feels. That's the whole survey."
+    },
+    {
+      "type": "buttons",
+      "buttons": [
+        {
+          "label": "YES, A LOT",
+          "href": "https://mindsync-829f3f05ed43.herokuapp.com/api/v1/email/a?t={contact.emailLinkToken}&p=P4b&a=very",
+          "style": "primary",
+          "answer": "very"
+        },
+        {
+          "label": "A LITTLE",
+          "href": "https://mindsync-829f3f05ed43.herokuapp.com/api/v1/email/a?t={contact.emailLinkToken}&p=P4b&a=somewhat",
+          "style": "sand",
+          "answer": "somewhat"
+        },
+        {
+          "label": "NOT REALLY",
+          "href": "https://mindsync-829f3f05ed43.herokuapp.com/api/v1/email/a?t={contact.emailLinkToken}&p=P4b&a=not",
+          "style": "sand-light",
+          "answer": "not"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Want to say more? Hit reply. Grumpy answers are welcome. They're often the most useful ones we get."
+    },
+    {
+      "type": "image",
+      "key": "divider",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7r0d2b0jzyfxhbkfdj.png",
+      "alt": ""
+    }
+  ],
+  "footer_promise": "We promise to only send you mental health-related tips & updates.",
+  "footer_signoff": "Darek from MindSync",
+  "footer_image": {
+    "type": "image",
+    "key": "lighthouse",
+    "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7l0d2a0jzyfwmupekb.png",
+    "alt": "Illustration: a lighthouse on a cliff, a sailboat and a coral sun"
+  },
+  "footer_icons": [
+    {
+      "name": "android",
+      "label": "Google Play",
+      "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP4b"
+    },
+    {
+      "name": "apple",
+      "label": "App Store",
+      "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P4b"
+    },
+    {
+      "name": "discord",
+      "label": "Discord",
+      "href": "https://discord.com/invite/UNqf45f5Gz"
+    },
+    {
+      "name": "instagram",
+      "label": "Instagram",
+      "href": "https://www.instagram.com/mindsync.app/"
+    }
+  ],
+  "crisis_line": "MindSync isn't a crisis service. If you're in crisis, call or text 988 in the US, or find a local helpline at findahelpline.com.",
+  "copyright": "© 2026 MindSync.app",
+  "fallbacks": {
+    "contact.emailLinkToken": "none"
+  }
+}

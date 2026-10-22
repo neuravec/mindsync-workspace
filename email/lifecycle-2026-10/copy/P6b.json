@@ -1,0 +1,114 @@
+{
+  "code": "P6b",
+  "workflow": "P6 Powrót d30",
+  "trigger": "event inactive30d",
+  "sender_name": "Darek from MindSync",
+  "sender_email": "darek@mindsync.app",
+  "reply_to": "darek@mindsync.app",
+  "subject": "🐋 Still here for the days between sessions",
+  "preview": "A short reminder of what MindSync does, and how to see what's new.",
+  "h1_light": "It's been about a month.",
+  "h1_bold": "Here's what MindSync is for, in short.",
+  "blocks": [
+    {
+      "type": "image",
+      "key": "header",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms0hdlb20j9l0jx8frkpazgh.png",
+      "alt": "Illustration: an orca tail rising over waves in front of a coral sun"
+    },
+    {
+      "type": "pill",
+      "text": "Before a session",
+      "color": "#ff9f8a"
+    },
+    {
+      "type": "paragraph",
+      "text": "Before therapy gives you a one-page card with a short summary of what came up since last time and up to three numbered questions to bring."
+    },
+    {
+      "type": "image",
+      "key": "cards",
+      "src": "https://images.vialoops.com/cmbhkwdyy14eeyc0hgckxd10a/cmvhzwfzn2b4a0j1ralz8enzp.jpg",
+      "alt": "Three MindSync screens: the Before therapy card with numbered questions, the After therapy card with the progress chart, and Timeline"
+    },
+    {
+      "type": "pill",
+      "text": "After a session",
+      "color": "#ffc88a"
+    },
+    {
+      "type": "paragraph",
+      "text": "Note what you took away while it's fresh. After three sessions, the After therapy card adds Your progress in therapy, a chart of your own entries. It doesn't grade your mental health or your therapist."
+    },
+    {
+      "type": "pill",
+      "text": "On the days in between",
+      "color": "#bbe4de"
+    },
+    {
+      "type": "paragraph",
+      "text": "Talk things through with Orca in Reflect. Orca isn't a therapist and doesn't replace yours. You can read every note it keeps about you in Settings, and delete any of them."
+    },
+    {
+      "type": "paragraph",
+      "text": "We update MindSync often. Update it in the App Store or Google Play to see what's new since your last visit."
+    },
+    {
+      "type": "buttons",
+      "buttons": [
+        {
+          "label": "OPEN ON IPHONE",
+          "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P6b",
+          "style": "primary"
+        },
+        {
+          "label": "OPEN ON ANDROID",
+          "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP6b",
+          "style": "dark"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "This is our last check-in about coming back. After this, you'll only hear from us now and then, with a newsletter or a big app update, and you can switch that off below too."
+    },
+    {
+      "type": "image",
+      "key": "divider",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7r0d2b0jzyfxhbkfdj.png",
+      "alt": ""
+    }
+  ],
+  "footer_promise": "We promise to only send you mental health-related tips & updates.",
+  "footer_signoff": "Darek from MindSync",
+  "footer_image": {
+    "type": "image",
+    "key": "lighthouse",
+    "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7l0d2a0jzyfwmupekb.png",
+    "alt": "Illustration: a lighthouse on a cliff, a sailboat and a coral sun"
+  },
+  "footer_icons": [
+    {
+      "name": "android",
+      "label": "Google Play",
+      "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP6b"
+    },
+    {
+      "name": "apple",
+      "label": "App Store",
+      "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P6b"
+    },
+    {
+      "name": "discord",
+      "label": "Discord",
+      "href": "https://discord.com/invite/UNqf45f5Gz"
+    },
+    {
+      "name": "instagram",
+      "label": "Instagram",
+      "href": "https://www.instagram.com/mindsync.app/"
+    }
+  ],
+  "crisis_line": "MindSync isn't a crisis service. If you're in crisis, call or text 988 in the US, or find a local helpline at findahelpline.com.",
+  "copyright": "© 2026 MindSync.app"
+}

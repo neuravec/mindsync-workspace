@@ -1,0 +1,115 @@
+{
+  "code": "P6a",
+  "workflow": "P6 Powrót d14",
+  "trigger": "event inactive14d",
+  "sender_name": "Darek from MindSync",
+  "sender_email": "darek@mindsync.app",
+  "reply_to": "darek@mindsync.app",
+  "subject": "🐋 Your notes are right where you left them",
+  "preview": "Three small steps, if you'd like to pick things back up.",
+  "h1_light": "It's been a couple of weeks.",
+  "h1_bold": "Everything is right where you left it.",
+  "blocks": [
+    {
+      "type": "image",
+      "key": "header",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms0hdlb20j9l0jx8frkpazgh.png",
+      "alt": "Illustration: an orca tail rising over waves in front of a coral sun"
+    },
+    {
+      "type": "paragraph",
+      "text": "This isn't a guilt trip, promise. Life gets busy, and therapy has its own rhythm. If you have a session coming up, MindSync can help you get ready for it in a few minutes."
+    },
+    {
+      "type": "pill",
+      "text": "Coming back takes about five minutes",
+      "color": "#ff9f8a"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Open your Therapy Agenda and see what's still on it.",
+        "Do one short Reflect about the last two weeks.",
+        "Bring your Before therapy card to your next session."
+      ]
+    },
+    {
+      "type": "image",
+      "key": "cards",
+      "src": "https://images.vialoops.com/cmbhkwdyy14eeyc0hgckxd10a/cmvhzwfzn2b4a0j1ralz8enzp.jpg",
+      "alt": "Three MindSync screens: the Before therapy card with numbered questions, the After therapy card with the progress chart, and Timeline"
+    },
+    {
+      "type": "buttons",
+      "buttons": [
+        {
+          "label": "OPEN ON IPHONE",
+          "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P6a",
+          "style": "primary"
+        },
+        {
+          "label": "OPEN ON ANDROID",
+          "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP6a",
+          "style": "dark"
+        }
+      ]
+    },
+    {
+      "type": "buttons",
+      "buttons": [
+        {
+          "label": "NOT NOW, PAUSE EMAILS FOR 30 DAYS",
+          "href": "https://mindsync-829f3f05ed43.herokuapp.com/api/v1/email/a?t={contact.emailLinkToken}&p=P6a&a=pause",
+          "style": "mint-outline",
+          "answer": "pause"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Did something in MindSync not work for you? Hit reply and tell me. That's how we find out what to fix."
+    },
+    {
+      "type": "image",
+      "key": "divider",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7r0d2b0jzyfxhbkfdj.png",
+      "alt": ""
+    }
+  ],
+  "footer_promise": "We promise to only send you mental health-related tips & updates.",
+  "footer_signoff": "Darek from MindSync",
+  "footer_image": {
+    "type": "image",
+    "key": "lighthouse",
+    "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7l0d2a0jzyfwmupekb.png",
+    "alt": "Illustration: a lighthouse on a cliff, a sailboat and a coral sun"
+  },
+  "footer_icons": [
+    {
+      "name": "android",
+      "label": "Google Play",
+      "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP6a"
+    },
+    {
+      "name": "apple",
+      "label": "App Store",
+      "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P6a"
+    },
+    {
+      "name": "discord",
+      "label": "Discord",
+      "href": "https://discord.com/invite/UNqf45f5Gz"
+    },
+    {
+      "name": "instagram",
+      "label": "Instagram",
+      "href": "https://www.instagram.com/mindsync.app/"
+    }
+  ],
+  "crisis_line": "MindSync isn't a crisis service. If you're in crisis, call or text 988 in the US, or find a local helpline at findahelpline.com.",
+  "copyright": "© 2026 MindSync.app",
+  "fallbacks": {
+    "contact.emailLinkToken": "none"
+  }
+}

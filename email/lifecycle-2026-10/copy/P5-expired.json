@@ -1,0 +1,126 @@
+{
+  "code": "P5-expired",
+  "workflow": "P5 Rezygnacja (wygaśnięcie)",
+  "trigger": "event subscriptionExpired (proposed name: a paid subscription ended, not a trial) + 1 h",
+  "sender_name": "Darek from MindSync",
+  "sender_email": "darek@mindsync.app",
+  "reply_to": "darek@mindsync.app",
+  "subject": "🐋 Your Premium has ended",
+  "preview": "Everything you saved is still there. One quick question, if you have a second.",
+  "h1_light": "Your Premium has ended.",
+  "h1_bold": "Can you tell us why?",
+  "blocks": [
+    {
+      "type": "image",
+      "key": "header",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms0hdlb20j9l0jx8frkpazgh.png",
+      "alt": "Illustration: an orca tail rising over waves in front of a coral sun"
+    },
+    {
+      "type": "paragraph",
+      "text": "You're now on the free version of MindSync. Everything you've saved stays saved, and the free limits reset on the 1st of every month. If you didn't mean to stop, for example because a payment didn't go through, check your App Store or Google Play subscription, or hit reply and I'll help."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you have a second, tap the reason closest to yours. It goes straight to the team, and it shapes what we fix first."
+    },
+    {
+      "type": "buttons",
+      "buttons": [
+        {
+          "label": "TOO EXPENSIVE",
+          "href": "https://mindsync-829f3f05ed43.herokuapp.com/api/v1/email/a?t={contact.emailLinkToken}&p=P5&a=price",
+          "style": "primary",
+          "answer": "price"
+        },
+        {
+          "label": "I DIDN'T USE IT MUCH",
+          "href": "https://mindsync-829f3f05ed43.herokuapp.com/api/v1/email/a?t={contact.emailLinkToken}&p=P5&a=not_using",
+          "style": "sand",
+          "answer": "not_using"
+        },
+        {
+          "label": "SOMETHING WAS MISSING",
+          "href": "https://mindsync-829f3f05ed43.herokuapp.com/api/v1/email/a?t={contact.emailLinkToken}&p=P5&a=missing",
+          "style": "sand-light",
+          "answer": "missing"
+        },
+        {
+          "label": "I FINISHED THERAPY",
+          "href": "https://mindsync-829f3f05ed43.herokuapp.com/api/v1/email/a?t={contact.emailLinkToken}&p=P5&a=therapy_ended",
+          "style": "mint-outline",
+          "answer": "therapy_ended"
+        },
+        {
+          "label": "SOMETHING ELSE",
+          "href": "https://mindsync-829f3f05ed43.herokuapp.com/api/v1/email/a?t={contact.emailLinkToken}&p=P5&a=other",
+          "style": "dark",
+          "answer": "other"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Finished therapy? If it's because things got better, we're genuinely glad. Your notes stay in the app if you ever want to look back."
+    },
+    {
+      "type": "paragraph",
+      "text": "Changed your mind? You can pick a plan again any time in the app, under Subscription."
+    },
+    {
+      "type": "image",
+      "key": "divider",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7r0d2b0jzyfxhbkfdj.png",
+      "alt": ""
+    }
+  ],
+  "footer_promise": "We promise to only send you mental health-related tips & updates.",
+  "footer_signoff": "Darek from MindSync",
+  "footer_image": {
+    "type": "image",
+    "key": "lighthouse",
+    "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7l0d2a0jzyfwmupekb.png",
+    "alt": "Illustration: a lighthouse on a cliff, a sailboat and a coral sun"
+  },
+  "footer_icons": [
+    {
+      "name": "android",
+      "label": "Google Play",
+      "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP5-expired"
+    },
+    {
+      "name": "apple",
+      "label": "App Store",
+      "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P5-expired"
+    },
+    {
+      "name": "discord",
+      "label": "Discord",
+      "href": "https://discord.com/invite/UNqf45f5Gz"
+    },
+    {
+      "name": "instagram",
+      "label": "Instagram",
+      "href": "https://www.instagram.com/mindsync.app/"
+    }
+  ],
+  "crisis_line": "MindSync isn't a crisis service. If you're in crisis, call or text 988 in the US, or find a local helpline at findahelpline.com.",
+  "copyright": "© 2026 MindSync.app",
+  "sources": [
+    {
+      "item": "Everything you've saved stays saved",
+      "refs": [
+        "app_en.arb:1645 (subscription_sublineLimit)"
+      ]
+    },
+    {
+      "item": "free limits reset on the 1st of every month",
+      "refs": [
+        "app_en.arb:1696 (subscription_tableFootnote)"
+      ]
+    }
+  ],
+  "fallbacks": {
+    "contact.emailLinkToken": "none"
+  }
+}

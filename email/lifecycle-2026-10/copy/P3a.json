@@ -1,0 +1,225 @@
+{
+  "code": "P3a",
+  "workflow": "P3 Trial start",
+  "trigger": "event trialStarted + 36 h (midway through the 4-day trial)",
+  "sender_name": "Darek from MindSync",
+  "sender_email": "darek@mindsync.app",
+  "reply_to": "darek@mindsync.app",
+  "subject": "🐋 You're halfway through your Premium trial",
+  "preview": "What's unlocked, and two small things to try before it ends.",
+  "h1_light": "Halfway there.",
+  "h1_bold": "Here's what Premium unlocks while your trial lasts.",
+  "blocks": [
+    {
+      "type": "image",
+      "key": "header",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms0hdlb20j9l0jx8frkpazgh.png",
+      "alt": "Illustration: an orca tail rising over waves in front of a coral sun"
+    },
+    {
+      "type": "paragraph",
+      "text": "You're about halfway through your Premium trial, so here's a quick look at what it includes, in case you haven't had the chance to try it yet."
+    },
+    {
+      "type": "pill",
+      "text": "What's unlocked",
+      "color": "#ff9f8a"
+    },
+    {
+      "type": "paragraph",
+      "text": "Reflect voice mode is the big one: you can talk to Orca out loud, not just in writing. On a tired evening, that can be a lot easier than typing. Here's the rest, straight from the Premium screen in the app:"
+    },
+    {
+      "type": "list",
+      "ordered": false,
+      "items": [
+        "Reflect voice mode: Included (Free: Locked)",
+        "Before therapy: Unlimited (Free: 1 a month)",
+        "After therapy: Unlimited (Free: 1 a month)",
+        "Between Sessions: Unlimited (Free: 3 a month)",
+        "Session recordings: Unlimited (Free: 2 in total)",
+        "Reflect messages: Unlimited (Free: 15 a month)",
+        "Habit tracker: Unlimited (Free: 1 habit)",
+        "Monthly therapy summary: Full summary (Free: Activity only)"
+      ]
+    },
+    {
+      "type": "image",
+      "key": "main",
+      "src": "https://images.vialoops.com/cmbhkwdyy14eeyc0hgckxd10a/cmvhzwfrr29w30j1i3j5lgf6e.jpg",
+      "alt": "Three MindSync screens: the Main home screen with colored tiles, the Habits sheet and the first-week plan"
+    },
+    {
+      "type": "pill",
+      "text": "Two things to try before it ends",
+      "color": "#dbf0ed"
+    },
+    {
+      "type": "list",
+      "ordered": true,
+      "items": [
+        "Today: try Reflect out loud, even for a couple of minutes.",
+        "Tomorrow: add one thing to your Therapy Agenda, then open Before therapy and see what it pulled together."
+      ]
+    },
+    {
+      "type": "buttons",
+      "buttons": [
+        {
+          "label": "OPEN ON IPHONE",
+          "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P3a",
+          "style": "primary"
+        },
+        {
+          "label": "OPEN ON ANDROID",
+          "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP3a",
+          "style": "dark"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Nothing is charged automatically when the trial ends. If you want to keep Premium, pick a plan in the app under Subscription. We'll email you a day before your trial ends."
+    },
+    {
+      "type": "image",
+      "key": "divider",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7r0d2b0jzyfxhbkfdj.png",
+      "alt": ""
+    }
+  ],
+  "footer_promise": "We promise to only send you mental health-related tips & updates.",
+  "footer_signoff": "Darek from MindSync",
+  "footer_image": {
+    "type": "image",
+    "key": "lighthouse",
+    "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7l0d2a0jzyfwmupekb.png",
+    "alt": "Illustration: a lighthouse on a cliff, a sailboat and a coral sun"
+  },
+  "footer_icons": [
+    {
+      "name": "android",
+      "label": "Google Play",
+      "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP3a"
+    },
+    {
+      "name": "apple",
+      "label": "App Store",
+      "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P3a"
+    },
+    {
+      "name": "discord",
+      "label": "Discord",
+      "href": "https://discord.com/invite/UNqf45f5Gz"
+    },
+    {
+      "name": "instagram",
+      "label": "Instagram",
+      "href": "https://www.instagram.com/mindsync.app/"
+    }
+  ],
+  "crisis_line": "MindSync isn't a crisis service. If you're in crisis, call or text 988 in the US, or find a local helpline at findahelpline.com.",
+  "copyright": "© 2026 MindSync.app",
+  "sources": [
+    {
+      "item": "Reflect voice mode: Included (Free: Locked)",
+      "refs": [
+        "mindsync-frontend/mindsync_app/lib/screens/subscription/widgets/premium_comparison_table.dart:33",
+        "mindsync-frontend/mindsync_app/lib/l10n/app_en.arb:1681 (subscription_rowVoice)",
+        "app_en.arb:1693 (subscription_valueIncluded)",
+        "app_en.arb:1692 (subscription_valueLocked)"
+      ]
+    },
+    {
+      "item": "Before therapy: Unlimited (Free: 1 a month)",
+      "refs": [
+        "premium_comparison_table.dart:28",
+        "app_en.arb:1676 (subscription_rowBefore)",
+        "app_en.arb:1694 (subscription_valueUnlimited)",
+        "app_en.arb:1686 (subscription_valueOneAMonth)"
+      ]
+    },
+    {
+      "item": "After therapy: Unlimited (Free: 1 a month)",
+      "refs": [
+        "premium_comparison_table.dart:29",
+        "app_en.arb:1677 (subscription_rowAfter)",
+        "app_en.arb:1694",
+        "app_en.arb:1686"
+      ]
+    },
+    {
+      "item": "Between Sessions: Unlimited (Free: 3 a month)",
+      "refs": [
+        "premium_comparison_table.dart:30",
+        "app_en.arb:1678 (subscription_rowBetween)",
+        "app_en.arb:1694",
+        "app_en.arb:1687 (subscription_valueThreeAMonth)"
+      ]
+    },
+    {
+      "item": "Session recordings: Unlimited (Free: 2 in total)",
+      "refs": [
+        "premium_comparison_table.dart:31",
+        "app_en.arb:1679 (subscription_rowRecordings)",
+        "app_en.arb:1694",
+        "app_en.arb:1688 (subscription_valueTwoTotal)"
+      ]
+    },
+    {
+      "item": "Reflect messages: Unlimited (Free: 15 a month)",
+      "refs": [
+        "premium_comparison_table.dart:32",
+        "app_en.arb:1680 (subscription_rowReflect)",
+        "app_en.arb:1694",
+        "app_en.arb:1689 (subscription_valueFifteenAMonth)"
+      ]
+    },
+    {
+      "item": "Habit tracker: Unlimited (Free: 1 habit)",
+      "refs": [
+        "premium_comparison_table.dart:34",
+        "app_en.arb:1682 (subscription_rowHabits)",
+        "app_en.arb:1694",
+        "app_en.arb:1690 (subscription_valueOneHabit)"
+      ]
+    },
+    {
+      "item": "Monthly therapy summary: Full summary (Free: Activity only)",
+      "refs": [
+        "premium_comparison_table.dart:35",
+        "app_en.arb:1683 (subscription_rowMonthly)",
+        "app_en.arb:1695 (subscription_valueFullSummary)",
+        "app_en.arb:1691 (subscription_valueActivityOnly)"
+      ]
+    },
+    {
+      "item": "Omitted on purpose: Weekly therapy summary and Focus Areas are Included on both Free and Premium",
+      "refs": [
+        "premium_comparison_table.dart:36-37",
+        "app_en.arb:1684-1685"
+      ]
+    },
+    {
+      "item": "Table is the paywall section 'What Premium changes', rendered by SubscriptionBody",
+      "refs": [
+        "mindsync-frontend/mindsync_app/lib/screens/subscription/subscription_body.dart:169",
+        "app_en.arb:1673 (subscription_tableTitle)"
+      ]
+    },
+    {
+      "item": "'Nothing is charged automatically' (server trial, not a store trial)",
+      "refs": [
+        "mindsync-frontend/mindsync_app/lib/screens/subscription/widgets/premium_view.dart:159",
+        "app_en.arb:1767 (premium_trialNoCharge)",
+        "app_en.arb:1769 (premium_trialHint)"
+      ]
+    },
+    {
+      "item": "'under Subscription' (menu entry name)",
+      "refs": [
+        "app_en.arb:821 (nav_subscription)"
+      ]
+    }
+  ]
+}

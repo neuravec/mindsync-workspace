@@ -1,0 +1,134 @@
+{
+  "code": "P3b",
+  "workflow": "P3 Trial koniec",
+  "trigger": "event trialEndingSoon (24 h before trial end, user had activity)",
+  "sender_name": "Darek from MindSync",
+  "sender_email": "darek@mindsync.app",
+  "reply_to": "darek@mindsync.app",
+  "subject": "🐋 Your trial ends tomorrow",
+  "preview": "What you did during your trial, and what happens next.",
+  "h1_light": "Your trial ends tomorrow.",
+  "h1_bold": "Here's what you did with it.",
+  "blocks": [
+    {
+      "type": "image",
+      "key": "header",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms0hdlb20j9l0jx8frkpazgh.png",
+      "alt": "Illustration: an orca tail rising over waves in front of a coral sun"
+    },
+    {
+      "type": "stats",
+      "items": [
+        {
+          "value": "{event.reflects}",
+          "label": "Reflect conversations"
+        },
+        {
+          "value": "{event.agendaItems}",
+          "label": "Therapy Agenda topics"
+        },
+        {
+          "value": "{event.activeDays}",
+          "label": "active days"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "If it's been useful, you can keep Premium by picking a plan in the app, under Subscription."
+    },
+    {
+      "type": "paragraph",
+      "text": "If you'd rather not, you don't need to do anything. Nothing is charged automatically. Tomorrow your account moves to the free version, and your recordings, notes and summaries stay saved either way."
+    },
+    {
+      "type": "buttons",
+      "buttons": [
+        {
+          "label": "OPEN ON IPHONE",
+          "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P3b",
+          "style": "primary"
+        },
+        {
+          "label": "OPEN ON ANDROID",
+          "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP3b",
+          "style": "dark"
+        }
+      ]
+    },
+    {
+      "type": "paragraph",
+      "text": "Questions about plans or prices? Hit reply. It comes straight to me."
+    },
+    {
+      "type": "image",
+      "key": "divider",
+      "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7r0d2b0jzyfxhbkfdj.png",
+      "alt": ""
+    }
+  ],
+  "footer_promise": "We promise to only send you mental health-related tips & updates.",
+  "footer_signoff": "Darek from MindSync",
+  "footer_image": {
+    "type": "image",
+    "key": "lighthouse",
+    "src": "https://images.vialoops.com/cms091k4c0d270jzyr9585vs7/cms091k7l0d2a0jzyfwmupekb.png",
+    "alt": "Illustration: a lighthouse on a cliff, a sailboat and a coral sun"
+  },
+  "footer_icons": [
+    {
+      "name": "android",
+      "label": "Google Play",
+      "href": "https://play.google.com/store/apps/details?id=com.mindsync.app&referrer=utm_source%3Dloops%26utm_medium%3Demail%26utm_campaign%3DP3b"
+    },
+    {
+      "name": "apple",
+      "label": "App Store",
+      "href": "https://apps.apple.com/us/app/mindsync-therapy-journal/id6739644256?ct=P3b"
+    },
+    {
+      "name": "discord",
+      "label": "Discord",
+      "href": "https://discord.com/invite/UNqf45f5Gz"
+    },
+    {
+      "name": "instagram",
+      "label": "Instagram",
+      "href": "https://www.instagram.com/mindsync.app/"
+    }
+  ],
+  "crisis_line": "MindSync isn't a crisis service. If you're in crisis, call or text 988 in the US, or find a local helpline at findahelpline.com.",
+  "copyright": "© 2026 MindSync.app",
+  "fallbacks": {
+    "event.reflects": "0",
+    "event.agendaItems": "0",
+    "event.activeDays": "1"
+  },
+  "sources": [
+    {
+      "item": "Nothing is charged automatically",
+      "refs": [
+        "app_en.arb:1767 (premium_trialNoCharge)",
+        "premium_view.dart:159"
+      ]
+    },
+    {
+      "item": "recordings, notes and summaries stay saved either way",
+      "refs": [
+        "app_en.arb:1657 (subscription_sublineTrial)"
+      ]
+    },
+    {
+      "item": "Free version keeps working with limits",
+      "refs": [
+        "premium_comparison_table.dart:28-37"
+      ]
+    },
+    {
+      "item": "'under Subscription' (menu entry name)",
+      "refs": [
+        "app_en.arb:821 (nav_subscription)"
+      ]
+    }
+  ]
+}

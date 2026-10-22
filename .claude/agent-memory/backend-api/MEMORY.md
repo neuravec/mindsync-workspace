@@ -1,9 +1,11 @@
 # Backend API Agent Memory
 
 ## Migration Chain
+- 2026-10-21: feat/loops-lifecycle adds m321e4c5a6b7 on ke_a7c3e9f1b2d4 (main head was ke_ at 23a83bd).
 - 2026-10-19: origin/main head m320c4a5r6d7; integration/redesign-v3 adds ke_a7c3e9f1b2d4 on it (single head). Verify with `py -3.12 -m alembic heads`. History: [patterns_backend_detailed.md](patterns_backend_detailed.md)
 
 ## Topic Files
+- [Loops lifecycle emails (2026-10-21)](project_loops_lifecycle_2026_10_21.md) - feat/loops-lifecycle unpushed; consent-gated, no auto-renew detection, exact-day P9
 - [KE team full-history backfill (2026-10-19)](project_ke_team_backfill_2026_10_19.md) - b694937 unpushed; reset-to-forward read beats hist_*; local `py -i <` REPL recipe
 - [PostHog identify set_once fix (2026-10-19)](project_posthog_identify_set_once_fix_2026_10_19.md) - 75d1f0d unpushed; backend person props never flowed since 04-25; py3.12 no posthog, py3.14 has 7.x
 - [KE rollout + premium history (2026-10-19)](project_ke_rollout_premium_history_2026_10_19.md) - 41f3153+87bad96 feat/ke-rollout unpushed; plan in cursors JSON; weak Orca-therapy moments
