@@ -151,4 +151,5 @@
 - IG redesign 21.10: 5 postów (karty, story postępu, Character, story sił, nowy Main) `gotowy` na polecenie operatora, drip 21.10-27.10; slajd 5 kart na store_timeline.png; App Store 2.0.56 z 20.10 ma nowy wygląd; zmiany w repo social niezacommitowane; posty o Orce 10-13/10-15 dalej szkic
 - [Programy maili Loops 21-22.10](project_loops_comms_process_2026_10_21.md): P1-P9 WŁĄCZONE 22.10 (BE v580 + m321, poprawka flush PostHog v581), stare automaty wstrzymane; kill switch LOOPS_LIFECYCLE_ENABLED; otwarte M-3
 - [Wspólny workspace dla wspólnika 21.10](project_shared_workspace_2026_10_21.md): repo mindsync-workspace, sync.py pull na start (hook), pytanie o commit+push na koniec, pamięć w claude-memory/
+- [Naprawa follow-up 404 i first-week 22.10](project_first_week_followup_fix_2026_10_22.md): WDROŻONE BE v585 + FE 30a1bc1 na dev; 204 nadpisywane po martwym gnieździe; Papertrail = SolarWinds przez SSO
 - [Przegląd wydania 2.0.117 21.10](project_release_2_0_117_review_2026_10_21.md): stabilnie przy n=7; głos 0 startów do testu, stary build iOS bez ART9; powtórki 23.10 i 28.10
