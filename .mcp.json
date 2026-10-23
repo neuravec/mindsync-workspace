@@ -1,29 +1,41 @@
-{
-  "mcpServers": {
-    "heroku": {
-      "command": "cmd",
-      "args": ["/c", "npx", "-y", "@modelcontextprotocol/server-heroku"],
-      "env": { "HEROKU_API_KEY": "${HEROKU_API_KEY}" }
-    },
-    "clickup": {
-      "type": "sse",
-      "url": "https://mcp.clickup.com/sse"
-    },
-    "loops": {
-      "type": "http",
-      "url": "https://mcp.loops.so"
-    },
-    "reddit": {
-      "command": "cmd",
-      "args": ["/c", "npx", "-y", "reddit-mcp-server"],
-      "env": {
-        "REDDIT_CLIENT_ID": "${REDDIT_CLIENT_ID:-}",
-        "REDDIT_CLIENT_SECRET": "${REDDIT_CLIENT_SECRET:-}",
-        "REDDIT_USERNAME": "${REDDIT_USERNAME:-}",
-        "REDDIT_PASSWORD": "${REDDIT_PASSWORD:-}",
-        "REDDIT_SAFE_MODE": "standard",
-        "REDDIT_BOT_DISCLOSURE": "off"
-      }
-    }
-  }
+﻿{
+    "mcpServers":  {
+                       "heroku":  {
+                                      "command":  "cmd",
+                                      "args":  [
+                                                   "/c",
+                                                   "npx",
+                                                   "-y",
+                                                   "@heroku/mcp-server"
+                                               ],
+                                      "env":  {
+                                                  "HEROKU_API_KEY":  "${HEROKU_API_KEY}"
+                                              }
+                                  },
+                       "clickup":  {
+                                       "type":  "http",
+                                       "url":  "https://mcp.clickup.com/mcp"
+                                   },
+                       "loops":  {
+                                     "type":  "http",
+                                     "url":  "https://mcp.loops.so"
+                                 },
+                       "reddit":  {
+                                      "command":  "cmd",
+                                      "args":  [
+                                                   "/c",
+                                                   "npx",
+                                                   "-y",
+                                                   "reddit-mcp-server"
+                                               ],
+                                      "env":  {
+                                                  "REDDIT_CLIENT_ID":  "${REDDIT_CLIENT_ID:-}",
+                                                  "REDDIT_CLIENT_SECRET":  "${REDDIT_CLIENT_SECRET:-}",
+                                                  "REDDIT_USERNAME":  "${REDDIT_USERNAME:-}",
+                                                  "REDDIT_PASSWORD":  "${REDDIT_PASSWORD:-}",
+                                                  "REDDIT_SAFE_MODE":  "standard",
+                                                  "REDDIT_BOT_DISCLOSURE":  "off"
+                                              }
+                                  }
+                   }
 }
